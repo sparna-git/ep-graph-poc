@@ -1,0 +1,61 @@
+@prefix epsh: <http://data.europarl.europa.eu/shapes#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epsh:MEP a sh:NodeShape;
+  rdfs:label "MEP"@fr;
+  sh:closed true;
+  sh:ignoredProperties _:node1em6ifuhbx2527 .
+
+_:node1em6ifuhbx2527 rdf:first rdf:type;
+  rdf:rest rdf:nil .
+
+epsh:MEP sh:nodeKind sh:IRI;
+  sh:order 1;
+  sh:pattern "^http://data.europarl.europa.eu/MEP_(.*)$";
+  sh:property epsh:P10, epsh:P11, epsh:P12, epsh:P13, epsh:P14, epsh:P15, epsh:P16;
+  sh:targetClass schema:Person .
+
+epsh:P10 sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "Contraintes de schema:firstName sur un epsh:MEP"@fr;
+  sh:nodeKind sh:Literal;
+  sh:path schema:firstName;
+  sh:severity sh:Violation .
+
+epsh:P11 sh:maxCount 1;
+  sh:minCount 1;
+  sh:nodeKind sh:Literal;
+  sh:path schema:familyName .
+
+epsh:P12 sh:maxCount 1;
+  sh:minCount 0;
+  sh:nodeKind sh:IRI;
+  sh:path schema:honorificPrefix;
+  sh:pattern "^http://data.europarl.europa.eu/Civility_(.*)$" .
+
+epsh:P13 sh:maxCount 1;
+  sh:minCount 1;
+  sh:nodeKind sh:Literal;
+  sh:path schema:identifier .
+
+epsh:P14 sh:maxCount 1;
+  sh:minCount 1;
+  sh:nodeKind sh:IRI;
+  sh:path schema:gender;
+  sh:pattern "^http://data.europarl.europa.eu/Gender_(.*)$" .
+
+epsh:P15 sh:maxCount 1;
+  sh:minCount 1;
+  sh:nodeKind sh:IRI;
+  sh:path schema:status;
+  sh:pattern "^http://data.europarl.europa.eu/Status_(.*)$" .
+
+epsh:P16 sh:maxCount 1;
+  sh:minCount 0;
+  sh:nodeKind sh:IRI;
+  sh:path schema:birthPlace;
+  sh:pattern "^http://data.europarl.europa.eu/Country_(.*)$" .

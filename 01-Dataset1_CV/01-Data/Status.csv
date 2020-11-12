@@ -1,0 +1,3 @@
+﻿ep:uri,ep:label,skos:notation,ep:status
+ep:Status_ACTIVE,Active,Active,ep:Status_ACTIVE
+ep:Status_NOT-ACTIVE,Not active,Not active,ep:Status_NOT-ACTIVE

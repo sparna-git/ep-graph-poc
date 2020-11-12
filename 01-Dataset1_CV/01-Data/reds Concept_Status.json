@@ -1,0 +1,224 @@
+{
+	"name": "epvoc:Status",
+	"identifier": {
+		"from": 0,
+		"size": -1,
+		"total": 12,
+		"namespaces": {
+			"ep": "http://redmap.europa.eu/v1-0#",
+            "epvoc": "http://redmap.europa.eu/v1-0#"
+		}
+	},
+	"concepts": [
+		{
+			"thesaurus": "Status",
+			"uri": "ep:Status_ACTIVE",
+			"types": [
+				"http://www.w3.org/2002/07/owl#Class"
+			],
+			"labels": {
+				"zu": {
+					"http://www.w3.org/2000/01/rdf-schema#label": "ACTIVE"
+				},
+                "en": {
+                    "http://www.w3.org/2004/02/skos/core#prefLabel": "Active"
+                },
+                "fr": {
+                    "http://www.w3.org/2004/02/skos/core#prefLabel": "Active"
+                }
+			}
+		},
+		{
+            "thesaurus": "Status",
+            "uri": "ep:Status_NOT-ACTIVE",
+            "types": [
+                "http://www.w3.org/2002/07/owl#Class"
+            ],
+            "labels": {
+                "zu": {
+                    "http://www.w3.org/2000/01/rdf-schema#label": "NOT_ACTIVE"
+                },
+                "en": {
+                    "http://www.w3.org/2004/02/skos/core#prefLabel": "Not Active"
+                },
+                "fr": {
+                    "http://www.w3.org/2004/02/skos/core#prefLabel": "Non Active"
+                }
+            }
+        },
+        {
+			"thesaurus": "Status",
+			"uri": "ep:Status_ADOPTED",
+			"types": [
+				"http://www.w3.org/2002/07/owl#Class"
+			],
+			"labels": {
+				"zu": {
+					"http://www.w3.org/2000/01/rdf-schema#label": "ADOPTED"
+				},
+                "en": {
+                    "http://www.w3.org/2004/02/skos/core#prefLabel": "Adopted"
+                },
+                "fr": {
+                    "http://www.w3.org/2004/02/skos/core#prefLabel": "Adoptée"
+                }
+			}
+		},
+		{
+			"thesaurus": "Status",
+			"uri": "ep:Status_CREATE",
+			"types": [
+				"http://www.w3.org/2002/07/owl#Class"
+			],
+			"labels": {
+				"zu": {
+					"http://www.w3.org/2000/01/rdf-schema#label": "CREATE"
+				},
+                "en": {
+                    "http://www.w3.org/2004/02/skos/core#prefLabel": "Created"
+                },
+                "fr": {
+                    "http://www.w3.org/2004/02/skos/core#prefLabel": "Initié"
+                }
+			}
+		},
+		{
+			"thesaurus": "Status",
+            "uri": "ep:Status_DELETED",
+			"types": [
+				"http://www.w3.org/2002/07/owl#Class"
+			],
+			"labels": {
+				"zu": {
+					"http://www.w3.org/2000/01/rdf-schema#label": "DELETED"
+				},
+                "en": {
+                    "http://www.w3.org/2004/02/skos/core#prefLabel": "Deleted"
+                },
+                "fr": {
+                    "http://www.w3.org/2004/02/skos/core#prefLabel": "Supprimé"
+                }
+			}
+		},
+		{
+			"thesaurus": "Status",
+            "uri": "ep:Status_ENDED",
+			"types": [
+				"http://www.w3.org/2002/07/owl#Class"
+			],
+			"labels": {
+				"zu": {
+					"http://www.w3.org/2000/01/rdf-schema#label": "ENDED"
+				},
+                "en": {
+                    "http://www.w3.org/2004/02/skos/core#prefLabel": "Ended"
+                },
+                "fr": {
+                    "http://www.w3.org/2004/02/skos/core#prefLabel": "Terminé"
+                }
+			}
+		},
+		{
+			"thesaurus": "Status",
+            "uri": "ep:Status_HISTORICAL",
+			"types": [
+				"http://www.w3.org/2002/07/owl#Class"
+			],
+			"labels": {
+				"zu": {
+					"http://www.w3.org/2000/01/rdf-schema#label": "HISTORICAL"
+				},
+                "en": {
+                    "http://www.w3.org/2004/02/skos/core#prefLabel": "Historic"
+                },
+                "fr": {
+                    "http://www.w3.org/2004/02/skos/core#prefLabel": "Historique"
+                }
+			}
+		},
+        {
+            "thesaurus": "Status",
+            "uri": "ep:Status_MAJORITY",
+            "types": [
+                "http://www.w3.org/2002/07/owl#Class"
+            ],
+            "labels": {
+                "zu": {
+                    "http://www.w3.org/2000/01/rdf-schema#label": "MAJORITY"
+                },
+                "en": {
+                    "http://www.w3.org/2004/02/skos/core#prefLabel": "Closed with majority"
+                },
+                "fr": {
+                    "http://www.w3.org/2004/02/skos/core#prefLabel": "Clôturée avec les signatures de la majorité des membres"
+                }
+            }
+        },
+        {
+            "thesaurus": "Status",
+            "uri": "ep:Status_OBSOLETE",
+            "types": [
+                "http://www.w3.org/2002/07/owl#Class"
+            ],
+            "labels": {
+                "zu": {
+                    "http://www.w3.org/2000/01/rdf-schema#label": "OBSOLETE"
+                },
+                "en": {
+                    "http://www.w3.org/2004/02/skos/core#prefLabel": "Obsolete"
+                },
+                "fr": {
+                    "http://www.w3.org/2004/02/skos/core#prefLabel": "Caduque"
+                }
+            }
+        },
+        {
+            "thesaurus": "Status",
+            "uri": "ep:Status_RECALL",
+            "types": [
+                "http://www.w3.org/2002/07/owl#Class"
+            ],
+            "labels": {
+                "zu": {
+                    "http://www.w3.org/2000/01/rdf-schema#label": "RECALL"
+                },
+                "en": {
+                    "http://www.w3.org/2004/02/skos/core#prefLabel": "Recall"
+                },
+                "fr": {
+                    "http://www.w3.org/2004/02/skos/core#prefLabel": "Retiré"
+                }
+            }
+        },
+        {
+            "thesaurus": "Status",
+            "uri": "ep:Status_SUSPENDED",
+            "types": [
+                "http://www.w3.org/2002/07/owl#Class"
+            ],
+            "labels": {
+                "zu": {
+                    "http://www.w3.org/2000/01/rdf-schema#label": "SUSPENDED"
+                },
+                "en": {
+                    "http://www.w3.org/2004/02/skos/core#prefLabel": "Lapsed as the conditions for admissibility are no longer met"
+                },
+                "fr": {
+                    "http://www.w3.org/2004/02/skos/core#prefLabel": "Caduque, car les conditions de recevabilité ne sont plus remplies"
+                }
+            }
+        },
+        {
+            "thesaurus": "Status",
+            "uri": "ep:Status_RESTRICTED",
+            "types": [
+                "http://www.w3.org/2002/07/owl#Class"
+            ],
+            "labels": {
+                "zu": {
+                    "http://www.w3.org/2000/01/rdf-schema#label": "RESTRICTED"
+                }
+            }
+        }
+	]
+}

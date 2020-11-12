@@ -1,0 +1,5443 @@
+{
+    "name": "ep:Concept_Type",
+    "identifier": {
+        "from": 0,
+        "size": -1,
+        "total": 261,
+        "namespaces": {
+            "ep": "http://redmap.europa.eu/v1-0#"
+        }
+    },
+    "concepts": [{
+            "thesaurus": "Type",
+            "uri": "ep:dirContProc",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "ITER Procedure"
+                },
+                "fr": {
+                    "skos:prefLabel": "Procédure"
+                },
+                "en": {
+                    "skos:prefLabel": "Procedure"
+                },
+                "de": {
+                    "skos:prefLabel": "Verfahren"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:dirContDossier",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "ITER Dossier"
+                },
+                "fr": {
+                    "skos:prefLabel": "Dossier de commission"
+                },
+                "en": {
+                    "skos:prefLabel": "Committee dossier"
+                },
+                "de": {
+                    "skos:prefLabel": "Dossier des Ausschusses"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEcDcon_Add",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "EC - CEU document - Addendum"
+                },
+                "fr": {
+                    "skos:prefLabel": "Addendum Ã  un document CEU - Commission EuropÃ©enne"
+                },
+                "en": {
+                    "skos:prefLabel": "Addendum to CEU document - European commission"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEiEibd",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "EI - EIB document"
+                },
+                "zu": {
+                    "rdfs:label": "EI - EIB document"
+                },
+                "fr": {
+                    "skos:prefLabel": "EI - Document EIB"
+                },
+                "en": {
+                    "skos:prefLabel": "EI - EIB document"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iBuPvtn",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Bureau - Technical notes"
+                },
+                "fr": {
+                    "skos:prefLabel": "Notes technique - Bureau"
+                },
+                "en": {
+                    "skos:prefLabel": "Technical note - Bureau"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlTa_Toc",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Adopted texts"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Adopted text - Toc"
+                },
+                "fr": {
+                    "skos:prefLabel": "Textes adoptÃ©s"
+                },
+                "en": {
+                    "skos:prefLabel": "Adopted texts"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEpRegl_Ann",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "GeschÃ¤ftsordnung des EP Anlage"
+                },
+                "zu": {
+                    "rdfs:label": "EP Rules - Annex"
+                },
+                "fr": {
+                    "skos:prefLabel": "Annexe du RÃ¨glement PE"
+                },
+                "en": {
+                    "skos:prefLabel": "Rules EP annex"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iBlAct",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Bulletins - Activities"
+                },
+                "fr": {
+                    "skos:prefLabel": "ActivitÃ©s - Bulletins du PE"
+                },
+                "en": {
+                    "skos:prefLabel": "Activities - EP Bulletins"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlBbud",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "JÃ¤hrlicher Haushaltsplan"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Annual budget"
+                },
+                "fr": {
+                    "skos:prefLabel": "Budget annuel"
+                },
+                "en": {
+                    "skos:prefLabel": "Annual budget"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iNpRo",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "BegrÃ¼ndete Stellungnahme"
+                },
+                "zu": {
+                    "rdfs:label": "NP - Reasoned opinion"
+                },
+                "fr": {
+                    "skos:prefLabel": "Avis motivÃ©"
+                },
+                "en": {
+                    "skos:prefLabel": "Reasoned opinion"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iClPleg",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Legislativvorschlag - EuropÃ¤ischer Rat"
+                },
+                "zu": {
+                    "rdfs:label": "European Council - Legislative proposal"
+                },
+                "fr": {
+                    "skos:prefLabel": "Proposition lÃ©gislative - Conseil EuropÃ©en"
+                },
+                "en": {
+                    "skos:prefLabel": "Legislative proposal - European Council"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEiAvcbAcr",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Stellungnahme des Ausschusses der Regionen"
+                },
+                "zu": {
+                    "rdfs:label": "EI - AVCB_ACR - ECB opinion "
+                },
+                "fr": {
+                    "skos:prefLabel": "Opinion of the Committee of the Regions"
+                },
+                "en": {
+                    "skos:prefLabel": "Opinion of the Committee of the Regions"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPrNwhl",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Highlights "
+                },
+                "zu": {
+                    "rdfs:label": "Press - News - News Highlights"
+                },
+                "fr": {
+                    "skos:prefLabel": "Faits marquants"
+                },
+                "en": {
+                    "skos:prefLabel": "Highlights "
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlMeetingGroup",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Plenartagung"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Meeting Group"
+                },
+                "fr": {
+                    "skos:prefLabel": "Session de plÃ©niÃ¨re"
+                },
+                "en": {
+                    "skos:prefLabel": "Plenary session"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlCre-Rev_Itm",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "CRE Revidierte Fassung - Punkt"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Verbatim report - Revised - Item"
+                },
+                "fr": {
+                    "skos:prefLabel": "CRE RÃ©visÃ© - Point"
+                },
+                "en": {
+                    "skos:prefLabel": "CRE Revised - Item"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMaQt_Asw",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Antwort auf eine mÃ¼ndliche Anfrage aus der Fragestunde"
+                },
+                "zu": {
+                    "rdfs:label": "Members Activities - Questions - Oral question from the Question time - Answer"
+                },
+                "fr": {
+                    "skos:prefLabel": "RÃ©ponse Ã  question orale de l'heure des questions"
+                },
+                "en": {
+                    "skos:prefLabel": "Answer for oral question from the Question time"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlOj-Fnl_Cor",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Tagesordnung - Korrigendum"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Agenda - Final - Corrigendum"
+                },
+                "fr": {
+                    "skos:prefLabel": "Ordre du jour - Corrigendum"
+                },
+                "en": {
+                    "skos:prefLabel": "Agenda - Corrigendum"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iDlR",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Delegation - Motion for resolution"
+                },
+                "fr": {
+                    "skos:prefLabel": "Proposition de rÃ©solution - Documents des dÃ©lÃ©gations parlementaires"
+                },
+                "en": {
+                    "skos:prefLabel": "Motion for resolution - Parliamentary delegations' documents"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPrNwbkg",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Press - News - News Background"
+                },
+                "fr": {
+                    "skos:prefLabel": "Background "
+                },
+                "en": {
+                    "skos:prefLabel": "Background "
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPuStdy",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Studie"
+                },
+                "zu": {
+                    "rdfs:label": "EP publications - Study"
+                },
+                "fr": {
+                    "skos:prefLabel": "Etude"
+                },
+                "en": {
+                    "skos:prefLabel": "Study"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCpPvdc",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Conference of President - Decisions"
+                },
+                "fr": {
+                    "skos:prefLabel": "DÃ©cision - La ConfÃ©rence des prÃ©sidents"
+                },
+                "en": {
+                    "skos:prefLabel": "Decision - The Conference of Presidents"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlOj-Fnl_Itm",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Plenary - Agenda - Final - Item"
+                },
+                "fr": {
+                    "skos:prefLabel": "Ordre du jour - Point"
+                },
+                "en": {
+                    "skos:prefLabel": "Agenda - Item"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iBuPvdc",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Bureau - Decisions"
+                },
+                "fr": {
+                    "skos:prefLabel": "DÃ©cision - Bureau"
+                },
+                "en": {
+                    "skos:prefLabel": "Decision - Bureau"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMaLmep",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "List of members"
+                },
+                "zu": {
+                    "rdfs:label": "Members Activities - List of members"
+                },
+                "fr": {
+                    "skos:prefLabel": "Liste des dÃ©putÃ©s"
+                },
+                "en": {
+                    "skos:prefLabel": "List of members"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iBuPv",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Bureau - Minutes"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s-verbal - Bureau"
+                },
+                "en": {
+                    "skos:prefLabel": "Minutes - Bureau"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEiEscd",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "EI - ESC document"
+                },
+                "zu": {
+                    "rdfs:label": "EI - ESC document"
+                },
+                "fr": {
+                    "skos:prefLabel": "EI - Document ESC"
+                },
+                "en": {
+                    "skos:prefLabel": "EI - ESC document"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCmPv",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Protokoll"
+                },
+                "zu": {
+                    "rdfs:label": "Committee - Minutes"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s-verbal"
+                },
+                "en": {
+                    "skos:prefLabel": "Minutes"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCpPvtn",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Conference of President - Technical notes"
+                },
+                "fr": {
+                    "skos:prefLabel": "Fiche technique - La ConfÃ©rence des prÃ©sidents"
+                },
+                "en": {
+                    "skos:prefLabel": "Technical note - The Conference of Presidents"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iClPlegPaf",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Entwurf eines endgÃ¼ltigen Rechtsakts - EuropÃ¤ischer Rat"
+                },
+                "zu": {
+                    "rdfs:label": "European Council - Legislative proposal - Draft final act"
+                },
+                "fr": {
+                    "skos:prefLabel": "Projet d'acte final - Conseil EuropÃ©en"
+                },
+                "en": {
+                    "skos:prefLabel": "Draft final act - European Council"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPrNwfea",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Merkmale "
+                },
+                "zu": {
+                    "rdfs:label": "Press - News - News Features"
+                },
+                "fr": {
+                    "skos:prefLabel": "Grand angle"
+                },
+                "en": {
+                    "skos:prefLabel": "Features "
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iTrInma-Dft_Amd",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Amendement to draft proposal for a mandate"
+                },
+                "zu": {
+                    "rdfs:label": "Trilogue - Draft proposal mandate - Amendment"
+                },
+                "fr": {
+                    "skos:prefLabel": "Amendement Ã  un projet de proposition de mandat"
+                },
+                "en": {
+                    "skos:prefLabel": "Amendement to draft proposal for a mandate"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCmOple",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Stellungnahme in Form eines Schreibens"
+                },
+                "zu": {
+                    "rdfs:label": "Committee - Opinion - Opinion in letter form"
+                },
+                "fr": {
+                    "skos:prefLabel": "Avis sous forme de lettre"
+                },
+                "en": {
+                    "skos:prefLabel": "Opinion in letter form"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEiEcbd",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "EI - ECB document"
+                },
+                "zu": {
+                    "rdfs:label": "EI - ECB document"
+                },
+                "fr": {
+                    "skos:prefLabel": "EI - Document ECB"
+                },
+                "en": {
+                    "skos:prefLabel": "EI - ECB document"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlPv-Prv_Sit",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "sl": {
+                    "skos:prefLabel": "Zapisnik - ZaÄ�asna izdaja"
+                },
+                "sk": {
+                    "skos:prefLabel": "ZÃ¡pisnica - PrechodnÃ¡ verzia"
+                },
+                "da": {
+                    "skos:prefLabel": "Protokol - ForelÃ¸big udgave"
+                },
+                "ro": {
+                    "skos:prefLabel": "Proces-verbal - EdiÅ£ie provizorie"
+                },
+                "it": {
+                    "skos:prefLabel": "Processo verbale - Edizione provvisoria"
+                },
+                "mt": {
+                    "skos:prefLabel": "Minuti - VerÅ¼joni proviÅ¼orja"
+                },
+                "hu": {
+                    "skos:prefLabel": "JegyzÅ‘kÃ¶nyv - Ideiglenes kiadÃ¡s"
+                },
+                "lv": {
+                    "skos:prefLabel": "Protokols - Pagaidu redakcija"
+                },
+                "lt": {
+                    "skos:prefLabel": "Protokolas - NegalutinÄ— teksto versija"
+                },
+                "cs": {
+                    "skos:prefLabel": "ZÃ¡pis - PÅ™edbÄ›Å¾nÃ© znÄ›nÃ­"
+                },
+                "de": {
+                    "skos:prefLabel": ["VorlÃ¤ufige Fassung des Protokolls - Sitzung", "Protokoll - VorlÃ¤ufige Ausgabe"]
+                },
+                "el": {
+                    "skos:prefLabel": "Î£Ï…Î½Î¿Ï€Ï„Î¹ÎºÎ¬ Ï€Ï�Î±ÎºÏ„Î¹ÎºÎ¬ - Î Ï�Î¿ÏƒÏ‰Ï�Î¹Î½Î® Î­ÎºÎ´Î¿ÏƒÎ·"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Minutes - Sitting - Prov"
+                },
+                "fi": {
+                    "skos:prefLabel": "PÃ¶ytÃ¤kirja - VÃ¤liaikainen painos"
+                },
+                "pl": {
+                    "skos:prefLabel": "ProtokÃ³Å‚ - Wersja tymczasowa"
+                },
+                "pt": {
+                    "skos:prefLabel": "Acta - EdiÃ§Ã£o provisÃ³ria"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s-verbal provisoire  - SÃ©ance plÃ©niÃ¨re"
+                },
+                "sv": {
+                    "skos:prefLabel": "Protokoll - PreliminÃ¤r utgÃ¥va"
+                },
+                "bg": {
+                    "skos:prefLabel": "ÐŸÑ€Ð¾Ñ‚Ð¾ÐºÐ¾Ð» - Ð�ÐµÐ¾ÐºÐ¾Ð½Ñ‡Ð°Ñ‚ÐµÐ»Ð½Ð° Ð²ÐµÑ€Ñ�Ð¸Ñ�"
+                },
+                "en": {
+                    "skos:prefLabel": "Provisional minutes - Plenary sitting"
+                },
+                "et": {
+                    "skos:prefLabel": "Protokoll - Ajutine vÃ¤ljaanne"
+                },
+                "es": {
+                    "skos:prefLabel": "Acta - EdiciÃ³n provisional"
+                },
+                "nl": {
+                    "skos:prefLabel": "Notulen - Voorlopige uitgave"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMaRega",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Members Activities - Register of Members' assistants"
+                },
+                "fr": {
+                    "skos:prefLabel": "Members Activities - Register of Members' assistants"
+                },
+                "en": {
+                    "skos:prefLabel": "Members Activities - Register of Members' assistants"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEpRegl_Annexes",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "GeschÃ¤ftsordnung des EP Anlagen"
+                },
+                "zu": {
+                    "rdfs:label": "EP Rules - Annexes"
+                },
+                "fr": {
+                    "skos:prefLabel": "Annexes du RÃ¨glement PE"
+                },
+                "en": {
+                    "skos:prefLabel": "Rules EP annexes"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEpPubli",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "EP - Publications"
+                },
+                "fr": {
+                    "skos:prefLabel": "Publications du PE"
+                },
+                "en": {
+                    "skos:prefLabel": "EP - Publications"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlPv_Vot",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "sl": {
+                    "skos:prefLabel": "Zapisnik - Izidi glasovanja"
+                },
+                "sk": {
+                    "skos:prefLabel": "ZÃ¡pisnica - VÃ½sledky hlasovanÃ­"
+                },
+                "da": {
+                    "skos:prefLabel": "Protokol - Afstemningsresultater"
+                },
+                "ro": {
+                    "skos:prefLabel": "Proces-verbal - Rezultatele voturilor"
+                },
+                "it": {
+                    "skos:prefLabel": "Processo verbale - Risultati dei voti"
+                },
+                "mt": {
+                    "skos:prefLabel": "Minuti - RiÅ¼ultati tal-votazzjonijiet"
+                },
+                "hu": {
+                    "skos:prefLabel": "JegyzÅ‘kÃ¶nyv - A szavazÃ¡sok eredmÃ©nyei"
+                },
+                "lv": {
+                    "skos:prefLabel": "Protokols - Balsojumu rezultÄ�ti"
+                },
+                "lt": {
+                    "skos:prefLabel": "Protokolas - Balsavimo rezultatai"
+                },
+                "cs": {
+                    "skos:prefLabel": "ZÃ¡pis - VÃ½sledky hlasovÃ¡nÃ­"
+                },
+                "de": {
+                    "skos:prefLabel": "Fassung des Protokolls - Abstimmungsergebnis"
+                },
+                "el": {
+                    "skos:prefLabel": "Î£Ï…Î½Î¿Ï€Ï„Î¹ÎºÎ¬ Ï€Ï�Î±ÎºÏ„Î¹ÎºÎ¬ - Ï€Î¿Ï„ÎµÎ»Î­ÏƒÎ¼Î±Ï„Î± ÏˆÎ·Ï†Î¿Ï†Î¿Ï�Î¹ÏŽÎ½"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Minutes - Vote Result"
+                },
+                "fi": {
+                    "skos:prefLabel": "PÃ¶ytÃ¤kirja - Ã„Ã¤nestysten tulokset"
+                },
+                "pt": {
+                    "skos:prefLabel": "Acta - Resultados das votaÃ§Ãµes"
+                },
+                "pl": {
+                    "skos:prefLabel": "ProtokÃ³Å‚ - Wyniki gÅ‚osowania"
+                },
+                "bg": {
+                    "skos:prefLabel": "ÐŸÑ€Ð¾Ñ‚Ð¾ÐºÐ¾Ð» - Ð ÐµÐ·ÑƒÐ»Ñ‚Ð°Ñ‚Ð¸ Ð¾Ñ‚ Ñ€Ð°Ð·Ð»Ð¸Ñ‡Ð½Ð¸Ñ‚Ðµ Ð³Ð»Ð°Ñ�ÑƒÐ²Ð°Ð½Ð¸Ñ�"
+                },
+                "sv": {
+                    "skos:prefLabel": "Protokoll - OmrÃ¶stningsresultat"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s-verbal- RÃ©sultats des votes"
+                },
+                "en": {
+                    "skos:prefLabel": "Minutes - Vote Result"
+                },
+                "et": {
+                    "skos:prefLabel": "Protokoll - HÃ¤Ã¤letustulemused"
+                },
+                "es": {
+                    "skos:prefLabel": "Acta - Resultados de las votaciones"
+                },
+                "nl": {
+                    "skos:prefLabel": "Notulen - Uitslag van de stemming"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlOj_Week",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Tagesordnung - Tagung"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Week Agenda"
+                },
+                "fr": {
+                    "skos:prefLabel": "Ordre du jour de session plÃ©niÃ¨re"
+                },
+                "en": {
+                    "skos:prefLabel": "Plenary session agenda"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEpNlegdc",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Nichtlegislative Entscheidung"
+                },
+                "zu": {
+                    "rdfs:label": "EP - Non legislative decision"
+                },
+                "fr": {
+                    "skos:prefLabel": "DÃ©cision non lÃ©gislative"
+                },
+                "en": {
+                    "skos:prefLabel": "Non legislative decision"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCpOj",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Conference of President - Agenda"
+                },
+                "fr": {
+                    "skos:prefLabel": "Ordre du jour - La ConfÃ©rence des prÃ©sidents"
+                },
+                "en": {
+                    "skos:prefLabel": "Agenda - The Conference of Presidents"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iOtPeti_Sum",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Zusammenfassung der Petition"
+                },
+                "zu": {
+                    "rdfs:label": "Other - Petition - Summary"
+                },
+                "fr": {
+                    "skos:prefLabel": "Summary of petition"
+                },
+                "en": {
+                    "skos:prefLabel": "Summary of petition"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEiAvcbAbc",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Stellungnahme der EuropÃ¤ischen Zentralbank"
+                },
+                "zu": {
+                    "rdfs:label": "EI - AVCB_ABC - ECB opinion "
+                },
+                "fr": {
+                    "skos:prefLabel": "Opinion of the European Central Bank"
+                },
+                "en": {
+                    "skos:prefLabel": "Opinion of the European Central Bank"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlReqo_Err",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Plenary - Motion for resolution - Motion - Oral question - Erratum"
+                },
+                "fr": {
+                    "skos:prefLabel": "Erratum Ã  Questions orales de l'heure des questions"
+                },
+                "en": {
+                    "skos:prefLabel": "Erratum to Oral questions from question time"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCpPvsg",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Conference of President - Suggestions"
+                },
+                "fr": {
+                    "skos:prefLabel": "RÃ©sumÃ© et suggestion - La ConfÃ©rence des prÃ©sidents"
+                },
+                "en": {
+                    "skos:prefLabel": "Summary and suggestion - The Conference of Presidents"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iOtPeti",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Petition"
+                },
+                "zu": {
+                    "rdfs:label": "Other - Petition"
+                },
+                "fr": {
+                    "skos:prefLabel": "PÃ©tition"
+                },
+                "en": {
+                    "skos:prefLabel": "Petition"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iClPlegPos",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Standpunkt des Rates in erster Lesung - EuropÃ¤ischer Rat"
+                },
+                "zu": {
+                    "rdfs:label": "European Council - Legislative proposal - Council's position in 1st reading"
+                },
+                "fr": {
+                    "skos:prefLabel": "Position du Conseil en 1Â° lecture - Conseil EuropÃ©en"
+                },
+                "en": {
+                    "skos:prefLabel": "Council's position in 1st reading - European Council"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iBuPvsg",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Bureau - Suggestions"
+                },
+                "fr": {
+                    "skos:prefLabel": "Suggestion - Bureau"
+                },
+                "en": {
+                    "skos:prefLabel": "Suggestion - Bureau"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlPv-Fnl_Sit",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "sl": {
+                    "skos:prefLabel": "Zapisnik - KonÄ�na izdaja"
+                },
+                "sk": {
+                    "skos:prefLabel": "ZÃ¡pisnica - FinÃ¡lna verzia"
+                },
+                "ro": {
+                    "skos:prefLabel": "Proces-verbal - EdiÅ£ie definitivÄƒ"
+                },
+                "da": {
+                    "skos:prefLabel": "Protokol - Endelig udgave"
+                },
+                "it": {
+                    "skos:prefLabel": "Processo verbale - Edizione definitiva"
+                },
+                "mt": {
+                    "skos:prefLabel": "Minuti - VerÅ¼joni finali"
+                },
+                "hu": {
+                    "skos:prefLabel": "JegyzÅ‘kÃ¶nyv - VÃ©gleges kiadÃ¡s"
+                },
+                "lv": {
+                    "skos:prefLabel": "Protokols - GalÄ«gÄ� redakcija"
+                },
+                "lt": {
+                    "skos:prefLabel": "Protokolas - GalutinÄ— teksto versija"
+                },
+                "cs": {
+                    "skos:prefLabel": "ZÃ¡pis - KoneÄ�nÃ© znÄ›nÃ­"
+                },
+                "de": {
+                    "skos:prefLabel": "EndgÃ¼ltiges Sitzungsprotokoll - Sitzung"
+                },
+                "el": {
+                    "skos:prefLabel": "Î£Ï…Î½Î¿Ï€Ï„Î¹ÎºÎ¬ Ï€Ï�Î±ÎºÏ„Î¹ÎºÎ¬ - ÎŸÏ�Î¹ÏƒÏ„Î¹ÎºÎ® Î­ÎºÎ´Î¿ÏƒÎ·"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Minutes - Final - Sitting"
+                },
+                "fi": {
+                    "skos:prefLabel": "PÃ¶ytÃ¤kirja - Lopullinen painos"
+                },
+                "pt": {
+                    "skos:prefLabel": "Acta - EdiÃ§Ã£o definitiva"
+                },
+                "pl": {
+                    "skos:prefLabel": "ProtokÃ³Å‚ - Wersja ostateczna"
+                },
+                "bg": {
+                    "skos:prefLabel": "ÐŸÑ€Ð¾Ñ‚Ð¾ÐºÐ¾Ð» - ÐžÐºÐ¾Ð½Ñ‡Ð°Ñ‚ÐµÐ»Ð½Ð° Ð²ÐµÑ€Ñ�Ð¸Ñ�"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s-verbal dÃ©finitif - SÃ©ance plÃ©niÃ¨re"
+                },
+                "sv": {
+                    "skos:prefLabel": "Protokoll - Slutlig utgÃ¥va"
+                },
+                "en": {
+                    "skos:prefLabel": "Final minutes - Plenary sitting"
+                },
+                "et": {
+                    "skos:prefLabel": "Protokoll - LÃµplik vÃ¤ljaanne"
+                },
+                "es": {
+                    "skos:prefLabel": "Acta - EdiciÃ³n definitiva"
+                },
+                "nl": {
+                    "skos:prefLabel": "Notulen - Definitieve uitgave"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCnNw",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Conciliation Committee - News"
+                },
+                "fr": {
+                    "skos:prefLabel": "Nouvelles de la CodÃ©cision"
+                },
+                "en": {
+                    "skos:prefLabel": "Codecision News"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCmOj",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Tagesordnung  der Ausschusssitzung"
+                },
+                "zu": {
+                    "rdfs:label": "Committee - Agenda"
+                },
+                "fr": {
+                    "skos:prefLabel": "Ordre du jour de commission"
+                },
+                "en": {
+                    "skos:prefLabel": "Committee agenda"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEiCjud",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "EU-Organ - Entscheidung des Gerichtshofs"
+                },
+                "zu": {
+                    "rdfs:label": "EI - Court of Justice decision"
+                },
+                "fr": {
+                    "skos:prefLabel": "EI - DÃ©cision de la cour de justice"
+                },
+                "en": {
+                    "skos:prefLabel": "EI - Court of Justice decision"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCmOp",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Stellungnahme"
+                },
+                "zu": {
+                    "rdfs:label": "Committee - Opinion"
+                },
+                "fr": {
+                    "skos:prefLabel": "Avis"
+                },
+                "en": {
+                    "skos:prefLabel": "Opinion"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPuStdy_Sum",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Studie Kurzbeschreibung"
+                },
+                "zu": {
+                    "rdfs:label": "EP publications - Summary to study"
+                },
+                "fr": {
+                    "skos:prefLabel": "RÃ©sumÃ© d'une Ã©tude"
+                },
+                "en": {
+                    "skos:prefLabel": "Study summary"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlCre-Rev_Sit",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "CRE Revidierte Fassung - Sitzung"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Verbatim report - Revised"
+                },
+                "fr": {
+                    "skos:prefLabel": "CRE RevisÃ© - SÃ©ance"
+                },
+                "en": {
+                    "skos:prefLabel": "CRE Revised - Plenary sitting"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iDlMeeting",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Delegation meeting"
+                },
+                "zu": {
+                    "rdfs:label": "Delegation - Meeting"
+                },
+                "fr": {
+                    "skos:prefLabel": "RÃ©union de dÃ©lÃ©gation parlementaire"
+                },
+                "en": {
+                    "skos:prefLabel": "Delegation meeting"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEiAvcbAce",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Stellungnahme des EuropÃ¤ischen Wirtschafts- und Sozialausschusses"
+                },
+                "zu": {
+                    "rdfs:label": "EI - AVCB_ACE - ECB opinion "
+                },
+                "fr": {
+                    "skos:prefLabel": "Opinion of the European Economic and Social Committee"
+                },
+                "en": {
+                    "skos:prefLabel": "Opinion of the European Economic and Social Committee"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlPv_Att",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "sl": {
+                    "skos:prefLabel": "Zapisnik - Seznam navzoÄ�ih"
+                },
+                "sk": {
+                    "skos:prefLabel": "ZÃ¡pisnica - PrezenÄ�nÃ¡ listina"
+                },
+                "da": {
+                    "skos:prefLabel": "Protokol - Deltagerliste"
+                },
+                "ro": {
+                    "skos:prefLabel": "Proces-verbal - Lista de prezenÅ£Äƒ"
+                },
+                "it": {
+                    "skos:prefLabel": "Processo verbale - Elenco di presenza"
+                },
+                "mt": {
+                    "skos:prefLabel": "Minuti - Lista tal-Membri preÅ¼enti"
+                },
+                "hu": {
+                    "skos:prefLabel": "JegyzÅ‘kÃ¶nyv - JelenlÃ©ti Ã­v"
+                },
+                "lv": {
+                    "skos:prefLabel": "Protokols - ApmeklÄ“jumu reÄ£istrs"
+                },
+                "lt": {
+                    "skos:prefLabel": "Protokolas - DalyvaujanÄ�iÅ³jÅ³ sÄ…raÅ¡as"
+                },
+                "cs": {
+                    "skos:prefLabel": "ZÃ¡pis - PrezenÄ�nÃ­ listina"
+                },
+                "de": {
+                    "skos:prefLabel": "Fassung des Protokolls - Punkt"
+                },
+                "el": {
+                    "skos:prefLabel": "Î£Ï…Î½Î¿Ï€Ï„Î¹ÎºÎ¬ Ï€Ï�Î±ÎºÏ„Î¹ÎºÎ¬ - ÎšÎ±Ï„Î¬ÏƒÏ„Î±ÏƒÎ· Ï€Î±Ï�ÏŒÎ½Ï„Ï‰Î½"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Minutes - Attendance List"
+                },
+                "fi": {
+                    "skos:prefLabel": "PÃ¶ytÃ¤kirja - LÃ¤snÃ¤ololista"
+                },
+                "pt": {
+                    "skos:prefLabel": "Acta - Lista de presenÃ§as"
+                },
+                "pl": {
+                    "skos:prefLabel": "ProtokÃ³Å‚ - Lista obecnoÅ›ci"
+                },
+                "bg": {
+                    "skos:prefLabel": "ÐŸÑ€Ð¾Ñ‚Ð¾ÐºÐ¾Ð» - Ð¡Ð¿Ð¸Ñ�ÑŠÐº Ð½Ð° Ð¿Ñ€Ð¸Ñ�ÑŠÑ�Ñ‚Ð²Ð°Ð»Ð¸Ñ‚Ðµ"
+                },
+                "sv": {
+                    "skos:prefLabel": "Protokoll - NÃ¤rvarolista"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s-verbal - Attendance List"
+                },
+                "en": {
+                    "skos:prefLabel": "Minutes - Attendance List"
+                },
+                "et": {
+                    "skos:prefLabel": "Protokoll - Kohalolijate nimekiri"
+                },
+                "es": {
+                    "skos:prefLabel": "Acta - Lista de presencia"
+                },
+                "nl": {
+                    "skos:prefLabel": "Notulen - Presentielijst"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMaQw-Pri_Asw-Pre",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "VorlÃ¤ufige Antwort auf eine schriftliche Anfrage mit Vorrang"
+                },
+                "zu": {
+                    "rdfs:label": "Members Activities - Questions - Written Questions - Prior"
+                },
+                "fr": {
+                    "skos:prefLabel": "RÃ©ponse prÃ©liminaire Ã  une question Ã©crite prioritaire"
+                },
+                "en": {
+                    "skos:prefLabel": "Preliminary answer to priority written question"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPrNwla",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Ausblick "
+                },
+                "zu": {
+                    "rdfs:label": "Press - News - News Looking ahead"
+                },
+                "fr": {
+                    "skos:prefLabel": "Perspectives"
+                },
+                "en": {
+                    "skos:prefLabel": "Looking ahead "
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iOtPropia",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Vorschlag fÃ¼r ein internationales Abkommen"
+                },
+                "zu": {
+                    "rdfs:label": "Other - Proposal for international agreement"
+                },
+                "fr": {
+                    "skos:prefLabel": "Proposal for international agreement"
+                },
+                "en": {
+                    "skos:prefLabel": "Proposal for international agreement"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCnHdbk",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Conciliation Committee - Handbook"
+                },
+                "fr": {
+                    "skos:prefLabel": "Manuel de la Conciliation"
+                },
+                "en": {
+                    "skos:prefLabel": "Conciliation handbook"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iBlActp",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Bulletins - Activities - Post-session"
+                },
+                "fr": {
+                    "skos:prefLabel": "ActivitÃ©s - Post session"
+                },
+                "en": {
+                    "skos:prefLabel": "Activities - Post-session"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlPv-Prv_Itm",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "VorlÃ¤ufige Fassung des Protokolls - Punkt"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Minutes - Prov - Item"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s-verbal provisoire  - Point"
+                },
+                "en": {
+                    "skos:prefLabel": "Provisional minutes - Item"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlPv-Prv_Ann",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "VorlÃ¤ufige Fassung des Protokolls - Anhang"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Minutes - Prov - Annex"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s-verbal provisoire  - Annexe"
+                },
+                "en": {
+                    "skos:prefLabel": "Provisional minutes - Annex"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iDlMrp",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Delegation - Mission report"
+                },
+                "fr": {
+                    "skos:prefLabel": "Rapport de mission - Documents des dÃ©lÃ©gations parlementaires"
+                },
+                "en": {
+                    "skos:prefLabel": "Mission report - Parliamentary delegations' documents"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlTa-Prv_ItmCor",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Korrigendum zum angenommenen Text (vorlÃ¤ufig)"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Adopted text - Provisional - Corrigendum to Item"
+                },
+                "fr": {
+                    "skos:prefLabel": "Texte adoptÃ© (Provisional - Corrigendum)"
+                },
+                "en": {
+                    "skos:prefLabel": "Corrigendum to Adopted text (Provisional)"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPuStdy_Ann",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Studie  Anlage"
+                },
+                "zu": {
+                    "rdfs:label": "EP publications - Annex to study"
+                },
+                "fr": {
+                    "skos:prefLabel": "Annexe Ã  une Ã©tude"
+                },
+                "en": {
+                    "skos:prefLabel": "Study annex"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlOj-Fnl_Sit",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Tagesordnung - Sitzung"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Sitting Agenda - Final"
+                },
+                "fr": {
+                    "skos:prefLabel": "Ordre du jour de sÃ©ance plÃ©niÃ¨re"
+                },
+                "en": {
+                    "skos:prefLabel": "Plenary sitting agenda"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCmRp-Dft",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Entwurf eines Berichts"
+                },
+                "zu": {
+                    "rdfs:label": "Committee - Report - Draft"
+                },
+                "fr": {
+                    "skos:prefLabel": "Projet de rapport"
+                },
+                "en": {
+                    "skos:prefLabel": "Draft report"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iNpContrib",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Beitrag"
+                },
+                "zu": {
+                    "rdfs:label": "NP - Contribution"
+                },
+                "fr": {
+                    "skos:prefLabel": "Contribution"
+                },
+                "en": {
+                    "skos:prefLabel": "Contribution"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEiDoc_Amd",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "EI - C document - Amendment"
+                },
+                "zu": {
+                    "rdfs:label": "EI - C document - Amendment"
+                },
+                "fr": {
+                    "skos:prefLabel": "EI - Document C - Amendement"
+                },
+                "en": {
+                    "skos:prefLabel": "EI - C document - Amendment"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlOj-Fnl_Week",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Tagesordnung - Tagung"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Week Agenda - Final"
+                },
+                "fr": {
+                    "skos:prefLabel": "Ordre du jour de session plÃ©niÃ¨re"
+                },
+                "en": {
+                    "skos:prefLabel": "Plenary session agenda"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEcRgpr",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Regulatory procedure with scrutiny - European commission"
+                },
+                "zu": {
+                    "rdfs:label": "EC - Regulatory procedure with scrutiny"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ©dure de rÃ©glementation avec contrÃ´le - Commission EuropÃ©enne"
+                },
+                "en": {
+                    "skos:prefLabel": "Regulatory procedure with scrutiny - European commission"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlTa-Fnl_Sit",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Plenary - Adopted text - Sitting - Final"
+                },
+                "fr": {
+                    "skos:prefLabel": "Textes adoptÃ©s en sÃ©ance (Final)"
+                },
+                "en": {
+                    "skos:prefLabel": "Adopted texts of the sitting (Final)"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlRc_Amd",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Ã„nderungsantrag zum gemeinsamen EntschlieÃŸungsantrag"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Motion for resolution - Joint motion for resolution - Amendment"
+                },
+                "fr": {
+                    "skos:prefLabel": "Amendement Ã  une proposition de rÃ©solution commune"
+                },
+                "en": {
+                    "skos:prefLabel": "Amendment to Joint motion for resolution"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlCre_Sit",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "hr": {
+                    "skos:prefLabel": "Rasprave"
+                },
+                "ro": {
+                    "skos:prefLabel": "Dezbateri"
+                },
+                "hu": {
+                    "skos:prefLabel": "VitÃ¡k"
+                },
+                "lv": {
+                    "skos:prefLabel": "Debates"
+                },
+                "lt": {
+                    "skos:prefLabel": "Diskusijos"
+                },
+                "ga": {
+                    "skos:prefLabel": "DÃ­ospÃ³ireachtaÃ­"
+                },
+                "de": {
+                    "skos:prefLabel": "Plenardebatten"
+                },
+                "fi": {
+                    "skos:prefLabel": "Puheenvuorot"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Verbatim report"
+                },
+                "sv": {
+                    "skos:prefLabel": "Debatter"
+                },
+                "bg": {
+                    "skos:prefLabel": "Ð Ð°Ð·Ð¸Ñ�ÐºÐ²Ð°Ð½Ð¸Ñ�"
+                },
+                "fr": {
+                    "skos:prefLabel": "DÃ©bats"
+                },
+                "sl": {
+                    "skos:prefLabel": "Razprave"
+                },
+                "sk": {
+                    "skos:prefLabel": "Rozpravy"
+                },
+                "da": {
+                    "skos:prefLabel": "Forhandlinger"
+                },
+                "it": {
+                    "skos:prefLabel": "Discussioni"
+                },
+                "mt": {
+                    "skos:prefLabel": "Dibattiti"
+                },
+                "cs": {
+                    "skos:prefLabel": "Rozpravy"
+                },
+                "el": {
+                    "skos:prefLabel": "Î£Ï…Î¶Î·Ï„Î®ÏƒÎµÎ¹Ï‚"
+                },
+                "pl": {
+                    "skos:prefLabel": "Debaty"
+                },
+                "pt": {
+                    "skos:prefLabel": "Debates"
+                },
+                "en": {
+                    "skos:prefLabel": "Debates"
+                },
+                "et": {
+                    "skos:prefLabel": "Arutelud"
+                },
+                "es": {
+                    "skos:prefLabel": "Debates"
+                },
+                "nl": {
+                    "skos:prefLabel": "Debatten"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlBdis",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Haushalt - Entlastung"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Budget - Discharge"
+                },
+                "fr": {
+                    "skos:prefLabel": "Budget - DÃ©charge"
+                },
+                "en": {
+                    "skos:prefLabel": "Budget - Discharge"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iDlCme",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Delegation - Notice to members"
+                },
+                "fr": {
+                    "skos:prefLabel": "Ordre du jour - Documents des dÃ©lÃ©gations parlementaires"
+                },
+                "en": {
+                    "skos:prefLabel": "Notice to members - Parliamentary delegations' documents"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlCre-Prv_Itm",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "CRE VorlÃ¤ufige Fassung - Punkt"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Verbatim report - Prov - Item"
+                },
+                "fr": {
+                    "skos:prefLabel": "CRE Provisoire - Point"
+                },
+                "en": {
+                    "skos:prefLabel": "CRE Provisional - Item"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iClDecl",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "ErklÃ¤rung - EuropÃ¤ischer Rat"
+                },
+                "zu": {
+                    "rdfs:label": "European Council - Declaration"
+                },
+                "fr": {
+                    "skos:prefLabel": "DÃ©claration du Conseil EuropÃ©en"
+                },
+                "en": {
+                    "skos:prefLabel": "Declaration of European Council"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCcPvsg",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Conference of Committee - Suggestions"
+                },
+                "fr": {
+                    "skos:prefLabel": "Suggestion - ConfÃ©rence des prÃ©sidents des commissions parlementaires"
+                },
+                "en": {
+                    "skos:prefLabel": "Suggestion - Conference of Committee Chairmen"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMaQw-Pri_Asw",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Antwort auf eine schriftliche Anfrage mit Vorrang"
+                },
+                "zu": {
+                    "rdfs:label": "Members Activities - Questions - Written Questions - Prior"
+                },
+                "fr": {
+                    "skos:prefLabel": "RÃ©ponse Ã  une question Ã©crite prioritaire"
+                },
+                "en": {
+                    "skos:prefLabel": "Answer to priority written question"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iDlRcm",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Delegation - Recommendation"
+                },
+                "fr": {
+                    "skos:prefLabel": "Recommandation - Documents des dÃ©lÃ©gations parlementaires"
+                },
+                "en": {
+                    "skos:prefLabel": "Recommendation - Parliamentary delegations' documents"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlTa-Prv_Itm",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Plenary - Adopted text - Provisional - Item"
+                },
+                "fr": {
+                    "skos:prefLabel": "Texte adoptÃ© (Provisoire)"
+                },
+                "en": {
+                    "skos:prefLabel": "Adopted text (Provisional)"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlOj-Fnd_Itm",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Plenary - Agenda - FinalDraft - Item"
+                },
+                "fr": {
+                    "skos:prefLabel": "Projet dÃ©finitif d'ordre du jour - Point"
+                },
+                "en": {
+                    "skos:prefLabel": "Final draft agenda - Item"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEpRegl_Idx",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "GeschÃ¤ftsordnung des EP Index"
+                },
+                "zu": {
+                    "rdfs:label": "EP Rules - Index"
+                },
+                "fr": {
+                    "skos:prefLabel": "Table analytique du RÃ¨glement PE"
+                },
+                "en": {
+                    "skos:prefLabel": "Rules EP index"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCmOp-Dft_Amd",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Ã„nderungsantrag"
+                },
+                "zu": {
+                    "rdfs:label": "Committee - Opinion - Draft - Amendment"
+                },
+                "fr": {
+                    "skos:prefLabel": "Amendement"
+                },
+                "en": {
+                    "skos:prefLabel": "Amendment"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMaQw_Asw-Sup",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "ErgÃ¤nzende Antwort auf eine schriftliche Anfrage"
+                },
+                "zu": {
+                    "rdfs:label": "Members Activities - Questions - Written Questions - Supplementary answer"
+                },
+                "fr": {
+                    "skos:prefLabel": "RÃ©ponse supplÃ©mentaire Ã  une question Ã©crite"
+                },
+                "en": {
+                    "skos:prefLabel": "Supplementary answer to written question"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPrNwna",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Nationale Sicht - Pressemitteilung "
+                },
+                "zu": {
+                    "rdfs:label": "Press - News - News - National angle"
+                },
+                "fr": {
+                    "skos:prefLabel": "Angle de vue - CommuniquÃ© de presse"
+                },
+                "en": {
+                    "skos:prefLabel": "National angle - Press release "
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iTrCtin",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Column table for interinstitutional negotiations  (four-column documents)"
+                },
+                "zu": {
+                    "rdfs:label": "Trilogue - Column table"
+                },
+                "fr": {
+                    "skos:prefLabel": "Tableau colonne pour les nÃ©gociations interinstitutionnelles (document quatre colonnes)"
+                },
+                "en": {
+                    "skos:prefLabel": "Column table for interinstitutional negotiations  (four-column documents)"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlPv-Fnl_Vot",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "EndgÃ¼ltige Fassung des Protokolls - Abstimmungsergebnis"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Minutes - Final - Vote Result"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s-verbal dÃ©finitif - RÃ©sultats des votes"
+                },
+                "en": {
+                    "skos:prefLabel": "Final minutes - Vote Result"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPrNwacp",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Press - News - News ACP The week"
+                },
+                "fr": {
+                    "skos:prefLabel": "ACP Le point de la session"
+                },
+                "en": {
+                    "skos:prefLabel": "ACP The week "
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEpRegl_Toc",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "GeschÃ¤ftsordnung des EP Inhalt"
+                },
+                "zu": {
+                    "rdfs:label": "EP Rules - TOC"
+                },
+                "fr": {
+                    "skos:prefLabel": "Table des matiÃ¨res du RÃ¨glement PE"
+                },
+                "en": {
+                    "skos:prefLabel": "Rules EP table of content"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iOtPropcd",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Kodifizierungsvorschlag"
+                },
+                "zu": {
+                    "rdfs:label": "Other - Proposal for codification"
+                },
+                "fr": {
+                    "skos:prefLabel": "Proposal for codification"
+                },
+                "en": {
+                    "skos:prefLabel": "Proposal for codification"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlPv-Fnl_Att",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "EndgÃ¼ltige Fassung des Protokolls - Punkt"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Minutes - Final - Attendance List"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s-verbal dÃ©finitif - Attendance List"
+                },
+                "en": {
+                    "skos:prefLabel": "Final minutes - Attendance List"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlTa_Itm",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Angenommener Text"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Adopted text - Item"
+                },
+                "fr": {
+                    "skos:prefLabel": "Texte adoptÃ©"
+                },
+                "en": {
+                    "skos:prefLabel": "Adopted text"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPrNwaud",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Press - News - News Audio-visual"
+                },
+                "fr": {
+                    "skos:prefLabel": "Document audiovisuel"
+                },
+                "en": {
+                    "skos:prefLabel": "Audio-visual document"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlCre_Int",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Plenardebatten - Wortmeldung"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Verbatim report - Intervention"
+                },
+                "fr": {
+                    "skos:prefLabel": "DÃ©bats - Intervention"
+                },
+                "en": {
+                    "skos:prefLabel": "DÃ©bats - Intervention"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlOj-Dft_Itm",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Plenary - Agenda - Draft - Item"
+                },
+                "fr": {
+                    "skos:prefLabel": "Projet d'ordre du jour -Point"
+                },
+                "en": {
+                    "skos:prefLabel": "Draft agenda - Item"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEcRgpr_Ann",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Regulatory procedure with scrutiny - European commission - Annex"
+                },
+                "zu": {
+                    "rdfs:label": "EC - Regulatory procedure with scrutiny - Annex"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ©dure de rÃ©glementation avec contrÃ´le - Commission EuropÃ©enne - Annexe"
+                },
+                "en": {
+                    "skos:prefLabel": "Regulatory procedure with scrutiny - European commission - Annex"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEcDcon",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "EC - CEU document"
+                },
+                "fr": {
+                    "skos:prefLabel": "Document CEU - Commission EuropÃ©enne"
+                },
+                "en": {
+                    "skos:prefLabel": "CEU document - European commission"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEcPvdc",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Entscheidung - EuropÃ¤ische Kommission"
+                },
+                "zu": {
+                    "rdfs:label": "EC - Decisions"
+                },
+                "fr": {
+                    "skos:prefLabel": "DÃ©cision - Commission EuropÃ©enne"
+                },
+                "en": {
+                    "skos:prefLabel": "Decision - European commission"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iBuOj",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Bureau - Agenda"
+                },
+                "fr": {
+                    "skos:prefLabel": "Ordre du jour - Bureau"
+                },
+                "en": {
+                    "skos:prefLabel": "Agenda - Bureau"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEcScru",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Right of scrutiny - European commission"
+                },
+                "zu": {
+                    "rdfs:label": "EC - Right of scrutiny"
+                },
+                "fr": {
+                    "skos:prefLabel": "Right of scrutiny - Commission EuropÃ©enne"
+                },
+                "en": {
+                    "skos:prefLabel": "Right of scrutiny - European commission"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCnJoin",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Vom Vermittlungsausschuss gebilligter gemeinsamer Entwurf"
+                },
+                "zu": {
+                    "rdfs:label": "Conciliation Committee - Joint text"
+                },
+                "fr": {
+                    "skos:prefLabel": "Projet commun approuvÃ© par le comitÃ© de Conciliation"
+                },
+                "en": {
+                    "skos:prefLabel": "Joint text approved by the Conciliation Committee"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMaQw_Asw-Pre",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "VorlÃ¤ufige Antwort auf eine schriftliche Anfrage"
+                },
+                "zu": {
+                    "rdfs:label": "Members Activities - Questions - Written Questions - Preliminary answer"
+                },
+                "fr": {
+                    "skos:prefLabel": "RÃ©ponse prÃ©liminaire Ã  une question Ã©crite"
+                },
+                "en": {
+                    "skos:prefLabel": "Preliminary answer to written question"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iTrInma_Amd",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Amendement to proposal for a mandate"
+                },
+                "zu": {
+                    "rdfs:label": "Trilogue - Proposal mandate - Amendment"
+                },
+                "fr": {
+                    "skos:prefLabel": "Amendement Ã  une proposition de mandat"
+                },
+                "en": {
+                    "skos:prefLabel": "Amendement to proposal for a mandate"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iDlWd",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Delegation - Working document"
+                },
+                "fr": {
+                    "skos:prefLabel": "Document de travail - Documents des dÃ©lÃ©gations parlementaires"
+                },
+                "en": {
+                    "skos:prefLabel": "Working document - Parliamentary delegations' documents"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPrNwoj",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Die kommende Woche"
+                },
+                "zu": {
+                    "rdfs:label": "Press - News - News Agenda"
+                },
+                "fr": {
+                    "skos:prefLabel": "The Week Ahead"
+                },
+                "en": {
+                    "skos:prefLabel": "La semaine Ã  venir"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCmManual",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Handbuch"
+                },
+                "zu": {
+                    "rdfs:label": "Other - Manual"
+                },
+                "fr": {
+                    "skos:prefLabel": "Manuel"
+                },
+                "en": {
+                    "skos:prefLabel": "Manual"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlPv-Fnl_Itm",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "EndgÃ¼ltige Fassung des Protokolls - namentliche Abstimmungen"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Minutes - Final - Item"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s-verbal dÃ©finitif - Point"
+                },
+                "en": {
+                    "skos:prefLabel": "Final minutes - Item"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCmRe-Dft",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Entwurf eines EntschlieÃŸungsantrags"
+                },
+                "zu": {
+                    "rdfs:label": "Committee - Motion for resolution - Draft"
+                },
+                "fr": {
+                    "skos:prefLabel": "Projet de proposition de rÃ©solution"
+                },
+                "en": {
+                    "skos:prefLabel": "Draft motion for resolution"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlTa-Fnl_ItmCor",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Korrigendum zum angenommenen Text (endgÃ¼ltig)"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Adopted text - Final - Corrigendum to Item"
+                },
+                "fr": {
+                    "skos:prefLabel": "Corrigendum pour un texte adoptÃ© (Final)"
+                },
+                "en": {
+                    "skos:prefLabel": "Corrigendum to Adopted text (Final)"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlBams",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Berichtigungs- und Nachtragshaushaltsplan"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Supplementary and amending budget"
+                },
+                "fr": {
+                    "skos:prefLabel": "Supplementary and amending budget"
+                },
+                "en": {
+                    "skos:prefLabel": "Supplementary and amending budget"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCmRp-Dft_Amd",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Ã„nderungsantrag"
+                },
+                "zu": {
+                    "rdfs:label": "Committee - Opinion - Draft - Amendment"
+                },
+                "fr": {
+                    "skos:prefLabel": "Amendement"
+                },
+                "en": {
+                    "skos:prefLabel": "Amendment"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlCre-Fnl_Ann",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "CRE EndgÃ¼ltige Fassung - Anhang"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Verbatim report - Final - Annex"
+                },
+                "fr": {
+                    "skos:prefLabel": "CRE Final - Annexe"
+                },
+                "en": {
+                    "skos:prefLabel": "CRE Final - Annex"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEpRegl",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "GeschÃ¤ftsordnung des EP"
+                },
+                "zu": {
+                    "rdfs:label": "EP Rules"
+                },
+                "fr": {
+                    "skos:prefLabel": "RÃ¨glement intÃ©rieur du PE"
+                },
+                "en": {
+                    "skos:prefLabel": "EP Rules of procedure"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPrNwifg",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Aktuelles aus dem EP - Infografik"
+                },
+                "zu": {
+                    "rdfs:label": "Press - News - Infography"
+                },
+                "fr": {
+                    "skos:prefLabel": "ActualitÃ©s PE - Infographie"
+                },
+                "en": {
+                    "skos:prefLabel": "EP News - Infographic"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMaDecl",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Schriftliche ErklÃ¤rung"
+                },
+                "zu": {
+                    "rdfs:label": "Members Activities - Written declaration"
+                },
+                "fr": {
+                    "skos:prefLabel": "DÃ©claration Ã©crite"
+                },
+                "en": {
+                    "skos:prefLabel": "Written declaration"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMaMbst",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Members' statute"
+                },
+                "zu": {
+                    "rdfs:label": "Members Activities - Members' statute"
+                },
+                "fr": {
+                    "skos:prefLabel": "Statut des dÃ©putÃ©s"
+                },
+                "en": {
+                    "skos:prefLabel": "Members' statute"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlOj-Fnd_Sit",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Plenary - Sitting Agenda - Draft"
+                },
+                "fr": {
+                    "skos:prefLabel": "Projet dÃ©finitif d'ordre du jour de sÃ©ance plÃ©niÃ¨re"
+                },
+                "en": {
+                    "skos:prefLabel": "Plenary sitting final draft agenda"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlReqo",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "MÃ¼ndliche Anfragen aus der Fragestunde"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Motion for resolution - Motion - Oral question"
+                },
+                "fr": {
+                    "skos:prefLabel": "Questions orales de l'heure des questions"
+                },
+                "en": {
+                    "skos:prefLabel": "Oral questions from question time"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMaQcnf",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Question to the conf. of presidents of the pol. groups"
+                },
+                "zu": {
+                    "rdfs:label": "Members Activities - Questions - Question to the conference of presidents of the political groups"
+                },
+                "fr": {
+                    "skos:prefLabel": "Questions Ã  la ConfÃ©rence des PrÃ©sidents des groupes politiques"
+                },
+                "en": {
+                    "skos:prefLabel": "Question to the conf. of presidents of the pol. groups"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPrNwart",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Aktuelles aus dem EP - Artikel "
+                },
+                "zu": {
+                    "rdfs:label": "Press - News - News Article"
+                },
+                "fr": {
+                    "skos:prefLabel": "ActualitÃ©s PE - Article "
+                },
+                "en": {
+                    "skos:prefLabel": "EP News - Article "
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCmOp-Dft",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Entwurf einer Stellungnahme"
+                },
+                "zu": {
+                    "rdfs:label": "Committee - Opinion - Draft"
+                },
+                "fr": {
+                    "skos:prefLabel": "Projet d'avis"
+                },
+                "en": {
+                    "skos:prefLabel": "Draft opinion"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCpCre",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Conference of President - Verbatim report"
+                },
+                "fr": {
+                    "skos:prefLabel": "Compte rendu in extenso - La ConfÃ©rence des prÃ©sidents"
+                },
+                "en": {
+                    "skos:prefLabel": "Verbatim report - The Conference of Presidents"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlOj-Fnd_Week",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "EndgÃ¼ltiger Entwurf der Tagesordnung - Tagung"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Week Agenda - FinalDraft"
+                },
+                "fr": {
+                    "skos:prefLabel": "Projet dÃ©finitif d'ordre du jour de session plÃ©niÃ¨re"
+                },
+                "en": {
+                    "skos:prefLabel": "Plenary session draft agenda"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlTc2",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Konsolidierter Text (Zweite Lesung)"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Consolidated text - Second Reading"
+                },
+                "fr": {
+                    "skos:prefLabel": "Texte consolidÃ© (Seconde lecture)"
+                },
+                "en": {
+                    "skos:prefLabel": "Consolidated text (Second Reading)"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlTc1",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Konsolidierter Text (Erste Lesung)"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Consolidated text - First Reading"
+                },
+                "fr": {
+                    "skos:prefLabel": "Texte consolidÃ© (PremiÃ¨re lecture)"
+                },
+                "en": {
+                    "skos:prefLabel": "Consolidated text (First Reading)"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlPv-Prv_Rcv",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "sl": {
+                    "skos:prefLabel": "Zapisnik - ZaÄ�asna izdaja - Poimensko glasovanje"
+                },
+                "sk": {
+                    "skos:prefLabel": "ZÃ¡pisnica - PrechodnÃ¡ verzia - Hlasovania podÄ¾a mien"
+                },
+                "ro": {
+                    "skos:prefLabel": "Proces-verbal - EdiÅ£ie provizorie - Voturi prin apel nominal"
+                },
+                "da": {
+                    "skos:prefLabel": "Protokol - ForelÃ¸big udgave - Afstemning ved navneoprÃ¥b"
+                },
+                "it": {
+                    "skos:prefLabel": "Processo verbale - Edizione provvisoria - Votazioni per appello nominale"
+                },
+                "mt": {
+                    "skos:prefLabel": "Minuti - VerÅ¼joni proviÅ¼orja - Votazzjoni bis-sejÄ§a ta' l-ismijiet"
+                },
+                "hu": {
+                    "skos:prefLabel": "JegyzÅ‘kÃ¶nyv - Ideiglenes kiadÃ¡s - NÃ©v szerinti szavazÃ¡s"
+                },
+                "lv": {
+                    "skos:prefLabel": "Protokols - Pagaidu redakcija - Balsojumi pÄ“c saraksta"
+                },
+                "lt": {
+                    "skos:prefLabel": "Protokolas - NegalutinÄ— teksto versija - Vardinis balsavimas"
+                },
+                "cs": {
+                    "skos:prefLabel": "ZÃ¡pis - PÅ™edbÄ›Å¾nÃ© znÄ›nÃ­ - JmenovitÃ¡ hlasovÃ¡nÃ­"
+                },
+                "de": {
+                    "skos:prefLabel": "VorlÃ¤ufige Fassung des Protokolls - namentliche Abstimmungen"
+                },
+                "el": {
+                    "skos:prefLabel": "Î£Ï…Î½Î¿Ï€Ï„Î¹ÎºÎ¬ Ï€Ï�Î±ÎºÏ„Î¹ÎºÎ¬ - Î Ï�Î¿ÏƒÏ‰Ï�Î¹Î½Î® Î­ÎºÎ´Î¿ÏƒÎ· - ÎŸÎ½Î¿Î¼Î±ÏƒÏ„Î¹ÎºÎ­Ï‚ ÏˆÎ·Ï†Î¿Ï†Î¿Ï�Î¯ÎµÏ‚"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Minutes - Prov - Rol Call Votes"
+                },
+                "fi": {
+                    "skos:prefLabel": "PÃ¶ytÃ¤kirja - VÃ¤liaikainen painos - NimenhuutoÃ¤Ã¤nestykset"
+                },
+                "pl": {
+                    "skos:prefLabel": "ProtokÃ³Å‚ - Wersja tymczasowa - GÅ‚osowanie imienne"
+                },
+                "pt": {
+                    "skos:prefLabel": "Acta - EdiÃ§Ã£o provisÃ³ria - VotaÃ§Ãµes nominais"
+                },
+                "bg": {
+                    "skos:prefLabel": "ÐŸÑ€Ð¾Ñ‚Ð¾ÐºÐ¾Ð» - Ð�ÐµÐ¾ÐºÐ¾Ð½Ñ‡Ð°Ñ‚ÐµÐ»Ð½Ð° Ð²ÐµÑ€Ñ�Ð¸Ñ� - ÐŸÐ¾Ð¸Ð¼ÐµÐ½Ð½Ð¸ Ð³Ð»Ð°Ñ�ÑƒÐ²Ð°Ð½Ð¸Ñ�"
+                },
+                "sv": {
+                    "skos:prefLabel": "Protokoll - PreliminÃ¤r utgÃ¥va - OmrÃ¶stningar med namnupprop"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s-verbal provisoire  - Votes par appel nominal"
+                },
+                "en": {
+                    "skos:prefLabel": "Provisional minutes - Rol Call Votes"
+                },
+                "et": {
+                    "skos:prefLabel": "Protokoll - Ajutine vÃ¤ljaanne - Nimelise hÃ¤Ã¤letuse tulemused"
+                },
+                "es": {
+                    "skos:prefLabel": "Acta - EdiciÃ³n provisional - Votaciones nominales"
+                },
+                "nl": {
+                    "skos:prefLabel": "Notulen - Voorlopige uitgave - Hoofdelijke stemming"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPrNwpr",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Pressemitteilung "
+                },
+                "zu": {
+                    "rdfs:label": "Press - News - News Press release"
+                },
+                "fr": {
+                    "skos:prefLabel": "CommuniquÃ© de presse"
+                },
+                "en": {
+                    "skos:prefLabel": "Press release "
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlCre-Fnl_Sit",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "CRE EndgÃ¼ltige Fassung - Sitzung"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Verbatim report - Final"
+                },
+                "fr": {
+                    "skos:prefLabel": "CRE Final - SÃ©ance"
+                },
+                "en": {
+                    "skos:prefLabel": "CRE Final - Plenary sitting"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlCre-Rev_Ann",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "CRE Revidierte Fassung - Anhang"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Verbatim report - Revised - Annex"
+                },
+                "fr": {
+                    "skos:prefLabel": "CRE RÃ©visÃ© - Annexe"
+                },
+                "en": {
+                    "skos:prefLabel": "CRE Revised - Annex"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlMeeting",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Plenarsitzung"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Meeting"
+                },
+                "fr": {
+                    "skos:prefLabel": "SÃ©ance de plÃ©niÃ¨re"
+                },
+                "en": {
+                    "skos:prefLabel": "Plenary sitting"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPuAtag",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Auf einen Blick"
+                },
+                "zu": {
+                    "rdfs:label": "EP publications - At a glance"
+                },
+                "fr": {
+                    "skos:prefLabel": "En bref"
+                },
+                "en": {
+                    "skos:prefLabel": "At a glance"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iQsPv",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Quaestors - Minutes"
+                },
+                "fr": {
+                    "skos:prefLabel": "Minutes (Quaestors)"
+                },
+                "en": {
+                    "skos:prefLabel": "Minutes (Quaestors)"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlPv_Ann",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "sl": {
+                    "skos:prefLabel": "Zapisnik - Priloge"
+                },
+                "sk": {
+                    "skos:prefLabel": "ZÃ¡pisnica - PrÃ­lohy"
+                },
+                "ro": {
+                    "skos:prefLabel": "Proces-verbal - Anexe"
+                },
+                "da": {
+                    "skos:prefLabel": "Protokol - Bilag"
+                },
+                "it": {
+                    "skos:prefLabel": "Processo verbale - Allegati"
+                },
+                "mt": {
+                    "skos:prefLabel": "Minuti - Annessi"
+                },
+                "hu": {
+                    "skos:prefLabel": "JegyzÅ‘kÃ¶nyv - MellÃ©kletek"
+                },
+                "lv": {
+                    "skos:prefLabel": "Protokols - Pielikumi"
+                },
+                "lt": {
+                    "skos:prefLabel": "Protokolas - Priedai"
+                },
+                "cs": {
+                    "skos:prefLabel": "ZÃ¡pis - PÅ™Ã­lohy"
+                },
+                "de": {
+                    "skos:prefLabel": "Fassung des Protokolls - Anhang"
+                },
+                "el": {
+                    "skos:prefLabel": "Î£Ï…Î½Î¿Ï€Ï„Î¹ÎºÎ¬ Ï€Ï�Î±ÎºÏ„Î¹ÎºÎ¬ - Î Î±Ï�Î±Ï�Ï„Î®Î¼Î±Ï„Î±"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Minutes - Annex"
+                },
+                "fi": {
+                    "skos:prefLabel": "PÃ¶ytÃ¤kirja - Liitteet"
+                },
+                "pl": {
+                    "skos:prefLabel": "ProtokÃ³Å‚ - ZaÅ‚Ä…czniki"
+                },
+                "pt": {
+                    "skos:prefLabel": "Acta - Anexos"
+                },
+                "sv": {
+                    "skos:prefLabel": "Protokoll - Bilagor"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s-verbal - Annexe"
+                },
+                "bg": {
+                    "skos:prefLabel": "ÐŸÑ€Ð¾Ñ‚Ð¾ÐºÐ¾Ð» - ÐŸÑ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ�"
+                },
+                "en": {
+                    "skos:prefLabel": "Minutes - Annex"
+                },
+                "et": {
+                    "skos:prefLabel": "Protokoll - Lisad"
+                },
+                "es": {
+                    "skos:prefLabel": "Acta - Anexos"
+                },
+                "nl": {
+                    "skos:prefLabel": "Notulen - Bijlagen"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCmQo-Dft",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Entwurf einer mÃ¼ndlichen Anfrage"
+                },
+                "zu": {
+                    "rdfs:label": "Committee - Oral question- Draft"
+                },
+                "fr": {
+                    "skos:prefLabel": "Projet de question orale"
+                },
+                "en": {
+                    "skos:prefLabel": "Draft oral question"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iDlPv",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Delegation - Minutes"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s verbal - Documents des dÃ©lÃ©gations parlementaires"
+                },
+                "en": {
+                    "skos:prefLabel": "Minutes - Parliamentary delegations' documents"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMlOfmi",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Mails - Official mail - incoming"
+                },
+                "fr": {
+                    "skos:prefLabel": "Official mail - incoming"
+                },
+                "en": {
+                    "skos:prefLabel": "Official mail - incoming"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEiCad",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "EU-Organ - Dokument des Rechnungshofs"
+                },
+                "zu": {
+                    "rdfs:label": "EI - CA document"
+                },
+                "fr": {
+                    "skos:prefLabel": "EI - CA document"
+                },
+                "en": {
+                    "skos:prefLabel": "EI - CA document"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPuIdan",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Eingehende Analyse"
+                },
+                "zu": {
+                    "rdfs:label": "EP publications - In-Depth Analysis"
+                },
+                "fr": {
+                    "skos:prefLabel": "Analyse approfondie"
+                },
+                "en": {
+                    "skos:prefLabel": "In-depth Analysis"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iOtDoc",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Miscellaneous"
+                },
+                "zu": {
+                    "rdfs:label": "Other - Miscellaneous document"
+                },
+                "fr": {
+                    "skos:prefLabel": "Divers"
+                },
+                "en": {
+                    "skos:prefLabel": "Miscellaneous"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlDc_Amd",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Plenary - External text (C document) - Amendment"
+                },
+                "fr": {
+                    "skos:prefLabel": "Amendement Ã  un texte externe - Document C"
+                },
+                "en": {
+                    "skos:prefLabel": "Amendment to external text - C document"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEpLegdc",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Legislative Entscheidung"
+                },
+                "zu": {
+                    "rdfs:label": "EP - Legislative decision"
+                },
+                "fr": {
+                    "skos:prefLabel": "DÃ©cision lÃ©gislative"
+                },
+                "en": {
+                    "skos:prefLabel": "Legislative decision"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMlOfmo",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Mails - Official mail - outgoing"
+                },
+                "fr": {
+                    "skos:prefLabel": "Official mail - outgoing"
+                },
+                "en": {
+                    "skos:prefLabel": "Official mail - outgoing"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iTrLcag",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Coreper letter confirming agreement"
+                },
+                "zu": {
+                    "rdfs:label": "Trilogue - Coreper letter"
+                },
+                "fr": {
+                    "skos:prefLabel": "Lettre Coreper confirmant l'accord"
+                },
+                "en": {
+                    "skos:prefLabel": "Coreper letter confirming agreement"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEpRegl_Itm",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "GeschÃ¤ftsordnung des EP Artikel"
+                },
+                "zu": {
+                    "rdfs:label": "EP Rules - Article"
+                },
+                "fr": {
+                    "skos:prefLabel": "Article du RÃ¨glement PE"
+                },
+                "en": {
+                    "skos:prefLabel": "Rules EP article"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEcNoti",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Informationsvermerk - EuropÃ¤ische Kommission"
+                },
+                "zu": {
+                    "rdfs:label": "EC - Information note"
+                },
+                "fr": {
+                    "skos:prefLabel": "Note d'information - Commission EuropÃ©enne"
+                },
+                "en": {
+                    "skos:prefLabel": "Information note - European commission"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEcIact",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "EC - Implementing acts"
+                },
+                "fr": {
+                    "skos:prefLabel": "Actes d'exÃ©cution - Commission EuropÃ©enne"
+                },
+                "en": {
+                    "skos:prefLabel": "Implementing acts - European commission"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEpRegl_Cover",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "GeschÃ¤ftsordnung des EP Deckblatt"
+                },
+                "zu": {
+                    "rdfs:label": "EP Rules - Corpus"
+                },
+                "fr": {
+                    "skos:prefLabel": "Couverture du RÃ¨glement PE"
+                },
+                "en": {
+                    "skos:prefLabel": "Rules EP cover"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlCre-Rev_Int",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "CRE Revidierte Fassung - Wortmeldung"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Verbatim report - Revised Cycle - Intervention"
+                },
+                "fr": {
+                    "skos:prefLabel": "CRE RÃ©visÃ© - Intervention"
+                },
+                "en": {
+                    "skos:prefLabel": "CRE Revised - Intervention"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMaQp_Asw",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Schriftliche Antwort"
+                },
+                "zu": {
+                    "rdfs:label": "Members Activities - Questions - Answer"
+                },
+                "fr": {
+                    "skos:prefLabel": "RÃ©ponse Ã©crite"
+                },
+                "en": {
+                    "skos:prefLabel": "Written answer"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEpRegl_Sec",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "GeschÃ¤ftsordnung des EP Abschnitt"
+                },
+                "zu": {
+                    "rdfs:label": "EP Rules - Section"
+                },
+                "fr": {
+                    "skos:prefLabel": "Section du RÃ¨glement PE"
+                },
+                "en": {
+                    "skos:prefLabel": "Rules EP section"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlPv_Sit",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "sl": {
+                    "skos:prefLabel": "Zapisnik"
+                },
+                "sk": {
+                    "skos:prefLabel": "ZÃ¡pisnica"
+                },
+                "ro": {
+                    "skos:prefLabel": "Proces-verbal"
+                },
+                "da": {
+                    "skos:prefLabel": "Protokol"
+                },
+                "it": {
+                    "skos:prefLabel": "Processo verbale"
+                },
+                "mt": {
+                    "skos:prefLabel": "Minuti"
+                },
+                "hu": {
+                    "skos:prefLabel": "JegyzÅ‘kÃ¶nyv"
+                },
+                "lv": {
+                    "skos:prefLabel": "Protokols"
+                },
+                "lt": {
+                    "skos:prefLabel": "Protokolas"
+                },
+                "cs": {
+                    "skos:prefLabel": "ZÃ¡pis"
+                },
+                "de": {
+                    "skos:prefLabel": ["Protokoll", "Sitzungsprotokoll - Sitzung"]
+                },
+                "el": {
+                    "skos:prefLabel": "Î£Ï…Î½Î¿Ï€Ï„Î¹ÎºÎ¬ Ï€Ï�Î±ÎºÏ„Î¹ÎºÎ¬"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Minutes - Sitting"
+                },
+                "fi": {
+                    "skos:prefLabel": "PÃ¶ytÃ¤kirja"
+                },
+                "pl": {
+                    "skos:prefLabel": "ProtokÃ³Å‚"
+                },
+                "pt": {
+                    "skos:prefLabel": "Acta"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s-verbal - SÃ©ance plÃ©niÃ¨re"
+                },
+                "sv": {
+                    "skos:prefLabel": "Protokoll"
+                },
+                "bg": {
+                    "skos:prefLabel": "ÐŸÑ€Ð¾Ñ‚Ð¾ÐºÐ¾Ð»"
+                },
+                "en": {
+                    "skos:prefLabel": "Minutes - Plenary sitting"
+                },
+                "et": {
+                    "skos:prefLabel": "Protokoll"
+                },
+                "es": {
+                    "skos:prefLabel": "Acta"
+                },
+                "nl": {
+                    "skos:prefLabel": "Notulen"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlCre_Itm",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Plenardebatten - Punkt"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Verbatim report  - Item"
+                },
+                "fr": {
+                    "skos:prefLabel": "DÃ©bats- Point"
+                },
+                "en": {
+                    "skos:prefLabel": "DÃ©bats - Item"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEcVircAcn",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Stellungnahme des Rates zur MittelÃ¼bertragung"
+                },
+                "zu": {
+                    "rdfs:label": "Council Opinion on Transfer of appropriations"
+                },
+                "fr": {
+                    "skos:prefLabel": "Council Opinion onVirement de crÃ©dits"
+                },
+                "en": {
+                    "skos:prefLabel": "Council Opinion on transfer of appropriations"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlRp_Amd",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Ã„nderungsantrag zum Bericht"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Report - Amendment"
+                },
+                "fr": {
+                    "skos:prefLabel": "Amendement Ã  un rapport"
+                },
+                "en": {
+                    "skos:prefLabel": "Amendment to report"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlPv-Prv_Att",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "sl": {
+                    "skos:prefLabel": "Zapisnik - ZaÄ�asna izdaja - Seznam navzoÄ�ih"
+                },
+                "sk": {
+                    "skos:prefLabel": "ZÃ¡pisnica - PrechodnÃ¡ verzia - PrezenÄ�nÃ¡ listina"
+                },
+                "da": {
+                    "skos:prefLabel": "Protokol - ForelÃ¸big udgave - Deltagerliste"
+                },
+                "ro": {
+                    "skos:prefLabel": "Proces-verbal - EdiÅ£ie provizorie - Lista de prezenÅ£Äƒ"
+                },
+                "it": {
+                    "skos:prefLabel": "Processo verbale - Edizione provvisoria - Elenco di presenza"
+                },
+                "mt": {
+                    "skos:prefLabel": "Minuti - VerÅ¼joni proviÅ¼orja - Lista tal-Membri preÅ¼enti"
+                },
+                "hu": {
+                    "skos:prefLabel": "JegyzÅ‘kÃ¶nyv - Ideiglenes kiadÃ¡s - JelenlÃ©ti Ã­v"
+                },
+                "lv": {
+                    "skos:prefLabel": "Protokols - Pagaidu redakcija - ApmeklÄ“jumu reÄ£istrs"
+                },
+                "lt": {
+                    "skos:prefLabel": "Protokolas - NegalutinÄ— teksto versija - DalyvaujanÄ�iÅ³jÅ³ sÄ…raÅ¡as"
+                },
+                "cs": {
+                    "skos:prefLabel": "ZÃ¡pis - PÅ™edbÄ›Å¾nÃ© znÄ›nÃ­ - PrezenÄ�nÃ­ listina"
+                },
+                "de": {
+                    "skos:prefLabel": "VorlÃ¤ufige Fassung des Protokolls - Anwesenheitsliste"
+                },
+                "el": {
+                    "skos:prefLabel": "Î£Ï…Î½Î¿Ï€Ï„Î¹ÎºÎ¬ Ï€Ï�Î±ÎºÏ„Î¹ÎºÎ¬ - Î Ï�Î¿ÏƒÏ‰Ï�Î¹Î½Î® Î­ÎºÎ´Î¿ÏƒÎ· - ÎšÎ±Ï„Î¬ÏƒÏ„Î±ÏƒÎ· Ï€Î±Ï�ÏŒÎ½Ï„Ï‰Î½"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Minutes - Prov - Attendance List"
+                },
+                "fi": {
+                    "skos:prefLabel": "PÃ¶ytÃ¤kirja - VÃ¤liaikainen painos - LÃ¤snÃ¤ololista"
+                },
+                "pt": {
+                    "skos:prefLabel": "Acta - EdiÃ§Ã£o provisÃ³ria - Lista de presenÃ§as"
+                },
+                "pl": {
+                    "skos:prefLabel": "ProtokÃ³Å‚ - Wersja tymczasowa - Lista obecnoÅ›ci"
+                },
+                "sv": {
+                    "skos:prefLabel": "Protokoll - PreliminÃ¤r utgÃ¥va - NÃ¤rvarolista"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s-verbal provisoire  - Liste de prÃ©sence"
+                },
+                "bg": {
+                    "skos:prefLabel": "ÐŸÑ€Ð¾Ñ‚Ð¾ÐºÐ¾Ð» - Ð�ÐµÐ¾ÐºÐ¾Ð½Ñ‡Ð°Ñ‚ÐµÐ»Ð½Ð° Ð²ÐµÑ€Ñ�Ð¸Ñ� - Ð¡Ð¿Ð¸Ñ�ÑŠÐº Ð½Ð° Ð¿Ñ€Ð¸Ñ�ÑŠÑ�Ñ‚Ð²Ð°Ð»Ð¸Ñ‚Ðµ"
+                },
+                "en": {
+                    "skos:prefLabel": "Provisional minutes - Attendance List"
+                },
+                "et": {
+                    "skos:prefLabel": "Protokoll - Ajutine vÃ¤ljaanne - Kohalolijate nimekiri"
+                },
+                "es": {
+                    "skos:prefLabel": "Acta - EdiciÃ³n provisional - Lista de presencia"
+                },
+                "nl": {
+                    "skos:prefLabel": "Notulen - Voorlopige uitgave - Presentielijst"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlCre-Fnl_Int",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "CRE EndgÃ¼ltige Fassung - Wortmeldung"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Verbatim report - Final - Intervention"
+                },
+                "fr": {
+                    "skos:prefLabel": "CRE Final - Intervention"
+                },
+                "en": {
+                    "skos:prefLabel": "CRE Final - Intervention"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEpBuddc",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Haushaltsbeschluss"
+                },
+                "zu": {
+                    "rdfs:label": "EP - Budgetary decision"
+                },
+                "fr": {
+                    "skos:prefLabel": "DÃ©cision budgÃ©taire"
+                },
+                "en": {
+                    "skos:prefLabel": "Budgetary decision"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPrNwap",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Briefing - Vorschau "
+                },
+                "zu": {
+                    "rdfs:label": "Press - News - News briefing - AP"
+                },
+                "fr": {
+                    "skos:prefLabel": "Briefing - AP "
+                },
+                "en": {
+                    "skos:prefLabel": "Briefing - AP "
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlTa-Prv_SitAnn",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Angenommene Texte der Sitzung (vorlÃ¤ufig)"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Adopted text - Provisional - Annex"
+                },
+                "fr": {
+                    "skos:prefLabel": "Textes adoptÃ©s en sÃ©ance (Provisional - Sitting - Annex)"
+                },
+                "en": {
+                    "skos:prefLabel": "Adopted texts (Provisional - Sitting - Annex)"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPrNwal",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Press - News - News Alert"
+                },
+                "fr": {
+                    "skos:prefLabel": "News alert "
+                },
+                "en": {
+                    "skos:prefLabel": "News alert "
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iBlSpel",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Bulletins - EC special edition"
+                },
+                "fr": {
+                    "skos:prefLabel": "Edition spÃ©ciale Conseils europÃ©ens"
+                },
+                "en": {
+                    "skos:prefLabel": "European Council special edition"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlCre_Ann",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "hr": {
+                    "skos:prefLabel": "Rasprave - Prilog"
+                },
+                "ro": {
+                    "skos:prefLabel": "Dezbateri - AnexÄƒ "
+                },
+                "hu": {
+                    "skos:prefLabel": "VitÃ¡k - FÃ¼ggelÃ©k"
+                },
+                "lv": {
+                    "skos:prefLabel": "Debates - Pielikums"
+                },
+                "lt": {
+                    "skos:prefLabel": "Diskusijos - Priedas"
+                },
+                "ga": {
+                    "skos:prefLabel": "DÃ­ospÃ³ireachtaÃ­ - IarscrÃ­bhinn"
+                },
+                "de": {
+                    "skos:prefLabel": ["Plenardebatten - Anlage", "Plenardebatten - Anhang"]
+                },
+                "fi": {
+                    "skos:prefLabel": "Puheenvuorot - Liite"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Verbatim report - Annex"
+                },
+                "fr": {
+                    "skos:prefLabel": ["DÃ©bats - Annexe", "DÃ©bats- Annexe"]
+                },
+                "bg": {
+                    "skos:prefLabel": "Ð Ð°Ð·Ð¸Ñ�ÐºÐ²Ð°Ð½Ð¸Ñ� - ÐŸÑ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ"
+                },
+                "sv": {
+                    "skos:prefLabel": "Debatter - Bilaga"
+                },
+                "sl": {
+                    "skos:prefLabel": "Razprave - Priloga"
+                },
+                "sk": {
+                    "skos:prefLabel": "Rozpravy - PrÃ­loha"
+                },
+                "da": {
+                    "skos:prefLabel": "Forhandlinger - Bilag"
+                },
+                "it": {
+                    "skos:prefLabel": "Discussioni - Allegato"
+                },
+                "mt": {
+                    "skos:prefLabel": "Dibattiti - Anness "
+                },
+                "cs": {
+                    "skos:prefLabel": "Rozpravy - PÅ™Ã­loha"
+                },
+                "el": {
+                    "skos:prefLabel": "Î£Ï…Î¶Î·Ï„Î®ÏƒÎµÎ¹Ï‚ - Î Î±Ï�Î¬Ï�Ï„Î·Î¼Î±"
+                },
+                "pt": {
+                    "skos:prefLabel": "Debates - Anexo"
+                },
+                "pl": {
+                    "skos:prefLabel": "Debaty - ZaÅ‚Ä…cznik"
+                },
+                "en": {
+                    "skos:prefLabel": ["Debates - Annex", "DÃ©bats - Annex"]
+                },
+                "et": {
+                    "skos:prefLabel": "Arutelud - Lisa"
+                },
+                "es": {
+                    "skos:prefLabel": "Debates - Anexo"
+                },
+                "nl": {
+                    "skos:prefLabel": "Debatten - Bijlage"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iTrNtgs",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Trilogue document (trilogue notes)"
+                },
+                "zu": {
+                    "rdfs:label": "Trilogue - Trilogue document"
+                },
+                "fr": {
+                    "skos:prefLabel": "Document du trilogue (notes)"
+                },
+                "en": {
+                    "skos:prefLabel": "Trilogue document (trilogue notes)"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iTrLpag",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Parliamentary committee chair letter confirming agreement"
+                },
+                "zu": {
+                    "rdfs:label": "Trilogue - PC chair letter"
+                },
+                "fr": {
+                    "skos:prefLabel": "Lettre du prÃ©sident du comitÃ© parlementaire qui confirme l'accord"
+                },
+                "en": {
+                    "skos:prefLabel": "Parliamentary committee chair letter confirming agreement"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlPv-Fnl_Ann",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "sl": {
+                    "skos:prefLabel": "Zapisnik - KonÄ�na izdaja - Priloge"
+                },
+                "sk": {
+                    "skos:prefLabel": "ZÃ¡pisnica - FinÃ¡lna verzia - PrÃ­lohy"
+                },
+                "da": {
+                    "skos:prefLabel": "Protokol - Endelig udgave - Bilag"
+                },
+                "ro": {
+                    "skos:prefLabel": "Proces-verbal - EdiÅ£ie definitivÄƒ - Anexe"
+                },
+                "it": {
+                    "skos:prefLabel": "Processo verbale - Edizione definiti - Allegati"
+                },
+                "mt": {
+                    "skos:prefLabel": "Minuti - VerÅ¼joni finali - Annessi"
+                },
+                "hu": {
+                    "skos:prefLabel": "JegyzÅ‘kÃ¶nyv - VÃ©gleges kiadÃ¡s - MellÃ©kletek"
+                },
+                "lv": {
+                    "skos:prefLabel": "Protokols - GalÄ«gÄ� redakcija - Pielikumi"
+                },
+                "lt": {
+                    "skos:prefLabel": "Protokolas - GalutinÄ— teksto versija - Priedai"
+                },
+                "cs": {
+                    "skos:prefLabel": "ZÃ¡pis - KoneÄ�nÃ© znÄ›nÃ­ - PÅ™Ã­lohy"
+                },
+                "de": {
+                    "skos:prefLabel": "EndgÃ¼ltige Fassung des Protokolls - Anwesenheitsliste"
+                },
+                "el": {
+                    "skos:prefLabel": "Î£Ï…Î½Î¿Ï€Ï„Î¹ÎºÎ¬ Ï€Ï�Î±ÎºÏ„Î¹ÎºÎ¬ - ÎŸÏ�Î¹ÏƒÏ„Î¹ÎºÎ® Î­ÎºÎ´Î¿ÏƒÎ· - Î Î±Ï�Î±Ï�Ï„Î®Î¼Î±Ï„Î±"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Minutes - Final - Annex"
+                },
+                "fi": {
+                    "skos:prefLabel": "PÃ¶ytÃ¤kirja - Lopullinen painos - Liitteet"
+                },
+                "pt": {
+                    "skos:prefLabel": "Acta - EdiÃ§Ã£o definitiva - Anexos"
+                },
+                "pl": {
+                    "skos:prefLabel": "ProtokÃ³Å‚ - Wersja ostateczna - ZaÅ‚Ä…czniki"
+                },
+                "bg": {
+                    "skos:prefLabel": "ÐŸÑ€Ð¾Ñ‚Ð¾ÐºÐ¾Ð» - ÐžÐºÐ¾Ð½Ñ‡Ð°Ñ‚ÐµÐ»Ð½Ð° Ð²ÐµÑ€Ñ�Ð¸Ñ� - ÐŸÑ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ�"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s-verbal dÃ©finitif - Annexe"
+                },
+                "sv": {
+                    "skos:prefLabel": "Protokoll - Slutlig utgÃ¥va - Bilagor"
+                },
+                "en": {
+                    "skos:prefLabel": "Final minutes - Annex"
+                },
+                "et": {
+                    "skos:prefLabel": "Protokoll - LÃµplik vÃ¤ljaanne - Lisad"
+                },
+                "es": {
+                    "skos:prefLabel": "Acta - EdiciÃ³n definitiva - Anexos"
+                },
+                "nl": {
+                    "skos:prefLabel": "Notulen - Definitieve uitgave - Bijlagen"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCmBbudamd",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "AbÃ¤nderungsentwÃ¼rfe zum Haushaltsplan"
+                },
+                "zu": {
+                    "rdfs:label": "Committee - Budgetary amendments"
+                },
+                "fr": {
+                    "skos:prefLabel": "Amendements budgÃ©taires"
+                },
+                "en": {
+                    "skos:prefLabel": "Budget amendments"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEcInfo_Ann",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Dokumente zur Information Anlage - EuropÃ¤ische Kommission"
+                },
+                "zu": {
+                    "rdfs:label": "EC - Documents for information -Annex"
+                },
+                "fr": {
+                    "skos:prefLabel": "Annexe Ã  un document pour information - Commission EuropÃ©enne"
+                },
+                "en": {
+                    "skos:prefLabel": "Annex to document for information - European commission"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPrNwrp",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Nachrichten "
+                },
+                "zu": {
+                    "rdfs:label": "Press - News report - News report"
+                },
+                "fr": {
+                    "skos:prefLabel": "News report "
+                },
+                "en": {
+                    "skos:prefLabel": "News report "
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlPv-Fnl_Rcv",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "EndgÃ¼ltige Fassung des Protokolls - Anhang"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Minutes - Final - Rol Call Votes"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s-verbal dÃ©finitif - Votes par appel nominal"
+                },
+                "en": {
+                    "skos:prefLabel": "Final minutes  - Rol Call Votes"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iOtManual",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Handbuch"
+                },
+                "zu": {
+                    "rdfs:label": "Other - Manual"
+                },
+                "fr": {
+                    "skos:prefLabel": "Manuel"
+                },
+                "en": {
+                    "skos:prefLabel": "Manual"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCmMeeting_Itm",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Punkt der Ausschusssitzung"
+                },
+                "zu": {
+                    "rdfs:label": "Committee - Meeting item"
+                },
+                "fr": {
+                    "skos:prefLabel": "RÃ©union de commission parlementaire - Poin"
+                },
+                "en": {
+                    "skos:prefLabel": "Committee meeting point"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCmWd",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Arbeitsdokument"
+                },
+                "zu": {
+                    "rdfs:label": "Committee - Working document"
+                },
+                "fr": {
+                    "skos:prefLabel": "Document de travail"
+                },
+                "en": {
+                    "skos:prefLabel": "Working document"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMaMbfi",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Members' declarations of financial interests"
+                },
+                "zu": {
+                    "rdfs:label": "Members Activities - Members' declarations of financial interests"
+                },
+                "fr": {
+                    "skos:prefLabel": "DÃ©clarations d'intÃ©rÃªts financiers des Membres"
+                },
+                "en": {
+                    "skos:prefLabel": "Members' declarations of financial interests"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEcCom",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "COM-Dokument"
+                },
+                "zu": {
+                    "rdfs:label": "EC - COM document"
+                },
+                "fr": {
+                    "skos:prefLabel": "Document COM - Commission EuropÃ©enne"
+                },
+                "en": {
+                    "skos:prefLabel": "COM document"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPrNwnlt",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Schwerpunkte der Plenartagung"
+                },
+                "zu": {
+                    "rdfs:label": "Press - News - News Newsletter"
+                },
+                "fr": {
+                    "skos:prefLabel": "Newsletter "
+                },
+                "en": {
+                    "skos:prefLabel": "Newsletter "
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPrNwbr",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Schwerpunkte der Plenartagung"
+                },
+                "zu": {
+                    "rdfs:label": "Press - News - News Briefing"
+                },
+                "fr": {
+                    "skos:prefLabel": "Newsletter â€“ SÃ©ance plÃ©niÃ¨re"
+                },
+                "en": {
+                    "skos:prefLabel": "Newsletter â€“ Plenary session"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlRe_Amd",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Ã„nderungsantrag zum EntschlieÃŸungsantrag"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Motion for resolution - Motion for resolution - Amendment"
+                },
+                "fr": {
+                    "skos:prefLabel": "Amendement Ã  une proposition de rÃ©solution"
+                },
+                "en": {
+                    "skos:prefLabel": "Amendment to Motion for resolution"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iLbBfng",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Bibliothek - Ãœberblicksinformationen"
+                },
+                "zu": {
+                    "rdfs:label": "Library - Briefing"
+                },
+                "fr": {
+                    "skos:prefLabel": "Library - Briefing"
+                },
+                "en": {
+                    "skos:prefLabel": "Library - Briefing"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iTrInag",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Text agreed during interinstitutional negotiations"
+                },
+                "zu": {
+                    "rdfs:label": "Trilogue - Text agreed"
+                },
+                "fr": {
+                    "skos:prefLabel": "Texte convenu lors des nÃ©gociations interinstitutionnelles"
+                },
+                "en": {
+                    "skos:prefLabel": "Text agreed during interinstitutional negotiations"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEcJoin",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "JOIN-Dokument - EuropÃ¤ische Kommission"
+                },
+                "zu": {
+                    "rdfs:label": "EC - Join document"
+                },
+                "fr": {
+                    "skos:prefLabel": "Document JOIN - Commission EuropÃ©enne"
+                },
+                "en": {
+                    "skos:prefLabel": "JOIN document - European commission"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iAcFnl_Cor",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Korrigendum zum endgÃ¼ltigen Rechtsakt"
+                },
+                "zu": {
+                    "rdfs:label": "Acts - Final act - Corrigendum"
+                },
+                "fr": {
+                    "skos:prefLabel": "Corrigendum d'acte final"
+                },
+                "en": {
+                    "skos:prefLabel": "Corrigendum to final act"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlOj_Sit",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "hr": {
+                    "skos:prefLabel": "Dnevni red"
+                },
+                "ro": {
+                    "skos:prefLabel": "Ordinea de zi"
+                },
+                "hu": {
+                    "skos:prefLabel": "Napirend"
+                },
+                "lv": {
+                    "skos:prefLabel": "Darba kÄ�rtÄ«ba"
+                },
+                "lt": {
+                    "skos:prefLabel": "DarbotvarkÄ—"
+                },
+                "ga": {
+                    "skos:prefLabel": "ClÃ¡ir oibre"
+                },
+                "de": {
+                    "skos:prefLabel": ["Tagesordnung", "Tagesordnung - Sitzung"]
+                },
+                "fi": {
+                    "skos:prefLabel": "Esityslista "
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Sitting Agenda"
+                },
+                "fr": {
+                    "skos:prefLabel": ["Ordre du jour de sÃ©ance plÃ©niÃ¨re", "Ordre du jour"]
+                },
+                "bg": {
+                    "skos:prefLabel": "Ð”Ð½ÐµÐ²ÐµÐ½ Ñ€ÐµÐ´"
+                },
+                "sv": {
+                    "skos:prefLabel": "FÃ¶redragningslista"
+                },
+                "sl": {
+                    "skos:prefLabel": "Dnevni red"
+                },
+                "sk": {
+                    "skos:prefLabel": "Program"
+                },
+                "da": {
+                    "skos:prefLabel": "Dagsorden"
+                },
+                "it": {
+                    "skos:prefLabel": "Ordine del giorno"
+                },
+                "mt": {
+                    "skos:prefLabel": "AÄ¡enda"
+                },
+                "cs": {
+                    "skos:prefLabel": "PoÅ™ad jednÃ¡nÃ­"
+                },
+                "el": {
+                    "skos:prefLabel": "Î—Î¼ÎµÏ�Î®ÏƒÎ¹Î± Î´Î¹Î¬Ï„Î±Î¾Î·"
+                },
+                "pl": {
+                    "skos:prefLabel": "PorzÄ…dek obrad"
+                },
+                "pt": {
+                    "skos:prefLabel": "Ordem do dia"
+                },
+                "en": {
+                    "skos:prefLabel": ["Agenda", "Plenary sitting agenda"]
+                },
+                "et": {
+                    "skos:prefLabel": "PÃ¤evakord"
+                },
+                "es": {
+                    "skos:prefLabel": "Orden del dÃ­a"
+                },
+                "nl": {
+                    "skos:prefLabel": "Agenda"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCmMeeting",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Ausschusssitzung"
+                },
+                "zu": {
+                    "rdfs:label": "Committee - Meeting"
+                },
+                "fr": {
+                    "skos:prefLabel": "RÃ©union de commission parlementaire"
+                },
+                "en": {
+                    "skos:prefLabel": "Committee meeting"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCmQbce_Asw",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Answer for question to the European Central Bank "
+                },
+                "zu": {
+                    "rdfs:label": "Committee - Questions - Question to the BCE"
+                },
+                "fr": {
+                    "skos:prefLabel": "Question Ã  la BCE"
+                },
+                "en": {
+                    "skos:prefLabel": "Answer for question to the European Central Bank "
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlPv_Itm",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Fassung des Protokolls - namentliche Abstimmungen"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Minutes - Item"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s-verbal- Point"
+                },
+                "en": {
+                    "skos:prefLabel": "Minutes - Item"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMaQw_Asw",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Antwort auf eine schriftliche Anfrage"
+                },
+                "zu": {
+                    "rdfs:label": "Members Activities - Questions - Written Questions - Answer"
+                },
+                "fr": {
+                    "skos:prefLabel": "RÃ©ponse Ã  une question Ã©crite"
+                },
+                "en": {
+                    "skos:prefLabel": "Answer to written question"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPrNwfoc",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Aktuelles aus dem EP - Schwerpunkt"
+                },
+                "zu": {
+                    "rdfs:label": "Press - News - News Focus"
+                },
+                "fr": {
+                    "skos:prefLabel": "ActualitÃ©s PE - Dossier"
+                },
+                "en": {
+                    "skos:prefLabel": "EP News - Focus "
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlTa-Fnl_Itm",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Angenommener Text (endgÃ¼ltig)"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Adopted text - Final - Item"
+                },
+                "fr": {
+                    "skos:prefLabel": "Texte adoptÃ© (Final)"
+                },
+                "en": {
+                    "skos:prefLabel": "Adopted text (Final)"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEcInfo",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Dokumente zur Information - EuropÃ¤ische Kommission"
+                },
+                "zu": {
+                    "rdfs:label": "EC - Documents for information"
+                },
+                "fr": {
+                    "skos:prefLabel": "Document pour information - Commission EuropÃ©enne"
+                },
+                "en": {
+                    "skos:prefLabel": "Documents for information - European commission"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iAcFnl",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "EndgÃ¼ltiger Rechtsakt"
+                },
+                "zu": {
+                    "rdfs:label": "Acts - Final act"
+                },
+                "fr": {
+                    "skos:prefLabel": "Acte final"
+                },
+                "en": {
+                    "skos:prefLabel": "Final act"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEcOp",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Opinion - European commission"
+                },
+                "zu": {
+                    "rdfs:label": "EC - Opinion"
+                },
+                "fr": {
+                    "skos:prefLabel": "Avis - Commission EuropÃ©enne"
+                },
+                "en": {
+                    "skos:prefLabel": "Opinion - European commission"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMaQqst",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Question to the Quaestors"
+                },
+                "zu": {
+                    "rdfs:label": "Members Activities - Questions - Question to the Quaestors"
+                },
+                "fr": {
+                    "skos:prefLabel": "Question aux Questeurs"
+                },
+                "en": {
+                    "skos:prefLabel": "Question to the Quaestors"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCcDeci",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Conference of Committee - Decision"
+                },
+                "fr": {
+                    "skos:prefLabel": "Decision - ConfÃ©rence des prÃ©sidents des commissions parlementaires"
+                },
+                "en": {
+                    "skos:prefLabel": "Decision - Conference of Committee Chairmen"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCmCme",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Mitteilung an die Mitglieder"
+                },
+                "zu": {
+                    "rdfs:label": "Committee - Notice to members"
+                },
+                "fr": {
+                    "skos:prefLabel": "Communication aux membres"
+                },
+                "en": {
+                    "skos:prefLabel": "Notice to members"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEcScru_Ann",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Right of scrutiny - European commission - Annex"
+                },
+                "zu": {
+                    "rdfs:label": "EC - Right of scrutiny - Annex"
+                },
+                "fr": {
+                    "skos:prefLabel": "Right of scrutiny - Commission EuropÃ©enne - Annexe"
+                },
+                "en": {
+                    "skos:prefLabel": "Right of scrutiny - European commission - Annex"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iOtRati",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Ratifizierung"
+                },
+                "zu": {
+                    "rdfs:label": "Other - Ratification"
+                },
+                "fr": {
+                    "skos:prefLabel": "Ratification"
+                },
+                "en": {
+                    "skos:prefLabel": "Ratification"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlRp_Err",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Erratum zum Bericht"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Report - Erratum"
+                },
+                "fr": {
+                    "skos:prefLabel": "Erratum Ã  un rapport"
+                },
+                "en": {
+                    "skos:prefLabel": "Erratum to report"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlRc",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Gemeinsamer EntschlieÃŸungsantrag"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Motion for resolution - Joint motion for resolution"
+                },
+                "fr": {
+                    "skos:prefLabel": "Proposition de rÃ©solution commune"
+                },
+                "en": {
+                    "skos:prefLabel": "Joint motion for resolution"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCmQbce",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Anfrage an die EZB"
+                },
+                "zu": {
+                    "rdfs:label": "Committee - Questions - Question to the BCE"
+                },
+                "fr": {
+                    "skos:prefLabel": "Question Ã  la BCE"
+                },
+                "en": {
+                    "skos:prefLabel": "Question to the European Central Bank "
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlTa-Prv_Sit",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Angenommener Text (vorlÃ¤ufig)"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Adopted text - Sitting - Provisional"
+                },
+                "fr": {
+                    "skos:prefLabel": "Textes adoptÃ©s en sÃ©ance (Provisional)"
+                },
+                "en": {
+                    "skos:prefLabel": "Adopted texts of the sitting (Provisional)"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iOtSourc",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Dokument aus anderer Quelle"
+                },
+                "zu": {
+                    "rdfs:label": "Other - Document from other source"
+                },
+                "fr": {
+                    "skos:prefLabel": "Document from other source"
+                },
+                "en": {
+                    "skos:prefLabel": "Document from other source"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlCre-Prv_Ann",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "CRE VorlÃ¤ufige Fassung - Anhang"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Verbatim report - Prov - Annex"
+                },
+                "fr": {
+                    "skos:prefLabel": "CRE Provisoire - Annexe"
+                },
+                "en": {
+                    "skos:prefLabel": "CRE Provisional - Annex"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iTrInma-Dft",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Draft proposal for a mandate"
+                },
+                "zu": {
+                    "rdfs:label": "Trilogue - Draft proposal mandate"
+                },
+                "fr": {
+                    "skos:prefLabel": "Projet de proposition de mandat"
+                },
+                "en": {
+                    "skos:prefLabel": "Draft proposal for a mandate"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEcVirc",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "MittelÃ¼bertragung"
+                },
+                "zu": {
+                    "rdfs:label": "Transfer of appropriations"
+                },
+                "fr": {
+                    "skos:prefLabel": "Virements de crÃ©dits"
+                },
+                "en": {
+                    "skos:prefLabel": "Transfer of appropriations"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPrNwwek",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Die Woche "
+                },
+                "zu": {
+                    "rdfs:label": "Press - News - News - The week"
+                },
+                "fr": {
+                    "skos:prefLabel": "The week "
+                },
+                "en": {
+                    "skos:prefLabel": "The week "
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlOj-Dft_Week",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Plenary - Week Agenda - Draft"
+                },
+                "fr": {
+                    "skos:prefLabel": "Projet d'ordre du jour de session plÃ©niÃ¨re"
+                },
+                "en": {
+                    "skos:prefLabel": "Plenary session draft agenda"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMaQbur",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Question to the Bureau"
+                },
+                "zu": {
+                    "rdfs:label": "Members Activities - Questions - Question to the Bureau"
+                },
+                "fr": {
+                    "skos:prefLabel": "Question au Bureau"
+                },
+                "en": {
+                    "skos:prefLabel": "Question to the Bureau"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPrNwdn",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Tagesnachrichten "
+                },
+                "zu": {
+                    "rdfs:label": "Press - News - Daily news"
+                },
+                "fr": {
+                    "skos:prefLabel": "DÃ©bat du jour"
+                },
+                "en": {
+                    "skos:prefLabel": "Daily news "
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMlPemi",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Mails - Parliament mail - incoming"
+                },
+                "fr": {
+                    "skos:prefLabel": "Parliament mail - incoming"
+                },
+                "en": {
+                    "skos:prefLabel": "Parliament mail - incoming"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCpPv",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Conference of President - Minutes"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s-verbal - La ConfÃ©rence des prÃ©sidents"
+                },
+                "en": {
+                    "skos:prefLabel": "Minutes - The Conference of Presidents"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPrNwnab",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Nationale Sicht - Hintergrund "
+                },
+                "zu": {
+                    "rdfs:label": "Press - News - News National angle - Background"
+                },
+                "fr": {
+                    "skos:prefLabel": "Angle de vue - Background"
+                },
+                "en": {
+                    "skos:prefLabel": "National angle - Background "
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPrNwds",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Aktuelles aus dem EP - Hintergrund"
+                },
+                "zu": {
+                    "rdfs:label": "Press - News - News Dossier"
+                },
+                "fr": {
+                    "skos:prefLabel": "ActualitÃ©s PE - Note d'information"
+                },
+                "en": {
+                    "skos:prefLabel": "EP News - Background note"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEiCord",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "EI - CoR document"
+                },
+                "zu": {
+                    "rdfs:label": "EI - CoR document"
+                },
+                "fr": {
+                    "skos:prefLabel": "EI - Cocumen CoR"
+                },
+                "en": {
+                    "skos:prefLabel": "EI - CoR document"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEpRegl_Inf",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "GeschÃ¤ftsordnung des EP Information"
+                },
+                "zu": {
+                    "rdfs:label": "EP Rules - Information"
+                },
+                "fr": {
+                    "skos:prefLabel": "Information du RÃ¨glement PE"
+                },
+                "en": {
+                    "skos:prefLabel": "Rules EP information"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCpPvop",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Conference of President - Open minutes"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s-verbal des CDP ouvertes Ã  tous les dÃ©putÃ©s"
+                },
+                "en": {
+                    "skos:prefLabel": "Open minutes - The Conference of Presidents"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCcPv",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Conference of Committee - Minutes"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s verbal - ConfÃ©rence des prÃ©sidents des commissions parlementaires"
+                },
+                "en": {
+                    "skos:prefLabel": "Minutes - Conference of Committee Chairmen"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMlPemo",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Mails - Parliament mail - outgoing"
+                },
+                "fr": {
+                    "skos:prefLabel": "Parliament mail - outgoing"
+                },
+                "en": {
+                    "skos:prefLabel": "Parliament mail - outgoing"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iOtImpl-Fnd",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "EndgÃ¼ltiger Entwurf von DurchfÃ¼hrungsmaÃŸnahmen"
+                },
+                "zu": {
+                    "rdfs:label": "Other - Final Draft implementing measures"
+                },
+                "fr": {
+                    "skos:prefLabel": "Final Draft implementing measures"
+                },
+                "en": {
+                    "skos:prefLabel": "Final Draft implementing measures"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMaQw-Pri",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Schriftliche Anfrage mit Vorrang"
+                },
+                "zu": {
+                    "rdfs:label": "Members Activities - Questions - Written Questions - Prior"
+                },
+                "fr": {
+                    "skos:prefLabel": "Question prioritaire pour rÃ©ponse Ã©crite"
+                },
+                "en": {
+                    "skos:prefLabel": "Priority question for written answer"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEiOj",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Official journal"
+                },
+                "zu": {
+                    "rdfs:label": "EI - OJ document"
+                },
+                "fr": {
+                    "skos:prefLabel": "Journal officiel"
+                },
+                "en": {
+                    "skos:prefLabel": "Official journal"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlPv-Prv_AttDft",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "sl": {
+                    "skos:prefLabel": "Zapisnik - ZaÄ�asna izdaja - Seznam navzoÄ�ih"
+                },
+                "sk": {
+                    "skos:prefLabel": "ZÃ¡pisnica - PrechodnÃ¡ verzia - PrezenÄ�nÃ¡ listina"
+                },
+                "da": {
+                    "skos:prefLabel": "Protokol - ForelÃ¸big udgave - Deltagerliste"
+                },
+                "ro": {
+                    "skos:prefLabel": "Proces-verbal - EdiÅ£ie provizorie - Lista de prezenÅ£Äƒ"
+                },
+                "it": {
+                    "skos:prefLabel": "Processo verbale - Edizione provvisoria - Elenco di presenza"
+                },
+                "mt": {
+                    "skos:prefLabel": "Minuti - VerÅ¼joni proviÅ¼orja - Lista tal-Membri preÅ¼enti"
+                },
+                "hu": {
+                    "skos:prefLabel": "JegyzÅ‘kÃ¶nyv - Ideiglenes kiadÃ¡s - JelenlÃ©ti Ã­v"
+                },
+                "lv": {
+                    "skos:prefLabel": "Protokols - Pagaidu redakcija - ApmeklÄ“jumu reÄ£istrs"
+                },
+                "lt": {
+                    "skos:prefLabel": "Protokolas - NegalutinÄ— teksto versija - DalyvaujanÄ�iÅ³jÅ³ sÄ…raÅ¡as"
+                },
+                "cs": {
+                    "skos:prefLabel": "ZÃ¡pis - PÅ™edbÄ›Å¾nÃ© znÄ›nÃ­ - PrezenÄ�nÃ­ listina"
+                },
+                "de": {
+                    "skos:prefLabel": "VorlÃ¤ufige Fassung des Protokolls - Entwurf der Anwesenheitsliste"
+                },
+                "el": {
+                    "skos:prefLabel": "Î£Ï…Î½Î¿Ï€Ï„Î¹ÎºÎ¬ Ï€Ï�Î±ÎºÏ„Î¹ÎºÎ¬ - Î Ï�Î¿ÏƒÏ‰Ï�Î¹Î½Î® Î­ÎºÎ´Î¿ÏƒÎ· - ÎšÎ±Ï„Î¬ÏƒÏ„Î±ÏƒÎ· Ï€Î±Ï�ÏŒÎ½Ï„Ï‰Î½"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Minutes - Prov - Draft Attendance List"
+                },
+                "fi": {
+                    "skos:prefLabel": "PÃ¶ytÃ¤kirja - VÃ¤liaikainen painos - LÃ¤snÃ¤ololista"
+                },
+                "pt": {
+                    "skos:prefLabel": "Acta - EdiÃ§Ã£o provisÃ³ria - Lista de presenÃ§as"
+                },
+                "pl": {
+                    "skos:prefLabel": "ProtokÃ³Å‚ - Wersja tymczasowa - Lista obecnoÅ›ci"
+                },
+                "sv": {
+                    "skos:prefLabel": "Protokoll - PreliminÃ¤r utgÃ¥va - NÃ¤rvarolista"
+                },
+                "bg": {
+                    "skos:prefLabel": "ÐŸÑ€Ð¾Ñ‚Ð¾ÐºÐ¾Ð» - Ð�ÐµÐ¾ÐºÐ¾Ð½Ñ‡Ð°Ñ‚ÐµÐ»Ð½Ð° Ð²ÐµÑ€Ñ�Ð¸Ñ� - Ð¡Ð¿Ð¸Ñ�ÑŠÐº Ð½Ð° Ð¿Ñ€Ð¸Ñ�ÑŠÑ�Ñ‚Ð²Ð°Ð»Ð¸Ñ‚Ðµ"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s-verbal provisoire  - Liste de prÃ©sence provisoire"
+                },
+                "en": {
+                    "skos:prefLabel": "Provisional minutes - Draft Attendance List"
+                },
+                "et": {
+                    "skos:prefLabel": "Protokoll - Ajutine vÃ¤ljaanne - Kohalolijate nimekiri"
+                },
+                "es": {
+                    "skos:prefLabel": "Acta - EdiciÃ³n provisional - Lista de presencia"
+                },
+                "nl": {
+                    "skos:prefLabel": "Notulen - Voorlopige uitgave - Presentielijst"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iStFsht",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Kurzdarstellung"
+                },
+                "zu": {
+                    "rdfs:label": "Studies - Fact sheets"
+                },
+                "fr": {
+                    "skos:prefLabel": "Fiche technique"
+                },
+                "en": {
+                    "skos:prefLabel": "Fact sheet"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPuCata",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Katalog"
+                },
+                "zu": {
+                    "rdfs:label": "EP publications - Catalogue"
+                },
+                "fr": {
+                    "skos:prefLabel": "Catalogue"
+                },
+                "en": {
+                    "skos:prefLabel": "Catalogue"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iBlCal",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Bulletins - Calendar"
+                },
+                "fr": {
+                    "skos:prefLabel": "Calendriers des rÃ©unions"
+                },
+                "en": {
+                    "skos:prefLabel": "Calendar of red:Meetings"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEcSec",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "SEC-Dokument - EuropÃ¤ische Kommission"
+                },
+                "zu": {
+                    "rdfs:label": "EC - SEC document"
+                },
+                "fr": {
+                    "skos:prefLabel": "Document SEC -  Commission EuropÃ©enne"
+                },
+                "en": {
+                    "skos:prefLabel": "SEC document - European commission"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlRp",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Bericht"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Report"
+                },
+                "fr": {
+                    "skos:prefLabel": "Rapport"
+                },
+                "en": {
+                    "skos:prefLabel": "Report"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlCal",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Plenary - Calendar"
+                },
+                "fr": {
+                    "skos:prefLabel": "Calendrier de plÃ©niÃ¨re"
+                },
+                "en": {
+                    "skos:prefLabel": "Plenary Calendar"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlCre-Prv_Sit",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "CRE VorlÃ¤ufige Fassung - Sitzung"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Verbatim report - Prov"
+                },
+                "fr": {
+                    "skos:prefLabel": "CRE Provisoire - SÃ©ance"
+                },
+                "en": {
+                    "skos:prefLabel": "CRE Provisional - Plenary sitting"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlRe",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "EntschlieÃŸungsantrag"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Motion for resolution"
+                },
+                "fr": {
+                    "skos:prefLabel": "Proposition de rÃ©solution"
+                },
+                "en": {
+                    "skos:prefLabel": "Motion for resolution"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlTc",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Konsolidierter Text"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Consolidated text"
+                },
+                "fr": {
+                    "skos:prefLabel": "Texte consolidÃ©"
+                },
+                "en": {
+                    "skos:prefLabel": "Consolidated text"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iQsPvdc",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Quaestors - Decisions"
+                },
+                "fr": {
+                    "skos:prefLabel": "Decisions (Quaestors)"
+                },
+                "en": {
+                    "skos:prefLabel": "Decisions (Quaestors)"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCnConc",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Conciliation Committee - Conciliation document"
+                },
+                "fr": {
+                    "skos:prefLabel": "Document de la Conciliation"
+                },
+                "en": {
+                    "skos:prefLabel": "Conciliation document"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCnLmep",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Conciliation Committee - List of members"
+                },
+                "fr": {
+                    "skos:prefLabel": "Liste des dÃ©putÃ©s - Document de la Conciliation"
+                },
+                "en": {
+                    "skos:prefLabel": "List of members - Conciliation documents"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPrNwpbr",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Nachlese "
+                },
+                "zu": {
+                    "rdfs:label": "Press - News - News Post-briefing"
+                },
+                "fr": {
+                    "skos:prefLabel": "Post-briefing "
+                },
+                "en": {
+                    "skos:prefLabel": "Post-briefing "
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iDlOj",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Delegation - Agenda"
+                },
+                "fr": {
+                    "skos:prefLabel": "Ordre du jour - Documents des dÃ©lÃ©gations parlementaires"
+                },
+                "en": {
+                    "skos:prefLabel": "Agenda - Parliamentary delegations' documents"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iTrInma",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Proposal for a mandate"
+                },
+                "zu": {
+                    "rdfs:label": "Trilogue - Proposal mandate"
+                },
+                "fr": {
+                    "skos:prefLabel": "Proposition de mandat"
+                },
+                "en": {
+                    "skos:prefLabel": "Proposal for a mandate tabled in plenary"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlPv-Prv_Vot",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "sl": {
+                    "skos:prefLabel": "Zapisnik - ZaÄ�asna izdaja - Izidi glasovanja"
+                },
+                "sk": {
+                    "skos:prefLabel": "ZÃ¡pisnica - PrechodnÃ¡ verzia - VÃ½sledky hlasovanÃ­"
+                },
+                "ro": {
+                    "skos:prefLabel": "Proces-verbal - EdiÅ£ie provizorie - Rezultatele voturilor"
+                },
+                "da": {
+                    "skos:prefLabel": "Protokol - ForelÃ¸big udgave - Afstemningsresultater"
+                },
+                "it": {
+                    "skos:prefLabel": "Processo verbale - Edizione provvisoria - Risultati dei voti"
+                },
+                "mt": {
+                    "skos:prefLabel": "Minuti - VerÅ¼joni proviÅ¼orja - RiÅ¼ultati tal-votazzjonijiet"
+                },
+                "hu": {
+                    "skos:prefLabel": "JegyzÅ‘kÃ¶nyv - Ideiglenes kiadÃ¡s - A szavazÃ¡sok eredmÃ©nyei"
+                },
+                "lv": {
+                    "skos:prefLabel": "Protokols - Pagaidu redakcija - Balsojumu rezultÄ�ti"
+                },
+                "lt": {
+                    "skos:prefLabel": "Protokolas - NegalutinÄ— teksto versija - Balsavimo rezultatai"
+                },
+                "cs": {
+                    "skos:prefLabel": "ZÃ¡pis - PÅ™edbÄ›Å¾nÃ© znÄ›nÃ­ - VÃ½sledky hlasovÃ¡nÃ­"
+                },
+                "de": {
+                    "skos:prefLabel": "VorlÃ¤ufige Fassung des Protokolls - Abstimmungsergebnis"
+                },
+                "el": {
+                    "skos:prefLabel": "Î£Ï…Î½Î¿Ï€Ï„Î¹ÎºÎ¬ Ï€Ï�Î±ÎºÏ„Î¹ÎºÎ¬ - Î Ï�Î¿ÏƒÏ‰Ï�Î¹Î½Î® Î­ÎºÎ´Î¿ÏƒÎ· - Ï€Î¿Ï„ÎµÎ»Î­ÏƒÎ¼Î±Ï„Î± ÏˆÎ·Ï†Î¿Ï†Î¿Ï�Î¹ÏŽÎ½"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Minutes - Prov - Vote Result"
+                },
+                "fi": {
+                    "skos:prefLabel": "PÃ¶ytÃ¤kirja - VÃ¤liaikainen painos - Ã„Ã¤nestysten tulokset"
+                },
+                "pt": {
+                    "skos:prefLabel": "Acta - EdiÃ§Ã£o provisÃ³ria - Resultados das votaÃ§Ãµes"
+                },
+                "pl": {
+                    "skos:prefLabel": "ProtokÃ³Å‚ - Wersja tymczasowa - Wyniki gÅ‚osowania"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s-verbal provisoire  - RÃ©sultat des votes"
+                },
+                "bg": {
+                    "skos:prefLabel": "ÐŸÑ€Ð¾Ñ‚Ð¾ÐºÐ¾Ð» - Ð�ÐµÐ¾ÐºÐ¾Ð½Ñ‡Ð°Ñ‚ÐµÐ»Ð½Ð° Ð²ÐµÑ€Ñ�Ð¸Ñ� - Ð ÐµÐ·ÑƒÐ»Ñ‚Ð°Ñ‚Ð¸ Ð¾Ñ‚ Ñ€Ð°Ð·Ð»Ð¸Ñ‡Ð½Ð¸Ñ‚Ðµ Ð³Ð»Ð°Ñ�ÑƒÐ²Ð°Ð½Ð¸Ñ�"
+                },
+                "sv": {
+                    "skos:prefLabel": "Protokoll - PreliminÃ¤r utgÃ¥va - OmrÃ¶stningsresultat"
+                },
+                "en": {
+                    "skos:prefLabel": "Provisional minutes - Vote Result"
+                },
+                "et": {
+                    "skos:prefLabel": "Protokoll - Ajutine vÃ¤ljaanne - HÃ¤Ã¤letustulemused"
+                },
+                "es": {
+                    "skos:prefLabel": "Acta - EdiciÃ³n provisional - Resultados de las votaciones"
+                },
+                "nl": {
+                    "skos:prefLabel": "Notulen - Voorlopige uitgave - Uitslag van de stemming"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCmRe",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Committee - Motion for resolution"
+                },
+                "fr": {
+                    "skos:prefLabel": "Proposition de rÃ©solution"
+                },
+                "en": {
+                    "skos:prefLabel": "Motion for resolution"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlCre-Prv_Int",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "CRE VorlÃ¤ufige Fassung - Wortmeldung"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Verbatim report - Prov - Intervention"
+                },
+                "fr": {
+                    "skos:prefLabel": "CRE Provisoire - Intervention"
+                },
+                "en": {
+                    "skos:prefLabel": "CRE Provisional - Intervention"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEiAvcb",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "EU-Organ - AVCB - Stellungnahme EZB "
+                },
+                "zu": {
+                    "rdfs:label": "EI - AVCB - ECB opinion "
+                },
+                "fr": {
+                    "skos:prefLabel": "EI - AVCB - ECB opinion "
+                },
+                "en": {
+                    "skos:prefLabel": "EI - AVCB - ECB opinion "
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCnWdj",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Conciliation Committee - Working document - Joint Working document"
+                },
+                "fr": {
+                    "skos:prefLabel": "Document de travail commun - Documents de la Conciliation"
+                },
+                "en": {
+                    "skos:prefLabel": "Joint working document - Conciliation documents"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEpRegl_Chap",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "GeschÃ¤ftsordnung des EP Kapitel"
+                },
+                "zu": {
+                    "rdfs:label": "EP Rules - Chapter"
+                },
+                "fr": {
+                    "skos:prefLabel": "Chapitre du RÃ¨glement PE"
+                },
+                "en": {
+                    "skos:prefLabel": "Rules EP chapter"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlTa-Fnl_SitAnn",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Angenommene Texte (vorlÃ¤ufig - Sitzung - Anhang)"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Adopted text - Provisional - Annex"
+                },
+                "fr": {
+                    "skos:prefLabel": "Textes adoptÃ©s en sÃ©ance (Final - Sitting - Annex)"
+                },
+                "en": {
+                    "skos:prefLabel": "Adopted texts (Final - Sitting - Annex)"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCcOj",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Conference of Committee - Agenda"
+                },
+                "fr": {
+                    "skos:prefLabel": "Ordre du jour - ConfÃ©rence des prÃ©sidents des commissions parlementaires"
+                },
+                "en": {
+                    "skos:prefLabel": "Agenda - Conference of Committee Chairmen"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlPv_Rcv",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "sl": {
+                    "skos:prefLabel": "Zapisnik - Poimensko glasovanje"
+                },
+                "sk": {
+                    "skos:prefLabel": "ZÃ¡pisnica - Hlasovania podÄ¾a mien"
+                },
+                "ro": {
+                    "skos:prefLabel": "Proces-verbal - Voturi prin apel nominal"
+                },
+                "da": {
+                    "skos:prefLabel": "Protokol - Afstemning ved navneoprÃ¥b"
+                },
+                "it": {
+                    "skos:prefLabel": "Processo verbale - Votazioni per appello nominale"
+                },
+                "mt": {
+                    "skos:prefLabel": "Minuti - Votazzjoni bis-sejÄ§a ta' l-ismijiet"
+                },
+                "hu": {
+                    "skos:prefLabel": "JegyzÅ‘kÃ¶nyv - NÃ©v szerinti szavazÃ¡s"
+                },
+                "lv": {
+                    "skos:prefLabel": "Protokols - Balsojumi pÄ“c saraksta"
+                },
+                "lt": {
+                    "skos:prefLabel": "Protokolas - Vardinis balsavimas"
+                },
+                "cs": {
+                    "skos:prefLabel": "ZÃ¡pis - JmenovitÃ¡ hlasovÃ¡nÃ­"
+                },
+                "de": {
+                    "skos:prefLabel": "Fassung des Protokolls - Anhang"
+                },
+                "el": {
+                    "skos:prefLabel": "Î£Ï…Î½Î¿Ï€Ï„Î¹ÎºÎ¬ Ï€Ï�Î±ÎºÏ„Î¹ÎºÎ¬ - ÎŸÎ½Î¿Î¼Î±ÏƒÏ„Î¹ÎºÎ­Ï‚ ÏˆÎ·Ï†Î¿Ï†Î¿Ï�Î¯ÎµÏ‚"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Minutes - Rol Call Votes"
+                },
+                "fi": {
+                    "skos:prefLabel": "PÃ¶ytÃ¤kirja - NimenhuutoÃ¤Ã¤nestykset"
+                },
+                "pt": {
+                    "skos:prefLabel": "Acta - VotaÃ§Ãµes nominais"
+                },
+                "pl": {
+                    "skos:prefLabel": "ProtokÃ³Å‚ - GÅ‚osowanie imienne"
+                },
+                "fr": {
+                    "skos:prefLabel": "ProcÃ¨s-verbal- Votes par appel nominal"
+                },
+                "sv": {
+                    "skos:prefLabel": "Protokoll - OmrÃ¶stningar med namnupprop"
+                },
+                "bg": {
+                    "skos:prefLabel": "ÐŸÑ€Ð¾Ñ‚Ð¾ÐºÐ¾Ð» - ÐŸÐ¾Ð¸Ð¼ÐµÐ½Ð½Ð¸ Ð³Ð»Ð°Ñ�ÑƒÐ²Ð°Ð½Ð¸Ñ�"
+                },
+                "en": {
+                    "skos:prefLabel": "Minutes  - Rol Call Votes"
+                },
+                "et": {
+                    "skos:prefLabel": "Protokoll - Nimelise hÃ¤Ã¤letuse tulemused"
+                },
+                "es": {
+                    "skos:prefLabel": "Acta - Votaciones nominales"
+                },
+                "nl": {
+                    "skos:prefLabel": "Notulen - Hoofdelijke stemming"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iCmDoc_Amd",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Ã„nderungsantrag"
+                },
+                "zu": {
+                    "rdfs:label": "Committee - Document amendment"
+                },
+                "fr": {
+                    "skos:prefLabel": "Amendement"
+                },
+                "en": {
+                    "skos:prefLabel": "Amendment"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMaQo",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "MÃ¼ndliche Anfrage"
+                },
+                "zu": {
+                    "rdfs:label": "Members Activities - Questions - Oral question"
+                },
+                "fr": {
+                    "skos:prefLabel": "Question orale"
+                },
+                "en": {
+                    "skos:prefLabel": "Oral question"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMaQp",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Anfrage"
+                },
+                "zu": {
+                    "rdfs:label": "Members Activities - Questions - Question"
+                },
+                "fr": {
+                    "skos:prefLabel": "Question parlementaire"
+                },
+                "en": {
+                    "skos:prefLabel": "Parliamentary question"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlCre-Fnl_Itm",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "CRE EndgÃ¼ltige Fassung - Punkt"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Verbatim report - Final - Item"
+                },
+                "fr": {
+                    "skos:prefLabel": "CRE Final - Point"
+                },
+                "en": {
+                    "skos:prefLabel": "CRE Final - Item"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMaQw-Pri_Asw-Sup",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "ErgÃ¤nzende Antwort auf eine schriftliche Anfrage mit Vorrang"
+                },
+                "zu": {
+                    "rdfs:label": "Members Activities - Prior Questions - Written Questions - Supplementary answer"
+                },
+                "fr": {
+                    "skos:prefLabel": "RÃ©ponse supplÃ©mentaires Ã  une question Ã©crite prioritaire"
+                },
+                "en": {
+                    "skos:prefLabel": "Supplementary answer to priority written question"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPlOj-Dft_Sit",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Entwurf der Tagesordnung - Tagung"
+                },
+                "zu": {
+                    "rdfs:label": "Plenary - Sitting Agenda - Draft"
+                },
+                "fr": {
+                    "skos:prefLabel": "Projet d'ordre du jour de sÃ©ance plÃ©niÃ¨re"
+                },
+                "en": {
+                    "skos:prefLabel": "Plenary sitting draft agenda"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPuBfng",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Briefing"
+                },
+                "zu": {
+                    "rdfs:label": "EP publications - Briefing"
+                },
+                "fr": {
+                    "skos:prefLabel": "Briefing"
+                },
+                "en": {
+                    "skos:prefLabel": "Briefing"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMaQw",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Schriftliche Anfrage"
+                },
+                "zu": {
+                    "rdfs:label": "Members Activities - Questions - Written Questions"
+                },
+                "fr": {
+                    "skos:prefLabel": "Question pour rÃ©ponse Ã©crite"
+                },
+                "en": {
+                    "skos:prefLabel": "Question for written answer"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iEpRegl_Corpus",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "GeschÃ¤ftsordnung des EP Korpus"
+                },
+                "zu": {
+                    "rdfs:label": "EP Rules - Corpus"
+                },
+                "fr": {
+                    "skos:prefLabel": "Corpus du RÃ¨glement PE"
+                },
+                "en": {
+                    "skos:prefLabel": "Rules EP corpus"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPrNwssh",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Diaschau "
+                },
+                "zu": {
+                    "rdfs:label": "Press - News report - Slideshow"
+                },
+                "fr": {
+                    "skos:prefLabel": "Diaporama"
+                },
+                "en": {
+                    "skos:prefLabel": "Slideshow "
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iPrNwtst",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "Aktuelles aus dem EP - Top-Themen"
+                },
+                "zu": {
+                    "rdfs:label": "Press - News report - TopStory"
+                },
+                "fr": {
+                    "skos:prefLabel": "ActualitÃ©s PE - Temps forts"
+                },
+                "en": {
+                    "skos:prefLabel": "EP News - Top stories"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iQsOj",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "zu": {
+                    "rdfs:label": "Quaestors - Agenda"
+                },
+                "fr": {
+                    "skos:prefLabel": "Agenda (Quaestors)"
+                },
+                "en": {
+                    "skos:prefLabel": "Agenda (Quaestors)"
+                }
+            }
+        }, {
+            "thesaurus": "Type",
+            "uri": "ep:iMaQt",
+            "types": ["ep:Concept_TypeScheme"],
+            "labels": {
+                "de": {
+                    "skos:prefLabel": "MÃ¼ndliche Anfrage aus der Fragestunde"
+                },
+                "zu": {
+                    "rdfs:label": "Members Activities - Questions - Oral question from the Question time"
+                },
+                "fr": {
+                    "skos:prefLabel": "Question orale de l'heure des questions"
+                },
+                "en": {
+                    "skos:prefLabel": "Oral question from the Question time"
+                }
+            }
+        }
+    ]
+}
