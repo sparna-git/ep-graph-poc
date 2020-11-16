@@ -1,20 +1,27 @@
 # Specifications
 
+Toutes les colonnes sont converties avec l'URI indiquée dans l'entête, sauf ep:label qui est mappée vers rdfs:label.
 
 
-civility.csv
+## civility.csv
 
-   ep:isoLanguage ????
 
- Gender
+	- ep:uri = URI
+	- ep:isoLanguage = ep:isoLanguage
+	- ep:label = rdfs:label
+	- skos:altLabel = skos:altLabel avec le code de langue
+
+## Gender
  
-   ep:isoCode    ????
+ 	- ep:label = rdfs:label
+   	- ep:isoCode = ep:isoCode
+   	- skos:notation = skos:notation
 
-Country
+## Country
 
-   ep:euCandidate   ????
-   ep:euCountry   ????
-   ep:euStartDate   ????
-   ep:formalOder   ????
-   ep:isoCode    ????
-   ep:isoNumber   ????
+   	- ep:euCandidate = ep:euCandidate 
+    - ep:euCountry = ep:euCountry
+    - ep:euStartDate = ep:euStartDate
+    - ep:formalOder = ep:formalOder
+    - ep:isoCode = ep:isoCode
+    - ep:isoNumber = ep:isoNumber
