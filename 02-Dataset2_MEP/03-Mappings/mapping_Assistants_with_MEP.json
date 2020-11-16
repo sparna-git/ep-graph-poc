@@ -1,0 +1,118 @@
+{
+  "baseIRI": "http://example/base/",
+  "namespaces": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "epsh": "http://data.europarl.europa.eu/shapes#",
+    "ep": "http://data.europarl.europa.eu/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "subjectMappings": [
+    {
+      "propertyMappings": [
+        {
+          "property": {
+            "transformation": {
+              "expression": "foaf",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "lastName"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "trim(cells[trim('ep:Assistant.ep:familyName')].value)",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "foaf",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "firstName"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "trim(cells[trim('ep:Assistant.ep:firstName')].value)",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "dcterms",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "identifier"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "trim(cells[trim('ep:MEP.ep:uri')].value.split(':')[1])",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        }
+      ],
+      "subject": {
+        "transformation": {
+          "expression": "trim(cells[trim('ep:Assistant.ep:uri')].value.split(':')[1])",
+          "language": "grel"
+        },
+        "valueSource": {
+          "source": "row_index"
+        }
+      },
+      "typeMappings": [
+        {
+          "transformation": {
+            "expression": "foaf",
+            "language": "prefix"
+          },
+          "valueSource": {
+            "source": "constant",
+            "constant": "Person"
+          }
+        }
+      ]
+    }
+  ]
+}
