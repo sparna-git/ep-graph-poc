@@ -38,7 +38,7 @@ Fichier PoliticalGroup :
 
 Fichier Assistants :
 
-  - ep:Assistant.ep:uri = URI de la personne
+  - ep:Assistant.ep:uri = URI de l'assistant
   - ep:Assistant.ep:uri rdf:type ep:Assistant
   - ep:Assistant.ep:firstName = foaf:firstName
   - ep:Assistant.ep:lastName = foaf:lastName

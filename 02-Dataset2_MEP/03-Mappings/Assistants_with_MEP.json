@@ -1,5 +1,5 @@
 {
-  "baseIRI": "http://example/base/",
+  "baseIRI": "http://data.europarl.europa.eu/",
   "namespaces": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -7,8 +7,9 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "epsh": "http://data.europarl.europa.eu/shapes#",
-    "ep": "http://data.europarl.europa.eu/",
-    "dcterms": "http://purl.org/dc/terms/"
+    "dcterms": "http://purl.org/dc/terms/",
+    "org": "http://www.w3.org/ns/org#",
+    "ep": "http://data.europarl.europa.eu/#"
   },
   "subjectMappings": [
     {
@@ -68,25 +69,88 @@
         {
           "property": {
             "transformation": {
-              "expression": "dcterms",
+              "expression": "ep",
               "language": "prefix"
             },
             "valueSource": {
               "source": "constant",
-              "constant": "identifier"
+              "constant": "assistantType"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "ep:Assistant.ep:assistantType",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "org",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "hasMembership"
             }
           },
           "values": [
             {
               "transformation": {
-                "expression": "trim(cells[trim('ep:MEP.ep:uri')].value.split(':')[1])",
+                "expression": "trim(cells[trim('ep:Assistant.ep:uri')].value.split(':')[1])\n+'/'+\ntrim(cells[trim('ep:MEP.ep:uri')].value.split(':')[1])",
                 "language": "grel"
               },
               "valueSource": {
                 "source": "row_index"
               },
               "valueType": {
-                "type": "literal"
+                "propertyMappings": [
+                  {
+                    "property": {
+                      "transformation": {
+                        "expression": "org",
+                        "language": "prefix"
+                      },
+                      "valueSource": {
+                        "source": "constant",
+                        "constant": "organization"
+                      }
+                    },
+                    "values": [
+                      {
+                        "transformation": {
+                          "expression": "cells[trim('ep:MEP.ep:uri')].value.split(':')[1]",
+                          "language": "grel"
+                        },
+                        "valueSource": {
+                          "source": "row_index"
+                        },
+                        "valueType": {
+                          "type": "literal"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "type": "iri",
+                "typeMappings": [
+                  {
+                    "transformation": {
+                      "expression": "org",
+                      "language": "prefix"
+                    },
+                    "valueSource": {
+                      "source": "constant",
+                      "constant": "Membership"
+                    }
+                  }
+                ]
               }
             }
           ]

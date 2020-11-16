@@ -1,0 +1,142 @@
+{
+  "baseIRI": "http://data.europarl.europa.eu/",
+  "namespaces": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "subjectMappings": [
+    {
+      "propertyMappings": [
+        {
+          "property": {
+            "transformation": {
+              "expression": "rdfs",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "label"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "_ - concepts - _ - labels - zu - http://www.w3.org/2000/01/rdf-schema#label",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "skos",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "prefLabel"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "_ - concepts - _ - labels - en - http://www.w3.org/2004/02/skos/core#prefLabel",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "en"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "skos",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "prefLabel"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "_ - concepts - _ - labels - fr - http://www.w3.org/2004/02/skos/core#prefLabel",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "fr"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "skos",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "inScheme"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "_ - identifier - namespaces - epvoc",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        }
+      ],
+      "subject": {
+        "transformation": {
+          "expression": "trim(cells[trim('_ - concepts - _ - uri')].value.split(':')[1])",
+          "language": "grel"
+        },
+        "valueSource": {
+          "source": "row_index"
+        }
+      },
+      "typeMappings": [
+        {
+          "transformation": {
+            "expression": "skos",
+            "language": "prefix"
+          },
+          "valueSource": {
+            "source": "constant",
+            "constant": "Concept"
+          }
+        }
+      ]
+    }
+  ]
+}

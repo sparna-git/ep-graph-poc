@@ -1,13 +1,13 @@
 {
-  "baseIRI": "http://example/base/",
+  "baseIRI": "http://data.europarl.europa.eu/Country/",
   "namespaces": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "foaf": "http://xmlns.com/foaf/0.1/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "ep": "http://data.europarl.europa.eu/",
-    "epsh": "http://data.europarl.europa.eu/shapes#"
+    "epsh": "http://data.europarl.europa.eu/shapes#",
+    "ep": "http://data.europarl.europa.eu/#"
   },
   "subjectMappings": [
     {
@@ -50,52 +50,6 @@
             {
               "valueSource": {
                 "columnName": "skos:notation",
-                "source": "column"
-              },
-              "valueType": {
-                "type": "literal"
-              }
-            }
-          ]
-        },
-        {
-          "property": {
-            "transformation": {
-              "expression": "ep",
-              "language": "prefix"
-            },
-            "valueSource": {
-              "source": "constant",
-              "constant": "formalOder"
-            }
-          },
-          "values": [
-            {
-              "valueSource": {
-                "columnName": "ep:formalOrder",
-                "source": "column"
-              },
-              "valueType": {
-                "type": "literal"
-              }
-            }
-          ]
-        },
-        {
-          "property": {
-            "transformation": {
-              "expression": "ep",
-              "language": "prefix"
-            },
-            "valueSource": {
-              "source": "constant",
-              "constant": "isoNumber"
-            }
-          },
-          "values": [
-            {
-              "valueSource": {
-                "columnName": "ep:isoNumber",
                 "source": "column"
               },
               "valueType": {
@@ -1492,6 +1446,144 @@
                     "constant": "bg"
                   }
                 }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "euCandidate"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "ep:euCandidate",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "euCountry"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "ep:euCountry",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "euStartDate"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "ep:euStartDate",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "formalOder"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "ep:formalOrder",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "isoCode"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "ep:isoCode",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "isoNumber"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "ep:isoNumber",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
               }
             }
           ]

@@ -1,0 +1,586 @@
+{
+  "baseIRI": "http://data.europarl.europa.eu/PoliticalGroup/",
+  "namespaces": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ep": "http://data.europarl.europa.eu/#",
+    "org": "http://www.w3.org/ns/org#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "epsh": "http://data.europarl.europa.eu/shapes#"
+  },
+  "subjectMappings": [
+    {
+      "propertyMappings": [
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "activatedDate"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "ep:activatedDate",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "dateTime"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "startDate"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "ep:startDate",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "dateTime"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "endDate"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "ep:endDate",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "dateTime"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "orderNumber"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "trim(cells[trim('ep:orderNumber')].value)",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "skos",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "notation"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "skos:notation",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "rdfs",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "label"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "ep:label",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "skos",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "prefLabel"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "skos:prefLabel.hu",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "hu"
+                  }
+                }
+              }
+            },
+            {
+              "valueSource": {
+                "columnName": "skos:prefLabel.et",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "et"
+                  }
+                }
+              }
+            },
+            {
+              "valueSource": {
+                "columnName": "skos:prefLabel.fi",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "fi"
+                  }
+                }
+              }
+            },
+            {
+              "valueSource": {
+                "columnName": "skos:prefLabel.cs",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "cs"
+                  }
+                }
+              }
+            },
+            {
+              "valueSource": {
+                "columnName": "skos:prefLabel.sk",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "sk"
+                  }
+                }
+              }
+            },
+            {
+              "valueSource": {
+                "columnName": "skos:prefLabel.lt",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "lt"
+                  }
+                }
+              }
+            },
+            {
+              "valueSource": {
+                "columnName": "skos:prefLabel.lv",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "lv"
+                  }
+                }
+              }
+            },
+            {
+              "valueSource": {
+                "columnName": "skos:prefLabel.mt",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "mt"
+                  }
+                }
+              }
+            },
+            {
+              "valueSource": {
+                "columnName": "skos:prefLabel.en",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "en"
+                  }
+                }
+              }
+            },
+            {
+              "valueSource": {
+                "columnName": "skos:prefLabel.da",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "da"
+                  }
+                }
+              }
+            },
+            {
+              "valueSource": {
+                "columnName": "skos:prefLabel.nl",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "nl"
+                  }
+                }
+              }
+            },
+            {
+              "valueSource": {
+                "columnName": "skos:prefLabel.sv",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "sv"
+                  }
+                }
+              }
+            },
+            {
+              "valueSource": {
+                "columnName": "skos:prefLabel.hr",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "hr"
+                  }
+                }
+              }
+            },
+            {
+              "valueSource": {
+                "columnName": "skos:prefLabel.sl",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "sl"
+                  }
+                }
+              }
+            },
+            {
+              "valueSource": {
+                "columnName": "skos:prefLabel.pl",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "pl"
+                  }
+                }
+              }
+            },
+            {
+              "valueSource": {
+                "columnName": "skos:prefLabel.de",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "de"
+                  }
+                }
+              }
+            },
+            {
+              "valueSource": {
+                "columnName": "skos:prefLabel.ro",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "ro"
+                  }
+                }
+              }
+            },
+            {
+              "valueSource": {
+                "columnName": "skos:prefLabel.it",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "it"
+                  }
+                }
+              }
+            },
+            {
+              "valueSource": {
+                "columnName": "skos:prefLabel.pt",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "pt"
+                  }
+                }
+              }
+            },
+            {
+              "valueSource": {
+                "columnName": "skos:prefLabel.es",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "es"
+                  }
+                }
+              }
+            },
+            {
+              "valueSource": {
+                "columnName": "skos:prefLabel.fr",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "fr"
+                  }
+                }
+              }
+            },
+            {
+              "valueSource": {
+                "columnName": "skos:prefLabel.ga",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "ga"
+                  }
+                }
+              }
+            },
+            {
+              "valueSource": {
+                "columnName": "skos:prefLabel.el",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "el"
+                  }
+                }
+              }
+            },
+            {
+              "valueSource": {
+                "columnName": "skos:prefLabel.bg",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "bg"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "subject": {
+        "transformation": {
+          "expression": "trim(cells[trim('ep:uri')].value.split(':')[1])",
+          "language": "grel"
+        },
+        "valueSource": {
+          "source": "row_index"
+        }
+      },
+      "typeMappings": [
+        {
+          "transformation": {
+            "expression": "org",
+            "language": "prefix"
+          },
+          "valueSource": {
+            "source": "constant",
+            "constant": "Organization"
+          }
+        }
+      ]
+    }
+  ]
+}

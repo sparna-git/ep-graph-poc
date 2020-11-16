@@ -1,16 +1,16 @@
 {
-  "baseIRI": "http://example/base/",
+  "baseIRI": "http://data.europarl.europa.eu/MEP/",
   "namespaces": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "foaf": "http://xmlns.com/foaf/0.1/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "ep": "http://data.europarl.europa.eu/",
     "epsh": "http://data.europarl.europa.eu/shapes#",
     "dcterms": "http://purl.org/dc/terms/",
     "schema": "https://schema.org/#",
-    "org": "http://www.w3.org/ns/org#"
+    "org": "http://www.w3.org/ns/org#",
+    "ep": "http://data.europarl.europa.eu/#"
   },
   "subjectMappings": [
     {
@@ -64,12 +64,12 @@
         {
           "property": {
             "transformation": {
-              "expression": "dcterms",
+              "expression": "skos",
               "language": "prefix"
             },
             "valueSource": {
               "source": "constant",
-              "constant": "identifier"
+              "constant": "notation"
             }
           },
           "values": [
@@ -87,25 +87,27 @@
         {
           "property": {
             "transformation": {
-              "expression": "foaf",
+              "expression": "ep",
               "language": "prefix"
             },
             "valueSource": {
               "source": "constant",
-              "constant": "title"
+              "constant": "Civility"
             }
           },
           "values": [
             {
               "transformation": {
-                "expression": "trim(cells[trim(if('ep:Civility.ep:uri'=='null','','ep:Civility.ep:uri'))].value.split(':')[1])",
+                "expression": "trim(cells[trim('ep:Civility.ep:uri')].value.split(':')[1])",
                 "language": "grel"
               },
               "valueSource": {
                 "source": "row_index"
               },
               "valueType": {
-                "type": "literal"
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
               }
             }
           ]
@@ -113,25 +115,27 @@
         {
           "property": {
             "transformation": {
-              "expression": "foaf",
+              "expression": "ep",
               "language": "prefix"
             },
             "valueSource": {
               "source": "constant",
-              "constant": "gender"
+              "constant": "Gender"
             }
           },
           "values": [
             {
               "transformation": {
-                "expression": "cells[trim('ep:Gender.ep:uri')].value.split(':')[1]",
+                "expression": "trim(cells[trim('ep:Gender.ep:uri')].value.split(':')[1])",
                 "language": "grel"
               },
               "valueSource": {
                 "source": "row_index"
               },
               "valueType": {
-                "type": "literal"
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
               }
             }
           ]
@@ -139,25 +143,55 @@
         {
           "property": {
             "transformation": {
-              "expression": "schema",
+              "expression": "ep",
               "language": "prefix"
             },
             "valueSource": {
               "source": "constant",
-              "constant": "nationality"
+              "constant": "Status"
             }
           },
           "values": [
             {
               "transformation": {
-                "expression": "trim(cells[trim(if('ep:hasBirthCountry.ep:uri'=='null','','ep:hasBirthCountry.ep:uri'))].value.split(':')[1])",
+                "expression": "trim(cells[trim('ep:Status.ep:uri')].value.split(':')[1])",
                 "language": "grel"
               },
               "valueSource": {
                 "source": "row_index"
               },
               "valueType": {
-                "type": "literal"
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "hasBirthCountry"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "trim(cells[trim('ep:hasBirthCountry.ep:uri')].value.split(':')[1])",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
               }
             }
           ]
@@ -170,13 +204,13 @@
             },
             "valueSource": {
               "source": "constant",
-              "constant": "hasMembership"
+              "constant": "memberShip"
             }
           },
           "values": [
             {
               "transformation": {
-                "expression": "trim(cells[trim('ep:MEP.ep:uri')].value.split(':')[1])+'/'+\ntrim(cells[trim('ep:hasPoliticalGroup.ep:uri')].value.split(':')[1])",
+                "expression": "trim(cells[trim('ep:MEP.ep:uri')].value.split(':')[1])\n+'/'+\ntrim(cells[trim('ep:hasPoliticalGroup.ep:uri')].value.split(':')[1])",
                 "language": "grel"
               },
               "valueSource": {
@@ -198,7 +232,7 @@
                     "values": [
                       {
                         "transformation": {
-                          "expression": "trim(cells[trim('ep:hasPoliticalGroup.ep:uri')].value.split(':')[1])",
+                          "expression": "trim(cells[trim('ep:hasPoliticalGroup.ep:uri')].value.split(':')[1].split('_')[1])",
                           "language": "grel"
                         },
                         "valueSource": {
