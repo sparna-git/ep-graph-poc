@@ -7,7 +7,7 @@ Toutes les colonnes sont converties avec l'URI indiquée dans l'entête, sauf ep
 
 	- ep:uri = URI
 	- ep:uri rdf:type skos:Concept
-	- ep:uri skos:inScheme <>
+	- ep:uri skos:inScheme ep_instances:Civility
 	- ep:isoLanguage = ep:isoLanguage
 	- ep:label = rdfs:label
 	- skos:altLabel = skos:altLabel avec le code de langue
@@ -16,7 +16,7 @@ Toutes les colonnes sont converties avec l'URI indiquée dans l'entête, sauf ep
 
 	- ep:uri = URI
 	- ep:uri rdf:type skos:Concept 
-	- ep:uri skos:inScheme <>
+	- ep:uri skos:inScheme ep_instances:Gender
  	- ep:label = rdfs:label
    	- ep:isoCode = ep:isoCode
    	- skos:notation = skos:notation
@@ -25,7 +25,7 @@ Toutes les colonnes sont converties avec l'URI indiquée dans l'entête, sauf ep
 
 	- ep:uri = URI
 	- ep:uri rdf:type skos:Concept
-	- ep:uri skos:inScheme <>
+	- ep:uri skos:inScheme ep_instances:Country
    	- ep:euCandidate = ep:euCandidate 
     - ep:euCountry = ep:euCountry
     - ep:euStartDate = ep:euStartDate
@@ -38,7 +38,7 @@ Toutes les colonnes sont converties avec l'URI indiquée dans l'entête, sauf ep
 	- "thesaurus" : ne pas convertir
 	- "uri" = URI
 	- "uri" rdf:type skos:Concept
-	- "uri" skos:inScheme <>
+	- "uri" skos:inScheme ep_instances:Concept_Status
 	- "types" : ne pas convertir
 	- labels/zu/http://www.w3.org/2000/01/rdf-schema#label = rdfs:label sans langue
 	- labels/en/http://www.w3.org/2004/02/skos/core#prefLabel = skos:prefLabel avec langue @en
