@@ -9,7 +9,7 @@
     "epsh": "http://data.europarl.europa.eu/shapes#",
     "dcterms": "http://purl.org/dc/terms/",
     "org": "http://www.w3.org/ns/org#",
-    "ep": "http://data.europarl.europa.eu/#"
+    "ep": "http://data.europarl.europa.eu/"
   },
   "subjectMappings": [
     {
@@ -22,17 +22,14 @@
             },
             "valueSource": {
               "source": "constant",
-              "constant": "lastName"
+              "constant": "familyName"
             }
           },
           "values": [
             {
-              "transformation": {
-                "expression": "trim(cells[trim('ep:Assistant.ep:familyName')].value)",
-                "language": "grel"
-              },
               "valueSource": {
-                "source": "row_index"
+                "columnName": "ep:Assistant.ep:familyName",
+                "source": "column"
               },
               "valueType": {
                 "type": "literal"
@@ -53,12 +50,9 @@
           },
           "values": [
             {
-              "transformation": {
-                "expression": "trim(cells[trim('ep:Assistant.ep:firstName')].value)",
-                "language": "grel"
-              },
               "valueSource": {
-                "source": "row_index"
+                "columnName": "ep:Assistant.ep:firstName",
+                "source": "column"
               },
               "valueType": {
                 "type": "literal"
@@ -103,7 +97,7 @@
           "values": [
             {
               "transformation": {
-                "expression": "trim(cells[trim('ep:Assistant.ep:uri')].value.split(':')[1])\n+'/'+\ntrim(cells[trim('ep:MEP.ep:uri')].value.split(':')[1])",
+                "expression": "trim(cells[trim('ep:Assistant.ep:uri')].value.split(':')[1])+'/'+\ntrim(cells[trim('ep:MEP.ep:uri')].value.split(':')[1])\n+'/membership'",
                 "language": "grel"
               },
               "valueSource": {
@@ -125,7 +119,7 @@
                     "values": [
                       {
                         "transformation": {
-                          "expression": "cells[trim('ep:MEP.ep:uri')].value.split(':')[1]",
+                          "expression": "trim(cells[trim('ep:Assistant.ep:uri')].value.split(':')[1])+'/membership'",
                           "language": "grel"
                         },
                         "valueSource": {
@@ -144,44 +138,15 @@
                 "typeMappings": [
                   {
                     "transformation": {
-                      "expression": "epsh",
+                      "expression": "org",
                       "language": "prefix"
                     },
                     "valueSource": {
                       "source": "constant",
-                      "constant": "MembershipAssitant"
+                      "constant": "Membership"
                     }
                   }
                 ]
-              }
-            }
-          ]
-        },
-        {
-          "property": {
-            "transformation": {
-              "expression": "skos",
-              "language": "prefix"
-            },
-            "valueSource": {
-              "source": "constant",
-              "constant": "inScheme"
-            }
-          },
-          "values": [
-            {
-              "transformation": {
-                "expression": "epsh",
-                "language": "prefix"
-              },
-              "valueSource": {
-                "source": "constant",
-                "constant": "Assistant"
-              },
-              "valueType": {
-                "propertyMappings": [],
-                "type": "iri",
-                "typeMappings": []
               }
             }
           ]
@@ -199,12 +164,12 @@
       "typeMappings": [
         {
           "transformation": {
-            "expression": "foaf",
+            "expression": "ep",
             "language": "prefix"
           },
           "valueSource": {
             "source": "constant",
-            "constant": "Person"
+            "constant": "Assistant"
           }
         }
       ]

@@ -1,16 +1,15 @@
-@base <http://data.europarl.europa.eu/shapes/> .
+@base <http://data.europarl.europa.eu/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix ep: <http://data.europarl.europa.eu/#> .
+@prefix ep: <http://data.europarl.europa.eu/> .
 @prefix epsh: <http://data.europarl.europa.eu/shapes#> .
-@prefix scheme: <http://data.europarl.europa.eu/> .
 
-<Country_AF> a skos:Concept;
+ep:Country_AF a skos:Concept;
   rdfs:label "Afghanistan";
-  skos:notation "AF";
+  skos:notation "af";
   skos:prefLabel "Afganisztán"@hu, "Afganistan"@et, "Afganistan"@fi, "Afghánistán"@cs,
     "Afganistan"@sk, "Afganistanas"@lt, "Afganistāna"@lv, "l-Afganistan"@mt, "Afghanistan"@en,
     "Afghanistan"@da, "Afghanistan"@nl, "Afghanistan"@sv, "Afganistan"@hr, "Afganistan"@sl,
@@ -27,13 +26,13 @@
     "Ισλαμική Δημοκρατία του Αφγανιστάν "@el, "Ислямска република Афганистан"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "AF";
-  ep:isoNumber 4;
-  skos:inScheme epsh:Country .
+  ep:isoCode "af";
+  ep:isoNumber "4";
+  skos:inScheme ep:Country .
 
-<Country_AL> a skos:Concept;
+ep:Country_AL a skos:Concept;
   rdfs:label "Albania";
-  skos:notation "AL";
+  skos:notation "al";
   skos:prefLabel "Albánia"@hu, "Albaania"@et, "Albania"@fi, "Albánie"@cs, "Albánsko"@sk,
     "Albanija"@lt, "Albānija"@lv, "l-Albanija"@mt, "Albania"@en, "Albanien"@da, "Albanië"@nl,
     "Albanien"@sv, "Albanija"@hr, "Albanija"@sl, "Albania"@pl, "Albanien"@de, "Albania"@ro,
@@ -48,13 +47,13 @@
     "Δημοκρατία της Αλβανίας "@el, "Република Албания"@bg;
   ep:euCandidate false;
   ep:euCountry true;
-  ep:isoCode "AL";
-  ep:isoNumber 8;
-  skos:inScheme epsh:Country .
+  ep:isoCode "al";
+  ep:isoNumber "8";
+  skos:inScheme ep:Country .
 
-<Country_DZ> a skos:Concept;
+ep:Country_DZ a skos:Concept;
   rdfs:label "Algeria";
-  skos:notation "DZ";
+  skos:notation "dz";
   skos:prefLabel "Algéria"@hu, "Alžeeria"@et, "Algeria"@fi, "Alžírsko"@cs, "Alžírsko"@sk,
     "Alžyras"@lt, "Alžīrija"@lv, "l-Alġerija"@mt, "Algeria"@en, "Algeriet"@da, "Algerije"@nl,
     "Algeriet"@sv, "Alžir"@hr, "Alžirija"@sl, "Algieria"@pl, "Algerien"@de, "Algeria"@ro,
@@ -74,13 +73,13 @@
     "Λαϊκή Δημοκρατία της Αλγερίας "@el, "Алжирска демократична народна република"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "DZ";
-  ep:isoNumber 12;
-  skos:inScheme epsh:Country .
+  ep:isoCode "dz";
+  ep:isoNumber "12";
+  skos:inScheme ep:Country .
 
-<Country_AS> a skos:Concept;
+ep:Country_AS a skos:Concept;
   rdfs:label "American Samoa";
-  skos:notation "AS";
+  skos:notation "as";
   skos:prefLabel "Amerikai Szamoa"@hu, "Ameerika Samoa"@et, "Amerikan Samoa"@fi, "Americká Samoa "@cs,
     "Americká Samoa"@sk, "Amerikos Samoa"@lt, "ASV Samoa"@lv, "is-Samoa Amerikana "@mt,
     "American Samoa"@en, "Amerikansk Samoa"@da, "Amerikaans-Samoa"@nl, "Amerikanska Samoa"@sv,
@@ -97,13 +96,13 @@
     "Έδαφος της Αμερικανικής Σαμόα "@el, "Американска Самоа"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "AS";
-  ep:isoNumber 16;
-  skos:inScheme epsh:Country .
+  ep:isoCode "as";
+  ep:isoNumber "16";
+  skos:inScheme ep:Country .
 
-<Country_AD> a skos:Concept;
+ep:Country_AD a skos:Concept;
   rdfs:label "Andorra";
-  skos:notation "AD";
+  skos:notation "ad";
   skos:prefLabel "Andorra"@hu, "Andorra"@et, "Andorra"@fi, "Andorra"@cs, "Andorra"@sk,
     "Andora"@lt, "Andora"@lv, "Andorra"@mt, "Andorra"@en, "Andorra"@da, "Andorra"@nl,
     "Andorra"@sv, "Andora"@hr, "Andora"@sl, "Andora"@pl, "Andorra"@de, "Andorra"@ro, "Andorra"@it,
@@ -117,13 +116,13 @@
     "Principauté d'Andorre"@fr, "Prionsacht Andóra"@ga, "Πριγκιπάτο της Ανδόρας"@el, "Княжество Андора"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "AD";
-  ep:isoNumber 20;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ad";
+  ep:isoNumber "20";
+  skos:inScheme ep:Country .
 
-<Country_AO> a skos:Concept;
+ep:Country_AO a skos:Concept;
   rdfs:label "Angola";
-  skos:notation "AO";
+  skos:notation "ao";
   skos:prefLabel "Angola"@hu, "Angola"@et, "Angola"@fi, "Angola"@cs, "Angola"@sk, "Angola"@lt,
     "Angola"@lv, "l-Angola"@mt, "Angola"@en, "Angola"@da, "Angola"@nl, "Angola"@sv, "Angola"@hr,
     "Angola"@sl, "Angola"@pl, "Angola"@de, "Angola"@ro, "Angola"@it, "Angola"@pt, "Angola"@es,
@@ -137,13 +136,13 @@
     "Δημοκρατία της Ανγκόλας"@el, "Република Ангола"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "AO";
-  ep:isoNumber 24;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ao";
+  ep:isoNumber "24";
+  skos:inScheme ep:Country .
 
-<Country_AI> a skos:Concept;
+ep:Country_AI a skos:Concept;
   rdfs:label "Anguilla";
-  skos:notation "AI";
+  skos:notation "ai";
   skos:prefLabel "Anguilla"@hu, "Anguilla"@et, "Anguilla"@fi, "Anguilla"@cs, "Anguilla"@sk,
     "Angilija"@lt, "Angilja"@lv, "Anguilla"@mt, "Anguilla"@en, "Anguilla"@da, "Anguilla"@nl,
     "Anguilla"@sv, "Angvila"@hr, "Angvila"@sl, "Anguilla"@pl, "Anguilla"@de, "Anguilla"@ro,
@@ -156,13 +155,13 @@
     "Ангила"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "AI";
-  ep:isoNumber 660;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ai";
+  ep:isoNumber "660";
+  skos:inScheme ep:Country .
 
-<Country_AQ> a skos:Concept;
+ep:Country_AQ a skos:Concept;
   rdfs:label "Antarctica";
-  skos:notation "AQ";
+  skos:notation "aq";
   skos:prefLabel "Antarktisz"@hu, "Antarktis"@et, "Antarktis"@fi, "Antarktida"@cs, "Antarktída"@sk,
     "Antarktis"@lt, "Antarktika"@lv, "l-Antartika"@mt, "Antarctica"@en, "Antarktis"@da,
     "Antarctica"@nl, "Antarktis"@sv, "Antarktika"@hr, "Antarktika"@sl, "Antarktyda"@pl,
@@ -175,13 +174,13 @@
     "Antartaice"@ga, "Ανταρκτική"@el, "Антарктика"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "AQ";
-  ep:isoNumber 10;
-  skos:inScheme epsh:Country .
+  ep:isoCode "aq";
+  ep:isoNumber "10";
+  skos:inScheme ep:Country .
 
-<Country_AG> a skos:Concept;
+ep:Country_AG a skos:Concept;
   rdfs:label "Antigua and Barbuda";
-  skos:notation "AG";
+  skos:notation "ag";
   skos:prefLabel "Antigua és Barbuda"@hu, "Antigua ja Barbuda"@et, "Antigua ja Barbuda"@fi,
     "Antigua a Barbuda"@cs, "Antigua a Barbuda"@sk, "Antigva ir Barbuda"@lt, "Antigva un Barbuda"@lv,
     "Antigua u Barbuda"@mt, "Antigua and Barbuda"@en, "Antigua og Barbuda"@da, "Antigua en Barbuda"@nl,
@@ -198,13 +197,13 @@
     "Антигуа и Барбуда"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "AG";
-  ep:isoNumber 28;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ag";
+  ep:isoNumber "28";
+  skos:inScheme ep:Country .
 
-<Country_AR> a skos:Concept;
+ep:Country_AR a skos:Concept;
   rdfs:label "Argentina";
-  skos:notation "AR";
+  skos:notation "ar";
   skos:prefLabel "Argentína"@hu, "Argentina"@et, "Argentiina"@fi, "Argentina"@cs, "Argentína"@sk,
     "Argentina"@lt, "Argentīna"@lv, "l-Arġentina"@mt, "Argentina"@en, "Argentina"@da,
     "Argentinië"@nl, "Argentina"@sv, "Argentina"@hr, "Argentina"@sl, "Argentyna"@pl, "Argentinien"@de,
@@ -220,13 +219,13 @@
     "Δημοκρατία της Αργεντινής"@el, "Република Аржентина"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "AR";
-  ep:isoNumber 32;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ar";
+  ep:isoNumber "32";
+  skos:inScheme ep:Country .
 
-<Country_AM> a skos:Concept;
+ep:Country_AM a skos:Concept;
   rdfs:label "Armenia";
-  skos:notation "AM";
+  skos:notation "am";
   skos:prefLabel "Örményország"@hu, "Armeenia"@et, "Armenia"@fi, "Arménie"@cs, "Arménsko"@sk,
     "Armėnija"@lt, "Armēnija"@lv, "l-Armenja"@mt, "Armenia"@en, "Armenien"@da, "Armenië"@nl,
     "Armenien"@sv, "Armenija"@hr, "Armenija"@sl, "Armenia"@pl, "Armenien"@de, "Armenia"@ro,
@@ -241,13 +240,13 @@
     "Δημοκρατία της Αρμενίας"@el, "Република Армения"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "AM";
-  ep:isoNumber 51;
-  skos:inScheme epsh:Country .
+  ep:isoCode "am";
+  ep:isoNumber "51";
+  skos:inScheme ep:Country .
 
-<Country_AW> a skos:Concept;
+ep:Country_AW a skos:Concept;
   rdfs:label "Aruba";
-  skos:notation "AW";
+  skos:notation "aw";
   skos:prefLabel "Aruba"@hu, "Aruba"@et, "Aruba"@fi, "Aruba"@cs, "Aruba"@sk, "Aruba"@lt,
     "Aruba"@lv, "Aruba "@mt, "Aruba"@en, "Aruba"@da, "Aruba"@nl, "Aruba"@sv, "Aruba"@hr,
     "Aruba"@sl, "Aruba"@pl, "Aruba"@de, "Aruba"@ro, "Aruba"@it, "Aruba"@pt, "Aruba"@es,
@@ -258,13 +257,13 @@
     "Aruba"@fr, "Arúba"@ga, "Αρούμπα"@el, "Аруба"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "AW";
-  ep:isoNumber 533;
-  skos:inScheme epsh:Country .
+  ep:isoCode "aw";
+  ep:isoNumber "533";
+  skos:inScheme ep:Country .
 
-<Country_AU> a skos:Concept;
+ep:Country_AU a skos:Concept;
   rdfs:label "Australia";
-  skos:notation "AU";
+  skos:notation "au";
   skos:prefLabel "Ausztrália"@hu, "Austraalia"@et, "Australia"@fi, "Austrálie"@cs, "Austrália"@sk,
     "Australija"@lt, "Austrālija"@lv, "l-Awstralja"@mt, "Australia"@en, "Australien"@da,
     "Australië"@nl, "Australien"@sv, "Australija"@hr, "Avstralija"@sl, "Australia"@pl,
@@ -279,13 +278,13 @@
     "Κοινοπολιτεία της Αυστραλίας"@el, "Австралийски съюз"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "AU";
-  ep:isoNumber 36;
-  skos:inScheme epsh:Country .
+  ep:isoCode "au";
+  ep:isoNumber "36";
+  skos:inScheme ep:Country .
 
-<Country_AT> a skos:Concept;
+ep:Country_AT a skos:Concept;
   rdfs:label "Austria";
-  skos:notation "AT";
+  skos:notation "at";
   skos:prefLabel "Ausztria"@hu, "Austria"@et, "Itävalta"@fi, "Rakousko"@cs, "Rakúsko"@sk,
     "Austrija"@lt, "Austrija"@lv, "l-Awstrija"@mt, "Austria"@en, "Østrig"@da, "Oostenrijk"@nl,
     "Österrike"@sv, "Austrija"@hr, "Avstrija"@sl, "Austria"@pl, "Österreich"@de, "Austria"@ro,
@@ -300,15 +299,15 @@
     "Република Австрия"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "1994-12-31T23:00:00"^^xsd:date;
-  ep:formalOder 90;
-  ep:isoCode "AT";
-  ep:isoNumber 40;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "1994-12-31"^^xsd:date;
+  ep:formalOrder 90;
+  ep:isoCode "at";
+  ep:isoNumber "40";
+  skos:inScheme ep:Country .
 
-<Country_AZ> a skos:Concept;
+ep:Country_AZ a skos:Concept;
   rdfs:label "Azerbaijan";
-  skos:notation "AZ";
+  skos:notation "az";
   skos:prefLabel "Azerbajdzsán"@hu, "Aserbaidžaan"@et, "Azerbaidžan "@fi, "Azerbájdžán"@cs,
     "Azerbajdžan"@sk, "Azerbaidžanas"@lt, "Azerbaidžāna"@lv, "l-Azerbajġan"@mt, "Azerbaijan"@en,
     "Aserbajdsjan"@da, "Azerbeidzjan"@nl, "Azerbajdzjan"@sv, "Azerbajdžan"@hr, "Azerbajdžan"@sl,
@@ -324,13 +323,13 @@
     "Poblacht na hAsarbaiseáine"@ga, "Δημοκρατία του Αζερμπαϊτζάν"@el, "Азербайджанска република"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "AZ";
-  ep:isoNumber 31;
-  skos:inScheme epsh:Country .
+  ep:isoCode "az";
+  ep:isoNumber "31";
+  skos:inScheme ep:Country .
 
-<Country_BS> a skos:Concept;
+ep:Country_BS a skos:Concept;
   rdfs:label "Bahamas";
-  skos:notation "BS";
+  skos:notation "bs";
   skos:prefLabel "Bahama-szigetek"@hu, "Bahama"@et, "Bahama"@fi, "Bahamy"@cs, "Bahamy"@sk,
     "Bahamos"@lt, "Bahamu Salas"@lv, "il-Bahamas"@mt, "Bahamas"@en, "Bahamas"@da, "Bahama's"@nl,
     "Bahamas"@sv, "Bahami"@hr, "Bahami"@sl, "Bahamy"@pl, "Bahamas"@de, "Bahamas"@ro, "Bahamas"@it,
@@ -344,13 +343,13 @@
     "Comhlathas na mBahámaí"@ga, "Κοινοπολιτεία Μπαχαμών"@el, "Бахамска общност"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "BS";
-  ep:isoNumber 44;
-  skos:inScheme epsh:Country .
+  ep:isoCode "bs";
+  ep:isoNumber "44";
+  skos:inScheme ep:Country .
 
-<Country_BH> a skos:Concept;
+ep:Country_BH a skos:Concept;
   rdfs:label "Bahrain";
-  skos:notation "BH";
+  skos:notation "bh";
   skos:prefLabel "Bahrein"@hu, "Bahrein"@et, "Bahrain"@fi, "Bahrajn"@cs, "Bahrajn"@sk,
     "Bahreinas"@lt, "Bahreina"@lv, "il-Bahrain"@mt, "Bahrain"@en, "Bahrein"@da, "Bahrein"@nl,
     "Bahrain"@sv, "Bahrein"@hr, "Bahrajn"@sl, "Bahrajn"@pl, "Bahrain"@de, "Bahrain"@ro,
@@ -365,13 +364,13 @@
     "Кралство Бахрейн"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "BH";
-  ep:isoNumber 48;
-  skos:inScheme epsh:Country .
+  ep:isoCode "bh";
+  ep:isoNumber "48";
+  skos:inScheme ep:Country .
 
-<Country_BD> a skos:Concept;
+ep:Country_BD a skos:Concept;
   rdfs:label "Bangladesh";
-  skos:notation "BD";
+  skos:notation "bd";
   skos:prefLabel "Banglades"@hu, "Bangladesh"@et, "Bangladesh"@fi, "Bangladéš"@cs, "Bangladéš"@sk,
     "Bangladešas"@lt, "Bangladeša"@lv, "il-Bangladesh"@mt, "Bangladesh"@en, "Bangladesh"@da,
     "Bangladesh"@nl, "Bangladesh"@sv, "Bangladeš"@hr, "Bangladeš"@sl, "Bangladesz"@pl,
@@ -387,13 +386,13 @@
     "Daon-Phoblacht na Banglaidéise"@ga, "Λαϊκή Δημοκρατία του Μπανγκλαντές "@el, "Народна република Бангладеш"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "BD";
-  ep:isoNumber 50;
-  skos:inScheme epsh:Country .
+  ep:isoCode "bd";
+  ep:isoNumber "50";
+  skos:inScheme ep:Country .
 
-<Country_BB> a skos:Concept;
+ep:Country_BB a skos:Concept;
   rdfs:label "Barbados";
-  skos:notation "BB";
+  skos:notation "bb";
   skos:prefLabel "Barbados"@hu, "Barbados"@et, "Barbados"@fi, "Barbados"@cs, "Barbados"@sk,
     "Barbadosas"@lt, "Barbadosa"@lv, "Barbados"@mt, "Barbados"@en, "Barbados"@da, "Barbados"@nl,
     "Barbados"@sv, "Barbados "@hr, "Barbados"@sl, "Barbados"@pl, "Barbados"@de, "Barbados"@ro,
@@ -406,13 +405,13 @@
     "Барбадос"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "BB";
-  ep:isoNumber 52;
-  skos:inScheme epsh:Country .
+  ep:isoCode "bb";
+  ep:isoNumber "52";
+  skos:inScheme ep:Country .
 
-<Country_BY> a skos:Concept;
+ep:Country_BY a skos:Concept;
   rdfs:label "Belarus";
-  skos:notation "BY";
+  skos:notation "by";
   skos:prefLabel "Belarusz"@hu, "Valgevene"@et, "Valko-Venäjä"@fi, "Bělorusko"@cs, "Bielorusko"@sk,
     "Baltarusija"@lt, "Baltkrievija"@lv, "il-Belarussja"@mt, "Belarus"@en, "Hviderusland"@da,
     "Belarus / Wit-Rusland"@nl, "Vitryssland"@sv, "Bjelorusija"@hr, "Belorusija"@sl, "Białoruś"@pl,
@@ -428,13 +427,13 @@
     "Δημοκρατία της Λευκορωσίας "@el, "Република Беларус"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "BY";
-  ep:isoNumber 112;
-  skos:inScheme epsh:Country .
+  ep:isoCode "by";
+  ep:isoNumber "112";
+  skos:inScheme ep:Country .
 
-<Country_BE> a skos:Concept;
+ep:Country_BE a skos:Concept;
   rdfs:label "Belgium";
-  skos:notation "BE";
+  skos:notation "be";
   skos:prefLabel "Belgium"@hu, "Belgia"@et, "Belgia"@fi, "Belgie"@cs, "Belgicko"@sk,
     "Belgija"@lt, "Beļģija"@lv, "il-Belġju"@mt, "Belgium"@en, "Belgien"@da, "België"@nl,
     "Belgien"@sv, "Belgija"@hr, "Belgija"@sl, "Belgia"@pl, "Belgien"@de, "Belgia"@ro,
@@ -449,15 +448,15 @@
     "Кралство Белгия"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "1958-01-04T23:00:00"^^xsd:date;
-  ep:formalOder 3;
-  ep:isoCode "BE";
-  ep:isoNumber 56;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "1958-01-04"^^xsd:date;
+  ep:formalOrder 3;
+  ep:isoCode "be";
+  ep:isoNumber "56";
+  skos:inScheme ep:Country .
 
-<Country_BZ> a skos:Concept;
+ep:Country_BZ a skos:Concept;
   rdfs:label "Belize";
-  skos:notation "BZ";
+  skos:notation "bz";
   skos:prefLabel "Belize"@hu, "Belize"@et, "Belize"@fi, "Belize"@cs, "Belize"@sk, "Belizas"@lt,
     "Beliza"@lv, "il-Belize"@mt, "Belize"@en, "Belize"@da, "Belize"@nl, "Belize"@sv, "Belize"@hr,
     "Belize"@sl, "Belize"@pl, "Belize"@de, "Belize"@ro, "Belize"@it, "Belize"@pt, "Belice"@es,
@@ -468,13 +467,13 @@
     "Belize"@fr, "an Bheilís"@ga, "Μπελίζ"@el, "Белиз"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "BZ";
-  ep:isoNumber 84;
-  skos:inScheme epsh:Country .
+  ep:isoCode "bz";
+  ep:isoNumber "84";
+  skos:inScheme ep:Country .
 
-<Country_BJ> a skos:Concept;
+ep:Country_BJ a skos:Concept;
   rdfs:label "Benin";
-  skos:notation "BJ";
+  skos:notation "bj";
   skos:prefLabel "Benin"@hu, "Benin"@et, "Benin"@fi, "Benin"@cs, "Benin"@sk, "Beninas"@lt,
     "Benina"@lv, "il-Benin"@mt, "Benin"@en, "Benin"@da, "Benin"@nl, "Benin"@sv, "Benin"@hr,
     "Benin"@sl, "Benin"@pl, "Benin"@de, "Benin"@ro, "Benin"@it, "Benim"@pt, "Burundi"@es,
@@ -488,13 +487,13 @@
     "Република Бенин"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "BJ";
-  ep:isoNumber 204;
-  skos:inScheme epsh:Country .
+  ep:isoCode "bj";
+  ep:isoNumber "204";
+  skos:inScheme ep:Country .
 
-<Country_BM> a skos:Concept;
+ep:Country_BM a skos:Concept;
   rdfs:label "Bermuda";
-  skos:notation "BM";
+  skos:notation "bm";
   skos:prefLabel "Bermuda"@hu, "Bermuda"@et, "Bermuda"@fi, "Bermudy"@cs, "Bermudy"@sk,
     "Bermuda"@lt, "Bermudu Salas"@lv, "Bermuda"@mt, "Bermuda"@en, "Bermuda"@da, "Bermuda"@nl,
     "Bermuda"@sv, "Bermudski Otoci"@hr, "Bermudi"@sl, "Bermudy"@pl, "Bermuda"@de, "Bermuda"@ro,
@@ -507,13 +506,13 @@
     "Бермуда"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "BM";
-  ep:isoNumber 60;
-  skos:inScheme epsh:Country .
+  ep:isoCode "bm";
+  ep:isoNumber "60";
+  skos:inScheme ep:Country .
 
-<Country_BT> a skos:Concept;
+ep:Country_BT a skos:Concept;
   rdfs:label "Bhutan";
-  skos:notation "BT";
+  skos:notation "bt";
   skos:prefLabel "Bhután"@hu, "Bhutan"@et, "Bhutan"@fi, "Bhútán"@cs, "Bhután"@sk, "Butanas"@lt,
     "Butāna"@lv, "il-Bhutan"@mt, "Bhutan"@en, "Bhutan"@da, "Bhutan"@nl, "Bhutan"@sv, "Butan"@hr,
     "Butan"@sl, "Bhutan"@pl, "Bhutan"@de, "Bhutan"@ro, "Bhutan"@it, "Butão"@pt, "Reino de Bután"@es,
@@ -527,13 +526,13 @@
     "Кралство Бутан"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "BT";
-  ep:isoNumber 64;
-  skos:inScheme epsh:Country .
+  ep:isoCode "bt";
+  ep:isoNumber "64";
+  skos:inScheme ep:Country .
 
-<Country_BO> a skos:Concept;
+ep:Country_BO a skos:Concept;
   rdfs:label "Bolivia";
-  skos:notation "BO";
+  skos:notation "bo";
   skos:prefLabel "Bolívia"@hu, "Boliivia"@et, "Bolivia"@fi, "Bolívie"@cs, "Bolívia"@sk,
     "Bolivija"@lt, "Bolīvija"@lv, "il-Bolivja"@mt, "Bolivia"@en, "Bolivia"@da, "Bolivia"@nl,
     "Bolivia"@sv, "Bolivija"@hr, "Bolivija"@sl, "Boliwia"@pl, "Bolivien"@de, "Bolivia"@ro,
@@ -550,13 +549,13 @@
     "Многонационална държава Боливия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "BO";
-  ep:isoNumber 68;
-  skos:inScheme epsh:Country .
+  ep:isoCode "bo";
+  ep:isoNumber "68";
+  skos:inScheme ep:Country .
 
-<Country_BA> a skos:Concept;
+ep:Country_BA a skos:Concept;
   rdfs:label "Bosnia and Herzegovina";
-  skos:notation "BA";
+  skos:notation "ba";
   skos:prefLabel "Bosznia-Hercegovina"@hu, "Bosnia ja Hertsegoviina"@et, "Bosnia ja Hertsegovina"@fi,
     "Bosna a Herzegovina"@cs, "Bosna a Hercegovina"@sk, "Bosnija ir Hercegovina"@lt, "Bosnija un Hercegovina"@lv,
     "il-Bożnija-Ħerzegovina"@mt, "Bosnia and Herzegovina"@en, "Bosnien-Hercegovina  "@da,
@@ -575,13 +574,13 @@
     "Босна и Херцеговина"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "BA";
-  ep:isoNumber 70;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ba";
+  ep:isoNumber "70";
+  skos:inScheme ep:Country .
 
-<Country_BW> a skos:Concept;
+ep:Country_BW a skos:Concept;
   rdfs:label "Botswana";
-  skos:notation "BW";
+  skos:notation "bw";
   skos:prefLabel "Botswana"@hu, "Botswana"@et, "Botswana"@fi, "Botswana"@cs, "Botswana"@sk,
     "Botsvana"@lt, "Botsvāna"@lv, "il-Botswana"@mt, "Botswana"@en, "Botswana"@da, "Botswana"@nl,
     "Botswana"@sv, "Bocvana"@hr, "Bocvana"@sl, "Botswana"@pl, "Botsuana"@de, "Botswana"@ro,
@@ -596,13 +595,13 @@
     "Poblacht na Botsuáine"@ga, "Δημοκρατία της Μποτσουάνας "@el, "Република Ботсуана"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "BW";
-  ep:isoNumber 72;
-  skos:inScheme epsh:Country .
+  ep:isoCode "bw";
+  ep:isoNumber "72";
+  skos:inScheme ep:Country .
 
-<Country_BV> a skos:Concept;
+ep:Country_BV a skos:Concept;
   rdfs:label "Bouvet Island";
-  skos:notation "BV";
+  skos:notation "bv";
   skos:prefLabel "Bouvet-sziget"@hu, "Bouvet' saar"@et, "Bouvet'nsaari"@fi, "Bouvetův ostrov"@cs,
     "Bouvetov ostrov"@sk, "Buvė"@lt, "Buvē Sala"@lv, "il-Gżira Bouvet "@mt, "Bouvet Island"@en,
     "Bouvetøen"@da, "Bouveteiland"@nl, "Bouvetön"@sv, "Otok Bouvet"@hr, "Bouvetov otok"@sl,
@@ -615,13 +614,13 @@
     "Isla Bouvet "@es, "Île Bouvet"@fr, "Oileán Bouvet"@ga, "Νήσος Μπουβέ"@el, "Остров Буве"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "BV";
-  ep:isoNumber 74;
-  skos:inScheme epsh:Country .
+  ep:isoCode "bv";
+  ep:isoNumber "74";
+  skos:inScheme ep:Country .
 
-<Country_BR> a skos:Concept;
+ep:Country_BR a skos:Concept;
   rdfs:label "Brazil";
-  skos:notation "BR";
+  skos:notation "br";
   skos:prefLabel "Brazília"@hu, "Brasiilia"@et, "Brasilia"@fi, "Brazílie"@cs, "Brazília"@sk,
     "Brazilija"@lt, "Brazīlija"@lv, "il-Brażil"@mt, "Brazil"@en, "Brasilien"@da, "Brazilië"@nl,
     "Brasilien"@sv, "Brazil"@hr, "Brazilija"@sl, "Brazylia"@pl, "Brasilien"@de, "Brazilia"@ro,
@@ -638,13 +637,13 @@
     "Федеративна република Бразилия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "BR";
-  ep:isoNumber 76;
-  skos:inScheme epsh:Country .
+  ep:isoCode "br";
+  ep:isoNumber "76";
+  skos:inScheme ep:Country .
 
-<Country_IO> a skos:Concept;
+ep:Country_IO a skos:Concept;
   rdfs:label "British Indian Ocean Territory";
-  skos:notation "IO";
+  skos:notation "io";
   skos:prefLabel "Brit Indiai-óceáni Terület"@hu, "Briti India ookeani ala"@et, "Brittiläinen Intian valtameren alue"@fi,
     "Britské indickooceánské území"@cs, "Britské indickooceánske územie"@sk, "Indijos Vandenyno Britų Sritis"@lt,
     "Britu Indijas Okeāna Teritorija"@lv, "it-Territorju Brittaniku tal-Oċean Indjan"@mt,
@@ -669,13 +668,13 @@
     "Βρετανικό Έδαφος Ινδικού Ωκεανού"@el, "Британски територии в Индийския океан"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "IO";
-  ep:isoNumber 86;
-  skos:inScheme epsh:Country .
+  ep:isoCode "io";
+  ep:isoNumber "86";
+  skos:inScheme ep:Country .
 
-<Country_VG> a skos:Concept;
+ep:Country_VG a skos:Concept;
   rdfs:label "British Virgin Islands";
-  skos:notation "VG";
+  skos:notation "vg";
   skos:prefLabel "Brit Virgin-szigetek"@hu, "Neitsisaared"@et, "Brittiläiset Neitsytsaaret"@fi,
     "Britské Panenské ostrovy"@cs, "Britské Panenské ostrovy"@sk, "Mergelių Salos (Didžioji Britanija)"@lt,
     "Britu Virdžīnas"@lv, "il-Gżejjer Verġni Brittaniċi"@mt, "British Virgin Islands"@en,
@@ -694,13 +693,13 @@
     "Oileáin Bhriotanacha na Maighdean"@ga, "Βρετανικές Παρθένοι Νήσοι"@el, "Британски Вирджински острови"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "VG";
-  ep:isoNumber 92;
-  skos:inScheme epsh:Country .
+  ep:isoCode "vg";
+  ep:isoNumber "92";
+  skos:inScheme ep:Country .
 
-<Country_BN> a skos:Concept;
+ep:Country_BN a skos:Concept;
   rdfs:label "Brunei";
-  skos:notation "BN";
+  skos:notation "bn";
   skos:prefLabel "Brunei"@hu, "Brunei"@et, "Brunei"@fi, "Brunej"@cs, "Brunej"@sk, "Brunėjus"@lt,
     "Bruneja"@lv, "il-Brunei"@mt, "Brunei"@en, "Brunei"@da, "Brunei"@nl, "Brunei"@sv,
     "Brunej"@hr, "Brunej"@sl, "Brunei"@pl, "Brunei"@de, "Brunei"@ro, "Brunei"@it, "Brunei"@pt,
@@ -715,13 +714,13 @@
     "Κράτος του Μπρουνέι, κατοικία της ειρήνης"@el, "Бруней Даруссалам"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "BN";
-  ep:isoNumber 96;
-  skos:inScheme epsh:Country .
+  ep:isoCode "bn";
+  ep:isoNumber "96";
+  skos:inScheme ep:Country .
 
-<Country_BG> a skos:Concept;
+ep:Country_BG a skos:Concept;
   rdfs:label "Bulgaria";
-  skos:notation "BG";
+  skos:notation "bg";
   skos:prefLabel "Bulgária"@hu, "Bulgaaria"@et, "Bulgaria"@fi, "Bulharsko"@cs, "Bulharsko"@sk,
     "Bulgarija"@lt, "Bulgārija"@lv, "il-Bulgarija"@mt, "Bulgaria"@en, "Bulgarien"@da,
     "Bulgarije"@nl, "Bulgarien"@sv, "Bugarska"@hr, "Bolgarija"@sl, "Bułgaria"@pl, "Bulgarien"@de,
@@ -736,15 +735,15 @@
     "Poblacht na Bulgáire"@ga, "Δημοκρατία της Βουλγαρίας"@el, "Република България"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "2006-12-31T23:00:00"^^xsd:date;
-  ep:formalOder 5;
-  ep:isoCode "BG";
-  ep:isoNumber 100;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "2006-12-31"^^xsd:date;
+  ep:formalOrder 5;
+  ep:isoCode "bg";
+  ep:isoNumber "100";
+  skos:inScheme ep:Country .
 
-<Country_BF> a skos:Concept;
+ep:Country_BF a skos:Concept;
   rdfs:label "Burkina Faso";
-  skos:notation "BF";
+  skos:notation "bf";
   skos:prefLabel "Burkina Faso"@hu, "Burkina Faso"@et, "Burkina Faso"@fi, "Burkina Faso"@cs,
     "Burkina "@sk, "Burkina Fasas"@lt, "Burkinafaso"@lv, "il-Burkina Faso"@mt, "Burkina Faso"@en,
     "Burkina Faso"@da, "Burkina Faso"@nl, "Burkina Faso"@sv, "Burkina Faso"@hr, "Burkina Faso"@sl,
@@ -758,13 +757,13 @@
     "Буркина Фасо"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "BF";
-  ep:isoNumber 854;
-  skos:inScheme epsh:Country .
+  ep:isoCode "bf";
+  ep:isoNumber "854";
+  skos:inScheme ep:Country .
 
-<Country_BU> a skos:Concept;
+ep:Country_BU a skos:Concept;
   rdfs:label "Burma";
-  skos:notation "BU";
+  skos:notation "bu";
   skos:prefLabel "Burma"@hu, "Birma"@et, "Myanmar/Burma"@fi, "Barma"@cs, "Barma"@sk,
     "Mianmaras / Birma"@lt, "Birma"@lv, "il-Myanmar/Burma"@mt, "Burma"@en, "Myanmar/Burma"@da,
     "Myanmar / Birma"@nl, "Burma"@sv, "Burma"@hr, "Burma"@sl, "Birma"@pl, "Birma"@de,
@@ -777,13 +776,13 @@
     "Birmanie"@fr, "Burma"@ga, "Βιρμανία"@el, "Бирма"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "BU";
-  ep:isoNumber 104;
-  skos:inScheme epsh:Country .
+  ep:isoCode "bu";
+  ep:isoNumber "104";
+  skos:inScheme ep:Country .
 
-<Country_BI> a skos:Concept;
+ep:Country_BI a skos:Concept;
   rdfs:label "Burundi";
-  skos:notation "BI";
+  skos:notation "bi";
   skos:prefLabel "Burundi"@hu, "Burundi"@et, "Burundi"@fi, "Burundi"@cs, "Burundi"@sk,
     "Burundis"@lt, "Burundi"@lv, "il-Burundi"@mt, "Burundi"@en, "Burundi"@da, "Burundi"@nl,
     "Burundi"@sv, "Burundi"@hr, "Burundi"@sl, "Burundi"@pl, "Burundi"@de, "Burundi"@ro,
@@ -798,13 +797,13 @@
     "Poblacht na Burúine"@ga, "Δημοκρατία του Μπουρούντι "@el, "Република Бурунди"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "BI";
-  ep:isoNumber 108;
-  skos:inScheme epsh:Country .
+  ep:isoCode "bi";
+  ep:isoNumber "108";
+  skos:inScheme ep:Country .
 
-<Country_KH> a skos:Concept;
+ep:Country_KH a skos:Concept;
   rdfs:label "Cambodia";
-  skos:notation "KH";
+  skos:notation "kh";
   skos:prefLabel "Kambodzsa"@hu, "Kambodža"@et, "Kambodža"@fi, "Kambodža"@cs, "Kambodža"@sk,
     "Kambodža"@lt, "Kambodža"@lv, "il-Kambodja"@mt, "Cambodia"@en, "Cambodja  "@da, "Cambodja"@nl,
     "Kambodja"@sv, "Kambodža"@hr, "Kambodža"@sl, "Kambodża"@pl, "Kambodscha"@de, "Cambodgia"@ro,
@@ -819,13 +818,13 @@
     "Βασίλειο της Καμπότζης"@el, "Кралство Камбоджа"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "KH";
-  ep:isoNumber 116;
-  skos:inScheme epsh:Country .
+  ep:isoCode "kh";
+  ep:isoNumber "116";
+  skos:inScheme ep:Country .
 
-<Country_CM> a skos:Concept;
+ep:Country_CM a skos:Concept;
   rdfs:label "Cameroon";
-  skos:notation "CM";
+  skos:notation "cm";
   skos:prefLabel "Kamerun"@hu, "Kamerun"@et, "Kamerun"@fi, "Kamerun"@cs, "Kamerun"@sk,
     "Kamerūnas"@lt, "Kamerūna"@lv, "il-Kamerun"@mt, "Cameroon"@en, "Cameroun  "@da, "Kameroen"@nl,
     "Kamerun"@sv, "Kamerun"@hr, "Kamerun"@sl, "Kamerun"@pl, "Kamerun"@de, "Camerun"@ro,
@@ -840,13 +839,13 @@
     "Poblacht Chamarún"@ga, "Δημοκρατία του Καμερούν "@el, "Република Камерун"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "CM";
-  ep:isoNumber 120;
-  skos:inScheme epsh:Country .
+  ep:isoCode "cm";
+  ep:isoNumber "120";
+  skos:inScheme ep:Country .
 
-<Country_CA> a skos:Concept;
+ep:Country_CA a skos:Concept;
   rdfs:label "Canada";
-  skos:notation "CA";
+  skos:notation "ca";
   skos:prefLabel "Kanada"@hu, "Kanada"@et, "Kanada"@fi, "Kanada"@cs, "Kanada"@sk, "Kanada"@lt,
     "Kanāda"@lv, "il-Kanada"@mt, "Canada"@en, "Canada"@da, "Canada"@nl, "Kanada"@sv, "Kanada"@hr,
     "Kanada"@sl, "Kanada"@pl, "Kanada"@de, "Canada"@ro, "Canada"@it, "Canadá"@pt, "Canadá"@es,
@@ -857,13 +856,13 @@
     "Canada"@fr, "Ceanada"@ga, "Καναδάς"@el, "Канада"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "CA";
-  ep:isoNumber 124;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ca";
+  ep:isoNumber "124";
+  skos:inScheme ep:Country .
 
-<Country_CT> a skos:Concept;
+ep:Country_CT a skos:Concept;
   rdfs:label "Canton and Enderbury Islands";
-  skos:notation "CT";
+  skos:notation "ct";
   skos:prefLabel "Canton- és Enderbury-szigetek"@hu, "Cantoni ja Enderbury saared"@et,
     "Kanton ja Enderbury -saaret"@fi, "Ostrovy Canton a Enderbury"@cs, "Ostrovy Canton a Enderbury"@sk,
     "Kantono ir Endebrio salos"@lt, "Kantonas un Enderberijas Salas"@lv, "il-Gżejjer Kanton u Enderbury"@mt,
@@ -884,13 +883,13 @@
     "Острови Кантон и Ендърбъри"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "CT";
-  ep:isoNumber 128;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ct";
+  ep:isoNumber "128";
+  skos:inScheme ep:Country .
 
-<Country_CV> a skos:Concept;
+ep:Country_CV a skos:Concept;
   rdfs:label "Cape Verde";
-  skos:notation "CV";
+  skos:notation "cv";
   skos:prefLabel "Zöld-foki-szigetek"@hu, "Roheneemesaared"@et, "Kap Verde"@fi, "Kapverdy"@cs,
     "Kapverdy"@sk, "Žaliasis Kyšulys"@lt, "Kaboverde"@lv, "Cape Verde"@mt, "Cape Verde"@en,
     "Kap Verde"@da, "Kaapverdië"@nl, "Kap Verde"@sv, "Zelenortski Otoci"@hr, "Zelenortski otoki"@sl,
@@ -907,13 +906,13 @@
     "Poblacht Rinn Verde"@ga, "Δημοκρατία του Πράσινου Ακρωτηρίου "@el, "Република Кабо Верде"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "CV";
-  ep:isoNumber 132;
-  skos:inScheme epsh:Country .
+  ep:isoCode "cv";
+  ep:isoNumber "132";
+  skos:inScheme ep:Country .
 
-<Country_BQ> a skos:Concept;
+ep:Country_BQ a skos:Concept;
   rdfs:label "Caribbean Netherlands";
-  skos:notation "BQ";
+  skos:notation "bq";
   skos:prefLabel "Bonaire, Sint Eustatius és Saba  "@hu, "Bonaire, Sint Eustatius ja Saba"@et,
     "Bonaire, Sint-Eustatius ja Saba"@fi, "Bonaire, Sint Eustatius a Saba"@cs, "Bonaire, Svätý Eustach a Saba"@sk,
     "Boneras, Sint Eustatijus ir Saba"@lt, "Bonēra, Sintestatiusa un Saba"@lv, "Bonaire, Sint Eustatius u Saba"@mt,
@@ -934,13 +933,13 @@
     "Μποναίρ, Άγιος Ευστάθιος και Σάμπα"@el, "Бонер, Синт Еустациус и Саба"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "BQ";
-  ep:isoNumber 535;
-  skos:inScheme epsh:Country .
+  ep:isoCode "bq";
+  ep:isoNumber "535";
+  skos:inScheme ep:Country .
 
-<Country_KY> a skos:Concept;
+ep:Country_KY a skos:Concept;
   rdfs:label "Cayman Islands";
-  skos:notation "KY";
+  skos:notation "ky";
   skos:prefLabel "Kajmán-szigetek"@hu, "Kaimanisaared"@et, "Caymansaaret"@fi, "Kajmanské ostrovy"@cs,
     "Kajmanie ostrovy"@sk, "Kaimanai"@lt, "Kaimanu Salas"@lv, "il-Gżejer Cayman"@mt, "Cayman Islands"@en,
     "Caymanøerne  "@da, "Kaaimaneilanden"@nl, "Caymanöarna"@sv, "Kajmanski Otoci"@hr,
@@ -955,13 +954,13 @@
     "Кайманови острови"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "KY";
-  ep:isoNumber 136;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ky";
+  ep:isoNumber "136";
+  skos:inScheme ep:Country .
 
-<Country_CF> a skos:Concept;
+ep:Country_CF a skos:Concept;
   rdfs:label "Central African Republic";
-  skos:notation "CF";
+  skos:notation "cf";
   skos:prefLabel "Közép-afrikai Köztársaság"@hu, "Kesk-Aafrika Vabariik"@et, "Keski-Afrikan tasavalta"@fi,
     "Středoafrická republika"@cs, "Stredoafrická republika"@sk, "Centrinės Afrikos Respublika"@lt,
     "Centrālāfrikas Republika"@lv, "ir-Repubblika Ċentru-Afrikana"@mt, "Central African Republic"@en,
@@ -980,13 +979,13 @@
     "Poblacht na hAfraice Láir"@ga, "Κεντροαφρικανική Δημοκρατία"@el, "Централноафриканска република"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "CF";
-  ep:isoNumber 140;
-  skos:inScheme epsh:Country .
+  ep:isoCode "cf";
+  ep:isoNumber "140";
+  skos:inScheme ep:Country .
 
-<Country_TD> a skos:Concept;
+ep:Country_TD a skos:Concept;
   rdfs:label "Chad";
-  skos:notation "TD";
+  skos:notation "td";
   skos:prefLabel "Csád"@hu, "Tšaad"@et, "Tšad"@fi, "Čad"@cs, "Čad"@sk, "Čadas"@lt, "Čada"@lv,
     "iċ-Chad"@mt, "Chad"@en, "Tchad  "@da, "Tsjaad"@nl, "Tchad"@sv, "Čad"@hr, "Čad"@sl,
     "Czad"@pl, "Tschad"@de, "Ciad"@ro, "Ciad"@it, "Chade"@pt, "Chad"@es, "Tchad"@fr, "Sead"@ga,
@@ -1000,13 +999,13 @@
     "Република Чад"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "TD";
-  ep:isoNumber 148;
-  skos:inScheme epsh:Country .
+  ep:isoCode "td";
+  ep:isoNumber "148";
+  skos:inScheme ep:Country .
 
-<Country_CL> a skos:Concept;
+ep:Country_CL a skos:Concept;
   rdfs:label "Chile";
-  skos:notation "CL";
+  skos:notation "cl";
   skos:prefLabel "Chile"@hu, "Tšiili"@et, "Chile"@fi, "Chile"@cs, "Čile"@sk, "Čilė"@lt,
     "Čīle"@lv, "iċ-Ċilì"@mt, "Chile"@en, "Chile"@da, "Chili"@nl, "Chile"@sv, "Čile"@hr,
     "Čile"@sl, "Chile"@pl, "Chile"@de, "Chile"@ro, "Cile"@it, "Chile"@pt, "Chile"@es,
@@ -1020,13 +1019,13 @@
     "Република Чили"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "CL";
-  ep:isoNumber 152;
-  skos:inScheme epsh:Country .
+  ep:isoCode "cl";
+  ep:isoNumber "152";
+  skos:inScheme ep:Country .
 
-<Country_CN> a skos:Concept;
+ep:Country_CN a skos:Concept;
   rdfs:label "China";
-  skos:notation "CN";
+  skos:notation "cn";
   skos:prefLabel "Kína"@hu, "Hiina"@et, "Kiina"@fi, "Čína"@cs, "Čína"@sk, "Kinija"@lt,
     "Ķīna"@lv, "iċ-Ċina"@mt, "China"@en, "Kina"@da, "China"@nl, "Kina"@sv, "Kina"@hr,
     "Kitajska"@sl, "Chiny"@pl, "China"@de, "China"@ro, "Cina"@it, "China"@pt, "China"@es,
@@ -1041,13 +1040,13 @@
     "Λαϊκή Δημοκρατία της Κίνας "@el, "Китайска народна република"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "CN";
-  ep:isoNumber 156;
-  skos:inScheme epsh:Country .
+  ep:isoCode "cn";
+  ep:isoNumber "156";
+  skos:inScheme ep:Country .
 
-<Country_CX> a skos:Concept;
+ep:Country_CX a skos:Concept;
   rdfs:label "Christmas Island";
-  skos:notation "CX";
+  skos:notation "cx";
   skos:prefLabel "Karácsony-sziget"@hu, "Jõulusaar"@et, "Joulusaari"@fi, "Vánoční ostrov"@cs,
     "Teritórium Vianočného ostrova"@sk, "Kalėdų Sala"@lt, "Ziemassvētku Sala"@lv, "Il-Gżira Christmas"@mt,
     "Christmas Island"@en, "Christmas Island  "@da, "Christmaseiland"@nl, "Julön"@sv,
@@ -1064,13 +1063,13 @@
     "Críoch Oileán na Nollag"@ga, "Έδαφος της Νήσου των Χριστουγέννων "@el, "Територия остров Рождество"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "CX";
-  ep:isoNumber 162;
-  skos:inScheme epsh:Country .
+  ep:isoCode "cx";
+  ep:isoNumber "162";
+  skos:inScheme ep:Country .
 
-<Country_CC> a skos:Concept;
+ep:Country_CC a skos:Concept;
   rdfs:label "Cocos (Keeling) Islands";
-  skos:notation "CC";
+  skos:notation "cc";
   skos:prefLabel "Kókusz (Keeling)-szigetek "@hu, "Kookossaared"@et, "Kookossaaret"@fi,
     "Kokosové (Keelingovy) ostrovy "@cs, "Kokosové ostrovy "@sk, "Kokosų (Kilingo) Salos"@lt,
     "Kokosu (Kīlinga) Salas"@lv, "il-Gżejjer Cocos (Keeling)"@mt, "Cocos (Keeling) Islands"@en,
@@ -1089,13 +1088,13 @@
     "Територия Кокосови острови"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "CC";
-  ep:isoNumber 166;
-  skos:inScheme epsh:Country .
+  ep:isoCode "cc";
+  ep:isoNumber "166";
+  skos:inScheme ep:Country .
 
-<Country_CO> a skos:Concept;
+ep:Country_CO a skos:Concept;
   rdfs:label "Colombia";
-  skos:notation "CO";
+  skos:notation "co";
   skos:prefLabel "Kolumbia"@hu, "Colombia"@et, "Kolumbia"@fi, "Kolumbie"@cs, "Kolumbia"@sk,
     "Kolumbija"@lt, "Kolumbija"@lv, "il-Kolombja"@mt, "Colombia"@en, "Colombia"@da, "Colombia"@nl,
     "Colombia"@sv, "Kolumbija"@hr, "Kolumbija"@sl, "Kolumbia"@pl, "Kolumbien"@de, "Columbia"@ro,
@@ -1111,13 +1110,13 @@
     "Република Колумбия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "CO";
-  ep:isoNumber 170;
-  skos:inScheme epsh:Country .
+  ep:isoCode "co";
+  ep:isoNumber "170";
+  skos:inScheme ep:Country .
 
-<Country_KM> a skos:Concept;
+ep:Country_KM a skos:Concept;
   rdfs:label "Comoros";
-  skos:notation "KM";
+  skos:notation "km";
   skos:prefLabel "Comore-szigetek"@hu, "Komoorid"@et, "Komorit"@fi, "Komory"@cs, "Komory"@sk,
     "Komorai"@lt, "Komoru Salas"@lv, "Comoros"@mt, "Comoros"@en, "Comorerne  "@da, "Comoren"@nl,
     "Komorerna"@sv, "Komori"@hr, "Komori"@sl, "Komory"@pl, "Komoren"@de, "Comore"@ro,
@@ -1131,13 +1130,13 @@
     "Union des Comores"@fr, "Aontas Oileáin Chomóra"@ga, "Ένωση των Κομορών "@el, "Съюз на Коморските острови"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "KM";
-  ep:isoNumber 174;
-  skos:inScheme epsh:Country .
+  ep:isoCode "km";
+  ep:isoNumber "174";
+  skos:inScheme ep:Country .
 
-<Country_CG> a skos:Concept;
+ep:Country_CG a skos:Concept;
   rdfs:label "Congo";
-  skos:notation "CG";
+  skos:notation "cg";
   skos:prefLabel "Kongó"@hu, "Kongo"@et, "Kongo"@fi, "Kongo"@cs, "Kongo"@sk, "Kongas"@lt,
     "Kongo"@lv, "il-Kongo"@mt, "Congo"@en, "Congo"@da, "Congo-Brazzaville"@nl, "Kongo"@sv,
     "Kongo"@hr, "Kongo"@sl, "Kongo"@pl, "Kongo"@de, "Congo"@ro, "Congo"@it, "Congo"@pt,
@@ -1151,13 +1150,13 @@
     "Δημοκρατία του Κονγκό "@el, "Република Конго"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "CG";
-  ep:isoNumber 178;
-  skos:inScheme epsh:Country .
+  ep:isoCode "cg";
+  ep:isoNumber "178";
+  skos:inScheme ep:Country .
 
-<Country_CK> a skos:Concept;
+ep:Country_CK a skos:Concept;
   rdfs:label "Cook Islands";
-  skos:notation "CK";
+  skos:notation "ck";
   skos:prefLabel "Cook-szigetek"@hu, "Cooki saared"@et, "Cookinsaaret"@fi, "Cookovy ostrovy"@cs,
     "Cookove ostrovy"@sk, "Kuko Salos"@lt, "Kuka Salas"@lv, "il-Gżejjer Cook"@mt, "Cook Islands"@en,
     "Cookøerne  "@da, "Cookeilanden"@nl, "Cooköarna"@sv, "Cookovi Otoci"@hr, "Cookovi otoki"@sl,
@@ -1170,13 +1169,13 @@
     "Islas Cook "@es, "Îles Cook"@fr, "Oileáin Cook"@ga, "Νήσοι Κουκ "@el, "Острови Кук"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "CK";
-  ep:isoNumber 184;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ck";
+  ep:isoNumber "184";
+  skos:inScheme ep:Country .
 
-<Country_CR> a skos:Concept;
+ep:Country_CR a skos:Concept;
   rdfs:label "Costa Rica";
-  skos:notation "CR";
+  skos:notation "cr";
   skos:prefLabel "Costa Rica"@hu, "Costa Rica"@et, "Costa Rica"@fi, "Kostarika"@cs,
     "Kostarika"@sk, "Kosta Rika"@lt, "Kostarika"@lv, "il-Costa Rica"@mt, "Costa Rica"@en,
     "Costa Rica"@da, "Costa Rica"@nl, "Costa Rica"@sv, "Kostarika"@hr, "Kostarika"@sl,
@@ -1192,13 +1191,13 @@
     "Δημοκρατία της Κόστα Ρίκα"@el, "Република Коста Рика"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "CR";
-  ep:isoNumber 188;
-  skos:inScheme epsh:Country .
+  ep:isoCode "cr";
+  ep:isoNumber "188";
+  skos:inScheme ep:Country .
 
-<Country_HR> a skos:Concept;
+ep:Country_HR a skos:Concept;
   rdfs:label "Croatia";
-  skos:notation "HR";
+  skos:notation "hr";
   skos:prefLabel "Horvátország"@hu, "Horvaatia"@et, "Kroatia"@fi, "Chorvatsko"@cs, "Chorvátsko"@sk,
     "Kroatija"@lt, "Horvātija"@lv, "il-Kroazja"@mt, "Croatia"@en, "Kroatien"@da, "Kroatië"@nl,
     "Kroatien"@sv, "Hrvatska"@hr, "Hrvaška"@sl, "Chorwacja"@pl, "Kroatien"@de, "Croația"@ro,
@@ -1213,15 +1212,15 @@
     "Poblacht na Cróite"@ga, "Δημοκρατία της Κροατίας "@el, "Република Хърватия"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "2013-06-30T22:00:00"^^xsd:date;
-  ep:formalOder 45;
-  ep:isoCode "HR";
-  ep:isoNumber 191;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "2013-06-30"^^xsd:date;
+  ep:formalOrder 45;
+  ep:isoCode "hr";
+  ep:isoNumber "191";
+  skos:inScheme ep:Country .
 
-<Country_CU> a skos:Concept;
+ep:Country_CU a skos:Concept;
   rdfs:label "Cuba";
-  skos:notation "CU";
+  skos:notation "cu";
   skos:prefLabel "Kuba"@hu, "Kuuba"@et, "Kuuba"@fi, "Kuba"@cs, "Kuba"@sk, "Kuba"@lt,
     "Kuba"@lv, "Kuba"@mt, "Cuba"@en, "Cuba"@da, "Cuba"@nl, "Kuba"@sv, "Kuba"@hr, "Kuba"@sl,
     "Kuba"@pl, "Kuba"@de, "Cuba"@ro, "Cuba"@it, "Cuba"@pt, "Cuba"@es, "Cuba"@fr, "Cúba"@ga,
@@ -1235,13 +1234,13 @@
     "Република Куба"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "CU";
-  ep:isoNumber 192;
-  skos:inScheme epsh:Country .
+  ep:isoCode "cu";
+  ep:isoNumber "192";
+  skos:inScheme ep:Country .
 
-<Country_CW> a skos:Concept;
+ep:Country_CW a skos:Concept;
   rdfs:label "Curacao";
-  skos:notation "CW";
+  skos:notation "cw";
   skos:prefLabel "Curaçao"@hu, "Curaçao"@et, "Curaçao"@fi, "Curaçao"@cs, "Curaçao"@sk,
     "Kiurasao"@lt, "Kirasao"@lv, "Curaçao"@mt, "Curacao"@en, "Curaçao  "@da, "Curaçao"@nl,
     "Curaçao"@sv, "Curaçao"@hr, "Curaçao"@sl, "Curaçao"@pl, "Curaçao"@de, "Curaçao"@ro,
@@ -1254,13 +1253,13 @@
     "Кюрасао"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "CW";
-  ep:isoNumber 531;
-  skos:inScheme epsh:Country .
+  ep:isoCode "cw";
+  ep:isoNumber "531";
+  skos:inScheme ep:Country .
 
-<Country_CY> a skos:Concept;
+ep:Country_CY a skos:Concept;
   rdfs:label "Cyprus";
-  skos:notation "CY";
+  skos:notation "cy";
   skos:prefLabel "Ciprus"@hu, "Küpros"@et, "Kypros"@fi, "Kypr"@cs, "Cyprus"@sk, "Kipras"@lt,
     "Kipra"@lv, "Ċipru"@mt, "Cyprus"@en, "Cypern"@da, "Cyprus"@nl, "Cypern"@sv, "Cipar"@hr,
     "Ciper"@sl, "Cypr"@pl, "Zypern"@de, "Cipru"@ro, "Cipro"@it, "Chipre"@pt, "Chipre"@es,
@@ -1274,15 +1273,15 @@
     "Република Кипър"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "2004-04-30T22:00:00"^^xsd:date;
-  ep:formalOder 55;
-  ep:isoCode "CY";
-  ep:isoNumber 196;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "2004-04-30"^^xsd:date;
+  ep:formalOrder 55;
+  ep:isoCode "cy";
+  ep:isoNumber "196";
+  skos:inScheme ep:Country .
 
-<Country_CZ> a skos:Concept;
+ep:Country_CZ a skos:Concept;
   rdfs:label "Czechia";
-  skos:notation "CZ";
+  skos:notation "cz";
   skos:prefLabel "Csehország"@hu, "Tšehhi"@et, "Tšekki"@fi, "Česko"@cs, "Česko"@sk,
     "Čekija"@lt, "Čehija"@lv, "iċ-Ċekja"@mt, "Czechia"@en, "Tjekkiet"@da, "Tsjechië"@nl,
     "Tjeckien"@sv, "Češka"@hr, "Češka"@sl, "Czechy"@pl, "Tschechien"@de, "Cehia"@ro, "Cechia"@it,
@@ -1296,15 +1295,15 @@
     "Чешка република"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "2004-04-30T22:00:00"^^xsd:date;
-  ep:formalOder 10;
-  ep:isoCode "CZ";
-  ep:isoNumber 203;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "2004-04-30"^^xsd:date;
+  ep:formalOrder 10;
+  ep:isoCode "cz";
+  ep:isoNumber "203";
+  skos:inScheme ep:Country .
 
-<Country_CI> a skos:Concept;
+ep:Country_CI a skos:Concept;
   rdfs:label "Côte d'Ivoire";
-  skos:notation "CI";
+  skos:notation "ci";
   skos:prefLabel "Elefántcsontpart"@hu, "Côte d’Ivoire"@et, "Norsunluurannikko"@fi,
     "Pobřeží slonoviny"@cs, "Pobrežie Slonoviny"@sk, "Dramblio Kaulo Krantas"@lt, "Kotdivuāra"@lv,
     "Kosta tal-Avorju"@mt, "Côte d'Ivoire"@en, "Elfenbenskysten  "@da, "Ivoorkust"@nl,
@@ -1322,13 +1321,13 @@
     "Poblacht an Chósta Eabhair"@ga, "Δημοκρατία της Ακτής του Ελεφαντοστού"@el, "Република Кот д'Ивоар"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "CI";
-  ep:isoNumber 384;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ci";
+  ep:isoNumber "384";
+  skos:inScheme ep:Country .
 
-<Country_CD> a skos:Concept;
+ep:Country_CD a skos:Concept;
   rdfs:label "Democratic Republic of Congo";
-  skos:notation "CD";
+  skos:notation "cd";
   skos:prefLabel "Kongói Demokratikus Köztársaság"@hu, "Kongo"@et, "Kongon demokraattinen tasavalta"@fi,
     "Demokratická republika Kongo"@cs, "Konžská demokratická republika"@sk, "Kongo Demokratinė Respublika"@lt,
     "Kongo"@lv, "ir-Repubblika Demokratika tal-Kongo"@mt, "Democratic Republic of Congo"@en,
@@ -1348,13 +1347,13 @@
     "Демократична република Конго"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "CD";
-  ep:isoNumber 180;
-  skos:inScheme epsh:Country .
+  ep:isoCode "cd";
+  ep:isoNumber "180";
+  skos:inScheme ep:Country .
 
-<Country_DK> a skos:Concept;
+ep:Country_DK a skos:Concept;
   rdfs:label "Denmark";
-  skos:notation "DK";
+  skos:notation "dk";
   skos:prefLabel "Dánia"@hu, "Taani"@et, "Tanska"@fi, "Dánsko"@cs, "Dánsko"@sk, "Danija"@lt,
     "Dānija"@lv, "id-Danimarka"@mt, "Denmark"@en, "Danmark"@da, "Denemarken"@nl, "Danmark"@sv,
     "Danska"@hr, "Danska"@sl, "Dania"@pl, "Dänemark"@de, "Danemarca"@ro, "Danimarca"@it,
@@ -1368,15 +1367,15 @@
     "Кралство Дания"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "1972-12-31T23:00:00"^^xsd:date;
-  ep:formalOder 15;
-  ep:isoCode "DK";
-  ep:isoNumber 208;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "1972-12-31"^^xsd:date;
+  ep:formalOrder 15;
+  ep:isoCode "dk";
+  ep:isoNumber "208";
+  skos:inScheme ep:Country .
 
-<Country_DJ> a skos:Concept;
+ep:Country_DJ a skos:Concept;
   rdfs:label "Djibouti";
-  skos:notation "DJ";
+  skos:notation "dj";
   skos:prefLabel "Dzsibuti"@hu, "Djibouti"@et, "Djibouti"@fi, "Džibutsko"@cs, "Džibutsko"@sk,
     "Džibutis"@lt, "Džibutija"@lv, "id-Djibouti"@mt, "Djibouti"@en, "Djibouti"@da, "Djibouti"@nl,
     "Djibouti"@sv, "Džibuti"@hr, "Džibuti"@sl, "Dżibuti"@pl, "Dschibuti"@de, "Djibouti"@ro,
@@ -1391,13 +1390,13 @@
     "Δημοκρατία του Τζιμπουτί"@el, "Република Джибути"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "DJ";
-  ep:isoNumber 262;
-  skos:inScheme epsh:Country .
+  ep:isoCode "dj";
+  ep:isoNumber "262";
+  skos:inScheme ep:Country .
 
-<Country_DM> a skos:Concept;
+ep:Country_DM a skos:Concept;
   rdfs:label "Dominica";
-  skos:notation "DM";
+  skos:notation "dm";
   skos:prefLabel "Dominika"@hu, "Dominica"@et, "Dominica"@fi, "Dominika"@cs, "Dominika"@sk,
     "Dominika"@lt, "Dominika"@lv, "Dominica"@mt, "Dominica"@en, "Dominica"@da, "Dominica"@nl,
     "Dominica"@sv, "Dominika"@hr, "Dominika"@sl, "Dominika"@pl, "Dominica"@de, "Dominica"@ro,
@@ -1413,13 +1412,13 @@
     "Κοινοπολιτεία της Δομίνικας"@el, "Доминиканска общност"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "DM";
-  ep:isoNumber 212;
-  skos:inScheme epsh:Country .
+  ep:isoCode "dm";
+  ep:isoNumber "212";
+  skos:inScheme ep:Country .
 
-<Country_DO> a skos:Concept;
+ep:Country_DO a skos:Concept;
   rdfs:label "Dominican Republic";
-  skos:notation "DO";
+  skos:notation "do";
   skos:prefLabel "Dominikai Köztársaság"@hu, "Dominikaani"@et, "Dominikaaninen tasavalta"@fi,
     "Dominikánská republika"@cs, "Dominikánska republika"@sk, "Dominikos Respublika"@lt,
     "Dominikāna"@lv, "ir-Repubblika Dominicana"@mt, "Dominican Republic"@en, "Den Dominikanske Republik"@da,
@@ -1438,13 +1437,13 @@
     "an Phoblacht Dhoiminiceach"@ga, "Δομινικανή Δημοκρατία"@el, "Доминиканска република"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "DO";
-  ep:isoNumber 214;
-  skos:inScheme epsh:Country .
+  ep:isoCode "do";
+  ep:isoNumber "214";
+  skos:inScheme ep:Country .
 
-<Country_TL> a skos:Concept;
+ep:Country_TL a skos:Concept;
   rdfs:label "East Timor";
-  skos:notation "TL";
+  skos:notation "tl";
   skos:prefLabel "Kelet-Timor"@hu, "Ida-Timor"@et, "Itä-Timor"@fi, "Východní Timor"@cs,
     "Východný Timor"@sk, "Rytų Timoras"@lt, "Austrumtimora"@lv, "Timor Leste"@mt, "East Timor"@en,
     "Timor-Leste, Østtimor  "@da, "Oost-Timor"@nl, "Östtimor"@sv, "Itstočni Timor"@hr,
@@ -1465,13 +1464,13 @@
     "Демократична република Източен Тимор"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "TL";
-  ep:isoNumber 626;
-  skos:inScheme epsh:Country .
+  ep:isoCode "tl";
+  ep:isoNumber "626";
+  skos:inScheme ep:Country .
 
-<Country_TP> a skos:Concept;
+ep:Country_TP a skos:Concept;
   rdfs:label "East Timor";
-  skos:notation "TP";
+  skos:notation "tp";
   skos:prefLabel "Kelet-Timor"@hu, "Ida-Timor"@et, "Itä-Timor"@fi, "Východní Timor"@cs,
     "Východný Timor"@sk, "Rytų Timoras"@lt, "Austrumtimora"@lv, "Timor tal-Lvant"@mt,
     "East Timor"@en, "Timor-Leste, Østtimor  "@da, "Oost-Timor"@nl, "Östtimor"@sv, "Istočni Timor"@hr,
@@ -1488,13 +1487,13 @@
     "Poblacht Dhaonlathach Thíomór Thoir"@ga, "Ανατολικό Τιμόρ"@el, "Демократична република Източен Тимор"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "TP";
-  ep:isoNumber 626;
-  skos:inScheme epsh:Country .
+  ep:isoCode "tp";
+  ep:isoNumber "626";
+  skos:inScheme ep:Country .
 
-<Country_EC> a skos:Concept;
+ep:Country_EC a skos:Concept;
   rdfs:label "Ecuador";
-  skos:notation "EC";
+  skos:notation "ec";
   skos:prefLabel "Ecuador"@hu, "Ecuador"@et, "Ecuador"@fi, "Ekvádor"@cs, "Ekvádor"@sk,
     "Ekvadoras"@lt, "Ekvadora"@lv, "l-Ekwador"@mt, "Ecuador"@en, "Ecuador"@da, "Ecuador"@nl,
     "Ecuador"@sv, "Ekvador"@hr, "Ekvador"@sl, "Ekwador"@pl, "Ecuador"@de, "Ecuador"@ro,
@@ -1509,13 +1508,13 @@
     "Poblacht Eacuadór"@ga, "Δημοκρατία του Ισημερινού "@el, "Република Еквадор"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "EC";
-  ep:isoNumber 218;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ec";
+  ep:isoNumber "218";
+  skos:inScheme ep:Country .
 
-<Country_EG> a skos:Concept;
+ep:Country_EG a skos:Concept;
   rdfs:label "Egypt";
-  skos:notation "EG";
+  skos:notation "eg";
   skos:prefLabel "Egyiptom"@hu, "Egiptus"@et, "Egypti"@fi, "Egypt"@cs, "Egypt"@sk, "Egiptas"@lt,
     "Ēģipte"@lv, "l-Eġittu"@mt, "Egypt"@en, "Egypten"@da, "Egypte"@nl, "Egypten"@sv, "Egipat"@hr,
     "Egipt"@sl, "Egipt"@pl, "Ägypten"@de, "Egipt"@ro, "Egitto"@it, "Egipto"@pt, "Egipto"@es,
@@ -1530,13 +1529,13 @@
     "Poblacht Arabach na hÉigipte"@ga, "Αραβική Δημοκρατία της Αιγύπτου"@el, "Арабска република Египет"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "EG";
-  ep:isoNumber 818;
-  skos:inScheme epsh:Country .
+  ep:isoCode "eg";
+  ep:isoNumber "818";
+  skos:inScheme ep:Country .
 
-<Country_SV> a skos:Concept;
+ep:Country_SV a skos:Concept;
   rdfs:label "El Salvador";
-  skos:notation "SV";
+  skos:notation "sv";
   skos:prefLabel "Salvador"@hu, "El Salvador"@et, "El Salvador"@fi, "Salvador"@cs, "Salvádor"@sk,
     "Salvadoras"@lt, "Salvadora"@lv, "El Salvador"@mt, "El Salvador"@en, "El Salvador  "@da,
     "El Salvador"@nl, "El Salvador"@sv, "El Salvador"@hr, "Salvador"@sl, "Salwador"@pl,
@@ -1552,13 +1551,13 @@
     "Δημοκρατία του Ελ Σαλβαδόρ "@el, "Република Ел Салвадор"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "SV";
-  ep:isoNumber 222;
-  skos:inScheme epsh:Country .
+  ep:isoCode "sv";
+  ep:isoNumber "222";
+  skos:inScheme ep:Country .
 
-<Country_GQ> a skos:Concept;
+ep:Country_GQ a skos:Concept;
   rdfs:label "Equatorial Guinea";
-  skos:notation "GQ";
+  skos:notation "gq";
   skos:prefLabel "Egyenlítői Guinea"@hu, "Ekvatoriaal-Guinea"@et, "Päiväntasaajan Guinea"@fi,
     "Rovníková Guinea"@cs, "Republika Rovníkovej Guiney"@sk, "Pusiaujo Gvinėja"@lt, "Ekvatoriālā Gvineja"@lv,
     "il-Guinea Ekwatorjali"@mt, "Equatorial Guinea"@en, "Ækvatorialguinea  "@da, "Equatoriaal-Guinea"@nl,
@@ -1577,13 +1576,13 @@
     "Република Екваториална Гвинея"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "GQ";
-  ep:isoNumber 226;
-  skos:inScheme epsh:Country .
+  ep:isoCode "gq";
+  ep:isoNumber "226";
+  skos:inScheme ep:Country .
 
-<Country_ER> a skos:Concept;
+ep:Country_ER a skos:Concept;
   rdfs:label "Eritrea";
-  skos:notation "ER";
+  skos:notation "er";
   skos:prefLabel "Eritrea"@hu, "Eritrea"@et, "Eritrea"@fi, "Eritrea"@cs, "Eritrea"@sk,
     "Eritrėja"@lt, "Eritreja"@lv, "l-Eritrea"@mt, "Eritrea"@en, "Eritrea"@da, "Eritrea"@nl,
     "Eritrea"@sv, "Eritreja"@hr, "Eritreja"@sl, "Erytrea"@pl, "Eritrea"@de, "Eritreea"@ro,
@@ -1597,13 +1596,13 @@
     "Stát na hEiritré"@ga, "Κράτος της Ερυθραίας "@el, "Държавата Еритрея"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "ER";
-  ep:isoNumber 232;
-  skos:inScheme epsh:Country .
+  ep:isoCode "er";
+  ep:isoNumber "232";
+  skos:inScheme ep:Country .
 
-<Country_EE> a skos:Concept;
+ep:Country_EE a skos:Concept;
   rdfs:label "Estonia";
-  skos:notation "EE";
+  skos:notation "ee";
   skos:prefLabel "Észtország"@hu, "Eesti"@et, "Viro"@fi, "Estonsko"@cs, "Estónsko"@sk,
     "Estija"@lt, "Igaunija"@lv, "l-Estonja"@mt, "Estonia"@en, "Estland"@da, "Estland"@nl,
     "Estland"@sv, "Estonija"@hr, "Estonija"@sl, "Estonia"@pl, "Estland"@de, "Estonia"@ro,
@@ -1618,15 +1617,15 @@
     "Република Естония"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "2004-04-30T22:00:00"^^xsd:date;
-  ep:formalOder 25;
-  ep:isoCode "EE";
-  ep:isoNumber 233;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "2004-04-30"^^xsd:date;
+  ep:formalOrder 25;
+  ep:isoCode "ee";
+  ep:isoNumber "233";
+  skos:inScheme ep:Country .
 
-<Country_ET> a skos:Concept;
+ep:Country_ET a skos:Concept;
   rdfs:label "Ethiopia";
-  skos:notation "ET";
+  skos:notation "et";
   skos:prefLabel "Etiópia"@hu, "Etioopia"@et, "Etiopia"@fi, "Etiopie"@cs, "Etiópia"@sk,
     "Etiopija"@lt, "Etiopija"@lv, "l-Etjopja"@mt, "Ethiopia"@en, "Etiopien"@da, "Ethiopië"@nl,
     "Etiopien"@sv, "Etiopija"@hr, "Etiopija"@sl, "Etiopia"@pl, "Äthiopien"@de, "Etiopia"@ro,
@@ -1646,13 +1645,13 @@
     "Ομοσπονδιακή Λαϊκή Δημοκρατία της Αιθιοπίας "@el, "Федерална демократична република Етиопия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "ET";
-  ep:isoNumber 231;
-  skos:inScheme epsh:Country .
+  ep:isoCode "et";
+  ep:isoNumber "231";
+  skos:inScheme ep:Country .
 
-<Country_XE> a skos:Concept;
+ep:Country_XE a skos:Concept;
   rdfs:label "European Monetary Fund";
-  skos:notation "XE";
+  skos:notation "xe";
   skos:prefLabel "Európai Monetáris Alap"@hu, "Euroopa Valuutafond"@et, "Euroopan raha-asiain yhteistyörahasto"@fi,
     "Evropský měnový fond"@cs, "Európsky menový fond"@sk, "Europos valiutos fondas"@lt,
     "Eiropas Monetārais fonds"@lv, "il-Fond Monetarju Ewropew"@mt, "European Monetary Fund"@en,
@@ -1673,13 +1672,13 @@
     "Ευρωπαϊκό Ταμείο Νομισματικής Συνεργασίας"@el, "Европейски валутен фонд"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "XE";
-  ep:isoNumber 901;
-  skos:inScheme epsh:Country .
+  ep:isoCode "xe";
+  ep:isoNumber "901";
+  skos:inScheme ep:Country .
 
-<Country_FK> a skos:Concept;
+ep:Country_FK a skos:Concept;
   rdfs:label "Falkland Islands";
-  skos:notation "FK";
+  skos:notation "fk";
   skos:prefLabel "Falkland-szigetek"@hu, "Falklandi saared"@et, "Falklandinsaaret"@fi,
     "Falklandské ostrovy"@cs, "Falklandy "@sk, "Folklandas"@lt, "Folklenda (Malvinu) Salas"@lv,
     "il-Gżejjer Falkland"@mt, "Falkland Islands"@en, "Falklandsøerne"@da, "Falklandeilanden"@nl,
@@ -1696,13 +1695,13 @@
     "Фолкландски острови"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "FK";
-  ep:isoNumber 238;
-  skos:inScheme epsh:Country .
+  ep:isoCode "fk";
+  ep:isoNumber "238";
+  skos:inScheme ep:Country .
 
-<Country_FO> a skos:Concept;
+ep:Country_FO a skos:Concept;
   rdfs:label "Faroe Islands";
-  skos:notation "FO";
+  skos:notation "fo";
   skos:prefLabel "Feröer-szigetek"@hu, "Fääri saared"@et, "Färsaaret"@fi, "Faerské ostrovy"@cs,
     "Faerské ostrovy"@sk, "Farerai"@lt, "Fēru Salas"@lv, "il-Gżejjer Faeroe"@mt, "Faroe Islands"@en,
     "Færøerne"@da, "Faeröer"@nl, "Färöarna"@sv, "Ferojski (Ovčji) Otoci"@hr, "Ferski otoki"@sl,
@@ -1715,13 +1714,13 @@
     "Islas Feroe"@es, "Îles Féroé"@fr, "Oileáin Fharó"@ga, "Νήσοι Φερόες"@el, "Фарьорски острови"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "FO";
-  ep:isoNumber 234;
-  skos:inScheme epsh:Country .
+  ep:isoCode "fo";
+  ep:isoNumber "234";
+  skos:inScheme ep:Country .
 
-<Country_FJ> a skos:Concept;
+ep:Country_FJ a skos:Concept;
   rdfs:label "Fiji";
-  skos:notation "FJ";
+  skos:notation "fj";
   skos:prefLabel "Fidzsi"@hu, "Fidži"@et, "Fidži"@fi, "Fidži"@cs, "Fidži"@sk, "Fidžis"@lt,
     "Fidži"@lv, "Fiġi"@mt, "Fiji"@en, "Fiji"@da, "Fiji"@nl, "Fiji"@sv, "Fidži"@hr, "Fidži"@sl,
     "Fidżi"@pl, "Fidschi"@de, "Fiji"@ro, "Figi"@it, "Fiji"@pt, "Fiyi"@es, "Fidji"@fr,
@@ -1735,13 +1734,13 @@
     "Република Фиджи"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "FJ";
-  ep:isoNumber 242;
-  skos:inScheme epsh:Country .
+  ep:isoCode "fj";
+  ep:isoNumber "242";
+  skos:inScheme ep:Country .
 
-<Country_FI> a skos:Concept;
+ep:Country_FI a skos:Concept;
   rdfs:label "Finland";
-  skos:notation "FI";
+  skos:notation "fi";
   skos:prefLabel "Finnország"@hu, "Soome"@et, "Suomi"@fi, "Finsko"@cs, "Fínsko"@sk,
     "Suomija"@lt, "Somija"@lv, "il-Finlandja"@mt, "Finland"@en, "Finland"@da, "Finland"@nl,
     "Finland"@sv, "Finska"@hr, "Finska"@sl, "Finlandia"@pl, "Finnland"@de, "Finlanda"@ro,
@@ -1756,15 +1755,15 @@
     "Δημοκρατία της Φινλανδίας "@el, "Република Финландия"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "1994-12-31T23:00:00"^^xsd:date;
-  ep:formalOder 115;
-  ep:isoCode "FI";
-  ep:isoNumber 246;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "1994-12-31"^^xsd:date;
+  ep:formalOrder 115;
+  ep:isoCode "fi";
+  ep:isoNumber "246";
+  skos:inScheme ep:Country .
 
-<Country_FR> a skos:Concept;
+ep:Country_FR a skos:Concept;
   rdfs:label "France";
-  skos:notation "FR";
+  skos:notation "fr";
   skos:prefLabel "Franciaország"@hu, "Prantsusmaa"@et, "Ranska"@fi, "Francie"@cs, "Francúzsko"@sk,
     "Prancūzija"@lt, "Francija"@lv, "Franza"@mt, "France"@en, "Frankrig"@da, "Frankrijk"@nl,
     "Frankrike"@sv, "Francuska"@hr, "Francija"@sl, "Francja"@pl, "Frankreich"@de, "Franța"@ro,
@@ -1779,15 +1778,15 @@
     "Γαλλική Δημοκρατία "@el, "Френска република"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "1958-01-04T23:00:00"^^xsd:date;
-  ep:formalOder 40;
-  ep:isoCode "FR";
-  ep:isoNumber 250;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "1958-01-04"^^xsd:date;
+  ep:formalOrder 40;
+  ep:isoCode "fr";
+  ep:isoNumber "250";
+  skos:inScheme ep:Country .
 
-<Country_FX> a skos:Concept;
+ep:Country_FX a skos:Concept;
   rdfs:label "France, metropolitan";
-  skos:notation "FX";
+  skos:notation "fx";
   skos:prefLabel "Franciaország kontinentális területe"@hu, "Prantsusmaa"@et, "Ranskan emämaa"@fi,
     "Francie, metropolitní"@cs, "metropolitné Francúzsko"@sk, "Prancūzija"@lt, "Francijas Eiropas daļa"@lv,
     "Franza, metropolitana"@mt, "France, metropolitan"@en, "Frankrigs europæiske område"@da,
@@ -1807,13 +1806,13 @@
     "континентална Франция"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "FX";
-  ep:isoNumber 249;
-  skos:inScheme epsh:Country .
+  ep:isoCode "fx";
+  ep:isoNumber "249";
+  skos:inScheme ep:Country .
 
-<Country_GF> a skos:Concept;
+ep:Country_GF a skos:Concept;
   rdfs:label "French Guiana";
-  skos:notation "GF";
+  skos:notation "gf";
   skos:prefLabel "Francia Guyana"@hu, "Prantsuse Guajaana"@et, "Ranskan Guayana"@fi,
     "Francouzská Guyana"@cs, "Francúzska Guyana"@sk, "Prancūzijos Gviana"@lt, "Francijas Gviāna"@lv,
     "il-Guyana Franċiża"@mt, "French Guiana"@en, "Fransk Guyana"@da, "Frans-Guyana"@nl,
@@ -1830,13 +1829,13 @@
     "Διαμέρισμα Γαλλικής Γουιάνας"@el, "Френска Гвиана"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "GF";
-  ep:isoNumber 254;
-  skos:inScheme epsh:Country .
+  ep:isoCode "gf";
+  ep:isoNumber "254";
+  skos:inScheme ep:Country .
 
-<Country_PF> a skos:Concept;
+ep:Country_PF a skos:Concept;
   rdfs:label "French Polynesia";
-  skos:notation "PF";
+  skos:notation "pf";
   skos:prefLabel "Francia Polinézia"@hu, "Prantsuse Polüneesia"@et, "Ranskan Polynesia"@fi,
     "Francouzská Polynésie"@cs, "Francúzska Polynézia"@sk, "Prancūzijos Polinezija"@lt,
     "Francijas Polinēzija"@lv, "il-Polineżja Franċiża"@mt, "French Polynesia"@en, "Fransk Polynesien  "@da,
@@ -1854,13 +1853,13 @@
     "Френска Полинезия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "PF";
-  ep:isoNumber 258;
-  skos:inScheme epsh:Country .
+  ep:isoCode "pf";
+  ep:isoNumber "258";
+  skos:inScheme ep:Country .
 
-<Country_TF> a skos:Concept;
+ep:Country_TF a skos:Concept;
   rdfs:label "French Southern and Antarctic Lands";
-  skos:notation "TF";
+  skos:notation "tf";
   skos:prefLabel "Francia Déli és Antarktiszi Területek"@hu, "Prantsuse Lõunaalad"@et,
     "Ranskan eteläiset ja antarktiset alueet"@fi, "Francouzská jižní a antarktická území"@cs,
     "Francúzske južné územie"@sk, "Prancūzijos Pietų ir Antarkties Sritys"@lt, "Francijas Dienvidjūru un Antarktikas Zemes"@lv,
@@ -1886,13 +1885,13 @@
     "Γαλλικά Νότια και Ανταρκτικά Εδάφη "@el, "Френски южни и антарктически територии"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "TF";
-  ep:isoNumber 260;
-  skos:inScheme epsh:Country .
+  ep:isoCode "tf";
+  ep:isoNumber "260";
+  skos:inScheme ep:Country .
 
-<Country_GA> a skos:Concept;
+ep:Country_GA a skos:Concept;
   rdfs:label "Gabon";
-  skos:notation "GA";
+  skos:notation "ga";
   skos:prefLabel "Gabon"@hu, "Gabon"@et, "Gabon"@fi, "Gabon"@cs, "Gabon"@sk, "Gabonas"@lt,
     "Gabona"@lv, "il-Gabon"@mt, "Gabon"@en, "Gabon"@da, "Gabon"@nl, "Gabon"@sv, "Gabon"@hr,
     "Gabon"@sl, "Gabon"@pl, "Gabun"@de, "Gabon"@ro, "Gabon"@it, "Gabão"@pt, "Gabón"@es,
@@ -1906,13 +1905,13 @@
     "Δημοκρατία της Γκαμπόν "@el, "Република Габон"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "GA";
-  ep:isoNumber 266;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ga";
+  ep:isoNumber "266";
+  skos:inScheme ep:Country .
 
-<Country_GM> a skos:Concept;
+ep:Country_GM a skos:Concept;
   rdfs:label "Gambia";
-  skos:notation "GM";
+  skos:notation "gm";
   skos:prefLabel "Gambia"@hu, "Gambia"@et, "Gambia"@fi, "Gambie"@cs, "Gambia"@sk, "Gambija"@lt,
     "Gambija"@lv, "il-Gambja"@mt, "Gambia"@en, "Gambia"@da, "Gambia"@nl, "Gambia"@sv,
     "Gambija"@hr, "Gambija"@sl, "Gambia"@pl, "Gambia"@de, "Gambia"@ro, "Gambia"@it, "Gâmbia"@pt,
@@ -1926,13 +1925,13 @@
     "Δημοκρατία της Γκάμπιας"@el, "Република Гамбия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "GM";
-  ep:isoNumber 270;
-  skos:inScheme epsh:Country .
+  ep:isoCode "gm";
+  ep:isoNumber "270";
+  skos:inScheme ep:Country .
 
-<Country_GE> a skos:Concept;
+ep:Country_GE a skos:Concept;
   rdfs:label "Georgia";
-  skos:notation "GE";
+  skos:notation "ge";
   skos:prefLabel "Grúzia"@hu, "Gruusia"@et, "Georgia"@fi, "Gruzie"@cs, "Gruzínsko"@sk,
     "Gruzija"@lt, "Gruzija"@lv, "il-Georgia"@mt, "Georgia"@en, "Georgien"@da, "Georgië"@nl,
     "Georgien"@sv, "Gruzija"@hr, "Gruzija"@sl, "Gruzja"@pl, "Georgien"@de, "Georgia"@ro,
@@ -1945,13 +1944,13 @@
     "Грузия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "GE";
-  ep:isoNumber 268;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ge";
+  ep:isoNumber "268";
+  skos:inScheme ep:Country .
 
-<Country_DD> a skos:Concept;
+ep:Country_DD a skos:Concept;
   rdfs:label "German Democratic Republic";
-  skos:notation "DD";
+  skos:notation "dd";
   skos:prefLabel "Német Demokratikus Köztársaság"@hu, "Saksa DV"@et, "Itä-Saksa"@fi,
     "Německá demokratická republika"@cs, "Nemecká demokratická republika, NDR"@sk, "Vokietijos Demokratinė Respublika"@lt,
     "Vācijas Demokrātiskā Republika"@lv, "ir-Repubblika Demokratika Ġermaniża"@mt, "German Democratic Republic"@en,
@@ -1971,13 +1970,13 @@
     "Германска демократична република"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "DD";
-  ep:isoNumber 278;
-  skos:inScheme epsh:Country .
+  ep:isoCode "dd";
+  ep:isoNumber "278";
+  skos:inScheme ep:Country .
 
-<Country_DE> a skos:Concept;
+ep:Country_DE a skos:Concept;
   rdfs:label "Germany";
-  skos:notation "DE";
+  skos:notation "de";
   skos:prefLabel "Németország"@hu, "Saksamaa"@et, "Saksa"@fi, "Německo"@cs, "Nemecko"@sk,
     "Vokietija"@lt, "Vācija"@lv, "il-Ġermanja"@mt, "Germany"@en, "Tyskland"@da, "Duitsland"@nl,
     "Tyskland"@sv, "Njemačka"@hr, "Nemčija"@sl, "Niemcy"@pl, "Deutschland"@de, "Germania"@ro,
@@ -1994,15 +1993,15 @@
     "Федерална република Германия"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "1958-01-04T23:00:00"^^xsd:date;
-  ep:formalOder 20;
-  ep:isoCode "DE";
-  ep:isoNumber 276;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "1958-01-04"^^xsd:date;
+  ep:formalOrder 20;
+  ep:isoCode "de";
+  ep:isoNumber "276";
+  skos:inScheme ep:Country .
 
-<Country_GH> a skos:Concept;
+ep:Country_GH a skos:Concept;
   rdfs:label "Ghana";
-  skos:notation "GH";
+  skos:notation "gh";
   skos:prefLabel "Ghána"@hu, "Ghana"@et, "Ghana"@fi, "Ghana"@cs, "Ghana"@sk, "Gana"@lt,
     "Gana"@lv, "il-Ghana"@mt, "Ghana"@en, "Ghana"@da, "Ghana"@nl, "Ghana"@sv, "Gana"@hr,
     "Gana"@sl, "Ghana"@pl, "Ghana"@de, "Ghana"@ro, "Ghana"@it, "Gana"@pt, "Ghana"@es,
@@ -2016,13 +2015,13 @@
     "Република Гана"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "GH";
-  ep:isoNumber 288;
-  skos:inScheme epsh:Country .
+  ep:isoCode "gh";
+  ep:isoNumber "288";
+  skos:inScheme ep:Country .
 
-<Country_GI> a skos:Concept;
+ep:Country_GI a skos:Concept;
   rdfs:label "Gibraltar";
-  skos:notation "GI";
+  skos:notation "gi";
   skos:prefLabel "Gibraltár"@hu, "Gibraltar"@et, "Gibraltar"@fi, "Gibraltar"@cs, "Gibraltár"@sk,
     "Gibraltaras"@lt, "Gibraltārs"@lv, "Ġibiltà"@mt, "Gibraltar"@en, "Gibraltar"@da, "Gibraltar"@nl,
     "Gibraltar"@sv, "Gibraltar"@hr, "Gibraltar"@sl, "Gibraltar"@pl, "Gibraltar"@de, "Gibraltar"@ro,
@@ -2035,13 +2034,13 @@
     "Γιβραλτάρ"@el, "Гибралтар"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "GI";
-  ep:isoNumber 292;
-  skos:inScheme epsh:Country .
+  ep:isoCode "gi";
+  ep:isoNumber "292";
+  skos:inScheme ep:Country .
 
-<Country_GR> a skos:Concept;
+ep:Country_GR a skos:Concept;
   rdfs:label "Greece";
-  skos:notation "GR";
+  skos:notation "gr";
   skos:prefLabel "Görögország"@hu, "Kreeka"@et, "Kreikka"@fi, "Řecko"@cs, "Grécko"@sk,
     "Graikija"@lt, "Grieķija"@lv, "il-Greċja"@mt, "Greece"@en, "Grækenland"@da, "Griekenland"@nl,
     "Grekland"@sv, "Grčka"@hr, "Grčija"@sl, "Grecja"@pl, "Griechenland"@de, "Grecia"@ro,
@@ -2055,15 +2054,15 @@
     "Ελληνική Δημοκρατία"@el, "Република Гърция"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "1980-12-31T23:00:00"^^xsd:date;
-  ep:formalOder 30;
-  ep:isoCode "GR";
-  ep:isoNumber 300;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "1980-12-31"^^xsd:date;
+  ep:formalOrder 30;
+  ep:isoCode "gr";
+  ep:isoNumber "300";
+  skos:inScheme ep:Country .
 
-<Country_GL> a skos:Concept;
+ep:Country_GL a skos:Concept;
   rdfs:label "Greenland";
-  skos:notation "GL";
+  skos:notation "gl";
   skos:prefLabel "Grönland"@hu, "Gröönimaa"@et, "Grönlanti"@fi, "Grónsko"@cs, "Grónsko"@sk,
     "Grenlandija"@lt, "Grenlande"@lv, "Greenland"@mt, "Greenland"@en, "Grønland"@da, "Groenland"@nl,
     "Grönland"@sv, "Grenland"@hr, "Grenlandija"@sl, "Grenlandia"@pl, "Grönland"@de, "Groenlanda"@ro,
@@ -2076,13 +2075,13 @@
     "an Ghraonlainn"@ga, "Γροιλανδία"@el, "Гренландия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "GL";
-  ep:isoNumber 304;
-  skos:inScheme epsh:Country .
+  ep:isoCode "gl";
+  ep:isoNumber "304";
+  skos:inScheme ep:Country .
 
-<Country_GD> a skos:Concept;
+ep:Country_GD a skos:Concept;
   rdfs:label "Grenada";
-  skos:notation "GD";
+  skos:notation "gd";
   skos:prefLabel "Grenada"@hu, "Grenada"@et, "Grenada"@fi, "Grenada"@cs, "Grenada"@sk,
     "Grenada"@lt, "Grenāda"@lv, "Grenada"@mt, "Grenada"@en, "Grenada"@da, "Grenada"@nl,
     "Grenada"@sv, "Grenada"@hr, "Grenada"@sl, "Grenada"@pl, "Grenada"@de, "Grenada"@ro,
@@ -2095,13 +2094,13 @@
     "Гренада"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "GD";
-  ep:isoNumber 308;
-  skos:inScheme epsh:Country .
+  ep:isoCode "gd";
+  ep:isoNumber "308";
+  skos:inScheme ep:Country .
 
-<Country_GP> a skos:Concept;
+ep:Country_GP a skos:Concept;
   rdfs:label "Guadeloupe";
-  skos:notation "GP";
+  skos:notation "gp";
   skos:prefLabel "Guadeloupe"@hu, "Guadeloupe"@et, "Guadeloupe"@fi, "Guadeloupe"@cs,
     "Guadeloupe"@sk, "Gvadelupa"@lt, "Gvadelupa"@lv, "Guadeloupe"@mt, "Guadeloupe"@en,
     "Guadeloupe"@da, "Guadeloupe"@nl, "Guadeloupe"@sv, "Guadalupa"@hr, "Guadeloupe"@sl,
@@ -2114,13 +2113,13 @@
     "Guadeloupe"@fr, "Guadalúip"@ga, "Γουαδελούπη"@el, "Гваделупа"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "GP";
-  ep:isoNumber 312;
-  skos:inScheme epsh:Country .
+  ep:isoCode "gp";
+  ep:isoNumber "312";
+  skos:inScheme ep:Country .
 
-<Country_GU> a skos:Concept;
+ep:Country_GU a skos:Concept;
   rdfs:label "Guam";
-  skos:notation "GU";
+  skos:notation "gu";
   skos:prefLabel "Guam"@hu, "Guam"@et, "Guam"@fi, "Guam"@cs, "Guam"@sk, "Guamas"@lt,
     "Guama"@lv, "Guam"@mt, "Guam"@en, "Guam"@da, "Guam"@nl, "Guam"@sv, "Guam"@hr, "Guam"@sl,
     "Guam"@pl, "Guam"@de, "Guam"@ro, "Guam"@it, "Guame"@pt, "Guam"@es, "Guam"@fr, "Guam"@ga,
@@ -2133,13 +2132,13 @@
     "Críoch Guam"@ga, "Έδαφος του Γκουάμ "@el, "Гуам"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "GU";
-  ep:isoNumber 316;
-  skos:inScheme epsh:Country .
+  ep:isoCode "gu";
+  ep:isoNumber "316";
+  skos:inScheme ep:Country .
 
-<Country_GT> a skos:Concept;
+ep:Country_GT a skos:Concept;
   rdfs:label "Guatemala";
-  skos:notation "GT";
+  skos:notation "gt";
   skos:prefLabel "Guatemala"@hu, "Guatemala"@et, "Guatemala"@fi, "Guatemala"@cs, "Guatemala"@sk,
     "Gvatemala"@lt, "Gvatemala"@lv, "il-Gwatemala"@mt, "Guatemala"@en, "Guatemala"@da,
     "Guatemala"@nl, "Guatemala"@sv, "Gvatemala"@hr, "Gvatemala"@sl, "Gwatemala"@pl, "Guatemala"@de,
@@ -2155,13 +2154,13 @@
     "Република Гватемала"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "GT";
-  ep:isoNumber 320;
-  skos:inScheme epsh:Country .
+  ep:isoCode "gt";
+  ep:isoNumber "320";
+  skos:inScheme ep:Country .
 
-<Country_GG> a skos:Concept;
+ep:Country_GG a skos:Concept;
   rdfs:label "Guernsey";
-  skos:notation "GG";
+  skos:notation "gg";
   skos:prefLabel "Guernsey"@hu, "Guernsey"@et, "Guernsey"@fi, "Guernsey"@cs, "Guernsey"@sk,
     "Gernsis"@lt, "Gērnsija"@lv, "Guernsey"@mt, "Guernsey"@en, "Guernsey"@da, "Guernsey"@nl,
     "Guernsey"@sv, "Guernsey"@hr, "Guernsey"@sl, "Guernsey"@pl, "Guernsey"@de, "Guernsey"@ro,
@@ -2175,13 +2174,13 @@
     "Guernesey"@fr, "Báillcheantar Gheansaí"@ga, "Γκέρνσεϊ"@el, "Департамент Гърнзи"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "GG";
-  ep:isoNumber 831;
-  skos:inScheme epsh:Country .
+  ep:isoCode "gg";
+  ep:isoNumber "831";
+  skos:inScheme ep:Country .
 
-<Country_GN> a skos:Concept;
+ep:Country_GN a skos:Concept;
   rdfs:label "Guinea";
-  skos:notation "GN";
+  skos:notation "gn";
   skos:prefLabel "Guinea"@hu, "Guinea"@et, "Guinea"@fi, "Guinea"@cs, "Guinea"@sk, "Gvinėja"@lt,
     "Gvineja"@lv, "il-Guinea"@mt, "Guinea"@en, "Guinea"@da, "Guinee"@nl, "Guinea"@sv,
     "Gvineja"@hr, "Gvineja"@sl, "Gwinea "@pl, "Guinea"@de, "Guineea"@ro, "Guinea"@it,
@@ -2195,13 +2194,13 @@
     "Δημοκρατία της Γουινέας "@el, "Република Гвинея"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "GN";
-  ep:isoNumber 324;
-  skos:inScheme epsh:Country .
+  ep:isoCode "gn";
+  ep:isoNumber "324";
+  skos:inScheme ep:Country .
 
-<Country_GW> a skos:Concept;
+ep:Country_GW a skos:Concept;
   rdfs:label "Guinea-Bissau";
-  skos:notation "GW";
+  skos:notation "gw";
   skos:prefLabel "Bissau-Guinea "@hu, "Guinea-Bissau"@et, "Guinea-Bissau"@fi, "Guinea-Bissau"@cs,
     "Guinea-Bissau"@sk, "Bisau Gvinėja"@lt, "Gvineja-Bisava"@lv, "il-Guinea-Bissau"@mt,
     "Guinea-Bissau"@en, "Guinea-Bissau  "@da, "Guinee-Bissau"@nl, "Guinea-Bissau"@sv,
@@ -2218,13 +2217,13 @@
     "Poblacht Ghuine Bissau"@ga, "Δημοκρατία της Γουινέας Μπισσάου"@el, "Република Гвинея Бисау"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "GW";
-  ep:isoNumber 624;
-  skos:inScheme epsh:Country .
+  ep:isoCode "gw";
+  ep:isoNumber "624";
+  skos:inScheme ep:Country .
 
-<Country_GY> a skos:Concept;
+ep:Country_GY a skos:Concept;
   rdfs:label "Guyana";
-  skos:notation "GY";
+  skos:notation "gy";
   skos:prefLabel "Guyana"@hu, "Guyana"@et, "Guyana"@fi, "Guyana"@cs, "Guyana"@sk, "Gajana"@lt,
     "Gajāna"@lv, "il-Guyana"@mt, "Guyana"@en, "Guyana"@da, "Guyana"@nl, "Guyana"@sv, "Gvajana"@hr,
     "Gvajana"@sl, "Gujana"@pl, "Guyana"@de, "Guyana"@ro, "Guyana"@it, "Guiana"@pt, "Guyana"@es,
@@ -2239,13 +2238,13 @@
     "Comharphoblacht na Guáine"@ga, "Συνεργατική Δημοκρατία της Γουιάνας"@el, "Кооперативна република Гвиана"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "GY";
-  ep:isoNumber 328;
-  skos:inScheme epsh:Country .
+  ep:isoCode "gy";
+  ep:isoNumber "328";
+  skos:inScheme ep:Country .
 
-<Country_HT> a skos:Concept;
+ep:Country_HT a skos:Concept;
   rdfs:label "Haiti";
-  skos:notation "HT";
+  skos:notation "ht";
   skos:prefLabel "Haiti"@hu, "Haiti"@et, "Haiti"@fi, "Haiti"@cs, "Haiti"@sk, "Haitis"@lt,
     "Haiti"@lv, "il-Haiti"@mt, "Haiti"@en, "Haiti"@da, "Haïti"@nl, "Haiti"@sv, "Haiti"@hr,
     "Haiti"@sl, "Haiti"@pl, "Haiti"@de, "Haiti"@ro, "Haiti"@it, "Haiti"@pt, "Haití"@es,
@@ -2259,13 +2258,13 @@
     "Република Хаити"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "HT";
-  ep:isoNumber 332;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ht";
+  ep:isoNumber "332";
+  skos:inScheme ep:Country .
 
-<Country_HM> a skos:Concept;
+ep:Country_HM a skos:Concept;
   rdfs:label "Heard Island and McDonald Islands";
-  skos:notation "HM";
+  skos:notation "hm";
   skos:prefLabel "Heard-sziget és McDonald-szigetek"@hu, "Heard ja McDonald"@et, "Heard ja McDonaldinsaaret"@fi,
     "Heardův ostrov a McDonaldovy ostrovy"@cs, "Heardov ostrov a Macdonaldove ostrovy"@sk,
     "Herdas ir Makdonaldas "@lt, "Hērda Sala un Makdonalda Salas"@lv, "il-Gżira Heard u l-Gżejjer McDonald"@mt,
@@ -2289,13 +2288,13 @@
     "Хърд и Макдоналд"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "HM";
-  ep:isoNumber 334;
-  skos:inScheme epsh:Country .
+  ep:isoCode "hm";
+  ep:isoNumber "334";
+  skos:inScheme ep:Country .
 
-<Country_VA> a skos:Concept;
+ep:Country_VA a skos:Concept;
   rdfs:label "Holy See (Vatican)";
-  skos:notation "VA";
+  skos:notation "va";
   skos:prefLabel "Apostoli Szentszék (Vatikán)"@hu, "Püha Tool / Vatikan"@et, "Vatikaani"@fi,
     "Svatý stolec / Vatikánský městský stát"@cs, "Vatikán"@sk, "Šventasis Sostas / Vatikanas"@lt,
     "Vatikāns"@lv, "is-Santa Sede / l-Istat tal-Belt tal-Vatikan"@mt, "Holy See (Vatican)"@en,
@@ -2316,13 +2315,13 @@
     "Αγία Έδρα (Βατικανό)"@el, "Светия престол/град държава Ватикан"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "VA";
-  ep:isoNumber 336;
-  skos:inScheme epsh:Country .
+  ep:isoCode "va";
+  ep:isoNumber "336";
+  skos:inScheme ep:Country .
 
-<Country_HN> a skos:Concept;
+ep:Country_HN a skos:Concept;
   rdfs:label "Honduras";
-  skos:notation "HN";
+  skos:notation "hn";
   skos:prefLabel "Honduras"@hu, "Honduras"@et, "Honduras"@fi, "Honduras"@cs, "Honduras"@sk,
     "Hondūras"@lt, "Hondurasa"@lv, "il-Honduras"@mt, "Honduras"@en, "Honduras"@da, "Honduras"@nl,
     "Honduras"@sv, "Honduras"@hr, "Honduras"@sl, "Honduras"@pl, "Honduras"@de, "Honduras"@ro,
@@ -2337,13 +2336,13 @@
     "Poblacht Hondúras"@ga, "Δημοκρατία της Ονδούρας"@el, "Република Хондурас"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "HN";
-  ep:isoNumber 340;
-  skos:inScheme epsh:Country .
+  ep:isoCode "hn";
+  ep:isoNumber "340";
+  skos:inScheme ep:Country .
 
-<Country_HK> a skos:Concept;
+ep:Country_HK a skos:Concept;
   rdfs:label "Hong Kong";
-  skos:notation "HK";
+  skos:notation "hk";
   skos:prefLabel "Hongkong"@hu, "Hongkong"@et, "Hongkong"@fi, "Hongkong"@cs, "Hongkong"@sk,
     "Honkongas"@lt, "Honkonga"@lv, "Hong Kong"@mt, "Hong Kong"@en, "Hongkong"@da, "Hongkong"@nl,
     "Hongkong"@sv, "Hong Kong"@hr, "Hongkong"@sl, "Hongkong"@pl, "Hongkong"@de, "Hong Kong"@ro,
@@ -2363,13 +2362,13 @@
     "Специален административен район на Китайската народна република Хонконг"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "HK";
-  ep:isoNumber 344;
-  skos:inScheme epsh:Country .
+  ep:isoCode "hk";
+  ep:isoNumber "344";
+  skos:inScheme ep:Country .
 
-<Country_HU> a skos:Concept;
+ep:Country_HU a skos:Concept;
   rdfs:label "Hungary";
-  skos:notation "HU";
+  skos:notation "hu";
   skos:prefLabel "Magyarország"@hu, "Ungari"@et, "Unkari"@fi, "Maďarsko"@cs, "Maďarsko"@sk,
     "Vengrija"@lt, "Ungārija"@lv, "l-Ungerija"@mt, "Hungary"@en, "Ungarn"@da, "Hongarije"@nl,
     "Ungern"@sv, "Mađarska"@hr, "Madžarska"@sl, "Węgry"@pl, "Ungarn"@de, "Ungaria"@ro,
@@ -2382,15 +2381,15 @@
     "Унгария"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "2004-04-30T22:00:00"^^xsd:date;
-  ep:formalOder 75;
-  ep:isoCode "HU";
-  ep:isoNumber 348;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "2004-04-30"^^xsd:date;
+  ep:formalOrder 75;
+  ep:isoCode "hu";
+  ep:isoNumber "348";
+  skos:inScheme ep:Country .
 
-<Country_IS> a skos:Concept;
+ep:Country_IS a skos:Concept;
   rdfs:label "Iceland";
-  skos:notation "IS";
+  skos:notation "is";
   skos:prefLabel "Izland"@hu, "Island"@et, "Islanti"@fi, "Island"@cs, "Island"@sk, "Islandija"@lt,
     "Islande"@lv, "l-Iżlanda"@mt, "Iceland"@en, "Island"@da, "IJsland"@nl, "Island"@sv,
     "Island"@hr, "Islandija"@sl, "Islandia"@pl, "Island"@de, "Islanda"@ro, "Islanda"@it,
@@ -2403,13 +2402,13 @@
     "Islande"@fr, "Poblacht na hÍoslainne"@ga, "Δημοκρατία της Ισλανδίας "@el, "Република Исландия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "IS";
-  ep:isoNumber 352;
-  skos:inScheme epsh:Country .
+  ep:isoCode "is";
+  ep:isoNumber "352";
+  skos:inScheme ep:Country .
 
-<Country_IN> a skos:Concept;
+ep:Country_IN a skos:Concept;
   rdfs:label "India";
-  skos:notation "IN";
+  skos:notation "in";
   skos:prefLabel "India"@hu, "India"@et, "Intia"@fi, "Indie"@cs, "India"@sk, "Indija"@lt,
     "Indija"@lv, "l-Indja"@mt, "India"@en, "Indien"@da, "India"@nl, "Indien"@sv, "Indija"@hr,
     "Indija"@sl, "Indie"@pl, "Indien"@de, "India"@ro, "India"@it, "Índia"@pt, "India"@es,
@@ -2423,13 +2422,13 @@
     "Република Индия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "IN";
-  ep:isoNumber 356;
-  skos:inScheme epsh:Country .
+  ep:isoCode "in";
+  ep:isoNumber "356";
+  skos:inScheme ep:Country .
 
-<Country_ID> a skos:Concept;
+ep:Country_ID a skos:Concept;
   rdfs:label "Indonesia";
-  skos:notation "ID";
+  skos:notation "id";
   skos:prefLabel "Indonézia"@hu, "Indoneesia"@et, "Indonesia"@fi, "Indonésie"@cs, "Indonézia"@sk,
     "Indonezija"@lt, "Indonēzija"@lv, "l-Indoneżja"@mt, "Indonesia"@en, "Indonesien"@da,
     "Indonesië"@nl, "Indonesien"@sv, "Indonezija"@hr, "Indonezija"@sl, "Indonezja"@pl,
@@ -2445,13 +2444,13 @@
     "Δημοκρατία της Ινδονησίας"@el, "Република Индонезия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "ID";
-  ep:isoNumber 360;
-  skos:inScheme epsh:Country .
+  ep:isoCode "id";
+  ep:isoNumber "360";
+  skos:inScheme ep:Country .
 
-<Country_XD> a skos:Concept;
+ep:Country_XD a skos:Concept;
   rdfs:label "International Monetary Fund";
-  skos:notation "XD";
+  skos:notation "xd";
   skos:prefLabel "Nemzetközi Valutaalap"@hu, "Rahvusvaheline Valuutafond"@et, "Kansainvälinen valuuttarahasto"@fi,
     "Mezinárodní měnový fond"@cs, "Medzinárodný menový fond"@sk, "Tarptautinis valiutos fondas"@lt,
     "Starptautiskais Valūtas fonds"@lv, "il-Fond Monetarju Internazzjonali"@mt, "International Monetary Fund"@en,
@@ -2470,13 +2469,13 @@
     "an Ciste Airgeadaíochta Idirnáisiúnta"@ga, "Διεθνές Νομισματικό Ταμείο"@el, "Международен валутен фонд"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "XD";
-  ep:isoNumber 900;
-  skos:inScheme epsh:Country .
+  ep:isoCode "xd";
+  ep:isoNumber "900";
+  skos:inScheme ep:Country .
 
-<Country_IR> a skos:Concept;
+ep:Country_IR a skos:Concept;
   rdfs:label "Iran";
-  skos:notation "IR";
+  skos:notation "ir";
   skos:prefLabel "Irán"@hu, "Iraan"@et, "Iran"@fi, "Írán"@cs, "Irán"@sk, "Iranas"@lt,
     "Irāna"@lv, "l-Iran"@mt, "Iran"@en, "Iran"@da, "Iran"@nl, "Iran"@sv, "Iran"@hr, "Iran"@sl,
     "Iran"@pl, "Iran"@de, "Iran"@ro, "Iran"@it, "Irão"@pt, "Irán"@es, "Iran"@fr, "an Iaráin"@ga,
@@ -2491,13 +2490,13 @@
     "Poblacht Ioslamach na hIaráine"@ga, "Ισλαμική Δημοκρατία του Ιράν "@el, "Ислямска република Иран"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "IR";
-  ep:isoNumber 364;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ir";
+  ep:isoNumber "364";
+  skos:inScheme ep:Country .
 
-<Country_IQ> a skos:Concept;
+ep:Country_IQ a skos:Concept;
   rdfs:label "Iraq";
-  skos:notation "IQ";
+  skos:notation "iq";
   skos:prefLabel "Irak"@hu, "Iraak"@et, "Irak"@fi, "Irák"@cs, "Irak"@sk, "Irakas"@lt,
     "Irāka"@lv, "l-Iraq"@mt, "Iraq"@en, "Irak"@da, "Irak"@nl, "Irak"@sv, "Irak"@hr, "Irak"@sl,
     "Irak"@pl, "Irak"@de, "Irak"@ro, "Iraq"@it, "Iraque"@pt, "Irak"@es, "Irak"@fr, "an Iaráic"@ga,
@@ -2511,13 +2510,13 @@
     "Република Ирак"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "IQ";
-  ep:isoNumber 368;
-  skos:inScheme epsh:Country .
+  ep:isoCode "iq";
+  ep:isoNumber "368";
+  skos:inScheme ep:Country .
 
-<Country_IE> a skos:Concept;
+ep:Country_IE a skos:Concept;
   rdfs:label "Ireland";
-  skos:notation "IE";
+  skos:notation "ie";
   skos:prefLabel "Írország"@hu, "Iirimaa"@et, "Irlanti"@fi, "Irsko"@cs, "Írsko"@sk,
     "Airija"@lt, "Īrija"@lv, "l-Irlanda"@mt, "Ireland"@en, "Irland"@da, "Ierland"@nl,
     "Irland"@sv, "Irska"@hr, "Irska"@sl, "Irlandia"@pl, "Irland"@de, "Irlanda"@ro, "Irlanda"@it,
@@ -2529,15 +2528,15 @@
     "Ирландия"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "1972-12-31T23:00:00"^^xsd:date;
-  ep:formalOder 28;
-  ep:isoCode "IE";
-  ep:isoNumber 372;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "1972-12-31"^^xsd:date;
+  ep:formalOrder 28;
+  ep:isoCode "ie";
+  ep:isoNumber "372";
+  skos:inScheme ep:Country .
 
-<Country_IM> a skos:Concept;
+ep:Country_IM a skos:Concept;
   rdfs:label "Isle of Man";
-  skos:notation "IM";
+  skos:notation "im";
   skos:prefLabel "Man-sziget"@hu, "Mani saar"@et, "Mansaari"@fi, "Ostrov Man"@cs, "Man"@sk,
     "Menas "@lt, "Menas Sala"@lv, "Isle of Man"@mt, "Isle of Man"@en, "Isle of Man  "@da,
     "Man"@nl, "Isle of Man"@sv, "Otok Man"@hr, "Otok Man"@sl, "Wyspa Man"@pl, "Insel Man"@de,
@@ -2550,13 +2549,13 @@
     "Manainn"@ga, "Νήσος του Μαν"@el, "Остров Ман"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "IM";
-  ep:isoNumber 833;
-  skos:inScheme epsh:Country .
+  ep:isoCode "im";
+  ep:isoNumber "833";
+  skos:inScheme ep:Country .
 
-<Country_IL> a skos:Concept;
+ep:Country_IL a skos:Concept;
   rdfs:label "Israel";
-  skos:notation "IL";
+  skos:notation "il";
   skos:prefLabel "Izrael"@hu, "Iisrael"@et, "Israel"@fi, "Izrael"@cs, "Izrael"@sk, "Izraelis"@lt,
     "Izraēla"@lv, "Iżrael"@mt, "Israel"@en, "Israel"@da, "Israël"@nl, "Israel"@sv, "Izrael"@hr,
     "Izrael"@sl, "Izrael"@pl, "Israel"@de, "Israel"@ro, "Stato d'Israele"@it, "Israel"@pt,
@@ -2568,13 +2567,13 @@
     "Israël"@fr, "Stát Iosrael"@ga, "Ισραήλ"@el, "Държавата Израел"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "IL";
-  ep:isoNumber 376;
-  skos:inScheme epsh:Country .
+  ep:isoCode "il";
+  ep:isoNumber "376";
+  skos:inScheme ep:Country .
 
-<Country_IT> a skos:Concept;
+ep:Country_IT a skos:Concept;
   rdfs:label "Italy";
-  skos:notation "IT";
+  skos:notation "it";
   skos:prefLabel "Olaszország"@hu, "Itaalia"@et, "Italia"@fi, "Itálie"@cs, "Taliansko"@sk,
     "Italija"@lt, "Itālija"@lv, "l-Italja"@mt, "Italy"@en, "Italien"@da, "Italië"@nl,
     "Italien"@sv, "Italija"@hr, "Italija"@sl, "Włochy"@pl, "Italien"@de, "Italia"@ro,
@@ -2588,15 +2587,15 @@
     "Италианска република"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "1958-01-04T23:00:00"^^xsd:date;
-  ep:formalOder 50;
-  ep:isoCode "IT";
-  ep:isoNumber 380;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "1958-01-04"^^xsd:date;
+  ep:formalOrder 50;
+  ep:isoCode "it";
+  ep:isoNumber "380";
+  skos:inScheme ep:Country .
 
-<Country_JM> a skos:Concept;
+ep:Country_JM a skos:Concept;
   rdfs:label "Jamaica";
-  skos:notation "JM";
+  skos:notation "jm";
   skos:prefLabel "Jamaica"@hu, "Jamaica"@et, "Jamaika"@fi, "Jamajka"@cs, "Jamajka"@sk,
     "Jamaika"@lt, "Jamaika"@lv, "il-Ġamajka"@mt, "Jamaica"@en, "Jamaica"@da, "Jamaica"@nl,
     "Jamaica"@sv, "Jamajka"@hr, "Jamajka"@sl, "Jamajka"@pl, "Jamaika"@de, "Jamaica"@ro,
@@ -2609,13 +2608,13 @@
     "Ямайка"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "JM";
-  ep:isoNumber 388;
-  skos:inScheme epsh:Country .
+  ep:isoCode "jm";
+  ep:isoNumber "388";
+  skos:inScheme ep:Country .
 
-<Country_JP> a skos:Concept;
+ep:Country_JP a skos:Concept;
   rdfs:label "Japan";
-  skos:notation "JP";
+  skos:notation "jp";
   skos:prefLabel "Japán"@hu, "Jaapan"@et, "Japani"@fi, "Japonsko"@cs, "Japonsko"@sk,
     "Japonija"@lt, "Japāna"@lv, "il-Ġappun"@mt, "Japan"@en, "Japan"@da, "Japan"@nl, "Japan"@sv,
     "Japan"@hr, "Japonska"@sl, "Japonia"@pl, "Japan"@de, "Japonia"@ro, "Giappone"@it,
@@ -2626,13 +2625,13 @@
     "Japão"@pt, "Japón"@es, "Japon"@fr, "an tSeapáin"@ga, "Ιαπωνία"@el, "Япония"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "JP";
-  ep:isoNumber 392;
-  skos:inScheme epsh:Country .
+  ep:isoCode "jp";
+  ep:isoNumber "392";
+  skos:inScheme ep:Country .
 
-<Country_JE> a skos:Concept;
+ep:Country_JE a skos:Concept;
   rdfs:label "Jersey";
-  skos:notation "JE";
+  skos:notation "je";
   skos:prefLabel "Jersey"@hu, "Jersey"@et, "Jersey"@fi, "Jersey"@cs, "Jersey"@sk, "Džersis "@lt,
     "Džērsija"@lv, "Jersey"@mt, "Jersey"@en, "Jersey"@da, "Jersey"@nl, "Jersey"@sv, "Jersey"@hr,
     "Jersey"@sl, "Jersey"@pl, "Jersey"@de, "Jersey"@ro, "Jersey"@it, "Jersey"@pt, "Jersey"@es,
@@ -2644,13 +2643,13 @@
     "Bailía de Jersey"@es, "Jersey"@fr, "Báillcheantar Gheirsí"@ga, "Τζέρσεϊ"@el, "Департамент Джърси"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "JE";
-  ep:isoNumber 832;
-  skos:inScheme epsh:Country .
+  ep:isoCode "je";
+  ep:isoNumber "832";
+  skos:inScheme ep:Country .
 
-<Country_JT> a skos:Concept;
+ep:Country_JT a skos:Concept;
   rdfs:label "Johnston Island";
-  skos:notation "JT";
+  skos:notation "jt";
   skos:prefLabel "Johnston-sziget"@hu, "Johnstoni saar"@et, "Johnstoninsaari"@fi, "Ostrov Johnston"@cs,
     "Johnstonov ostrov"@sk, "Džonstono sala"@lt, "Džonstona Sala"@lv, "il-Gżira ta’ Johnston"@mt,
     "Johnston Island"@en, "Johnstonøen"@da, "Johnston"@nl, "Johnstonön"@sv, "Otok Johnston"@hr,
@@ -2665,13 +2664,13 @@
     "Νήσος Τζόνστον"@el, "Остров Джонстън"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "JT";
-  ep:isoNumber 396;
-  skos:inScheme epsh:Country .
+  ep:isoCode "jt";
+  ep:isoNumber "396";
+  skos:inScheme ep:Country .
 
-<Country_JO> a skos:Concept;
+ep:Country_JO a skos:Concept;
   rdfs:label "Jordan";
-  skos:notation "JO";
+  skos:notation "jo";
   skos:prefLabel "Jordánia"@hu, "Jordaania"@et, "Jordania"@fi, "Jordánsko"@cs, "Jordánsko"@sk,
     "Jordanija"@lt, "Jordānija"@lv, "il-Ġordan"@mt, "Jordan"@en, "Jordan"@da, "Jordanië"@nl,
     "Jordanien"@sv, "Jordan"@hr, "Jordanija"@sl, "Jordania"@pl, "Jordanien"@de, "Iordania"@ro,
@@ -2688,13 +2687,13 @@
     "Χασεμιτικό Βασίλειο της Ιορδανίας"@el, "Хашемитско кралство Йордания"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "JO";
-  ep:isoNumber 400;
-  skos:inScheme epsh:Country .
+  ep:isoCode "jo";
+  ep:isoNumber "400";
+  skos:inScheme ep:Country .
 
-<Country_KZ> a skos:Concept;
+ep:Country_KZ a skos:Concept;
   rdfs:label "Kazakhstan";
-  skos:notation "KZ";
+  skos:notation "kz";
   skos:prefLabel "Kazahsztán"@hu, "Kasahstan"@et, "Kazakstan"@fi, "Kazachstán"@cs, "Kazachstan"@sk,
     "Kazachstanas"@lt, "Kazahstāna"@lv, "il-Każakistan"@mt, "Kazakhstan"@en, "Kasakhstan  "@da,
     "Kazachstan"@nl, "Kazakstan"@sv, "Kazahstan"@hr, "Kazahstan"@sl, "Kazachstan"@pl,
@@ -2709,13 +2708,13 @@
     "Poblacht na Casacstáine"@ga, "Δημοκρατία του Καζαχστάν "@el, "Република Казахстан"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "KZ";
-  ep:isoNumber 398;
-  skos:inScheme epsh:Country .
+  ep:isoCode "kz";
+  ep:isoNumber "398";
+  skos:inScheme ep:Country .
 
-<Country_KE> a skos:Concept;
+ep:Country_KE a skos:Concept;
   rdfs:label "Kenya";
-  skos:notation "KE";
+  skos:notation "ke";
   skos:prefLabel "Kenya"@hu, "Keenia"@et, "Kenia"@fi, "Keňa"@cs, "Keňa"@sk, "Kenija"@lt,
     "Kenija"@lv, "il-Kenja"@mt, "Kenya"@en, "Kenya"@da, "Kenia"@nl, "Kenya"@sv, "Kenija"@hr,
     "Kenija"@sl, "Kenia"@pl, "Kenia"@de, "Kenya"@ro, "Kenya"@it, "Quénia"@pt, "Kenia"@es,
@@ -2729,13 +2728,13 @@
     "Република Кения"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "KE";
-  ep:isoNumber 404;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ke";
+  ep:isoNumber "404";
+  skos:inScheme ep:Country .
 
-<Country_KI> a skos:Concept;
+ep:Country_KI a skos:Concept;
   rdfs:label "Kiribati";
-  skos:notation "KI";
+  skos:notation "ki";
   skos:prefLabel "Kiribati"@hu, "Kiribati"@et, "Kiribati"@fi, "Kiribati"@cs, "Kiribati"@sk,
     "Kiribatis"@lt, "Kiribati"@lv, "Kiribati"@mt, "Kiribati"@en, "Kiribati  "@da, "Kiribati"@nl,
     "Kiribati"@sv, "Kiribati"@hr, "Kiribati"@sl, "Kiribati"@pl, "Kiribati"@de, "Kiribati"@ro,
@@ -2750,13 +2749,13 @@
     "Poblacht Chireabaití"@ga, "Δημοκρατία του Κιριμπάτι "@el, "Република Кирибати"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "KI";
-  ep:isoNumber 296;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ki";
+  ep:isoNumber "296";
+  skos:inScheme ep:Country .
 
-<Country_XK> a skos:Concept;
+ep:Country_XK a skos:Concept;
   rdfs:label "Kosovo (under UNSCR 1244/99)";
-  skos:notation "XK";
+  skos:notation "xk";
   skos:prefLabel "Koszovó"@hu, "Kosovo"@et, "Kosovo"@fi, "Kosovo"@cs, "Kosovo"@sk, "Kosovas"@lt,
     "Kosova"@lv, "Kosovo"@mt, "Kosovo (under UNSCR 1244/99)"@en, "Kosovo"@da, "Kosovo"@nl,
     "Kosovo"@sv, "Kosovo (u skladu s Rezolucijom Vijeća sigurnosti UN-a 1244/99)"@hr,
@@ -2774,13 +2773,13 @@
     "Косово (съгласно Резолюция 1244/1999 на Съвета за сигурност на ООН) Косово"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "XK";
-  ep:isoNumber 902;
-  skos:inScheme epsh:Country .
+  ep:isoCode "xk";
+  ep:isoNumber "902";
+  skos:inScheme ep:Country .
 
-<Country_KW> a skos:Concept;
+ep:Country_KW a skos:Concept;
   rdfs:label "Kuwait";
-  skos:notation "KW";
+  skos:notation "kw";
   skos:prefLabel "Kuvait"@hu, "Kuveit"@et, "Kuwait"@fi, "Kuvajt"@cs, "Kuvajt"@sk, "Kuveitas"@lt,
     "Kuveita"@lv, "il-Kuwajt"@mt, "Kuwait"@en, "Kuwait  "@da, "Koeweit"@nl, "Kuwait"@sv,
     "Kuvajt"@hr, "Kuvajt"@sl, "Kuwejt"@pl, "Kuwait"@de, "Kuweit"@ro, "Kuwait"@it, "Koweit"@pt,
@@ -2793,13 +2792,13 @@
     "Stát Chuáit"@ga, "Κράτος του Κουβέιτ "@el, "Държавата Кувейт"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "KW";
-  ep:isoNumber 414;
-  skos:inScheme epsh:Country .
+  ep:isoCode "kw";
+  ep:isoNumber "414";
+  skos:inScheme ep:Country .
 
-<Country_KG> a skos:Concept;
+ep:Country_KG a skos:Concept;
   rdfs:label "Kyrgyzstan";
-  skos:notation "KG";
+  skos:notation "kg";
   skos:prefLabel "Kirgizisztán"@hu, "Kõrgõzstan"@et, "Kirgisia"@fi, "Kyrgyzstán"@cs,
     "Kirgizsko"@sk, "Kirgizija"@lt, "Kirgizstāna"@lv, "il-Kirgiżistan"@mt, "Kyrgyzstan"@en,
     "Kirgisistan "@da, "Kirgizië"@nl, "Kirgizistan"@sv, "Kirgistan"@hr, "Kirgizistan"@sl,
@@ -2814,13 +2813,13 @@
     "Δημοκρατία της Κιργιζίας "@el, "Киргизка република"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "KG";
-  ep:isoNumber 417;
-  skos:inScheme epsh:Country .
+  ep:isoCode "kg";
+  ep:isoNumber "417";
+  skos:inScheme ep:Country .
 
-<Country_LA> a skos:Concept;
+ep:Country_LA a skos:Concept;
   rdfs:label "Laos";
-  skos:notation "LA";
+  skos:notation "la";
   skos:prefLabel "Laosz"@hu, "Laos"@et, "Laos"@fi, "Laos"@cs, "Laos"@sk, "Laosas"@lt,
     "Laosa"@lv, "il-Laos"@mt, "Laos"@en, "Laos"@da, "Laos"@nl, "Laos"@sv, "Laos"@hr, "Laos"@sl,
     "Laos"@pl, "Laos"@de, "Laos"@ro, "Laos"@it, "Laos"@pt, "Laos"@es, "Laos"@fr, "Laos"@ga,
@@ -2838,13 +2837,13 @@
     "Λαϊκή Δημοκρατία του Λάος"@el, "Лаоска народнодемократична република"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "LA";
-  ep:isoNumber 418;
-  skos:inScheme epsh:Country .
+  ep:isoCode "la";
+  ep:isoNumber "418";
+  skos:inScheme ep:Country .
 
-<Country_LV> a skos:Concept;
+ep:Country_LV a skos:Concept;
   rdfs:label "Latvia";
-  skos:notation "LV";
+  skos:notation "lv";
   skos:prefLabel "Lettország"@hu, "Läti"@et, "Latvia"@fi, "Lotyšsko"@cs, "Lotyšsko"@sk,
     "Latvija"@lt, "Latvija"@lv, "il-Latvja"@mt, "Latvia"@en, "Letland"@da, "Letland"@nl,
     "Lettland"@sv, "Latvija"@hr, "Latvija"@sl, "Łotwa"@pl, "Lettland"@de, "Letonia"@ro,
@@ -2859,15 +2858,15 @@
     "Република Латвия"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "2004-04-30T22:00:00"^^xsd:date;
-  ep:formalOder 60;
-  ep:isoCode "LV";
-  ep:isoNumber 428;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "2004-04-30"^^xsd:date;
+  ep:formalOrder 60;
+  ep:isoCode "lv";
+  ep:isoNumber "428";
+  skos:inScheme ep:Country .
 
-<Country_LB> a skos:Concept;
+ep:Country_LB a skos:Concept;
   rdfs:label "Lebanon";
-  skos:notation "LB";
+  skos:notation "lb";
   skos:prefLabel "Libanon"@hu, "Liibanon"@et, "Libanon"@fi, "Libanon"@cs, "Libanon"@sk,
     "Libanas"@lt, "Libāna"@lv, "il-Libanu"@mt, "Lebanon"@en, "Libanon"@da, "Libanon"@nl,
     "Libanon"@sv, "Libanon"@hr, "Libanon"@sl, "Liban"@pl, "Libanon"@de, "Liban"@ro, "Libano"@it,
@@ -2881,13 +2880,13 @@
     "Δημοκρατία του Λιβάνου "@el, "Ливанска република"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "LB";
-  ep:isoNumber 422;
-  skos:inScheme epsh:Country .
+  ep:isoCode "lb";
+  ep:isoNumber "422";
+  skos:inScheme ep:Country .
 
-<Country_LS> a skos:Concept;
+ep:Country_LS a skos:Concept;
   rdfs:label "Lesotho";
-  skos:notation "LS";
+  skos:notation "ls";
   skos:prefLabel "Lesotho"@hu, "Lesotho"@et, "Lesotho"@fi, "Lesotho"@cs, "Lesotho"@sk,
     "Lesotas"@lt, "Lesoto"@lv, "il-Lesoto"@mt, "Lesotho"@en, "Lesotho"@da, "Lesotho"@nl,
     "Lesotho"@sv, "Lesoto"@hr, "Lesoto"@sl, "Lesotho"@pl, "Lesotho"@de, "Lesotho"@ro,
@@ -2901,13 +2900,13 @@
     "Кралство Лесото"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "LS";
-  ep:isoNumber 426;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ls";
+  ep:isoNumber "426";
+  skos:inScheme ep:Country .
 
-<Country_LR> a skos:Concept;
+ep:Country_LR a skos:Concept;
   rdfs:label "Liberia";
-  skos:notation "LR";
+  skos:notation "lr";
   skos:prefLabel "Libéria"@hu, "Libeeria"@et, "Liberia"@fi, "Libérie"@cs, "Libéria"@sk,
     "Liberija"@lt, "Libērija"@lv, "il-Liberja"@mt, "Liberia"@en, "Liberia"@da, "Liberia"@nl,
     "Liberia"@sv, "Liberija"@hr, "Liberija"@sl, "Liberia"@pl, "Liberia"@de, "Liberia"@ro,
@@ -2922,13 +2921,13 @@
     "Poblacht na Libéire"@ga, "Δημοκρατία της Λιβερίας "@el, "Република Либерия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "LR";
-  ep:isoNumber 430;
-  skos:inScheme epsh:Country .
+  ep:isoCode "lr";
+  ep:isoNumber "430";
+  skos:inScheme ep:Country .
 
-<Country_LY> a skos:Concept;
+ep:Country_LY a skos:Concept;
   rdfs:label "Libya";
-  skos:notation "LY";
+  skos:notation "ly";
   skos:prefLabel "Líbia"@hu, "Liibüa"@et, "Libya"@fi, "Libye"@cs, "Líbya"@sk, "Libija"@lt,
     "Lībija"@lv, "il-Libja"@mt, "Libya"@en, "Libyen"@da, "Libië"@nl, "Libyen"@sv, "Libija"@hr,
     "Libija"@sl, "Libia"@pl, "Libyen"@de, "Libia"@ro, "Libia"@it, "Líbia"@pt, "Libia"@es,
@@ -2943,13 +2942,13 @@
     "Либия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "LY";
-  ep:isoNumber 434;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ly";
+  ep:isoNumber "434";
+  skos:inScheme ep:Country .
 
-<Country_LI> a skos:Concept;
+ep:Country_LI a skos:Concept;
   rdfs:label "Liechtenstein";
-  skos:notation "LI";
+  skos:notation "li";
   skos:prefLabel "Liechtenstein"@hu, "Liechtenstein"@et, "Liechtenstein"@fi, "Lichtenštejnsko"@cs,
     "Lichtenštajsko"@sk, "Lichtenšteinas"@lt, "Lihtenšteina"@lv, "il-Liechtenstein"@mt,
     "Liechtenstein"@en, "Liechtenstein"@da, "Liechtenstein"@nl, "Liechtenstein"@sv, "Lihtenštajn"@hr,
@@ -2966,13 +2965,13 @@
     "Prionsacht Lichtinstéin"@ga, "Πριγκιπάτο του Λιχτενστάιν"@el, "Княжество Лихтенщайн"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "LI";
-  ep:isoNumber 438;
-  skos:inScheme epsh:Country .
+  ep:isoCode "li";
+  ep:isoNumber "438";
+  skos:inScheme ep:Country .
 
-<Country_LT> a skos:Concept;
+ep:Country_LT a skos:Concept;
   rdfs:label "Lithuania";
-  skos:notation "LT";
+  skos:notation "lt";
   skos:prefLabel "Litvánia"@hu, "Leedu"@et, "Liettua"@fi, "Litva"@cs, "Litva"@sk, "Lietuva"@lt,
     "Lietuva"@lv, "il-Litwanja"@mt, "Lithuania"@en, "Litauen  "@da, "Litouwen"@nl, "Litauen"@sv,
     "Litva"@hr, "Litva"@sl, "Litwa"@pl, "Litauen"@de, "Lituania"@ro, "Lituania"@it, "Lituânia"@pt,
@@ -2986,15 +2985,15 @@
     "Poblacht na Liotuáine"@ga, "Δημοκρατία της Λιθουανίας "@el, "Република Литва"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "2004-04-30T22:00:00"^^xsd:date;
-  ep:formalOder 65;
-  ep:isoCode "LT";
-  ep:isoNumber 440;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "2004-04-30"^^xsd:date;
+  ep:formalOrder 65;
+  ep:isoCode "lt";
+  ep:isoNumber "440";
+  skos:inScheme ep:Country .
 
-<Country_LU> a skos:Concept;
+ep:Country_LU a skos:Concept;
   rdfs:label "Luxembourg";
-  skos:notation "LU";
+  skos:notation "lu";
   skos:prefLabel "Luxemburg"@hu, "Luksemburg"@et, "Luxemburg"@fi, "Lucembursko"@cs,
     "Luxembursko"@sk, "Liuksemburgas"@lt, "Luksemburga"@lv, "il-Lussemburgu"@mt, "Luxembourg"@en,
     "Luxembourg"@da, "Luxemburg"@nl, "Luxemburg"@sv, "Luksemburg"@hr, "Luksemburg"@sl,
@@ -3010,15 +3009,15 @@
     "Ard-Diúcacht Lucsamburg"@ga, "Μεγάλο Δουκάτο του Λουξεμβούργου"@el, "Велико херцогство Люксембург"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "1958-01-04T23:00:00"^^xsd:date;
-  ep:formalOder 70;
-  ep:isoCode "LU";
-  ep:isoNumber 442;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "1958-01-04"^^xsd:date;
+  ep:formalOrder 70;
+  ep:isoCode "lu";
+  ep:isoNumber "442";
+  skos:inScheme ep:Country .
 
-<Country_MO> a skos:Concept;
+ep:Country_MO a skos:Concept;
   rdfs:label "Macao";
-  skos:notation "MO";
+  skos:notation "mo";
   skos:prefLabel "Makaó"@hu, "Macau"@et, "Macao"@fi, "Macao"@cs, "Macao"@sk, "Makao"@lt,
     "Makao"@lv, "il-Macao"@mt, "Macao"@en, "Macao"@da, "Macau"@nl, "Macao"@sv, "Macao"@hr,
     "Macao"@sl, "Makau"@pl, "Macau"@de, "Macao"@ro, "Macao"@it, "Macau"@pt, "Macao"@es,
@@ -3036,13 +3035,13 @@
     "Специален административен район на Китайската народна република Макао"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "MO";
-  ep:isoNumber 446;
-  skos:inScheme epsh:Country .
+  ep:isoCode "mo";
+  ep:isoNumber "446";
+  skos:inScheme ep:Country .
 
-<Country_MG> a skos:Concept;
+ep:Country_MG a skos:Concept;
   rdfs:label "Madagascar";
-  skos:notation "MG";
+  skos:notation "mg";
   skos:prefLabel "Madagaszkár"@hu, "Madagaskar"@et, "Madagaskar"@fi, "Madagaskar"@cs,
     "Madagaskar"@sk, "Madagaskaras"@lt, "Madagaskara"@lv, "il-Madagascar"@mt, "Madagascar"@en,
     "Madagaskar  "@da, "Madagaskar"@nl, "Madagaskar"@sv, "Madagaskar"@hr, "Madagaskar"@sl,
@@ -3058,13 +3057,13 @@
     "Poblacht Mhadagascar"@ga, "Δημοκρατία της Μαδαγασκάρης "@el, "Република Мадагаскар"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "MG";
-  ep:isoNumber 450;
-  skos:inScheme epsh:Country .
+  ep:isoCode "mg";
+  ep:isoNumber "450";
+  skos:inScheme ep:Country .
 
-<Country_MW> a skos:Concept;
+ep:Country_MW a skos:Concept;
   rdfs:label "Malawi";
-  skos:notation "MW";
+  skos:notation "mw";
   skos:prefLabel "Malawi"@hu, "Malawi"@et, "Malawi"@fi, "Malawi"@cs, "Malawi"@sk, "Malavis"@lt,
     "Malāvija"@lv, "il-Malawi"@mt, "Malawi"@en, "Malawi  "@da, "Malawi"@nl, "Malawi"@sv,
     "Malavi"@hr, "Malavi"@sl, "Malawi"@pl, "Malawi"@de, "Malawi"@ro, "Malawi"@it, "Maláui"@pt,
@@ -3078,13 +3077,13 @@
     "Δημοκρατία του Μαλάουι "@el, "Република Малави"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "MW";
-  ep:isoNumber 454;
-  skos:inScheme epsh:Country .
+  ep:isoCode "mw";
+  ep:isoNumber "454";
+  skos:inScheme ep:Country .
 
-<Country_MY> a skos:Concept;
+ep:Country_MY a skos:Concept;
   rdfs:label "Malaysia";
-  skos:notation "MY";
+  skos:notation "my";
   skos:prefLabel "Malajzia"@hu, "Malaisia"@et, "Malesia"@fi, "Malajsie"@cs, "Malajzia"@sk,
     "Malaizija"@lt, "Malaizija"@lv, "il-Malasja"@mt, "Malaysia"@en, "Malaysia  "@da, "Maleisië"@nl,
     "Malaysia"@sv, "Malezija"@hr, "Malezija"@sl, "Malezja"@pl, "Malaysia"@de, "Malaysia"@ro,
@@ -3097,13 +3096,13 @@
     "Малайзия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "MY";
-  ep:isoNumber 458;
-  skos:inScheme epsh:Country .
+  ep:isoCode "my";
+  ep:isoNumber "458";
+  skos:inScheme ep:Country .
 
-<Country_MV> a skos:Concept;
+ep:Country_MV a skos:Concept;
   rdfs:label "Maldives";
-  skos:notation "MV";
+  skos:notation "mv";
   skos:prefLabel "Maldív-szigetek"@hu, "Maldiivid"@et, "Malediivit"@fi, "Maledivy"@cs,
     "Maldivy"@sk, "Maldyvai"@lt, "Maldīvija"@lv, "il-Maldivi"@mt, "Maldives"@en, "Maldiverne  "@da,
     "Maldiven"@nl, "Maldiverna"@sv, "Maldivi"@hr, "Maldivi"@sl, "Malediwy"@pl, "Malediven"@de,
@@ -3118,13 +3117,13 @@
     "Poblacht Oileáin Mhaildíve"@ga, "Δημοκρατία των Μαλδιβών "@el, "Република Малдиви"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "MV";
-  ep:isoNumber 462;
-  skos:inScheme epsh:Country .
+  ep:isoCode "mv";
+  ep:isoNumber "462";
+  skos:inScheme ep:Country .
 
-<Country_ML> a skos:Concept;
+ep:Country_ML a skos:Concept;
   rdfs:label "Mali";
-  skos:notation "ML";
+  skos:notation "ml";
   skos:prefLabel "Mali"@hu, "Mali"@et, "Mali"@fi, "Mali"@cs, "Mali"@sk, "Malis"@lt,
     "Mali"@lv, "il-Mali"@mt, "Mali"@en, "Mali"@da, "Mali"@nl, "Mali"@sv, "Mali"@hr, "Mali"@sl,
     "Mali"@pl, "Mali"@de, "Mali"@ro, "Mali"@it, "Mali"@pt, "Malí"@es, "Mali"@fr, "Mailí"@ga,
@@ -3137,13 +3136,13 @@
     "République du Mali"@fr, "Poblacht Mhailí"@ga, "Δημοκρατία του Μάλι "@el, "Република Мали"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "ML";
-  ep:isoNumber 466;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ml";
+  ep:isoNumber "466";
+  skos:inScheme ep:Country .
 
-<Country_MT> a skos:Concept;
+ep:Country_MT a skos:Concept;
   rdfs:label "Malta";
-  skos:notation "MT";
+  skos:notation "mt";
   skos:prefLabel "Málta"@hu, "Malta"@et, "Malta"@fi, "Malta"@cs, "Malta"@sk, "Malta"@lt,
     "Malta"@lv, "Malta"@mt, "Malta"@en, "Malta"@da, "Malta"@nl, "Malta"@sv, "Malta"@hr,
     "Malta"@sl, "Malta"@pl, "Malta"@de, "Malta"@ro, "Malta"@it, "Malta"@pt, "Malta"@es,
@@ -3157,15 +3156,15 @@
     "Република Малта"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "2004-04-30T22:00:00"^^xsd:date;
-  ep:formalOder 80;
-  ep:isoCode "MT";
-  ep:isoNumber 470;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "2004-04-30"^^xsd:date;
+  ep:formalOrder 80;
+  ep:isoCode "mt";
+  ep:isoNumber "470";
+  skos:inScheme ep:Country .
 
-<Country_MH> a skos:Concept;
+ep:Country_MH a skos:Concept;
   rdfs:label "Marshall Islands";
-  skos:notation "MH";
+  skos:notation "mh";
   skos:prefLabel "Marshall-szigetek"@hu, "Marshalli Saared"@et, "Marshallinsaaret"@fi,
     "Marshallovy ostrovy"@cs, "Marshallove ostrovy"@sk, "Maršalo Salos"@lt, "Māršala Salas"@lv,
     "il-Gżejjer Marshall"@mt, "Marshall Islands"@en, "Marshalløerne  "@da, "Marshalleilanden"@nl,
@@ -3184,13 +3183,13 @@
     "Република Маршалови острови"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "MH";
-  ep:isoNumber 584;
-  skos:inScheme epsh:Country .
+  ep:isoCode "mh";
+  ep:isoNumber "584";
+  skos:inScheme ep:Country .
 
-<Country_MQ> a skos:Concept;
+ep:Country_MQ a skos:Concept;
   rdfs:label "Martinique";
-  skos:notation "MQ";
+  skos:notation "mq";
   skos:prefLabel "Martinique"@hu, "Martinique"@et, "Martinique"@fi, "Martinik"@cs, "Martinik"@sk,
     "Martinika"@lt, "Martinika"@lv, "Martinique"@mt, "Martinique"@en, "Martinique  "@da,
     "Martinique"@nl, "Martinique"@sv, "Martinique"@hr, "Martinik"@sl, "Martynika"@pl,
@@ -3204,13 +3203,13 @@
     "Διαμέρισμα Μαρτινίκας"@el, "Мартиника"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "MQ";
-  ep:isoNumber 474;
-  skos:inScheme epsh:Country .
+  ep:isoCode "mq";
+  ep:isoNumber "474";
+  skos:inScheme ep:Country .
 
-<Country_MR> a skos:Concept;
+ep:Country_MR a skos:Concept;
   rdfs:label "Mauritania";
-  skos:notation "MR";
+  skos:notation "mr";
   skos:prefLabel "Mauritánia"@hu, "Mauritaania"@et, "Mauritania"@fi, "Mauritánie"@cs,
     "Mauritánia"@sk, "Mauritanija"@lt, "Mauritānija"@lv, "il-Mauritania"@mt, "Mauritania"@en,
     "Mauretanien  "@da, "Mauritanië"@nl, "Mauretanien"@sv, "Mauritanija"@hr, "Mavretanija"@sl,
@@ -3227,13 +3226,13 @@
     "Ислямска република Мавритания"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "MR";
-  ep:isoNumber 478;
-  skos:inScheme epsh:Country .
+  ep:isoCode "mr";
+  ep:isoNumber "478";
+  skos:inScheme ep:Country .
 
-<Country_MU> a skos:Concept;
+ep:Country_MU a skos:Concept;
   rdfs:label "Mauritius";
-  skos:notation "MU";
+  skos:notation "mu";
   skos:prefLabel "Mauritius"@hu, "Mauritius"@et, "Mauritius"@fi, "Mauricius"@cs, "Maurícius"@sk,
     "Mauricijus"@lt, "Maurīcija"@lv, "Mauritius"@mt, "Mauritius"@en, "Mauritius  "@da,
     "Mauritius"@nl, "Mauritius"@sv, "Mauricijus"@hr, "Mauritius"@sl, "Mauritius"@pl, "Mauritius"@de,
@@ -3249,13 +3248,13 @@
     "Δημοκρατία του Μαυρικίου "@el, "Република Мавриций"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "MU";
-  ep:isoNumber 480;
-  skos:inScheme epsh:Country .
+  ep:isoCode "mu";
+  ep:isoNumber "480";
+  skos:inScheme ep:Country .
 
-<Country_YT> a skos:Concept;
+ep:Country_YT a skos:Concept;
   rdfs:label "Mayotte";
-  skos:notation "YT";
+  skos:notation "yt";
   skos:prefLabel "Mayotte"@hu, "Mayotte"@et, "Mayotte"@fi, "Mayotte"@cs, "Mayotte"@sk,
     "Majotas"@lt, "Majota"@lv, "Mayotte"@mt, "Mayotte"@en, "Mayotte"@da, "Mayotte"@nl,
     "Mayotte"@sv, "Mayotte"@hr, "Mayotte"@sl, "Majotta"@pl, "Mayotte"@de, "Mayotte"@ro,
@@ -3269,13 +3268,13 @@
     "Comhroinn Chríochach Mayotte"@ga, "Εδαφική Κοινότητα της Μαγιότ"@el, "Майот"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "YT";
-  ep:isoNumber 175;
-  skos:inScheme epsh:Country .
+  ep:isoCode "yt";
+  ep:isoNumber "175";
+  skos:inScheme ep:Country .
 
-<Country_MX> a skos:Concept;
+ep:Country_MX a skos:Concept;
   rdfs:label "Mexico";
-  skos:notation "MX";
+  skos:notation "mx";
   skos:prefLabel "Mexikó"@hu, "Mehhiko"@et, "Meksiko"@fi, "Mexiko"@cs, "Mexiko"@sk,
     "Meksika"@lt, "Meksika"@lv, "il-Messiku"@mt, "Mexico"@en, "Mexico  "@da, "Mexico"@nl,
     "Mexiko"@sv, "Meksiko"@hr, "Mehika"@sl, "Meksyk"@pl, "Mexiko"@de, "Mexic"@ro, "Messico"@it,
@@ -3290,13 +3289,13 @@
     "Stáit Aontaithe Mheicsiceo"@ga, "Ηνωμένες Πολιτείες του Μεξικού "@el, "Мексикански съединени щати"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "MX";
-  ep:isoNumber 484;
-  skos:inScheme epsh:Country .
+  ep:isoCode "mx";
+  ep:isoNumber "484";
+  skos:inScheme ep:Country .
 
-<Country_FM> a skos:Concept;
+ep:Country_FM a skos:Concept;
   rdfs:label "Micronesia";
-  skos:notation "FM";
+  skos:notation "fm";
   skos:prefLabel "Mikronézia"@hu, "Mikroneesia"@et, "Mikronesia"@fi, "Mikronésie"@cs,
     "Mikronézia"@sk, "Mikronezija"@lt, "Mikronēzija"@lv, "il-Mikroneżja"@mt, "Micronesia"@en,
     "Mikronesien"@da, "Micronesia"@nl, "Mikronesien"@sv, "Mikronezija"@hr, "Mikronezija"@sl,
@@ -3312,13 +3311,13 @@
     "Stáit Chónaidhme na Micrinéise"@ga, "Ομόσπονδες Πολιτείες της Μικρονησίας"@el, "Федеративни щати Микронезия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "FM";
-  ep:isoNumber 583;
-  skos:inScheme epsh:Country .
+  ep:isoCode "fm";
+  ep:isoNumber "583";
+  skos:inScheme ep:Country .
 
-<Country_MI> a skos:Concept;
+ep:Country_MI a skos:Concept;
   rdfs:label "Midway Islands";
-  skos:notation "MI";
+  skos:notation "mi";
   skos:prefLabel "Midway-szigetek"@hu, "Midway saared"@et, "Midwaysaaret"@fi, "Ostrovy Midway"@cs,
     "Midwayské ostrovy"@sk, "Midvėjaus salos"@lt, "Midveja Salas"@lv, "il-Gżejjer Midway"@mt,
     "Midway Islands"@en, "Midwayøerne"@da, "Midway"@nl, "Midwayöarna"@sv, "Otočje Midway"@hr,
@@ -3333,13 +3332,13 @@
     "Острови Мидуей"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "MI";
-  ep:isoNumber 488;
-  skos:inScheme epsh:Country .
+  ep:isoCode "mi";
+  ep:isoNumber "488";
+  skos:inScheme ep:Country .
 
-<Country_MD> a skos:Concept;
+ep:Country_MD a skos:Concept;
   rdfs:label "Moldova";
-  skos:notation "MD";
+  skos:notation "md";
   skos:prefLabel "Moldova"@hu, "Moldova"@et, "Moldova"@fi, "Moldavsko"@cs, "Moldavsko"@sk,
     "Moldova"@lt, "Moldova"@lv, "il-Moldova"@mt, "Moldova"@en, "Moldova  "@da, "Moldavië"@nl,
     "Moldavien"@sv, "Moldavija"@hr, "Moldavija"@sl, "Mołdawia"@pl, "Moldau"@de, "Moldova"@ro,
@@ -3354,13 +3353,13 @@
     "Poblacht na Moldóive"@ga, "Δημοκρατία της Μολδαβίας"@el, "Република Молдова"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "MD";
-  ep:isoNumber 498;
-  skos:inScheme epsh:Country .
+  ep:isoCode "md";
+  ep:isoNumber "498";
+  skos:inScheme ep:Country .
 
-<Country_MC> a skos:Concept;
+ep:Country_MC a skos:Concept;
   rdfs:label "Monaco";
-  skos:notation "MC";
+  skos:notation "mc";
   skos:prefLabel "Monaco"@hu, "Monaco"@et, "Monaco"@fi, "Monako"@cs, "Monako"@sk, "Monakas"@lt,
     "Monako"@lv, "Monaco"@mt, "Monaco"@en, "Monaco  "@da, "Monaco"@nl, "Monaco"@sv, "Monako"@hr,
     "Monako"@sl, "Monako"@pl, "Monaco"@de, "Monaco"@ro, "Monaco"@it, "Mónaco"@pt, "Mónaco"@es,
@@ -3373,13 +3372,13 @@
     "Principauté de Monaco"@fr, "Prionsacht Mhonacó"@ga, "Πριγκιπάτο του Μονακό"@el, "Княжество Монако"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "MC";
-  ep:isoNumber 492;
-  skos:inScheme epsh:Country .
+  ep:isoCode "mc";
+  ep:isoNumber "492";
+  skos:inScheme ep:Country .
 
-<Country_MN> a skos:Concept;
+ep:Country_MN a skos:Concept;
   rdfs:label "Mongolia";
-  skos:notation "MN";
+  skos:notation "mn";
   skos:prefLabel "Mongólia"@hu, "Mongoolia"@et, "Mongolia"@fi, "Mongolsko"@cs, "Mongolsko"@sk,
     "Mongolija"@lt, "Mongolija"@lv, "il-Mongolja"@mt, "Mongolia"@en, "Mongoliet"@da, "Mongolië"@nl,
     "Mongoliet"@sv, "Mongolija"@hr, "Mongolija"@sl, "Mongolia"@pl, "Mongolei"@de, "Mongolia"@ro,
@@ -3392,13 +3391,13 @@
     "Монголия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "MN";
-  ep:isoNumber 496;
-  skos:inScheme epsh:Country .
+  ep:isoCode "mn";
+  ep:isoNumber "496";
+  skos:inScheme ep:Country .
 
-<Country_ME> a skos:Concept;
+ep:Country_ME a skos:Concept;
   rdfs:label "Montenegro";
-  skos:notation "ME";
+  skos:notation "me";
   skos:prefLabel "Montenegró"@hu, "Montenegro"@et, "Montenegro"@fi, "Černá Hora"@cs,
     "Čierna Hora"@sk, "Juodkalnija"@lt, "Melnkalne"@lv, "il-Montenegro"@mt, "Montenegro"@en,
     "Montenegro  "@da, "Montenegro"@nl, "Montenegro"@sv, "Crna Gora"@hr, "Črna gora"@sl,
@@ -3412,13 +3411,13 @@
     "Poblacht Mhontainéagró"@ga, "Δημοκρατία του Μαυροβουνίου "@el, "Черна гора"@bg;
   ep:euCandidate false;
   ep:euCountry true;
-  ep:isoCode "ME";
-  ep:isoNumber 499;
-  skos:inScheme epsh:Country .
+  ep:isoCode "me";
+  ep:isoNumber "499";
+  skos:inScheme ep:Country .
 
-<Country_MS> a skos:Concept;
+ep:Country_MS a skos:Concept;
   rdfs:label "Montserrat";
-  skos:notation "MS";
+  skos:notation "ms";
   skos:prefLabel "Montserrat"@hu, "Montserrat"@et, "Montserrat"@fi, "Montserrat"@cs,
     "Montserrat"@sk, "Montseratas"@lt, "Montserrata"@lv, "Montserrat"@mt, "Montserrat"@en,
     "Montserrat  "@da, "Montserrat"@nl, "Montserrat"@sv, "Montserrat"@hr, "Montserrat"@sl,
@@ -3431,13 +3430,13 @@
     "Montserrat"@es, "Montserrat"@fr, "Montsarat"@ga, "Μονσεράτ"@el, "Монтсерат"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "MS";
-  ep:isoNumber 500;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ms";
+  ep:isoNumber "500";
+  skos:inScheme ep:Country .
 
-<Country_MA> a skos:Concept;
+ep:Country_MA a skos:Concept;
   rdfs:label "Morocco";
-  skos:notation "MA";
+  skos:notation "ma";
   skos:prefLabel "Marokkó"@hu, "Maroko"@et, "Marokko"@fi, "Maroko"@cs, "Maroko"@sk,
     "Marokas"@lt, "Maroka"@lv, "il-Marokk"@mt, "Morocco"@en, "Marokko"@da, "Marokko"@nl,
     "Marocko"@sv, "Maroko"@hr, "Maroko"@sl, "Maroko"@pl, "Marokko"@de, "Maroc"@ro, "Marocco"@it,
@@ -3451,13 +3450,13 @@
     "Кралство Мароко"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "MA";
-  ep:isoNumber 504;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ma";
+  ep:isoNumber "504";
+  skos:inScheme ep:Country .
 
-<Country_MZ> a skos:Concept;
+ep:Country_MZ a skos:Concept;
   rdfs:label "Mozambique";
-  skos:notation "MZ";
+  skos:notation "mz";
   skos:prefLabel "Mozambik"@hu, "Mosambiik"@et, "Mosambik"@fi, "Mosambik"@cs, "Mozambik"@sk,
     "Mozambikas"@lt, "Mozambika"@lv, "il-Mozambique"@mt, "Mozambique"@en, "Mozambique  "@da,
     "Mozambique"@nl, "Moçambique"@sv, "Mozambik"@hr, "Mozambik"@sl, "Mozambik"@pl, "Mosambik"@de,
@@ -3472,13 +3471,13 @@
     "Poblacht Mhósaimbíc"@ga, "Δημοκρατία της Μοζαμβίκης "@el, "Република Мозамбик"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "MZ";
-  ep:isoNumber 508;
-  skos:inScheme epsh:Country .
+  ep:isoCode "mz";
+  ep:isoNumber "508";
+  skos:inScheme ep:Country .
 
-<Country_MM> a skos:Concept;
+ep:Country_MM a skos:Concept;
   rdfs:label "Myanmar";
-  skos:notation "MM";
+  skos:notation "mm";
   skos:prefLabel "Mianmar"@hu, "Myanmar"@et, "Myanmar/Burma"@fi, "Myanmar/Barma"@cs,
     "Mjanmarsko"@sk, "Mianmaras / Birma"@lt, "Mjanma"@lv, "il-Myanmar/Burma"@mt, "Myanmar"@en,
     "Myanmar/Burma"@da, "Myanmar / Birma"@nl, "Myanmar/Burma "@sv, "Mjanmar"@hr, "Mjanmar"@sl,
@@ -3494,13 +3493,13 @@
     "Δημοκρατία της Ένωσης του Μιανμάρ "@el, "Мианмар/Бирма"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "MM";
-  ep:isoNumber 104;
-  skos:inScheme epsh:Country .
+  ep:isoCode "mm";
+  ep:isoNumber "104";
+  skos:inScheme ep:Country .
 
-<Country_NA> a skos:Concept;
+ep:Country_NA a skos:Concept;
   rdfs:label "Namibia";
-  skos:notation "NA";
+  skos:notation "na";
   skos:prefLabel "Namíbia"@hu, "Namiibia"@et, "Namibia"@fi, "Namíbie"@cs, "Namíbia"@sk,
     "Namibija"@lt, "Namībija"@lv, "in-Namibja"@mt, "Namibia"@en, "Namibia  "@da, "Namibië"@nl,
     "Namibia"@sv, "Namibija"@hr, "Namibija"@sl, "Namibia"@pl, "Namibia"@de, "Namibia"@ro,
@@ -3515,13 +3514,13 @@
     "Република Намибия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "NA";
-  ep:isoNumber 516;
-  skos:inScheme epsh:Country .
+  ep:isoCode "na";
+  ep:isoNumber "516";
+  skos:inScheme ep:Country .
 
-<Country_NR> a skos:Concept;
+ep:Country_NR a skos:Concept;
   rdfs:label "Nauru";
-  skos:notation "NR";
+  skos:notation "nr";
   skos:prefLabel "Nauru"@hu, "Nauru"@et, "Nauru"@fi, "Nauru"@cs, "Nauru"@sk, "Nauru"@lt,
     "Nauru"@lv, "Nauru"@mt, "Nauru"@en, "Nauru"@da, "Nauru"@nl, "Nauru"@sv, "Nauru"@hr,
     "Nauru"@sl, "Nauru"@pl, "Nauru"@de, "Nauru"@ro, "Nauru"@it, "Nauru"@pt, "Nauru"@es,
@@ -3535,13 +3534,13 @@
     "Република Науру"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "NR";
-  ep:isoNumber 520;
-  skos:inScheme epsh:Country .
+  ep:isoCode "nr";
+  ep:isoNumber "520";
+  skos:inScheme ep:Country .
 
-<Country_NP> a skos:Concept;
+ep:Country_NP a skos:Concept;
   rdfs:label "Nepal";
-  skos:notation "NP";
+  skos:notation "np";
   skos:prefLabel "Nepál"@hu, "Nepal"@et, "Nepal"@fi, "Nepál"@cs, "Nepál"@sk, "Nepalas"@lt,
     "Nepāla"@lv, "in-Nepal"@mt, "Nepal"@en, "Nepal"@da, "Nepal"@nl, "Nepal"@sv, "Nepal"@hr,
     "Nepal"@sl, "Nepal"@pl, "Nepal"@de, "Nepal"@ro, "Nepal"@it, "Nepal"@pt, "Nepal"@es,
@@ -3554,13 +3553,13 @@
     "Βασίλειο του Νεπάλ"@el, "Непал"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "NP";
-  ep:isoNumber 524;
-  skos:inScheme epsh:Country .
+  ep:isoCode "np";
+  ep:isoNumber "524";
+  skos:inScheme ep:Country .
 
-<Country_NL> a skos:Concept;
+ep:Country_NL a skos:Concept;
   rdfs:label "Netherlands";
-  skos:notation "NL";
+  skos:notation "nl";
   skos:prefLabel "Hollandia"@hu, "Madalmaad"@et, "Alankomaat"@fi, "Nizozemsko"@cs, "Holandsko"@sk,
     "Nyderlandai"@lt, "Nīderlande"@lv, "in-Netherlands"@mt, "Netherlands"@en, "Nederlandene"@da,
     "Nederland"@nl, "Nederländerna"@sv, "Nizozemska"@hr, "Nizozemska"@sl, "Holandia"@pl,
@@ -3576,15 +3575,15 @@
     "Ríocht na hÍsiltíre"@ga, "Βασίλειο των Κάτω Χωρών"@el, "Кралство Нидерландия"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "1958-01-04T23:00:00"^^xsd:date;
-  ep:formalOder 85;
-  ep:isoCode "NL";
-  ep:isoNumber 528;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "1958-01-04"^^xsd:date;
+  ep:formalOrder 85;
+  ep:isoCode "nl";
+  ep:isoNumber "528";
+  skos:inScheme ep:Country .
 
-<Country_AN> a skos:Concept;
+ep:Country_AN a skos:Concept;
   rdfs:label "Netherlands Antilles";
-  skos:notation "AN";
+  skos:notation "an";
   skos:prefLabel "Holland Antillák"@hu, "Hollandi Antillid"@et, "Alankomaiden Antillit"@fi,
     "Nizozemské Antily"@cs, "Holandské Antily"@sk, "Olandijos Antilai"@lt, "Nīderlandes Antiļas"@lv,
     "l-Antilli Olandiżi"@mt, "Netherlands Antilles"@en, "De Nederlandske Antiller"@da,
@@ -3601,13 +3600,13 @@
     "Aintillí na hÍsiltíre"@ga, "Ολλανδικές Αντίλλες"@el, "Нидерландски Антили"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "AN";
-  ep:isoNumber 530;
-  skos:inScheme epsh:Country .
+  ep:isoCode "an";
+  ep:isoNumber "530";
+  skos:inScheme ep:Country .
 
-<Country_NT> a skos:Concept;
+ep:Country_NT a skos:Concept;
   rdfs:label "Neutral Zone";
-  skos:notation "NT";
+  skos:notation "nt";
   skos:prefLabel "semleges övezet"@hu, "Neutraalne tsoon"@et, "Neutraali vyöhyke"@fi,
     "neutrální oblast"@cs, "Neutrálna zóna"@sk, "Neutralioji zona"@lt, "neitrālā zona"@lv,
     "iż-Żona Newtrali"@mt, "Neutral Zone"@en, "Den Neutrale Zone"@da, "Neutrale Zone"@nl,
@@ -3623,13 +3622,13 @@
     "Неутрална зона"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "NT";
-  ep:isoNumber 536;
-  skos:inScheme epsh:Country .
+  ep:isoCode "nt";
+  ep:isoNumber "536";
+  skos:inScheme ep:Country .
 
-<Country_NC> a skos:Concept;
+ep:Country_NC a skos:Concept;
   rdfs:label "New Caledonia";
-  skos:notation "NC";
+  skos:notation "nc";
   skos:prefLabel "Új-Kaledónia"@hu, "Uus-Kaledoonia"@et, "Uusi-Kaledonia"@fi, "Nová Kaledonie"@cs,
     "Nová Kaledónia"@sk, "Naujoji Kaledonija"@lt, "Jaunkaledonija"@lv, "New Caledonia"@mt,
     "New Caledonia"@en, "Ny Kaledonien  "@da, "Nieuw-Caledonië"@nl, "Nya Kaledonien"@sv,
@@ -3644,13 +3643,13 @@
     "Nouvelle-Calédonie"@fr, "an Nua-Chaladóin"@ga, "Νέα Καληδονία"@el, "Нова Каледония"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "NC";
-  ep:isoNumber 540;
-  skos:inScheme epsh:Country .
+  ep:isoCode "nc";
+  ep:isoNumber "540";
+  skos:inScheme ep:Country .
 
-<Country_NZ> a skos:Concept;
+ep:Country_NZ a skos:Concept;
   rdfs:label "New Zealand";
-  skos:notation "NZ";
+  skos:notation "nz";
   skos:prefLabel "Új-Zéland"@hu, "Uus-Meremaa"@et, "Uusi-Seelanti"@fi, "Nový Zéland"@cs,
     "Nový Zéland"@sk, "Naujoji Zelandija"@lt, "Jaunzēlande"@lv, "New Zealand"@mt, "New Zealand"@en,
     "New Zealand  "@da, "Nieuw-Zeeland"@nl, "Nya Zeeland"@sv, "Novi Zeland"@hr, "Nova Zelandija"@sl,
@@ -3665,13 +3664,13 @@
     "Нова Зеландия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "NZ";
-  ep:isoNumber 554;
-  skos:inScheme epsh:Country .
+  ep:isoCode "nz";
+  ep:isoNumber "554";
+  skos:inScheme ep:Country .
 
-<Country_NI> a skos:Concept;
+ep:Country_NI a skos:Concept;
   rdfs:label "Nicaragua";
-  skos:notation "NI";
+  skos:notation "ni";
   skos:prefLabel "Nicaragua"@hu, "Nicaragua"@et, "Nicaragua"@fi, "Nikaragua"@cs, "Nikaragua"@sk,
     "Nikaragva"@lt, "Nikaragva"@lv, "in-Nikaragwa"@mt, "Nicaragua"@en, "Nicaragua"@da,
     "Nicaragua"@nl, "Nicaragua"@sv, "Nikaragva"@hr, "Nikaragva"@sl, "Nikaragua"@pl, "Nicaragua"@de,
@@ -3687,13 +3686,13 @@
     "Република Никарагуа"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "NI";
-  ep:isoNumber 558;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ni";
+  ep:isoNumber "558";
+  skos:inScheme ep:Country .
 
-<Country_NE> a skos:Concept;
+ep:Country_NE a skos:Concept;
   rdfs:label "Niger";
-  skos:notation "NE";
+  skos:notation "ne";
   skos:prefLabel "Niger"@hu, "Niger"@et, "Niger"@fi, "Niger"@cs, "Niger"@sk, "Nigeris"@lt,
     "Nigēra"@lv, "in-Niġer"@mt, "Niger"@en, "Niger"@da, "Niger"@nl, "Niger"@sv, "Niger"@hr,
     "Niger"@sl, "Niger"@pl, "Niger"@de, "Niger"@ro, "Niger"@it, "Níger"@pt, "Níger"@es,
@@ -3707,13 +3706,13 @@
     "Република Нигер"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "NE";
-  ep:isoNumber 562;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ne";
+  ep:isoNumber "562";
+  skos:inScheme ep:Country .
 
-<Country_NG> a skos:Concept;
+ep:Country_NG a skos:Concept;
   rdfs:label "Nigeria";
-  skos:notation "NG";
+  skos:notation "ng";
   skos:prefLabel "Nigéria"@hu, "Nigeeria"@et, "Nigeria"@fi, "Nigérie"@cs, "Nigéria"@sk,
     "Nigerija"@lt, "Nigērija"@lv, "in-Niġerja"@mt, "Nigeria"@en, "Nigeria"@da, "Nigeria"@nl,
     "Nigeria"@sv, "Nigerija"@hr, "Nigerija"@sl, "Nigeria"@pl, "Nigeria"@de, "Nigeria"@ro,
@@ -3729,13 +3728,13 @@
     "Poblacht Chónaidhme na Nigéire"@ga, "Ομοσπονδιακή Δημοκρατία της Νιγηρίας "@el, "Федерална република Нигерия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "NG";
-  ep:isoNumber 566;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ng";
+  ep:isoNumber "566";
+  skos:inScheme ep:Country .
 
-<Country_NU> a skos:Concept;
+ep:Country_NU a skos:Concept;
   rdfs:label "Niue";
-  skos:notation "NU";
+  skos:notation "nu";
   skos:prefLabel "Niue"@hu, "Niue"@et, "Niue"@fi, "Niue"@cs, "Niue"@sk, "Niujė"@lt,
     "Niue"@lv, "Niue"@mt, "Niue"@en, "Niue  "@da, "Niue"@nl, "Niue"@sv, "Niue"@hr, "Niue"@sl,
     "Niue"@pl, "Niue"@de, "Niue"@ro, "Niue"@it, "Niuê"@pt, "Niue"@es, "Niue"@fr, "Niue"@ga,
@@ -3746,13 +3745,13 @@
     "Ниуе"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "NU";
-  ep:isoNumber 570;
-  skos:inScheme epsh:Country .
+  ep:isoCode "nu";
+  ep:isoNumber "570";
+  skos:inScheme ep:Country .
 
-<Country_NF> a skos:Concept;
+ep:Country_NF a skos:Concept;
   rdfs:label "Norfolk Island";
-  skos:notation "NF";
+  skos:notation "nf";
   skos:prefLabel "Norfolk-sziget"@hu, "Norfolk"@et, "Norfolkinsaari"@fi, "Ostrov Norfolk"@cs,
     "Norfolk"@sk, "Norfolko Sala"@lt, "Norfolkas Sala"@lv, "il-Gżira Norfolk"@mt, "Norfolk Island"@en,
     "Norfolk Island  "@da, "Norfolkeiland"@nl, "Norfolkön"@sv, "Norfolk"@hr, "Norfolški otok"@sl,
@@ -3768,13 +3767,13 @@
     "Críoch Oileán Norfolk"@ga, "Έδαφος της Νήσου Νόρφοκ "@el, "Територия остров Норфолк"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "NF";
-  ep:isoNumber 574;
-  skos:inScheme epsh:Country .
+  ep:isoCode "nf";
+  ep:isoNumber "574";
+  skos:inScheme ep:Country .
 
-<Country_KP> a skos:Concept;
+ep:Country_KP a skos:Concept;
   rdfs:label "North Korea";
-  skos:notation "KP";
+  skos:notation "kp";
   skos:prefLabel "Észak-Korea"@hu, "Põhja-Korea"@et, "Pohjois-Korea"@fi, "Severní Korea"@cs,
     "Kórejská ľudovodemokratická republika"@sk, "Šiaurės Korėja"@lt, "Ziemeļkoreja"@lv,
     "il-Korea ta’ Fuq"@mt, "North Korea"@en, "Nordkorea  "@da, "Noord-Korea"@nl, "Nordkorea"@sv,
@@ -3795,13 +3794,13 @@
     "Λαοκρατική Δημοκρατία της Κορέας"@el, "Корейска народнодемократична република"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "KP";
-  ep:isoNumber 408;
-  skos:inScheme epsh:Country .
+  ep:isoCode "kp";
+  ep:isoNumber "408";
+  skos:inScheme ep:Country .
 
-<Country_MK> a skos:Concept;
+ep:Country_MK a skos:Concept;
   rdfs:label "North Macedonia ";
-  skos:notation "MK";
+  skos:notation "mk";
   skos:prefLabel "Észak-Macedónia"@hu, "Põhja-Makedoonia"@et, "Pohjois-Makedonia"@fi,
     "Severní Makedonie"@cs, "Severné Macedónsko"@sk, "Šiaurės Makedonija"@lt, "Ziemeļmaķedonija"@lv,
     "il-Maċedonja ta’ Fuq"@mt, "North Macedonia "@en, "Nordmakedonien"@da, "Noord-Macedonië"@nl,
@@ -3819,13 +3818,13 @@
     "Poblacht na Macadóine Thuaidh"@ga, "Δημοκρατία της Βόρειας Μακεδονίας"@el, "Република Северна Македония"@bg;
   ep:euCandidate false;
   ep:euCountry true;
-  ep:isoCode "MK";
-  ep:isoNumber 807;
-  skos:inScheme epsh:Country .
+  ep:isoCode "mk";
+  ep:isoNumber "807";
+  skos:inScheme ep:Country .
 
-<Country_MP> a skos:Concept;
+ep:Country_MP a skos:Concept;
   rdfs:label "Northern Mariana Islands";
-  skos:notation "MP";
+  skos:notation "mp";
   skos:prefLabel "Északi-Mariana-szigetek"@hu, "Põhja-Mariaanid"@et, "Pohjois-Mariaanit"@fi,
     "Ostrovy Severní Mariany"@cs, "Severné Mariány"@sk, "Marianos Šiaurinės Salos"@lt,
     "Ziemeļu Marianas Salas"@lv, "il-Gżejjer Mariana tat-Tramuntana"@mt, "Northern Mariana Islands"@en,
@@ -3846,13 +3845,13 @@
     "Κοινοπολιτεία των Βορείων Μαριανών Νήσων"@el, "Общност Северни Мариански острови"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "MP";
-  ep:isoNumber 580;
-  skos:inScheme epsh:Country .
+  ep:isoCode "mp";
+  ep:isoNumber "580";
+  skos:inScheme ep:Country .
 
-<Country_NO> a skos:Concept;
+ep:Country_NO a skos:Concept;
   rdfs:label "Norway";
-  skos:notation "NO";
+  skos:notation "no";
   skos:prefLabel "Norvégia"@hu, "Norra"@et, "Norja"@fi, "Norsko"@cs, "Nórsko"@sk, "Norvegija"@lt,
     "Norvēģija"@lv, "in-Norveġja"@mt, "Norway"@en, "Norge"@da, "Noorwegen"@nl, "Norge"@sv,
     "Norveška"@hr, "Norveška"@sl, "Norwegia"@pl, "Norwegen"@de, "Norvegia"@ro, "Norvegia"@it,
@@ -3866,13 +3865,13 @@
     "Кралство Норвегия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "NO";
-  ep:isoNumber 578;
-  skos:inScheme epsh:Country .
+  ep:isoCode "no";
+  ep:isoNumber "578";
+  skos:inScheme ep:Country .
 
-<Country_OM> a skos:Concept;
+ep:Country_OM a skos:Concept;
   rdfs:label "Oman";
-  skos:notation "OM";
+  skos:notation "om";
   skos:prefLabel "Omán"@hu, "Omaan"@et, "Oman"@fi, "Omán"@cs, "Omán"@sk, "Omanas"@lt,
     "Omāna"@lv, "l-Oman"@mt, "Oman"@en, "Oman"@da, "Oman"@nl, "Oman"@sv, "Oman"@hr, "Oman"@sl,
     "Oman"@pl, "Oman"@de, "Oman"@ro, "Oman"@it, "Omã"@pt, "Omán"@es, "Oman"@fr, "Óman"@ga,
@@ -3886,13 +3885,13 @@
     "Султанат Оман"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "OM";
-  ep:isoNumber 512;
-  skos:inScheme epsh:Country .
+  ep:isoCode "om";
+  ep:isoNumber "512";
+  skos:inScheme ep:Country .
 
-<Country_PC> a skos:Concept;
+ep:Country_PC a skos:Concept;
   rdfs:label "Pacific Islands";
-  skos:notation "PC";
+  skos:notation "pc";
   skos:prefLabel "Csendes-óceáni-szigetek"@hu, "Vaikse ookeani saared"@et, "Tyynenmeren saaret"@fi,
     "Tichomořské ostrovy"@cs, "Tichomorské ostrovy"@sk, "Ramiojo vandenyno salos"@lt,
     "Klusā okeāna salas"@lv, "il-Gżejjer tal-Paċifiku"@mt, "Pacific Islands"@en, "Stillehavsøer"@da,
@@ -3909,13 +3908,13 @@
     "Νήσοι του Ειρηνικού"@el, "Тихоокеански острови"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "PC";
-  ep:isoNumber 582;
-  skos:inScheme epsh:Country .
+  ep:isoCode "pc";
+  ep:isoNumber "582";
+  skos:inScheme ep:Country .
 
-<Country_PK> a skos:Concept;
+ep:Country_PK a skos:Concept;
   rdfs:label "Pakistan";
-  skos:notation "PK";
+  skos:notation "pk";
   skos:prefLabel "Pakisztán"@hu, "Pakistan"@et, "Pakistan"@fi, "Pákistán"@cs, "Pakistan"@sk,
     "Pakistanas"@lt, "Pakistāna"@lv, "il-Pakistan"@mt, "Pakistan"@en, "Pakistan"@da, "Pakistan"@nl,
     "Pakistan"@sv, "Pakistan"@hr, "Pakistan"@sl, "Pakistan"@pl, "Pakistan"@de, "Pakistan"@ro,
@@ -3931,13 +3930,13 @@
     "Poblacht Ioslamach na Pacastáine"@ga, "Ισλαμική Δημοκρατία του Πακιστάν "@el, "Ислямска република Пакистан"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "PK";
-  ep:isoNumber 586;
-  skos:inScheme epsh:Country .
+  ep:isoCode "pk";
+  ep:isoNumber "586";
+  skos:inScheme ep:Country .
 
-<Country_PW> a skos:Concept;
+ep:Country_PW a skos:Concept;
   rdfs:label "Palau";
-  skos:notation "PW";
+  skos:notation "pw";
   skos:prefLabel "Palau"@hu, "Belau"@et, "Palau"@fi, "Palau"@cs, "Palau"@sk, "Palau"@lt,
     "Palau"@lv, "Palau"@mt, "Palau"@en, "Palau"@da, "Palau"@nl, "Palau"@sv, "Palau"@hr,
     "Palau"@sl, "Palau"@pl, "Palau"@de, "Palau"@ro, "Palau"@it, "Palau"@pt, "Palaos"@es,
@@ -3951,13 +3950,13 @@
     "Република Палау"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "PW";
-  ep:isoNumber 585;
-  skos:inScheme epsh:Country .
+  ep:isoCode "pw";
+  ep:isoNumber "585";
+  skos:inScheme ep:Country .
 
-<Country_PS> a skos:Concept;
+ep:Country_PS a skos:Concept;
   rdfs:label "Palestinian territories";
-  skos:notation "PS";
+  skos:notation "ps";
   skos:prefLabel "megszállt palesztin területek"@hu, "Palestiina okupeeritud ala"@et,
     "Palestiinalaisalue"@fi, "okupovaná palestinská území"@cs, "Palestínske okupované územia"@sk,
     "Okupuotoji Palestinos Teritorija"@lt, "okupētās palestīniešu teritorijas"@lv, "it-Territorju Palestinjan Okkupat"@mt,
@@ -3978,13 +3977,13 @@
     "палестински територии"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "PS";
-  ep:isoNumber 275;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ps";
+  ep:isoNumber "275";
+  skos:inScheme ep:Country .
 
-<Country_PA> a skos:Concept;
+ep:Country_PA a skos:Concept;
   rdfs:label "Panama";
-  skos:notation "PA";
+  skos:notation "pa";
   skos:prefLabel "Panama"@hu, "Panama"@et, "Panama"@fi, "Panama"@cs, "Panama"@sk, "Panama"@lt,
     "Panama"@lv, "il-Panama"@mt, "Panama"@en, "Panama"@da, "Panama"@nl, "Panama"@sv, "Panama"@hr,
     "Panama"@sl, "Panama"@pl, "Panama"@de, "Panama"@ro, "Panama"@it, "Panamá"@pt, "Panamá"@es,
@@ -3998,13 +3997,13 @@
     "Република Панама"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "PA";
-  ep:isoNumber 591;
-  skos:inScheme epsh:Country .
+  ep:isoCode "pa";
+  ep:isoNumber "591";
+  skos:inScheme ep:Country .
 
-<Country_PG> a skos:Concept;
+ep:Country_PG a skos:Concept;
   rdfs:label "Papua New Guinea";
-  skos:notation "PG";
+  skos:notation "pg";
   skos:prefLabel "Pápua Új-Guinea"@hu, "Paapua Uus-Guinea"@et, "Papua-Uusi-Guinea"@fi,
     "Papua-Nová Guinea"@cs, "Papua-Nová Guinea"@sk, "Papua Naujoji Gvinėja"@lt, "Papua-Jaungvineja"@lv,
     "Papua New Guinea"@mt, "Papua New Guinea"@en, "Papua Ny Guinea  "@da, "Papoea-Nieuw-Guinea"@nl,
@@ -4026,13 +4025,13 @@
     "Ανεξάρτητο Κράτος της Παπουασίας-Νέας Γουινέας "@el, "Независима държава Папуа-Нова Гвинея"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "PG";
-  ep:isoNumber 598;
-  skos:inScheme epsh:Country .
+  ep:isoCode "pg";
+  ep:isoNumber "598";
+  skos:inScheme ep:Country .
 
-<Country_PY> a skos:Concept;
+ep:Country_PY a skos:Concept;
   rdfs:label "Paraguay";
-  skos:notation "PY";
+  skos:notation "py";
   skos:prefLabel "Paraguay"@hu, "Paraguay"@et, "Paraguay"@fi, "Paraguay"@cs, "Paraguaj"@sk,
     "Paragvajus"@lt, "Paragvaja"@lv, "il-Paragwaj"@mt, "Paraguay"@en, "Paraguay"@da, "Paraguay"@nl,
     "Paraguay"@sv, "Paragvaj"@hr, "Paragvaj"@sl, "Paragwaj"@pl, "Paraguay"@de, "Paraguay"@ro,
@@ -4048,13 +4047,13 @@
     "Република Парагвай"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "PY";
-  ep:isoNumber 600;
-  skos:inScheme epsh:Country .
+  ep:isoCode "py";
+  ep:isoNumber "600";
+  skos:inScheme ep:Country .
 
-<Country_PE> a skos:Concept;
+ep:Country_PE a skos:Concept;
   rdfs:label "Peru";
-  skos:notation "PE";
+  skos:notation "pe";
   skos:prefLabel "Peru"@hu, "Peruu"@et, "Peru"@fi, "Peru"@cs, "Peru"@sk, "Peru"@lt,
     "Peru"@lv, "il-Perù"@mt, "Peru"@en, "Peru"@da, "Peru"@nl, "Peru"@sv, "Peru"@hr, "Peru"@sl,
     "Peru"@pl, "Peru"@de, "Peru"@ro, "Perú"@it, "Peru"@pt, "Perú"@es, "Pérou"@fr, "Peiriú"@ga,
@@ -4067,13 +4066,13 @@
     "République du Pérou"@fr, "Poblacht Pheiriú"@ga, "Δημοκρατία του Περού "@el, "Република Перу"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "PE";
-  ep:isoNumber 604;
-  skos:inScheme epsh:Country .
+  ep:isoCode "pe";
+  ep:isoNumber "604";
+  skos:inScheme ep:Country .
 
-<Country_PH> a skos:Concept;
+ep:Country_PH a skos:Concept;
   rdfs:label "Philippines";
-  skos:notation "PH";
+  skos:notation "ph";
   skos:prefLabel "Fülöp-szigetek"@hu, "Filipiinid"@et, "Filippiinit"@fi, "Filipíny"@cs,
     "Filipíny"@sk, "Filipinai"@lt, "Filipīnas"@lv, "il-Filippini"@mt, "Philippines"@en,
     "Filippinerne  "@da, "Filipijnen"@nl, "Filippinerna"@sv, "Filipini"@hr, "Filipini"@sl,
@@ -4089,13 +4088,13 @@
     "Република Филипини"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "PH";
-  ep:isoNumber 608;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ph";
+  ep:isoNumber "608";
+  skos:inScheme ep:Country .
 
-<Country_PN> a skos:Concept;
+ep:Country_PN a skos:Concept;
   rdfs:label "Pitcairn Islands";
-  skos:notation "PN";
+  skos:notation "pn";
   skos:prefLabel "Pitcairn-szigetek"@hu, "Pitcairn"@et, "Pitcairn"@fi, "Pitcairn"@cs,
     "Pitcairnove ostrovy"@sk, "Pitkernas"@lt, "Pitkērna"@lv, "il-Gżejjer Pitcairn"@mt,
     "Pitcairn Islands"@en, "Pitcairn  "@da, "Pitcairneilanden"@nl, "Pitcairnöarna"@sv,
@@ -4111,13 +4110,13 @@
     "Острови Питкерн"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "PN";
-  ep:isoNumber 612;
-  skos:inScheme epsh:Country .
+  ep:isoCode "pn";
+  ep:isoNumber "612";
+  skos:inScheme ep:Country .
 
-<Country_PL> a skos:Concept;
+ep:Country_PL a skos:Concept;
   rdfs:label "Poland";
-  skos:notation "PL";
+  skos:notation "pl";
   skos:prefLabel "Lengyelország"@hu, "Poola"@et, "Puola"@fi, "Polsko"@cs, "Poľsko"@sk,
     "Lenkija"@lt, "Polija"@lv, "il-Polonja"@mt, "Poland"@en, "Polen"@da, "Polen"@nl, "Polen"@sv,
     "Poljska"@hr, "Poljska"@sl, "Polska"@pl, "Polen"@de, "Polonia"@ro, "Polonia"@it, "Polónia"@pt,
@@ -4131,15 +4130,15 @@
     "Poblacht na Polainne"@ga, "Δημοκρατία της Πολωνίας "@el, "Република Полша"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "2004-04-30T22:00:00"^^xsd:date;
-  ep:formalOder 95;
-  ep:isoCode "PL";
-  ep:isoNumber 616;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "2004-04-30"^^xsd:date;
+  ep:formalOrder 95;
+  ep:isoCode "pl";
+  ep:isoNumber "616";
+  skos:inScheme ep:Country .
 
-<Country_PT> a skos:Concept;
+ep:Country_PT a skos:Concept;
   rdfs:label "Portugal";
-  skos:notation "PT";
+  skos:notation "pt";
   skos:prefLabel "Portugália"@hu, "Portugal"@et, "Portugali"@fi, "Portugalsko"@cs, "Portugalsko"@sk,
     "Portugalija"@lt, "Portugāle"@lv, "il-Portugall"@mt, "Portugal"@en, "Portugal"@da,
     "Portugal"@nl, "Portugal"@sv, "Portugal"@hr, "Portugalska"@sl, "Portugalia"@pl, "Portugal"@de,
@@ -4155,15 +4154,15 @@
     "Poblacht na Portaingéile"@ga, "Πορτογαλική Δημοκρατία "@el, "Португалска република"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "1985-12-31T23:00:00"^^xsd:date;
-  ep:formalOder 100;
-  ep:isoCode "PT";
-  ep:isoNumber 620;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "1985-12-31"^^xsd:date;
+  ep:formalOrder 100;
+  ep:isoCode "pt";
+  ep:isoNumber "620";
+  skos:inScheme ep:Country .
 
-<Country_PR> a skos:Concept;
+ep:Country_PR a skos:Concept;
   rdfs:label "Puerto Rico";
-  skos:notation "PR";
+  skos:notation "pr";
   skos:prefLabel "Puerto Rico"@hu, "Puerto Rico"@et, "Puerto Rico"@fi, "Portoriko"@cs,
     "Portoriko"@sk, "Puerto Rikas"@lt, "Puertoriko"@lv, "Puerto Rico"@mt, "Puerto Rico"@en,
     "Puerto Rico  "@da, "Puerto Rico"@nl, "Puerto Rico"@sv, "Portoriko"@hr, "Portoriko"@sl,
@@ -4180,13 +4179,13 @@
     "Пуерториканска общност"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "PR";
-  ep:isoNumber 630;
-  skos:inScheme epsh:Country .
+  ep:isoCode "pr";
+  ep:isoNumber "630";
+  skos:inScheme ep:Country .
 
-<Country_QA> a skos:Concept;
+ep:Country_QA a skos:Concept;
   rdfs:label "Qatar";
-  skos:notation "QA";
+  skos:notation "qa";
   skos:prefLabel "Katar"@hu, "Katar"@et, "Qatar"@fi, "Katar"@cs, "Katar"@sk, "Kataras"@lt,
     "Katara"@lv, "il-Qatar"@mt, "Qatar"@en, "Qatar"@da, "Qatar"@nl, "Qatar"@sv, "Katar "@hr,
     "Katar"@sl, "Katar"@pl, "Katar"@de, "Qatar"@ro, "Qatar"@it, "Catar"@pt, "Qatar"@es,
@@ -4199,13 +4198,13 @@
     "Κράτος του Κατάρ"@el, "Държавата Катар"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "QA";
-  ep:isoNumber 634;
-  skos:inScheme epsh:Country .
+  ep:isoCode "qa";
+  ep:isoNumber "634";
+  skos:inScheme ep:Country .
 
-<Country_NQ> a skos:Concept;
+ep:Country_NQ a skos:Concept;
   rdfs:label "Queen Maud Land";
-  skos:notation "NQ";
+  skos:notation "nq";
   skos:prefLabel "Queen Maud-föld"@hu, "Kuninganna Maudi maa"@et, "Kuningatar Maudin maa"@fi,
     "Země královny Maud"@cs, "Zem kráľovnej Maud"@sk, "Karalienės Matildos Žemė"@lt, "Karalienes Modas Zeme"@lv,
     "l-Art tar-Reġina Maud"@mt, "Queen Maud Land"@en, "Dronning Maud Land"@da, "Koningin Maudland"@nl,
@@ -4222,13 +4221,13 @@
     "Γη της Βασίλισσας Μάουντ"@el, "Земя Кралица Мод"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "NQ";
-  ep:isoNumber 216;
-  skos:inScheme epsh:Country .
+  ep:isoCode "nq";
+  ep:isoNumber "216";
+  skos:inScheme ep:Country .
 
-<Country_RO> a skos:Concept;
+ep:Country_RO a skos:Concept;
   rdfs:label "Romania";
-  skos:notation "RO";
+  skos:notation "ro";
   skos:prefLabel "Románia"@hu, "Rumeenia"@et, "Romania"@fi, "Rumunsko"@cs, "Rumunsko"@sk,
     "Rumunija"@lt, "Rumānija"@lv, "ir-Rumanija"@mt, "Romania"@en, "Rumænien"@da, "Roemenië"@nl,
     "Rumänien"@sv, "Rumunjska"@hr, "Romunija"@sl, "Rumunia"@pl, "Rumänien"@de, "România"@ro,
@@ -4241,15 +4240,15 @@
     "Румъния"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "2006-12-31T23:00:00"^^xsd:date;
-  ep:formalOder 103;
-  ep:isoCode "RO";
-  ep:isoNumber 642;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "2006-12-31"^^xsd:date;
+  ep:formalOrder 103;
+  ep:isoCode "ro";
+  ep:isoNumber "642";
+  skos:inScheme ep:Country .
 
-<Country_RU> a skos:Concept;
+ep:Country_RU a skos:Concept;
   rdfs:label "Russia";
-  skos:notation "RU";
+  skos:notation "ru";
   skos:prefLabel "Oroszország"@hu, "Venemaa"@et, "Venäjä"@fi, "Rusko"@cs, "Rusko"@sk,
     "Rusija"@lt, "Krievija"@lv, "ir-Russja"@mt, "Russia"@en, "Rusland"@da, "Rusland"@nl,
     "Ryssland"@sv, "Rusija"@hr, "Rusija"@sl, "Rosja"@pl, "Russland"@de, "Rusia"@ro, "Russia"@it,
@@ -4263,13 +4262,13 @@
     "Ρωσική Ομοσπονδία"@el, "Руска федерация"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "RU";
-  ep:isoNumber 643;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ru";
+  ep:isoNumber "643";
+  skos:inScheme ep:Country .
 
-<Country_RW> a skos:Concept;
+ep:Country_RW a skos:Concept;
   rdfs:label "Rwanda";
-  skos:notation "RW";
+  skos:notation "rw";
   skos:prefLabel "Ruanda"@hu, "Rwanda"@et, "Ruanda"@fi, "Rwanda"@cs, "Rwanda"@sk, "Ruanda"@lt,
     "Ruanda"@lv, "ir-Rwanda"@mt, "Rwanda"@en, "Rwanda"@da, "Rwanda"@nl, "Rwanda"@sv, "Ruanda"@hr,
     "Ruanda"@sl, "Rwanda"@pl, "Ruanda"@de, "Rwanda"@ro, "Ruanda"@it, "Ruanda"@pt, "Ruanda"@es,
@@ -4283,13 +4282,13 @@
     "Република Руанда"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "RW";
-  ep:isoNumber 646;
-  skos:inScheme epsh:Country .
+  ep:isoCode "rw";
+  ep:isoNumber "646";
+  skos:inScheme ep:Country .
 
-<Country_RE> a skos:Concept;
+ep:Country_RE a skos:Concept;
   rdfs:label "Réunion";
-  skos:notation "RE";
+  skos:notation "re";
   skos:prefLabel "Réunion"@hu, "Réunion"@et, "Réunion"@fi, "Réunion"@cs, "Réunion"@sk,
     "Reunjonas"@lt, "Reinjona"@lv, "Réunion"@mt, "Réunion"@en, "Réunion  "@da, "Réunion"@nl,
     "Réunion"@sv, "Réunion"@hr, "Reunion"@sl, "Reunion"@pl, "Réunion"@de, "Réunion"@ro,
@@ -4303,13 +4302,13 @@
     "Реюнион"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "RE";
-  ep:isoNumber 638;
-  skos:inScheme epsh:Country .
+  ep:isoCode "re";
+  ep:isoNumber "638";
+  skos:inScheme ep:Country .
 
-<Country_KN> a skos:Concept;
+ep:Country_KN a skos:Concept;
   rdfs:label "Saint Kitts and Nevis";
-  skos:notation "KN";
+  skos:notation "kn";
   skos:prefLabel "Saint Kitts és Nevis"@hu, "Saint Kitts ja Nevis"@et, "Saint Kitts ja Nevis"@fi,
     "Svatý Kryštof a Nevis"@cs, "Svätý Krištof a Nevis"@sk, "Sent Kitsas ir Nevis"@lt,
     "Sentkitsa un Nevisa"@lv, "Saint Kitts u Nevis"@mt, "Saint Kitts and Nevis"@en, "Saint Kitts og Nevis  "@da,
@@ -4330,13 +4329,13 @@
     "Федерация Сейнт Китс и Невис"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "KN";
-  ep:isoNumber 659;
-  skos:inScheme epsh:Country .
+  ep:isoCode "kn";
+  ep:isoNumber "659";
+  skos:inScheme ep:Country .
 
-<Country_PM> a skos:Concept;
+ep:Country_PM a skos:Concept;
   rdfs:label "Saint Pierre and Miquelon";
-  skos:notation "PM";
+  skos:notation "pm";
   skos:prefLabel "Saint Pierre és Miquelon"@hu, "Saint-Pierre ja Miquelon"@et, "Saint-Pierre ja Miquelon"@fi,
     "Saint-Pierre a Miquelon"@cs, "Saint Pierre a Miquelon"@sk, "Sen Pjeras ir Mikelonas"@lt,
     "Senpjēra un Mikelona"@lv, "Saint Pierre u Miquelon"@mt, "Saint Pierre and Miquelon"@en,
@@ -4359,13 +4358,13 @@
     "Εδαφική Κοινότητα του Σαιν Πιερ και Μικελόν "@el, "Териториална общност Сен Пиер и Микелон"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "PM";
-  ep:isoNumber 666;
-  skos:inScheme epsh:Country .
+  ep:isoCode "pm";
+  ep:isoNumber "666";
+  skos:inScheme ep:Country .
 
-<Country_VC> a skos:Concept;
+ep:Country_VC a skos:Concept;
   rdfs:label "Saint Vincent and the Grenadines";
-  skos:notation "VC";
+  skos:notation "vc";
   skos:prefLabel "Saint Vincent és a Grenadine-szigetek"@hu, "Saint Vincent ja Grenadiinid"@et,
     "Saint Vincent ja Grenadiinit"@fi, "Svatý Vincenc a Grenadiny"@cs, "Svätý Vincent a Grenadíny"@sk,
     "Sent Vinsentas ir Grenadinai"@lt, "Sentvinsenta un Grenadīnas"@lv, "Saint Vincent u l-Grenadini"@mt,
@@ -4386,13 +4385,13 @@
     "Сейнт Винсънт и Гренадини"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "VC";
-  ep:isoNumber 670;
-  skos:inScheme epsh:Country .
+  ep:isoCode "vc";
+  ep:isoNumber "670";
+  skos:inScheme ep:Country .
 
-<Country_BL> a skos:Concept;
+ep:Country_BL a skos:Concept;
   rdfs:label "Saint-Barthélemy";
-  skos:notation "BL";
+  skos:notation "bl";
   skos:prefLabel "Saint-Barthélemy"@hu, "Saint-Barthélemy"@et, "Saint-Barthélemy"@fi,
     "Svatý Bartoloměj "@cs, "Svätý Bartolomej"@sk, "Sen Bartelemi"@lt, "Senbartelmī"@lv,
     "Saint Barthélemy "@mt, "Saint-Barthélemy"@en, "Saint-Barthélemy"@da, "Saint-Barthélémy"@nl,
@@ -4409,13 +4408,13 @@
     "Saint-Barthélemy"@fr, "Comhroinn Saint-Barthélemy"@ga, "Άγιος Βαρθολομαίος"@el, "Общност Сен Бартелеми"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "BL";
-  ep:isoNumber 652;
-  skos:inScheme epsh:Country .
+  ep:isoCode "bl";
+  ep:isoNumber "652";
+  skos:inScheme ep:Country .
 
-<Country_MF> a skos:Concept;
+ep:Country_MF a skos:Concept;
   rdfs:label "Saint-Martin";
-  skos:notation "MF";
+  skos:notation "mf";
   skos:prefLabel "Saint-Martin"@hu, "Saint-Martin"@et, "Saint-Martin"@fi, "Svatý Martin"@cs,
     "Svätý Martin "@sk, "Sen Martenas"@lt, "Senmartēna"@lv, "Saint Martin"@mt, "Saint-Martin"@en,
     "Saint-Martin  "@da, "Saint-Martin"@nl, "Saint-Martin"@sv, "Saint Martin"@hr, "Saint-Martin"@sl,
@@ -4433,13 +4432,13 @@
     "Общност Сен Мартен"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "MF";
-  ep:isoNumber 663;
-  skos:inScheme epsh:Country .
+  ep:isoCode "mf";
+  ep:isoNumber "663";
+  skos:inScheme ep:Country .
 
-<Country_WS> a skos:Concept;
+ep:Country_WS a skos:Concept;
   rdfs:label "Samoa";
-  skos:notation "WS";
+  skos:notation "ws";
   skos:prefLabel "Szamoa"@hu, "Samoa"@et, "Samoa"@fi, "Samoa"@cs, "Samoa"@sk, "Samoa"@lt,
     "Samoa"@lv, "Samoa"@mt, "Samoa"@en, "Samoa"@da, "Samoa"@nl, "Samoa"@sv, "Samoa"@hr,
     "Samoa"@sl, "Samoa"@pl, "Samoa"@de, "Samoa"@ro, "Samoa"@it, "Samoa"@pt, "Samoa"@es,
@@ -4454,13 +4453,13 @@
     "Ανεξάρτητο Κράτος της Σαμόα "@el, "Независима държава Самоа"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "WS";
-  ep:isoNumber 882;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ws";
+  ep:isoNumber "882";
+  skos:inScheme ep:Country .
 
-<Country_SM> a skos:Concept;
+ep:Country_SM a skos:Concept;
   rdfs:label "San Marino";
-  skos:notation "SM";
+  skos:notation "sm";
   skos:prefLabel "San Marino"@hu, "San Marino"@et, "San Marino"@fi, "San Marino"@cs,
     "San Maríno"@sk, "San Marinas"@lt, "Sanmarīno"@lv, "San Marino"@mt, "San Marino"@en,
     "San Marino  "@da, "San Marino"@nl, "San Marino"@sv, "San Marino"@hr, "San Marino"@sl,
@@ -4476,13 +4475,13 @@
     "Δημοκρατία του Αγίου Μαρίνου "@el, "Република Сан Марино"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "SM";
-  ep:isoNumber 674;
-  skos:inScheme epsh:Country .
+  ep:isoCode "sm";
+  ep:isoNumber "674";
+  skos:inScheme ep:Country .
 
-<Country_ST> a skos:Concept;
+ep:Country_ST a skos:Concept;
   rdfs:label "Sao Tome and Principe";
-  skos:notation "ST";
+  skos:notation "st";
   skos:prefLabel "São Tomé és Príncipe"@hu, "São Tomé ja Príncipe "@et, "São Tomé ja Príncipe"@fi,
     "Svatý Tomáš a Princův ostrov"@cs, "Svätý Tomáš a Princov ostrov"@sk, "San Tomė ir Prinsipė"@lt,
     "Santome un Prinsipi"@lv, "São Tomé u Príncipe"@mt, "Sao Tome and Principe"@en, "São Tomé og Príncipe  "@da,
@@ -4505,13 +4504,13 @@
     "Λαϊκή Δημοκρατία του Σάο Τομέ και Πρίνσιπε "@el, "Демократична република Сао Томе и Принсипи"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "ST";
-  ep:isoNumber 678;
-  skos:inScheme epsh:Country .
+  ep:isoCode "st";
+  ep:isoNumber "678";
+  skos:inScheme ep:Country .
 
-<Country_SA> a skos:Concept;
+ep:Country_SA a skos:Concept;
   rdfs:label "Saudi Arabia";
-  skos:notation "SA";
+  skos:notation "sa";
   skos:prefLabel "Szaúd-Arábia"@hu, "Saudi Araabia"@et, "Saudi-Arabia"@fi, "Saudská Arábie"@cs,
     "Saudská Arábia"@sk, "Saudo Arabija"@lt, "Saūda Arābija"@lv, "l-Arabja Sawdija"@mt,
     "Saudi Arabia"@en, "Saudi-Arabien  "@da, "Saudi-Arabië"@nl, "Saudiarabien"@sv, "Saudijska Arabija"@hr,
@@ -4528,13 +4527,13 @@
     "Ríocht na hAraibe Sádaí"@ga, "Βασίλειο της Σαουδικής Αραβίας"@el, "Кралство Саудитска Арабия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "SA";
-  ep:isoNumber 682;
-  skos:inScheme epsh:Country .
+  ep:isoCode "sa";
+  ep:isoNumber "682";
+  skos:inScheme ep:Country .
 
-<Country_SN> a skos:Concept;
+ep:Country_SN a skos:Concept;
   rdfs:label "Senegal";
-  skos:notation "SN";
+  skos:notation "sn";
   skos:prefLabel "Szenegál"@hu, "Senegal"@et, "Senegal"@fi, "Senegal"@cs, "Senegal"@sk,
     "Senegalas"@lt, "Senegāla"@lv, "is-Senegal"@mt, "Senegal"@en, "Senegal"@da, "Senegal"@nl,
     "Senegal"@sv, "Senegal"@hr, "Senegal"@sl, "Senegal"@pl, "Senegal"@de, "Senegal"@ro,
@@ -4549,13 +4548,13 @@
     "Poblacht na Seineagáile"@ga, "Δημοκρατία της Σενεγάλης "@el, "Република Сенегал"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "SN";
-  ep:isoNumber 686;
-  skos:inScheme epsh:Country .
+  ep:isoCode "sn";
+  ep:isoNumber "686";
+  skos:inScheme ep:Country .
 
-<Country_RS> a skos:Concept;
+ep:Country_RS a skos:Concept;
   rdfs:label "Serbia";
-  skos:notation "RS";
+  skos:notation "rs";
   skos:prefLabel "Szerbia"@hu, "Serbia"@et, "Serbia"@fi, "Srbsko"@cs, "Srbsko"@sk, "Serbija"@lt,
     "Serbija"@lv, "is-Serbja"@mt, "Serbia"@en, "Serbien"@da, "Servië"@nl, "Serbien"@sv,
     "Srbija"@hr, "Srbija"@sl, "Serbia"@pl, "Serbien"@de, "Serbia"@ro, "Serbia"@it, "Sérvia"@pt,
@@ -4569,13 +4568,13 @@
     "Δημοκρατία της Σερβίας "@el, "Република Сърбия"@bg;
   ep:euCandidate false;
   ep:euCountry true;
-  ep:isoCode "RS";
-  ep:isoNumber 688;
-  skos:inScheme epsh:Country .
+  ep:isoCode "rs";
+  ep:isoNumber "688";
+  skos:inScheme ep:Country .
 
-<Country_CS> a skos:Concept;
+ep:Country_CS a skos:Concept;
   rdfs:label "Serbia and Montenegro";
-  skos:notation "CS";
+  skos:notation "cs";
   skos:prefLabel "Szerbia és Montenegró"@hu, "Serbia ja Montenegro"@et, "Serbia ja Montenegro"@fi,
     "Srbsko a Černá Hora"@cs, "Srbsko a Čierna Hora"@sk, "Serbija ir Juodkalnija"@lt,
     "Serbija un Melnkalne"@lv, "is-Serbja u Montenegro"@mt, "Serbia and Montenegro"@en,
@@ -4593,13 +4592,13 @@
     "Сърбия и Черна гора"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "CS";
-  ep:isoNumber 891;
-  skos:inScheme epsh:Country .
+  ep:isoCode "cs";
+  ep:isoNumber "891";
+  skos:inScheme ep:Country .
 
-<Country_SC> a skos:Concept;
+ep:Country_SC a skos:Concept;
   rdfs:label "Seychelles";
-  skos:notation "SC";
+  skos:notation "sc";
   skos:prefLabel "Seychelle-szigetek"@hu, "Seišellid"@et, "Seychellit"@fi, "Seychely"@cs,
     "Seychely"@sk, "Seišeliai"@lt, "Seišelas"@lv, "is-Seychelles"@mt, "Seychelles"@en,
     "Seychellerne  "@da, "Seychellen"@nl, "Seychellerna"@sv, "Sejšeli"@hr, "Sejšeli"@sl,
@@ -4615,13 +4614,13 @@
     "Република Сейшели"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "SC";
-  ep:isoNumber 690;
-  skos:inScheme epsh:Country .
+  ep:isoCode "sc";
+  ep:isoNumber "690";
+  skos:inScheme ep:Country .
 
-<Country_SL> a skos:Concept;
+ep:Country_SL a skos:Concept;
   rdfs:label "Sierra Leone";
-  skos:notation "SL";
+  skos:notation "sl";
   skos:prefLabel "Sierra Leone"@hu, "Sierra Leone"@et, "Sierra Leone"@fi, "Sierra Leone"@cs,
     "Sierra Leone"@sk, "Siera Leonė"@lt, "Sjerraleone"@lv, "Sierra Leone"@mt, "Sierra Leone"@en,
     "Sierra Leone  "@da, "Sierra Leone"@nl, "Sierra Leone"@sv, "Sijera Leone"@hr, "Sierra Leone"@sl,
@@ -4637,13 +4636,13 @@
     "Poblacht Shiarra Leon"@ga, "Δημοκρατία της Σιέρρα Λεόνε"@el, "Република Сиера Леоне"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "SL";
-  ep:isoNumber 694;
-  skos:inScheme epsh:Country .
+  ep:isoCode "sl";
+  ep:isoNumber "694";
+  skos:inScheme ep:Country .
 
-<Country_SG> a skos:Concept;
+ep:Country_SG a skos:Concept;
   rdfs:label "Singapore";
-  skos:notation "SG";
+  skos:notation "sg";
   skos:prefLabel "Szingapúr"@hu, "Singapur"@et, "Singapore"@fi, "Singapur"@cs, "Singapur"@sk,
     "Singapūras"@lt, "Singapūra"@lv, "Singapore"@mt, "Singapore"@en, "Singapore  "@da,
     "Singapore"@nl, "Singapore"@sv, "Singapur"@hr, "Singapur"@sl, "Singapur"@pl, "Singapur"@de,
@@ -4659,13 +4658,13 @@
     "Δημοκρατία της Σινγκαπούρης "@el, "Република Сингапур"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "SG";
-  ep:isoNumber 702;
-  skos:inScheme epsh:Country .
+  ep:isoCode "sg";
+  ep:isoNumber "702";
+  skos:inScheme ep:Country .
 
-<Country_SX> a skos:Concept;
+ep:Country_SX a skos:Concept;
   rdfs:label "Sint Maarten";
-  skos:notation "SX";
+  skos:notation "sx";
   skos:prefLabel "Sint Maarten"@hu, "Sint Maarten"@et, "Sint Maarten"@fi, "Sint Maarten "@cs,
     "Svätý Martin "@sk, "Sint Martenas"@lt, "Sentmartēna"@lv, "Sint Maarten"@mt, "Sint Maarten"@en,
     "Sint-Maarten"@da, "Sint-Maarten"@nl, "Sint-Maarten"@sv, "Sint Maarten"@hr, "Sint Maarten"@sl,
@@ -4682,13 +4681,13 @@
     "Saint-Martin (cuid na hÍsiltíre)"@ga, "Άγιος Μαρτίνος (ολλανδικό τμήμα)"@el, "Синт Мартен"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "SX";
-  ep:isoNumber 534;
-  skos:inScheme epsh:Country .
+  ep:isoCode "sx";
+  ep:isoNumber "534";
+  skos:inScheme ep:Country .
 
-<Country_SK> a skos:Concept;
+ep:Country_SK a skos:Concept;
   rdfs:label "Slovakia";
-  skos:notation "SK";
+  skos:notation "sk";
   skos:prefLabel "Szlovákia"@hu, "Slovakkia"@et, "Slovakia"@fi, "Slovensko"@cs, "Slovensko"@sk,
     "Slovakija"@lt, "Slovākija"@lv, "is-Slovakkja"@mt, "Slovakia"@en, "Slovakiet"@da,
     "Slowakije"@nl, "Slovakien"@sv, "Slovačka"@hr, "Slovaška"@sl, "Słowacja"@pl, "Slowakei"@de,
@@ -4703,15 +4702,15 @@
     "Σλοβακική Δημοκρατία "@el, "Словашка република"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "2004-04-30T22:00:00"^^xsd:date;
-  ep:formalOder 110;
-  ep:isoCode "SK";
-  ep:isoNumber 703;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "2004-04-30"^^xsd:date;
+  ep:formalOrder 110;
+  ep:isoCode "sk";
+  ep:isoNumber "703";
+  skos:inScheme ep:Country .
 
-<Country_SI> a skos:Concept;
+ep:Country_SI a skos:Concept;
   rdfs:label "Slovenia";
-  skos:notation "SI";
+  skos:notation "si";
   skos:prefLabel "Szlovénia"@hu, "Sloveenia"@et, "Slovenia"@fi, "Slovinsko"@cs, "Slovinsko"@sk,
     "Slovėnija"@lt, "Slovēnija"@lv, "is-Slovenja"@mt, "Slovenia"@en, "Slovenien"@da, "Slovenië"@nl,
     "Slovenien"@sv, "Slovenija"@hr, "Slovenija"@sl, "Słowenia"@pl, "Slowenien"@de, "Slovenia"@ro,
@@ -4726,15 +4725,15 @@
     "Poblacht na Slóivéine"@ga, "Δημοκρατία της Σλοβενίας"@el, "Република Словения"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "2004-04-30T22:00:00"^^xsd:date;
-  ep:formalOder 105;
-  ep:isoCode "SI";
-  ep:isoNumber 705;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "2004-04-30"^^xsd:date;
+  ep:formalOrder 105;
+  ep:isoCode "si";
+  ep:isoNumber "705";
+  skos:inScheme ep:Country .
 
-<Country_SB> a skos:Concept;
+ep:Country_SB a skos:Concept;
   rdfs:label "Solomon Islands";
-  skos:notation "SB";
+  skos:notation "sb";
   skos:prefLabel "Salamon-szigetek"@hu, "Saalomoni Saared"@et, "Salomonsaaret"@fi, "Šalomounovy ostrovy"@cs,
     "Šalamúnove ostrovy"@sk, "Saliamono Salos"@lt, "Zālamana Salas"@lv, "il-Gżejjer Solomon"@mt,
     "Solomon Islands"@en, "Salomonøerne  "@da, "Salomonseilanden"@nl, "Salomonöarna"@sv,
@@ -4749,13 +4748,13 @@
     "Îles Salomon"@fr, "Oileáin Sholomón"@ga, "Νήσοι Σολομώντος"@el, "Соломонови острови"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "SB";
-  ep:isoNumber 90;
-  skos:inScheme epsh:Country .
+  ep:isoCode "sb";
+  ep:isoNumber "90";
+  skos:inScheme ep:Country .
 
-<Country_SO> a skos:Concept;
+ep:Country_SO a skos:Concept;
   rdfs:label "Somalia";
-  skos:notation "SO";
+  skos:notation "so";
   skos:prefLabel "Szomália"@hu, "Somaalia"@et, "Somalia"@fi, "Somálsko"@cs, "Somálsko"@sk,
     "Somalis"@lt, "Somālija"@lv, "is-Somalja"@mt, "Somalia"@en, "Somalia"@da, "Somalië"@nl,
     "Somalia"@sv, "Somalija"@hr, "Somalija"@sl, "Somalia"@pl, "Somalia"@de, "Somalia"@ro,
@@ -4771,13 +4770,13 @@
     "Σομαλία"@el, "Република Сомалия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "SO";
-  ep:isoNumber 706;
-  skos:inScheme epsh:Country .
+  ep:isoCode "so";
+  ep:isoNumber "706";
+  skos:inScheme ep:Country .
 
-<Country_ZA> a skos:Concept;
+ep:Country_ZA a skos:Concept;
   rdfs:label "South Africa";
-  skos:notation "ZA";
+  skos:notation "za";
   skos:prefLabel "Dél-Afrika"@hu, "Lõuna-Aafrika"@et, "Etelä-Afrikka"@fi, "Jižní Afrika"@cs,
     "Južná Afrika"@sk, "Pietų Afrika"@lt, "Dienvidāfrika"@lv, "l-Afrika t’Isfel"@mt, "South Africa"@en,
     "Sydafrika  "@da, "Zuid-Afrika"@nl, "Sydafrika"@sv, "Južna Afrika"@hr, "Južna Afrika"@sl,
@@ -4794,13 +4793,13 @@
     "Poblacht na hAfraice Theas"@ga, "Δημοκρατία της Νότιας Αφρικής"@el, "Република Южна Африка"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "ZA";
-  ep:isoNumber 710;
-  skos:inScheme epsh:Country .
+  ep:isoCode "za";
+  ep:isoNumber "710";
+  skos:inScheme ep:Country .
 
-<Country_GS> a skos:Concept;
+ep:Country_GS a skos:Concept;
   rdfs:label "South Georgia and the South Sandwich Islands";
-  skos:notation "GS";
+  skos:notation "gs";
   skos:prefLabel "Déli-Georgia és Déli-Sandwich-szigetek"@hu, "Lõuna-Georgia ja Lõuna-Sandwichi saared"@et,
     "Etelä-Georgia ja Eteläiset Sandwichsaaret"@fi, "Jižní Georgie a Jižní Sandwichovy ostrovy"@cs,
     "Južná Georgia a Južné Sandwichove ostrovy"@sk, "Pietų Džordžija ir Pietų Sandvičas"@lt,
@@ -4827,13 +4826,13 @@
     "Νότια Γεωργία και Νότιες Νήσοι Σάντουιτς"@el, "Южна Джорджия и Южни Сандвичеви острови"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "GS";
-  ep:isoNumber 239;
-  skos:inScheme epsh:Country .
+  ep:isoCode "gs";
+  ep:isoNumber "239";
+  skos:inScheme ep:Country .
 
-<Country_KR> a skos:Concept;
+ep:Country_KR a skos:Concept;
   rdfs:label "South Korea";
-  skos:notation "KR";
+  skos:notation "kr";
   skos:prefLabel "Dél-Korea"@hu, "Lõuna-Korea"@et, "Etelä-Korea"@fi, "Jižní Korea"@cs,
     "Kórejská republika"@sk, "Pietų Korėja"@lt, "Dienvidkoreja"@lv, "il-Korea t’Isfel"@mt,
     "South Korea"@en, "Sydkorea  "@da, "Zuid-Korea"@nl, "Sydkorea"@sv, "Južna Koreja"@hr,
@@ -4849,13 +4848,13 @@
     "Република Корея"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "KR";
-  ep:isoNumber 410;
-  skos:inScheme epsh:Country .
+  ep:isoCode "kr";
+  ep:isoNumber "410";
+  skos:inScheme ep:Country .
 
-<Country_SS> a skos:Concept;
+ep:Country_SS a skos:Concept;
   rdfs:label "South Sudan";
-  skos:notation "SS";
+  skos:notation "ss";
   skos:prefLabel "Dél-Szudán "@hu, "Lõuna-Sudaan"@et, "Etelä-Sudan"@fi, "Jižní Súdán"@cs,
     "Južný Sudán"@sk, "Pietų Sudanas"@lt, "Dienvidsudāna"@lv, "is-Sudan t’Isfel"@mt, "South Sudan"@en,
     "Sydsudan  "@da, "Zuid-Sudan"@nl, "Sydsudan"@sv, "Južni Sudan"@hr, "Južni Sudan"@sl,
@@ -4872,13 +4871,13 @@
     "Δημοκρατία του Νοτίου Σουδάν "@el, "Република Южен Судан"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "SS";
-  ep:isoNumber 728;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ss";
+  ep:isoNumber "728";
+  skos:inScheme ep:Country .
 
-<Country_ES> a skos:Concept;
+ep:Country_ES a skos:Concept;
   rdfs:label "Spain";
-  skos:notation "ES";
+  skos:notation "es";
   skos:prefLabel "Spanyolország"@hu, "Hispaania"@et, "Espanja"@fi, "Španělsko"@cs, "Španielsko"@sk,
     "Ispanija"@lt, "Spānija"@lv, "Spanja"@mt, "Spain"@en, "Spanien"@da, "Spanje"@nl, "Spanien"@sv,
     "Španjolska"@hr, "Španija"@sl, "Hiszpania"@pl, "Spanien"@de, "Spania"@ro, "Spagna"@it,
@@ -4892,15 +4891,15 @@
     "Кралство Испания"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "1985-12-31T23:00:00"^^xsd:date;
-  ep:formalOder 35;
-  ep:isoCode "ES";
-  ep:isoNumber 724;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "1985-12-31"^^xsd:date;
+  ep:formalOrder 35;
+  ep:isoCode "es";
+  ep:isoNumber "724";
+  skos:inScheme ep:Country .
 
-<Country_LK> a skos:Concept;
+ep:Country_LK a skos:Concept;
   rdfs:label "Sri Lanka";
-  skos:notation "LK";
+  skos:notation "lk";
   skos:prefLabel "Srí Lanka"@hu, "Sri Lanka"@et, "Sri Lanka"@fi, "Šrí Lanka"@cs, "Srí Lanka"@sk,
     "Šri Lanka"@lt, "Šrilanka"@lv, "is-Sri Lanka"@mt, "Sri Lanka"@en, "Sri Lanka"@da,
     "Sri Lanka"@nl, "Sri Lanka"@sv, "Šri Lanka"@hr, "Šrilanka"@sl, "Sri Lanka"@pl, "Sri Lanka"@de,
@@ -4920,13 +4919,13 @@
     "Демократична социалистическа република Шри Ланка"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "LK";
-  ep:isoNumber 144;
-  skos:inScheme epsh:Country .
+  ep:isoCode "lk";
+  ep:isoNumber "144";
+  skos:inScheme ep:Country .
 
-<Country_SH> a skos:Concept;
+ep:Country_SH a skos:Concept;
   rdfs:label "St. Helena";
-  skos:notation "SH";
+  skos:notation "sh";
   skos:prefLabel "Szent Ilona"@hu, "Saint Helena"@et, "Saint Helena, Ascension ja Tristan da Cunha"@fi,
     "Svatá Helena, Ascension a Tristan da Cunha"@cs, "Svätá Helena"@sk, "Šv. Elenos, Dangun Žengimo ir Tristano da Kunjos Salos"@lt,
     "Sv. Helēnas Sala"@lv, "Saint Helena, Ascension u Tristan da Cunha"@mt, "St. Helena"@en,
@@ -4949,13 +4948,13 @@
     "Света Елена, Възнесение и Тристан да Куня"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "SH";
-  ep:isoNumber 654;
-  skos:inScheme epsh:Country .
+  ep:isoCode "sh";
+  ep:isoNumber "654";
+  skos:inScheme ep:Country .
 
-<Country_LC> a skos:Concept;
+ep:Country_LC a skos:Concept;
   rdfs:label "St. Lucia";
-  skos:notation "LC";
+  skos:notation "lc";
   skos:prefLabel "Saint Lucia"@hu, "Saint Lucia"@et, "Saint Lucia"@fi, "Svatá Lucie"@cs,
     "Svätá Lucia"@sk, "Sent Lusija"@lt, "Sentlūsija"@lv, "Saint Lucia"@mt, "St. Lucia"@en,
     "Saint Lucia  "@da, "Saint Lucia"@nl, "Saint Lucia"@sv, "Sveta Lucija"@hr, "Sveta Lucija"@sl,
@@ -4968,13 +4967,13 @@
     "Santa Lucía"@es, "Sainte-Lucie"@fr, "Saint Lucia"@ga, "Αγία Λουκία"@el, "Сейнт Лусия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "LC";
-  ep:isoNumber 662;
-  skos:inScheme epsh:Country .
+  ep:isoCode "lc";
+  ep:isoNumber "662";
+  skos:inScheme ep:Country .
 
-<Country_ZZ> a skos:Concept;
+ep:Country_ZZ a skos:Concept;
   rdfs:label "Stateless";
-  skos:notation "ZZ";
+  skos:notation "zz";
   skos:prefLabel "hontalan"@hu, "Kodakondsuseta"@et, "valtioton"@fi, "bez státní příslušnosti"@cs,
     "Bez štátnej príslušnosti"@sk, "Be pilietybės"@lt, "bez valstspiederības"@lv, "Apolidi"@mt,
     "Stateless"@en, "Statsløs"@da, "statslös"@sv, "Osoba bez državljanstva"@hr, "Brez države"@sl,
@@ -4987,13 +4986,13 @@
     "Apatride"@fr, "Gan stát"@ga, "Άπατρις"@el, "без гражданство"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "ZZ";
-  ep:isoNumber 999;
-  skos:inScheme epsh:Country .
+  ep:isoCode "zz";
+  ep:isoNumber "999";
+  skos:inScheme ep:Country .
 
-<Country_SD> a skos:Concept;
+ep:Country_SD a skos:Concept;
   rdfs:label "Sudan";
-  skos:notation "SD";
+  skos:notation "sd";
   skos:prefLabel "Szudán"@hu, "Sudaan"@et, "Sudan"@fi, "Súdán"@cs, "Sudán"@sk, "Sudanas"@lt,
     "Sudāna"@lv, "is-Sudan"@mt, "Sudan"@en, "Sudan"@da, "Sudan"@nl, "Sudan"@sv, "Sudan"@hr,
     "Sudan"@sl, "Sudan"@pl, "Sudan"@de, "Sudan"@ro, "Sudan"@it, "Sudão"@pt, "Sudán"@es,
@@ -5007,13 +5006,13 @@
     "Република Судан"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "SD";
-  ep:isoNumber 729;
-  skos:inScheme epsh:Country .
+  ep:isoCode "sd";
+  ep:isoNumber "729";
+  skos:inScheme ep:Country .
 
-<Country_SR> a skos:Concept;
+ep:Country_SR a skos:Concept;
   rdfs:label "Suriname";
-  skos:notation "SR";
+  skos:notation "sr";
   skos:prefLabel "Suriname"@hu, "Suriname"@et, "Suriname"@fi, "Surinam"@cs, "Surinam"@sk,
     "Surinamas"@lt, "Surinama"@lv, "is-Suriname"@mt, "Suriname"@en, "Surinam"@da, "Suriname"@nl,
     "Surinam"@sv, "Surinam"@hr, "Surinam"@sl, "Surinam"@pl, "Suriname"@de, "Suriname"@ro,
@@ -5028,13 +5027,13 @@
     "Poblacht Shuranam"@ga, "Δημοκρατία του Σουρινάμ "@el, "Република Суринам"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "SR";
-  ep:isoNumber 740;
-  skos:inScheme epsh:Country .
+  ep:isoCode "sr";
+  ep:isoNumber "740";
+  skos:inScheme ep:Country .
 
-<Country_SJ> a skos:Concept;
+ep:Country_SJ a skos:Concept;
   rdfs:label "Svalbard and Jan Mayen";
-  skos:notation "SJ";
+  skos:notation "sj";
   skos:prefLabel "Svalbard és Jan Mayen"@hu, "Svalbard ja Jan Mayen "@et, "Svalbard ja Jan Mayen"@fi,
     "Svalbard a Jan Mayen"@cs, "Svalbard a Jan Mayen"@sk, "Svalbardas ir Janas Majenas"@lt,
     "Svalbāra un Jana Majena Sala"@lv, "Svalbard u Jan Mayen"@mt, "Svalbard and Jan Mayen"@en,
@@ -5053,13 +5052,13 @@
     "Svalbard agus Jan Mayen"@ga, "Νήσοι Σβάλμπαρντ και Γιαν Μαγιέν"@el, "Свалбард и Ян Майен"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "SJ";
-  ep:isoNumber 744;
-  skos:inScheme epsh:Country .
+  ep:isoCode "sj";
+  ep:isoNumber "744";
+  skos:inScheme ep:Country .
 
-<Country_SZ> a skos:Concept;
+ep:Country_SZ a skos:Concept;
   rdfs:label "Swaziland";
-  skos:notation "SZ";
+  skos:notation "sz";
   skos:prefLabel "Szváziföld"@hu, "Svaasimaa"@et, "Swazimaa"@fi, "Svazijsko"@cs, "Svazijsko"@sk,
     "Svazilandas"@lt, "Svazilenda"@lv, "is-Swaziland"@mt, "Swaziland"@en, "Swaziland"@da,
     "Swaziland"@nl, "Swaziland"@sv, "Svazi"@hr, "Svazi"@sl, "Suazi"@pl, "Swasiland"@de,
@@ -5074,13 +5073,13 @@
     "Βασίλειο της Σουαζιλάνδης"@el, "Кралство Свазиленд"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "SZ";
-  ep:isoNumber 748;
-  skos:inScheme epsh:Country .
+  ep:isoCode "sz";
+  ep:isoNumber "748";
+  skos:inScheme ep:Country .
 
-<Country_SE> a skos:Concept;
+ep:Country_SE a skos:Concept;
   rdfs:label "Sweden";
-  skos:notation "SE";
+  skos:notation "se";
   skos:prefLabel "Svédország"@hu, "Rootsi"@et, "Ruotsi"@fi, "Švédsko"@cs, "Švédsko"@sk,
     "Švedija"@lt, "Zviedrija"@lv, "l-Iżvezja"@mt, "Sweden"@en, "Sverige"@da, "Zweden"@nl,
     "Sverige"@sv, "Švedska"@hr, "Švedska"@sl, "Szwecja"@pl, "Schweden"@de, "Suedia"@ro,
@@ -5095,15 +5094,15 @@
     "Кралство Швеция"@bg;
   ep:euCandidate true;
   ep:euCountry false;
-  ep:euStartDate "1994-12-31T23:00:00"^^xsd:date;
-  ep:formalOder 120;
-  ep:isoCode "SE";
-  ep:isoNumber 752;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "1994-12-31"^^xsd:date;
+  ep:formalOrder 120;
+  ep:isoCode "se";
+  ep:isoNumber "752";
+  skos:inScheme ep:Country .
 
-<Country_CH> a skos:Concept;
+ep:Country_CH a skos:Concept;
   rdfs:label "Switzerland";
-  skos:notation "CH";
+  skos:notation "ch";
   skos:prefLabel "Svájc"@hu, "Šveits"@et, "Sveitsi"@fi, "Švýcarsko"@cs, "Švajčiarsko"@sk,
     "Šveicarija"@lt, "Šveice"@lv, "l-Iżvizzera"@mt, "Switzerland"@en, "Schweiz"@da, "Zwitserland"@nl,
     "Schweiz"@sv, "Švicarska"@hr, "Švica"@sl, "Szwajcaria"@pl, "Schweiz"@de, "Elveția"@ro,
@@ -5119,13 +5118,13 @@
     "Ελβετική Συνομοσπονδία"@el, "Конфедерация Швейцария"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "CH";
-  ep:isoNumber 756;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ch";
+  ep:isoNumber "756";
+  skos:inScheme ep:Country .
 
-<Country_SY> a skos:Concept;
+ep:Country_SY a skos:Concept;
   rdfs:label "Syria";
-  skos:notation "SY";
+  skos:notation "sy";
   skos:prefLabel "Szíria"@hu, "Süüria"@et, "Syyria"@fi, "Sýrie"@cs, "Sýria"@sk, "Sirija"@lt,
     "Sīrija"@lv, "is-Sirja"@mt, "Syria"@en, "Syrien"@da, "Syrië"@nl, "Syrien"@sv, "Sirija"@hr,
     "Sirija"@sl, "Syria"@pl, "Syrien"@de, "Siria"@ro, "Siria"@it, "Síria"@pt, "Siria"@es,
@@ -5140,13 +5139,13 @@
     "Poblacht Arabach na Siria"@ga, "Αραβική Δημοκρατία της Συρίας"@el, "Сирийска арабска република"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "SY";
-  ep:isoNumber 760;
-  skos:inScheme epsh:Country .
+  ep:isoCode "sy";
+  ep:isoNumber "760";
+  skos:inScheme ep:Country .
 
-<Country_TW> a skos:Concept;
+ep:Country_TW a skos:Concept;
   rdfs:label "Taiwan";
-  skos:notation "TW";
+  skos:notation "tw";
   skos:prefLabel "Tajvan"@hu, "Taiwan"@et, "Taiwan"@fi, "Tchaj-wan"@cs, "Taiwan"@sk,
     "Taivanas"@lt, "Taivāna"@lv, "it-Tajwan"@mt, "Taiwan"@en, "Taiwan"@da, "Taiwan"@nl,
     "Taiwan"@sv, "Tajvan"@hr, "Tajvan"@sl, "Tajwan"@pl, "Taiwan"@de, "Taiwan"@ro, "Taiwan"@it,
@@ -5159,13 +5158,13 @@
     "Ταϊβάν, Δημοκρατία της Κίνας"@el, "Тайван"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "TW";
-  ep:isoNumber 158;
-  skos:inScheme epsh:Country .
+  ep:isoCode "tw";
+  ep:isoNumber "158";
+  skos:inScheme ep:Country .
 
-<Country_TJ> a skos:Concept;
+ep:Country_TJ a skos:Concept;
   rdfs:label "Tajikistan";
-  skos:notation "TJ";
+  skos:notation "tj";
   skos:prefLabel "Tádzsikisztán"@hu, "Tadžikistan"@et, "Tadžikistan"@fi, "Tádžikistán"@cs,
     "Tadžikistan"@sk, "Tadžikistanas"@lt, "Tadžikistāna"@lv, "it-Taġikistan"@mt, "Tajikistan"@en,
     "Tadsjikistan  "@da, "Tadzjikistan"@nl, "Tadzjikistan"@sv, "Tadžikistan"@hr, "Tadžikistan"@sl,
@@ -5181,13 +5180,13 @@
     "Poblacht na Táidsíceastáine"@ga, "Δημοκρατία του Τατζικιστάν "@el, "Република Таджикистан"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "TJ";
-  ep:isoNumber 762;
-  skos:inScheme epsh:Country .
+  ep:isoCode "tj";
+  ep:isoNumber "762";
+  skos:inScheme ep:Country .
 
-<Country_TZ> a skos:Concept;
+ep:Country_TZ a skos:Concept;
   rdfs:label "Tanzania";
-  skos:notation "TZ";
+  skos:notation "tz";
   skos:prefLabel "Tanzánia"@hu, "Tansaania "@et, "Tansania"@fi, "Tanzanie"@cs, "Tanzánia"@sk,
     "Tanzanija"@lt, "Tanzānija"@lv, "it-Tanzanija"@mt, "Tanzania"@en, "Tanzania  "@da,
     "Tanzania"@nl, "Tanzania"@sv, "Tanzanija"@hr, "Tanzanija"@sl, "Tanzania"@pl, "Tansania"@de,
@@ -5203,13 +5202,13 @@
     "Poblacht Aontaithe na Tansáine"@ga, "Ενωμένη Δημοκρατία της Τανζανίας "@el, "Обединена република Танзания"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "TZ";
-  ep:isoNumber 834;
-  skos:inScheme epsh:Country .
+  ep:isoCode "tz";
+  ep:isoNumber "834";
+  skos:inScheme ep:Country .
 
-<Country_TH> a skos:Concept;
+ep:Country_TH a skos:Concept;
   rdfs:label "Thailand";
-  skos:notation "TH";
+  skos:notation "th";
   skos:prefLabel "Thaiföld"@hu, "Tai"@et, "Thaimaa"@fi, "Thajsko"@cs, "Thajsko"@sk,
     "Tailandas"@lt, "Taizeme"@lv, "it-Tajlandja"@mt, "Thailand"@en, "Thailand  "@da, "Thaïland"@nl,
     "Thailand"@sv, "Tajland"@hr, "Tajska"@sl, "Tajlandia"@pl, "Thailand"@de, "Thailanda"@ro,
@@ -5224,13 +5223,13 @@
     "Βασίλειο της Ταϊλάνδης"@el, "Кралство Тайланд"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "TH";
-  ep:isoNumber 764;
-  skos:inScheme epsh:Country .
+  ep:isoCode "th";
+  ep:isoNumber "764";
+  skos:inScheme ep:Country .
 
-<Country_TG> a skos:Concept;
+ep:Country_TG a skos:Concept;
   rdfs:label "Togo";
-  skos:notation "TG";
+  skos:notation "tg";
   skos:prefLabel "Togo"@hu, "Togo"@et, "Togo"@fi, "Togo"@cs, "Togo"@sk, "Togas"@lt,
     "Togo"@lv, "it-Togo"@mt, "Togo"@en, "Togo"@da, "Togo"@nl, "Togo"@sv, "Togo"@hr, "Togo"@sl,
     "Togo"@pl, "Togo"@de, "Togo"@ro, "Togo"@it, "Togo"@pt, "Togo"@es, "Togo"@fr, "Tóga"@ga,
@@ -5243,13 +5242,13 @@
     "République togolaise"@fr, "Poblacht Thóga"@ga, "Δημοκρατία του Τόγκο  "@el, "Република Того"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "TG";
-  ep:isoNumber 768;
-  skos:inScheme epsh:Country .
+  ep:isoCode "tg";
+  ep:isoNumber "768";
+  skos:inScheme ep:Country .
 
-<Country_TK> a skos:Concept;
+ep:Country_TK a skos:Concept;
   rdfs:label "Tokelau";
-  skos:notation "TK";
+  skos:notation "tk";
   skos:prefLabel "Tokelau-szigetek"@hu, "Tokelau"@et, "Tokelau"@fi, "Tokelau"@cs, "Tokelau"@sk,
     "Tokelau"@lt, "Tokelau"@lv, "Tokelau"@mt, "Tokelau"@en, "Tokelau  "@da, "Tokelau"@nl,
     "Tokelauöarna"@sv, "Tokelau"@hr, "Tokelau"@sl, "Tokelau"@pl, "Tokelau"@de, "Tokelau"@ro,
@@ -5262,13 +5261,13 @@
     "Токелау"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "TK";
-  ep:isoNumber 772;
-  skos:inScheme epsh:Country .
+  ep:isoCode "tk";
+  ep:isoNumber "772";
+  skos:inScheme ep:Country .
 
-<Country_TO> a skos:Concept;
+ep:Country_TO a skos:Concept;
   rdfs:label "Tonga";
-  skos:notation "TO";
+  skos:notation "to";
   skos:prefLabel "Tonga"@hu, "Tonga"@et, "Tonga"@fi, "Tonga"@cs, "Tonga"@sk, "Tonga"@lt,
     "Tonga"@lv, "Tonga"@mt, "Tonga"@en, "Tonga"@da, "Tonga"@nl, "Tonga"@sv, "Tonga"@hr,
     "Tonga"@sl, "Tonga"@pl, "Tonga"@de, "Tonga"@ro, "Tonga"@it, "Tonga"@pt, "Tonga"@es,
@@ -5282,13 +5281,13 @@
     "Кралство Тонга"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "TO";
-  ep:isoNumber 776;
-  skos:inScheme epsh:Country .
+  ep:isoCode "to";
+  ep:isoNumber "776";
+  skos:inScheme ep:Country .
 
-<Country_TT> a skos:Concept;
+ep:Country_TT a skos:Concept;
   rdfs:label "Trinidad and Tobago";
-  skos:notation "TT";
+  skos:notation "tt";
   skos:prefLabel "Trinidad és Tobago"@hu, "Trinidad ja Tobago"@et, "Trinidad ja Tobago"@fi,
     "Trinidad a Tobago"@cs, "Trinidad a Tobago"@sk, "Trinidadas ir Tobagas"@lt, "Trinidāda un Tobago"@lv,
     "Trinidad u Tobago"@mt, "Trinidad and Tobago"@en, "Trinidad og Tobago  "@da, "Trinidad en Tobago"@nl,
@@ -5307,13 +5306,13 @@
     "Δημοκρατία Τρινιδάδ και Τομπάγκο"@el, "Тринидад и Тобаго"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "TT";
-  ep:isoNumber 780;
-  skos:inScheme epsh:Country .
+  ep:isoCode "tt";
+  ep:isoNumber "780";
+  skos:inScheme ep:Country .
 
-<Country_TN> a skos:Concept;
+ep:Country_TN a skos:Concept;
   rdfs:label "Tunisia";
-  skos:notation "TN";
+  skos:notation "tn";
   skos:prefLabel "Tunézia"@hu, "Tuneesia"@et, "Tunisia"@fi, "Tunisko"@cs, "Tunisko"@sk,
     "Tunisas"@lt, "Tunisija"@lv, "it-Tuneżija"@mt, "Tunisia"@en, "Tunesien"@da, "Tunesië"@nl,
     "Tunisien"@sv, "Tunis"@hr, "Tunizija"@sl, "Tunezja"@pl, "Tunesien"@de, "Tunisia"@ro,
@@ -5328,13 +5327,13 @@
     "Δημοκρατία της Τυνησίας "@el, "Тунизийска република"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "TN";
-  ep:isoNumber 788;
-  skos:inScheme epsh:Country .
+  ep:isoCode "tn";
+  ep:isoNumber "788";
+  skos:inScheme ep:Country .
 
-<Country_TR> a skos:Concept;
+ep:Country_TR a skos:Concept;
   rdfs:label "Turkey";
-  skos:notation "TR";
+  skos:notation "tr";
   skos:prefLabel "Törökország"@hu, "Türgi"@et, "Turkki"@fi, "Turecko"@cs, "Turecko"@sk,
     "Turkija"@lt, "Turcija"@lv, "it-Turkija"@mt, "Turkey"@en, "Tyrkiet"@da, "Turkije"@nl,
     "Turkiet"@sv, "Turska"@hr, "Turčija"@sl, "Turcja"@pl, "Türkei"@de, "Turcia"@ro, "Turchia"@it,
@@ -5348,13 +5347,13 @@
     "Poblacht na Tuirce"@ga, "Δημοκρατία της Τουρκίας"@el, "Република Турция"@bg;
   ep:euCandidate false;
   ep:euCountry true;
-  ep:isoCode "TR";
-  ep:isoNumber 792;
-  skos:inScheme epsh:Country .
+  ep:isoCode "tr";
+  ep:isoNumber "792";
+  skos:inScheme ep:Country .
 
-<Country_TM> a skos:Concept;
+ep:Country_TM a skos:Concept;
   rdfs:label "Turkmenistan";
-  skos:notation "TM";
+  skos:notation "tm";
   skos:prefLabel "Türkmenisztán"@hu, "Türkmenistan"@et, "Turkmenistan"@fi, "Turkmenistán"@cs,
     "Turkménsko"@sk, "Turkmėnistanas"@lt, "Turkmenistāna"@lv, "it-Turkmenistan"@mt, "Turkmenistan"@en,
     "Turkmenistan  "@da, "Turkmenistan"@nl, "Turkmenistan"@sv, "Turkmenistan"@hr, "Turkmenistan"@sl,
@@ -5369,13 +5368,13 @@
     "Туркменистан"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "TM";
-  ep:isoNumber 795;
-  skos:inScheme epsh:Country .
+  ep:isoCode "tm";
+  ep:isoNumber "795";
+  skos:inScheme ep:Country .
 
-<Country_TC> a skos:Concept;
+ep:Country_TC a skos:Concept;
   rdfs:label "Turks and Caicos Islands";
-  skos:notation "TC";
+  skos:notation "tc";
   skos:prefLabel "Turks- és Caicos-szigetek"@hu, "Turks ja Caicos"@et, "Turks- ja Caicossaaret"@fi,
     "Ostrovy Turks a Caicos"@cs, "Turks a Caicos"@sk, "Terksas ir Kaikosas"@lt, "Tērksas un Kaikosas Salas"@lv,
     "il-Gżejjer Turks u Caicos"@mt, "Turks and Caicos Islands"@en, "Turks- og Caicosøerne"@da,
@@ -5394,13 +5393,13 @@
     "Νήσοι Τερκ και Κάικος"@el, "Търкс и Кайкос"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "TC";
-  ep:isoNumber 796;
-  skos:inScheme epsh:Country .
+  ep:isoCode "tc";
+  ep:isoNumber "796";
+  skos:inScheme ep:Country .
 
-<Country_TV> a skos:Concept;
+ep:Country_TV a skos:Concept;
   rdfs:label "Tuvalu";
-  skos:notation "TV";
+  skos:notation "tv";
   skos:prefLabel "Tuvalu"@hu, "Tuvalu"@et, "Tuvalu"@fi, "Tuvalu"@cs, "Tuvalu"@sk, "Tuvalu"@lt,
     "Tuvalu"@lv, "Tuvalu"@mt, "Tuvalu"@en, "Tuvalu"@da, "Tuvalu"@nl, "Tuvalu"@sv, "Tuvalu"@hr,
     "Tuvalu"@sl, "Tuvalu"@pl, "Tuvalu"@de, "Tuvalu"@ro, "Tuvalu"@it, "Tuvalu"@pt, "Tuvalu"@es,
@@ -5411,13 +5410,13 @@
     "Tuvalu"@fr, "Tuvalu"@ga, "Τουβαλού"@el, "Тувалу"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "TV";
-  ep:isoNumber 798;
-  skos:inScheme epsh:Country .
+  ep:isoCode "tv";
+  ep:isoNumber "798";
+  skos:inScheme ep:Country .
 
-<Country_SU> a skos:Concept;
+ep:Country_SU a skos:Concept;
   rdfs:label "USSR";
-  skos:notation "SU";
+  skos:notation "su";
   skos:prefLabel "Szovjetunió"@hu, "NSVL"@et, "Neuvostoliitto"@fi, "SSSR"@cs, "ZSSR"@sk,
     "TSRS"@lt, "PSRS"@lv, "l-URSS"@mt, "USSR"@en, "USSR"@da, "USSR"@nl, "Sovjetunionen"@sv,
     "Savez Sovjetskih Socijalističkih Republika"@hr, "Sovjetska zveza"@sl, "Związek Radziecki"@pl,
@@ -5432,13 +5431,13 @@
     "ΕΣΣΔ"@el, "СССР"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "SU";
-  ep:isoNumber 810;
-  skos:inScheme epsh:Country .
+  ep:isoCode "su";
+  ep:isoNumber "810";
+  skos:inScheme ep:Country .
 
-<Country_UG> a skos:Concept;
+ep:Country_UG a skos:Concept;
   rdfs:label "Uganda";
-  skos:notation "UG";
+  skos:notation "ug";
   skos:prefLabel "Uganda"@hu, "Uganda"@et, "Uganda"@fi, "Uganda"@cs, "Uganda"@sk, "Uganda"@lt,
     "Uganda"@lv, "l-Uganda"@mt, "Uganda"@en, "Uganda"@da, "Uganda"@nl, "Uganda"@sv, "Uganda"@hr,
     "Uganda"@sl, "Uganda"@pl, "Uganda"@de, "Uganda"@ro, "Uganda"@it, "Uganda"@pt, "Uganda"@es,
@@ -5452,13 +5451,13 @@
     "Република Уганда"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "UG";
-  ep:isoNumber 800;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ug";
+  ep:isoNumber "800";
+  skos:inScheme ep:Country .
 
-<Country_UA> a skos:Concept;
+ep:Country_UA a skos:Concept;
   rdfs:label "Ukraine";
-  skos:notation "UA";
+  skos:notation "ua";
   skos:prefLabel "Ukrajna"@hu, "Ukraina"@et, "Ukraina"@fi, "Ukrajina"@cs, "Ukrajina"@sk,
     "Ukraina"@lt, "Ukraina"@lv, "l-Ukrajna"@mt, "Ukraine"@en, "Ukraine"@da, "Oekraïne"@nl,
     "Ukraina"@sv, "Ukrajina"@hr, "Ukrajina"@sl, "Ukraina"@pl, "Ukraine"@de, "Ucraina"@ro,
@@ -5471,13 +5470,13 @@
     "Украйна"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "UA";
-  ep:isoNumber 804;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ua";
+  ep:isoNumber "804";
+  skos:inScheme ep:Country .
 
-<Country_AE> a skos:Concept;
+ep:Country_AE a skos:Concept;
   rdfs:label "United Arab Emirates";
-  skos:notation "AE";
+  skos:notation "ae";
   skos:prefLabel "Egyesült Arab Emírségek"@hu, "Araabia Ühendemiraadid"@et, "Arabiemiirikunnat"@fi,
     "Spojené arabské emiráty"@cs, "Spojené arabské emiráty"@sk, "Jungtiniai Arabų Emyratai"@lt,
     "Apvienotie Arābu Emirāti"@lv, "l-Emirati Għarab Magħquda"@mt, "United Arab Emirates"@en,
@@ -5496,13 +5495,13 @@
     "Aontas na nÉimíríochtaí Arabacha"@ga, "Ηνωμένα Αραβικά Εμιράτα"@el, "Обединени арабски емирства"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "AE";
-  ep:isoNumber 784;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ae";
+  ep:isoNumber "784";
+  skos:inScheme ep:Country .
 
-<Country_GB> a skos:Concept;
+ep:Country_GB a skos:Concept;
   rdfs:label "United Kingdom";
-  skos:notation "GB";
+  skos:notation "gb";
   skos:prefLabel "Egyesült Királyság"@hu, "Ühendkuningriik"@et, "Yhdistynyt kuningaskunta"@fi,
     "Spojené království"@cs, "Spojené kráľovstvo"@sk, "Jungtinė Karalystė"@lt, "Apvienotā Karaliste"@lv,
     "ir-Renju Unit"@mt, "United Kingdom"@en, "Det Forenede Kongerige"@da, "Verenigd Koninkrijk"@nl,
@@ -5524,15 +5523,15 @@
     "Ηνωμένο Βασίλειο της Μεγάλης Βρετανίας και της Βόρειας Ιρλανδίας"@el, "Обединено кралство Великобритания и Северна Ирландия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:euStartDate "1972-12-31T23:00:00"^^xsd:date;
-  ep:formalOder 125;
-  ep:isoCode "GB";
-  ep:isoNumber 826;
-  skos:inScheme epsh:Country .
+  ep:euStartDate "1972-12-31"^^xsd:date;
+  ep:formalOrder 125;
+  ep:isoCode "gb";
+  ep:isoNumber "826";
+  skos:inScheme ep:Country .
 
-<Country_US> a skos:Concept;
+ep:Country_US a skos:Concept;
   rdfs:label "United States";
-  skos:notation "US";
+  skos:notation "us";
   skos:prefLabel "Egyesült Államok"@hu, "Ameerika Ühendriigid"@et, "Yhdysvallat"@fi,
     "Spojené státy "@cs, "Spojené štáty, USA"@sk, "Jungtinės Valstijos"@lt, "Amerikas Savienotās Valstis"@lv,
     "l-Istati Uniti "@mt, "United States"@en, "USA"@da, "Verenigde Staten"@nl, "Förenta staterna"@sv,
@@ -5549,13 +5548,13 @@
     "Stáit Aontaithe Mheiriceá"@ga, "Ηνωμένες Πολιτείες της Αμερικής "@el, "Съединени американски щати"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "US";
-  ep:isoNumber 840;
-  skos:inScheme epsh:Country .
+  ep:isoCode "us";
+  ep:isoNumber "840";
+  skos:inScheme ep:Country .
 
-<Country_UM> a skos:Concept;
+ep:Country_UM a skos:Concept;
   rdfs:label "United States Minor Outlying Islands";
-  skos:notation "UM";
+  skos:notation "um";
   skos:prefLabel "Amerikai Egyesült Államok Külső Szigetei"@hu, "Ühendriikide väikesed hajasaared"@et,
     "Yhdysvaltain pienet erillissaaret"@fi, "Menší odlehlé ostrovy Spojených států amerických"@cs,
     "Menšie odľahlé ostrovy USA"@sk, "Mažosios Tolimosios Salos (JAV)"@lt, "ASV Mazās Aizjūras Salas"@lv,
@@ -5580,13 +5579,13 @@
     "Απομακρυσμένες Νησίδες των Ηνωμένων Πολιτειών"@el, "Малки отдалечени острови на Съединените щати"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "UM";
-  ep:isoNumber 581;
-  skos:inScheme epsh:Country .
+  ep:isoCode "um";
+  ep:isoNumber "581";
+  skos:inScheme ep:Country .
 
-<Country_VI> a skos:Concept;
+ep:Country_VI a skos:Concept;
   rdfs:label "United States Virgin Islands";
-  skos:notation "VI";
+  skos:notation "vi";
   skos:prefLabel "Amerikai Virgin-szigetek"@hu, "USA Neitsisaared"@et, "Yhdysvaltain Neitsytsaaret"@fi,
     "Americké Panenské ostrovy"@cs, "Americké Panenské ostrovy"@sk, "Mergelių Salos (JAV)"@lt,
     "ASV Virdžīnas"@lv, "il-Gżejjer Verġni Amerikani"@mt, "United States Virgin Islands"@en,
@@ -5607,13 +5606,13 @@
     "Американски Вирджински острови"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "VI";
-  ep:isoNumber 850;
-  skos:inScheme epsh:Country .
+  ep:isoCode "vi";
+  ep:isoNumber "850";
+  skos:inScheme ep:Country .
 
-<Country_UY> a skos:Concept;
+ep:Country_UY a skos:Concept;
   rdfs:label "Uruguay";
-  skos:notation "UY";
+  skos:notation "uy";
   skos:prefLabel "Uruguay"@hu, "Uruguay"@et, "Uruguay"@fi, "Uruguay"@cs, "Uruguaj"@sk,
     "Urugvajus"@lt, "Urugvaja"@lv, "l-Urugwaj"@mt, "Uruguay"@en, "Uruguay"@da, "Uruguay"@nl,
     "Uruguay"@sv, "Urugvaj"@hr, "Urugvaj"@sl, "Urugwaj"@pl, "Uruguay"@de, "Uruguay"@ro,
@@ -5629,13 +5628,13 @@
     "Poblacht Oirthearach Uragua"@ga, "Ανατολική Δημοκρατία της Ουρουγουάης "@el, "Източна република Уругвай"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "UY";
-  ep:isoNumber 858;
-  skos:inScheme epsh:Country .
+  ep:isoCode "uy";
+  ep:isoNumber "858";
+  skos:inScheme ep:Country .
 
-<Country_UZ> a skos:Concept;
+ep:Country_UZ a skos:Concept;
   rdfs:label "Uzbekistan";
-  skos:notation "UZ";
+  skos:notation "uz";
   skos:prefLabel "Üzbegisztán"@hu, "Usbekistan"@et, "Uzbekistan"@fi, "Uzbekistán"@cs,
     "Uzbekistan"@sk, "Uzbekistanas"@lt, "Uzbekistāna"@lv, "l-Użbekistan"@mt, "Uzbekistan"@en,
     "Usbekistan"@da, "Oezbekistan"@nl, "Uzbekistan"@sv, "Uzbekistan"@hr, "Uzbekistan"@sl,
@@ -5651,13 +5650,13 @@
     "Република Узбекистан"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "UZ";
-  ep:isoNumber 860;
-  skos:inScheme epsh:Country .
+  ep:isoCode "uz";
+  ep:isoNumber "860";
+  skos:inScheme ep:Country .
 
-<Country_VU> a skos:Concept;
+ep:Country_VU a skos:Concept;
   rdfs:label "Vanuatu";
-  skos:notation "VU";
+  skos:notation "vu";
   skos:prefLabel "Vanuatu"@hu, "Vanuatu"@et, "Vanuatu"@fi, "Vanuatu"@cs, "Vanuatu"@sk,
     "Vanuatu"@lt, "Vanuatu"@lv, "Vanuatu"@mt, "Vanuatu"@en, "Vanuatu  "@da, "Vanuatu"@nl,
     "Vanuatu"@sv, "Vanuatu"@hr, "Vanuatu"@sl, "Vanuatu"@pl, "Vanuatu"@de, "Vanuatu"@ro,
@@ -5672,13 +5671,13 @@
     "Poblacht Vanuatú"@ga, "Δημοκρατία του Βανουάτου"@el, "Република Вануату"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "VU";
-  ep:isoNumber 548;
-  skos:inScheme epsh:Country .
+  ep:isoCode "vu";
+  ep:isoNumber "548";
+  skos:inScheme ep:Country .
 
-<Country_PU> a skos:Concept;
+ep:Country_PU a skos:Concept;
   rdfs:label "Various Pacific Islands (United States)";
-  skos:notation "PU";
+  skos:notation "pu";
   skos:prefLabel "Amerikai Csendes-óceáni-szigetek"@hu, "Mitmed Vaikse ookeani saared (Ameerika Ühendriigid)"@et,
     "Yhdysvaltain Tyynenmeren erillissaaret"@fi, "Různé tichomořské ostrovy (Spojené státy)"@cs,
     "Rozličné tichomorské ostrovy (Spojené štáty)"@sk, "Įvairios Ramiojo vandenyno salos (JAV)"@lt,
@@ -5703,13 +5702,13 @@
     "Различни тихоокеански острови (САЩ)"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "PU";
-  ep:isoNumber 849;
-  skos:inScheme epsh:Country .
+  ep:isoCode "pu";
+  ep:isoNumber "849";
+  skos:inScheme ep:Country .
 
-<Country_VE> a skos:Concept;
+ep:Country_VE a skos:Concept;
   rdfs:label "Venezuela";
-  skos:notation "VE";
+  skos:notation "ve";
   skos:prefLabel "Venezuela"@hu, "Venezuela"@et, "Venezuela"@fi, "Venezuela"@cs, "Venezuela"@sk,
     "Venesuela"@lt, "Venecuēla"@lv, "il-Venezwela"@mt, "Venezuela"@en, "Venezuela"@da,
     "Venezuela"@nl, "Venezuela"@sv, "Venezuela"@hr, "Venezuela"@sl, "Wenezuela"@pl, "Venezuela"@de,
@@ -5727,13 +5726,13 @@
     "Боливарска република Венецуела"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "VE";
-  ep:isoNumber 862;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ve";
+  ep:isoNumber "862";
+  skos:inScheme ep:Country .
 
-<Country_VN> a skos:Concept;
+ep:Country_VN a skos:Concept;
   rdfs:label "Vietnam";
-  skos:notation "VN";
+  skos:notation "vn";
   skos:prefLabel "Vietnam"@hu, "Vietnam"@et, "Vietnam"@fi, "Vietnam"@cs, "Vietnam"@sk,
     "Vietnamas"@lt, "Vjetnama"@lv, "il-Vjetnam"@mt, "Vietnam"@en, "Vietnam  "@da, "Vietnam"@nl,
     "Vietnam"@sv, "Vijetnam"@hr, "Vietnam"@sl, "Wietnam"@pl, "Vietnam"@de, "Vietnam"@ro,
@@ -5750,13 +5749,13 @@
     "Социалистическа република Виетнам"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "VN";
-  ep:isoNumber 704;
-  skos:inScheme epsh:Country .
+  ep:isoCode "vn";
+  ep:isoNumber "704";
+  skos:inScheme ep:Country .
 
-<Country_WK> a skos:Concept;
+ep:Country_WK a skos:Concept;
   rdfs:label "Wake Island";
-  skos:notation "WK";
+  skos:notation "wk";
   skos:prefLabel "Wake-sziget"@hu, "Wake'i saar"@et, "Wakesaari"@fi, "Ostrov Wake"@cs,
     "Ostrov Wake"@sk, "Veiko sala"@lt, "Veika Sala"@lv, "il-Gżira ta' Wake"@mt, "Wake Island"@en,
     "Wakeøen"@da, "Wake"@nl, "Wakeön"@sv, "Otok Wake"@hr, "otok Wake"@sl, "Wake"@pl, "Wakeinsel"@de,
@@ -5769,13 +5768,13 @@
     "Oileán Wake"@ga, "Νήσος Γουέικ"@el, "Остров Уейк"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "WK";
-  ep:isoNumber 872;
-  skos:inScheme epsh:Country .
+  ep:isoCode "wk";
+  ep:isoNumber "872";
+  skos:inScheme ep:Country .
 
-<Country_WF> a skos:Concept;
+ep:Country_WF a skos:Concept;
   rdfs:label "Wallis and Futuna";
-  skos:notation "WF";
+  skos:notation "wf";
   skos:prefLabel "Wallis és Futuna"@hu, "Wallis ja Futuna"@et, "Wallis ja Futuna"@fi,
     "Wallis a Futuna"@cs, "Wallis a Futuna"@sk, "Volisas ir Futūna"@lt, "Volisa un Futunas Salas"@lv,
     "Wallis u Futuna"@mt, "Wallis and Futuna"@en, "Wallis og Futuna  "@da, "Wallis en Futuna"@nl,
@@ -5793,13 +5792,13 @@
     "Уолис и Футуна"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "WF";
-  ep:isoNumber 876;
-  skos:inScheme epsh:Country .
+  ep:isoCode "wf";
+  ep:isoNumber "876";
+  skos:inScheme ep:Country .
 
-<Country_EH> a skos:Concept;
+ep:Country_EH a skos:Concept;
   rdfs:label "Western Sahara";
-  skos:notation "EH";
+  skos:notation "eh";
   skos:prefLabel "Nyugat-Szahara"@hu, "Lääne-Sahara"@et, "Länsi-Sahara"@fi, "Západní Sahara"@cs,
     "Západná Sahara"@sk, "Vakarų Sachara"@lt, "Rietumsahāra"@lv, "Is-Saħara tal-Punent"@mt,
     "Western Sahara"@en, "Vestsahara"@da, "Westelijke Sahara"@nl, "Västsahara"@sv, "Zapadna Sahara"@hr,
@@ -5814,13 +5813,13 @@
     "Sahara occidental"@fr, "an Sahára Thiar"@ga, "Δυτική Σαχάρα"@el, "Западна Сахара"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "EH";
-  ep:isoNumber 732;
-  skos:inScheme epsh:Country .
+  ep:isoCode "eh";
+  ep:isoNumber "732";
+  skos:inScheme ep:Country .
 
-<Country_YD> a skos:Concept;
+ep:Country_YD a skos:Concept;
   rdfs:label "Yemen";
-  skos:notation "YD";
+  skos:notation "yd";
   skos:prefLabel "Jemen"@hu, "Jeemen"@et, "Etelä-Jemen"@fi, "Jemen"@cs, "Jemen"@sk,
     "Jemenas"@lt, "Jemena"@lv, "il-Jemen"@mt, "Yemen"@en, "Yemen "@da, "Jemen"@nl, "Jemen"@sv,
     "Jemen"@hr, "Jemen"@sl, "Jemen"@pl, "Demokratischer Jemen"@de, "Statul Yemen Democrat"@ro,
@@ -5835,13 +5834,13 @@
     "Λαϊκή Δημοκρατία της Υεμένης"@el, "Република Йемен"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "YD";
-  ep:isoNumber 720;
-  skos:inScheme epsh:Country .
+  ep:isoCode "yd";
+  ep:isoNumber "720";
+  skos:inScheme ep:Country .
 
-<Country_YE> a skos:Concept;
+ep:Country_YE a skos:Concept;
   rdfs:label "Yemen";
-  skos:notation "YE";
+  skos:notation "ye";
   skos:prefLabel "Jemen"@hu, "Jeemen"@et, "Jemen"@fi, "Jemen"@cs, "Jemen"@sk, "Jemenas"@lt,
     "Jemena"@lv, "il-Jemen"@mt, "Yemen"@en, "Yemen"@da, "Jemen"@nl, "Jemen"@sv, "Jemen"@hr,
     "Jemen"@sl, "Jemen"@pl, "Jemen"@de, "Yemen"@ro, "Yemen"@it, "Iémen"@pt, "Yemen"@es,
@@ -5855,13 +5854,13 @@
     "Република Йемен"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "YE";
-  ep:isoNumber 887;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ye";
+  ep:isoNumber "887";
+  skos:inScheme ep:Country .
 
-<Country_YU> a skos:Concept;
+ep:Country_YU a skos:Concept;
   rdfs:label "Yugoslavia";
-  skos:notation "YU";
+  skos:notation "yu";
   skos:prefLabel "Jugoszlávia"@hu, "Jugoslaavia"@et, "Jugoslavia"@fi, "Jugoslávie"@cs,
     "Juhoslávia"@sk, "Jugoslavija"@lt, "Dienvidslāvija"@lv, "il-Jugoslavja"@mt, "Yugoslavia"@en,
     "Jugoslavien"@da, "Joegoslavië"@nl, "Jugoslavien"@sv, "Jugoslavija"@hr, "Jugoslavija"@sl,
@@ -5876,13 +5875,13 @@
     "Poblacht Shóisialach Chónaidhme na hIúgslaive"@ga, "Γιουγκοσλαβία"@el, "Югославия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "YU";
-  ep:isoNumber 891;
-  skos:inScheme epsh:Country .
+  ep:isoCode "yu";
+  ep:isoNumber "891";
+  skos:inScheme ep:Country .
 
-<Country_ZR> a skos:Concept;
+ep:Country_ZR a skos:Concept;
   rdfs:label "Zaire";
-  skos:notation "ZR";
+  skos:notation "zr";
   skos:prefLabel "Zaire"@hu, "Zaire"@et, "Zaire"@fi, "Zair"@cs, "Zair"@sk, "Zairas"@lt,
     "Zaira"@lv, "iż-Żaire"@mt, "Zaire"@en, "Zaire"@da, "Zaïre"@nl, "Zaire"@sv, "Zair"@hr,
     "Zair"@sl, "Zair"@pl, "Zaire"@de, "Zair"@ro, "Congo (ex. Zaire)"@it, "Zaire"@pt, "Zaire"@es,
@@ -5893,13 +5892,13 @@
     "Zaire"@pt, "Zaire"@es, "Zaïre"@fr, "Poblacht na Sáíre"@ga, "Ζαΐρ"@el, "Заир"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "ZR";
-  ep:isoNumber 180;
-  skos:inScheme epsh:Country .
+  ep:isoCode "zr";
+  ep:isoNumber "180";
+  skos:inScheme ep:Country .
 
-<Country_ZM> a skos:Concept;
+ep:Country_ZM a skos:Concept;
   rdfs:label "Zambia";
-  skos:notation "ZM";
+  skos:notation "zm";
   skos:prefLabel "Zambia"@hu, "Sambia"@et, "Sambia"@fi, "Zambie"@cs, "Zambia"@sk, "Zambija"@lt,
     "Zambija"@lv, "iż-Żambja"@mt, "Zambia"@en, "Zambia  "@da, "Zambia"@nl, "Zambia"@sv,
     "Zambija"@hr, "Zambija"@sl, "Zambia"@pl, "Sambia"@de, "Zambia"@ro, "Zambia"@it, "Zâmbia"@pt,
@@ -5913,13 +5912,13 @@
     "Δημοκρατία της Ζάμπιας "@el, "Република Замбия"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "ZM";
-  ep:isoNumber 894;
-  skos:inScheme epsh:Country .
+  ep:isoCode "zm";
+  ep:isoNumber "894";
+  skos:inScheme ep:Country .
 
-<Country_ZW> a skos:Concept;
+ep:Country_ZW a skos:Concept;
   rdfs:label "Zimbabwe";
-  skos:notation "ZW";
+  skos:notation "zw";
   skos:prefLabel "Zimbabwe"@hu, "Zimbabwe"@et, "Zimbabwe"@fi, "Zimbabwe"@cs, "Zimbabwe"@sk,
     "Zimbabvė"@lt, "Zimbabve"@lv, "iż-Żimbabwe"@mt, "Zimbabwe"@en, "Zimbabwe  "@da, "Zimbabwe"@nl,
     "Zimbabwe"@sv, "Zimbabve"@hr, "Zimbabve"@sl, "Zimbabwe"@pl, "Simbabwe"@de, "Zimbabwe"@ro,
@@ -5935,13 +5934,13 @@
     "Република Зимбабве"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "ZW";
-  ep:isoNumber 716;
-  skos:inScheme epsh:Country .
+  ep:isoCode "zw";
+  ep:isoNumber "716";
+  skos:inScheme ep:Country .
 
-<Country_AX> a skos:Concept;
+ep:Country_AX a skos:Concept;
   rdfs:label "Åland Islands";
-  skos:notation "AX";
+  skos:notation "ax";
   skos:prefLabel "Åland-szigetek "@hu, "Ahvenamaa"@et, "Ahvenanmaa"@fi, "Ålandy"@cs,
     "Alandy"@sk, "Alandai"@lt, "Ālandu Salas"@lv, "il-Gżejjer Åland"@mt, "Åland Islands"@en,
     "Åland"@da, "Åland"@nl, "Åland"@sv, "Olandski Otoci"@hr, "Ålandski otoki"@sl, "Wyspy Alandzkie"@pl,
@@ -5954,6 +5953,6 @@
     "Islas Åland "@es, "Îles Åland"@fr, "Oileáin Åland"@ga, "Νήσοι Ώλαντ"@el, "Острови Оланд"@bg;
   ep:euCandidate false;
   ep:euCountry false;
-  ep:isoCode "AX";
-  ep:isoNumber 248;
-  skos:inScheme epsh:Country .
+  ep:isoCode "ax";
+  ep:isoNumber "248";
+  skos:inScheme ep:Country .

@@ -1,12 +1,12 @@
 {
-  "baseIRI": "http://data.europarl.europa.eu/shapes/",
+  "baseIRI": "http://data.europarl.europa.eu/",
   "namespaces": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "foaf": "http://xmlns.com/foaf/0.1/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "ep": "http://data.europarl.europa.eu/#",
+    "ep": "http://data.europarl.europa.eu/",
     "epsh": "http://data.europarl.europa.eu/shapes#",
     "scheme": "http://data.europarl.europa.eu/"
   },
@@ -49,9 +49,12 @@
           },
           "values": [
             {
+              "transformation": {
+                "expression": "cells['skos:notation'].value.toLowercase()",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:notation",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "literal"
@@ -1530,9 +1533,12 @@
           },
           "values": [
             {
+              "transformation": {
+                "expression": "cells['ep:euStartDate'].value.toDate('yyyy-mm-dd').toString('yyyy-mm-dd')",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "ep:euStartDate",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "datatype_literal",
@@ -1558,7 +1564,7 @@
             },
             "valueSource": {
               "source": "constant",
-              "constant": "formalOder"
+              "constant": "formalOrder"
             }
           },
           "values": [
@@ -1596,9 +1602,12 @@
           },
           "values": [
             {
+              "transformation": {
+                "expression": "cells['ep:isoCode'].value.toLowercase()",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "ep:isoCode",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "literal"
@@ -1624,17 +1633,7 @@
                 "source": "column"
               },
               "valueType": {
-                "type": "datatype_literal",
-                "datatype": {
-                  "transformation": {
-                    "expression": "xsd",
-                    "language": "prefix"
-                  },
-                  "valueSource": {
-                    "source": "constant",
-                    "constant": "integer"
-                  }
-                }
+                "type": "literal"
               }
             }
           ]
@@ -1653,7 +1652,7 @@
           "values": [
             {
               "transformation": {
-                "expression": "epsh",
+                "expression": "scheme",
                 "language": "prefix"
               },
               "valueSource": {

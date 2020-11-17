@@ -1,5 +1,5 @@
 {
-  "baseIRI": "http://data.europarl.europa.eu/shapes/",
+  "baseIRI": "http://data.europarl.europa.eu/",
   "namespaces": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -26,9 +26,12 @@
           },
           "values": [
             {
+              "transformation": {
+                "expression": "cells['ep:isoLanguage'].value.toLowercase()",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "ep:isoLanguage",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "literal"
@@ -49,9 +52,12 @@
           },
           "values": [
             {
+              "transformation": {
+                "expression": "if(cells['ep:label'].value.trim().length() == 0,null,cells['ep:label'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "ep:label",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "literal"
@@ -72,9 +78,12 @@
           },
           "values": [
             {
+              "transformation": {
+                "expression": "if(cells['skos:prefLabel.hu'].value.trim().length() == 0,null,cells['skos:prefLabel.hu'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:prefLabel.hu",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -102,9 +111,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:prefLabel.fi'].value.trim().length() == 0,null,cells['skos:prefLabel.fi'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:prefLabel.fi",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -117,9 +129,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:prefLabel.cs'].value.trim().length() == 0,null,cells['skos:prefLabel.cs'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:prefLabel.cs",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -132,9 +147,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:prefLabel.sk'].value.trim().length() == 0,null,cells['skos:prefLabel.sk'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:prefLabel.sk",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -147,9 +165,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:prefLabel.lt'].value.trim().length() == 0,null,cells['skos:prefLabel.lt'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:prefLabel.lt",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -162,9 +183,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:prefLabel.lv'].value.trim().length() == 0,null,cells['skos:prefLabel.lv'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:prefLabel.lv",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -177,9 +201,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:prefLabel.mt'].value.trim().length() == 0,null,cells['skos:prefLabel.mt'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:prefLabel.mt",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -192,9 +219,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:prefLabel.en'].value.trim().length() == 0,null,cells['skos:prefLabel.en'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:prefLabel.en",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -207,9 +237,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:prefLabel.da'].value.trim().length() == 0,null,cells['skos:prefLabel.da'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:prefLabel.da",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -222,9 +255,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:prefLabel.nl'].value.trim().length() == 0,null,cells['skos:prefLabel.nl'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:prefLabel.nl",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -237,9 +273,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:prefLabel.sv'].value.trim().length() == 0,null,cells['skos:prefLabel.sv'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:prefLabel.sv",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -252,9 +291,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:prefLabel.hr'].value.trim().length() == 0,null,cells['skos:prefLabel.hr'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:prefLabel.hr",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -267,9 +309,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:prefLabel.sl'].value.trim().length() == 0,null,cells['skos:prefLabel.sl'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:prefLabel.sl",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -282,9 +327,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:prefLabel.pl'].value.trim().length() == 0,null,cells['skos:prefLabel.pl'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:prefLabel.pl",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -297,9 +345,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:prefLabel.de'].value.trim().length() == 0,null,cells['skos:prefLabel.de'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:prefLabel.de",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -312,9 +363,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:prefLabel.ro'].value.trim().length() == 0,null,cells['skos:prefLabel.ro'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:prefLabel.ro",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -327,9 +381,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:prefLabel.it'].value.trim().length() == 0,null,cells['skos:prefLabel.it'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:prefLabel.it",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -342,9 +399,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:prefLabel.pt'].value.trim().length() == 0,null,cells['skos:prefLabel.pt'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:prefLabel.pt",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -357,9 +417,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:prefLabel.es'].value.trim().length() == 0,null,cells['skos:prefLabel.es'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:prefLabel.es",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -372,9 +435,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:prefLabel.fr'].value.trim().length() == 0,null,cells['skos:prefLabel.fr'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:prefLabel.fr",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -387,9 +453,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:prefLabel.ga'].value.trim().length() == 0,null,cells['skos:prefLabel.ga'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:prefLabel.ga",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -402,9 +471,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:prefLabel.el'].value.trim().length() == 0,null,cells['skos:prefLabel.el'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:prefLabel.el",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -417,9 +489,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:prefLabel.bg'].value.trim().length() == 0,null,cells['skos:prefLabel.bg'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:prefLabel.bg",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -446,9 +521,12 @@
           },
           "values": [
             {
+              "transformation": {
+                "expression": "if(cells['skos:altLabel.hu'].value.trim().length() == 0,null,cells['skos:altLabel.hu'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:altLabel.hu",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -461,9 +539,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:altLabel.et'].value.trim().length() == 0,null,cells['skos:altLabel.et'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:altLabel.et",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -476,9 +557,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:altLabel.fi'].value.trim().length() == 0,null,cells['skos:altLabel.fi'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:altLabel.fi",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -491,9 +575,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:altLabel.cs'].value.trim().length() == 0,null,cells['skos:altLabel.cs'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:altLabel.cs",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -506,9 +593,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:altLabel.sk'].value.trim().length() == 0,null,cells['skos:altLabel.sk'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:altLabel.sk",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -521,9 +611,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:altLabel.lt'].value.trim().length() == 0,null,cells['skos:altLabel.lt'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:altLabel.lt",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -536,9 +629,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:altLabel.lv'].value.trim().length() == 0,null,cells['skos:altLabel.lv'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:altLabel.lv",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -551,9 +647,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:altLabel.mt'].value.trim().length() == 0,null,cells['skos:altLabel.mt'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:altLabel.mt",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -566,9 +665,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:altLabel.en'].value.trim().length() == 0,null,cells['skos:altLabel.en'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:altLabel.en",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -581,9 +683,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:altLabel.da'].value.trim().length() == 0,null,cells['skos:altLabel.da'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:altLabel.da",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -596,9 +701,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:altLabel.nl'].value.trim().length() == 0,null,cells['skos:altLabel.nl'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:altLabel.nl",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -611,9 +719,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:altLabel.sv'].value.trim().length() == 0,null,cells['skos:altLabel.sv'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:altLabel.sv",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -626,9 +737,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:altLabel.hr'].value.trim().length() == 0,null,cells['skos:altLabel.hr'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:altLabel.hr",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -641,9 +755,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:altLabel.sl'].value.trim().length() == 0,null,cells['skos:altLabel.sl'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:altLabel.sl",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -656,9 +773,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:altLabel.pl'].value.trim().length() == 0,null,cells['skos:altLabel.pl'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:altLabel.pl",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -671,9 +791,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:altLabel.de'].value.trim().length() == 0,null,cells['skos:altLabel.de'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:altLabel.de",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -686,9 +809,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:altLabel.ro'].value.trim().length() == 0,null,cells['skos:altLabel.ro'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:altLabel.ro",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -701,9 +827,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:altLabel.it'].value.trim().length() == 0,null,cells['skos:altLabel.it'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:altLabel.it",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -716,9 +845,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:altLabel.pt'].value.trim().length() == 0,null,cells['skos:altLabel.pt'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:altLabel.pt",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -731,9 +863,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:altLabel.es'].value.trim().length() == 0,null,cells['skos:altLabel.es'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:altLabel.es",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -746,9 +881,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:altLabel.fr'].value.trim().length() == 0,null,cells['skos:altLabel.fr'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:altLabel.fr",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -761,9 +899,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:altLabel.ga'].value.trim().length() == 0,null,cells['skos:altLabel.ga'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:altLabel.ga",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -776,9 +917,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:altLabel.el'].value.trim().length() == 0,null,cells['skos:altLabel.el'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:altLabel.el",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -791,9 +935,12 @@
               }
             },
             {
+              "transformation": {
+                "expression": "if(cells['skos:altLabel.bg'].value.trim().length() == 0,null,cells['skos:altLabel.bg'].value.trim())",
+                "language": "grel"
+              },
               "valueSource": {
-                "columnName": "skos:altLabel.bg",
-                "source": "column"
+                "source": "row_index"
               },
               "valueType": {
                 "type": "language_literal",
@@ -821,7 +968,7 @@
           "values": [
             {
               "transformation": {
-                "expression": "epsh",
+                "expression": "scheme",
                 "language": "prefix"
               },
               "valueSource": {

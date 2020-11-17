@@ -1,5 +1,5 @@
 {
-  "baseIRI": "http://data.europarl.europa.eu/shapes/",
+  "baseIRI": "http://data.europarl.europa.eu/",
   "namespaces": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -7,10 +7,9 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "epsh": "http://data.europarl.europa.eu/shapes#",
-    "dcterms": "http://purl.org/dc/terms/",
     "schema": "https://schema.org/#",
     "org": "http://www.w3.org/ns/org#",
-    "ep": "http://data.europarl.europa.eu/#"
+    "ep": "http://data.europarl.europa.eu/"
   },
   "subjectMappings": [
     {
@@ -23,7 +22,7 @@
             },
             "valueSource": {
               "source": "constant",
-              "constant": "lastName"
+              "constant": "familyName"
             }
           },
           "values": [
@@ -204,13 +203,13 @@
             },
             "valueSource": {
               "source": "constant",
-              "constant": "hasMemberShip"
+              "constant": "hasMembership"
             }
           },
           "values": [
             {
               "transformation": {
-                "expression": "trim(cells[trim('ep:MEP.ep:uri')].value.split(':')[1])\n+'/'+\ntrim(cells[trim('ep:hasPoliticalGroup.ep:uri')].value.split(':')[1])",
+                "expression": "trim(cells[trim('ep:MEP.ep:uri')].value.split(':')[1])\n+'/'+\n'membership'",
                 "language": "grel"
               },
               "valueSource": {
@@ -232,7 +231,7 @@
                     "values": [
                       {
                         "transformation": {
-                          "expression": "trim(cells[trim('ep:hasPoliticalGroup.ep:uri')].value.split(':')[1])",
+                          "expression": "trim(cells[trim('ep:hasPoliticalGroup.ep:uri')].value.split(':')[1])+'/membership'",
                           "language": "grel"
                         },
                         "valueSource": {
@@ -251,44 +250,15 @@
                 "typeMappings": [
                   {
                     "transformation": {
-                      "expression": "epsh",
+                      "expression": "org",
                       "language": "prefix"
                     },
                     "valueSource": {
                       "source": "constant",
-                      "constant": "MembershipMEP"
+                      "constant": "Membership"
                     }
                   }
                 ]
-              }
-            }
-          ]
-        },
-        {
-          "property": {
-            "transformation": {
-              "expression": "skos",
-              "language": "prefix"
-            },
-            "valueSource": {
-              "source": "constant",
-              "constant": "inScheme"
-            }
-          },
-          "values": [
-            {
-              "transformation": {
-                "expression": "epsh",
-                "language": "prefix"
-              },
-              "valueSource": {
-                "source": "constant",
-                "constant": "MEP"
-              },
-              "valueType": {
-                "propertyMappings": [],
-                "type": "iri",
-                "typeMappings": []
               }
             }
           ]
@@ -306,12 +276,12 @@
       "typeMappings": [
         {
           "transformation": {
-            "expression": "foaf",
+            "expression": "ep",
             "language": "prefix"
           },
           "valueSource": {
             "source": "constant",
-            "constant": "Person"
+            "constant": "MEP"
           }
         }
       ]
