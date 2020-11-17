@@ -29,7 +29,7 @@ Toutes les colonnes sont converties avec l'URI indiquée dans l'entête, sauf ep
    	- ep:euCandidate = ep:euCandidate 
     - ep:euCountry = ep:euCountry
     - ep:euStartDate = ep:euStartDate
-    - ep:formalOder = ep:formalOder
+    - ep:formalOrder = ep:formalOrder
     - ep:isoCode = ep:isoCode
     - ep:isoNumber = ep:isoNumber
 

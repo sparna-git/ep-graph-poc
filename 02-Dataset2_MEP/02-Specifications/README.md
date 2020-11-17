@@ -9,7 +9,7 @@ Fichier MEP :
 
   -	ep:MEP.ep:uri = URI de la personne
   - ep:MEP.ep:uri rdf:type ep:MEP
-  - ep:MEP.ep:familyName = foaf:lastName
+  - ep:MEP.ep:familyName = foaf:familyName
   - ep:MEP.ep:firstName = foaf:firstName
   - ep:MEP.ep:persId = skos:notation
   -	ep:Civility.ep:uri = ep:Civility
@@ -41,7 +41,7 @@ Fichier Assistants :
   - ep:Assistant.ep:uri = URI de l'assistant
   - ep:Assistant.ep:uri rdf:type ep:Assistant
   - ep:Assistant.ep:firstName = foaf:firstName
-  - ep:Assistant.ep:lastName = foaf:lastName
+  - ep:Assistant.ep:lastName = foaf:familyName
   - ep:Assistant.ep:assistantType = ep:assistantType
   - ep:MEP.ep:familyName = ne pas mapper
   - ep:MEP.ep:firstName = ne pas mapper
