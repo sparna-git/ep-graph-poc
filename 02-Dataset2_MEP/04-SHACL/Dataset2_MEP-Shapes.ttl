@@ -21,14 +21,14 @@
 epsh:MEP a sh:NodeShape;
   rdfs:label "MEP"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx3871 .
+  sh:ignoredProperties _:node1em6ifuhbx4109 .
 
-_:node1em6ifuhbx3871 rdf:first rdf:type;
+_:node1em6ifuhbx4109 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:MEP sh:nodeKind sh:IRI;
   sh:order 1;
-  sh:pattern "^http://data.europarl.europa.eu/MEP_[0-9]{4-6}$";
+  sh:pattern "^http://data.europarl.europa.eu/MEP_[0-9][0-9][0-9][0-9]?[0-9]?[0-9]?$";
   sh:property epsh:P10, epsh:P11, epsh:P12, epsh:P13, epsh:P14, epsh:P15, epsh:P16,
     epsh:P17;
   sh:targetClass ep:MEP .
@@ -36,22 +36,22 @@ epsh:MEP sh:nodeKind sh:IRI;
 epsh:MembershipMEP a sh:NodeShape;
   rdfs:label "MEP political party membership"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx3872 .
+  sh:ignoredProperties _:node1em6ifuhbx4110 .
 
-_:node1em6ifuhbx3872 rdf:first rdf:type;
+_:node1em6ifuhbx4110 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:MembershipMEP sh:nodeKind sh:IRI;
   sh:order 2;
-  sh:pattern "^http://data.europarl.europa.eu/MEP_[0-9]{4-6}/membership$";
+  sh:pattern "^http://data.europarl.europa.eu/MEP_[0-9][0-9][0-9][0-9]?[0-9]?[0-9]?/membership$";
   sh:property epsh:P20 .
 
 epsh:PoliticalGroup a sh:NodeShape;
   rdfs:label "Political Group"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx3873 .
+  sh:ignoredProperties _:node1em6ifuhbx4111 .
 
-_:node1em6ifuhbx3873 rdf:first rdf:type;
+_:node1em6ifuhbx4111 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:PoliticalGroup sh:nodeKind sh:IRI;
@@ -63,9 +63,9 @@ epsh:PoliticalGroup sh:nodeKind sh:IRI;
 epsh:Assistant a sh:NodeShape;
   rdfs:label "Assistant"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx3874 .
+  sh:ignoredProperties _:node1em6ifuhbx4112 .
 
-_:node1em6ifuhbx3874 rdf:first rdf:type;
+_:node1em6ifuhbx4112 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:Assistant sh:nodeKind sh:IRI;
@@ -77,14 +77,14 @@ epsh:Assistant sh:nodeKind sh:IRI;
 epsh:MembershipAssistant a sh:NodeShape;
   rdfs:label "Assistant membership to an MEP"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx3875 .
+  sh:ignoredProperties _:node1em6ifuhbx4113 .
 
-_:node1em6ifuhbx3875 rdf:first rdf:type;
+_:node1em6ifuhbx4113 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:MembershipAssistant sh:nodeKind sh:IRI;
   sh:order 5;
-  sh:pattern "^http://data.europarl.europa.eu/Assistant_[0-9]{4-6}/membership$";
+  sh:pattern "^http://data.europarl.europa.eu/Assistant_[0-9][0-9][0-9][0-9][0-9]?[0-9]?/membership$";
   sh:property epsh:P39 .
 
 epsh:P10 sh:maxCount 1;
@@ -133,7 +133,7 @@ epsh:P17 sh:maxCount 1;
   sh:node epsh:MembershipMEP;
   sh:nodeKind sh:IRI;
   sh:path org:hasMembership;
-  sh:pattern "^http://data.europarl.europa.eu/MEP_[0-9]{4-6}/membership$" .
+  sh:pattern "^http://data.europarl.europa.eu/MEP_[0-9][0-9][0-9][0-9]?[0-9]?[0-9]?/membership$" .
 
 epsh:P20 sh:maxCount 1;
   sh:minCount 1;
@@ -178,78 +178,78 @@ epsh:P29 sh:datatype rdf:plainLiteral;
   sh:path rdfs:label .
 
 epsh:P30 sh:datatype rdf:langString;
-  sh:languageIn _:node1em6ifuhbx3878 .
+  sh:languageIn _:node1em6ifuhbx4116 .
 
-_:node1em6ifuhbx3878 rdf:first "hu";
-  rdf:rest _:node1em6ifuhbx3879 .
+_:node1em6ifuhbx4116 rdf:first "hu";
+  rdf:rest _:node1em6ifuhbx4117 .
 
-_:node1em6ifuhbx3879 rdf:first "et";
-  rdf:rest _:node1em6ifuhbx3880 .
+_:node1em6ifuhbx4117 rdf:first "et";
+  rdf:rest _:node1em6ifuhbx4118 .
 
-_:node1em6ifuhbx3880 rdf:first "fi";
-  rdf:rest _:node1em6ifuhbx3881 .
+_:node1em6ifuhbx4118 rdf:first "fi";
+  rdf:rest _:node1em6ifuhbx4119 .
 
-_:node1em6ifuhbx3881 rdf:first "cs";
-  rdf:rest _:node1em6ifuhbx3882 .
+_:node1em6ifuhbx4119 rdf:first "cs";
+  rdf:rest _:node1em6ifuhbx4120 .
 
-_:node1em6ifuhbx3882 rdf:first "lk";
-  rdf:rest _:node1em6ifuhbx3883 .
+_:node1em6ifuhbx4120 rdf:first "lk";
+  rdf:rest _:node1em6ifuhbx4121 .
 
-_:node1em6ifuhbx3883 rdf:first "lt";
-  rdf:rest _:node1em6ifuhbx3884 .
+_:node1em6ifuhbx4121 rdf:first "lt";
+  rdf:rest _:node1em6ifuhbx4122 .
 
-_:node1em6ifuhbx3884 rdf:first "lv";
-  rdf:rest _:node1em6ifuhbx3885 .
+_:node1em6ifuhbx4122 rdf:first "lv";
+  rdf:rest _:node1em6ifuhbx4123 .
 
-_:node1em6ifuhbx3885 rdf:first "mt";
-  rdf:rest _:node1em6ifuhbx3886 .
+_:node1em6ifuhbx4123 rdf:first "mt";
+  rdf:rest _:node1em6ifuhbx4124 .
 
-_:node1em6ifuhbx3886 rdf:first "en";
-  rdf:rest _:node1em6ifuhbx3887 .
+_:node1em6ifuhbx4124 rdf:first "en";
+  rdf:rest _:node1em6ifuhbx4125 .
 
-_:node1em6ifuhbx3887 rdf:first "da";
-  rdf:rest _:node1em6ifuhbx3888 .
+_:node1em6ifuhbx4125 rdf:first "da";
+  rdf:rest _:node1em6ifuhbx4126 .
 
-_:node1em6ifuhbx3888 rdf:first "nl";
-  rdf:rest _:node1em6ifuhbx3889 .
+_:node1em6ifuhbx4126 rdf:first "nl";
+  rdf:rest _:node1em6ifuhbx4127 .
 
-_:node1em6ifuhbx3889 rdf:first "sv";
-  rdf:rest _:node1em6ifuhbx3890 .
+_:node1em6ifuhbx4127 rdf:first "sv";
+  rdf:rest _:node1em6ifuhbx4128 .
 
-_:node1em6ifuhbx3890 rdf:first "hr";
-  rdf:rest _:node1em6ifuhbx3891 .
+_:node1em6ifuhbx4128 rdf:first "hr";
+  rdf:rest _:node1em6ifuhbx4129 .
 
-_:node1em6ifuhbx3891 rdf:first "sl";
-  rdf:rest _:node1em6ifuhbx3892 .
+_:node1em6ifuhbx4129 rdf:first "sl";
+  rdf:rest _:node1em6ifuhbx4130 .
 
-_:node1em6ifuhbx3892 rdf:first "pl";
-  rdf:rest _:node1em6ifuhbx3893 .
+_:node1em6ifuhbx4130 rdf:first "pl";
+  rdf:rest _:node1em6ifuhbx4131 .
 
-_:node1em6ifuhbx3893 rdf:first "de";
-  rdf:rest _:node1em6ifuhbx3894 .
+_:node1em6ifuhbx4131 rdf:first "de";
+  rdf:rest _:node1em6ifuhbx4132 .
 
-_:node1em6ifuhbx3894 rdf:first "ro";
-  rdf:rest _:node1em6ifuhbx3895 .
+_:node1em6ifuhbx4132 rdf:first "ro";
+  rdf:rest _:node1em6ifuhbx4133 .
 
-_:node1em6ifuhbx3895 rdf:first "it";
-  rdf:rest _:node1em6ifuhbx3896 .
+_:node1em6ifuhbx4133 rdf:first "it";
+  rdf:rest _:node1em6ifuhbx4134 .
 
-_:node1em6ifuhbx3896 rdf:first "pt";
-  rdf:rest _:node1em6ifuhbx3897 .
+_:node1em6ifuhbx4134 rdf:first "pt";
+  rdf:rest _:node1em6ifuhbx4135 .
 
-_:node1em6ifuhbx3897 rdf:first "es";
-  rdf:rest _:node1em6ifuhbx3898 .
+_:node1em6ifuhbx4135 rdf:first "es";
+  rdf:rest _:node1em6ifuhbx4136 .
 
-_:node1em6ifuhbx3898 rdf:first "fr";
-  rdf:rest _:node1em6ifuhbx3899 .
+_:node1em6ifuhbx4136 rdf:first "fr";
+  rdf:rest _:node1em6ifuhbx4137 .
 
-_:node1em6ifuhbx3899 rdf:first "ga";
-  rdf:rest _:node1em6ifuhbx3900 .
+_:node1em6ifuhbx4137 rdf:first "ga";
+  rdf:rest _:node1em6ifuhbx4138 .
 
-_:node1em6ifuhbx3900 rdf:first "el";
-  rdf:rest _:node1em6ifuhbx3901 .
+_:node1em6ifuhbx4138 rdf:first "el";
+  rdf:rest _:node1em6ifuhbx4139 .
 
-_:node1em6ifuhbx3901 rdf:first "bg";
+_:node1em6ifuhbx4139 rdf:first "bg";
   rdf:rest rdf:nil .
 
 epsh:P30 sh:maxCount 24;
@@ -271,12 +271,12 @@ epsh:P34 sh:datatype rdf:plainLiteral;
   sh:path foaf:familyName .
 
 epsh:P35 sh:datatype rdf:plainLiteral;
-  sh:in _:node1em6ifuhbx3902 .
+  sh:in _:node1em6ifuhbx4140 .
 
-_:node1em6ifuhbx3902 rdf:first "Local";
-  rdf:rest _:node1em6ifuhbx3903 .
+_:node1em6ifuhbx4140 rdf:first "Local";
+  rdf:rest _:node1em6ifuhbx4141 .
 
-_:node1em6ifuhbx3903 rdf:first "Accredited";
+_:node1em6ifuhbx4141 rdf:first "Accredited";
   rdf:rest rdf:nil .
 
 epsh:P35 sh:maxCount 1;
@@ -289,7 +289,7 @@ epsh:P36 sh:maxCount 1;
   sh:node epsh:MembershipAssistant;
   sh:nodeKind sh:IRI;
   sh:path org:hasMembership;
-  sh:pattern "^http://data.europarl.europa.eu/Assistant_[0-9]{4-6}/membership$" .
+  sh:pattern "^http://data.europarl.europa.eu/Assistant_[0-9][0-9][0-9][0-9][0-9]?[0-9]?/membership$" .
 
 epsh:P39 sh:maxCount 1;
   sh:minCount 1;
