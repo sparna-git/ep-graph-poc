@@ -1,5 +1,5 @@
 {
-  "baseIRI": "http://data.europarl.europa.eu/MEP/",
+  "baseIRI": "http://data.europarl.europa.eu/shapes/",
   "namespaces": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -204,7 +204,7 @@
             },
             "valueSource": {
               "source": "constant",
-              "constant": "memberShip"
+              "constant": "hasMemberShip"
             }
           },
           "values": [
@@ -232,14 +232,16 @@
                     "values": [
                       {
                         "transformation": {
-                          "expression": "trim(cells[trim('ep:hasPoliticalGroup.ep:uri')].value.split(':')[1].split('_')[1])",
+                          "expression": "trim(cells[trim('ep:hasPoliticalGroup.ep:uri')].value.split(':')[1])",
                           "language": "grel"
                         },
                         "valueSource": {
                           "source": "row_index"
                         },
                         "valueType": {
-                          "type": "literal"
+                          "propertyMappings": [],
+                          "type": "iri",
+                          "typeMappings": []
                         }
                       }
                     ]
@@ -249,15 +251,44 @@
                 "typeMappings": [
                   {
                     "transformation": {
-                      "expression": "org",
+                      "expression": "epsh",
                       "language": "prefix"
                     },
                     "valueSource": {
                       "source": "constant",
-                      "constant": "Membership"
+                      "constant": "MembershipMEP"
                     }
                   }
                 ]
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "skos",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "inScheme"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "epsh",
+                "language": "prefix"
+              },
+              "valueSource": {
+                "source": "constant",
+                "constant": "MEP"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
               }
             }
           ]

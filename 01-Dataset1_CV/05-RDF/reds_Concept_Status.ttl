@@ -1,56 +1,70 @@
-@base <http://data.europarl.europa.eu/> .
+@base <http://data.europarl.europa.eu/shapes/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/Person> .
+@prefix ep: <http://data.europarl.europa.eu/> .
+@prefix epsh: <http://data.europarl.europa.eu/shapes#> .
 
 <Status_ACTIVE> a skos:Concept;
   rdfs:label "ACTIVE";
   skos:prefLabel "Active"@en, "Active"@fr;
-  skos:inScheme "http://redmap.europa.eu/v1-0#" .
+  skos:inScheme epsh:Concept_Status .
 
 <Status_NOT-ACTIVE> a skos:Concept;
   rdfs:label "NOT_ACTIVE";
-  skos:prefLabel "Not Active"@en, "Non Active"@fr .
+  skos:prefLabel "Not Active"@en, "Non Active"@fr;
+  skos:inScheme epsh:Concept_Status .
 
 <Status_ADOPTED> a skos:Concept;
   rdfs:label "ADOPTED";
-  skos:prefLabel "Adopted"@en, "Adoptée"@fr .
+  skos:prefLabel "Adopted"@en, "Adoptée"@fr;
+  skos:inScheme epsh:Concept_Status .
 
 <Status_CREATE> a skos:Concept;
   rdfs:label "CREATE";
-  skos:prefLabel "Created"@en, "Initié"@fr .
+  skos:prefLabel "Created"@en, "Initié"@fr;
+  skos:inScheme epsh:Concept_Status .
 
 <Status_DELETED> a skos:Concept;
   rdfs:label "DELETED";
-  skos:prefLabel "Deleted"@en, "Supprimé"@fr .
+  skos:prefLabel "Deleted"@en, "Supprimé"@fr;
+  skos:inScheme epsh:Concept_Status .
 
 <Status_ENDED> a skos:Concept;
   rdfs:label "ENDED";
-  skos:prefLabel "Ended"@en, "Terminé"@fr .
+  skos:prefLabel "Ended"@en, "Terminé"@fr;
+  skos:inScheme epsh:Concept_Status .
 
 <Status_HISTORICAL> a skos:Concept;
   rdfs:label "HISTORICAL";
-  skos:prefLabel "Historic"@en, "Historique"@fr .
+  skos:prefLabel "Historic"@en, "Historique"@fr;
+  skos:inScheme epsh:Concept_Status .
 
 <Status_MAJORITY> a skos:Concept;
   rdfs:label "MAJORITY";
-  skos:prefLabel "Closed with majority"@en, "Clôturée avec les signatures de la majorité des membres"@fr .
+  skos:prefLabel "Closed with majority"@en, "Clôturée avec les signatures de la majorité des membres"@fr;
+  skos:inScheme epsh:Concept_Status .
 
 <Status_OBSOLETE> a skos:Concept;
   rdfs:label "OBSOLETE";
-  skos:prefLabel "Obsolete"@en, "Caduque"@fr .
+  skos:prefLabel "Obsolete"@en, "Caduque"@fr;
+  skos:inScheme epsh:Concept_Status .
 
 <Status_RECALL> a skos:Concept;
   rdfs:label "RECALL";
-  skos:prefLabel "Recall"@en, "Retiré"@fr .
+  skos:prefLabel "Recall"@en, "Retiré"@fr;
+  skos:inScheme epsh:Concept_Status .
 
 <Status_SUSPENDED> a skos:Concept;
   rdfs:label "SUSPENDED";
   skos:prefLabel "Lapsed as the conditions for admissibility are no longer met"@en,
-    "Caduque, car les conditions de recevabilité ne sont plus remplies"@fr .
+    "Caduque, car les conditions de recevabilité ne sont plus remplies"@fr;
+  skos:inScheme epsh:Concept_Status .
 
 <Status_RESTRICTED> a skos:Concept;
-  rdfs:label "RESTRICTED" .
+  rdfs:label "RESTRICTED";
+  skos:inScheme epsh:Concept_Status .

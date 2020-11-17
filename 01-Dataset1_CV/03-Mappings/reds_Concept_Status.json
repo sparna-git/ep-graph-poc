@@ -1,12 +1,16 @@
 {
-  "baseIRI": "http://data.europarl.europa.eu/",
+  "baseIRI": "http://data.europarl.europa.eu/shapes/",
   "namespaces": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "geo": "http://www.opengis.net/ont/geosparql#",
     "foaf": "http://xmlns.com/foaf/0.1/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
-    "xsd": "http://www.w3.org/2001/XMLSchema#"
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "http://schema.org/Person",
+    "ep": "http://data.europarl.europa.eu/",
+    "epsh": "http://data.europarl.europa.eu/shapes#",
+    "scheme": "http://data.europarl.europa.eu/"
   },
   "subjectMappings": [
     {
@@ -105,12 +109,18 @@
           },
           "values": [
             {
+              "transformation": {
+                "expression": "epsh",
+                "language": "prefix"
+              },
               "valueSource": {
-                "columnName": "_ - identifier - namespaces - epvoc",
-                "source": "column"
+                "source": "constant",
+                "constant": "Concept_Status"
               },
               "valueType": {
-                "type": "literal"
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
               }
             }
           ]

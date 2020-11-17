@@ -10,10 +10,10 @@
 @prefix epsh: <http://data.europarl.europa.eu/shapes#> .
 
 <Body_GP-CD-497> a org:Organization;
-  ep:activatedDate "1953-06-22T23:00:00"^^xsd:dateTime;
-  ep:startDate "1953-06-22T23:00:00"^^xsd:dateTime;
-  ep:endDate "1978-03-12T23:00:00"^^xsd:dateTime;
-  ep:orderNumber "947";
+  ep:activatedDate "1953-06-22T23:00:00"^^xsd:date;
+  ep:startDate "1953-06-22T23:00:00"^^xsd:date;
+  ep:endDate "1978-03-12T23:00:00"^^xsd:date;
+  ep:orderNumber 947;
   skos:notation "CD";
   rdfs:label "Christian-Democratic Group";
   skos:prefLabel "Kereszténydemokraták Csoportja"@hu, "Kristlik-demokraatide fraktsioon"@et,
@@ -24,13 +24,14 @@
     "Grupa Chrzescijanskiej Demokracji"@pl, "Christlich-demokratische Fraktion"@de, "Grupul Creștin-Democrat"@ro,
     "Gruppo democratico cristiano"@it, "Grupo Democrata-Cristão"@pt, "Grupo Cristianodemócrata"@es,
     "Groupe démocrate-chrétien"@fr, "Grúpa na nDaonlathaithe Críostaí"@ga, "Χριστιαvoδημoκρατική Ομάδα"@el,
-    "Група на християндемократите"@bg .
+    "Група на християндемократите"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-CD-1050> a org:Organization;
-  ep:activatedDate "1978-03-13T23:00:00"^^xsd:dateTime;
-  ep:startDate "1978-03-13T23:00:00"^^xsd:dateTime;
-  ep:endDate "1979-07-15T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "949";
+  ep:activatedDate "1978-03-13T23:00:00"^^xsd:date;
+  ep:startDate "1978-03-13T23:00:00"^^xsd:date;
+  ep:endDate "1979-07-15T22:00:00"^^xsd:date;
+  ep:orderNumber 949;
   skos:notation "CD";
   rdfs:label "Christian-Democratic Group (Group of the European People's Party)";
   skos:prefLabel "Kereszténydemokrata Csoport (az Európai Néppártok Csoportja)"@hu,
@@ -42,13 +43,14 @@
     "Krščansko–demokratska skupina (skupina Evropske ljudske stranke)"@sl, "Grupa Chrzescijansko-Demokratyczna (Grupa Europejskiej Partii Ludowej)"@pl,
     "Christlich-demokratische Fraktion (Fraktion der Europaïschen Volkspartei)"@de, "Grupul Creștin-Democrat (Grupul Partidului Popular)"@ro,
     "Gruppo democratico cristiano (Gruppo del partito popolare europeo)"@it, "Groupe démocrate-chrétien (Groupe du parti populaire européen)"@fr,
-    "Grúpa na nDaonlathaithe Críostaí (Grúpa Pháirtí an Phobail Eorpaigh)"@ga, "Група на християндемократите (Група на Европейската народна партия)"@bg .
+    "Grúpa na nDaonlathaithe Críostaí (Grúpa Pháirtí an Phobail Eorpaigh)"@ga, "Група на християндемократите (Група на Европейската народна партия)"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-COM-487> a org:Organization;
-  ep:activatedDate "1979-07-16T22:00:00"^^xsd:dateTime;
-  ep:startDate "1979-07-16T22:00:00"^^xsd:dateTime;
-  ep:endDate "1989-07-23T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "952";
+  ep:activatedDate "1979-07-16T22:00:00"^^xsd:date;
+  ep:startDate "1979-07-16T22:00:00"^^xsd:date;
+  ep:endDate "1989-07-23T22:00:00"^^xsd:date;
+  ep:orderNumber 952;
   skos:notation "COM";
   rdfs:label "Communist and Allies Group";
   skos:prefLabel "Kommunisták és Szövetségeseik Csoportja"@hu, "Kommunistide ja liitlaste fraktsioon"@et,
@@ -60,13 +62,14 @@
     "Fraktion der Kommunisten und Nahestehenden"@de, "Grupul comuniștilor și al afiliaților"@ro,
     "Gruppo comunista e apparentanti"@it, "Grupo Comunista e Afins"@pt, "Grupo de Comunistas y afines"@es,
     "Groupe communiste et apparentés"@fr, "An Grúpa Cumannach agus Comhghuaillithe"@ga,
-    "Κομμουνιστική ομάδα και Προσκείμενοι"@el, "Група на комунистите и съмишлениците"@bg .
+    "Κομμουνιστική ομάδα και Προσκείμενοι"@el, "Група на комунистите и съмишлениците"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-COM-503> a org:Organization;
-  ep:activatedDate "1973-10-15T23:00:00"^^xsd:dateTime;
-  ep:startDate "1973-10-15T23:00:00"^^xsd:dateTime;
-  ep:endDate "1979-07-15T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "982";
+  ep:activatedDate "1973-10-15T23:00:00"^^xsd:date;
+  ep:startDate "1973-10-15T23:00:00"^^xsd:date;
+  ep:endDate "1979-07-15T22:00:00"^^xsd:date;
+  ep:orderNumber 982;
   skos:notation "COM";
   rdfs:label "Communist and Allies Group (SF, Ind. Sin.)";
   skos:prefLabel "Kommunisták és Szövetségeseik Csoportja SF, Ind. Sin.)"@hu, "Kommunistide ja liitlaste fraktsioon (SF, Ind. Sin.)"@et,
@@ -80,13 +83,14 @@
     "Grupul comuniștilor și al afiliaților (SF, Ind.Sin)"@ro, "Gruppo comunista e apparentati (SF, Ind. Sin.)"@it,
     "Grupo Comunista e Afins (SF, Ind. Sin.)"@pt, "Grupo de Comunistas y afines"@es, "Groupe communiste et apparentés (SF, Ind. Sin.)"@fr,
     "An Grúpa Cumannach agus Comhghuaillithe (SF, Ind. Sin.)"@ga, "Ομάδα Κoμμoυvιστώv και Πρoσκειμέvωv (SF, Ind. Sin.)"@el,
-    "Група на комунистите и съмишлениците (SF, Ind. Sin.)"@bg .
+    "Група на комунистите и съмишлениците (SF, Ind. Sin.)"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-GUE-510> a org:Organization;
-  ep:activatedDate "1994-07-18T22:00:00"^^xsd:dateTime;
-  ep:startDate "1994-07-18T22:00:00"^^xsd:dateTime;
-  ep:endDate "1995-01-04T23:00:00"^^xsd:dateTime;
-  ep:orderNumber "969";
+  ep:activatedDate "1994-07-18T22:00:00"^^xsd:date;
+  ep:startDate "1994-07-18T22:00:00"^^xsd:date;
+  ep:endDate "1995-01-04T23:00:00"^^xsd:date;
+  ep:orderNumber 969;
   skos:notation "GUE";
   rdfs:label "Confederal Group of the European United Left";
   skos:prefLabel "Az Európai Baloldali Unió Konföderális Csoportja"@hu, "Euroopa ühendatud vasakpoolsete liitfraktsioon"@et,
@@ -100,13 +104,14 @@
     "Grupul Confederal al Stângii Unite Europene"@ro, "Gruppo confederale della Sinistra unitaria europea"@it,
     "Grupo Confederal da Esquerda Unitária Europeia"@pt, "Grupo Confederal de la Izquierda Unitaria Europea"@es,
     "Groupe confédéral de la Gauche unitaire européenne"@fr, "An Grúpa Cónasctha den Chlé Aontaithe Eorpach"@ga,
-    "Συνομοσπονδιακή Ομάδα της Ευρωπαϊκής Ενωτικής Αριστεράς"@el, "Конфедеративна група на Европейската обединена левица"@bg .
+    "Συνομοσπονδιακή Ομάδα της Ευρωπαϊκής Ενωτικής Αριστεράς"@el, "Конфедеративна група на Европейската обединена левица"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-GUE/NGL-4281> a org:Organization;
-  ep:activatedDate "2014-06-30T22:00:00"^^xsd:dateTime;
-  ep:startDate "2014-06-30T22:00:00"^^xsd:dateTime;
-  ep:endDate "2019-06-30T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "94799";
+  ep:activatedDate "2014-06-30T22:00:00"^^xsd:date;
+  ep:startDate "2014-06-30T22:00:00"^^xsd:date;
+  ep:endDate "2019-06-30T22:00:00"^^xsd:date;
+  ep:orderNumber 94799;
   skos:notation "GUE/NGL";
   rdfs:label "Confederal Group of the European United Left - Nordic Green Left";
   skos:prefLabel "Egységes Európai Baloldal/Északi Zöld Baloldal képviselőcsoport"@hu,
@@ -124,13 +129,14 @@
     "Grupo Confederal da Esquerda Unitária Europeia/Esquerda Nórdica Verde"@pt, "Grupo Confederal de la Izquierda Unitaria Europea/Izquierda Verde Nórdica"@es,
     "Groupe confédéral de la Gauche unitaire européenne/Gauche verte nordique"@fr, "Grúpa Cónasctha den Chlé Aontaithe Eorpach - den Chlé Ghlas Nordach"@ga,
     "Συνομοσπονδιακή Ομάδα της Ευρωπαϊκής Ενωτικής Αριστεράς/Αριστερά των Πρασίνων των Βορείων Χωρών"@el,
-    "Конфедеративна група на Европейската обединена левица - Северна зелена левица"@bg .
+    "Конфедеративна група на Европейската обединена левица - Северна зелена левица"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-GUE/NGL-1537> a org:Organization;
-  ep:activatedDate "2004-07-19T22:00:00"^^xsd:dateTime;
-  ep:startDate "2004-07-19T22:00:00"^^xsd:dateTime;
-  ep:endDate "2009-07-12T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "95999";
+  ep:activatedDate "2004-07-19T22:00:00"^^xsd:date;
+  ep:startDate "2004-07-19T22:00:00"^^xsd:date;
+  ep:endDate "2009-07-12T22:00:00"^^xsd:date;
+  ep:orderNumber 95999;
   skos:notation "GUE/NGL";
   rdfs:label "Confederal Group of the European United Left - Nordic Green Left";
   skos:prefLabel "az Egységes Európai Baloldal/az Északi Zöld Baloldal Képviselőcsoportja"@hu,
@@ -148,13 +154,14 @@
     "Grupo Confederal da Esquerda Unitária Europeia/Esquerda Nórdica Verde"@pt, "Grupo Confederal de la Izquierda Unitaria Europea/Izquierda Verde Nórdica"@es,
     "Groupe confédéral de la Gauche unitaire européenne/Gauche verte nordique"@fr, "Grúpa Cónasctha den Chlé Aontaithe Eorpach - den Chlé Ghlas Nordach"@ga,
     "Συνομοσπονδιακή Ομάδα της Ευρωπαϊκής Ενωτικής Αριστεράς/Αριστερά των Πρασίνων των Βορείων Χωρών"@el,
-    "Конфедеративна група на Европейската обединена левица - Северна зелена левица"@bg .
+    "Конфедеративна група на Европейската обединена левица - Северна зелена левица"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-GUE/NGL-2954> a org:Organization;
-  ep:activatedDate "2009-07-13T22:00:00"^^xsd:dateTime;
-  ep:startDate "2009-07-13T22:00:00"^^xsd:dateTime;
-  ep:endDate "2014-06-29T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "96499";
+  ep:activatedDate "2009-07-13T22:00:00"^^xsd:date;
+  ep:startDate "2009-07-13T22:00:00"^^xsd:date;
+  ep:endDate "2014-06-29T22:00:00"^^xsd:date;
+  ep:orderNumber 96499;
   skos:notation "GUE/NGL";
   rdfs:label "Confederal Group of the European United Left - Nordic Green Left";
   skos:prefLabel "az Egységes Európai Baloldal/Északi Zöld Baloldal képviselőcsoport"@hu,
@@ -172,13 +179,14 @@
     "Grupo Confederal da Esquerda Unitária Europeia/Esquerda Nórdica Verde"@pt, "Grupo Confederal de la Izquierda Unitaria Europea/Izquierda Verde Nórdica"@es,
     "Groupe confédéral de la Gauche unitaire européenne/Gauche verte nordique"@fr, "Grúpa Cónasctha den Chlé Aontaithe Eorpach - den Chlé Ghlas Nordach"@ga,
     "Συνομοσπονδιακή Ομάδα της Ευρωπαϊκής Ενωτικής Αριστεράς/Αριστερά των Πρασίνων των Βορείων Χωρών"@el,
-    "Конфедеративна група на Европейската обединена левица - Северна зелена левица"@bg .
+    "Конфедеративна група на Европейската обединена левица - Северна зелена левица"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-GUE/NGL-516> a org:Organization;
-  ep:activatedDate "1995-01-05T23:00:00"^^xsd:dateTime;
-  ep:startDate "1995-01-05T23:00:00"^^xsd:dateTime;
-  ep:endDate "2004-07-18T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "945";
+  ep:activatedDate "1995-01-05T23:00:00"^^xsd:date;
+  ep:startDate "1995-01-05T23:00:00"^^xsd:date;
+  ep:endDate "2004-07-18T22:00:00"^^xsd:date;
+  ep:orderNumber 945;
   skos:notation "GUE/NGL";
   rdfs:label "Confederal Group of the European United Left/Nordic Green Left";
   skos:prefLabel "az Egységes Európai Baloldal/Északi Zöld Baloldal képviselőcsoportja"@hu,
@@ -196,13 +204,14 @@
     "Grupo Confederal da Esquerda Unitária Europeia/Esquerda Nórdica Verde"@pt, "Grupo Confederal de la Izquierda Unitaria Europea/Izquierda Verde Nórdica"@es,
     "Groupe confédéral de la Gauche unitaire européenne/Gauche verte nordique"@fr, "Grúpa Cónasctha den Chlé Aontaithe Eorpach - den Chlé Ghlas Nordach"@ga,
     "Συνομοσπονδιακή Ομάδα της Ευρωπαϊκής Ενωτικής Αριστεράς/Αριστερά των Πρασίνων των Βορείων Χωρών"@el,
-    "Конфедеративна група на Европейската обединена левица/Северна зелена левица"@bg .
+    "Конфедеративна група на Европейската обединена левица/Северна зелена левица"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-EFDD-4280> a org:Organization;
-  ep:activatedDate "2014-06-30T22:00:00"^^xsd:dateTime;
-  ep:startDate "2014-10-14T22:00:00"^^xsd:dateTime;
-  ep:endDate "2099-12-30T23:00:00"^^xsd:dateTime;
-  ep:orderNumber "95199";
+  ep:activatedDate "2014-06-30T22:00:00"^^xsd:date;
+  ep:startDate "2014-10-14T22:00:00"^^xsd:date;
+  ep:endDate "2099-12-30T23:00:00"^^xsd:date;
+  ep:orderNumber 95199;
   skos:notation "EFDD";
   rdfs:label "Europe of Freedom and Direct Democracy Group";
   skos:prefLabel "a Szabadság és Demokrácia Európája képviselőcsoport"@hu, "Vaba ja Otsedemokraatliku Euroopa fraktsiooni"@et,
@@ -216,13 +225,14 @@
     "Grupul Europa Libertății și Democrației Directe"@ro, "Gruppo Europa della Libertà e della Democrazia diretta"@it,
     "Grupo Europa da Liberdade e da Democracia Direta"@pt, "Grupo Europa de la Libertad y de la Democracia Directa"@es,
     "Groupe Europe de la liberté et de la démocratie directe"@fr, "An Grúpa d’Eoraip na Saoirse agus an Daonlathais Dhírigh"@ga,
-    "Ομάδα Ευρώπη Ελευθερίας και Άμεσης Δημοκρατίας"@el, "Група „Европа на свободата и пряката демокрация“"@bg .
+    "Ομάδα Ευρώπη Ελευθερίας και Άμεσης Δημοκρατίας"@el, "Група „Европа на свободата и пряката демокрация“"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-EFDD-4880> a org:Organization;
-  ep:activatedDate "2014-10-19T22:00:00"^^xsd:dateTime;
-  ep:startDate "2014-10-19T22:00:00"^^xsd:dateTime;
-  ep:endDate "2019-06-30T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "95799";
+  ep:activatedDate "2014-10-19T22:00:00"^^xsd:date;
+  ep:startDate "2014-10-19T22:00:00"^^xsd:date;
+  ep:endDate "2019-06-30T22:00:00"^^xsd:date;
+  ep:orderNumber 95799;
   skos:notation "EFDD";
   rdfs:label "Europe of Freedom and Direct Democracy Group";
   skos:prefLabel "Szabadság és Közvetlen Demokrácia Európája képviselőcsoport"@hu, "Vaba ja Otsedemokraatliku Euroopa fraktsioon"@et,
@@ -236,13 +246,14 @@
     "Grupul Europa Libertății și Democrației Directe"@ro, "Gruppo Europa della Libertà e della Democrazia diretta"@it,
     "Grupo Europa da Liberdade e da Democracia Direta"@pt, "Grupo Europa de la Libertad y de la Democracia Directa"@es,
     "Groupe Europe de la liberté et de la démocratie directe"@fr, "An Grúpa d’Eoraip na Saoirse agus an Daonlathais Dhírigh"@ga,
-    "Ομάδα Ευρώπη Ελευθερίας και Άμεσης Δημοκρατίας"@el, "Група „Европа на свободата и пряката демокрация“"@bg .
+    "Ομάδα Ευρώπη Ελευθερίας και Άμεσης Δημοκρατίας"@el, "Група „Европа на свободата и пряката демокрация“"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-EDN-513> a org:Organization;
-  ep:activatedDate "1994-07-18T22:00:00"^^xsd:dateTime;
-  ep:startDate "1994-07-18T22:00:00"^^xsd:dateTime;
-  ep:endDate "1996-11-09T23:00:00"^^xsd:dateTime;
-  ep:orderNumber "983";
+  ep:activatedDate "1994-07-18T22:00:00"^^xsd:date;
+  ep:startDate "1994-07-18T22:00:00"^^xsd:date;
+  ep:endDate "1996-11-09T23:00:00"^^xsd:date;
+  ep:orderNumber 983;
   skos:notation "EDN";
   rdfs:label "Europe of Nations Group (Coordination Group)";
   skos:prefLabel "Nemzetek Európája Csoport (Koordinációs Csoport)"@hu, "“Rahvusriikide Euroopa” fraktsioon (koordinatsioon)"@et,
@@ -256,13 +267,14 @@
     "Europa Națiunilor (Grupul de coordonare)"@ro, "Gruppo Europa delle nazioni (Gruppo di coordinamento)"@it,
     "Grupo Europa das Nações (Grupo de coordenação)"@pt, "Grupo Europa de las Naciones (Grupo de Coordinación)"@es,
     "Groupe Europe des Nations (Groupe de Coordination)"@fr, "Grúpa Eoraip na Náisiún (Grúpa Comhordaithe)"@ga,
-    "Ομάδα Ευρώπη των Εθνών (Ομάδα συντονισμού)"@el, "Група Европа на нациите (група за координация)"@bg .
+    "Ομάδα Ευρώπη των Εθνών (Ομάδα συντονισμού)"@el, "Група Европа на нациите (група за координация)"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-ENF-4908> a org:Organization;
-  ep:activatedDate "2015-06-14T22:00:00"^^xsd:dateTime;
-  ep:startDate "2015-06-14T22:00:00"^^xsd:dateTime;
-  ep:endDate "2019-06-30T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "96399";
+  ep:activatedDate "2015-06-14T22:00:00"^^xsd:date;
+  ep:startDate "2015-06-14T22:00:00"^^xsd:date;
+  ep:endDate "2019-06-30T22:00:00"^^xsd:date;
+  ep:orderNumber 96399;
   skos:notation "ENF";
   rdfs:label "Europe of Nations and Freedom Group";
   skos:prefLabel "Nemzetek és Szabadság Európája képviselőcsoport"@hu, "Rahvaste ja Vabaduste Euroopa fraktsioon"@et,
@@ -275,13 +287,14 @@
     "Grupul Europa Națiunilor și a Libertății"@ro, "Gruppo Europa delle Nazioni e della Libertà"@it,
     "Grupo Europa das Nações e da Liberdade"@pt, "Grupo Europa de las Naciones y de las Libertades"@es,
     "Groupe Europe des Nations et des Libertés"@fr, "Grúpa Eoraip na Náisiún agus na Saoirse"@ga,
-    "Ομάδα «Η Ευρώπη των Εθνών και της Ελευθερίας»"@el, "Група „Европа на нациите и свободите“"@bg .
+    "Ομάδα «Η Ευρώπη των Εθνών και της Ελευθερίας»"@el, "Група „Европа на нациите и свободите“"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-EFD-2967> a org:Organization;
-  ep:activatedDate "2009-07-13T22:00:00"^^xsd:dateTime;
-  ep:startDate "2009-07-13T22:00:00"^^xsd:dateTime;
-  ep:endDate "2014-06-29T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "96899";
+  ep:activatedDate "2009-07-13T22:00:00"^^xsd:date;
+  ep:startDate "2009-07-13T22:00:00"^^xsd:date;
+  ep:endDate "2014-06-29T22:00:00"^^xsd:date;
+  ep:orderNumber 96899;
   skos:notation "EFD";
   rdfs:label "Europe of freedom and democracy Group";
   skos:prefLabel "a Szabadság és Demokrácia Európája képviselőcsoport"@hu, "Vaba ja Demokraatliku Euroopa fraktsioon"@et,
@@ -294,13 +307,14 @@
     "Grupul Europa Libertății și Democrației"@ro, "Gruppo Europa della Libertà e della Democrazia"@it,
     "Europa da Liberdade e da Democracia"@pt, "Europa de la Libertad y de la Democracia"@es,
     "Groupe Europe libertés démocratie"@fr, "An Grúpa d’Eoraip na Saoirse agus an Daonlathais"@ga,
-    "Ευρώπη ελευθερίας και δημοκρατίας"@el, "Група „Европа на свободата и демокрацията”"@bg .
+    "Ευρώπη ελευθερίας και δημοκρατίας"@el, "Група „Европа на свободата и демокрацията”"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-C-502> a org:Organization;
-  ep:activatedDate "1973-01-15T23:00:00"^^xsd:dateTime;
-  ep:startDate "1973-01-15T23:00:00"^^xsd:dateTime;
-  ep:endDate "1979-07-15T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "982";
+  ep:activatedDate "1973-01-15T23:00:00"^^xsd:date;
+  ep:startDate "1973-01-15T23:00:00"^^xsd:date;
+  ep:endDate "1979-07-15T22:00:00"^^xsd:date;
+  ep:orderNumber 982;
   skos:notation "C";
   rdfs:label "European Conservative Group";
   skos:prefLabel "Európai Konzervatívok Csoportja"@hu, "Euroopa konservatiivide fraktsioon"@et,
@@ -311,13 +325,14 @@
     "Skupina evropskih konzervativcev"@sl, "Grupa Konserwatystów Europejskich"@pl, "Europäische Konservative Fraktion"@de,
     "Grupul Conservator European"@ro, "Gruppo conservatore europeo"@it, "Grupo dos Conservadores Europeus"@pt,
     "Grupo Conservador Europeo"@es, "Groupe conservateur européen"@fr, "An Grúpa do Choimeádaigh na hEorpa"@ga,
-    "Ευρωπαϊκή Συvτηρητική Ομάδα"@el, "Група на европейските консерватори"@bg .
+    "Ευρωπαϊκή Συvτηρητική Ομάδα"@el, "Група на европейските консерватори"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-ECR-4275> a org:Organization;
-  ep:activatedDate "2014-06-30T22:00:00"^^xsd:dateTime;
-  ep:startDate "2014-06-30T22:00:00"^^xsd:dateTime;
-  ep:endDate "2019-06-30T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "92299";
+  ep:activatedDate "2014-06-30T22:00:00"^^xsd:date;
+  ep:startDate "2014-06-30T22:00:00"^^xsd:date;
+  ep:endDate "2019-06-30T22:00:00"^^xsd:date;
+  ep:orderNumber 92299;
   skos:notation "ECR";
   rdfs:label "European Conservatives and Reformists Group";
   skos:prefLabel "Európai Konzervatívok és Reformerek képviselőcsoport"@hu, "Euroopa Konservatiivide ja Reformistide fraktsioon"@et,
@@ -331,13 +346,14 @@
     "Grupul Conservatorilor și Reformiștilor Europeni"@ro, "Gruppo dei Conservatori e Riformisti europei"@it,
     "Grupo dos Conservadores e Reformistas Europeus"@pt, "Grupo de los Conservadores y Reformistas Europeos"@es,
     "Groupe des Conservateurs et Réformistes européens"@fr, "An Grúpa do Choimeádaigh agus Leasaitheoirí na hEorpa"@ga,
-    "Ομάδα των Ευρωπαίων Συντηρητικών και Μεταρρυθμιστών"@el, "Европейски консерватори и реформисти"@bg .
+    "Ομάδα των Ευρωπαίων Συντηρητικών και Μεταρρυθμιστών"@el, "Европейски консерватори и реформисти"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-ECR-5148> a org:Organization;
-  ep:activatedDate "2019-07-01T22:00:00"^^xsd:dateTime;
-  ep:startDate "2019-07-01T22:00:00"^^xsd:dateTime;
-  ep:endDate "2099-12-30T23:00:00"^^xsd:dateTime;
-  ep:orderNumber "93799";
+  ep:activatedDate "2019-07-01T22:00:00"^^xsd:date;
+  ep:startDate "2019-07-01T22:00:00"^^xsd:date;
+  ep:endDate "2099-12-30T23:00:00"^^xsd:date;
+  ep:orderNumber 93799;
   skos:notation "ECR";
   rdfs:label "European Conservatives and Reformists Group";
   skos:prefLabel "Európai Konzervatívok és Reformerek képviselőcsoport"@hu, "Euroopa Konservatiivide ja Reformistide fraktsioon"@et,
@@ -351,13 +367,14 @@
     "Grupul Conservatorilor și Reformiștilor Europeni"@ro, "Gruppo dei Conservatori e Riformisti europei"@it,
     "Grupo dos Conservadores e Reformistas Europeus"@pt, "Grupo de los Conservadores y Reformistas Europeos"@es,
     "Groupe des Conservateurs et Réformistes européens"@fr, "An Grúpa do Choimeádaigh agus Leasaitheoirí na hEorpa"@ga,
-    "Ομάδα των Ευρωπαίων Συντηρητικών και Μεταρρυθμιστών"@el, "Европейски консерватори и реформисти"@bg .
+    "Ομάδα των Ευρωπαίων Συντηρητικών και Μεταρρυθμιστών"@el, "Европейски консерватори и реформисти"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-ECR-2977> a org:Organization;
-  ep:activatedDate "2009-07-13T22:00:00"^^xsd:dateTime;
-  ep:startDate "2009-07-13T22:00:00"^^xsd:dateTime;
-  ep:endDate "2014-06-29T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "94299";
+  ep:activatedDate "2009-07-13T22:00:00"^^xsd:date;
+  ep:startDate "2009-07-13T22:00:00"^^xsd:date;
+  ep:endDate "2014-06-29T22:00:00"^^xsd:date;
+  ep:orderNumber 94299;
   skos:notation "ECR";
   rdfs:label "European Conservatives and Reformists Group";
   skos:prefLabel "Európai Konzervatívok és Reformerek Képviselőcsoport"@hu, "Euroopa Konservatiivide ja Reformistide fraktsioon"@et,
@@ -371,13 +388,14 @@
     "Grupul Conservatorilor și Reformiștilor Europeni"@ro, "Gruppo dei Conservatori e Riformisti europei"@it,
     "Grupo dos Conservadores e Reformistas Europeus"@pt, "Grupo de los Conservadores y Reformistas Europeos"@es,
     "Groupe des Conservateurs et Réformistes européens"@fr, "Coimeádaithe agus Leasaitheoirí na hEorpa"@ga,
-    "Ομάδα των Ευρωπαίων Συντηρητικών και Μεταρρυθμιστών"@el, "Европейски консерватори и реформисти"@bg .
+    "Ομάδα των Ευρωπαίων Συντηρητικών και Μεταρρυθμιστών"@el, "Европейски консерватори и реформисти"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-ED-486> a org:Organization;
-  ep:activatedDate "1979-07-16T22:00:00"^^xsd:dateTime;
-  ep:startDate "1979-07-16T22:00:00"^^xsd:dateTime;
-  ep:endDate "1992-04-29T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "997";
+  ep:activatedDate "1979-07-16T22:00:00"^^xsd:date;
+  ep:startDate "1979-07-16T22:00:00"^^xsd:date;
+  ep:endDate "1992-04-29T22:00:00"^^xsd:date;
+  ep:orderNumber 997;
   skos:notation "ED";
   rdfs:label "European Democratic Group";
   skos:prefLabel "Európai Demokraták Csoportja"@hu, "Euroopa demokraatide fraktsioon"@et,
@@ -388,13 +406,14 @@
     "Grupa Demokracji Europejskiej"@pl, "Fraktion der Europäischen Demokraten"@de, "Grupul Democraților Europeni"@ro,
     "Gruppo democratico europeo"@it, "Grupo dos Democratas Europeus"@pt, "Grupo Demócrata Europeo"@es,
     "Groupe des démocrates européens"@fr, "Grúpa Dhaonlathaigh na hEorpa"@ga, "Ομάδα των Ευρωπαίων Δημοκρατών"@el,
-    "Група на Европейските демократи"@bg .
+    "Група на Европейските демократи"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-DE-499> a org:Organization;
-  ep:activatedDate "1965-01-19T23:00:00"^^xsd:dateTime;
-  ep:startDate "1965-01-19T23:00:00"^^xsd:dateTime;
-  ep:endDate "1973-06-30T23:00:00"^^xsd:dateTime;
-  ep:orderNumber "989";
+  ep:activatedDate "1965-01-19T23:00:00"^^xsd:date;
+  ep:startDate "1965-01-19T23:00:00"^^xsd:date;
+  ep:endDate "1973-06-30T23:00:00"^^xsd:date;
+  ep:orderNumber 989;
   skos:notation "DE";
   rdfs:label "European Democratic Union Group";
   skos:prefLabel "Európai Demokratikus Unió Csoportja"@hu, "Euroopa demokraatide liidu fraktsioon"@et,
@@ -408,13 +427,14 @@
     "Grupul Uniunii Democratice Europene"@ro, "Gruppo dell'Unione Democratica Europea"@it,
     "Grupo da União Democrática Europeia"@pt, "Grupo Demócrata Europeo"@es, "Groupe de l'Union démocratique européenne"@fr,
     "Grúpa Aontas Daonlathach na hEorpa"@ga, "Ομάδα της Ευρωπαϊκής Δημoκρατικής Έvωσης"@el,
-    "Група на Европейския демократичен съюз"@bg .
+    "Група на Европейския демократичен съюз"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-FE-511> a org:Organization;
-  ep:activatedDate "1994-07-18T22:00:00"^^xsd:dateTime;
-  ep:startDate "1994-07-18T22:00:00"^^xsd:dateTime;
-  ep:endDate "1995-07-03T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "1000";
+  ep:activatedDate "1994-07-18T22:00:00"^^xsd:date;
+  ep:startDate "1994-07-18T22:00:00"^^xsd:date;
+  ep:endDate "1995-07-03T22:00:00"^^xsd:date;
+  ep:orderNumber 1000;
   skos:notation "FE";
   rdfs:label "Forza Europa Group";
   skos:prefLabel "A Forza Europa Csoport"@hu, "Forza Europa fraktsioon"@et, "Forza Europa -ryhmä"@fi,
@@ -423,13 +443,14 @@
     "Gruppen Forza Europa"@sv, "Klub zastupnika Forza Europa"@hr, "Skupina Forza Europa"@sl,
     "Grupa Forza Europa"@pl, "Fraktion Forza Europa"@de, "Grupul Forza Europa"@ro, "Gruppo Forza Europa"@it,
     "Grupo Forza Europa"@pt, "Grupo Forza Europa"@es, "Groupe Forza Europa"@fr, "Grúpa Forza Europa"@ga,
-    "Ομάδα Forza Europa"@el, "Група Форца Европа"@bg .
+    "Ομάδα Forza Europa"@el, "Група Форца Европа"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-UPE-517> a org:Organization;
-  ep:activatedDate "1995-07-04T22:00:00"^^xsd:dateTime;
-  ep:startDate "1995-07-04T22:00:00"^^xsd:dateTime;
-  ep:endDate "1999-07-18T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "966";
+  ep:activatedDate "1995-07-04T22:00:00"^^xsd:date;
+  ep:startDate "1995-07-04T22:00:00"^^xsd:date;
+  ep:endDate "1999-07-18T22:00:00"^^xsd:date;
+  ep:orderNumber 966;
   skos:notation "UPE";
   rdfs:label "Group Union for Europe";
   skos:prefLabel "Egyesülés Európáért Csoport"@hu, "Liidu “Euroopa eest” fraktsioon"@et,
@@ -440,13 +461,14 @@
     "Grupa Unia dla Europy"@pl, "Fraktion Union für Europa"@de, "Grupul Uniunea pentru Europa"@ro,
     "Gruppo Unione per l'Europa"@it, "Grupo União para a Europa"@pt, "Grupo Unión por Europa"@es,
     "Groupe Union pour l'Europe"@fr, "An Grúpa Comhaontais don Eoraip"@ga, "Ομάδα ΄Ενωση για την Ευρώπη"@el,
-    "Група на Съюза за Европа"@bg .
+    "Група на Съюза за Европа"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-EDD-988> a org:Organization;
-  ep:activatedDate "1999-07-19T22:00:00"^^xsd:dateTime;
-  ep:startDate "1999-07-19T22:00:00"^^xsd:dateTime;
-  ep:endDate "2004-07-18T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "983";
+  ep:activatedDate "1999-07-19T22:00:00"^^xsd:date;
+  ep:startDate "1999-07-19T22:00:00"^^xsd:date;
+  ep:endDate "2004-07-18T22:00:00"^^xsd:date;
+  ep:orderNumber 983;
   skos:notation "EDD";
   rdfs:label "Group for a Europe of Democracies and Diversities";
   skos:prefLabel "a Demokráciák és a Sokszínűség Európájanák képviselőcsoportja"@hu,
@@ -461,13 +483,14 @@
     "Gruppo per l'Europa delle democrazie e delle diversità"@it, "Grupo para a Europa das Democracias e das Diferenças"@pt,
     "Grupo por la Europa de las Democracias y las Diferencias"@es, "Groupe pour l'Europe des démocraties et des différences"@fr,
     "Grúpa Eoraip na nDaonlathas agus na nÉagsúlachtaí"@ga, "Ομάδα για την Ευρώπη της Δημoκρατίας και της Διαφoράς"@el,
-    "Група за Европа на демокрациите и многообразието"@bg .
+    "Група за Европа на демокрациите и многообразието"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-GUE-494> a org:Organization;
-  ep:activatedDate "1989-07-19T22:00:00"^^xsd:dateTime;
-  ep:startDate "1989-07-19T22:00:00"^^xsd:dateTime;
-  ep:endDate "1993-01-10T23:00:00"^^xsd:dateTime;
-  ep:orderNumber "973";
+  ep:activatedDate "1989-07-19T22:00:00"^^xsd:date;
+  ep:startDate "1989-07-19T22:00:00"^^xsd:date;
+  ep:endDate "1993-01-10T23:00:00"^^xsd:date;
+  ep:orderNumber 973;
   skos:notation "GUE";
   rdfs:label "Group for the European United Left";
   skos:prefLabel "Az Európai Baloldali Unió Csoportja"@hu, "Euroopa ühendatud vasakpoolsete fraktsioon"@et,
@@ -481,13 +504,14 @@
     "Gruppo per la Sinistra Unitaria Europea"@it, "Grupo para a Esquerda Unitária Europeia"@pt,
     "Grupo por la Izquierda Unitaria Europea"@es, "Groupe pour la Gauche Unitaire Européenne"@fr,
     "Grúpa an Chlé Aontaithe Eorpaigh "@ga, "Ομάδα για την Ευρωπαϊκή Ενωτική Αριστερά"@el,
-    "Група за Европейската обединена левица"@bg .
+    "Група за Европейската обединена левица"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-CDI-508> a org:Organization;
-  ep:activatedDate "1979-07-16T22:00:00"^^xsd:dateTime;
-  ep:startDate "1979-07-16T22:00:00"^^xsd:dateTime;
-  ep:endDate "1984-07-22T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "988";
+  ep:activatedDate "1979-07-16T22:00:00"^^xsd:date;
+  ep:startDate "1979-07-16T22:00:00"^^xsd:date;
+  ep:endDate "1984-07-22T22:00:00"^^xsd:date;
+  ep:orderNumber 988;
   skos:notation "CDI";
   rdfs:label "Group for the Technical Coordination and Defence of Independent Groups and Members";
   skos:prefLabel "Független Csoportok és Tagok Technikai Koordinációját és Védelmét Szolgáló Csoport"@hu,
@@ -508,13 +532,14 @@
     "Groupe de coordination technique et de défense des groupes et des parlementaires indépendents"@fr,
     "An Grúpa um Chomhordú Teicniúil agus Cosaint Grúpaí agus Comhaltaí Neamhspleácha"@ga,
     "Ομάδα Τεχνικού Συντονισμού και Προασπίσεως Ανεξαρτήτων Ομάδων και Βουλευτών"@el,
-    "Група за техническа координация и охрана на групите и независимите членове на Парламента"@bg .
+    "Група за техническа координация и охрана на групите и независимите членове на Парламента"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-DEP-501> a org:Organization;
-  ep:activatedDate "1979-07-16T22:00:00"^^xsd:dateTime;
-  ep:startDate "1979-07-16T22:00:00"^^xsd:dateTime;
-  ep:endDate "1984-07-22T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "979";
+  ep:activatedDate "1979-07-16T22:00:00"^^xsd:date;
+  ep:startDate "1979-07-16T22:00:00"^^xsd:date;
+  ep:endDate "1984-07-22T22:00:00"^^xsd:date;
+  ep:orderNumber 979;
   skos:notation "DEP";
   rdfs:label "Group of European Progressive Democrats";
   skos:prefLabel "Európai Progresszív Demokraták Csoportja"@hu, "Euroopa progressiivsete demokraatide fraktsioon"@et,
@@ -528,13 +553,14 @@
     "Grupul Democraților europeni progresiști"@ro, "Gruppo dei democratici europei di progresso"@it,
     "Grupo dos Democratas Europeus para o Progresso"@pt, "Grupo de los Demócratas Europeos de Progreso"@es,
     "Groupe des démocrates européens de progrès"@fr, "Grúpa Pháirtí Daonlathach na hEorpa"@ga,
-    "Ομάδα τωv Ευρωπαίωv Δημoκρατώv Πρoόδου"@el, "Група на Европейските прогресивни демократи"@bg .
+    "Ομάδα τωv Ευρωπαίωv Δημoκρατώv Πρoόδου"@el, "Група на Европейските прогресивни демократи"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-DEP-500> a org:Organization;
-  ep:activatedDate "1973-07-01T23:00:00"^^xsd:dateTime;
-  ep:startDate "1973-07-01T23:00:00"^^xsd:dateTime;
-  ep:endDate "1979-07-15T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "985";
+  ep:activatedDate "1973-07-01T23:00:00"^^xsd:date;
+  ep:startDate "1973-07-01T23:00:00"^^xsd:date;
+  ep:endDate "1979-07-15T22:00:00"^^xsd:date;
+  ep:orderNumber 985;
   skos:notation "DEP";
   rdfs:label "Group of European Progressive Democrats";
   skos:prefLabel "Európai Progresszív Demokraták Csoportja"@hu, "Euroopa progressiivsete demokraatide fraktsioon"@et,
@@ -548,13 +574,14 @@
     "Grupul Democraților Europeni Progresiști"@ro, "Gruppo dei democratici europei di progresso"@it,
     "Grupo dos Democratas Europeus para o Progresso"@pt, "Grupo de los Demócratas Europeos de Progreso"@es,
     "Groupe des démocrates européens de progrès"@fr, "Grúpa Pháirtí Daonlathach na hEorpa"@ga,
-    "Ομάδα τωv Ευρωπαίωv Πρooδευτικώv Δημoκρατώv"@el, "Група на Европейските прогресивни демократи"@bg .
+    "Ομάδα τωv Ευρωπαίωv Πρooδευτικώv Δημoκρατώv"@el, "Група на Европейските прогресивни демократи"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-I-EDN-518> a org:Organization;
-  ep:activatedDate "1997-01-12T23:00:00"^^xsd:dateTime;
-  ep:startDate "1997-01-12T23:00:00"^^xsd:dateTime;
-  ep:endDate "1999-07-18T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "985";
+  ep:activatedDate "1997-01-12T23:00:00"^^xsd:date;
+  ep:startDate "1997-01-12T23:00:00"^^xsd:date;
+  ep:endDate "1999-07-18T22:00:00"^^xsd:date;
+  ep:orderNumber 985;
   skos:notation "I-EDN";
   rdfs:label "Group of Independents for a Europe of Nations";
   skos:prefLabel "Függetlenek Csoportja a Nemzetek Európájáért"@hu, "Sõltumatute “Rahvusriikide Euroopa” fraktsioon"@et,
@@ -568,13 +595,14 @@
     "Grupul Neafiliaților pentru Europa Națiunilor"@ro, "Gruppo dei deputati indipendenti per l'Europa delle nazioni"@it,
     "Grupo dos Independentes pela Europa das Nações"@pt, "Grupo de Independientes por la Europa de las Naciones"@es,
     "Groupe des Indépendants pour l'Europe des Nations"@fr, "An Grúpa Neamhspleách d'Eoraip na Náisiún"@ga,
-    "Ομάδα των Ανεξαρτήτων για την Ευρώπη των Εθνών"@el, "Група на независимите за Европа на нациите"@bg .
+    "Ομάδα των Ανεξαρτήτων για την Ευρώπη των Εθνών"@el, "Група на независимите за Европа на нациите"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-ALDE-1550> a org:Organization;
-  ep:activatedDate "2004-07-19T22:00:00"^^xsd:dateTime;
-  ep:startDate "2004-07-19T22:00:00"^^xsd:dateTime;
-  ep:endDate "2009-07-12T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "90099";
+  ep:activatedDate "2004-07-19T22:00:00"^^xsd:date;
+  ep:startDate "2004-07-19T22:00:00"^^xsd:date;
+  ep:endDate "2009-07-12T22:00:00"^^xsd:date;
+  ep:orderNumber 90099;
   skos:notation "ALDE";
   rdfs:label "Group of the Alliance of Liberals and Democrats for Europe";
   skos:prefLabel "Liberálisok és Demokraták Szövetsége Európáért Képviselőcsoport"@hu,
@@ -589,13 +617,14 @@
     "Gruppo dell'Alleanza dei Democratici e dei Liberali per l'Europa"@it, "Grupo da Aliança dos Democratas e Liberais pela Europa"@pt,
     "Grupo de la Alianza de los Demócratas y Liberales por Europa"@es, "Groupe Alliance des démocrates et des libéraux pour l'Europe"@fr,
     "Grúpa Chomhghuaillíocht na Liobarálaithe agus na nDaonlathaithe don Eoraip"@ga, "Ομάδα της Συμμαχίας Φιλελευθέρων και Δημοκρατών για την Ευρώπη"@el,
-    "Група на Алианса на либералите и демократите за Европа"@bg .
+    "Група на Алианса на либералите и демократите за Европа"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-ALDE-2966> a org:Organization;
-  ep:activatedDate "2009-07-13T22:00:00"^^xsd:dateTime;
-  ep:startDate "2009-07-13T22:00:00"^^xsd:dateTime;
-  ep:endDate "2014-06-29T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "91699";
+  ep:activatedDate "2009-07-13T22:00:00"^^xsd:date;
+  ep:startDate "2009-07-13T22:00:00"^^xsd:date;
+  ep:endDate "2014-06-29T22:00:00"^^xsd:date;
+  ep:orderNumber 91699;
   skos:notation "ALDE";
   rdfs:label "Group of the Alliance of Liberals and Democrats for Europe";
   skos:prefLabel "a Liberálisok és Demokraták Szövetsége Európáért képviselőcsoport"@hu,
@@ -610,13 +639,14 @@
     "Gruppo dell'Alleanza dei Democratici e dei Liberali per l'Europa"@it, "Grupo da Aliança dos Democratas e Liberais pela Europa"@pt,
     "Grupo de la Alianza de los Demócratas y Liberales por Europa"@es, "Groupe Alliance des démocrates et des libéraux pour l'Europe"@fr,
     "Grúpa Chomhghuaillíocht na Liobarálaithe agus na nDaonlathaithe don Eoraip"@ga, "Ομάδα της Συμμαχίας Φιλελευθέρων και Δημοκρατών για την Ευρώπη"@el,
-    "Група на Алианса на либералите и демократите за Европа"@bg .
+    "Група на Алианса на либералите и демократите за Европа"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-ALDE-4283> a org:Organization;
-  ep:activatedDate "2014-06-30T22:00:00"^^xsd:dateTime;
-  ep:startDate "2014-06-30T22:00:00"^^xsd:dateTime;
-  ep:endDate "2019-06-30T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "93099";
+  ep:activatedDate "2014-06-30T22:00:00"^^xsd:date;
+  ep:startDate "2014-06-30T22:00:00"^^xsd:date;
+  ep:endDate "2019-06-30T22:00:00"^^xsd:date;
+  ep:orderNumber 93099;
   skos:notation "ALDE";
   rdfs:label "Group of the Alliance of Liberals and Democrats for Europe";
   skos:prefLabel "Liberálisok és Demokraták Szövetsége Európáért képviselőcsoport"@hu,
@@ -631,13 +661,14 @@
     "Gruppo dell'Alleanza dei Democratici e dei Liberali per l'Europa"@it, "Grupo da Aliança dos Democratas e Liberais pela Europa"@pt,
     "Grupo de la Alianza de los Demócratas y Liberales por Europa"@es, "Groupe Alliance des démocrates et des libéraux pour l'Europe"@fr,
     "Grúpa Chomhghuaillíocht na Liobarálaithe agus na nDaonlathaithe don Eoraip"@ga, "Ομάδα της Συμμαχίας Φιλελευθέρων και Δημοκρατών για την Ευρώπη"@el,
-    "Група на Алианса на либералите и демократите за Европа"@bg .
+    "Група на Алианса на либералите и демократите за Европа"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-RDE-489> a org:Organization;
-  ep:activatedDate "1984-07-22T22:00:00"^^xsd:dateTime;
-  ep:startDate "1984-07-22T22:00:00"^^xsd:dateTime;
-  ep:endDate "1995-07-03T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "1000";
+  ep:activatedDate "1984-07-22T22:00:00"^^xsd:date;
+  ep:startDate "1984-07-22T22:00:00"^^xsd:date;
+  ep:endDate "1995-07-03T22:00:00"^^xsd:date;
+  ep:orderNumber 1000;
   skos:notation "RDE";
   rdfs:label "Group of the European Democratic Alliance";
   skos:prefLabel "Az Európai Demokrata Szövetség Csoportja"@hu, "Euroopa demokraatide liidu fraktsioon"@et,
@@ -651,13 +682,14 @@
     "Grupul Adunării Democraților Europeni"@ro, "Gruppo dell'Alleanza democratica europea"@it,
     "Grupo da Aliança dos Democratas Europeus"@pt, "Grupo de Alianza Democrática Europea"@es,
     "Groupe du rassemblement des démocrates européens"@fr, "Grúpa Chomhaontas Daonlathach na hEorpa"@ga,
-    "Ομάδα Συνασπισμού των Ευρωπαίων Δημοκρατών"@el, "Група на Европейския демократичен алианс"@bg .
+    "Ομάδα Συνασπισμού των Ευρωπαίων Δημοκρατών"@el, "Група на Европейския демократичен алианс"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-ELDR-515> a org:Organization;
-  ep:activatedDate "1994-07-18T22:00:00"^^xsd:dateTime;
-  ep:startDate "1994-07-18T22:00:00"^^xsd:dateTime;
-  ep:endDate "2004-07-18T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "934";
+  ep:activatedDate "1994-07-18T22:00:00"^^xsd:date;
+  ep:startDate "1994-07-18T22:00:00"^^xsd:date;
+  ep:endDate "2004-07-18T22:00:00"^^xsd:date;
+  ep:orderNumber 934;
   skos:notation "ELDR";
   rdfs:label "Group of the European Liberal, Democrat and Reform Party";
   skos:prefLabel "az Európai Liberális, Demokrata és Reformpárt képviselőcsoportja"@hu,
@@ -672,13 +704,14 @@
     "Gruppo del Partito europeo dei liberali, democratici e riformatori"@it, "Grupo do Partido Europeu dos Liberais, Democratas e Reformistas"@pt,
     "Grupo del Partido Europeo de los Liberales, Demócratas y Reformistas"@es, "Groupe du Parti européen des libéraux, démocrates et réformateurs"@fr,
     "Grúpa Pháirtí Liobrálach Daonlathach agus Athchóirithe na hEorpa "@ga, "Ομάδα του Ευρωπαϊκού Κόμματος των Φιλελευθέρων, Δημοκρατών και Μεταρρυθμιστών"@el,
-    "Група на Европейската либерална, демократична и реформистка партия"@bg .
+    "Група на Европейската либерална, демократична и реформистка партия"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-PPE-2952> a org:Organization;
-  ep:activatedDate "2009-07-13T22:00:00"^^xsd:dateTime;
-  ep:startDate "2009-07-13T22:00:00"^^xsd:dateTime;
-  ep:endDate "2014-06-29T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "72699";
+  ep:activatedDate "2009-07-13T22:00:00"^^xsd:date;
+  ep:startDate "2009-07-13T22:00:00"^^xsd:date;
+  ep:endDate "2014-06-29T22:00:00"^^xsd:date;
+  ep:orderNumber 72699;
   skos:notation "PPE";
   rdfs:label "Group of the European People's Party (Christian Democrats)";
   skos:prefLabel "Európai Néppárt (Kereszténydemokraták) képviselőcsoport"@hu, "Euroopa Rahvapartei (kristlike demokraatide) fraktsioon"@et,
@@ -692,13 +725,14 @@
     "Grupul Partidului Popular European (Creștin Democrat)"@ro, "Gruppo del Partito Popolare Europeo (Democratici-Cristiani)"@it,
     "Grupo do Partido Popular Europeu (Democratas-Cristãos)"@pt, "Grupo del Partido Popular Europeo (Demócrata-Cristianos)"@es,
     "Groupe du Parti Populaire Européen (Démocrates-Chrétiens)"@fr, "Grúpa Pháirtí an Phobail Eorpaigh (Na Daonlathaithe Críostaí)"@ga,
-    "Κoιvoβoυλευτική Ομάδα τoυ Ευρωπαϊκoύ Λαϊκoύ Κόμματoς (Χριστιαvoδημoκράτες)"@el, "Група на Европейската народна партия (Християндемократи)"@bg .
+    "Κoιvoβoυλευτική Ομάδα τoυ Ευρωπαϊκoύ Λαϊκoύ Κόμματoς (Χριστιαvoδημoκράτες)"@el, "Група на Европейската народна партия (Християндемократи)"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-PPE-4273> a org:Organization;
-  ep:activatedDate "2014-06-30T22:00:00"^^xsd:dateTime;
-  ep:startDate "2014-06-30T22:00:00"^^xsd:dateTime;
-  ep:endDate "2019-06-30T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "78399";
+  ep:activatedDate "2014-06-30T22:00:00"^^xsd:date;
+  ep:startDate "2014-06-30T22:00:00"^^xsd:date;
+  ep:endDate "2019-06-30T22:00:00"^^xsd:date;
+  ep:orderNumber 78399;
   skos:notation "PPE";
   rdfs:label "Group of the European People's Party (Christian Democrats)";
   skos:prefLabel "Európai Néppárt (Kereszténydemokraták) képviselőcsoport"@hu, "Euroopa Rahvapartei (kristlike demokraatide) fraktsioon"@et,
@@ -712,13 +746,14 @@
     "Grupul Partidului Popular European (Creștin Democrat)"@ro, "Gruppo del Partito popolare europeo (Democratici cristiani)"@it,
     "Grupo do Partido Popular Europeu (Democratas-Cristãos)"@pt, "Grupo del Partido Popular Europeo (Demócrata-Cristianos)"@es,
     "Groupe du Parti populaire européen (Démocrates-Chrétiens)"@fr, "Grúpa Pháirtí an Phobail Eorpaigh (Na Daonlathaithe Críostaí)"@ga,
-    "Κoιvoβoυλευτική Ομάδα τoυ Ευρωπαϊκoύ Λαϊκoύ Κόμματoς (Χριστιαvoδημoκράτες)"@el, "Група на Европейската народна партия (Християндемократи)"@bg .
+    "Κoιvoβoυλευτική Ομάδα τoυ Ευρωπαϊκoύ Λαϊκoύ Κόμματoς (Χριστιαvoδημoκράτες)"@el, "Група на Европейската народна партия (Християндемократи)"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-PPE-5153> a org:Organization;
-  ep:activatedDate "2019-07-01T22:00:00"^^xsd:dateTime;
-  ep:startDate "2019-07-01T22:00:00"^^xsd:dateTime;
-  ep:endDate "2099-12-30T23:00:00"^^xsd:dateTime;
-  ep:orderNumber "81299";
+  ep:activatedDate "2019-07-01T22:00:00"^^xsd:date;
+  ep:startDate "2019-07-01T22:00:00"^^xsd:date;
+  ep:endDate "2099-12-30T23:00:00"^^xsd:date;
+  ep:orderNumber 81299;
   skos:notation "PPE";
   rdfs:label "Group of the European People's Party (Christian Democrats)";
   skos:prefLabel "Európai Néppárt (Kereszténydemokraták) képviselőcsoport"@hu, "Euroopa Rahvapartei (kristlike demokraatide) fraktsioon"@et,
@@ -732,13 +767,14 @@
     "Grupul Partidului Popular European (Creștin Democrat)"@ro, "Gruppo del Partito popolare europeo (Democratici cristiani)"@it,
     "Grupo do Partido Popular Europeu (Democratas-Cristãos)"@pt, "Grupo del Partido Popular Europeo (Demócrata-Cristianos)"@es,
     "Groupe du Parti populaire européen (Démocrates-Chrétiens)"@fr, "Grúpa Pháirtí an Phobail Eorpaigh (Na Daonlathaithe Críostaí)"@ga,
-    "Ομάδα του Ευρωπαϊκού Λαϊκού Κόμματος (Χριστιανοδημοκράτες)"@el, "Група на Европейската народна партия (Християндемократи)"@bg .
+    "Ομάδα του Ευρωπαϊκού Λαϊκού Κόμματος (Χριστιανοδημοκράτες)"@el, "Група на Европейската народна партия (Християндемократи)"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-PPE-DE-994> a org:Organization;
-  ep:activatedDate "1999-07-19T22:00:00"^^xsd:dateTime;
-  ep:startDate "1999-07-19T22:00:00"^^xsd:dateTime;
-  ep:endDate "2004-07-18T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "706";
+  ep:activatedDate "1999-07-19T22:00:00"^^xsd:date;
+  ep:startDate "1999-07-19T22:00:00"^^xsd:date;
+  ep:endDate "2004-07-18T22:00:00"^^xsd:date;
+  ep:orderNumber 706;
   skos:notation "PPE-DE";
   rdfs:label "Group of the European People's Party (Christian Democrats) and European Democrats";
   skos:prefLabel "az Európai Néppárt (Kereszténydemokraták) és Európai Demokraták képviselőcsoportja"@hu,
@@ -762,13 +798,14 @@
     "Groupe du Parti populaire européen (Démocrates-Chrétiens) et Démocrates européens"@fr,
     "Grúpa Pháirtí an Phobail Eorpaigh (Grúpa na nDaonlathaithe Críostaí) agus na nDaonlathaithe Eorpacha"@ga,
     "Ομάδα τoυ Ευρωπαϊκoύ Λαϊκoύ Κόμματoς (Χριστιαvoδημoκράτες) και των Ευρωπαίωv Δημoκρατώv"@el,
-    "Група на Европейската народна партия (Християндемократи) и Европейските демократи"@bg .
+    "Група на Европейската народна партия (Християндемократи) и Европейските демократи"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-PPE-DE-1533> a org:Organization;
-  ep:activatedDate "2004-07-19T22:00:00"^^xsd:dateTime;
-  ep:startDate "2004-07-19T22:00:00"^^xsd:dateTime;
-  ep:endDate "2009-07-12T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "71199";
+  ep:activatedDate "2004-07-19T22:00:00"^^xsd:date;
+  ep:startDate "2004-07-19T22:00:00"^^xsd:date;
+  ep:endDate "2009-07-12T22:00:00"^^xsd:date;
+  ep:orderNumber 71199;
   skos:notation "PPE-DE";
   rdfs:label "Group of the European People's Party (Christian Democrats) and European Democrats";
   skos:prefLabel "az Európai Néppárt (Kereszténydemokraták) és az Európai Demokraták Képviselőcsoportja"@hu,
@@ -792,13 +829,14 @@
     "Groupe du Parti populaire européen (Démocrates-chrétiens) et des Démocrates européens"@fr,
     "Grúpa Pháirtí an Phobail Eorpaigh (Na Daonlathaithe Críostaí) agus na nDaonlathaithe Eorpacha"@ga,
     "Ομάδα τoυ Ευρωπαϊκoύ Λαϊκoύ Κόμματoς (Χριστιαvoδημoκράτες) και των Ευρωπαίωv Δημoκρατώv"@el,
-    "Група на Европейската народна партия (Християндемократи) и Европейските демократи"@bg .
+    "Група на Европейската народна партия (Християндемократи) и Европейските демократи"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-PPE-514> a org:Organization;
-  ep:activatedDate "1994-07-18T22:00:00"^^xsd:dateTime;
-  ep:startDate "1994-07-18T22:00:00"^^xsd:dateTime;
-  ep:endDate "1999-07-18T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "802";
+  ep:activatedDate "1994-07-18T22:00:00"^^xsd:date;
+  ep:startDate "1994-07-18T22:00:00"^^xsd:date;
+  ep:endDate "1999-07-18T22:00:00"^^xsd:date;
+  ep:orderNumber 802;
   skos:notation "PPE";
   rdfs:label "Group of the European People's Party (Christian-Democratic Group)";
   skos:prefLabel "Az Európai Néppárt Csoportja (Kereszténydemokrata Csoport)"@hu, "Euroopa rahvapartei fraktsioon (kristlik-demokraatide fraktsioon)"@et,
@@ -813,13 +851,14 @@
     "Gruppo del partito popolare europeo (Gruppo democratico cristiano)"@it, "Grupo do Partido Popular Europeu (Grupo Democrata-Cristão)"@pt,
     "Grupo del Partido Popular Europeo (Grupo Demócrata Cristiano)"@es, "Groupe du parti populaire européen (Groupe démocrate-chrétien)"@fr,
     "Grúpa Pháirtí an Phobail Eorpaigh (Grúpa na nDaonlathaithe Críostaí) "@ga, "Ομάδα του Ευρωπαϊκού Λαϊκού Κόμματος (Χριστιανοδημοκράτες)"@el,
-    "Група на Европейската народна партия (Група на християндемократите)"@bg .
+    "Група на Европейската народна партия (Група на християндемократите)"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-PPE-484> a org:Organization;
-  ep:activatedDate "1979-07-16T22:00:00"^^xsd:dateTime;
-  ep:startDate "1979-07-16T22:00:00"^^xsd:dateTime;
-  ep:endDate "1994-07-17T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "830";
+  ep:activatedDate "1979-07-16T22:00:00"^^xsd:date;
+  ep:startDate "1979-07-16T22:00:00"^^xsd:date;
+  ep:endDate "1994-07-17T22:00:00"^^xsd:date;
+  ep:orderNumber 830;
   skos:notation "PPE";
   rdfs:label "Group of the European People's Party (Christian-Democratic Group)";
   skos:prefLabel "Az Európai Néppárt Csoportja (Kereszténydemokrata Csoport)"@hu, "Euroopa rahvapartei fraktsioon (kristlik-demokraatide fraktsioon)"@et,
@@ -834,13 +873,14 @@
     "Gruppo del partito popolare europeo (Gruppo democratico cristiano)"@it, "Grupo do Partido Popular Europeu (Grupo Democrata-Cristão)"@pt,
     "Grupo del Partido Popular Europeo (Grupo Demócrata Cristiano)"@es, "Groupe du parti populaire européen (Groupe démocrate-chrétien)"@fr,
     "Grúpa Pháirtí an Phobail Eorpaigh (Grúpa na nDaonlathaithe Críostaí) "@ga, "Ομάδα του Ευρωπαϊκού Λαϊκού Κόμματος (Χριστιανοδημοκράτες)"@el,
-    "Група на Европейската народна партия (Група на християндемократите)"@bg .
+    "Група на Европейската народна партия (Група на християндемократите)"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-ARE-512> a org:Organization;
-  ep:activatedDate "1994-07-18T22:00:00"^^xsd:dateTime;
-  ep:startDate "1994-07-18T22:00:00"^^xsd:dateTime;
-  ep:endDate "1999-07-18T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "979";
+  ep:activatedDate "1994-07-18T22:00:00"^^xsd:date;
+  ep:startDate "1994-07-18T22:00:00"^^xsd:date;
+  ep:endDate "1999-07-18T22:00:00"^^xsd:date;
+  ep:orderNumber 979;
   skos:notation "ARE";
   rdfs:label "Group of the European Radical Alliance";
   skos:prefLabel "Az Európai Radikális Szövetség Csoportja"@hu, "Euroopa radikaalide liidu fraktsioon"@et,
@@ -854,13 +894,14 @@
     "Grupul Alianței Radicale Europene"@ro, "Gruppo dell'Alleanza radicale europea"@it,
     "Grupo da Aliança Radical Europeia"@pt, "Grupo de Coalición Radical Europea"@es, "Groupe de l'Alliance radicale européenne"@fr,
     "Grúpa Chomhaontas Radacach na hEorpa"@ga, "Ομάδα της Ευρωπαϊκής Ριζοσπαστικής Συμμαχίας"@el,
-    "Група на Европейския радикален алианс"@bg .
+    "Група на Европейския радикален алианс"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-DR-507> a org:Organization;
-  ep:activatedDate "1984-07-23T22:00:00"^^xsd:dateTime;
-  ep:startDate "1984-07-23T22:00:00"^^xsd:dateTime;
-  ep:endDate "1989-07-23T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "984";
+  ep:activatedDate "1984-07-23T22:00:00"^^xsd:date;
+  ep:startDate "1984-07-23T22:00:00"^^xsd:date;
+  ep:endDate "1989-07-23T22:00:00"^^xsd:date;
+  ep:orderNumber 984;
   skos:notation "DR";
   rdfs:label "Group of the European Right";
   skos:prefLabel "Az Európai Jobboldal Csoportja"@hu, "Euroopa parempoolsete fraktsioon"@et,
@@ -871,13 +912,14 @@
     "Grupa Prawicy Europejskiej"@pl, "Fraktion der Europäischen Rechten"@de, "Grupul liniilor europene"@ro,
     "Gruppo delle destre europee"@it, "Grupo das Direitas Europeias"@pt, "Grupo de Derechas Europeas"@es,
     "Groupe des droites européennes"@fr, "Grúpa Eite Dheis na hEorpa"@ga, "Ομάδα των Κομμάτων της Ευρωπαϊκής Δεξιάς"@el,
-    "Група на Европейската десница"@bg .
+    "Група на Европейската десница"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-GUE/NGL-5151> a org:Organization;
-  ep:activatedDate "2019-07-01T22:00:00"^^xsd:dateTime;
-  ep:startDate "2019-07-01T22:00:00"^^xsd:dateTime;
-  ep:endDate "2099-12-30T23:00:00"^^xsd:dateTime;
-  ep:orderNumber "96099";
+  ep:activatedDate "2019-07-01T22:00:00"^^xsd:date;
+  ep:startDate "2019-07-01T22:00:00"^^xsd:date;
+  ep:endDate "2099-12-30T23:00:00"^^xsd:date;
+  ep:orderNumber 96099;
   skos:notation "GUE/NGL";
   rdfs:label "Group of the European United Left - Nordic Green Left";
   skos:prefLabel "Egységes Európai Baloldal/Északi Zöld Baloldal képviselőcsoport"@hu,
@@ -893,13 +935,14 @@
     "Grupo da Esquerda Unitária Europeia/Esquerda Nórdica Verde"@pt, "Grupo de la Izquierda Unitaria Europea/Izquierda Verde Nórdica"@es,
     "Groupe de la Gauche unitaire européenne/Gauche verte nordique"@fr, "An Grúpa den Chlé Aontaithe Eorpach/den Chlé Ghlas Nordach"@ga,
     "Ομάδα της Ευρωπαϊκής Ενωτικής Αριστεράς/Αριστερά των Πρασίνων των Βορείων Χωρών"@el,
-    "Група на Европейската обединена левица - Северна зелена левица"@bg .
+    "Група на Европейската обединена левица - Северна зелена левица"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-Verts/ALE-991> a org:Organization;
-  ep:activatedDate "1999-07-19T22:00:00"^^xsd:dateTime;
-  ep:startDate "1999-07-19T22:00:00"^^xsd:dateTime;
-  ep:endDate "2004-07-18T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "953";
+  ep:activatedDate "1999-07-19T22:00:00"^^xsd:date;
+  ep:startDate "1999-07-19T22:00:00"^^xsd:date;
+  ep:endDate "2004-07-18T22:00:00"^^xsd:date;
+  ep:orderNumber 953;
   skos:notation "Verts/ALE";
   rdfs:label "Group of the Greens/European Free Alliance";
   skos:prefLabel "a Zöldek/Európai Szabad Szövetség képviselőcsoportja"@hu, "Roheliste/Euroopa Vabaliidu fraktsioon"@et,
@@ -913,13 +956,14 @@
     "Grupul Verzilor/Alianța Liberă Europeană"@ro, "Gruppo Verde/Alleanza libera europea"@it,
     "Grupo dos Verdes/Aliança Livre Europeia"@pt, "Grupo de los Verdes/Alianza Libre Europea"@es,
     "Groupe des Verts/Alliance libre européenne"@fr, "An Grúpa Glas/Grúpa na Saor-Comhghuaillíochta Eorpaí"@ga,
-    "Ομάδα τωv Πρασίvωv / Ευρωπαϊκή Ελεύθερη Συμμαχία"@el, "Група на Зелените/Европейски свободен алианс"@bg .
+    "Ομάδα τωv Πρασίvωv / Ευρωπαϊκή Ελεύθερη Συμμαχία"@el, "Група на Зелените/Европейски свободен алианс"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-Verts/ALE-5155> a org:Organization;
-  ep:activatedDate "2019-07-01T22:00:00"^^xsd:dateTime;
-  ep:startDate "2019-07-01T22:00:00"^^xsd:dateTime;
-  ep:endDate "2099-12-30T23:00:00"^^xsd:dateTime;
-  ep:orderNumber "93199";
+  ep:activatedDate "2019-07-01T22:00:00"^^xsd:date;
+  ep:startDate "2019-07-01T22:00:00"^^xsd:date;
+  ep:endDate "2099-12-30T23:00:00"^^xsd:date;
+  ep:orderNumber 93199;
   skos:notation "Verts/ALE";
   rdfs:label "Group of the Greens/European Free Alliance";
   skos:prefLabel "Zöldek/Európai Szabad Szövetség képviselőcsoport"@hu, "Roheliste / Euroopa Vabaliidu fraktsioon"@et,
@@ -933,13 +977,14 @@
     "Grupul Verzilor/Alianța Liberă Europeană"@ro, "Gruppo dei Verdi/Alleanza libera europea"@it,
     "Grupo dos Verdes/Aliança Livre Europeia"@pt, "Grupo de los Verdes/Alianza Libre Europea"@es,
     "Groupe des Verts/Alliance libre européenne"@fr, "An Grúpa Glas/Grúpa na Saor-Comhghuaillíochta Eorpaí"@ga,
-    "Ομάδα των Πρασίνων / Ευρωπαϊκή Ελεύθερη Συμμαχία"@el, "Група на Зелените/Европейски свободен алианс"@bg .
+    "Ομάδα των Πρασίνων / Ευρωπαϊκή Ελεύθερη Συμμαχία"@el, "Група на Зелените/Европейски свободен алианс"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-Verts/ALE-2965> a org:Organization;
-  ep:activatedDate "2009-07-13T22:00:00"^^xsd:dateTime;
-  ep:startDate "2009-07-13T22:00:00"^^xsd:dateTime;
-  ep:endDate "2014-06-29T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "94299";
+  ep:activatedDate "2009-07-13T22:00:00"^^xsd:date;
+  ep:startDate "2009-07-13T22:00:00"^^xsd:date;
+  ep:endDate "2014-06-29T22:00:00"^^xsd:date;
+  ep:orderNumber 94299;
   skos:notation "Verts/ALE";
   rdfs:label "Group of the Greens/European Free Alliance";
   skos:prefLabel "a Zöldek/ az Európai Szabad Szövetség Képviselőcsoportja"@hu, "Roheliste / Euroopa Vabaliidu fraktsioon"@et,
@@ -953,13 +998,14 @@
     "Grupul Verzilor/Alianța Liberă Europeană"@ro, "Gruppo Verde/Alleanza libera europea"@it,
     "Grupo dos Verdes/Aliança Livre Europeia"@pt, "Grupo de los Verdes/Alianza Libre Europea"@es,
     "Groupe des Verts/Alliance libre européenne"@fr, "An Grúpa Glas/Grúpa na Saor-Comhghuaillíochta Eorpaí"@ga,
-    "Ομάδα τωv Πρασίvωv / Ευρωπαϊκή Ελεύθερη Συμμαχία"@el, "Група на Зелените/Европейски свободен алианс"@bg .
+    "Ομάδα τωv Πρασίvωv / Ευρωπαϊκή Ελεύθερη Συμμαχία"@el, "Група на Зелените/Европейски свободен алианс"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-Verts/ALE-4285> a org:Organization;
-  ep:activatedDate "2014-06-30T22:00:00"^^xsd:dateTime;
-  ep:startDate "2014-06-30T22:00:00"^^xsd:dateTime;
-  ep:endDate "2019-06-30T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "94799";
+  ep:activatedDate "2014-06-30T22:00:00"^^xsd:date;
+  ep:startDate "2014-06-30T22:00:00"^^xsd:date;
+  ep:endDate "2019-06-30T22:00:00"^^xsd:date;
+  ep:orderNumber 94799;
   skos:notation "Verts/ALE";
   rdfs:label "Group of the Greens/European Free Alliance";
   skos:prefLabel "Zöldek/Európai Szabad Szövetség képviselőcsoport"@hu, "Roheliste / Euroopa Vabaliidu fraktsioon"@et,
@@ -973,13 +1019,14 @@
     "Grupul Verzilor/Alianța Liberă Europeană"@ro, "Gruppo dei Verdi/Alleanza libera europea"@it,
     "Grupo dos Verdes/Aliança Livre Europeia"@pt, "Grupo de los Verdes/Alianza Libre Europea"@es,
     "Groupe des Verts/Alliance libre européenne"@fr, "An Grúpa Glas/Grúpa na Saor-Comhghuaillíochta Eorpaí"@ga,
-    "Ομάδα τωv Πρασίvωv / Ευρωπαϊκή Ελεύθερη Συμμαχία"@el, "Група на Зелените/Европейски свободен алианс"@bg .
+    "Ομάδα τωv Πρασίvωv / Ευρωπαϊκή Ελεύθερη Συμμαχία"@el, "Група на Зелените/Европейски свободен алианс"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-Verts/ALE-1538> a org:Organization;
-  ep:activatedDate "2004-07-19T22:00:00"^^xsd:dateTime;
-  ep:startDate "2004-07-19T22:00:00"^^xsd:dateTime;
-  ep:endDate "2009-07-12T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "95700";
+  ep:activatedDate "2004-07-19T22:00:00"^^xsd:date;
+  ep:startDate "2004-07-19T22:00:00"^^xsd:date;
+  ep:endDate "2009-07-12T22:00:00"^^xsd:date;
+  ep:orderNumber 95700;
   skos:notation "Verts/ALE";
   rdfs:label "Group of the Greens/European Free Alliance";
   skos:prefLabel "a Zöldek/ az Európai Szabad Szövetség Képviselőcsoportja"@hu, "Roheliste / Euroopa Vabaliidu fraktsioon"@et,
@@ -993,13 +1040,14 @@
     "Grupul Verzilor/Alianța Liberă Europeană"@ro, "Gruppo Verde/Alleanza libera europea"@it,
     "Grupo dos Verdes/Aliança Livre Europeia"@pt, "Grupo de los Verdes/Alianza Libre Europea"@es,
     "Groupe des Verts/Alliance libre européenne"@fr, "An Grúpa Glas/Grúpa na Saor-Comhghuaillíochta Eorpaí"@ga,
-    "Ομάδα τωv Πρασίvωv / Ευρωπαϊκή Ελεύθερη Συμμαχία"@el, "Група на Зелените/Европейски свободен алианс"@bg .
+    "Ομάδα τωv Πρασίvωv / Ευρωπαϊκή Ελεύθερη Συμμαχία"@el, "Група на Зелените/Европейски свободен алианс"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-PSE-509> a org:Organization;
-  ep:activatedDate "1993-04-20T22:00:00"^^xsd:dateTime;
-  ep:startDate "1993-04-20T22:00:00"^^xsd:dateTime;
-  ep:endDate "2004-07-18T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "768";
+  ep:activatedDate "1993-04-20T22:00:00"^^xsd:date;
+  ep:startDate "1993-04-20T22:00:00"^^xsd:date;
+  ep:endDate "2004-07-18T22:00:00"^^xsd:date;
+  ep:orderNumber 768;
   skos:notation "PSE";
   rdfs:label "Group of the Party of European Socialists";
   skos:prefLabel "az Európai Szocialisták Pártjának képviselőcsoportja"@hu, "Euroopa Sotsialistide Erakonna fraktsioon"@et,
@@ -1013,13 +1061,14 @@
     "Grupul Parlamentar al Paridului Socialist European"@ro, "Gruppo del Partito del socialismo europeo"@it,
     "Grupo do Partido dos Socialistas Europeus"@pt, "Grupo Parlamentario del Partido Socialista Europeo"@es,
     "Groupe parlementaire du Parti socialiste européen"@fr, "Grúpa Pháirtí na Sóisialaithe Eorpacha"@ga,
-    "Ομάδα του Ευρωπαϊκού Σοσιαλιστικού Κόμματος"@el, "Група на Партията на европейските социалисти"@bg .
+    "Ομάδα του Ευρωπαϊκού Σοσιαλιστικού Κόμματος"@el, "Група на Партията на европейските социалисти"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-S%26D-2953> a org:Organization;
-  ep:activatedDate "2009-07-13T22:00:00"^^xsd:dateTime;
-  ep:startDate "2009-07-13T22:00:00"^^xsd:dateTime;
-  ep:endDate "2014-06-29T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "80499";
+  ep:activatedDate "2009-07-13T22:00:00"^^xsd:date;
+  ep:startDate "2009-07-13T22:00:00"^^xsd:date;
+  ep:endDate "2014-06-29T22:00:00"^^xsd:date;
+  ep:orderNumber 80499;
   skos:notation "S&D";
   rdfs:label "Group of the Progressive Alliance of Socialists and Democrats in the European Parliament";
   skos:prefLabel "Szocialisták és Demokraták Progresszív Szövetsége Európai Parlamenti Képviselőcsoportja"@hu,
@@ -1041,13 +1090,14 @@
     "Groupe de l'Alliance Progressiste des Socialistes et Démocrates au Parlement européen"@fr,
     "Grúpa an Aontais Fhorásach na Sóisialaithe agus na nDaonlathaithe i bParliament na hEorpa"@ga,
     "Ομάδα της Προοδευτικής Συμμαχίας των Σοσιαλιστών και Δημοκρατών στο Ευρωπαϊκό Κοινοβούλιο"@el,
-    "Група на Прогресивния алианс на социалистите и демократите в Европейския парламент"@bg .
+    "Група на Прогресивния алианс на социалистите и демократите в Европейския парламент"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-S%26D-4284> a org:Organization;
-  ep:activatedDate "2014-06-30T22:00:00"^^xsd:dateTime;
-  ep:startDate "2014-06-30T22:00:00"^^xsd:dateTime;
-  ep:endDate "2019-06-30T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "81599";
+  ep:activatedDate "2014-06-30T22:00:00"^^xsd:date;
+  ep:startDate "2014-06-30T22:00:00"^^xsd:date;
+  ep:endDate "2019-06-30T22:00:00"^^xsd:date;
+  ep:orderNumber 81599;
   skos:notation "S&D";
   rdfs:label "Group of the Progressive Alliance of Socialists and Democrats in the European Parliament";
   skos:prefLabel "Szocialisták és Demokraták Progresszív Szövetsége az Európai Parlamentben képviselőcsoport"@hu,
@@ -1069,13 +1119,14 @@
     "Groupe de l'Alliance Progressiste des Socialistes et Démocrates au Parlement européen"@fr,
     "Grúpa an Aontais Fhorásach na Sóisialaithe agus na nDaonlathaithe i bParliament na hEorpa"@ga,
     "Ομάδα της Προοδευτικής Συμμαχίας των Σοσιαλιστών και Δημοκρατών στο Ευρωπαϊκό Κοινοβούλιο"@el,
-    "Група на Прогресивния алианс на социалистите и демократите в Европейския парламент"@bg .
+    "Група на Прогресивния алианс на социалистите и демократите в Европейския парламент"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-S%26D-5154> a org:Organization;
-  ep:activatedDate "2019-07-01T22:00:00"^^xsd:dateTime;
-  ep:startDate "2019-07-01T22:00:00"^^xsd:dateTime;
-  ep:endDate "2099-12-30T23:00:00"^^xsd:dateTime;
-  ep:orderNumber "85399";
+  ep:activatedDate "2019-07-01T22:00:00"^^xsd:date;
+  ep:startDate "2019-07-01T22:00:00"^^xsd:date;
+  ep:endDate "2099-12-30T23:00:00"^^xsd:date;
+  ep:orderNumber 85399;
   skos:notation "S&D";
   rdfs:label "Group of the Progressive Alliance of Socialists and Democrats in the European Parliament";
   skos:prefLabel "Szocialisták és Demokraták Progresszív Szövetsége az Európai Parlamentben képviselőcsoport"@hu,
@@ -1097,13 +1148,14 @@
     "Groupe de l'Alliance Progressiste des Socialistes et Démocrates au Parlement européen"@fr,
     "Grúpa an Aontais Fhorásach na Sóisialaithe agus na nDaonlathaithe i bParliament na hEorpa"@ga,
     "Ομάδα της Προοδευτικής Συμμαχίας των Σοσιαλιστών και Δημοκρατών στο Ευρωπαϊκό Κοινοβούλιο"@el,
-    "Група на Прогресивния алианс на социалистите и демократите в Европейския парламент"@bg .
+    "Група на Прогресивния алианс на социалистите и демократите в Европейския парламент"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-ID-5588> a org:Organization;
-  ep:activatedDate "2019-07-01T22:00:00"^^xsd:dateTime;
-  ep:startDate "2019-07-01T22:00:00"^^xsd:dateTime;
-  ep:endDate "2099-12-30T23:00:00"^^xsd:dateTime;
-  ep:orderNumber "92399";
+  ep:activatedDate "2019-07-01T22:00:00"^^xsd:date;
+  ep:startDate "2019-07-01T22:00:00"^^xsd:date;
+  ep:endDate "2099-12-30T23:00:00"^^xsd:date;
+  ep:orderNumber 92399;
   skos:notation "ID";
   rdfs:label "Identity and Democracy Group";
   skos:prefLabel "Identitás és Demokrácia képviselőcsoport"@hu, "Identiteedi ja Demokraatia fraktsioon"@et,
@@ -1114,13 +1166,14 @@
     "Skupina Identiteta in demokracija"@sl, "Grupa Tożsamość i Demokracja"@pl, "Fraktion Identität und Demokratie"@de,
     "Grupul Identitate și Democrație"@ro, "Gruppo Identità e Democrazia"@it, "Grupo Identidade e Democracia"@pt,
     "Grupo Identidad y Democracia"@es, "Groupe «Identité et démocratie»"@fr, "Grúpa na Féiniúlachta agus an Daonlathais"@ga,
-    "Ομάδα Ταυτότητας και Δημοκρατίας"@el, "Група „Идентичност и демокрация“"@bg .
+    "Ομάδα Ταυτότητας και Δημοκρατίας"@el, "Група „Идентичност и демокрация“"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-ITS-2345> a org:Organization;
-  ep:activatedDate "2007-01-14T23:00:00"^^xsd:dateTime;
-  ep:startDate "2007-01-14T23:00:00"^^xsd:dateTime;
-  ep:endDate "2007-11-12T23:00:00"^^xsd:dateTime;
-  ep:orderNumber "99998";
+  ep:activatedDate "2007-01-14T23:00:00"^^xsd:date;
+  ep:startDate "2007-01-14T23:00:00"^^xsd:date;
+  ep:endDate "2007-11-12T23:00:00"^^xsd:date;
+  ep:orderNumber 99998;
   skos:notation "ITS";
   rdfs:label "Identity, Tradition and Sovereignty Group";
   skos:prefLabel "az Identitás, Hagyomány, Szuverenitás képviselőcsoport"@hu, "fraktsioon Identiteet, Traditsioon, Suveräänsus"@et,
@@ -1134,13 +1187,14 @@
     "Grupul Identitate, Tradiție, Suveranitate"@ro, "Gruppo Identità, Tradizione, Sovranità"@it,
     "Grupo Identidade, Tradição, Soberania"@pt, "Grupo Identidad, Tradición, Soberanía"@es,
     "Groupe Identité, Tradition, Souveraineté"@fr, "An Grúpa don Fhéiniúlacht, don Traidisiún agus don Cheannasacht"@ga,
-    "Ομάδα Ταυτότητα, Παράδοση, Κυριαρχία"@el, "Група Идентичност, Традиция, Суверенитет"@bg .
+    "Ομάδα Ταυτότητα, Παράδοση, Κυριαρχία"@el, "Група Идентичност, Традиция, Суверенитет"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-IND/DEM-1554> a org:Organization;
-  ep:activatedDate "2004-07-19T22:00:00"^^xsd:dateTime;
-  ep:startDate "2004-07-19T22:00:00"^^xsd:dateTime;
-  ep:endDate "2009-07-12T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "97799";
+  ep:activatedDate "2004-07-19T22:00:00"^^xsd:date;
+  ep:startDate "2004-07-19T22:00:00"^^xsd:date;
+  ep:endDate "2009-07-12T22:00:00"^^xsd:date;
+  ep:orderNumber 97799;
   skos:notation "IND/DEM";
   rdfs:label "Independence/Democracy Group";
   skos:prefLabel "Függetlenség/Demokrácia Képviselőcsoport"@hu, "Fraktsioon Iseseisvus/Demokraatia"@et,
@@ -1152,13 +1206,14 @@
     "Grupa Niepodległość/Demokracja"@pl, "Fraktion Unabhängigkeit/Demokratie"@de, "Grupul Independență și Democrație"@ro,
     "Gruppo Indipendenza/Democrazia"@it, "Grupo Independência/Democracia"@pt, "Grupo Independencia/Democracia"@es,
     "Groupe Indépendance/Démocratie"@fr, "Grúpa an Neamhspleáchais/an Daonlathais"@ga,
-    "Ομάδα Ανεξαρτησία/Δημοκρατία"@el, "Група Независимост/Демокрация"@bg .
+    "Ομάδα Ανεξαρτησία/Δημοκρατία"@el, "Група Независимост/Демокрация"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-CG-495> a org:Organization;
-  ep:activatedDate "1989-07-19T22:00:00"^^xsd:dateTime;
-  ep:startDate "1989-07-19T22:00:00"^^xsd:dateTime;
-  ep:endDate "1994-07-17T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "985";
+  ep:activatedDate "1989-07-19T22:00:00"^^xsd:date;
+  ep:startDate "1989-07-19T22:00:00"^^xsd:date;
+  ep:endDate "1994-07-17T22:00:00"^^xsd:date;
+  ep:orderNumber 985;
   skos:notation "CG";
   rdfs:label "Left Unity";
   skos:prefLabel "Baloldali Szövetség"@hu, "Vasakpoolsete Ühendus"@et, "Yhtyneen vasemmiston ryhmä"@fi,
@@ -1167,13 +1222,14 @@
     "Enad vänster"@sv, "Koalicija ljevice"@hr, "Združena levica"@sl, "Unia Lewicowa"@pl,
     "Koalition der Linken"@de, "Coaliția de Stânga"@ro, "Coalizione delle Sinistre"@it,
     "Coligação de Esquerda"@pt, "Coalición de Izquierda"@es, "Coalition des Gauches"@fr,
-    "Aontacht Chlé"@ga, "Συνασπισμός της Αριστεράς"@el, "Коалиция на левите"@bg .
+    "Aontacht Chlé"@ga, "Συνασπισμός της Αριστεράς"@el, "Коалиция на левите"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-L-1229> a org:Organization;
-  ep:activatedDate "1979-07-16T22:00:00"^^xsd:dateTime;
-  ep:startDate "1979-07-16T22:00:00"^^xsd:dateTime;
-  ep:endDate "1985-12-11T23:00:00"^^xsd:dateTime;
-  ep:orderNumber "969";
+  ep:activatedDate "1979-07-16T22:00:00"^^xsd:date;
+  ep:startDate "1979-07-16T22:00:00"^^xsd:date;
+  ep:endDate "1985-12-11T23:00:00"^^xsd:date;
+  ep:orderNumber 969;
   skos:notation "L";
   rdfs:label "Liberal and Democratic Group";
   skos:prefLabel "Liberálisok és Demokraták Csoportja"@hu, "Liberaalide ja demokraatide fraktsioon"@et,
@@ -1184,13 +1240,14 @@
     "Liberalno-demokratska skupina"@sl, "Grupa Liberalna i Demokratyczna"@pl, "Liberale und Demokratische Fraktion"@de,
     "Grupul Liberal și Democrat"@ro, "Gruppo liberale e democratico"@it, "Grupo Liberal e Democrático"@pt,
     "Grupo Democrático y Liberal"@es, "Groupe libéral et démocratique"@fr, " An Grúpa Liobrálach, Daonlathach  "@ga,
-    "Φιλελεύθερη και Δημοκρατική Ομάδα"@el, "Група на либералите и демократите"@bg .
+    "Φιλελεύθερη και Δημοκρατική Ομάδα"@el, "Група на либералите и демократите"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-L-498> a org:Organization;
-  ep:activatedDate "1953-06-19T23:00:00"^^xsd:dateTime;
-  ep:startDate "1953-06-19T23:00:00"^^xsd:dateTime;
-  ep:endDate "1979-07-15T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "976";
+  ep:activatedDate "1953-06-19T23:00:00"^^xsd:date;
+  ep:startDate "1953-06-19T23:00:00"^^xsd:date;
+  ep:endDate "1979-07-15T22:00:00"^^xsd:date;
+  ep:orderNumber 976;
   skos:notation "L";
   rdfs:label "Liberal and Democratic Group";
   skos:prefLabel "Liberálisok és Demokraták Csoportja"@hu, "Liberaalide ja demokraatide fraktsioon"@et,
@@ -1201,13 +1258,14 @@
     "Liberalno-demokratska skupina"@sl, "Grupa Liberalna i Demokratyczna"@pl, "Liberale und Demokratische Fraktion"@de,
     "Grupul Liberal și Democrat"@ro, "Gruppo liberale e democratico"@it, "Grupo Liberal e Democrático"@pt,
     "Grupo Democrático y Liberal"@es, "Groupe libéral et démocratique"@fr, " An Grúpa Liobrálach, Daonlathach  "@ga,
-    "Ομάδα των Ευρωπαίων Δημοκρατών"@el, "Група на либералите и демократите"@bg .
+    "Ομάδα των Ευρωπαίων Δημοκρατών"@el, "Група на либералите и демократите"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-LDR-488> a org:Organization;
-  ep:activatedDate "1985-12-12T23:00:00"^^xsd:dateTime;
-  ep:startDate "1985-12-12T23:00:00"^^xsd:dateTime;
-  ep:endDate "1994-07-17T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "954";
+  ep:activatedDate "1985-12-12T23:00:00"^^xsd:date;
+  ep:startDate "1985-12-12T23:00:00"^^xsd:date;
+  ep:endDate "1994-07-17T22:00:00"^^xsd:date;
+  ep:orderNumber 954;
   skos:notation "LDR";
   rdfs:label "Liberal and Democratic Reformist Group";
   skos:prefLabel "Liberális és Demokrata Reformisták Csoportja"@hu, "Liberaalide ja demokraatlike reformistide partei fraktsioon"@et,
@@ -1221,13 +1279,14 @@
     "Grupul Liberal, Democrat și Reformator"@ro, "Gruppo liberale e democratico riformatore"@it,
     "Grupo Liberal, Democrático e Reformista"@pt, "Grupo Liberal, Democrático y Reformista"@es,
     "Groupe libéral, démocratique et réformateur"@fr, " An Grúpa Liobrálach, Daonlathach agus Leasaitheach "@ga,
-    "Φιλελεύθερη, Δημοκρατική και Μεταρρυθμιστική Ομάδα"@el, "Група на либералите, демократите и реформаторите"@bg .
+    "Φιλελεύθερη, Δημοκρατική και Μεταρρυθμιστική Ομάδα"@el, "Група на либералите, демократите и реформаторите"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-NI-505> a org:Organization;
-  ep:activatedDate "1953-06-22T23:00:00"^^xsd:dateTime;
-  ep:startDate "1953-06-22T23:00:00"^^xsd:dateTime;
-  ep:endDate "1979-07-15T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "1004";
+  ep:activatedDate "1953-06-22T23:00:00"^^xsd:date;
+  ep:startDate "1953-06-22T23:00:00"^^xsd:date;
+  ep:endDate "1979-07-15T22:00:00"^^xsd:date;
+  ep:orderNumber 1004;
   skos:notation "NI";
   rdfs:label "Non-attached";
   skos:prefLabel "Párton kívüli"@hu, "“Mitte-ühinenud”"@et, "Sitoutumattomat"@fi, "Nezařazení"@cs,
@@ -1235,13 +1294,14 @@
     "Non-attached"@en, "Unden for grupperne"@da, "Niet-Ingeschrevenen"@nl, "Grupplösa"@sv,
     "Nezavisni zastupnici"@hr, "Neuvrščeni"@sl, "Niezwiazany"@pl, "Fraktionslos"@de, "Deputați neafiliați"@ro,
     "Non iscritti"@it, "Não-inscritos"@pt, "No inscritos"@es, "Non inscrits"@fr, "Feisirí neamhcheangailte"@ga,
-    "Μη Εγγεγραμμένοι"@el, "Независими"@bg .
+    "Μη Εγγεγραμμένοι"@el, "Независими"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-NI-492> a org:Organization;
-  ep:activatedDate "1979-07-16T22:00:00"^^xsd:dateTime;
-  ep:startDate "1979-07-16T22:00:00"^^xsd:dateTime;
-  ep:endDate "2004-07-18T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "1044";
+  ep:activatedDate "1979-07-16T22:00:00"^^xsd:date;
+  ep:startDate "1979-07-16T22:00:00"^^xsd:date;
+  ep:endDate "2004-07-18T22:00:00"^^xsd:date;
+  ep:orderNumber 1044;
   skos:notation "NI";
   rdfs:label "Non-attached";
   skos:prefLabel "független képviselők"@hu, "fraktsioonilise kuuluvuseta parlamendiliikmed"@et,
@@ -1250,13 +1310,14 @@
     "Niet-ingeschrevenen"@nl, "Grupplösa"@sv, "Nezavisni zastupnici"@hr, "Samostojni poslanci"@sl,
     "Niezrzeszeni"@pl, "Fraktionslos"@de, "Deputați neafiliați"@ro, "Non iscritti"@it,
     "Não-inscritos"@pt, "No inscritos"@es, "Non-inscrits"@fr, "Feisirí neamhcheangailte"@ga,
-    "Μη Εγγεγραμμένοι"@el, "Независими"@bg .
+    "Μη Εγγεγραμμένοι"@el, "Независими"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-NI-5152> a org:Organization;
-  ep:activatedDate "2019-07-01T22:00:00"^^xsd:dateTime;
-  ep:startDate "2019-07-01T22:00:00"^^xsd:dateTime;
-  ep:endDate "2099-12-30T23:00:00"^^xsd:dateTime;
-  ep:orderNumber "99999";
+  ep:activatedDate "2019-07-01T22:00:00"^^xsd:date;
+  ep:startDate "2019-07-01T22:00:00"^^xsd:date;
+  ep:endDate "2099-12-30T23:00:00"^^xsd:date;
+  ep:orderNumber 99999;
   skos:notation "NI";
   rdfs:label "Non-attached Members";
   skos:prefLabel "független képviselők"@hu, "Fraktsioonilise kuuluvuseta parlamendiliikmed"@et,
@@ -1265,13 +1326,14 @@
     "Løsgængere"@da, "Niet-fractiegebonden leden"@nl, "Grupplösa"@sv, "Nezavisni zastupnici"@hr,
     "Samostojni poslanci"@sl, "Niezrzeszeni"@pl, "Fraktionslos"@de, "Deputați neafiliați"@ro,
     "Non iscritti"@it, "Não Inscritos"@pt, "No inscritos"@es, "Non-inscrits"@fr, "Feisirí Neamhcheangailte"@ga,
-    "Μη Εγγεγραμμένοι"@el, "Независими членове"@bg .
+    "Μη Εγγεγραμμένοι"@el, "Независими членове"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-NI-2978> a org:Organization;
-  ep:activatedDate "2009-07-13T22:00:00"^^xsd:dateTime;
-  ep:startDate "2009-07-13T22:00:00"^^xsd:dateTime;
-  ep:endDate "2014-06-29T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "99999";
+  ep:activatedDate "2009-07-13T22:00:00"^^xsd:date;
+  ep:startDate "2009-07-13T22:00:00"^^xsd:date;
+  ep:endDate "2014-06-29T22:00:00"^^xsd:date;
+  ep:orderNumber 99999;
   skos:notation "NI";
   rdfs:label "Non-attached Members";
   skos:prefLabel "Független képviselők"@hu, "Fraktsioonilise kuuluvuseta parlamendiliikmed"@et,
@@ -1280,13 +1342,14 @@
     "Løsgængere"@da, "Niet-fractiegebonden leden"@nl, "Grupplösa"@sv, "Nezavisni zastupnici"@hr,
     "Samostojni poslanci"@sl, "Niezrzeszeni"@pl, "Fraktionslos"@de, "Deputați neafiliați"@ro,
     "Non iscritti"@it, "Não-inscritos"@pt, "No inscritos"@es, "Non-inscrits"@fr, "Feisirí neamhcheangailte"@ga,
-    "Μη Εγγεγραμμένοι"@el, "Независими членове"@bg .
+    "Μη Εγγεγραμμένοι"@el, "Независими членове"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-NI-1541> a org:Organization;
-  ep:activatedDate "2004-07-19T22:00:00"^^xsd:dateTime;
-  ep:startDate "2004-07-19T22:00:00"^^xsd:dateTime;
-  ep:endDate "2009-07-12T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "99999";
+  ep:activatedDate "2004-07-19T22:00:00"^^xsd:date;
+  ep:startDate "2004-07-19T22:00:00"^^xsd:date;
+  ep:endDate "2009-07-12T22:00:00"^^xsd:date;
+  ep:orderNumber 99999;
   skos:notation "NI";
   rdfs:label "Non-attached Members";
   skos:prefLabel "Független képviselők"@hu, "Fraktsioonilise kuuluvuseta parlamendiliikmed"@et,
@@ -1295,13 +1358,14 @@
     "Løsgængere"@da, "Niet-ingeschrevenen"@nl, "Grupplösa"@sv, "Nezavisni zastupnici"@hr,
     "Samostojni poslanci"@sl, "Niezrzeszeni"@pl, "Fraktionslos"@de, "Deputați neafiliați"@ro,
     "Non iscritti"@it, "Não-inscritos"@pt, "No inscritos"@es, "Non-inscrits"@fr, "Feisirí neamhcheangailte"@ga,
-    "Μη Εγγεγραμμένοι"@el, "Независими членове"@bg .
+    "Μη Εγγεγραμμένοι"@el, "Независими членове"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-NI-3968> a org:Organization;
-  ep:activatedDate "2014-06-30T22:00:00"^^xsd:dateTime;
-  ep:startDate "2014-06-30T22:00:00"^^xsd:dateTime;
-  ep:endDate "2019-06-30T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "99999";
+  ep:activatedDate "2014-06-30T22:00:00"^^xsd:date;
+  ep:startDate "2014-06-30T22:00:00"^^xsd:date;
+  ep:endDate "2019-06-30T22:00:00"^^xsd:date;
+  ep:orderNumber 99999;
   skos:notation "NI";
   rdfs:label "Non-attached Members";
   skos:prefLabel "független képviselők"@hu, "Fraktsioonilise kuuluvuseta parlamendiliikmed"@et,
@@ -1310,22 +1374,24 @@
     "Løsgængere"@da, "Niet-fractiegebonden leden"@nl, "Grupplösa"@sv, "Nezavisni zastupnici"@hr,
     "Samostojni poslanci"@sl, "Niezrzeszeni"@pl, "Fraktionslos"@de, "Deputați neafiliați"@ro,
     "Non iscritti"@it, "Não Inscritos"@pt, "No inscritos"@es, "Non-inscrits"@fr, "Feisirí Neamhcheangailte"@ga,
-    "Μη Εγγεγραμμένοι"@el, "Независими членове"@bg .
+    "Μη Εγγεγραμμένοι"@el, "Независими членове"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-Aucun-2602> a org:Organization;
-  ep:activatedDate "1952-01-31T23:00:00"^^xsd:dateTime;
-  ep:startDate "1952-01-31T23:00:00"^^xsd:dateTime;
-  ep:endDate "1953-12-31T23:00:00"^^xsd:dateTime;
-  ep:orderNumber "null";
+  ep:activatedDate "1952-01-31T23:00:00"^^xsd:date;
+  ep:startDate "1952-01-31T23:00:00"^^xsd:date;
+  ep:endDate "1953-12-31T23:00:00"^^xsd:date;
+  ep:orderNumber "null"^^xsd:integer;
   skos:notation "Aucun";
   rdfs:label "Pas de groupe politique au PE";
-  skos:prefLabel "Pas de groupe politique au PE"@fr .
+  skos:prefLabel "Pas de groupe politique au PE"@fr;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-ARC-490> a org:Organization;
-  ep:activatedDate "1989-07-24T22:00:00"^^xsd:dateTime;
-  ep:startDate "1989-07-24T22:00:00"^^xsd:dateTime;
-  ep:endDate "1994-07-17T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "986";
+  ep:activatedDate "1989-07-24T22:00:00"^^xsd:date;
+  ep:startDate "1989-07-24T22:00:00"^^xsd:date;
+  ep:endDate "1994-07-17T22:00:00"^^xsd:date;
+  ep:orderNumber 986;
   skos:notation "ARC";
   rdfs:label "Rainbow Group in the European Parliament";
   skos:prefLabel "Szivárvány Csoport az Európai Parlamentben"@hu, "“Rainbow” fraktsioon Euroopa Parlamendis"@et,
@@ -1339,13 +1405,14 @@
     "Grupul „Arc-en-Ciel” din  Parlamentul European"@ro, "Gruppo Arcobaleno del Parlamento Europeo"@it,
     "Grupo Arco-Íris ao Parlamento Europeu"@pt, "Grupo Arco Iris del Parlamento Europeo"@es,
     "Groupe Arc-en-Ciel au Parlement Européen"@fr, "An Grúpa Bogha Ceatha i bParlaimint na hEorpa "@ga,
-    "Ομάδα Ουράνιου Τόξου στο Ευρωπαϊκό Κοινοβούλιο"@el, "Група Дъга в Европейския парламент"@bg .
+    "Ομάδα Ουράνιου Τόξου στο Ευρωπαϊκό Κοινοβούλιο"@el, "Група Дъга в Европейския парламент"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-ARC-506> a org:Organization;
-  ep:activatedDate "1984-07-23T22:00:00"^^xsd:dateTime;
-  ep:startDate "1984-07-23T22:00:00"^^xsd:dateTime;
-  ep:endDate "1989-07-23T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "980";
+  ep:activatedDate "1984-07-23T22:00:00"^^xsd:date;
+  ep:startDate "1984-07-23T22:00:00"^^xsd:date;
+  ep:endDate "1989-07-23T22:00:00"^^xsd:date;
+  ep:orderNumber 980;
   skos:notation "ARC";
   rdfs:label "Rainbow Group: Federation of the Green-Alternative European Links, Agelev-Ecolo, the Danish People's Movement against Membership of the European Community and the European Free Alliance in the European Parliament";
   skos:prefLabel "Szivárvány (Rainbow) Csoport: Az Európai Baloldai Zöld Alternatívok szövetsége, az Agelev-Ecolo és Dán Népi Mozgalom az Európai Uniós tagság ellen"@hu,
@@ -1370,13 +1437,14 @@
     "Groupe arc-en-ciel: Fédération de l'Alliance verte-Alternative européenne, d'Agalev-Ecolo, du Mouvement poupulaire danois contre l'appartenence à la Communauté européenne, et de l'Alliance libre européenne au sein du Parlement européen"@fr,
     "An Grúpa Bogha Ceatha, Cónaidhm na Nasc Eorpach Glas-Ailtéarnachta, Agelev-Ecolo, Gluaiseacht Phobal na Danmhairge i gcoinne comhaltais sa Chomhphobal Eorpach agus Grúpa na Saor-Chomhghuaillíochta Eorpaí i bParlaimint na hEorpa"@ga,
     "Ομάδα \"Ουράνιο Τόξο\": Ομοσπονδία του Ευρωπαϊκού Συνασπισμού Πράσινων και Εναλλακτικών, του Agalev-Ecolo, του Λαΐκού Κινήματος Δανίας ενάντια στη Συμμετοχή στην Ευρωπαϊκή Κοινότητα, και της Ελεύθερης Ευρωπαϊκής Συμμαχίαςμ στα πλαίσια του Ευρωπαϊκού Κοινοβουλίου"@el,
-    "Група Дъга: Федерация на Зеления алианс- Европейска алтернатива, Агалев-Еколо, Датското народно движение срещу членство в Европейската общност и Европейски свободен алианс в Европейския парламент"@bg .
+    "Група Дъга: Федерация на Зеления алианс- Европейска алтернатива, Агалев-Еколо, Датското народно движение срещу членство в Европейската общност и Европейски свободен алианс в Европейския парламент"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-Renew-5704> a org:Organization;
-  ep:activatedDate "2019-07-01T22:00:00"^^xsd:dateTime;
-  ep:startDate "2019-07-01T22:00:00"^^xsd:dateTime;
-  ep:endDate "2099-12-30T23:00:00"^^xsd:dateTime;
-  ep:orderNumber "90199";
+  ep:activatedDate "2019-07-01T22:00:00"^^xsd:date;
+  ep:startDate "2019-07-01T22:00:00"^^xsd:date;
+  ep:endDate "2099-12-30T23:00:00"^^xsd:date;
+  ep:orderNumber 90199;
   skos:notation "Renew";
   rdfs:label "Renew Europe Group";
   skos:prefLabel "Renew Europe képviselőcsoport"@hu, "Uueneva Euroopa fraktsioon"@et,
@@ -1385,13 +1453,14 @@
     "Gruppen Renew Europe"@da, "Fractie Renew Europe"@nl, "Renew Europe Group"@sv, "Klub zastupnika Renew Europe"@hr,
     "skupina Renew Europe"@sl, "Grupa Renew Europe"@pl, "Fraktion Renew Europe"@de, "Grupul Renew Europe"@ro,
     "Gruppo Renew Europe"@it, "Grupo Renew Europe"@pt, "Grupo Renew Europe"@es, "Groupe Renew Europe"@fr,
-    "Grúpa Renew Europe"@ga, "Ομάδα Renew Europe"@el, "група „Renew Europe“"@bg .
+    "Grúpa Renew Europe"@ga, "Ομάδα Renew Europe"@el, "група „Renew Europe“"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-S-485> a org:Organization;
-  ep:activatedDate "1979-07-16T22:00:00"^^xsd:dateTime;
-  ep:startDate "1979-07-16T22:00:00"^^xsd:dateTime;
-  ep:endDate "1993-04-19T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "797";
+  ep:activatedDate "1979-07-16T22:00:00"^^xsd:date;
+  ep:startDate "1979-07-16T22:00:00"^^xsd:date;
+  ep:endDate "1993-04-19T22:00:00"^^xsd:date;
+  ep:orderNumber 797;
   skos:notation "S";
   rdfs:label "Socialist Group";
   skos:prefLabel "Szocialista Csoport"@hu, "Sotsialistide fraktsioon"@et, "Sosiaalidemokraattisen puolueen ryhmä"@fi,
@@ -1400,13 +1469,14 @@
     "Socialistgruppen"@sv, "Klub zastupnika socijalista"@hr, "Skupina socialistov"@sl,
     "Grupa Socjalistów"@pl, "Sozialistische Fraktion"@de, "Grupul Socialist"@ro, "Gruppo socialista"@it,
     "Grupo Socialista"@pt, "Grupo Socialista"@es, "Groupe socialiste"@fr, "An Grúpa Sóisialach"@ga,
-    "Σοσιαλιστική Ομάδα"@el, "Група на социалистите"@bg .
+    "Σοσιαλιστική Ομάδα"@el, "Група на социалистите"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-S-496> a org:Organization;
-  ep:activatedDate "1953-06-22T23:00:00"^^xsd:dateTime;
-  ep:startDate "1953-06-22T23:00:00"^^xsd:dateTime;
-  ep:endDate "1979-07-15T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "934";
+  ep:activatedDate "1953-06-22T23:00:00"^^xsd:date;
+  ep:startDate "1953-06-22T23:00:00"^^xsd:date;
+  ep:endDate "1979-07-15T22:00:00"^^xsd:date;
+  ep:orderNumber 934;
   skos:notation "S";
   rdfs:label "Socialist Group";
   skos:prefLabel "Szocialista Csoport"@hu, "Sotsialistide fraktsioon"@et, "Sosiaalidemokraattisen puolueen ryhmä"@fi,
@@ -1415,13 +1485,14 @@
     "Socialistgruppen"@sv, "Klub zastupnika socijalista"@hr, "Skupina socialistov"@sl,
     "Grupa Socjalistów"@pl, "Sozialistische Fraktion"@de, "Grupul Socialist"@ro, "Gruppo socialista"@it,
     "Grupo Socialista"@pt, "Grupo Socialista"@es, "Groupe socialiste"@fr, "An Grúpa Sóisialach"@ga,
-    "Σoσιαλιστική Ομάδα"@el, "Група на социалистите"@bg .
+    "Σoσιαλιστική Ομάδα"@el, "Група на социалистите"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-PSE-1534> a org:Organization;
-  ep:activatedDate "2004-07-19T22:00:00"^^xsd:dateTime;
-  ep:startDate "2004-07-19T22:00:00"^^xsd:dateTime;
-  ep:endDate "2009-07-12T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "78699";
+  ep:activatedDate "2004-07-19T22:00:00"^^xsd:date;
+  ep:startDate "2004-07-19T22:00:00"^^xsd:date;
+  ep:endDate "2009-07-12T22:00:00"^^xsd:date;
+  ep:orderNumber 78699;
   skos:notation "PSE";
   rdfs:label "Socialist Group in the European Parliament";
   skos:prefLabel "az Európai Parlament Szocialista Képviselőcsoportja"@hu, "Euroopa Parlamendi Sotsiaaldemokraatide fraktsioon"@et,
@@ -1435,13 +1506,14 @@
     "Grupul Socialist din Parlamentul European"@ro, "Gruppo socialista al Parlamento europeo"@it,
     "Grupo Socialista no Parlamento Europeu"@pt, "Grupo Socialista en el Parlamento Europeo"@es,
     "Groupe socialiste au Parlement européen"@fr, "An Grúpa Sóisialach i bParlaimint na hEorpa"@ga,
-    "Σοσιαλιστική Ομάδα στο Ευρωπαϊκό Κοινοβούλιο"@el, "Група на социалистите в Европейския парламент"@bg .
+    "Σοσιαλιστική Ομάδα στο Ευρωπαϊκό Κοινοβούλιο"@el, "Група на социалистите в Европейския парламент"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-CTDI-504> a org:Organization;
-  ep:activatedDate "1987-09-16T22:00:00"^^xsd:dateTime;
-  ep:startDate "1987-09-16T22:00:00"^^xsd:dateTime;
-  ep:endDate "1987-11-16T23:00:00"^^xsd:dateTime;
-  ep:orderNumber "989";
+  ep:activatedDate "1987-09-16T22:00:00"^^xsd:date;
+  ep:startDate "1987-09-16T22:00:00"^^xsd:date;
+  ep:endDate "1987-11-16T23:00:00"^^xsd:date;
+  ep:orderNumber 989;
   skos:notation "CTDI";
   rdfs:label "Technical Coordination and Defence of Independent Groups and Members";
   skos:prefLabel "Független Csoportok és Tagok Technikai Koordinációja és Védelme"@hu,
@@ -1460,13 +1532,14 @@
     "Grupo de Coordinación Técnica y Defensa de los Grupos y Diputados Independientes"@es,
     "Groupe de coordination technique et de défense des groupes et des députés indépendants"@fr,
     "Comhordú Teicniúil agus Cosaint Grúpaí agus Comhaltaí Neamhspleácha"@ga, "Ομάδα Τεχνικού Συντονισμού και Προασπίσεως των Ανεξαρτήτων Ομάδων και Βουλευτών"@el,
-    "Група за техническа координация и охрана на групите и независимите членове на Парламента"@bg .
+    "Група за техническа координация и охрана на групите и независимите членове на Парламента"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-TDI-993> a org:Organization;
-  ep:activatedDate "1999-07-19T22:00:00"^^xsd:dateTime;
-  ep:startDate "1999-07-19T22:00:00"^^xsd:dateTime;
-  ep:endDate "2001-10-01T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "982";
+  ep:activatedDate "1999-07-19T22:00:00"^^xsd:date;
+  ep:startDate "1999-07-19T22:00:00"^^xsd:date;
+  ep:endDate "2001-10-01T22:00:00"^^xsd:date;
+  ep:orderNumber 982;
   skos:notation "TDI";
   rdfs:label "Technical Group of Independent Members - mixed group";
   skos:prefLabel "Független Tagok Technikai Csoportja – vegyes csoport"@hu, "Sõltumatute liikmete tehniline fraktsioon - segafraktsioon"@et,
@@ -1480,13 +1553,14 @@
     "Grupul tehnic al deputaților neafiliați-grup mixt"@ro, "Gruppo tecnico dei deputati indipendenti - Gruppo misto"@it,
     "Grupo Técnico dos Deputados Independentes - Grupo Misto"@pt, "Grupo Técnico de Diputados Independientes - Grupo Mixto"@es,
     "Groupe technique des députés indépendants - groupe mixte"@fr, "Grúpa Teicniúil Eite Feisirí Neamhspleácha - grúpa measctha"@ga,
-    "Ομάδα Τεχvικoύ Συvτovισμoύ τωv Αvεξαρτήτωv Βoυλευτώv - Μικτή Ομάδα"@el, "Техническа група на независимите членове на Парламента - смесена група"@bg .
+    "Ομάδα Τεχvικoύ Συvτovισμoύ τωv Αvεξαρτήτωv Βoυλευτώv - Μικτή Ομάδα"@el, "Техническа група на независимите членове на Парламента - смесена група"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-DR-491> a org:Organization;
-  ep:activatedDate "1989-07-24T22:00:00"^^xsd:dateTime;
-  ep:startDate "1989-07-24T22:00:00"^^xsd:dateTime;
-  ep:endDate "1994-07-17T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "988";
+  ep:activatedDate "1989-07-24T22:00:00"^^xsd:date;
+  ep:startDate "1989-07-24T22:00:00"^^xsd:date;
+  ep:endDate "1994-07-17T22:00:00"^^xsd:date;
+  ep:orderNumber 988;
   skos:notation "DR";
   rdfs:label "Technical Group of the European Right";
   skos:prefLabel "Az Európai Jobboldal Technikai Csoportja"@hu, "Euroopa parempoolsete tehniline fraktsioon"@et,
@@ -1500,13 +1574,14 @@
     "Gruppo tecnico delle destre europee"@it, "Grupo Técnico das Direitas Europeias"@pt,
     "Grupo Técnico de Derechas Europeas"@es, "Groupe technique des droites européennes"@fr,
     "Grúpa Teicniúil Eite Dheis na hEorpa"@ga, "Ομάδα Τεχνικού Συντονισμού των Κομμάτων της Ευρωπαϊκής Δεξιάς"@el,
-    "Техническа група на европейската десница"@bg .
+    "Техническа група на европейската десница"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-V-493> a org:Organization;
-  ep:activatedDate "1989-07-18T22:00:00"^^xsd:dateTime;
-  ep:startDate "1989-07-18T22:00:00"^^xsd:dateTime;
-  ep:endDate "1999-07-18T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "973";
+  ep:activatedDate "1989-07-18T22:00:00"^^xsd:date;
+  ep:startDate "1989-07-18T22:00:00"^^xsd:date;
+  ep:endDate "1999-07-18T22:00:00"^^xsd:date;
+  ep:orderNumber 973;
   skos:notation "V";
   rdfs:label "The Green Group in the European Parliament";
   skos:prefLabel "Zöldek az Európai Parlamentben"@hu, "Roheliste fraktsioon Euroopa Parlamendis"@et,
@@ -1520,13 +1595,14 @@
     "Gruppo Verde al Parlamento europeo"@it, "Grupo dos Verdes no Parlamento Europeu"@pt,
     "Grupo de los Verdes en el Parlamento Europeo"@es, "Groupe des Verts au Parlement européen"@fr,
     "An Grúpa Glas i bParlaimint na hEorpa"@ga, "Ομάδα των Πρασίνων στο Ευρωπαϊκό Κοινοβούλιο"@el,
-    "Група на Зелените в Европейския парламент"@bg .
+    "Група на Зелените в Европейския парламент"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-UEN-990> a org:Organization;
-  ep:activatedDate "1999-07-19T22:00:00"^^xsd:dateTime;
-  ep:startDate "1999-07-19T22:00:00"^^xsd:dateTime;
-  ep:endDate "2004-07-18T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "970";
+  ep:activatedDate "1999-07-19T22:00:00"^^xsd:date;
+  ep:startDate "1999-07-19T22:00:00"^^xsd:date;
+  ep:endDate "2004-07-18T22:00:00"^^xsd:date;
+  ep:orderNumber 970;
   skos:notation "UEN";
   rdfs:label "Union for Europe of the Nations Group";
   skos:prefLabel "az Unió a Nemzetek Európájáért képviselőcsoportja"@hu, "fraktsioon Liit Rahvusriikide Euroopa eest"@et,
@@ -1540,13 +1616,14 @@
     "Gruppo \"Unione per l'Europa delle nazioni\""@it, "Grupo União para a Europa das Nações"@pt,
     "Grupo Unión por la Europa de las Naciones"@es, "Groupe Union pour l'Europe des nations"@fr,
     "An Grúpa d'Aontas d'Eoraip na Náisiún"@ga, "Ομάδα ΄Εvωση για τηv Ευρώπη τωv Εθvώv"@el,
-    "Група на Съюза за Европа на нациите"@bg .
+    "Група на Съюза за Европа на нациите"@bg;
+  skos:inScheme epsh:PoliticalGroup .
 
 <Body_GP-UEN-1539> a org:Organization;
-  ep:activatedDate "2004-07-19T22:00:00"^^xsd:dateTime;
-  ep:startDate "2004-07-19T22:00:00"^^xsd:dateTime;
-  ep:endDate "2009-07-12T22:00:00"^^xsd:dateTime;
-  ep:orderNumber "95599";
+  ep:activatedDate "2004-07-19T22:00:00"^^xsd:date;
+  ep:startDate "2004-07-19T22:00:00"^^xsd:date;
+  ep:endDate "2009-07-12T22:00:00"^^xsd:date;
+  ep:orderNumber 95599;
   skos:notation "UEN";
   rdfs:label "Union for Europe of the Nations Group";
   skos:prefLabel "a Nemzetek Európájáért Unió Képviselőcsoportja"@hu, "Fraktsioon Liit Rahvusriikide Euroopa eest"@et,
@@ -1560,4 +1637,5 @@
     "Gruppo \"Unione per l'Europa delle nazioni\""@it, "Grupo União para a Europa das Nações"@pt,
     "Grupo Unión por la Europa de las Naciones"@es, "Groupe Union pour l'Europe des Nations"@fr,
     "An Grúpa d'Aontas d'Eoraip na Náisiún"@ga, "Ομάδα Έvωση για τηv Ευρώπη τωv Εθvώv"@el,
-    "Група на Съюза за Европа на нациите"@bg .
+    "Група на Съюза за Европа на нациите"@bg;
+  skos:inScheme epsh:PoliticalGroup .

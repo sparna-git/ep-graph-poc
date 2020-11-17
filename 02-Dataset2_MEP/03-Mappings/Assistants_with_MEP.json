@@ -132,7 +132,9 @@
                           "source": "row_index"
                         },
                         "valueType": {
-                          "type": "literal"
+                          "propertyMappings": [],
+                          "type": "iri",
+                          "typeMappings": []
                         }
                       }
                     ]
@@ -142,15 +144,44 @@
                 "typeMappings": [
                   {
                     "transformation": {
-                      "expression": "org",
+                      "expression": "epsh",
                       "language": "prefix"
                     },
                     "valueSource": {
                       "source": "constant",
-                      "constant": "Membership"
+                      "constant": "MembershipAssitant"
                     }
                   }
                 ]
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "skos",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "inScheme"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "epsh",
+                "language": "prefix"
+              },
+              "valueSource": {
+                "source": "constant",
+                "constant": "Assistant"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
               }
             }
           ]

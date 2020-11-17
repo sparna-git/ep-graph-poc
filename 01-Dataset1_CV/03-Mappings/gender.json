@@ -1,14 +1,15 @@
 {
-  "baseIRI": "http://data.europarl.europa.eu/",
+  "baseIRI": "http://data.europarl.europa.eu/shapes/",
   "namespaces": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "geo": "http://www.opengis.net/ont/geosparql#",
     "foaf": "http://xmlns.com/foaf/0.1/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "schema": "https://schema.org/#",
-    "ep": "http://data.europarl.europa.eu/#"
+    "ep": "http://data.europarl.europa.eu/#",
+    "epsh": "http://data.europarl.europa.eu/shapes#",
+    "scheme": "http://data.europarl.europa.eu/"
   },
   "subjectMappings": [
     {
@@ -774,6 +775,35 @@
               },
               "valueType": {
                 "type": "literal"
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "skos",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "inScheme"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "epsh",
+                "language": "prefix"
+              },
+              "valueSource": {
+                "source": "constant",
+                "constant": "Gender"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
               }
             }
           ]

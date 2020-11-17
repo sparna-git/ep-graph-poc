@@ -1,13 +1,14 @@
 {
-  "baseIRI": "http://data.europarl.europa.eu/Country/",
+  "baseIRI": "http://data.europarl.europa.eu/shapes/",
   "namespaces": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "foaf": "http://xmlns.com/foaf/0.1/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ep": "http://data.europarl.europa.eu/#",
     "epsh": "http://data.europarl.europa.eu/shapes#",
-    "ep": "http://data.europarl.europa.eu/#"
+    "scheme": "http://data.europarl.europa.eu/"
   },
   "subjectMappings": [
     {
@@ -1468,7 +1469,17 @@
                 "source": "column"
               },
               "valueType": {
-                "type": "literal"
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "boolean"
+                  }
+                }
               }
             }
           ]
@@ -1491,7 +1502,17 @@
                 "source": "column"
               },
               "valueType": {
-                "type": "literal"
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "boolean"
+                  }
+                }
               }
             }
           ]
@@ -1514,7 +1535,17 @@
                 "source": "column"
               },
               "valueType": {
-                "type": "literal"
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "date"
+                  }
+                }
               }
             }
           ]
@@ -1537,7 +1568,17 @@
                 "source": "column"
               },
               "valueType": {
-                "type": "literal"
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "integer"
+                  }
+                }
               }
             }
           ]
@@ -1583,7 +1624,46 @@
                 "source": "column"
               },
               "valueType": {
-                "type": "literal"
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "integer"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "skos",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "inScheme"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "epsh",
+                "language": "prefix"
+              },
+              "valueSource": {
+                "source": "constant",
+                "constant": "Country"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
               }
             }
           ]

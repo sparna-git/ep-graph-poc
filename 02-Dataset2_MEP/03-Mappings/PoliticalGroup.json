@@ -40,7 +40,7 @@
                   },
                   "valueSource": {
                     "source": "constant",
-                    "constant": "dateTime"
+                    "constant": "date"
                   }
                 }
               }
@@ -73,7 +73,7 @@
                   },
                   "valueSource": {
                     "source": "constant",
-                    "constant": "dateTime"
+                    "constant": "date"
                   }
                 }
               }
@@ -106,7 +106,7 @@
                   },
                   "valueSource": {
                     "source": "constant",
-                    "constant": "dateTime"
+                    "constant": "date"
                   }
                 }
               }
@@ -134,7 +134,17 @@
                 "source": "row_index"
               },
               "valueType": {
-                "type": "literal"
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "integer"
+                  }
+                }
               }
             }
           ]
@@ -555,6 +565,35 @@
                     "constant": "bg"
                   }
                 }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "skos",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "inScheme"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "epsh",
+                "language": "prefix"
+              },
+              "valueSource": {
+                "source": "constant",
+                "constant": "PoliticalGroup"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
               }
             }
           ]

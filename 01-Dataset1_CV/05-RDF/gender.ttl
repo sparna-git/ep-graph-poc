@@ -1,12 +1,13 @@
-@base <http://data.europarl.europa.eu/> .
+@base <http://data.europarl.europa.eu/shapes/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix schema: <https://schema.org/#> .
 @prefix ep: <http://data.europarl.europa.eu/#> .
+@prefix epsh: <http://data.europarl.europa.eu/shapes#> .
+@prefix scheme: <http://data.europarl.europa.eu/> .
 
 <Gender_F> a skos:Concept;
   rdfs:label "female";
@@ -15,7 +16,8 @@
     "sieviešu dz."@lv, "femminil"@mt, "female"@en, "hunkøn"@da, "vrouwelijk"@nl, "feminin"@sv,
     "ženski"@hr, "ženski spol"@sl, "żeński"@pl, "weiblich"@de, "feminin"@ro, "feminine"@it,
     "feminino"@pt, "feminino"@es, "féminin"@fr, "bean"@ga, "θηλυκό"@el, "женски"@bg;
-  ep:isoCode "2" .
+  ep:isoCode "2";
+  skos:inScheme epsh:Gender .
 
 <Gender_M> a skos:Concept;
   rdfs:label "male";
@@ -24,7 +26,8 @@
     "vīriešu dz."@lv, "maskil"@mt, "male"@en, "hankøn"@da, "manlijk"@nl, "maskulin"@sv,
     "muški"@hr, "moški spol"@sl, "męski"@pl, "männlich"@de, "masculin"@ro, "maschile"@it,
     "masculino"@pt, "masculino"@es, "masculin"@fr, "fear"@ga, "αρσενικ"@el, "мъжки"@bg;
-  ep:isoCode "1" .
+  ep:isoCode "1";
+  skos:inScheme epsh:Gender .
 
 <Gender_X> a skos:Concept;
   rdfs:label "unknown";
@@ -34,7 +37,8 @@
     "onbekend"@nl, "okänd"@sv, "nepoznat"@hr, "neznan"@sl, "nieznany"@pl, "unbekannt"@de,
     "necunoscut"@ro, "Sconosciuto"@it, "desconhecido"@pt, "desconocido"@es, "pas connu"@fr,
     "ní fios"@ga, "άγνωστο"@el, "неизвестен"@bg;
-  ep:isoCode "0" .
+  ep:isoCode "0";
+  skos:inScheme epsh:Gender .
 
 <Gender_U> a skos:Concept;
   rdfs:label "unspecified";
@@ -45,4 +49,5 @@
     "nedoločen"@sl, "nieokreślony"@pl, "nicht spezifiert"@de, "nespecificat"@ro, "non specificato"@it,
     "não especificado"@pt, "no espicificado"@es, "pas spécifié"@fr, "ní shonraítear"@ga,
     "απροσδιόριστο"@el, "неопределен"@bg;
-  ep:isoCode "9" .
+  ep:isoCode "9";
+  skos:inScheme epsh:Gender .
