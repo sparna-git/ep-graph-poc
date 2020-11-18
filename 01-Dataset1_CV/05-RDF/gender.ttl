@@ -16,7 +16,7 @@ ep:Gender_F a skos:Concept;
     "ženski"@hr, "ženski spol"@sl, "żeński"@pl, "weiblich"@de, "feminin"@ro, "feminine"@it,
     "feminino"@pt, "feminino"@es, "féminin"@fr, "bean"@ga, "θηλυκό"@el, "женски"@bg;
   ep:isoCode "2";
-  skos:inScheme epsh:Gender .
+  skos:inScheme ep:Gender .
 
 ep:Gender_M a skos:Concept;
   rdfs:label "male";
@@ -26,7 +26,7 @@ ep:Gender_M a skos:Concept;
     "muški"@hr, "moški spol"@sl, "męski"@pl, "männlich"@de, "masculin"@ro, "maschile"@it,
     "masculino"@pt, "masculino"@es, "masculin"@fr, "fear"@ga, "αρσενικ"@el, "мъжки"@bg;
   ep:isoCode "1";
-  skos:inScheme epsh:Gender .
+  skos:inScheme ep:Gender .
 
 ep:Gender_X a skos:Concept;
   rdfs:label "unknown";
@@ -37,7 +37,7 @@ ep:Gender_X a skos:Concept;
     "necunoscut"@ro, "Sconosciuto"@it, "desconhecido"@pt, "desconocido"@es, "pas connu"@fr,
     "ní fios"@ga, "άγνωστο"@el, "неизвестен"@bg;
   ep:isoCode "0";
-  skos:inScheme epsh:Gender .
+  skos:inScheme ep:Gender .
 
 ep:Gender_U a skos:Concept;
   rdfs:label "unspecified";
@@ -49,4 +49,4 @@ ep:Gender_U a skos:Concept;
     "não especificado"@pt, "no espicificado"@es, "pas spécifié"@fr, "ní shonraítear"@ga,
     "απροσδιόριστο"@el, "неопределен"@bg;
   ep:isoCode "9";
-  skos:inScheme epsh:Gender .
+  skos:inScheme ep:Gender .
