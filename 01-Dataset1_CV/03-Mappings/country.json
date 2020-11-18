@@ -44,32 +44,6 @@
             },
             "valueSource": {
               "source": "constant",
-              "constant": "notation"
-            }
-          },
-          "values": [
-            {
-              "transformation": {
-                "expression": "cells['skos:notation'].value.toLowercase()",
-                "language": "grel"
-              },
-              "valueSource": {
-                "source": "row_index"
-              },
-              "valueType": {
-                "type": "literal"
-              }
-            }
-          ]
-        },
-        {
-          "property": {
-            "transformation": {
-              "expression": "skos",
-              "language": "prefix"
-            },
-            "valueSource": {
-              "source": "constant",
               "constant": "prefLabel"
             }
           },
@@ -1602,12 +1576,9 @@
           },
           "values": [
             {
-              "transformation": {
-                "expression": "cells['ep:isoCode'].value.toLowercase()",
-                "language": "grel"
-              },
               "valueSource": {
-                "source": "row_index"
+                "columnName": "ep:isoCode",
+                "source": "column"
               },
               "valueType": {
                 "type": "literal"
@@ -1633,7 +1604,17 @@
                 "source": "column"
               },
               "valueType": {
-                "type": "literal"
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "integer"
+                  }
+                }
               }
             }
           ]

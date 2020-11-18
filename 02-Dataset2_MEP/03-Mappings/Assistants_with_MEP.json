@@ -97,7 +97,7 @@
           "values": [
             {
               "transformation": {
-                "expression": "trim(cells[trim('ep:Assistant.ep:uri')].value.split(':')[1])+'/'+\ntrim(cells[trim('ep:MEP.ep:uri')].value.split(':')[1])\n+'/membership'",
+                "expression": "trim(cells[trim('ep:Assistant.ep:uri')].value.split(':')[1])+'/membership'\n+'/'+trim(cells[trim('ep:MEP.ep:uri')].value.split(':')[1])",
                 "language": "grel"
               },
               "valueSource": {
@@ -119,7 +119,7 @@
                     "values": [
                       {
                         "transformation": {
-                          "expression": "trim(cells[trim('ep:Assistant.ep:uri')].value.split(':')[1])+'/membership'",
+                          "expression": "trim(cells[trim('ep:MEP.ep:uri')].value.split(':')[1])",
                           "language": "grel"
                         },
                         "valueSource": {

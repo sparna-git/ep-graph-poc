@@ -231,7 +231,7 @@
                     "values": [
                       {
                         "transformation": {
-                          "expression": "trim(cells[trim('ep:hasPoliticalGroup.ep:uri')].value.split(':')[1])+'/membership'",
+                          "expression": "trim(cells[trim('ep:hasPoliticalGroup.ep:uri')].value.split(':')[1])",
                           "language": "grel"
                         },
                         "valueSource": {
