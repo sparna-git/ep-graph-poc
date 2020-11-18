@@ -21,9 +21,9 @@
 epsh:MEP a sh:NodeShape;
   rdfs:label "MEP"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx4213 .
+  sh:ignoredProperties _:node1em6ifuhbx4609 .
 
-_:node1em6ifuhbx4213 rdf:first rdf:type;
+_:node1em6ifuhbx4609 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:MEP sh:nodeKind sh:IRI;
@@ -36,9 +36,9 @@ epsh:MEP sh:nodeKind sh:IRI;
 epsh:MembershipMEP a sh:NodeShape;
   rdfs:label "MEP political party membership"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx4214 .
+  sh:ignoredProperties _:node1em6ifuhbx4610 .
 
-_:node1em6ifuhbx4214 rdf:first rdf:type;
+_:node1em6ifuhbx4610 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:MembershipMEP sh:nodeKind sh:IRI;
@@ -49,9 +49,9 @@ epsh:MembershipMEP sh:nodeKind sh:IRI;
 epsh:PoliticalGroup a sh:NodeShape;
   rdfs:label "Political Group"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx4215 .
+  sh:ignoredProperties _:node1em6ifuhbx4611 .
 
-_:node1em6ifuhbx4215 rdf:first rdf:type;
+_:node1em6ifuhbx4611 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:PoliticalGroup sh:nodeKind sh:IRI;
@@ -63,9 +63,9 @@ epsh:PoliticalGroup sh:nodeKind sh:IRI;
 epsh:Assistant a sh:NodeShape;
   rdfs:label "Assistant"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx4216 .
+  sh:ignoredProperties _:node1em6ifuhbx4612 .
 
-_:node1em6ifuhbx4216 rdf:first rdf:type;
+_:node1em6ifuhbx4612 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:Assistant sh:nodeKind sh:IRI;
@@ -77,9 +77,9 @@ epsh:Assistant sh:nodeKind sh:IRI;
 epsh:MembershipAssistant a sh:NodeShape;
   rdfs:label "Assistant membership to an MEP"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx4217 .
+  sh:ignoredProperties _:node1em6ifuhbx4613 .
 
-_:node1em6ifuhbx4217 rdf:first rdf:type;
+_:node1em6ifuhbx4613 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:MembershipAssistant sh:nodeKind sh:IRI;
@@ -87,14 +87,16 @@ epsh:MembershipAssistant sh:nodeKind sh:IRI;
   sh:pattern "^http://data.europarl.europa.eu/Assistant_[0-9][0-9][0-9][0-9][0-9]?[0-9]?/membership/MEP_.*$";
   sh:property epsh:P39 .
 
-epsh:P10 sh:maxCount 1;
+epsh:P10 sh:datatype xsd:string;
+  sh:maxCount 1;
   sh:minCount 1;
   sh:name "Contraintes de foaf:firstName sur un epsh:MEP"@fr;
   sh:nodeKind sh:Literal;
   sh:path foaf:firstName;
   sh:severity sh:Violation .
 
-epsh:P11 sh:maxCount 1;
+epsh:P11 sh:datatype xsd:string;
+  sh:maxCount 1;
   sh:minCount 1;
   sh:nodeKind sh:Literal;
   sh:path foaf:familyName .
@@ -105,7 +107,8 @@ epsh:P12 sh:maxCount 1;
   sh:path ep:Civility;
   sh:pattern "^http://data.europarl.europa.eu/Civility_(.*)$" .
 
-epsh:P13 sh:maxCount 1;
+epsh:P13 sh:datatype xsd:string;
+  sh:maxCount 1;
   sh:minCount 1;
   sh:nodeKind sh:Literal;
   sh:path skos:notation .
@@ -171,85 +174,85 @@ epsh:P28 sh:datatype xsd:string;
   sh:nodeKind sh:Literal;
   sh:path skos:notation .
 
-epsh:P29 sh:datatype rdf:plainLiteral;
+epsh:P29 sh:datatype xsd:string;
   sh:maxCount 1;
   sh:minCount 1;
   sh:nodeKind sh:Literal;
   sh:path rdfs:label .
 
 epsh:P30 sh:datatype rdf:langString;
-  sh:languageIn _:node1em6ifuhbx4220 .
+  sh:languageIn _:node1em6ifuhbx4616 .
 
-_:node1em6ifuhbx4220 rdf:first "hu";
-  rdf:rest _:node1em6ifuhbx4221 .
+_:node1em6ifuhbx4616 rdf:first "hu";
+  rdf:rest _:node1em6ifuhbx4617 .
 
-_:node1em6ifuhbx4221 rdf:first "et";
-  rdf:rest _:node1em6ifuhbx4222 .
+_:node1em6ifuhbx4617 rdf:first "et";
+  rdf:rest _:node1em6ifuhbx4618 .
 
-_:node1em6ifuhbx4222 rdf:first "fi";
-  rdf:rest _:node1em6ifuhbx4223 .
+_:node1em6ifuhbx4618 rdf:first "fi";
+  rdf:rest _:node1em6ifuhbx4619 .
 
-_:node1em6ifuhbx4223 rdf:first "cs";
-  rdf:rest _:node1em6ifuhbx4224 .
+_:node1em6ifuhbx4619 rdf:first "cs";
+  rdf:rest _:node1em6ifuhbx4620 .
 
-_:node1em6ifuhbx4224 rdf:first "sk";
-  rdf:rest _:node1em6ifuhbx4225 .
+_:node1em6ifuhbx4620 rdf:first "sk";
+  rdf:rest _:node1em6ifuhbx4621 .
 
-_:node1em6ifuhbx4225 rdf:first "lt";
-  rdf:rest _:node1em6ifuhbx4226 .
+_:node1em6ifuhbx4621 rdf:first "lt";
+  rdf:rest _:node1em6ifuhbx4622 .
 
-_:node1em6ifuhbx4226 rdf:first "lv";
-  rdf:rest _:node1em6ifuhbx4227 .
+_:node1em6ifuhbx4622 rdf:first "lv";
+  rdf:rest _:node1em6ifuhbx4623 .
 
-_:node1em6ifuhbx4227 rdf:first "mt";
-  rdf:rest _:node1em6ifuhbx4228 .
+_:node1em6ifuhbx4623 rdf:first "mt";
+  rdf:rest _:node1em6ifuhbx4624 .
 
-_:node1em6ifuhbx4228 rdf:first "en";
-  rdf:rest _:node1em6ifuhbx4229 .
+_:node1em6ifuhbx4624 rdf:first "en";
+  rdf:rest _:node1em6ifuhbx4625 .
 
-_:node1em6ifuhbx4229 rdf:first "da";
-  rdf:rest _:node1em6ifuhbx4230 .
+_:node1em6ifuhbx4625 rdf:first "da";
+  rdf:rest _:node1em6ifuhbx4626 .
 
-_:node1em6ifuhbx4230 rdf:first "nl";
-  rdf:rest _:node1em6ifuhbx4231 .
+_:node1em6ifuhbx4626 rdf:first "nl";
+  rdf:rest _:node1em6ifuhbx4627 .
 
-_:node1em6ifuhbx4231 rdf:first "sv";
-  rdf:rest _:node1em6ifuhbx4232 .
+_:node1em6ifuhbx4627 rdf:first "sv";
+  rdf:rest _:node1em6ifuhbx4628 .
 
-_:node1em6ifuhbx4232 rdf:first "hr";
-  rdf:rest _:node1em6ifuhbx4233 .
+_:node1em6ifuhbx4628 rdf:first "hr";
+  rdf:rest _:node1em6ifuhbx4629 .
 
-_:node1em6ifuhbx4233 rdf:first "sl";
-  rdf:rest _:node1em6ifuhbx4234 .
+_:node1em6ifuhbx4629 rdf:first "sl";
+  rdf:rest _:node1em6ifuhbx4630 .
 
-_:node1em6ifuhbx4234 rdf:first "pl";
-  rdf:rest _:node1em6ifuhbx4235 .
+_:node1em6ifuhbx4630 rdf:first "pl";
+  rdf:rest _:node1em6ifuhbx4631 .
 
-_:node1em6ifuhbx4235 rdf:first "de";
-  rdf:rest _:node1em6ifuhbx4236 .
+_:node1em6ifuhbx4631 rdf:first "de";
+  rdf:rest _:node1em6ifuhbx4632 .
 
-_:node1em6ifuhbx4236 rdf:first "ro";
-  rdf:rest _:node1em6ifuhbx4237 .
+_:node1em6ifuhbx4632 rdf:first "ro";
+  rdf:rest _:node1em6ifuhbx4633 .
 
-_:node1em6ifuhbx4237 rdf:first "it";
-  rdf:rest _:node1em6ifuhbx4238 .
+_:node1em6ifuhbx4633 rdf:first "it";
+  rdf:rest _:node1em6ifuhbx4634 .
 
-_:node1em6ifuhbx4238 rdf:first "pt";
-  rdf:rest _:node1em6ifuhbx4239 .
+_:node1em6ifuhbx4634 rdf:first "pt";
+  rdf:rest _:node1em6ifuhbx4635 .
 
-_:node1em6ifuhbx4239 rdf:first "es";
-  rdf:rest _:node1em6ifuhbx4240 .
+_:node1em6ifuhbx4635 rdf:first "es";
+  rdf:rest _:node1em6ifuhbx4636 .
 
-_:node1em6ifuhbx4240 rdf:first "fr";
-  rdf:rest _:node1em6ifuhbx4241 .
+_:node1em6ifuhbx4636 rdf:first "fr";
+  rdf:rest _:node1em6ifuhbx4637 .
 
-_:node1em6ifuhbx4241 rdf:first "ga";
-  rdf:rest _:node1em6ifuhbx4242 .
+_:node1em6ifuhbx4637 rdf:first "ga";
+  rdf:rest _:node1em6ifuhbx4638 .
 
-_:node1em6ifuhbx4242 rdf:first "el";
-  rdf:rest _:node1em6ifuhbx4243 .
+_:node1em6ifuhbx4638 rdf:first "el";
+  rdf:rest _:node1em6ifuhbx4639 .
 
-_:node1em6ifuhbx4243 rdf:first "bg";
+_:node1em6ifuhbx4639 rdf:first "bg";
   rdf:rest rdf:nil .
 
 epsh:P30 sh:maxCount 24;
@@ -258,25 +261,25 @@ epsh:P30 sh:maxCount 24;
   sh:path skos:prefLabel;
   sh:uniqueLang true .
 
-epsh:P33 sh:datatype rdf:plainLiteral;
+epsh:P33 sh:datatype xsd:string;
   sh:maxCount 1;
   sh:minCount 1;
   sh:nodeKind sh:Literal;
   sh:path foaf:firstName .
 
-epsh:P34 sh:datatype rdf:plainLiteral;
+epsh:P34 sh:datatype xsd:string;
   sh:maxCount 1;
   sh:minCount 1;
   sh:nodeKind sh:Literal;
   sh:path foaf:familyName .
 
-epsh:P35 sh:datatype rdf:plainLiteral;
-  sh:in _:node1em6ifuhbx4244 .
+epsh:P35 sh:datatype xsd:string;
+  sh:in _:node1em6ifuhbx4640 .
 
-_:node1em6ifuhbx4244 rdf:first "Local";
-  rdf:rest _:node1em6ifuhbx4245 .
+_:node1em6ifuhbx4640 rdf:first "Local";
+  rdf:rest _:node1em6ifuhbx4641 .
 
-_:node1em6ifuhbx4245 rdf:first "Accredited";
+_:node1em6ifuhbx4641 rdf:first "Accredited";
   rdf:rest rdf:nil .
 
 epsh:P35 sh:maxCount 1;
