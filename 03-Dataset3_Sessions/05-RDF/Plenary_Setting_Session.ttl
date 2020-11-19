@@ -9,7 +9,7 @@
 @prefix epsh: <http://data.europarl.europa.eu/shapes#> .
 @prefix elidl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#> .
 
-ep:PlenarySitting_20191219 a ep:PrenarySetting;
+ep:PlenarySitting_20191219 a ep:PlenarySitting;
   rdfs:label "SESP 2019-12-19";
   skos:prefLabel "Thursday, 19 December 2019"@en, "Jeudi 19 décembre 2019"@fr, "Donnerstag, 19. Dezember 2019"@de,
     "Giovedì 19 dicembre 2019"@it, "Jueves 19 de diciembre de 2019"@es, "Czwartek, 19 grudnia 2019"@pl,
@@ -19,7 +19,7 @@ ep:PlenarySitting_20191219 a ep:PrenarySetting;
     "2019. december 19., csütörtök"@hu, "Il-Ħamis, 19 ta' Diċembru 2019"@mt, "Donderdag 19 december 2019"@nl,
     "Quinta-feira, 19 de Dezembro de 2019"@pt, "Joi, 19 decembrie 2019"@ro, "Štvrtok, 19. decembra 2019"@sk,
     "Četrtek, 19. december 2019"@sl, "Torstai 19. joulukuuta 2019"@fi, "Torsdagen den 19 december 2019"@sv;
-  ep:datePlenarySetting "2019-12-19"^^xsd:date;
+  ep:datePlenarySitting "2019-12-19"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-9-2019-12-19-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-12-19>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-12-19-ATT>;
@@ -37,7 +37,7 @@ ep:PlenarySession_20191216-20191219 a ep:PlenarySession;
     ep:PlenarySitting_20191216;
   rdfs:label "Plenary session from 2019-12-16 to 2019-12-19" .
 
-ep:PlenarySitting_20191218 a ep:PrenarySetting;
+ep:PlenarySitting_20191218 a ep:PlenarySitting;
   rdfs:label "SESP 2019-12-18";
   skos:prefLabel "Wednesday, 18 December 2019"@en, "Mercredi 18 décembre 2019"@fr, "Mittwoch, 18. Dezember 2019"@de,
     "Mercoledì 18 dicembre 2019"@it, "Miércoles 18 de diciembre de 2019"@es, "Środa, 18 grudnia 2019"@pl,
@@ -47,7 +47,7 @@ ep:PlenarySitting_20191218 a ep:PrenarySetting;
     "2019. december 18., szerda"@hu, "L-Erbgħa, 18 ta' Diċembru 2019"@mt, "Woensdag 18 december 2019"@nl,
     "Quarta-feira, 18 de Dezembro de 2019"@pt, "Miercuri, 18 decembrie 2019"@ro, "Streda, 18. decembra 2019"@sk,
     "Sreda, 18. december 2019"@sl, "Keskiviikko 18. joulukuuta 2019"@fi, "Onsdagen den 18 december 2019"@sv;
-  ep:datePlenarySetting "2019-12-18"^^xsd:date;
+  ep:datePlenarySitting "2019-12-18"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-9-2019-12-18-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-12-18>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-12-18-ATT>;
@@ -59,7 +59,7 @@ ep:PlenarySitting_20191218 a ep:PrenarySetting;
   ep:hasAnnex <reds%3AiPlPv_Ann/PV-9-2019-12-18-ANN-1>;
   ep:formsPartOf ep:PlenarySession_20191216-20191219 .
 
-ep:PlenarySitting_20191217 a ep:PrenarySetting;
+ep:PlenarySitting_20191217 a ep:PlenarySitting;
   rdfs:label "SESP 2019-12-17";
   skos:prefLabel "Tuesday, 17 December 2019"@en, "Mardi 17 décembre 2019"@fr, "Dienstag, 17. Dezember 2019"@de,
     "Martedì 17 dicembre 2019"@it, "Martes 17 de diciembre de 2019"@es, "Wtorek, 17 grudnia 2019"@pl,
@@ -69,7 +69,7 @@ ep:PlenarySitting_20191217 a ep:PrenarySetting;
     "2019. december 17., kedd"@hu, "It-Tlieta, 17 ta' Diċembru 2019"@mt, "Dinsdag 17 december 2019"@nl,
     "Terça-feira, 17 de Dezembro de 2019"@pt, "Marţi, 17 decembrie 2019"@ro, "Utorok, 17. decembra 2019"@sk,
     "Torek, 17. december 2019"@sl, "Tiistai 17. joulukuuta 2019"@fi, "Tisdagen den 17 december 2019"@sv;
-  ep:datePlenarySetting "2019-12-17"^^xsd:date;
+  ep:datePlenarySitting "2019-12-17"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-9-2019-12-17-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-12-17>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-12-17-ATT>;
@@ -81,7 +81,7 @@ ep:PlenarySitting_20191217 a ep:PrenarySetting;
   ep:hasAnnex <reds%3AiPlPv_Ann/PV-9-2019-12-17-ANN-1>;
   ep:formsPartOf ep:PlenarySession_20191216-20191219 .
 
-ep:PlenarySitting_20191216 a ep:PrenarySetting;
+ep:PlenarySitting_20191216 a ep:PlenarySitting;
   rdfs:label "SESP 2019-12-16";
   skos:prefLabel "Monday, 16 December 2019"@en, "Lundi 16 décembre 2019"@fr, "Montag, 16. Dezember 2019"@de,
     "Lunedì 16 dicembre 2019"@it, "Lunes 16 de diciembre de 2019"@es, "Poniedziałek, 16 grudnia 2019"@pl,
@@ -91,7 +91,7 @@ ep:PlenarySitting_20191216 a ep:PrenarySetting;
     "2019. december 16., hétfő"@hu, "It-Tnejn, 16 ta' Diċembru 2019"@mt, "Maandag 16 december 2019"@nl,
     "Segunda-feira, 16 de Dezembro de 2019"@pt, "Luni, 16 decembrie 2019"@ro, "Pondelok, 16. decembra 2019"@sk,
     "Ponedeljek, 16. december 2019"@sl, "Maanantai 16. joulukuuta 2019"@fi, "Måndagen den 16 december 2019"@sv;
-  ep:datePlenarySetting "2019-12-16"^^xsd:date;
+  ep:datePlenarySitting "2019-12-16"^^xsd:date;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-12-16>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-12-16-ATT>;
   ep:hasCre <reds%3AiPlCre_Sit/CRE-9-2019-12-16>;
@@ -99,7 +99,7 @@ ep:PlenarySitting_20191216 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-011668-01>;
   ep:formsPartOf ep:PlenarySession_20191216-20191219 .
 
-ep:PlenarySitting_20191211 a ep:PrenarySetting;
+ep:PlenarySitting_20191211 a ep:PlenarySitting;
   rdfs:label "SESP 2019-12-11";
   skos:prefLabel "Wednesday, 11 December 2019"@en, "Mercredi 11 décembre 2019"@fr, "Mittwoch, 11. Dezember 2019"@de,
     "Mercoledì 11 dicembre 2019"@it, "Miércoles 11 de diciembre de 2019"@es, "Środa, 11 grudnia 2019"@pl,
@@ -109,7 +109,7 @@ ep:PlenarySitting_20191211 a ep:PrenarySetting;
     "2019. december 11., szerda"@hu, "L-Erbgħa, 11 ta' Diċembru 2019"@mt, "Woensdag 11 december 2019"@nl,
     "Quarta-feira, 11 de Dezembro de 2019"@pt, "Miercuri, 11 decembrie 2019"@ro, "Streda, 11. decembra 2019"@sk,
     "Sreda, 11. december 2019"@sl, "Keskiviikko 11. joulukuuta 2019"@fi, "Onsdagen den 11 december 2019"@sv;
-  ep:datePlenarySetting "2019-12-11"^^xsd:date;
+  ep:datePlenarySitting "2019-12-11"^^xsd:date;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-12-11>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-12-11-ATT>;
   ep:hasCre <reds%3AiPlCre_Sit/CRE-9-2019-12-11>;
@@ -123,7 +123,7 @@ ep:PlenarySession_20191211-20191211 a ep:PlenarySession;
   ep:consistsOf ep:PlenarySitting_20191211;
   rdfs:label "Plenary session from 2019-12-11 to 2019-12-11" .
 
-ep:PlenarySitting_20191128 a ep:PrenarySetting;
+ep:PlenarySitting_20191128 a ep:PlenarySitting;
   rdfs:label "SESP 2019-11-28";
   skos:prefLabel "Thursday, 28 November 2019"@en, "Jeudi 28 novembre 2019"@fr, "Donnerstag, 28. November 2019"@de,
     "Giovedì 28 novembre 2019"@it, "Jueves 28 de noviembre de 2019"@es, "Czwartek, 28 listopada 2019"@pl,
@@ -133,7 +133,7 @@ ep:PlenarySitting_20191128 a ep:PrenarySetting;
     "2019. november 28., csütörtök"@hu, "Il-Ħamis, 28 ta' Novembru 2019"@mt, "Donderdag 28 november 2019"@nl,
     "Quinta-feira, 28 de Novembro de 2019"@pt, "Joi, 28 noiembrie 2019"@ro, "Štvrtok, 28. novembra 2019"@sk,
     "Četrtek, 28. november 2019"@sl, "Torstai 28. marraskuuta 2019"@fi, "Torsdagen den 28 november 2019"@sv;
-  ep:datePlenarySetting "2019-11-28"^^xsd:date;
+  ep:datePlenarySitting "2019-11-28"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-9-2019-11-28-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-11-28>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-11-28-ATT>;
@@ -151,7 +151,7 @@ ep:PlenarySession_20191125-20191128 a ep:PlenarySession;
     ep:PlenarySitting_20191125;
   rdfs:label "Plenary session from 2019-11-25 to 2019-11-28" .
 
-ep:PlenarySitting_20191127 a ep:PrenarySetting;
+ep:PlenarySitting_20191127 a ep:PlenarySitting;
   rdfs:label "SESP 2019-11-27";
   skos:prefLabel "Wednesday, 27 November 2019"@en, "Mercredi 27 novembre 2019"@fr, "Mittwoch, 27. November 2019"@de,
     "Mercoledì 27 novembre 2019"@it, "Miércoles 27 de noviembre de 2019"@es, "Środa, 27 listopada 2019"@pl,
@@ -161,7 +161,7 @@ ep:PlenarySitting_20191127 a ep:PrenarySetting;
     "2019. november 27., szerda"@hu, "L-Erbgħa, 27 ta' Novembru 2019"@mt, "Woensdag 27 november 2019"@nl,
     "Quarta-feira, 27 de Novembro de 2019"@pt, "Miercuri, 27 noiembrie 2019"@ro, "Streda, 27. novembra 2019"@sk,
     "Sreda, 27. november 2019"@sl, "Keskiviikko 27. marraskuuta 2019"@fi, "Onsdagen den 27 november 2019"@sv;
-  ep:datePlenarySetting "2019-11-27"^^xsd:date;
+  ep:datePlenarySitting "2019-11-27"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-9-2019-11-27-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-11-27>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-11-27-ATT>;
@@ -172,7 +172,7 @@ ep:PlenarySitting_20191127 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-011666-01>;
   ep:formsPartOf ep:PlenarySession_20191125-20191128 .
 
-ep:PlenarySitting_20191126 a ep:PrenarySetting;
+ep:PlenarySitting_20191126 a ep:PlenarySitting;
   rdfs:label "SESP 2019-11-26";
   skos:prefLabel "Tuesday, 26 November 2019"@en, "Mardi 26 novembre 2019"@fr, "Dienstag, 26. November 2019"@de,
     "Martedì 26 novembre 2019"@it, "Martes 26 de noviembre de 2019"@es, "Wtorek, 26 listopada 2019"@pl,
@@ -182,7 +182,7 @@ ep:PlenarySitting_20191126 a ep:PrenarySetting;
     "2019. november 26., kedd"@hu, "It-Tlieta, 26 ta' Novembru 2019"@mt, "Dinsdag 26 november 2019"@nl,
     "Terça-feira, 26 de Novembro de 2019"@pt, "Marţi, 26 noiembrie 2019"@ro, "Utorok, 26. novembra 2019"@sk,
     "Torek, 26. november 2019"@sl, "Tiistai 26. marraskuuta 2019"@fi, "Tisdagen den 26 november 2019"@sv;
-  ep:datePlenarySetting "2019-11-26"^^xsd:date;
+  ep:datePlenarySitting "2019-11-26"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-9-2019-11-26-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-11-26>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-11-26-ATT>;
@@ -194,7 +194,7 @@ ep:PlenarySitting_20191126 a ep:PrenarySetting;
   ep:hasAnnex <reds%3AiPlPv_Ann/PV-9-2019-11-26-ANN-1>;
   ep:formsPartOf ep:PlenarySession_20191125-20191128 .
 
-ep:PlenarySitting_20191125 a ep:PrenarySetting;
+ep:PlenarySitting_20191125 a ep:PlenarySitting;
   rdfs:label "SESP 2019-11-25";
   skos:prefLabel "Monday, 25 November 2019"@en, "Lundi 25 novembre 2019"@fr, "Montag, 25. November 2019"@de,
     "Lunedì 25 novembre 2019"@it, "Lunes 25 de noviembre de 2019"@es, "Poniedziałek, 25 listopada 2019"@pl,
@@ -204,7 +204,7 @@ ep:PlenarySitting_20191125 a ep:PrenarySetting;
     "2019. november 25., hétfő"@hu, "It-Tnejn, 25 ta' Novembru 2019"@mt, "Maandag 25 november 2019"@nl,
     "Segunda-feira, 25 de Novembro de 2019"@pt, "Luni, 25 noiembrie 2019"@ro, "Pondelok, 25. novembra 2019"@sk,
     "Ponedeljek, 25. november 2019"@sl, "Maanantai 25. marraskuuta 2019"@fi, "Måndagen den 25 november 2019"@sv;
-  ep:datePlenarySetting "2019-11-25"^^xsd:date;
+  ep:datePlenarySitting "2019-11-25"^^xsd:date;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-11-25>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-11-25-ATT>;
   ep:hasCre <reds%3AiPlCre_Sit/CRE-9-2019-11-25>;
@@ -213,7 +213,7 @@ ep:PlenarySitting_20191125 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-011663-01>;
   ep:formsPartOf ep:PlenarySession_20191125-20191128 .
 
-ep:PlenarySitting_20191114 a ep:PrenarySetting;
+ep:PlenarySitting_20191114 a ep:PlenarySitting;
   rdfs:label "SESP 2019-11-14";
   skos:prefLabel "Thursday, 14 November 2019"@en, "Jeudi 14 novembre 2019"@fr, "Donnerstag, 14. November 2019"@de,
     "Giovedì 14 novembre 2019"@it, "Jueves 14 de noviembre de 2019"@es, "Czwartek, 14 listopada 2019"@pl,
@@ -223,7 +223,7 @@ ep:PlenarySitting_20191114 a ep:PrenarySetting;
     "2019. november 14., csütörtök"@hu, "Il-Ħamis, 14 ta' Novembru 2019"@mt, "Donderdag 14 november 2019"@nl,
     "Quinta-feira, 14 de Novembro de 2019"@pt, "Joi, 14 noiembrie 2019"@ro, "Štvrtok, 14. novembra 2019"@sk,
     "Četrtek, 14. november 2019"@sl, "Torstai 14. marraskuuta 2019"@fi, "Torsdagen den 14 november 2019"@sv;
-  ep:datePlenarySetting "2019-11-14"^^xsd:date;
+  ep:datePlenarySitting "2019-11-14"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-9-2019-11-14-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-11-14>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-11-14-ATT>;
@@ -240,7 +240,7 @@ ep:PlenarySession_20191113-20191114 a ep:PlenarySession;
   ep:consistsOf ep:PlenarySitting_20191114, ep:PlenarySitting_20191113;
   rdfs:label "Plenary session from 2019-11-13 to 2019-11-14" .
 
-ep:PlenarySitting_20191113 a ep:PrenarySetting;
+ep:PlenarySitting_20191113 a ep:PlenarySitting;
   rdfs:label "SESP 2019-11-13";
   skos:prefLabel "Wednesday, 13 November 2019"@en, "Mercredi 13 novembre 2019"@fr, "Mittwoch, 13. November 2019"@de,
     "Mercoledì 13 novembre 2019"@it, "Miércoles 13 de noviembre de 2019"@es, "Środa, 13 listopada 2019"@pl,
@@ -250,7 +250,7 @@ ep:PlenarySitting_20191113 a ep:PrenarySetting;
     "2019. november 13., szerda"@hu, "L-Erbgħa, 13 ta' Novembru 2019"@mt, "Woensdag 13 november 2019"@nl,
     "Quarta-feira, 13 de Novembro de 2019"@pt, "Miercuri, 13 noiembrie 2019"@ro, "Streda, 13. novembra 2019"@sk,
     "Sreda, 13. november 2019"@sl, "Keskiviikko 13. marraskuuta 2019"@fi, "Onsdagen den 13 november 2019"@sv;
-  ep:datePlenarySetting "2019-11-13"^^xsd:date;
+  ep:datePlenarySitting "2019-11-13"^^xsd:date;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-11-13>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-11-13-ATT>;
   ep:hasCre <reds%3AiPlCre_Sit/CRE-9-2019-11-13>;
@@ -259,7 +259,7 @@ ep:PlenarySitting_20191113 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-011692-01>;
   ep:formsPartOf ep:PlenarySession_20191113-20191114 .
 
-ep:PlenarySitting_20191024 a ep:PrenarySetting;
+ep:PlenarySitting_20191024 a ep:PlenarySitting;
   rdfs:label "SESP 2019-10-24";
   skos:prefLabel "Thursday, 24 October 2019"@en, "Jeudi 24 octobre 2019"@fr, "Donnerstag, 24. Oktober 2019"@de,
     "Giovedì 24 ottobre 2019"@it, "Jueves 24 de octubre de 2019"@es, "Czwartek, 24 października 2019"@pl,
@@ -269,7 +269,7 @@ ep:PlenarySitting_20191024 a ep:PrenarySetting;
     "2019. október 24., csütörtök"@hu, "Il-Ħamis, 24 ta' Ottubru 2019"@mt, "Donderdag 24 oktober 2019"@nl,
     "Quinta-feira, 24 de Outubro de 2019"@pt, "Joi, 24 octombrie 2019"@ro, "Štvrtok, 24. októbra 2019"@sk,
     "Četrtek, 24. oktober 2019"@sl, "Torstai 24. lokakuuta 2019"@fi, "Torsdagen den 24 oktober 2019"@sv;
-  ep:datePlenarySetting "2019-10-24"^^xsd:date;
+  ep:datePlenarySitting "2019-10-24"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-9-2019-10-24-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-10-24>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-10-24-ATT>;
@@ -287,7 +287,7 @@ ep:PlenarySession_20191021-20191024 a ep:PlenarySession;
     ep:PlenarySitting_20191021;
   rdfs:label "Plenary session from 2019-10-21 to 2019-10-24" .
 
-ep:PlenarySitting_20191023 a ep:PrenarySetting;
+ep:PlenarySitting_20191023 a ep:PlenarySitting;
   rdfs:label "SESP 2019-10-23";
   skos:prefLabel "Wednesday, 23 October 2019"@en, "Mercredi 23 octobre 2019"@fr, "Mittwoch, 23. Oktober 2019"@de,
     "Mercoledì 23 ottobre 2019"@it, "Miércoles 23 de octubre de 2019"@es, "Środa, 23 października 2019"@pl,
@@ -297,7 +297,7 @@ ep:PlenarySitting_20191023 a ep:PrenarySetting;
     "2019. október 23., szerda"@hu, "L-Erbgħa, 23 ta' Ottubru 2019"@mt, "Woensdag 23 oktober 2019"@nl,
     "Quarta-feira, 23 de Outubro de 2019"@pt, "Miercuri, 23 octombrie 2019"@ro, "Streda, 23. októbra 2019"@sk,
     "Sreda, 23. oktober 2019"@sl, "Keskiviikko 23. lokakuuta 2019"@fi, "Onsdagen den 23 oktober 2019"@sv;
-  ep:datePlenarySetting "2019-10-23"^^xsd:date;
+  ep:datePlenarySitting "2019-10-23"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-9-2019-10-23-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-10-23>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-10-23-ATT>;
@@ -308,7 +308,7 @@ ep:PlenarySitting_20191023 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-011660-01>;
   ep:formsPartOf ep:PlenarySession_20191021-20191024 .
 
-ep:PlenarySitting_20191022 a ep:PrenarySetting;
+ep:PlenarySitting_20191022 a ep:PlenarySitting;
   rdfs:label "SESP 2019-10-22";
   skos:prefLabel "Tuesday, 22 October 2019"@en, "Mardi 22 octobre 2019"@fr, "Dienstag, 22. Oktober 2019"@de,
     "Martedì 22 ottobre 2019"@it, "Martes 22 de octubre de 2019"@es, "Wtorek, 22 października 2019"@pl,
@@ -318,7 +318,7 @@ ep:PlenarySitting_20191022 a ep:PrenarySetting;
     "It-Tlieta, 22 ta' Ottubru 2019"@mt, "Dinsdag 22 oktober 2019"@nl, "Terça-feira, 22 de Outubro de 2019"@pt,
     "Marţi, 22 octombrie 2019"@ro, "Utorok, 22. októbra 2019"@sk, "Torek, 22. oktober 2019"@sl,
     "Tiistai 22. lokakuuta 2019"@fi, "Tisdagen den 22 oktober 2019"@sv;
-  ep:datePlenarySetting "2019-10-22"^^xsd:date;
+  ep:datePlenarySitting "2019-10-22"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-9-2019-10-22-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-10-22>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-10-22-ATT>;
@@ -329,7 +329,7 @@ ep:PlenarySitting_20191022 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-011658-01>;
   ep:formsPartOf ep:PlenarySession_20191021-20191024 .
 
-ep:PlenarySitting_20191021 a ep:PrenarySetting;
+ep:PlenarySitting_20191021 a ep:PlenarySitting;
   rdfs:label "SESP 2019-10-21";
   skos:prefLabel "Monday, 21 October 2019"@en, "Lundi 21 octobre 2019"@fr, "Montag, 21. Oktober 2019"@de,
     "Lunedì 21 ottobre 2019"@it, "Lunes 21 de octubre de 2019"@es, "Poniedziałek, 21 października 2019"@pl,
@@ -339,7 +339,7 @@ ep:PlenarySitting_20191021 a ep:PrenarySetting;
     "It-Tnejn, 21 ta' Ottubru 2019"@mt, "Maandag 21 oktober 2019"@nl, "Segunda-feira, 21 de Outubro de 2019"@pt,
     "Luni, 21 octombrie 2019"@ro, "Pondelok, 21. októbra 2019"@sk, "Ponedeljek, 21. oktober 2019"@sl,
     "Maanantai 21. lokakuuta 2019"@fi, "Måndagen den 21 oktober 2019"@sv;
-  ep:datePlenarySetting "2019-10-21"^^xsd:date;
+  ep:datePlenarySitting "2019-10-21"^^xsd:date;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-10-21>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-10-21-ATT>;
   ep:hasCre <reds%3AiPlCre_Sit/CRE-9-2019-10-21>;
@@ -349,7 +349,7 @@ ep:PlenarySitting_20191021 a ep:PrenarySetting;
   ep:hasAnnex <reds%3AiPlPv_Ann/PV-9-2019-10-21-ANN-1>;
   ep:formsPartOf ep:PlenarySession_20191021-20191024 .
 
-ep:PlenarySitting_20191010 a ep:PrenarySetting;
+ep:PlenarySitting_20191010 a ep:PlenarySitting;
   rdfs:label "SESP 2019-10-10";
   skos:prefLabel "Thursday, 10 October 2019"@en, "Jeudi 10 octobre 2019"@fr, "Donnerstag, 10. Oktober 2019"@de,
     "Giovedì 10 ottobre 2019"@it, "Jueves 10 de octubre de 2019"@es, "Czwartek, 10 października 2019"@pl,
@@ -359,7 +359,7 @@ ep:PlenarySitting_20191010 a ep:PrenarySetting;
     "2019. október 10., csütörtök"@hu, "Il-Ħamis, 10 ta' Ottubru 2019"@mt, "Donderdag 10 oktober 2019"@nl,
     "Quinta-feira, 10 de Outubro de 2019"@pt, "Joi, 10 octombrie 2019"@ro, "Štvrtok, 10. októbra 2019"@sk,
     "Četrtek, 10. oktober 2019"@sl, "Torstai 10. lokakuuta 2019"@fi, "Torsdagen den 10 oktober 2019"@sv;
-  ep:datePlenarySetting "2019-10-10"^^xsd:date;
+  ep:datePlenarySitting "2019-10-10"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-9-2019-10-10-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-10-10>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-10-10-ATT>;
@@ -376,7 +376,7 @@ ep:PlenarySession_20191009-20191010 a ep:PlenarySession;
   ep:consistsOf ep:PlenarySitting_20191010, ep:PlenarySitting_20191009;
   rdfs:label "Plenary session from 2019-10-09 to 2019-10-10" .
 
-ep:PlenarySitting_20191009 a ep:PrenarySetting;
+ep:PlenarySitting_20191009 a ep:PlenarySitting;
   rdfs:label "SESP 2019-10-09";
   skos:prefLabel "Wednesday, 9 October 2019"@en, "Mercredi 9 octobre 2019"@fr, "Mittwoch, 9. Oktober 2019"@de,
     "Mercoledì 9 ottobre 2019"@it, "Miércoles 9 de octubre de 2019"@es, "Środa, 9 października 2019"@pl,
@@ -386,7 +386,7 @@ ep:PlenarySitting_20191009 a ep:PrenarySetting;
     "L-Erbgħa, 9 ta' Ottubru 2019"@mt, "Woensdag 9 oktober 2019"@nl, "Quarta-feira, 9 de Outubro de 2019"@pt,
     "Miercuri, 9 octombrie 2019"@ro, "Streda, 9. októbra 2019"@sk, "Sreda, 9. oktober 2019"@sl,
     "Keskiviikko 9. lokakuuta 2019"@fi, "Onsdagen den 9 oktober 2019"@sv;
-  ep:datePlenarySetting "2019-10-09"^^xsd:date;
+  ep:datePlenarySitting "2019-10-09"^^xsd:date;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-10-09>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-10-09-ATT>;
   ep:hasCre <reds%3AiPlCre_Sit/CRE-9-2019-10-09>;
@@ -395,7 +395,7 @@ ep:PlenarySitting_20191009 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-011653-01>;
   ep:formsPartOf ep:PlenarySession_20191009-20191010 .
 
-ep:PlenarySitting_20190919 a ep:PrenarySetting;
+ep:PlenarySitting_20190919 a ep:PlenarySitting;
   rdfs:label "SESP 2019-09-19";
   skos:prefLabel "Thursday, 19 September 2019"@en, "Jeudi 19 septembre 2019"@fr, "Donnerstag, 19. September 2019"@de,
     "Giovedì 19 settembre 2019"@it, "Jueves 19 de septiembre de 2019"@es, "Czwartek, 19 września 2019"@pl,
@@ -405,7 +405,7 @@ ep:PlenarySitting_20190919 a ep:PrenarySetting;
     "2019. szeptember 19., csütörtök"@hu, "Il-Ħamis, 19 ta' Settembru 2019"@mt, "Donderdag 19 september 2019"@nl,
     "Quinta-feira, 19 de Setembro de 2019"@pt, "Joi, 19 septembrie 2019"@ro, "Štvrtok, 19. septembra 2019"@sk,
     "Četrtek, 19. september 2019"@sl, "Torstai 19. syyskuuta 2019"@fi, "Torsdagen den 19 september 2019"@sv;
-  ep:datePlenarySetting "2019-09-19"^^xsd:date;
+  ep:datePlenarySitting "2019-09-19"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-9-2019-09-19-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-09-19>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-09-19-ATT>;
@@ -423,7 +423,7 @@ ep:PlenarySession_20190916-20190919 a ep:PlenarySession;
     ep:PlenarySitting_20190916;
   rdfs:label "Plenary session from 2019-09-16 to 2019-09-19" .
 
-ep:PlenarySitting_20190918 a ep:PrenarySetting;
+ep:PlenarySitting_20190918 a ep:PlenarySitting;
   rdfs:label "SESP 2019-09-18";
   skos:prefLabel "Wednesday, 18 September 2019"@en, "Mercredi 18 septembre 2019"@fr,
     "Mittwoch, 18. September 2019"@de, "Mercoledì 18 settembre 2019"@it, "Miércoles 18 de septiembre de 2019"@es,
@@ -433,7 +433,7 @@ ep:PlenarySitting_20190918 a ep:PrenarySetting;
     "2019. szeptember 18., szerda"@hu, "L-Erbgħa, 18 ta' Settembru 2019"@mt, "Woensdag 18 september 2019"@nl,
     "Quarta-feira, 18 de Setembro de 2019"@pt, "Miercuri, 18 septembrie 2019"@ro, "Streda, 18. septembra 2019"@sk,
     "Sreda, 18. september 2019"@sl, "Keskiviikko 18. syyskuuta 2019"@fi, "Onsdagen den 18 september 2019"@sv;
-  ep:datePlenarySetting "2019-09-18"^^xsd:date;
+  ep:datePlenarySitting "2019-09-18"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-9-2019-09-18-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-09-18>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-09-18-ATT>;
@@ -444,7 +444,7 @@ ep:PlenarySitting_20190918 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-011630-01>;
   ep:formsPartOf ep:PlenarySession_20190916-20190919 .
 
-ep:PlenarySitting_20190917 a ep:PrenarySetting;
+ep:PlenarySitting_20190917 a ep:PlenarySitting;
   rdfs:label "SESP 2019-09-17";
   skos:prefLabel "Tuesday, 17 September 2019"@en, "Mardi 17 septembre 2019"@fr, "Dienstag, 17. September 2019"@de,
     "Martedì 17 settembre 2019"@it, "Martes 17 de septiembre de 2019"@es, "Wtorek, 17 września 2019"@pl,
@@ -454,7 +454,7 @@ ep:PlenarySitting_20190917 a ep:PrenarySetting;
     "2019. szeptember 17., kedd"@hu, "It-Tlieta, 17 ta' Settembru 2019"@mt, "Dinsdag 17 september 2019"@nl,
     "Terça-feira, 17 de Setembro de 2019"@pt, "Marţi, 17 septembrie 2019"@ro, "Utorok, 17. septembra 2019"@sk,
     "Torek, 17. september 2019"@sl, "Tiistai 17. syyskuuta 2019"@fi, "Tisdagen den 17 september 2019"@sv;
-  ep:datePlenarySetting "2019-09-17"^^xsd:date;
+  ep:datePlenarySitting "2019-09-17"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-9-2019-09-17-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-09-17>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-09-17-ATT>;
@@ -466,7 +466,7 @@ ep:PlenarySitting_20190917 a ep:PrenarySetting;
   ep:hasAnnex <reds%3AiPlPv_Ann/PV-9-2019-09-17-ANN-1>;
   ep:formsPartOf ep:PlenarySession_20190916-20190919 .
 
-ep:PlenarySitting_20190916 a ep:PrenarySetting;
+ep:PlenarySitting_20190916 a ep:PlenarySitting;
   rdfs:label "SESP 2019-09-16";
   skos:prefLabel "Monday, 16 September 2019"@en, "Lundi 16 septembre 2019"@fr, "Montag, 16. September 2019"@de,
     "Lunedì 16 settembre 2019"@it, "Lunes 16 de septiembre de 2019"@es, "Poniedziałek, 16 września 2019"@pl,
@@ -476,7 +476,7 @@ ep:PlenarySitting_20190916 a ep:PrenarySetting;
     "2019. szeptember 16., hétfő"@hu, "It-Tnejn, 16 ta' Settembru 2019"@mt, "Maandag 16 september 2019"@nl,
     "Segunda-feira, 16 de Setembro de 2019"@pt, "Luni, 16 septembrie 2019"@ro, "Pondelok, 16. septembra 2019"@sk,
     "Ponedeljek, 16. september 2019"@sl, "Maanantai 16. syyskuuta 2019"@fi, "Måndagen den 16 september 2019"@sv;
-  ep:datePlenarySetting "2019-09-16"^^xsd:date;
+  ep:datePlenarySitting "2019-09-16"^^xsd:date;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-09-16>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-09-16-ATT>;
   ep:hasCre <reds%3AiPlCre_Sit/CRE-9-2019-09-16>;
@@ -485,7 +485,7 @@ ep:PlenarySitting_20190916 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-011628-01>;
   ep:formsPartOf ep:PlenarySession_20190916-20190919 .
 
-ep:PlenarySitting_20190718 a ep:PrenarySetting;
+ep:PlenarySitting_20190718 a ep:PlenarySitting;
   rdfs:label "SESP 2019-07-18";
   skos:prefLabel "Thursday, 18 July 2019"@en, "Jeudi 18 juillet 2019"@fr, "Donnerstag, 18. Juli 2019"@de,
     "Giovedì 18 luglio 2019"@it, "Jueves 18 de julio de 2019"@es, "Czwartek, 18 lipca 2019"@pl,
@@ -495,7 +495,7 @@ ep:PlenarySitting_20190718 a ep:PrenarySetting;
     "2019. július 18., csütörtök"@hu, "Il-Ħamis, 18 ta' Lulju 2019"@mt, "Donderdag 18 juli 2019"@nl,
     "Quinta-feira, 18 de Julho de 2019"@pt, "Joi, 18 iulie 2019"@ro, "Štvrtok, 18. júla 2019"@sk,
     "Četrtek, 18. julij 2019"@sl, "Torstai 18. heinäkuuta 2019"@fi, "Torsdagen den 18 juli 2019"@sv;
-  ep:datePlenarySetting "2019-07-18"^^xsd:date;
+  ep:datePlenarySitting "2019-07-18"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-9-2019-07-18-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-07-18>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-07-18-ATT>;
@@ -513,7 +513,7 @@ ep:PlenarySession_20190715-20190718 a ep:PlenarySession;
     ep:PlenarySitting_20190715;
   rdfs:label "Plenary session from 2019-07-15 to 2019-07-18" .
 
-ep:PlenarySitting_20190717 a ep:PrenarySetting;
+ep:PlenarySitting_20190717 a ep:PlenarySitting;
   rdfs:label "SESP 2019-07-17";
   skos:prefLabel "Wednesday, 17 July 2019"@en, "Mercredi 17 juillet 2019"@fr, "Mittwoch, 17. Juli 2019"@de,
     "Mercoledì 17 luglio 2019"@it, "Miércoles 17 de julio de 2019"@es, "Środa, 17 lipca 2019"@pl,
@@ -523,7 +523,7 @@ ep:PlenarySitting_20190717 a ep:PrenarySetting;
     "L-Erbgħa, 17 ta' Lulju 2019"@mt, "Woensdag 17 juli 2019"@nl, "Quarta-feira, 17 de Julho de 2019"@pt,
     "Miercuri, 17 iulie 2019"@ro, "Streda, 17. júla 2019"@sk, "Sreda, 17. julij 2019"@sl,
     "Keskiviikko 17. heinäkuuta 2019"@fi, "Onsdagen den 17 juli 2019"@sv;
-  ep:datePlenarySetting "2019-07-17"^^xsd:date;
+  ep:datePlenarySitting "2019-07-17"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-9-2019-07-17-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-07-17>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-07-17-ATT>;
@@ -534,7 +534,7 @@ ep:PlenarySitting_20190717 a ep:PrenarySetting;
   ep:hasAnnex <reds%3AiPlPv_Ann/PV-9-2019-07-17-ANN-1>;
   ep:formsPartOf ep:PlenarySession_20190715-20190718 .
 
-ep:PlenarySitting_20190716 a ep:PrenarySetting;
+ep:PlenarySitting_20190716 a ep:PlenarySitting;
   rdfs:label "SESP 2019-07-16";
   skos:prefLabel "Tuesday, 16 July 2019"@en, "Mardi 16 juillet 2019"@fr, "Dienstag, 16. Juli 2019"@de,
     "Martedì 16 luglio 2019"@it, "Martes 16 de julio de 2019"@es, "Wtorek, 16 lipca 2019"@pl,
@@ -544,7 +544,7 @@ ep:PlenarySitting_20190716 a ep:PrenarySetting;
     "It-Tlieta, 16 ta' Lulju 2019"@mt, "Dinsdag 16 juli 2019"@nl, "Terça-feira, 16 de Julho de 2019"@pt,
     "Marţi, 16 iulie 2019"@ro, "Utorok, 16. júla 2019"@sk, "Torek, 16. julij 2019"@sl,
     "Tiistai 16. heinäkuuta 2019"@fi, "Tisdagen den 16 juli 2019"@sv;
-  ep:datePlenarySetting "2019-07-16"^^xsd:date;
+  ep:datePlenarySitting "2019-07-16"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-9-2019-07-16-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-07-16>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-07-16-ATT>;
@@ -554,7 +554,7 @@ ep:PlenarySitting_20190716 a ep:PrenarySetting;
   ep:hasAnnex <reds%3AiPlPv_Ann/PV-9-2019-07-16-ANN-1>;
   ep:formsPartOf ep:PlenarySession_20190715-20190718 .
 
-ep:PlenarySitting_20190715 a ep:PrenarySetting;
+ep:PlenarySitting_20190715 a ep:PlenarySitting;
   rdfs:label "SESP 2019-07-15";
   skos:prefLabel "Monday, 15 July 2019"@en, "Lundi 15 juillet 2019"@fr, "Montag, 15. Juli 2019"@de,
     "Lunedì 15 luglio 2019"@it, "Lunes 15 de julio de 2019"@es, "Poniedziałek, 15 lipca 2019"@pl,
@@ -564,7 +564,7 @@ ep:PlenarySitting_20190715 a ep:PrenarySetting;
     "It-Tnejn, 15 ta' Lulju 2019"@mt, "Maandag 15 juli 2019"@nl, "Segunda-feira, 15 de Julho de 2019"@pt,
     "Luni, 15 iulie 2019"@ro, "Pondelok, 15. júla 2019"@sk, "Ponedeljek, 15. julij 2019"@sl,
     "Maanantai 15. heinäkuuta 2019"@fi, "Måndagen den 15 juli 2019"@sv;
-  ep:datePlenarySetting "2019-07-15"^^xsd:date;
+  ep:datePlenarySitting "2019-07-15"^^xsd:date;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-07-15>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-07-15-ATT>;
   ep:hasCre <reds%3AiPlCre_Sit/CRE-9-2019-07-15>;
@@ -573,7 +573,7 @@ ep:PlenarySitting_20190715 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-010386-01>;
   ep:formsPartOf ep:PlenarySession_20190715-20190718 .
 
-ep:PlenarySitting_20190704 a ep:PrenarySetting;
+ep:PlenarySitting_20190704 a ep:PlenarySitting;
   rdfs:label "SESP 2019-07-04";
   skos:prefLabel "Thursday, 4 July 2019"@en, "Jeudi 4 juillet 2019"@fr, "Donnerstag, 4. Juli 2019"@de,
     "Giovedì 4 luglio 2019"@it, "Jueves 4 de julio de 2019"@es, "Czwartek, 4 lipca 2019"@pl,
@@ -583,7 +583,7 @@ ep:PlenarySitting_20190704 a ep:PrenarySetting;
     "2019. július 4., csütörtök"@hu, "Il-Ħamis, 4 ta' Lulju 2019"@mt, "Donderdag 4 juli 2019"@nl,
     "Quinta-feira, 4 de Julho de 2019"@pt, "Joi, 4 iulie 2019"@ro, "Štvrtok, 4. júla 2019"@sk,
     "Četrtek, 4. julij 2019"@sl, "Torstai 4. heinäkuuta 2019"@fi, "Torsdagen den 4 juli 2019"@sv;
-  ep:datePlenarySetting "2019-07-04"^^xsd:date;
+  ep:datePlenarySitting "2019-07-04"^^xsd:date;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-07-04>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-07-04-ATT>;
   ep:hasCre <reds%3AiPlCre_Sit/CRE-9-2019-07-04>;
@@ -598,7 +598,7 @@ ep:PlenarySession_20190702-20190704 a ep:PlenarySession;
   ep:consistsOf ep:PlenarySitting_20190704, ep:PlenarySitting_20190703;
   rdfs:label "Plenary session from 2019-07-02 to 2019-07-04" .
 
-ep:PlenarySitting_20190703 a ep:PrenarySetting;
+ep:PlenarySitting_20190703 a ep:PlenarySitting;
   rdfs:label "SESP 2019-07-03";
   skos:prefLabel "Wednesday, 3 July 2019"@en, "Mercredi 3 juillet 2019"@fr, "Mittwoch, 3. Juli 2019"@de,
     "Mercoledì 3 luglio 2019"@it, "Miércoles 3 de julio de 2019"@es, "Środa, 3 lipca 2019"@pl,
@@ -608,7 +608,7 @@ ep:PlenarySitting_20190703 a ep:PrenarySetting;
     "L-Erbgħa, 3 ta' Lulju 2019"@mt, "Woensdag 3 juli 2019"@nl, "Quarta-feira, 3 de Julho de 2019"@pt,
     "Miercuri, 3 iulie 2019"@ro, "Streda, 3. júla 2019"@sk, "Sreda, 3. julij 2019"@sl,
     "Keskiviikko 3. heinäkuuta 2019"@fi, "Onsdagen den 3 juli 2019"@sv;
-  ep:datePlenarySetting "2019-07-03"^^xsd:date;
+  ep:datePlenarySitting "2019-07-03"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-9-2019-07-03-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-07-03>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-07-03-ATT>;
@@ -619,18 +619,18 @@ ep:PlenarySitting_20190703 a ep:PrenarySetting;
   ep:hasAnnex <reds%3AiPlPv_Ann/PV-9-2019-07-03-ANN-1>;
   ep:formsPartOf ep:PlenarySession_20190702-20190704 .
 
-ep:PlenarySitting_20190702 a ep:PrenarySetting;
+ep:PlenarySitting_20190702 a ep:PlenarySitting;
   rdfs:label "SESP 2019-07-02";
   skos:prefLabel "Tuesday, 2 July 2019"@en, "Mardi 2 juillet 2019"@fr, "Dienstag, 2. Juli 2019"@de,
     "Martedì 2 luglio 2019"@it, "Martes 2 de julio de 2019"@es, "Wtorek, 2 lipca 2019"@pl;
-  a ep:PrenarySetting;
+  a ep:PlenarySitting;
   skos:prefLabel "Втoрник, 2 юли 2019"@bg, "Úterý, 2. července 2019"@cs, "Tirsdag den 2. juli 2019"@da,
     "Teisipäev, 2. juuli 2019"@et, "Τρίτη 2 Ιουλίου 2019"@el, "utorak, 2. srpnja 2019."@hr,
     "Otrdiena, 2019. gada 2. jūlijs"@lv, "Antradienis, 2019 m. liepos 2 d."@lt, "2019. július 2., kedd"@hu,
     "It-Tlieta, 2 ta' Lulju 2019"@mt, "Dinsdag 2 juli 2019"@nl, "Terça-feira, 2 de Julho de 2019"@pt,
     "Marţi, 2 iulie 2019"@ro, "Utorok, 2. júla 2019"@sk, "Torek, 2. julij 2019"@sl, "Tiistai 2. heinäkuuta 2019"@fi,
     "Tisdagen den 2 juli 2019"@sv;
-  ep:datePlenarySetting "2019-07-02"^^xsd:date;
+  ep:datePlenarySitting "2019-07-02"^^xsd:date;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-9-2019-07-02>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-9-2019-07-02-ATT>;
   ep:hasCre <reds%3AiPlCre_Sit/CRE-9-2019-07-02>;
@@ -645,7 +645,7 @@ ep:PlenarySession_20190702-20190704 a ep:PlenarySession;
   ep:consistsOf ep:PlenarySitting_20190702;
   rdfs:label "Plenary session from 2019-07-02 to 2019-07-04" .
 
-ep:PlenarySitting_20190418 a ep:PrenarySetting;
+ep:PlenarySitting_20190418 a ep:PlenarySitting;
   rdfs:label "SESP 2019-04-18";
   skos:prefLabel "Thursday, 18 April 2019"@en, "Jeudi 18 avril 2019"@fr, "Donnerstag, 18. April 2019"@de,
     "Giovedì 18 aprile 2019"@it, "Jueves 18 de abril de 2019"@es, "Czwartek, 18 kwietnia 2019"@pl,
@@ -655,7 +655,7 @@ ep:PlenarySitting_20190418 a ep:PrenarySetting;
     "2019. április 18., csütörtök"@hu, "Il-Ħamis, 18 ta' April 2019"@mt, "Donderdag 18 april 2019"@nl,
     "Quinta-feira, 18 de Abril de 2019"@pt, "Joi, 18 aprilie 2019"@ro, "Štvrtok, 18. apríla 2019"@sk,
     "Četrtek, 18. april 2019"@sl, "Torstai 18. huhtikuuta 2019"@fi, "Torsdagen den 18 april 2019"@sv;
-  ep:datePlenarySetting "2019-04-18"^^xsd:date;
+  ep:datePlenarySitting "2019-04-18"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-8-2019-04-18-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-8-2019-04-18>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-8-2019-04-18-ATT>;
@@ -673,7 +673,7 @@ ep:PlenarySession_20190415-20190418 a ep:PlenarySession;
     ep:PlenarySitting_20190415;
   rdfs:label "Plenary session from 2019-04-15 to 2019-04-18" .
 
-ep:PlenarySitting_20190417 a ep:PrenarySetting;
+ep:PlenarySitting_20190417 a ep:PlenarySitting;
   rdfs:label "SESP 2019-04-17";
   skos:prefLabel "Wednesday, 17 April 2019"@en, "Mercredi 17 avril 2019"@fr, "Mittwoch, 17. April 2019"@de,
     "Mercoledì 17 aprile 2019"@it, "Miércoles 17 de abril de 2019"@es, "Środa, 17 kwietnia 2019"@pl,
@@ -683,7 +683,7 @@ ep:PlenarySitting_20190417 a ep:PrenarySetting;
     "2019. április 17., szerda"@hu, "L-Erbgħa, 17 ta' April 2019"@mt, "Woensdag 17 april 2019"@nl,
     "Quarta-feira, 17 de Abril de 2019"@pt, "Miercuri, 17 aprilie 2019"@ro, "Streda, 17. apríla 2019"@sk,
     "Sreda, 17. april 2019"@sl, "Keskiviikko 17. huhtikuuta 2019"@fi, "Onsdagen den 17 april 2019"@sv;
-  ep:datePlenarySetting "2019-04-17"^^xsd:date;
+  ep:datePlenarySitting "2019-04-17"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-8-2019-04-17-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-8-2019-04-17>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-8-2019-04-17-ATT>;
@@ -694,7 +694,7 @@ ep:PlenarySitting_20190417 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-001395-01>;
   ep:formsPartOf ep:PlenarySession_20190415-20190418 .
 
-ep:PlenarySitting_20190416 a ep:PrenarySetting;
+ep:PlenarySitting_20190416 a ep:PlenarySitting;
   rdfs:label "SESP 2019-04-16";
   skos:prefLabel "Tuesday, 16 April 2019"@en, "Mardi 16 avril 2019"@fr, "Dienstag, 16. April 2019"@de,
     "Martedì 16 aprile 2019"@it, "Martes 16 de abril de 2019"@es, "Wtorek, 16 kwietnia 2019"@pl,
@@ -704,7 +704,7 @@ ep:PlenarySitting_20190416 a ep:PrenarySetting;
     "2019. április 16., kedd"@hu, "It-Tlieta, 16 ta' April 2019"@mt, "Dinsdag 16 april 2019"@nl,
     "Terça-feira, 16 de Abril de 2019"@pt, "Marţi, 16 aprilie 2019"@ro, "Utorok, 16. apríla 2019"@sk,
     "Torek, 16. april 2019"@sl, "Tiistai 16. huhtikuuta 2019"@fi, "Tisdagen den 16 april 2019"@sv;
-  ep:datePlenarySetting "2019-04-16"^^xsd:date;
+  ep:datePlenarySitting "2019-04-16"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-8-2019-04-16-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-8-2019-04-16>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-8-2019-04-16-ATT>;
@@ -716,7 +716,7 @@ ep:PlenarySitting_20190416 a ep:PrenarySetting;
   ep:hasAnnex <reds%3AiPlPv_Ann/PV-8-2019-04-16-ANN-1>;
   ep:formsPartOf ep:PlenarySession_20190415-20190418 .
 
-ep:PlenarySitting_20190415 a ep:PrenarySetting;
+ep:PlenarySitting_20190415 a ep:PlenarySitting;
   rdfs:label "SESP 2019-04-15";
   skos:prefLabel "Monday, 15 April 2019"@en, "Lundi 15 avril 2019"@fr, "Montag, 15. April 2019"@de,
     "Lunedì 15 aprile 2019"@it, "Lunes 15 de abril de 2019"@es, "Poniedziałek, 15 kwietnia 2019"@pl,
@@ -726,7 +726,7 @@ ep:PlenarySitting_20190415 a ep:PrenarySetting;
     "2019. április 15., hétfő"@hu, "It-Tnejn, 15 ta' April 2019"@mt, "Maandag 15 april 2019"@nl,
     "Segunda-feira, 15 de Abril de 2019"@pt, "Luni, 15 aprilie 2019"@ro, "Pondelok, 15. apríla 2019"@sk,
     "Ponedeljek, 15. april 2019"@sl, "Maanantai 15. huhtikuuta 2019"@fi, "Måndagen den 15 april 2019"@sv;
-  ep:datePlenarySetting "2019-04-15"^^xsd:date;
+  ep:datePlenarySitting "2019-04-15"^^xsd:date;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-8-2019-04-15>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-8-2019-04-15-ATT>;
   ep:hasCre <reds%3AiPlCre_Sit/CRE-8-2019-04-15>;
@@ -735,7 +735,7 @@ ep:PlenarySitting_20190415 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-001373-01>;
   ep:formsPartOf ep:PlenarySession_20190415-20190418 .
 
-ep:PlenarySitting_20190404 a ep:PrenarySetting;
+ep:PlenarySitting_20190404 a ep:PlenarySitting;
   rdfs:label "SESP 2019-04-04";
   skos:prefLabel "Thursday, 4 April 2019"@en, "Jeudi 4 avril 2019"@fr, "Donnerstag, 4. April 2019"@de,
     "Giovedì 4 aprile 2019"@it, "Jueves 4 de abril de 2019"@es, "Czwartek, 4 kwietnia 2019"@pl,
@@ -745,7 +745,7 @@ ep:PlenarySitting_20190404 a ep:PrenarySetting;
     "2019. április 4., csütörtök"@hu, "Il-Ħamis, 4 ta' April 2019"@mt, "Donderdag 4 april 2019"@nl,
     "Quinta-feira, 4 de Abril de 2019"@pt, "Joi, 4 aprilie 2019"@ro, "Štvrtok, 4. apríla 2019"@sk,
     "Četrtek, 4. april 2019"@sl, "Torstai 4. huhtikuuta 2019"@fi, "Torsdagen den 4 april 2019"@sv;
-  ep:datePlenarySetting "2019-04-04"^^xsd:date;
+  ep:datePlenarySitting "2019-04-04"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-8-2019-04-04-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-8-2019-04-04>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-8-2019-04-04-ATT>;
@@ -762,7 +762,7 @@ ep:PlenarySession_20190403-20190404 a ep:PlenarySession;
   ep:consistsOf ep:PlenarySitting_20190404, ep:PlenarySitting_20190403;
   rdfs:label "Plenary session from 2019-04-03 to 2019-04-04" .
 
-ep:PlenarySitting_20190403 a ep:PrenarySetting;
+ep:PlenarySitting_20190403 a ep:PlenarySitting;
   rdfs:label "SESP 2019-04-03";
   skos:prefLabel "Wednesday, 3 April 2019"@en, "Mercredi 3 avril 2019"@fr, "Mittwoch, 3. April 2019"@de,
     "Mercoledì 3 aprile 2019"@it, "Miércoles 3 de abril de 2019"@es, "Środa, 3 kwietnia 2019"@pl,
@@ -772,7 +772,7 @@ ep:PlenarySitting_20190403 a ep:PrenarySetting;
     "2019. április 3., szerda"@hu, "L-Erbgħa, 3 ta' April 2019"@mt, "Woensdag 3 april 2019"@nl,
     "Quarta-feira, 3 de Abril de 2019"@pt, "Miercuri, 3 aprilie 2019"@ro, "Streda, 3. apríla 2019"@sk,
     "Sreda, 3. april 2019"@sl, "Keskiviikko 3. huhtikuuta 2019"@fi, "Onsdagen den 3 april 2019"@sv;
-  ep:datePlenarySetting "2019-04-03"^^xsd:date;
+  ep:datePlenarySitting "2019-04-03"^^xsd:date;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-8-2019-04-03>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-8-2019-04-03-ATT>;
   ep:hasCre <reds%3AiPlCre_Sit/CRE-8-2019-04-03>;
@@ -781,7 +781,7 @@ ep:PlenarySitting_20190403 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-001549-01>;
   ep:formsPartOf ep:PlenarySession_20190403-20190404 .
 
-ep:PlenarySitting_20190328 a ep:PrenarySetting;
+ep:PlenarySitting_20190328 a ep:PlenarySitting;
   rdfs:label "SESP 2019-03-28";
   skos:prefLabel "Thursday, 28 March 2019"@en, "Jeudi 28 mars 2019"@fr, "Donnerstag, 28. März 2019"@de,
     "Giovedì 28 marzo 2019"@it, "Jueves 28 de marzo de 2019"@es, "Czwartek, 28 marca 2019"@pl,
@@ -791,7 +791,7 @@ ep:PlenarySitting_20190328 a ep:PrenarySetting;
     "Il-Ħamis, 28 ta' Marzu 2019"@mt, "Donderdag 28 maart 2019"@nl, "Quinta-feira, 28 de Março de 2019"@pt,
     "Joi, 28 martie 2019"@ro, "Štvrtok, 28. marca 2019"@sk, "Četrtek, 28. marec 2019"@sl,
     "Torstai 28. maaliskuuta 2019"@fi, "Torsdagen den 28 mars 2019"@sv;
-  ep:datePlenarySetting "2019-03-28"^^xsd:date;
+  ep:datePlenarySitting "2019-03-28"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-8-2019-03-28-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-8-2019-03-28>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-8-2019-03-28-ATT>;
@@ -809,7 +809,7 @@ ep:PlenarySession_20190325-20190328 a ep:PlenarySession;
     ep:PlenarySitting_20190325;
   rdfs:label "Plenary session from 2019-03-25 to 2019-03-28" .
 
-ep:PlenarySitting_20190327 a ep:PrenarySetting;
+ep:PlenarySitting_20190327 a ep:PlenarySitting;
   rdfs:label "SESP 2019-03-27";
   skos:prefLabel "Wednesday, 27 March 2019"@en, "Mercredi 27 mars 2019"@fr, "Mittwoch, 27. März 2019"@de,
     "Mercoledì 27 marzo 2019"@it, "Miércoles 27 de marzo de 2019"@es, "Środa, 27 marca 2019"@pl,
@@ -819,7 +819,7 @@ ep:PlenarySitting_20190327 a ep:PrenarySetting;
     "L-Erbgħa, 27 ta' Marzu 2019"@mt, "Woensdag 27 maart 2019"@nl, "Quarta-feira, 27 de Março de 2019"@pt,
     "Miercuri, 27 martie 2019"@ro, "Streda, 27. marca 2019"@sk, "Sreda, 27. marec 2019"@sl,
     "Keskiviikko 27. maaliskuuta 2019"@fi, "Onsdagen den 27 mars 2019"@sv;
-  ep:datePlenarySetting "2019-03-27"^^xsd:date;
+  ep:datePlenarySitting "2019-03-27"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-8-2019-03-27-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-8-2019-03-27>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-8-2019-03-27-ATT>;
@@ -830,7 +830,7 @@ ep:PlenarySitting_20190327 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-001361-01>;
   ep:formsPartOf ep:PlenarySession_20190325-20190328 .
 
-ep:PlenarySitting_20190326 a ep:PrenarySetting;
+ep:PlenarySitting_20190326 a ep:PlenarySitting;
   rdfs:label "SESP 2019-03-26";
   skos:prefLabel "Tuesday, 26 March 2019"@en, "Mardi 26 mars 2019"@fr, "Dienstag, 26. März 2019"@de,
     "Martedì 26 marzo 2019"@it, "Martes 26 de marzo de 2019"@es, "Wtorek, 26 marca 2019"@pl,
@@ -840,7 +840,7 @@ ep:PlenarySitting_20190326 a ep:PrenarySetting;
     "It-Tlieta, 26 ta' Marzu 2019"@mt, "Dinsdag 26 maart 2019"@nl, "Terça-feira, 26 de Março de 2019"@pt,
     "Marţi, 26 martie 2019"@ro, "Utorok, 26. marca 2019"@sk, "Torek, 26. marec 2019"@sl,
     "Tiistai 26. maaliskuuta 2019"@fi, "Tisdagen den 26 mars 2019"@sv;
-  ep:datePlenarySetting "2019-03-26"^^xsd:date;
+  ep:datePlenarySitting "2019-03-26"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-8-2019-03-26-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-8-2019-03-26>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-8-2019-03-26-ATT>;
@@ -851,7 +851,7 @@ ep:PlenarySitting_20190326 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-001360-01>;
   ep:formsPartOf ep:PlenarySession_20190325-20190328 .
 
-ep:PlenarySitting_20190325 a ep:PrenarySetting;
+ep:PlenarySitting_20190325 a ep:PlenarySitting;
   rdfs:label "SESP 2019-03-25";
   skos:prefLabel "Monday, 25 March 2019"@en, "Lundi 25 mars 2019"@fr, "Montag, 25. März 2019"@de,
     "Lunedì 25 marzo 2019"@it, "Lunes 25 de marzo de 2019"@es, "Poniedziałek, 25 marca 2019"@pl,
@@ -861,7 +861,7 @@ ep:PlenarySitting_20190325 a ep:PrenarySetting;
     "It-Tnejn, 25 ta' Marzu 2019"@mt, "Maandag 25 maart 2019"@nl, "Segunda-feira, 25 de Março de 2019"@pt,
     "Luni, 25 martie 2019"@ro, "Pondelok, 25. marca 2019"@sk, "Ponedeljek, 25. marec 2019"@sl,
     "Maanantai 25. maaliskuuta 2019"@fi, "Måndagen den 25 mars 2019"@sv;
-  ep:datePlenarySetting "2019-03-25"^^xsd:date;
+  ep:datePlenarySitting "2019-03-25"^^xsd:date;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-8-2019-03-25>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-8-2019-03-25-ATT>;
   ep:hasCre <reds%3AiPlCre_Sit/CRE-8-2019-03-25>;
@@ -870,7 +870,7 @@ ep:PlenarySitting_20190325 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-001359-01>;
   ep:formsPartOf ep:PlenarySession_20190325-20190328 .
 
-ep:PlenarySitting_20190314 a ep:PrenarySetting;
+ep:PlenarySitting_20190314 a ep:PlenarySitting;
   rdfs:label "SESP 2019-03-14";
   skos:prefLabel "Thursday, 14 March 2019"@en, "Jeudi 14 mars 2019"@fr, "Donnerstag, 14. März 2019"@de,
     "Giovedì 14 marzo 2019"@it, "Jueves 14 de marzo de 2019"@es, "Czwartek, 14 marca 2019"@pl,
@@ -880,7 +880,7 @@ ep:PlenarySitting_20190314 a ep:PrenarySetting;
     "Il-Ħamis, 14 ta' Marzu 2019"@mt, "Donderdag 14 maart 2019"@nl, "Quinta-feira, 14 de Março de 2019"@pt,
     "Joi, 14 martie 2019"@ro, "Štvrtok, 14. marca 2019"@sk, "Četrtek, 14. marec 2019"@sl,
     "Torstai 14. maaliskuuta 2019"@fi, "Torsdagen den 14 mars 2019"@sv;
-  ep:datePlenarySetting "2019-03-14"^^xsd:date;
+  ep:datePlenarySitting "2019-03-14"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-8-2019-03-14-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-8-2019-03-14>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-8-2019-03-14-ATT>;
@@ -899,7 +899,7 @@ ep:PlenarySession_20190311-20190314 a ep:PlenarySession;
     ep:PlenarySitting_20190311;
   rdfs:label "Plenary session from 2019-03-11 to 2019-03-14" .
 
-ep:PlenarySitting_20190313 a ep:PrenarySetting;
+ep:PlenarySitting_20190313 a ep:PlenarySitting;
   rdfs:label "SESP 2019-03-13";
   skos:prefLabel "Wednesday, 13 March 2019"@en, "Mercredi 13 mars 2019"@fr, "Mittwoch, 13. März 2019"@de,
     "Mercoledì 13 marzo 2019"@it, "Miércoles 13 de marzo de 2019"@es, "Środa, 13 marca 2019"@pl,
@@ -909,7 +909,7 @@ ep:PlenarySitting_20190313 a ep:PrenarySetting;
     "L-Erbgħa, 13 ta' Marzu 2019"@mt, "Woensdag 13 maart 2019"@nl, "Quarta-feira, 13 de Março de 2019"@pt,
     "Miercuri, 13 martie 2019"@ro, "Streda, 13. marca 2019"@sk, "Sreda, 13. marec 2019"@sl,
     "Keskiviikko 13. maaliskuuta 2019"@fi, "Onsdagen den 13 mars 2019"@sv;
-  ep:datePlenarySetting "2019-03-13"^^xsd:date;
+  ep:datePlenarySitting "2019-03-13"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-8-2019-03-13-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-8-2019-03-13>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-8-2019-03-13-ATT>;
@@ -920,7 +920,7 @@ ep:PlenarySitting_20190313 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-001347-01>;
   ep:formsPartOf ep:PlenarySession_20190311-20190314 .
 
-ep:PlenarySitting_20190312 a ep:PrenarySetting;
+ep:PlenarySitting_20190312 a ep:PlenarySitting;
   rdfs:label "SESP 2019-03-12";
   skos:prefLabel "Tuesday, 12 March 2019"@en, "Mardi 12 mars 2019"@fr, "Dienstag, 12. März 2019"@de,
     "Martedì 12 marzo 2019"@it, "Martes 12 de marzo de 2019"@es, "Wtorek, 12 marca 2019"@pl,
@@ -930,7 +930,7 @@ ep:PlenarySitting_20190312 a ep:PrenarySetting;
     "It-Tlieta, 12 ta' Marzu 2019"@mt, "Dinsdag 12 maart 2019"@nl, "Terça-feira, 12 de Março de 2019"@pt,
     "Marţi, 12 martie 2019"@ro, "Utorok, 12. marca 2019"@sk, "Torek, 12. marec 2019"@sl,
     "Tiistai 12. maaliskuuta 2019"@fi, "Tisdagen den 12 mars 2019"@sv;
-  ep:datePlenarySetting "2019-03-12"^^xsd:date;
+  ep:datePlenarySitting "2019-03-12"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-8-2019-03-12-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-8-2019-03-12>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-8-2019-03-12-ATT>;
@@ -941,7 +941,7 @@ ep:PlenarySitting_20190312 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-001341-01>;
   ep:formsPartOf ep:PlenarySession_20190311-20190314 .
 
-ep:PlenarySitting_20190311 a ep:PrenarySetting;
+ep:PlenarySitting_20190311 a ep:PlenarySitting;
   rdfs:label "SESP 2019-03-11";
   skos:prefLabel "Monday, 11 March 2019"@en, "Lundi 11 mars 2019"@fr, "Montag, 11. März 2019"@de,
     "Lunedì 11 marzo 2019"@it, "Lunes 11 de marzo de 2019"@es, "Poniedziałek, 11 marca 2019"@pl,
@@ -951,7 +951,7 @@ ep:PlenarySitting_20190311 a ep:PrenarySetting;
     "It-Tnejn, 11 ta' Marzu 2019"@mt, "Maandag 11 maart 2019"@nl, "Segunda-feira, 11 de Março de 2019"@pt,
     "Luni, 11 martie 2019"@ro, "Pondelok, 11. marca 2019"@sk, "Ponedeljek, 11. marec 2019"@sl,
     "Maanantai 11. maaliskuuta 2019"@fi, "Måndagen den 11 mars 2019"@sv;
-  ep:datePlenarySetting "2019-03-11"^^xsd:date;
+  ep:datePlenarySitting "2019-03-11"^^xsd:date;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-8-2019-03-11>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-8-2019-03-11-ATT>;
   ep:hasCre <reds%3AiPlCre_Sit/CRE-8-2019-03-11>;
@@ -960,7 +960,7 @@ ep:PlenarySitting_20190311 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-001340-01>;
   ep:formsPartOf ep:PlenarySession_20190311-20190314 .
 
-ep:PlenarySitting_20190214 a ep:PrenarySetting;
+ep:PlenarySitting_20190214 a ep:PlenarySitting;
   rdfs:label "SESP 2019-02-14";
   skos:prefLabel "Thursday, 14 February 2019"@en, "Jeudi 14 février 2019"@fr, "Donnerstag, 14. Februar 2019"@de,
     "Giovedì 14 febbraio 2019"@it, "Jueves 14 de febrero de 2019"@es, "Czwartek, 14 lutego 2019"@pl,
@@ -970,7 +970,7 @@ ep:PlenarySitting_20190214 a ep:PrenarySetting;
     "2019. február 14., csütörtök"@hu, "Il-Ħamis, 14 ta' Frar 2019"@mt, "Donderdag 14 februari 2019"@nl,
     "Quinta-feira, 14 de Fevereiro de 2019"@pt, "Joi, 14 februarie 2019"@ro, "Štvrtok, 14. februára 2019"@sk,
     "Četrtek, 14. februar 2019"@sl, "Torstai 14. helmikuuta 2019"@fi, "Torsdagen den 14 februari 2019"@sv;
-  ep:datePlenarySetting "2019-02-14"^^xsd:date;
+  ep:datePlenarySitting "2019-02-14"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-8-2019-02-14-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-8-2019-02-14>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-8-2019-02-14-ATT>;
@@ -988,7 +988,7 @@ ep:PlenarySession_20190211-20190214 a ep:PlenarySession;
     ep:PlenarySitting_20190211;
   rdfs:label "Plenary session from 2019-02-11 to 2019-02-14" .
 
-ep:PlenarySitting_20190213 a ep:PrenarySetting;
+ep:PlenarySitting_20190213 a ep:PlenarySitting;
   rdfs:label "SESP 2019-02-13";
   skos:prefLabel "Wednesday, 13 February 2019"@en, "Mercredi 13 février 2019"@fr, "Mittwoch, 13. Februar 2019"@de,
     "Mercoledì 13 febbraio 2019"@it, "Miércoles 13 de febrero de 2019"@es, "Środa, 13 lutego 2019"@pl,
@@ -998,7 +998,7 @@ ep:PlenarySitting_20190213 a ep:PrenarySetting;
     "2019. február 13., szerda"@hu, "L-Erbgħa, 13 ta' Frar 2019"@mt, "Woensdag 13 februari 2019"@nl,
     "Quarta-feira, 13 de Fevereiro de 2019"@pt, "Miercuri, 13 februarie 2019"@ro, "Streda, 13. februára 2019"@sk,
     "Sreda, 13. februar 2019"@sl, "Keskiviikko 13. helmikuuta 2019"@fi, "Onsdagen den 13 februari 2019"@sv;
-  ep:datePlenarySetting "2019-02-13"^^xsd:date;
+  ep:datePlenarySitting "2019-02-13"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-8-2019-02-13-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-8-2019-02-13>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-8-2019-02-13-ATT>;
@@ -1009,7 +1009,7 @@ ep:PlenarySitting_20190213 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-001328-01>;
   ep:formsPartOf ep:PlenarySession_20190211-20190214 .
 
-ep:PlenarySitting_20190212 a ep:PrenarySetting;
+ep:PlenarySitting_20190212 a ep:PlenarySitting;
   rdfs:label "SESP 2019-02-12";
   skos:prefLabel "Tuesday, 12 February 2019"@en, "Mardi 12 février 2019"@fr, "Dienstag, 12. Februar 2019"@de,
     "Martedì 12 febbraio 2019"@it, "Martes 12 de febrero de 2019"@es, "Wtorek, 12 lutego 2019"@pl,
@@ -1019,7 +1019,7 @@ ep:PlenarySitting_20190212 a ep:PrenarySetting;
     "2019. február 12., kedd"@hu, "It-Tlieta, 12 ta' Frar 2019"@mt, "Dinsdag 12 februari 2019"@nl,
     "Terça-feira, 12 de Fevereiro de 2019"@pt, "Marţi, 12 februarie 2019"@ro, "Utorok, 12. februára 2019"@sk,
     "Torek, 12. februar 2019"@sl, "Tiistai 12. helmikuuta 2019"@fi, "Tisdagen den 12 februari 2019"@sv;
-  ep:datePlenarySetting "2019-02-12"^^xsd:date;
+  ep:datePlenarySitting "2019-02-12"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-8-2019-02-12-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-8-2019-02-12>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-8-2019-02-12-ATT>;
@@ -1030,7 +1030,7 @@ ep:PlenarySitting_20190212 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-001327-01>;
   ep:formsPartOf ep:PlenarySession_20190211-20190214 .
 
-ep:PlenarySitting_20190211 a ep:PrenarySetting;
+ep:PlenarySitting_20190211 a ep:PlenarySitting;
   rdfs:label "SESP 2019-02-11";
   skos:prefLabel "Monday, 11 February 2019"@en, "Lundi 11 février 2019"@fr, "Montag, 11. Februar 2019"@de,
     "Lunedì 11 febbraio 2019"@it, "Lunes 11 de febrero de 2019"@es, "Poniedziałek, 11 lutego 2019"@pl,
@@ -1040,7 +1040,7 @@ ep:PlenarySitting_20190211 a ep:PrenarySetting;
     "2019. február 11., hétfő"@hu, "It-Tnejn, 11 ta' Frar 2019"@mt, "Maandag 11 februari 2019"@nl,
     "Segunda-feira, 11 de Fevereiro de 2019"@pt, "Luni, 11 februarie 2019"@ro, "Pondelok, 11. februára 2019"@sk,
     "Ponedeljek, 11. februar 2019"@sl, "Maanantai 11. helmikuuta 2019"@fi, "Måndagen den 11 februari 2019"@sv;
-  ep:datePlenarySetting "2019-02-11"^^xsd:date;
+  ep:datePlenarySitting "2019-02-11"^^xsd:date;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-8-2019-02-11>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-8-2019-02-11-ATT>;
   ep:hasCre <reds%3AiPlCre_Sit/CRE-8-2019-02-11>;
@@ -1049,7 +1049,7 @@ ep:PlenarySitting_20190211 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-001326-01>;
   ep:formsPartOf ep:PlenarySession_20190211-20190214 .
 
-ep:PlenarySitting_20190131 a ep:PrenarySetting;
+ep:PlenarySitting_20190131 a ep:PlenarySitting;
   rdfs:label "SESP 2019-01-31";
   skos:prefLabel "Thursday, 31 January 2019"@en, "Jeudi 31 janvier 2019"@fr, "Donnerstag, 31. Januar 2019"@de,
     "Giovedì 31 gennaio 2019"@it, "Jueves 31 de enero de 2019"@es, "Czwartek, 31 stycznia 2019"@pl,
@@ -1059,7 +1059,7 @@ ep:PlenarySitting_20190131 a ep:PrenarySetting;
     "2019. január 31., csütörtök"@hu, "Il-Ħamis, 31 ta' Jannar 2019"@mt, "Donderdag 31 januari 2019"@nl,
     "Quinta-feira, 31 de Janeiro de 2019"@pt, "Joi, 31 ianuarie 2019"@ro, "Štvrtok, 31. januára 2019"@sk,
     "Četrtek, 31. januar 2019"@sl, "Torstai 31. tammikuuta 2019"@fi, "Torsdagen den 31 januari 2019"@sv;
-  ep:datePlenarySetting "2019-01-31"^^xsd:date;
+  ep:datePlenarySitting "2019-01-31"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-8-2019-01-31-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-8-2019-01-31>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-8-2019-01-31-ATT>;
@@ -1077,7 +1077,7 @@ ep:PlenarySession_20190130-20190131 a ep:PlenarySession;
   ep:consistsOf ep:PlenarySitting_20190131, ep:PlenarySitting_20190130;
   rdfs:label "Plenary session from 2019-01-30 to 2019-01-31" .
 
-ep:PlenarySitting_20190130 a ep:PrenarySetting;
+ep:PlenarySitting_20190130 a ep:PlenarySitting;
   rdfs:label "SESP 2019-01-30";
   skos:prefLabel "Wednesday, 30 January 2019"@en, "Mercredi 30 janvier 2019"@fr, "Mittwoch, 30. Januar 2019"@de,
     "Mercoledì 30 gennaio 2019"@it, "Miércoles 30 de enero de 2019"@es, "Środa, 30 stycznia 2019"@pl,
@@ -1087,7 +1087,7 @@ ep:PlenarySitting_20190130 a ep:PrenarySetting;
     "2019. január 30., szerda"@hu, "L-Erbgħa, 30 ta' Jannar 2019"@mt, "Woensdag 30 januari 2019"@nl,
     "Quarta-feira, 30 de Janeiro de 2019"@pt, "Miercuri, 30 ianuarie 2019"@ro, "Streda, 30. januára 2019"@sk,
     "Sreda, 30. januar 2019"@sl, "Keskiviikko 30. tammikuuta 2019"@fi, "Onsdagen den 30 januari 2019"@sv;
-  ep:datePlenarySetting "2019-01-30"^^xsd:date;
+  ep:datePlenarySitting "2019-01-30"^^xsd:date;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-8-2019-01-30>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-8-2019-01-30-ATT>;
   ep:hasCre <reds%3AiPlCre_Sit/CRE-8-2019-01-30>;
@@ -1096,7 +1096,7 @@ ep:PlenarySitting_20190130 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-001547-01>;
   ep:formsPartOf ep:PlenarySession_20190130-20190131 .
 
-ep:PlenarySitting_20190117 a ep:PrenarySetting;
+ep:PlenarySitting_20190117 a ep:PlenarySitting;
   rdfs:label "SESP 2019-01-17";
   skos:prefLabel "Thursday, 17 January 2019"@en, "Jeudi 17 janvier 2019"@fr, "Donnerstag, 17. Januar 2019"@de,
     "Giovedì 17 gennaio 2019"@it, "Jueves 17 de enero de 2019"@es, "Czwartek, 17 stycznia 2019"@pl,
@@ -1106,7 +1106,7 @@ ep:PlenarySitting_20190117 a ep:PrenarySetting;
     "2019. január 17., csütörtök"@hu, "Il-Ħamis, 17 ta' Jannar 2019"@mt, "Donderdag 17 januari 2019"@nl,
     "Quinta-feira, 17 de Janeiro de 2019"@pt, "Joi, 17 ianuarie 2019"@ro, "Štvrtok, 17. januára 2019"@sk,
     "Četrtek, 17. januar 2019"@sl, "Torstai 17. tammikuuta 2019"@fi, "Torsdagen den 17 januari 2019"@sv;
-  ep:datePlenarySetting "2019-01-17"^^xsd:date;
+  ep:datePlenarySitting "2019-01-17"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-8-2019-01-17-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-8-2019-01-17>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-8-2019-01-17-ATT>;
@@ -1124,7 +1124,7 @@ ep:PlenarySession_20190114-20190117 a ep:PlenarySession;
     ep:PlenarySitting_20190114;
   rdfs:label "Plenary session from 2019-01-14 to 2019-01-17" .
 
-ep:PlenarySitting_20190116 a ep:PrenarySetting;
+ep:PlenarySitting_20190116 a ep:PlenarySitting;
   rdfs:label "SESP 2019-01-16";
   skos:prefLabel "Wednesday, 16 January 2019"@en, "Mercredi 16 janvier 2019"@fr, "Mittwoch, 16. Januar 2019"@de,
     "Mercoledì 16 gennaio 2019"@it, "Miércoles 16 de enero de 2019"@es, "Środa, 16 stycznia 2019"@pl,
@@ -1134,7 +1134,7 @@ ep:PlenarySitting_20190116 a ep:PrenarySetting;
     "2019. január 16., szerda"@hu, "L-Erbgħa, 16 ta' Jannar 2019"@mt, "Woensdag 16 januari 2019"@nl,
     "Quarta-feira, 16 de Janeiro de 2019"@pt, "Miercuri, 16 ianuarie 2019"@ro, "Streda, 16. januára 2019"@sk,
     "Sreda, 16. januar 2019"@sl, "Keskiviikko 16. tammikuuta 2019"@fi, "Onsdagen den 16 januari 2019"@sv;
-  ep:datePlenarySetting "2019-01-16"^^xsd:date;
+  ep:datePlenarySitting "2019-01-16"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-8-2019-01-16-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-8-2019-01-16>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-8-2019-01-16-ATT>;
@@ -1145,7 +1145,7 @@ ep:PlenarySitting_20190116 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-001324-01>;
   ep:formsPartOf ep:PlenarySession_20190114-20190117 .
 
-ep:PlenarySitting_20190115 a ep:PrenarySetting;
+ep:PlenarySitting_20190115 a ep:PlenarySitting;
   rdfs:label "SESP 2019-01-15";
   skos:prefLabel "Tuesday, 15 January 2019"@en, "Mardi 15 janvier 2019"@fr, "Dienstag, 15. Januar 2019"@de,
     "Martedì 15 gennaio 2019"@it, "Martes 15 de enero de 2019"@es, "Wtorek, 15 stycznia 2019"@pl,
@@ -1155,7 +1155,7 @@ ep:PlenarySitting_20190115 a ep:PrenarySetting;
     "It-Tlieta, 15 ta' Jannar 2019"@mt, "Dinsdag 15 januari 2019"@nl, "Terça-feira, 15 de Janeiro de 2019"@pt,
     "Marţi, 15 ianuarie 2019"@ro, "Utorok, 15. januára 2019"@sk, "Torek, 15. januar 2019"@sl,
     "Tiistai 15. tammikuuta 2019"@fi, "Tisdagen den 15 januari 2019"@sv;
-  ep:datePlenarySetting "2019-01-15"^^xsd:date;
+  ep:datePlenarySitting "2019-01-15"^^xsd:date;
   ep:hasAdoptedTextList <reds%3AiPlTa_Toc/TA-8-2019-01-15-TOC>;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-8-2019-01-15>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-8-2019-01-15-ATT>;
@@ -1166,7 +1166,7 @@ ep:PlenarySitting_20190115 a ep:PrenarySetting;
   ep:hasLogisticMeeting <reds%3AiCalPlMeeting/CMTG-PL-2019-001323-01>;
   ep:formsPartOf ep:PlenarySession_20190114-20190117 .
 
-ep:PlenarySitting_20190114 a ep:PrenarySetting;
+ep:PlenarySitting_20190114 a ep:PlenarySitting;
   rdfs:label "SESP 2019-01-14";
   skos:prefLabel "Monday, 14 January 2019"@en, "Lundi 14 janvier 2019"@fr, "Montag, 14. Januar 2019"@de,
     "Lunedì 14 gennaio 2019"@it, "Lunes 14 de enero de 2019"@es, "Poniedziałek, 14 stycznia 2019"@pl,
@@ -1176,7 +1176,7 @@ ep:PlenarySitting_20190114 a ep:PrenarySetting;
     "It-Tnejn, 14 ta' Jannar 2019"@mt, "Maandag 14 januari 2019"@nl, "Segunda-feira, 14 de Janeiro de 2019"@pt,
     "Luni, 14 ianuarie 2019"@ro, "Pondelok, 14. januára 2019"@sk, "Ponedeljek, 14. januar 2019"@sl,
     "Maanantai 14. tammikuuta 2019"@fi, "Måndagen den 14 januari 2019"@sv;
-  ep:datePlenarySetting "2019-01-14"^^xsd:date;
+  ep:datePlenarySitting "2019-01-14"^^xsd:date;
   ep:hasAgenda <reds%3AiPlOj_Sit/OJQ-8-2019-01-14>;
   ep:hasAttendanceList <reds%3AiPlPv_Att/PV-8-2019-01-14-ATT>;
   ep:hasCre <reds%3AiPlCre_Sit/CRE-8-2019-01-14>;
