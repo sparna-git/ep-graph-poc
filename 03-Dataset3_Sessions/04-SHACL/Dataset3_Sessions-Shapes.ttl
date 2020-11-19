@@ -22,9 +22,9 @@
 epsh:PlenarySession a sh:NodeShape;
   rdfs:label "Plenary Session"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx4428 .
+  sh:ignoredProperties _:node1em6ifuhbx5347 .
 
-_:node1em6ifuhbx4428 rdf:first rdf:type;
+_:node1em6ifuhbx5347 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:PlenarySession sh:nodeKind sh:IRI;
@@ -36,19 +36,19 @@ epsh:PlenarySession sh:nodeKind sh:IRI;
 epsh:PlenarySitting a sh:NodeShape;
   rdfs:label "Plneary Sitting"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx4429 .
+  sh:ignoredProperties _:node1em6ifuhbx5348 .
 
-_:node1em6ifuhbx4429 rdf:first rdf:type;
+_:node1em6ifuhbx5348 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:PlenarySitting sh:nodeKind sh:IRI;
   sh:order 2;
-  sh:pattern "^http://data.europarl.europa.eu/PlenarySitting_[0-9][0-9][0-9][0-9][0-9][0-9]$";
+  sh:pattern "^http://data.europarl.europa.eu/PlenarySitting_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$";
   sh:property epsh:P20, epsh:P21, epsh:P22, epsh:P23, epsh:P24, epsh:P25, epsh:P26,
     epsh:P27, epsh:P28, epsh:P29, epsh:P30, epsh:P31, epsh:P32;
   sh:targetClass ep:PlenarySitting .
 
-epsh:P11 sh:datatype rdf:plainLiteral;
+epsh:P11 sh:datatype xsd:string;
   sh:maxCount 1;
   sh:minCount 1;
   sh:name "Contraintes de rdfs:label sur un epsh:PlenarySession"@fr;
@@ -79,7 +79,7 @@ epsh:P14 sh:description "(subProperty of eli:consists_of)"@fr;
   sh:nodeKind sh:IRI;
   sh:path ep:consistsOf .
 
-epsh:P20 sh:datatype rdf:plainLiteral;
+epsh:P20 sh:datatype xsd:string;
   sh:description "titles.short"@fr;
   sh:maxCount 1;
   sh:minCount 1;
@@ -87,80 +87,80 @@ epsh:P20 sh:datatype rdf:plainLiteral;
   sh:path rdfs:label;
   sh:pattern "SESP [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" .
 
-epsh:P21 sh:datatype rdf:plainLiteral;
+epsh:P21 sh:datatype rdf:langString;
   sh:description "titles.main (with language code)"@fr;
-  sh:languageIn _:node1em6ifuhbx4433 .
+  sh:languageIn _:node1em6ifuhbx5352 .
 
-_:node1em6ifuhbx4433 rdf:first "hu";
-  rdf:rest _:node1em6ifuhbx4434 .
+_:node1em6ifuhbx5352 rdf:first "hu";
+  rdf:rest _:node1em6ifuhbx5353 .
 
-_:node1em6ifuhbx4434 rdf:first "et";
-  rdf:rest _:node1em6ifuhbx4435 .
+_:node1em6ifuhbx5353 rdf:first "et";
+  rdf:rest _:node1em6ifuhbx5354 .
 
-_:node1em6ifuhbx4435 rdf:first "fi";
-  rdf:rest _:node1em6ifuhbx4436 .
+_:node1em6ifuhbx5354 rdf:first "fi";
+  rdf:rest _:node1em6ifuhbx5355 .
 
-_:node1em6ifuhbx4436 rdf:first "cs";
-  rdf:rest _:node1em6ifuhbx4437 .
+_:node1em6ifuhbx5355 rdf:first "cs";
+  rdf:rest _:node1em6ifuhbx5356 .
 
-_:node1em6ifuhbx4437 rdf:first "sk";
-  rdf:rest _:node1em6ifuhbx4438 .
+_:node1em6ifuhbx5356 rdf:first "sk";
+  rdf:rest _:node1em6ifuhbx5357 .
 
-_:node1em6ifuhbx4438 rdf:first "lt";
-  rdf:rest _:node1em6ifuhbx4439 .
+_:node1em6ifuhbx5357 rdf:first "lt";
+  rdf:rest _:node1em6ifuhbx5358 .
 
-_:node1em6ifuhbx4439 rdf:first "lv";
-  rdf:rest _:node1em6ifuhbx4440 .
+_:node1em6ifuhbx5358 rdf:first "lv";
+  rdf:rest _:node1em6ifuhbx5359 .
 
-_:node1em6ifuhbx4440 rdf:first "mt";
-  rdf:rest _:node1em6ifuhbx4441 .
+_:node1em6ifuhbx5359 rdf:first "mt";
+  rdf:rest _:node1em6ifuhbx5360 .
 
-_:node1em6ifuhbx4441 rdf:first "en";
-  rdf:rest _:node1em6ifuhbx4442 .
+_:node1em6ifuhbx5360 rdf:first "en";
+  rdf:rest _:node1em6ifuhbx5361 .
 
-_:node1em6ifuhbx4442 rdf:first "da";
-  rdf:rest _:node1em6ifuhbx4443 .
+_:node1em6ifuhbx5361 rdf:first "da";
+  rdf:rest _:node1em6ifuhbx5362 .
 
-_:node1em6ifuhbx4443 rdf:first "nl";
-  rdf:rest _:node1em6ifuhbx4444 .
+_:node1em6ifuhbx5362 rdf:first "nl";
+  rdf:rest _:node1em6ifuhbx5363 .
 
-_:node1em6ifuhbx4444 rdf:first "sv";
-  rdf:rest _:node1em6ifuhbx4445 .
+_:node1em6ifuhbx5363 rdf:first "sv";
+  rdf:rest _:node1em6ifuhbx5364 .
 
-_:node1em6ifuhbx4445 rdf:first "hr";
-  rdf:rest _:node1em6ifuhbx4446 .
+_:node1em6ifuhbx5364 rdf:first "hr";
+  rdf:rest _:node1em6ifuhbx5365 .
 
-_:node1em6ifuhbx4446 rdf:first "sl";
-  rdf:rest _:node1em6ifuhbx4447 .
+_:node1em6ifuhbx5365 rdf:first "sl";
+  rdf:rest _:node1em6ifuhbx5366 .
 
-_:node1em6ifuhbx4447 rdf:first "pl";
-  rdf:rest _:node1em6ifuhbx4448 .
+_:node1em6ifuhbx5366 rdf:first "pl";
+  rdf:rest _:node1em6ifuhbx5367 .
 
-_:node1em6ifuhbx4448 rdf:first "de";
-  rdf:rest _:node1em6ifuhbx4449 .
+_:node1em6ifuhbx5367 rdf:first "de";
+  rdf:rest _:node1em6ifuhbx5368 .
 
-_:node1em6ifuhbx4449 rdf:first "ro";
-  rdf:rest _:node1em6ifuhbx4450 .
+_:node1em6ifuhbx5368 rdf:first "ro";
+  rdf:rest _:node1em6ifuhbx5369 .
 
-_:node1em6ifuhbx4450 rdf:first "it";
-  rdf:rest _:node1em6ifuhbx4451 .
+_:node1em6ifuhbx5369 rdf:first "it";
+  rdf:rest _:node1em6ifuhbx5370 .
 
-_:node1em6ifuhbx4451 rdf:first "pt";
-  rdf:rest _:node1em6ifuhbx4452 .
+_:node1em6ifuhbx5370 rdf:first "pt";
+  rdf:rest _:node1em6ifuhbx5371 .
 
-_:node1em6ifuhbx4452 rdf:first "es";
-  rdf:rest _:node1em6ifuhbx4453 .
+_:node1em6ifuhbx5371 rdf:first "es";
+  rdf:rest _:node1em6ifuhbx5372 .
 
-_:node1em6ifuhbx4453 rdf:first "fr";
-  rdf:rest _:node1em6ifuhbx4454 .
+_:node1em6ifuhbx5372 rdf:first "fr";
+  rdf:rest _:node1em6ifuhbx5373 .
 
-_:node1em6ifuhbx4454 rdf:first "ga";
-  rdf:rest _:node1em6ifuhbx4455 .
+_:node1em6ifuhbx5373 rdf:first "ga";
+  rdf:rest _:node1em6ifuhbx5374 .
 
-_:node1em6ifuhbx4455 rdf:first "el";
-  rdf:rest _:node1em6ifuhbx4456 .
+_:node1em6ifuhbx5374 rdf:first "el";
+  rdf:rest _:node1em6ifuhbx5375 .
 
-_:node1em6ifuhbx4456 rdf:first "bg";
+_:node1em6ifuhbx5375 rdf:first "bg";
   rdf:rest rdf:nil .
 
 epsh:P21 sh:maxCount 23;
@@ -184,7 +184,6 @@ epsh:P23 sh:description "(subproperty of elidl:forms_part_of)"@fr;
 
 epsh:P24 sh:description "activities[4].hasAdoptedTextList.relatedReference[0].uri"@fr;
   sh:maxCount 1;
-  sh:minCount 1;
   sh:nodeKind sh:IRI;
   sh:path ep:hasAdoptedTextList .
 
@@ -214,13 +213,11 @@ epsh:P28 sh:description "activities[8]…"@fr;
 
 epsh:P29 sh:description "activities[9]…."@fr;
   sh:maxCount 1;
-  sh:minCount 1;
   sh:nodeKind sh:IRI;
   sh:path ep:hasRollCallVotes .
 
 epsh:P30 sh:description "activities[10]…."@fr;
   sh:maxCount 1;
-  sh:minCount 1;
   sh:nodeKind sh:IRI;
   sh:path ep:hasVoteResult .
 
