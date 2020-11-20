@@ -1,0 +1,21 @@
+
+
+SELECT 
+	?Assistant_uri
+	?Assistant_familyName
+	?Assistant_firstName
+	?Assistant_assistantType
+	?MEP_uri
+	?MEP_familyName
+    ?MEP_firstName
+WHERE {
+	?Assistant_uri a ep:Assistant .	
+    ?Assistant_uri foaf:familyName ?Assistant_familyName .
+    ?Assistant_uri foaf:firstName ?Assistant_firstName .
+    ?Assistant_uri ep:assistantType ?Assistant_assistantType .
+    ?Assistant_uri org:hasMembership ?membership .
+	?membership org:organization ?MEP_uri	.    
+    ?MEP_uri foaf:familyName ?MEP_familyName .
+    ?MEP_uri foaf:firstName ?MEP_firstName .
+}
+ORDER BY ?Assistant_uri

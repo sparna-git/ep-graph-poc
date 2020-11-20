@@ -1,0 +1,26 @@
+
+
+SELECT 
+	?MEP_uri
+	?MEP_firstName
+	?MEP_familyName
+	?MEP_persId
+	?Civility_uri
+	?Gender_uri
+	?Status_uri
+	?hasBirthCountry_uri
+	?hasPoliticalGroup_uri
+
+WHERE {
+	?MEP_uri a ep:MEP .
+	?MEP_uri foaf:firstName ?MEP_firstName .
+	?MEP_uri foaf:familyName ?MEP_familyName .
+	?MEP_uri skos:notation ?MEP_persId .
+	?MEP_uri ep:Civility ?Civility_uri .
+	?MEP_uri ep:Gender ?Gender_uri .
+	?MEP_uri ep:Status ?Status_uri .
+	?MEP_uri ep:hasBirthCountry ?hasBirthCountry_uri .
+	?MEP_uri org:hasMembership ?membership .
+	?membership org:organization ?hasPoliticalGroup_uri	.
+}
+ORDER BY ?MEP_uri

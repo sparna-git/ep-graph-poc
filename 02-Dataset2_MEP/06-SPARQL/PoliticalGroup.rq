@@ -1,10 +1,13 @@
-# Regenerate gender CSV file
+# Regenerate PoliticalGroup CSV file
 
-SELECT
+SELECT 
 	?uri
-	?label
-	?isoCode
+	?activatedDate
+	?startDate
+	?endDate
+	?orderNumber
 	?notation
+	?label
 
 	(STR(?prefLabel_hu) AS ?preferred_label_hu)
 	(STR(?prefLabel_et) AS ?preferred_label_et)
@@ -32,12 +35,16 @@ SELECT
 	(STR(?prefLabel_bg) AS ?preferred_label_bg)
 
 WHERE {
-	?uri a skos:Concept .
-	?uri skos:inScheme <http://data.europarl.europa.eu/Gender> .
-	?uri ep:isoCode ?isoCode .
+	
+	?uri a org:Organization .
+	?uri ep:activatedDate ?activatedDate .
+	?uri ep:startDate ?startDate .
+	?uri ep:endDate ?endDate .
+	?uri ep:orderNumber ?orderNumber .
 	?uri skos:notation ?notation .
 
 	OPTIONAL { ?uri rdfs:label ?label . }
+
 
 	# prefLabels
 
@@ -66,4 +73,4 @@ WHERE {
 	OPTIONAL { ?uri skos:prefLabel ?prefLabel_el FILTER(lang(?prefLabel_el) = "el")}
 	OPTIONAL { ?uri skos:prefLabel ?prefLabel_bg FILTER(lang(?prefLabel_bg) = "bg")}
 }
-ORDER BY ?label 
+ORDER BY ?label
