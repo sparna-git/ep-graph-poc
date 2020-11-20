@@ -2,10 +2,10 @@
 
 SELECT 
 	?uri
-	?activatedDate
-	?startDate
-	?endDate
-	?orderNumber
+	(STR(?activatedDate_raw) AS ?activatedDate)
+	(STR(?startDate_raw) AS ?startDate)
+	(STR(?endDate_raw) AS ?endDate)
+	(STR(?orderNumber_raw) AS ?orderNumber)
 	?notation
 	?label
 
@@ -37,10 +37,10 @@ SELECT
 WHERE {
 	
 	?uri a org:Organization .
-	?uri ep:activatedDate ?activatedDate .
-	?uri ep:startDate ?startDate .
-	?uri ep:endDate ?endDate .
-	?uri ep:orderNumber ?orderNumber .
+	?uri ep:activatedDate ?activatedDate_raw .
+	?uri ep:startDate ?startDate_raw .
+	?uri ep:endDate ?endDate_raw .
+	?uri ep:orderNumber ?orderNumber_raw .
 	?uri skos:notation ?notation .
 
 	OPTIONAL { ?uri rdfs:label ?label . }
