@@ -1,0 +1,120 @@
+# Regenerate civility CSV file
+SELECT
+	?uri
+	?isoLanguage
+	?label
+
+	(STR(?prefLabel_hu) AS ?preferred_label_hu)
+	(STR(?prefLabel_et) AS ?preferred_label_et)
+	(STR(?prefLabel_fi) AS ?preferred_label_fi)
+	(STR(?prefLabel_cs) AS ?preferred_label_cs)
+	(STR(?prefLabel_sk) AS ?preferred_label_sk)
+	(STR(?prefLabel_lt) AS ?preferred_label_lt)
+	(STR(?prefLabel_lv) AS ?preferred_label_lv)
+	(STR(?prefLabel_mt) AS ?preferred_label_mt)
+	(STR(?prefLabel_en) AS ?preferred_label_en)
+	(STR(?prefLabel_da) AS ?preferred_label_da)
+	(STR(?prefLabel_nl) AS ?preferred_label_nl)
+	(STR(?prefLabel_sv) AS ?preferred_label_sv)
+	(STR(?prefLabel_hr) AS ?preferred_label_hr)
+	(STR(?prefLabel_sl) AS ?preferred_label_sl)
+	(STR(?prefLabel_pl) AS ?preferred_label_pl)
+	(STR(?prefLabel_de) AS ?preferred_label_de)
+	(STR(?prefLabel_ro) AS ?preferred_label_ro)
+	(STR(?prefLabel_it) AS ?preferred_label_it)
+	(STR(?prefLabel_pt) AS ?preferred_label_pt)
+	(STR(?prefLabel_es) AS ?preferred_label_es)
+	(STR(?prefLabel_fr) AS ?preferred_label_fr)
+	(STR(?prefLabel_ga) AS ?preferred_label_ga)
+	(STR(?prefLabel_el) AS ?preferred_label_el)
+	(STR(?prefLabel_bg) AS ?preferred_label_bg)
+
+
+	(STR(?altLabel_hu) AS ?synonym_hu)
+	(STR(?altLabel_et) AS ?synonym_et)
+	(STR(?altLabel_fi) AS ?synonym_fi)
+	(STR(?altLabel_cs) AS ?synonym_cs)
+	(STR(?altLabel_sk) AS ?synonym_sk)
+	(STR(?altLabel_lt) AS ?synonym_lt)
+	(STR(?altLabel_lv) AS ?synonym_lv)
+	(STR(?altLabel_mt) AS ?synonym_mt)
+	(STR(?altLabel_en) AS ?synonym_en)
+	(STR(?altLabel_da) AS ?synonym_da)
+	(STR(?altLabel_nl) AS ?synonym_nl)
+	(STR(?altLabel_sv) AS ?synonym_sv)
+	(STR(?altLabel_hr) AS ?synonym_hr)
+	(STR(?altLabel_sl) AS ?synonym_sl)
+	(STR(?altLabel_pl) AS ?synonym_pl)
+	(STR(?altLabel_de) AS ?synonym_de)
+	(STR(?altLabel_ro) AS ?synonym_ro)
+	(STR(?altLabel_it) AS ?synonym_it)
+	(STR(?altLabel_pt) AS ?synonym_pt)
+	(STR(?altLabel_es) AS ?synonym_es)
+	(STR(?altLabel_fr) AS ?synonym_fr)
+	(STR(?altLabel_ga) AS ?synonym_ga)
+	(STR(?altLabel_el) AS ?synonym_el)
+	(STR(?altLabel_bg) AS ?synonym_bg)
+
+WHERE {
+	?uri a skos:Concept .
+	?uri skos:inScheme <http://data.europarl.europa.eu/Civility> .
+	?uri ep:isoLanguage ?isoLanguage .
+
+	OPTIONAL { ?uri rdfs:label ?label . }
+
+
+	# prefLabels
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_hu FILTER(lang(?prefLabel_hu) = "hu")}
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_et FILTER(lang(?prefLabel_et) = "et")}
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_fi FILTER(lang(?prefLabel_fi) = "fi")}
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_cs FILTER(lang(?prefLabel_cs) = "cs")}
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_sk FILTER(lang(?prefLabel_sk) = "sk")}
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_lt FILTER(lang(?prefLabel_lt) = "lt")}
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_lv FILTER(lang(?prefLabel_lv) = "lv")}
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_mt FILTER(lang(?prefLabel_mt) = "mt")}
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_en FILTER(lang(?prefLabel_en) = "en")}
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_da FILTER(lang(?prefLabel_da) = "da")}
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_nl FILTER(lang(?prefLabel_nl) = "nl")}
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_sv FILTER(lang(?prefLabel_sv) = "sv")}
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_hr FILTER(lang(?prefLabel_hr) = "hr")}
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_sl FILTER(lang(?prefLabel_sl) = "sl")}
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_pl FILTER(lang(?prefLabel_pl) = "pl")}
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_de FILTER(lang(?prefLabel_de) = "de")}
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_ro FILTER(lang(?prefLabel_ro) = "ro")}
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_it FILTER(lang(?prefLabel_it) = "it")}
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_pt FILTER(lang(?prefLabel_pt) = "pt")}
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_es FILTER(lang(?prefLabel_es) = "es")}
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_fr FILTER(lang(?prefLabel_fr) = "fr")}
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_ga FILTER(lang(?prefLabel_ga) = "ga")}
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_el FILTER(lang(?prefLabel_el) = "el")}
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_bg FILTER(lang(?prefLabel_bg) = "bg")}
+
+
+	# altLabels
+	OPTIONAL { ?uri skos:altLabel ?altLabel_hu FILTER(lang(?altLabel_hu) = "hu")}
+	OPTIONAL { ?uri skos:altLabel ?altLabel_et FILTER(lang(?altLabel_et) = "et")}
+	OPTIONAL { ?uri skos:altLabel ?altLabel_fi FILTER(lang(?altLabel_fi) = "fi")}
+	OPTIONAL { ?uri skos:altLabel ?altLabel_cs FILTER(lang(?altLabel_cs) = "cs")}
+	OPTIONAL { ?uri skos:altLabel ?altLabel_sk FILTER(lang(?altLabel_sk) = "sk")}
+	OPTIONAL { ?uri skos:altLabel ?altLabel_lt FILTER(lang(?altLabel_lt) = "lt")}
+	OPTIONAL { ?uri skos:altLabel ?altLabel_lv FILTER(lang(?altLabel_lv) = "lv")}
+	OPTIONAL { ?uri skos:altLabel ?altLabel_mt FILTER(lang(?altLabel_mt) = "mt")}
+	OPTIONAL { ?uri skos:altLabel ?altLabel_en FILTER(lang(?altLabel_en) = "en")}
+	OPTIONAL { ?uri skos:altLabel ?altLabel_da FILTER(lang(?altLabel_da) = "da")}
+	OPTIONAL { ?uri skos:altLabel ?altLabel_nl FILTER(lang(?altLabel_nl) = "nl")}
+	OPTIONAL { ?uri skos:altLabel ?altLabel_sv FILTER(lang(?altLabel_sv) = "sv")}
+	OPTIONAL { ?uri skos:altLabel ?altLabel_hr FILTER(lang(?altLabel_hr) = "hr")}
+	OPTIONAL { ?uri skos:altLabel ?altLabel_sl FILTER(lang(?altLabel_sl) = "sl")}
+	OPTIONAL { ?uri skos:altLabel ?altLabel_pl FILTER(lang(?altLabel_pl) = "pl")}
+	OPTIONAL { ?uri skos:altLabel ?altLabel_de FILTER(lang(?altLabel_de) = "de")}
+	OPTIONAL { ?uri skos:altLabel ?altLabel_ro FILTER(lang(?altLabel_ro) = "ro")}
+	OPTIONAL { ?uri skos:altLabel ?altLabel_it FILTER(lang(?altLabel_it) = "it")}
+	OPTIONAL { ?uri skos:altLabel ?altLabel_pt FILTER(lang(?altLabel_pt) = "pt")}
+	OPTIONAL { ?uri skos:altLabel ?altLabel_es FILTER(lang(?altLabel_es) = "es")}
+	OPTIONAL { ?uri skos:altLabel ?altLabel_fr FILTER(lang(?altLabel_fr) = "fr")}
+	OPTIONAL { ?uri skos:altLabel ?altLabel_ga FILTER(lang(?altLabel_ga) = "ga")}
+	OPTIONAL { ?uri skos:altLabel ?altLabel_el FILTER(lang(?altLabel_el) = "el")}
+	OPTIONAL { ?uri skos:altLabel ?altLabel_bg FILTER(lang(?altLabel_bg) = "bg")}
+
+}
+ORDER BY ?label
