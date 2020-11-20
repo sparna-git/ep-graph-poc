@@ -1,0 +1,962 @@
+{
+  "baseIRI": "http://data.europarl.europa.eu/",
+  "namespaces": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ep": "http://data.europarl.europa.eu/",
+    "epsh": "http://data.europarl.europa.eu/shapes#",
+    "elidl": "http://data.europa.eu/eli/eli-draft-legislation-ontology#"
+  },
+  "subjectMappings": [
+    {
+      "propertyMappings": [
+        {
+          "property": {
+            "transformation": {
+              "expression": "rdfs",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "label"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "trim(row.record.cells['_ - titles - short - zu_nd'][0].value)",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "skos",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "prefLabel"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "trim(cells['_ - titles - main - en'].value)",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "en"
+                  }
+                }
+              }
+            },
+            {
+              "transformation": {
+                "expression": "trim(cells['_ - titles - main - fr'].value)",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "fr"
+                  }
+                }
+              }
+            },
+            {
+              "transformation": {
+                "expression": "trim(cells['_ - titles - main - de'].value) ",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "de"
+                  }
+                }
+              }
+            },
+            {
+              "transformation": {
+                "expression": "trim(cells['_ - titles - main - it'].value) ",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "it"
+                  }
+                }
+              }
+            },
+            {
+              "transformation": {
+                "expression": "trim(cells['_ - titles - main - es'].value) ",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "es"
+                  }
+                }
+              }
+            },
+            {
+              "transformation": {
+                "expression": "trim(cells['_ - titles - main - pl'].value) ",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "pl"
+                  }
+                }
+              }
+            },
+            {
+              "transformation": {
+                "expression": "trim(cells['_ - titles - main - bg'].value) ",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "bg"
+                  }
+                }
+              }
+            },
+            {
+              "transformation": {
+                "expression": "trim(cells['_ - titles - main - cs'].value)",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "cs"
+                  }
+                }
+              }
+            },
+            {
+              "transformation": {
+                "expression": "trim(cells['_ - titles - main - da'].value)",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "da"
+                  }
+                }
+              }
+            },
+            {
+              "transformation": {
+                "expression": "trim(cells['_ - titles - main - et'].value)",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "et"
+                  }
+                }
+              }
+            },
+            {
+              "transformation": {
+                "expression": "trim(cells['_ - titles - main - el'].value)",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "el"
+                  }
+                }
+              }
+            },
+            {
+              "transformation": {
+                "expression": "trim(cells['_ - titles - main - hr'].value)",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "hr"
+                  }
+                }
+              }
+            },
+            {
+              "transformation": {
+                "expression": "trim(cells['_ - titles - main - lv'].value)",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "lv"
+                  }
+                }
+              }
+            },
+            {
+              "transformation": {
+                "expression": "trim(cells['_ - titles - main - lt'].value)",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "lt"
+                  }
+                }
+              }
+            },
+            {
+              "transformation": {
+                "expression": "trim(cells['_ - titles - main - hu'].value)",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "hu"
+                  }
+                }
+              }
+            },
+            {
+              "transformation": {
+                "expression": "trim(cells['_ - titles - main - mt'].value)",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "mt"
+                  }
+                }
+              }
+            },
+            {
+              "transformation": {
+                "expression": "trim(cells['_ - titles - main - nl'].value)",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "nl"
+                  }
+                }
+              }
+            },
+            {
+              "transformation": {
+                "expression": "trim(cells['_ - titles - main - pt'].value)",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "pt"
+                  }
+                }
+              }
+            },
+            {
+              "transformation": {
+                "expression": "trim(cells['_ - titles - main - ro'].value)",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "ro"
+                  }
+                }
+              }
+            },
+            {
+              "transformation": {
+                "expression": "trim(cells['_ - titles - main - sk'].value)",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "sk"
+                  }
+                }
+              }
+            },
+            {
+              "transformation": {
+                "expression": "trim(cells['_ - titles - main - sl'].value)",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "sl"
+                  }
+                }
+              }
+            },
+            {
+              "transformation": {
+                "expression": "trim(cells['_ - titles - main - fi'].value)",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "fi"
+                  }
+                }
+              }
+            },
+            {
+              "transformation": {
+                "expression": "trim(cells['_ - titles - main - sv'].value)",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "sv"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "datePlenarySitting"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "row.record.cells['_ - activities - _ - datePlenarySitting - eventDate'][0].value.toDate('yyyy-mm-dd').toString('yyyy-mm-dd')",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "date"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "hasAdoptedTextList"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "row.record.cells['_ - activities - _ - hasAdoptedTextList - relatedReference - _ - uri'][0].value",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "hasAgenda"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "row.record.cells['_ - activities - _ - hasAgenda - relatedReference - _ - uri'][0].value",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "hasAttendanceList"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "row.record.cells['_ - activities - _ - hasAttendanceList - relatedReference - _ - uri'][0].value",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "hasCre"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "row.record.cells['_ - activities - _ - hasCre - relatedReference - _ - uri'][0].value",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "hasMinutes"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "row.record.cells['_ - activities - _ - hasMinutes - relatedReference - _ - uri'][0].value",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "hasRollCallVotes"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "row.record.cells['_ - activities - _ - hasRollCallVotes - relatedReference - _ - uri'][0].value",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "hasVoteResult"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "row.record.cells['_ - activities - _ - hasVoteResult - relatedReference - _ - uri'][0].value",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "hasLogisticMeeting"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "row.record.cells['_ - activities - _ - hasLogisticMeeting - relatedReference - _ - uri'][0].value",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "hasAnnex"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "row.record.cells['_ - activities - _ - hasAnnex - relatedReference - _ - uri'][0].value",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "formsPartOf"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "'PlenarySession_'+row.record.cells['_ - activities - _ - datePlenaryWeekBegin - eventDate'][0].value.toDate('yyyy-mm-dd').toString('yyyymmdd')+'-'+row.record.cells['_ - activities - _ - datePlenaryWeekEnd - eventDate'][0].value.toDate('yyyy-mm-dd').toString('yyyymmdd')",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        }
+      ],
+      "subject": {
+        "transformation": {
+          "expression": "'PlenarySitting_'+row.record.cells['_ - activities - _ - datePlenarySitting - eventDate'][0].value.toDate('yyyy-mm-dd').toString('yyyymmdd')",
+          "language": "grel"
+        },
+        "valueSource": {
+          "source": "row_index"
+        }
+      },
+      "typeMappings": [
+        {
+          "transformation": {
+            "expression": "ep",
+            "language": "prefix"
+          },
+          "valueSource": {
+            "source": "constant",
+            "constant": "PlenarySitting"
+          }
+        }
+      ]
+    },
+    {
+      "propertyMappings": [
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "datePlenaryWeekBegin"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "row.record.cells['_ - activities - _ - datePlenaryWeekBegin - eventDate'][0].value.toDate('yyyy-mm-dd').toString('yyyy-mm-dd')",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "date"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "datePlenaryWeekEnd"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "row.record.cells['_ - activities - _ - datePlenaryWeekEnd - eventDate'][0].value.toDate('yyyy-mm-dd').toString('yyyy-mm-dd')",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "date"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "ep",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "consistsOf"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "'PlenarySitting_'+row.record.cells['_ - activities - _ - datePlenarySitting - eventDate'][0].value.toDate('yyyy-mm-dd').toString('yyyymmdd')",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "rdfs",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "label"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "'Plenary session from '+row.record.cells['_ - activities - _ - datePlenaryWeekBegin - eventDate'][0].value.toDate('yyyy-mm-dd').toString('yyyy-mm-dd')+' to '+row.record.cells['_ - activities - _ - datePlenaryWeekEnd - eventDate'][0].value.toDate('yyyy-mm-dd').toString('yyyy-mm-dd')",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        }
+      ],
+      "subject": {
+        "transformation": {
+          "expression": "'PlenarySession_'+row.record.cells['_ - activities - _ - datePlenaryWeekBegin - eventDate'][0].value.toDate('yyyy-mm-dd').toString('yyyymmdd')+'-'+row.record.cells['_ - activities - _ - datePlenaryWeekEnd - eventDate'][0].value.toDate('yyyy-mm-dd').toString('yyyymmdd')",
+          "language": "grel"
+        },
+        "valueSource": {
+          "source": "row_index"
+        }
+      },
+      "typeMappings": [
+        {
+          "transformation": {
+            "expression": "ep",
+            "language": "prefix"
+          },
+          "valueSource": {
+            "source": "constant",
+            "constant": "PlenarySession"
+          }
+        }
+      ]
+    }
+  ]
+}
