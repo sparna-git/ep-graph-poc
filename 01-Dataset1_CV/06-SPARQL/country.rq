@@ -3,13 +3,12 @@
 SELECT 
 	?uri
 	?label
-	?notation
-	?euCandidate
-	?euCountry
-	?euStartDate
-	?formalOrder
-	?isoCode
-	?isoNumber
+	(STR(?euCandidate_raw) AS ?euCandidate)
+	(STR(?euCountry_raw) AS  ?euCountry)
+	(STR(?euStartDate_raw) AS  ?euStartDate)
+	(STR(?formalOrder_raw) AS  ?formalOrder)
+	(STR(?isoCode_raw) AS  ?isoCode)
+	(STR(?isoNumber_raw) AS  ?isoNumber)
 
 	(STR(?prefLabel_hu) AS ?preferred_label_hu)
 	(STR(?prefLabel_et) AS ?preferred_label_et)
@@ -64,13 +63,12 @@ SELECT
 WHERE {
 	?uri a skos:Concept .
 	?uri skos:inScheme <http://data.europarl.europa.eu/Country> .
-    ?uri ep:isoCode ?notation .
-	?uri ep:euCandidate ?euCandidate .
-	?uri ep:euCountry ?euCountry .
-	?uri ep:euStartDate	?euStartDate .
-	?uri ep:formalOrder ?formalOrder .
-	?uri ep:isoCode ?isoCode .
-	?uri ep:isoNumber ?isoNumber .
+	OPTIONAL { ?uri ep:euCandidate ?euCandidate_raw . }
+	OPTIONAL { ?uri ep:euCountry ?euCountry_raw . }
+	OPTIONAL { ?uri ep:euStartDate	?euStartDate_raw . }
+	OPTIONAL { ?uri ep:formalOrder ?formalOrder_raw . }
+	?uri ep:isoCode ?isoCode_raw .
+	?uri ep:isoNumber ?isoNumber_raw .
 	OPTIONAL { ?uri rdfs:label ?label . }
     
     # prefLabels
