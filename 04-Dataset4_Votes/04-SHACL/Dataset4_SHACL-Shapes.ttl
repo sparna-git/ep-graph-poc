@@ -1,4 +1,4 @@
-@prefix eponto: <http://data.europa.eu/ontology/ep#> .
+@prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> .
 @prefix epsh: <http://data.europarl.europa.eu/shapes#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,12 +11,12 @@ epsh:Vote a sh:NodeShape;
 Example : 
 /eli/dl/iPlMeeting/20191219/3""";
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx6365 .
+  sh:ignoredProperties _:node1em6ifuhbx6597 .
 
-_:node1em6ifuhbx6365 rdf:first rdf:type;
+_:node1em6ifuhbx6597 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
-epsh:Vote sh:pattern "^http.*/eli/dl/iPlMeeting/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/[0-9][0-9]?$";
+epsh:Vote sh:pattern "^http://data.europarl.europa.eu/eli/dl/iPlMeeting/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/[0-9][0-9]?$";
   sh:property epsh:P11, epsh:P12, epsh:P13, epsh:P14;
   sh:targetClass eponto:Vote .
 
@@ -25,20 +25,20 @@ epsh:MEPVote a sh:NodeShape;
 Example :
 /eli/dl/iPlMeeting/20191219/3/MEP_342""";
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx6366 .
+  sh:ignoredProperties _:node1em6ifuhbx6598 .
 
-_:node1em6ifuhbx6366 rdf:first rdf:type;
+_:node1em6ifuhbx6598 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
-epsh:MEPVote sh:pattern "^http.*/eli/dl/iPlMeeting/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/[0-9][0-9]?/MEP_.*$";
+epsh:MEPVote sh:pattern "^http://data.europarl.europa.eu/eli/dl/iPlMeeting/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/[0-9][0-9]?/MEP_.*$";
   sh:property epsh:P17, epsh:P18, epsh:P19, epsh:P20;
-  sh:targetClass eponto:VoteResult .
+  sh:targetClass eponto:MEPVote .
 
 epsh:P11 sh:datatype rdf:langString;
   sh:description "Nom du texte voté, à récupérer dans la balise RollCallVote.Description.Text";
-  sh:languageIn _:node1em6ifuhbx6369 .
+  sh:languageIn _:node1em6ifuhbx6601 .
 
-_:node1em6ifuhbx6369 rdf:first "en";
+_:node1em6ifuhbx6601 rdf:first "en";
   rdf:rest rdf:nil .
 
 epsh:P11 sh:maxCount 1;
@@ -83,8 +83,18 @@ epsh:P18 sh:description "Référence au MEP qui a voté";
   sh:pattern "^http://data.europarl.europa.eu/person/MEP_.*$" .
 
 epsh:P19 sh:description "Référence à des IRI qui disent « pour » / « contre » ou « abstention »";
-  sh:in "(<http://data.europarl.europa.eu/authority/votePosition/for> <http://data.europarl.europa.eu/authority/votePosition/foagainst<http://data.europarl.europa.eu/authority/votePosition/foabstention)"@fr;
-  sh:maxCount 1;
+  sh:in _:node1em6ifuhbx6602 .
+
+_:node1em6ifuhbx6602 rdf:first <http://data.europarl.europa.eu/authority/votePosition/for>;
+  rdf:rest _:node1em6ifuhbx6603 .
+
+_:node1em6ifuhbx6603 rdf:first <http://data.europarl.europa.eu/authority/votePosition/against>;
+  rdf:rest _:node1em6ifuhbx6604 .
+
+_:node1em6ifuhbx6604 rdf:first <http://data.europarl.europa.eu/authority/votePosition/abstention>;
+  rdf:rest rdf:nil .
+
+epsh:P19 sh:maxCount 1;
   sh:minCount 1;
   sh:nodeKind sh:IRI;
   sh:path eponto:votePosition .
