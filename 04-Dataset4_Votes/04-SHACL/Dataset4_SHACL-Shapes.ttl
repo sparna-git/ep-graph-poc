@@ -1,0 +1,89 @@
+@prefix eponto: <http://data.europa.eu/ontology/ep#> .
+@prefix epsh: <http://data.europarl.europa.eu/shapes#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epsh:Vote a sh:NodeShape;
+  rdfs:comment """/eli/dl/iPlMeeting/{date}/{vote_serial number}
+Example : 
+/eli/dl/iPlMeeting/20191219/3""";
+  sh:closed true;
+  sh:ignoredProperties _:node1em6ifuhbx6117 .
+
+_:node1em6ifuhbx6117 rdf:first rdf:type;
+  rdf:rest rdf:nil .
+
+epsh:Vote sh:pattern "^http.*/eli/dl/iPlMeeting/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/[0-9][0-9]?$";
+  sh:property epsh:P11, epsh:P12, epsh:P13, epsh:P14;
+  sh:targetClass eponto:Vote .
+
+epsh:MEPVote a sh:NodeShape;
+  rdfs:comment """/eli/dl/iPlMeeting/{date}/{vote_serial number}/{mep id}
+Example :
+/eli/dl/iPlMeeting/20191219/3/MEP_342""";
+  sh:closed true;
+  sh:ignoredProperties _:node1em6ifuhbx6118 .
+
+_:node1em6ifuhbx6118 rdf:first rdf:type;
+  rdf:rest rdf:nil .
+
+epsh:MEPVote sh:pattern "^http.*/eli/dl/iPlMeeting/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/[0-9][0-9]?/MEP_.*$";
+  sh:property epsh:P17, epsh:P18, epsh:P19;
+  sh:targetClass eponto:VoteResult .
+
+epsh:P11 sh:datatype rdf:langString;
+  sh:description "Nom du texte voté, à récupérer dans la balise RollCallVote.Description.Text";
+  sh:languageIn _:node1em6ifuhbx6121 .
+
+_:node1em6ifuhbx6121 rdf:first "en";
+  rdf:rest rdf:nil .
+
+epsh:P11 sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "Contraintes de skos:prefLabel sur un epsh:Vote"@fr;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:severity sh:Violation .
+
+epsh:P12 sh:class eponto:MEPVote;
+  sh:description "Lien vers tous les MEPVote de ce vote";
+  sh:minCount 1;
+  sh:nodeKind sh:IRI;
+  sh:path eponto:voteConsistsOfMEPVote .
+
+epsh:P13 sh:description "Lien vers la PlenarySitting pendant laquelle a eu lieu ce vote";
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:nodeKind sh:IRI;
+  sh:path eponto:voteFormsPartOfPlenarySitting;
+  sh:pattern "^http://data.europarl.europa.eu/eli/dl/iPlMeeting/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$" .
+
+epsh:P14 sh:datatype xsd:integer;
+  sh:description "Numéro du vote, 1, 2, 3, etc., à récupérer dans RollCallVote.Result/@Number";
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:nodeKind sh:Literal;
+  sh:path eponto:voteIdentifier .
+
+epsh:P17 sh:class eponto:Vote;
+  sh:description "Référence au Vote";
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:nodeKind sh:IRI;
+  sh:path eponto:MEPVoteFormsPartOfVote .
+
+epsh:P18 sh:description "Référence au MEP qui a voté";
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:nodeKind sh:IRI;
+  sh:path eponto:voteByMEP;
+  sh:pattern "^http://data.europarl.europa.eu/person/MEP_.*$" .
+
+epsh:P19 sh:description "Référence à des IRI qui disent « pour » / « contre » ou « abstention »";
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:nodeKind sh:IRI;
+  sh:path eponto:votePosition .
