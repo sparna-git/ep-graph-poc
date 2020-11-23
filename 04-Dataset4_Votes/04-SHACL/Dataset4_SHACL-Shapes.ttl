@@ -11,9 +11,9 @@ epsh:Vote a sh:NodeShape;
 Example : 
 /eli/dl/iPlMeeting/20191219/3""";
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx6117 .
+  sh:ignoredProperties _:node1em6ifuhbx6365 .
 
-_:node1em6ifuhbx6117 rdf:first rdf:type;
+_:node1em6ifuhbx6365 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:Vote sh:pattern "^http.*/eli/dl/iPlMeeting/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/[0-9][0-9]?$";
@@ -25,20 +25,20 @@ epsh:MEPVote a sh:NodeShape;
 Example :
 /eli/dl/iPlMeeting/20191219/3/MEP_342""";
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx6118 .
+  sh:ignoredProperties _:node1em6ifuhbx6366 .
 
-_:node1em6ifuhbx6118 rdf:first rdf:type;
+_:node1em6ifuhbx6366 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:MEPVote sh:pattern "^http.*/eli/dl/iPlMeeting/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/[0-9][0-9]?/MEP_.*$";
-  sh:property epsh:P17, epsh:P18, epsh:P19;
+  sh:property epsh:P17, epsh:P18, epsh:P19, epsh:P20;
   sh:targetClass eponto:VoteResult .
 
 epsh:P11 sh:datatype rdf:langString;
   sh:description "Nom du texte voté, à récupérer dans la balise RollCallVote.Description.Text";
-  sh:languageIn _:node1em6ifuhbx6121 .
+  sh:languageIn _:node1em6ifuhbx6369 .
 
-_:node1em6ifuhbx6121 rdf:first "en";
+_:node1em6ifuhbx6369 rdf:first "en";
   rdf:rest rdf:nil .
 
 epsh:P11 sh:maxCount 1;
@@ -83,7 +83,15 @@ epsh:P18 sh:description "Référence au MEP qui a voté";
   sh:pattern "^http://data.europarl.europa.eu/person/MEP_.*$" .
 
 epsh:P19 sh:description "Référence à des IRI qui disent « pour » / « contre » ou « abstention »";
+  sh:in "(<http://data.europarl.europa.eu/authority/votePosition/for> <http://data.europarl.europa.eu/authority/votePosition/foagainst<http://data.europarl.europa.eu/authority/votePosition/foabstention)"@fr;
   sh:maxCount 1;
   sh:minCount 1;
   sh:nodeKind sh:IRI;
   sh:path eponto:votePosition .
+
+epsh:P20 sh:description "Référence au groupe politique du MEP qui a voté";
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:nodeKind sh:IRI;
+  sh:path eponto:voteFromPoliticalGroup;
+  sh:pattern "^http://data.europarl.europa.eu/org/group/.*$" .
