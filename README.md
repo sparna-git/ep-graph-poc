@@ -12,9 +12,9 @@ Direct link to SHACL SVG diagram : https://shacl-play.sparna.fr/play/view?url=ht
 
 ## Dataset 3 - Sessions
 
-Direct link to SHACL SVG diagram : https://shacl-play.sparna.fr/play/view?url=https://github.com/sparna-git/ep-graph-poc/blob/main/03-Dataset3_Sessions/04-SHACL/Dataset3_Sessions-Shapes.ttl
+Direct link to SHACL SVG diagram : https://shacl-play.sparna.fr/play/view?url=https://github.com/sparna-git/ep-graph-poc/raw/main/03-Dataset3_Sessions/04-SHACL/Dataset3_Sessions-Shapes.ttl
 
 
 ## Dataset 4 - Votes
 
-Direct link to SHACL SVG diagram : https://shacl-play.sparna.fr/play/view?url=https://github.com/sparna-git/ep-graph-poc/blob/main/04-Dataset4_Votes/04-SHACL/Dataset4_SHACL-Shapes.ttl
+Direct link to SHACL SVG diagram : https://shacl-play.sparna.fr/play/view?url=https://github.com/sparna-git/ep-graph-poc/raw/main/04-Dataset4_Votes/04-SHACL/Dataset4_SHACL-Shapes.ttl
