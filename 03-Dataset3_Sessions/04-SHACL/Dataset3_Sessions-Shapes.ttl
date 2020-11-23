@@ -1,8 +1,8 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix elidl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#> .
 @prefix ep: <http://data.europarl.europa.eu/> .
+@prefix eponto: <http://data.europa.eu/ontology/ep#> .
 @prefix epsh: <http://data.europarl.europa.eu/shapes#> .
 @prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -20,35 +20,41 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 epsh:PlenarySession a sh:NodeShape;
+  rdfs:comment """eli/dl/iPlMeetingGroup/{starting date}-{ending date}
+Example :
+/eli/dl/iPlMeetingGroup/20191216-20191219""";
   rdfs:label "Plenary Session"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx5505 .
+  sh:ignoredProperties _:node1em6ifuhbx6304 .
 
-_:node1em6ifuhbx5505 rdf:first rdf:type;
+_:node1em6ifuhbx6304 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:PlenarySession sh:nodeKind sh:IRI;
   sh:order 1;
-  sh:pattern "^http://data.europarl.europa.eu/PlenarySession_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$";
+  sh:pattern "^http://data.europarl.europa.eu/eli/dl/iPlMeetingGroup/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$";
   sh:property epsh:P11, epsh:P12, epsh:P13, epsh:P14;
-  sh:targetClass ep:PlenarySession .
+  sh:targetClass eponto:PlenarySession .
 
 epsh:PlenarySitting a sh:NodeShape;
+  rdfs:comment """/eli/dl/iPlMeeting/{date}
+Example :
+/eli/dl/iPlMeeting/20191219""";
   rdfs:label "Plneary Sitting"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx5506 .
+  sh:ignoredProperties _:node1em6ifuhbx6305 .
 
-_:node1em6ifuhbx5506 rdf:first rdf:type;
+_:node1em6ifuhbx6305 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:PlenarySitting sh:nodeKind sh:IRI;
   sh:order 2;
-  sh:pattern "^http://data.europarl.europa.eu/PlenarySitting_[0-9][0-9][0-9][0-9][0-9][0-9]$";
+  sh:pattern "^http://data.europarl.europa.eu/eli/dl/iPlMeeting/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$";
   sh:property epsh:P20, epsh:P21, epsh:P22, epsh:P23, epsh:P24, epsh:P25, epsh:P26,
     epsh:P27, epsh:P28, epsh:P29, epsh:P30, epsh:P31, epsh:P32, epsh:P33;
-  sh:targetClass ep:PlenarySitting .
+  sh:targetClass eponto:PlenarySitting .
 
-epsh:P11 sh:datatype rdf:plainLiteral;
+epsh:P11 sh:datatype xsd:string;
   sh:maxCount 1;
   sh:minCount 1;
   sh:name "Contraintes de rdfs:label sur un epsh:PlenarySession"@fr;
@@ -57,110 +63,103 @@ epsh:P11 sh:datatype rdf:plainLiteral;
   sh:pattern "Plenary session from [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9] to [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]";
   sh:severity sh:Violation .
 
-epsh:P12 sh:datatype xsd:date;
-  sh:description """activities[1].datePlenaryWeekBegin
-subproperty of elidl:activity_start_date)"""@fr;
+epsh:P12 sh:datatype xsd:string;
   sh:maxCount 1;
   sh:minCount 1;
   sh:nodeKind sh:Literal;
-  sh:path ep:datePlenaryWeekBegin .
+  sh:path eponto:datePlenaryWeekBegin .
 
 epsh:P13 sh:datatype xsd:date;
-  sh:description """activities[3].datePlenaryWeekEnd
-subproperty of elidl:activity_end_date"""@fr;
   sh:maxCount 1;
   sh:minCount 1;
   sh:nodeKind sh:Literal;
-  sh:path ep:datePlenaryWeekEnd .
+  sh:path eponto:datePlenaryWeekEnd .
 
-epsh:P14 sh:description "(subProperty of eli:consists_of)"@fr;
-  sh:minCount 1;
+epsh:P14 sh:minCount 1;
   sh:node epsh:PlenarySitting;
   sh:nodeKind sh:IRI;
-  sh:path ep:consistsOf .
+  sh:path eponto:consistsOf .
 
-epsh:P20 sh:datatype rdf:plainLiteral;
-  sh:description "titles.short"@fr;
+epsh:P20 sh:datatype xsd:string;
   sh:maxCount 1;
   sh:minCount 1;
   sh:nodeKind sh:Literal;
   sh:path rdfs:label;
   sh:pattern "SESP [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" .
 
-epsh:P21 sh:datatype rdf:plainLiteral;
-  sh:description "titles.main (with language code)"@fr;
-  sh:languageIn _:node1em6ifuhbx5510 .
+epsh:P21 sh:datatype rdf:langString;
+  sh:languageIn _:node1em6ifuhbx6308 .
 
-_:node1em6ifuhbx5510 rdf:first "hu";
-  rdf:rest _:node1em6ifuhbx5511 .
+_:node1em6ifuhbx6308 rdf:first "hu";
+  rdf:rest _:node1em6ifuhbx6309 .
 
-_:node1em6ifuhbx5511 rdf:first "et";
-  rdf:rest _:node1em6ifuhbx5512 .
+_:node1em6ifuhbx6309 rdf:first "et";
+  rdf:rest _:node1em6ifuhbx6310 .
 
-_:node1em6ifuhbx5512 rdf:first "fi";
-  rdf:rest _:node1em6ifuhbx5513 .
+_:node1em6ifuhbx6310 rdf:first "fi";
+  rdf:rest _:node1em6ifuhbx6311 .
 
-_:node1em6ifuhbx5513 rdf:first "cs";
-  rdf:rest _:node1em6ifuhbx5514 .
+_:node1em6ifuhbx6311 rdf:first "cs";
+  rdf:rest _:node1em6ifuhbx6312 .
 
-_:node1em6ifuhbx5514 rdf:first "sk";
-  rdf:rest _:node1em6ifuhbx5515 .
+_:node1em6ifuhbx6312 rdf:first "sk";
+  rdf:rest _:node1em6ifuhbx6313 .
 
-_:node1em6ifuhbx5515 rdf:first "lt";
-  rdf:rest _:node1em6ifuhbx5516 .
+_:node1em6ifuhbx6313 rdf:first "lt";
+  rdf:rest _:node1em6ifuhbx6314 .
 
-_:node1em6ifuhbx5516 rdf:first "lv";
-  rdf:rest _:node1em6ifuhbx5517 .
+_:node1em6ifuhbx6314 rdf:first "lv";
+  rdf:rest _:node1em6ifuhbx6315 .
 
-_:node1em6ifuhbx5517 rdf:first "mt";
-  rdf:rest _:node1em6ifuhbx5518 .
+_:node1em6ifuhbx6315 rdf:first "mt";
+  rdf:rest _:node1em6ifuhbx6316 .
 
-_:node1em6ifuhbx5518 rdf:first "en";
-  rdf:rest _:node1em6ifuhbx5519 .
+_:node1em6ifuhbx6316 rdf:first "en";
+  rdf:rest _:node1em6ifuhbx6317 .
 
-_:node1em6ifuhbx5519 rdf:first "da";
-  rdf:rest _:node1em6ifuhbx5520 .
+_:node1em6ifuhbx6317 rdf:first "da";
+  rdf:rest _:node1em6ifuhbx6318 .
 
-_:node1em6ifuhbx5520 rdf:first "nl";
-  rdf:rest _:node1em6ifuhbx5521 .
+_:node1em6ifuhbx6318 rdf:first "nl";
+  rdf:rest _:node1em6ifuhbx6319 .
 
-_:node1em6ifuhbx5521 rdf:first "sv";
-  rdf:rest _:node1em6ifuhbx5522 .
+_:node1em6ifuhbx6319 rdf:first "sv";
+  rdf:rest _:node1em6ifuhbx6320 .
 
-_:node1em6ifuhbx5522 rdf:first "hr";
-  rdf:rest _:node1em6ifuhbx5523 .
+_:node1em6ifuhbx6320 rdf:first "hr";
+  rdf:rest _:node1em6ifuhbx6321 .
 
-_:node1em6ifuhbx5523 rdf:first "sl";
-  rdf:rest _:node1em6ifuhbx5524 .
+_:node1em6ifuhbx6321 rdf:first "sl";
+  rdf:rest _:node1em6ifuhbx6322 .
 
-_:node1em6ifuhbx5524 rdf:first "pl";
-  rdf:rest _:node1em6ifuhbx5525 .
+_:node1em6ifuhbx6322 rdf:first "pl";
+  rdf:rest _:node1em6ifuhbx6323 .
 
-_:node1em6ifuhbx5525 rdf:first "de";
-  rdf:rest _:node1em6ifuhbx5526 .
+_:node1em6ifuhbx6323 rdf:first "de";
+  rdf:rest _:node1em6ifuhbx6324 .
 
-_:node1em6ifuhbx5526 rdf:first "ro";
-  rdf:rest _:node1em6ifuhbx5527 .
+_:node1em6ifuhbx6324 rdf:first "ro";
+  rdf:rest _:node1em6ifuhbx6325 .
 
-_:node1em6ifuhbx5527 rdf:first "it";
-  rdf:rest _:node1em6ifuhbx5528 .
+_:node1em6ifuhbx6325 rdf:first "it";
+  rdf:rest _:node1em6ifuhbx6326 .
 
-_:node1em6ifuhbx5528 rdf:first "pt";
-  rdf:rest _:node1em6ifuhbx5529 .
+_:node1em6ifuhbx6326 rdf:first "pt";
+  rdf:rest _:node1em6ifuhbx6327 .
 
-_:node1em6ifuhbx5529 rdf:first "es";
-  rdf:rest _:node1em6ifuhbx5530 .
+_:node1em6ifuhbx6327 rdf:first "es";
+  rdf:rest _:node1em6ifuhbx6328 .
 
-_:node1em6ifuhbx5530 rdf:first "fr";
-  rdf:rest _:node1em6ifuhbx5531 .
+_:node1em6ifuhbx6328 rdf:first "fr";
+  rdf:rest _:node1em6ifuhbx6329 .
 
-_:node1em6ifuhbx5531 rdf:first "ga";
-  rdf:rest _:node1em6ifuhbx5532 .
+_:node1em6ifuhbx6329 rdf:first "ga";
+  rdf:rest _:node1em6ifuhbx6330 .
 
-_:node1em6ifuhbx5532 rdf:first "el";
-  rdf:rest _:node1em6ifuhbx5533 .
+_:node1em6ifuhbx6330 rdf:first "el";
+  rdf:rest _:node1em6ifuhbx6331 .
 
-_:node1em6ifuhbx5533 rdf:first "bg";
+_:node1em6ifuhbx6331 rdf:first "bg";
   rdf:rest rdf:nil .
 
 epsh:P21 sh:maxCount 23;
@@ -169,81 +168,70 @@ epsh:P21 sh:maxCount 23;
   sh:path skos:prefLabel .
 
 epsh:P22 sh:datatype xsd:date;
-  sh:description "datePlenarySitting"@fr;
   sh:maxCount 1;
   sh:minCount 1;
   sh:nodeKind sh:Literal;
-  sh:path ep:datePlenarySitting .
+  sh:path eponto:datePlenarySitting .
 
-epsh:P23 sh:description "(subproperty of elidl:forms_part_of)"@fr;
-  sh:maxCount 1;
+epsh:P23 sh:maxCount 1;
   sh:minCount 1;
   sh:node epsh:PlenarySession;
   sh:nodeKind sh:IRI;
-  sh:path ep:formsPartOf .
+  sh:path eponto:formsPartOf .
 
-epsh:P24 sh:description "activities[4].hasAdoptedTextList.relatedReference[0].uri"@fr;
-  sh:maxCount 1;
+epsh:P24 sh:maxCount 1;
   sh:minCount 1;
   sh:nodeKind sh:IRI;
-  sh:path ep:hasAdoptedTextList;
+  sh:path eponto:hasAdoptedTextList;
   sh:pattern "^http://data.europarl.europa.eu/reference/.*$" .
 
-epsh:P25 sh:description "activities[5].hasAgenda.relatedReference[0].uri"@fr;
-  sh:maxCount 1;
+epsh:P25 sh:maxCount 1;
   sh:minCount 1;
   sh:nodeKind sh:IRI;
-  sh:path ep:hasAgenda;
+  sh:path eponto:hasAgenda;
   sh:pattern "^http://data.europarl.europa.eu/reference/.*$" .
 
-epsh:P26 sh:description "activities[6].hasAttendanceList…."@fr;
-  sh:maxCount 1;
+epsh:P26 sh:maxCount 1;
   sh:minCount 1;
   sh:nodeKind sh:IRI;
-  sh:path ep:hasAttendanceList;
+  sh:path eponto:hasAttendanceList;
   sh:pattern "^http://data.europarl.europa.eu/reference/.*$" .
 
-epsh:P27 sh:description "activities[7].hasCre….."@fr;
-  sh:maxCount 1;
+epsh:P27 sh:maxCount 1;
   sh:minCount 1;
   sh:nodeKind sh:IRI;
-  sh:path ep:hasCre;
+  sh:path eponto:hasCre;
   sh:pattern "^http://data.europarl.europa.eu/reference/.*$" .
 
-epsh:P28 sh:description "activities[8]…"@fr;
-  sh:maxCount 1;
+epsh:P28 sh:maxCount 1;
   sh:minCount 1;
   sh:nodeKind sh:IRI;
-  sh:path ep:hasMinutes;
+  sh:path eponto:hasMinutes;
   sh:pattern "^http://data.europarl.europa.eu/reference/.*$" .
 
-epsh:P29 sh:description "activities[9]…."@fr;
-  sh:maxCount 1;
+epsh:P29 sh:maxCount 1;
   sh:minCount 1;
   sh:nodeKind sh:IRI;
-  sh:path ep:hasRollCallVotes;
+  sh:path eponto:hasRollCallVotes;
   sh:pattern "^http://data.europarl.europa.eu/reference/.*$" .
 
-epsh:P30 sh:description "activities[10]…."@fr;
-  sh:maxCount 1;
+epsh:P30 sh:maxCount 1;
   sh:minCount 1;
   sh:nodeKind sh:IRI;
-  sh:path ep:hasVoteResult;
+  sh:path eponto:hasVoteResult;
   sh:pattern "^http://data.europarl.europa.eu/reference/.*$" .
 
-epsh:P31 sh:description "activities[11]…."@fr;
-  sh:maxCount 1;
+epsh:P31 sh:maxCount 1;
   sh:minCount 1;
   sh:nodeKind sh:IRI;
-  sh:path ep:hasLogisticMeeting;
+  sh:path eponto:hasLogisticMeeting;
   sh:pattern "^http://data.europarl.europa.eu/reference/.*$" .
 
 epsh:P32 sh:nodeKind sh:IRI;
-  sh:path ep:hasAnnex;
+  sh:path eponto:hasAnnex;
   sh:pattern "^http://data.europarl.europa.eu/reference/.*$" .
 
-epsh:P33 sh:description "subproperty of elidl:had_participant"@fr;
-  sh:minCount 1;
+epsh:P33 sh:minCount 1;
   sh:nodeKind sh:IRI;
-  sh:path ep:hasParticipant;
-  sh:pattern "^http://data.europarl.europa.eu/MEP_[0-9][0-9][0-9][0-9]?[0-9]?[0-9]?$" .
+  sh:path eponto:hasParticipant;
+  sh:pattern "^http://data.europarl.europa.eu/person/MEP_[0-9][0-9][0-9][0-9]?[0-9]?[0-9]?$" .
