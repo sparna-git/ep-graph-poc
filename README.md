@@ -9,7 +9,7 @@ Direct link to SHACL SVG diagram : https://shacl-play.sparna.fr/play/view?url=ht
 
 Direct link to SHACL SVG diagram : https://shacl-play.sparna.fr/play/view?url=https://github.com/sparna-git/ep-graph-poc/raw/main/02-Dataset2_MEP/04-SHACL/Dataset2_MEP-Shapes.ttl
 
-MEP : [![SHACL Play Badge](https://img.shields.io/endpoint?url=https%3a%2f%2fshacl-play.sparna.fr%2fplay%2fbadge%3furl%3dhttps%3a%2f%2fgithub.com%2fsparna-git%2fep-graph-poc%2fraw%2fmain%2f02-Dataset2_MEP%2f05-RDF%2fMEP-Body_10-11-2020.ttl%26shapesUrl%3dhttps%3a%2f%2fgithub.com%2fsparna-git%2fep-graph-poc%2fraw%2fmain%2f02-Dataset2_MEP%2f04-SHACL%2fDataset2_MEP-Shapes.ttl)](https://shacl-play.sparna.fr/play/validate?url=https://github.com/sparna-git/ep-graph-poc/raw/main/02-Dataset2_MEP/05-RDF/MEP-Body_10-11-2020.ttl&shapesUrl=https://github.com/sparna-git/ep-graph-poc/raw/main/02-Dataset2_MEP/04-SHACL/Dataset2_MEP-Shapes.ttl)
+MEP : [![SHACL Play Badge](https://img.shields.io/endpoint?url=https%3a%2f%2fshacl-play.sparna.fr%2fplay%2fbadge%3furl%3dhttps%3a%2f%2fgithub.com%2fsparna-git%2fep-graph-poc%2fraw%2fmain%2f02-Dataset2_MEP%2f05-RDF%2fMEP-Body_10-11-2020.ttl%26shapesUrl%3dhttps%3a%2f%2fgithub.com%2fsparna-git%2fep-graph-poc%2fraw%2fmain%2f02-Dataset2_MEP%2f04-SHACL%2fDataset2_MEP-Shapes.ttl&style=for-the-badge)](https://shacl-play.sparna.fr/play/validate?url=https://github.com/sparna-git/ep-graph-poc/raw/main/02-Dataset2_MEP/05-RDF/MEP-Body_10-11-2020.ttl&shapesUrl=https://github.com/sparna-git/ep-graph-poc/raw/main/02-Dataset2_MEP/04-SHACL/Dataset2_MEP-Shapes.ttl)
 
 
 ## Dataset 3 - Sessions
