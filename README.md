@@ -5,13 +5,13 @@
 
 Direct link to SHACL SVG diagram : https://shacl-play.sparna.fr/play/view?url=https://github.com/sparna-git/ep-graph-poc/raw/main/01-Dataset1_CV/04-SHACL/Dataset1_CV-Shapes.ttl
 
-Civility :
+Civility : [![SHACL Play Badge](https://img.shields.io/endpoint?url=https%3a%2f%2fshacl-play.sparna.fr%2fplay%2fbadge%3furl%3dhttps%3a%2f%2fgithub.com%2fsparna-git%2fep-graph-poc%2fraw%2fmain%2f01-Dataset1_CV%2f05-RDF%2fcivility.ttl%26shapesUrl%3dhttps%3a%2f%2fgithub.com%2fsparna-git%2fep-graph-poc%2fraw%2fmain%2f01-Dataset1_CV%2f04-SHACL%2fDataset1_CV-Shapes.ttl)](https://shacl-play.sparna.fr/play/validate?url=https://github.com/sparna-git/ep-graph-poc/raw/main/01-Dataset1_CV/05-RDF/civility.ttl&shapesUrl=https://github.com/sparna-git/ep-graph-poc/raw/main/01-Dataset1_CV/04-SHACL/Dataset1_CV-Shapes.ttl)
 
-Gender :
+Gender : [![SHACL Play Badge](https://img.shields.io/endpoint?url=https%3a%2f%2fshacl-play.sparna.fr%2fplay%2fbadge%3furl%3dhttps%3a%2f%2fgithub.com%2fsparna-git%2fep-graph-poc%2fraw%2fmain%2f01-Dataset1_CV%2f05-RDF%2fgender.ttl%26shapesUrl%3dhttps%3a%2f%2fgithub.com%2fsparna-git%2fep-graph-poc%2fraw%2fmain%2f01-Dataset1_CV%2f04-SHACL%2fDataset1_CV-Shapes.ttl)](https://shacl-play.sparna.fr/play/validate?url=https://github.com/sparna-git/ep-graph-poc/raw/main/01-Dataset1_CV/05-RDF/gender.ttl&shapesUrl=https://github.com/sparna-git/ep-graph-poc/raw/main/01-Dataset1_CV/04-SHACL/Dataset1_CV-Shapes.ttl)
 
-Country :
+Country : [![SHACL Play Badge](https://img.shields.io/endpoint?url=https%3a%2f%2fshacl-play.sparna.fr%2fplay%2fbadge%3furl%3dhttps%3a%2f%2fgithub.com%2fsparna-git%2fep-graph-poc%2fraw%2fmain%2f01-Dataset1_CV%2f05-RDF%2fcountry.ttl%26shapesUrl%3dhttps%3a%2f%2fgithub.com%2fsparna-git%2fep-graph-poc%2fraw%2fmain%2f01-Dataset1_CV%2f04-SHACL%2fDataset1_CV-Shapes.ttl)](https://shacl-play.sparna.fr/play/validate?url=https://github.com/sparna-git/ep-graph-poc/raw/main/01-Dataset1_CV/05-RDF/country.ttl&shapesUrl=https://github.com/sparna-git/ep-graph-poc/raw/main/01-Dataset1_CV/04-SHACL/Dataset1_CV-Shapes.ttl)
 
-Concept_Status :
+Concept_Status : [![SHACL Play Badge](https://img.shields.io/endpoint?url=https%3a%2f%2fshacl-play.sparna.fr%2fplay%2fbadge%3furl%3dhttps%3a%2f%2fgithub.com%2fsparna-git%2fep-graph-poc%2fraw%2fmain%2f01-Dataset1_CV%2f05-RDF%2freds_Concept_Status.ttl%26shapesUrl%3dhttps%3a%2f%2fgithub.com%2fsparna-git%2fep-graph-poc%2fraw%2fmain%2f01-Dataset1_CV%2f04-SHACL%2fDataset1_CV-Shapes.ttl)](https://shacl-play.sparna.fr/play/validate?url=https://github.com/sparna-git/ep-graph-poc/raw/main/01-Dataset1_CV/05-RDF/reds_Concept_Status.ttl&shapesUrl=https://github.com/sparna-git/ep-graph-poc/raw/main/01-Dataset1_CV/04-SHACL/Dataset1_CV-Shapes.ttl)
 
 
 ## Dataset 2 - MEP
