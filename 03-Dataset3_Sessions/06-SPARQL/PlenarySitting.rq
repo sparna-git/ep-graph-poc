@@ -1,0 +1,94 @@
+base <http://data.europarl.europa.eu/>
+PREFIX mapper: <http://www.ontotext.com/mapper/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX epsh: <http://data.europarl.europa.eu/shapes#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX org: <http://www.w3.org/ns/org#>
+PREFIX ep: <http://data.europarl.europa.eu/>
+SELECT 
+   	?PlenarySitting_uri
+   	?PlenarySittingLabel
+
+	(STR(?prefLabel_en) AS ?preferred_label_en)
+	(STR(?prefLabel_fr) AS ?preferred_label_fr)
+	(STR(?prefLabel_de) AS ?preferred_label_de)
+	(STR(?prefLabel_it) AS ?preferred_label_it)
+	(STR(?prefLabel_es) AS ?preferred_label_es)
+	(STR(?prefLabel_pl) AS ?preferred_label_pl)
+	(STR(?prefLabel_bg) AS ?preferred_label_bg)
+	(STR(?prefLabel_cs) AS ?preferred_label_cs)
+	(STR(?prefLabel_da) AS ?preferred_label_da)
+	(STR(?prefLabel_et) AS ?preferred_label_et)
+	(STR(?prefLabel_el) AS ?preferred_label_el)
+	(STR(?prefLabel_hr) AS ?preferred_label_hr)
+	(STR(?prefLabel_lv) AS ?preferred_label_lv)
+	(STR(?prefLabel_lt) AS ?preferred_label_lt)
+	(STR(?prefLabel_hu) AS ?preferred_label_hu)
+    (STR(?prefLabel_mt) AS ?preferred_label_mt)
+    (STR(?prefLabel_nl) AS ?preferred_label_nl)
+    (STR(?prefLabel_pt) AS ?preferred_label_pt)
+    (STR(?prefLabel_ro) AS ?preferred_label_ro)
+    (STR(?prefLabel_sk) AS ?preferred_label_sk)
+    (STR(?prefLabel_sl) AS ?preferred_label_sl)
+	(STR(?prefLabel_fi) AS ?preferred_label_fi)
+    (STR(?prefLabel_sv) AS ?preferred_label_sv)
+
+	?datePlenarySittin
+	?hasAdoptetextlist
+	?hasAgenda
+	?hasAttendancelist
+	?hasCre
+	?hasMinutes
+	?hasRollCallVotes
+	?hasVoteResult
+	?hasLogisticMeeting
+	?hasAnnex
+	?formsPart
+
+WHERE {
+    ?PlenarySitting_uri a ep:PlenarySitting .
+    ?PlenarySitting_uri rdfs:label ?PlenarySittingLabel .
+
+    #Preflabel
+
+    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_en FILTER(lang(?prefLabel_en) = "en")}
+    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_fr FILTER(lang(?prefLabel_fr) = "fr")}
+    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_de FILTER(lang(?prefLabel_de) = "de")}
+    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_it FILTER(lang(?prefLabel_it) = "it")}
+    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_es FILTER(lang(?prefLabel_es) = "es")}
+    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_pl FILTER(lang(?prefLabel_pl) = "pl")}
+    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_bg FILTER(lang(?prefLabel_bg) = "bg")}
+    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_cs FILTER(lang(?prefLabel_cs) = "cs")}
+    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_da FILTER(lang(?prefLabel_da) = "da")}
+    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_et FILTER(lang(?prefLabel_et) = "et")}
+    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_el FILTER(lang(?prefLabel_el) = "el")}
+    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_hr FILTER(lang(?prefLabel_hr) = "hr")}
+    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_lv FILTER(lang(?prefLabel_lv) = "lv")}
+    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_lt FILTER(lang(?prefLabel_lt) = "lt")}
+    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_hu FILTER(lang(?prefLabel_hu) = "hu")}
+    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_mt FILTER(lang(?prefLabel_mt) = "mt")}
+    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_nl FILTER(lang(?prefLabel_nl) = "nl")}
+    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_pt FILTER(lang(?prefLabel_pt) = "pt")}
+    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_ro FILTER(lang(?prefLabel_ro) = "ro")}
+    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_sk FILTER(lang(?prefLabel_sk) = "sk")}
+    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_sl FILTER(lang(?prefLabel_sl) = "sl")}
+    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_fi FILTER(lang(?prefLabel_fi) = "fi")}
+    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_sv FILTER(lang(?prefLabel_sv) = "sv")}
+
+    ?PlenarySitting_uri ep:datePlenarySitting ?datePlenarySittin .
+	?PlenarySitting_uri ep:hasAdoptedTextList ?hasAdoptetextlist .
+	?PlenarySitting_uri ep:hasAgenda ?hasAgenda .
+	?PlenarySitting_uri ep:hasAttendanceList ?hasAttendancelist .
+	?PlenarySitting_uri ep:hasCre ?hasCre .
+	?PlenarySitting_uri ep:hasMinutes ?hasMinutes .
+	?PlenarySitting_uri ep:hasRollCallVotes ?hasRollCallVotes .
+	?PlenarySitting_uri ep:hasVoteResult ?hasVoteResult .
+	?PlenarySitting_uri ep:hasLogisticMeeting ?hasLogisticMeeting .
+	?PlenarySitting_uri ep:hasAnnex ?hasAnnex .
+	?PlenarySitting_uri ep:formsPartOf ?formsPart	
+}
+ORDER BY ?PlenarySitting_uri

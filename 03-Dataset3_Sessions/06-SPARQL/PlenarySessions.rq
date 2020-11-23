@@ -1,0 +1,25 @@
+base <http://data.europarl.europa.eu/>
+PREFIX mapper: <http://www.ontotext.com/mapper/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX epsh: <http://data.europarl.europa.eu/shapes#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX org: <http://www.w3.org/ns/org#>
+PREFIX ep: <http://data.europarl.europa.eu/>
+SELECT 
+  ?PlenarySession_uri
+  ?PlenaryWeekBegin_eventDate
+  ?PlenaryWeekEnd_eventDate
+  ?PlenarySessionfrom
+  ?PlenaryLabel
+WHERE {
+  ?PlenarySession_uri a ep:PlenarySession .
+  ?PlenarySession_uri ep:datePlenaryWeekBegin ?PlenaryWeekBegin_eventDate .
+  ?PlenarySession_uri ep:datePlenaryWeekEnd ?PlenaryWeekEnd_eventDate . 
+  ?PlenarySession_uri ep:consistsOf ?PlenarySessionfrom .
+  ?PlenarySession_uri rdfs:label ?PlenaryLabel
+}
+ORDER BY ?PlenarySession_uri
