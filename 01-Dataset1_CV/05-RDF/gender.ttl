@@ -10,7 +10,7 @@
 @prefix scheme: <http://data.europarl.europa.eu/authority/> .
 @prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> .
 
-<authority/gender/F> a skos:Concept;
+<authority/gender/F> a skos:Concept, eponto:Gender;
   rdfs:label "female";
   skos:notation "F";
   skos:prefLabel "nőnemű"@hu, "naine"@et, "nainen"@fi, "ženské"@cs, "Ženské"@sk, "moteriška"@lt,
@@ -20,7 +20,7 @@
   eponto:isoCode "2";
   skos:inScheme scheme:gender .
 
-<authority/gender/M> a skos:Concept;
+<authority/gender/M> a skos:Concept, eponto:Gender;
   rdfs:label "male";
   skos:notation "M";
   skos:prefLabel "hímnemű"@hu, "mees"@et, "mies"@fi, "mužské"@cs, "Mužské"@sk, "vyriška"@lt,
@@ -30,7 +30,7 @@
   eponto:isoCode "1";
   skos:inScheme scheme:gender .
 
-<authority/gender/X> a skos:Concept;
+<authority/gender/X> a skos:Concept, eponto:Gender;
   rdfs:label "unknown";
   skos:notation "X";
   skos:prefLabel "ismeretlen"@hu, "pole teada"@et, "tuntematonen"@fi, "neznámé"@cs,
@@ -41,7 +41,7 @@
   eponto:isoCode "0";
   skos:inScheme scheme:gender .
 
-<authority/gender/U> a skos:Concept;
+<authority/gender/U> a skos:Concept, eponto:Gender;
   rdfs:label "unspecified";
   skos:notation "U";
   skos:prefLabel "meg nem határozott"@hu, "määramata"@et, "määrittelemätön"@fi, "neuvedeno"@cs,

@@ -9,637 +9,637 @@
 @prefix scheme: <http://data.europarl.europa.eu/authority/> .
 @prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> .
 
-<authority/civility/HRA> a skos:Concept;
+<authority/civility/HRA> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "fi";
   skos:inScheme scheme:civility .
 
-<authority/civility/NTI> a skos:Concept;
+<authority/civility/NTI> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "fi";
   skos:inScheme scheme:civility .
 
-<authority/civility/RVA> a skos:Concept;
+<authority/civility/RVA> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "fi";
   skos:inScheme scheme:civility .
 
-<authority/civility/UR> a skos:Concept;
+<authority/civility/UR> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "hu";
   skos:inScheme scheme:civility .
 
-<authority/civility/URHOLGY> a skos:Concept;
+<authority/civility/URHOLGY> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "hu";
   skos:inScheme scheme:civility .
 
-<authority/civility/PAN> a skos:Concept;
+<authority/civility/PAN> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "pl", "sk", "cs";
   skos:inScheme scheme:civility;
   rdfs:label "p.", "pan";
   skos:prefLabel "p."@sk, "pan"@cs;
   skos:altLabel "p."@sk, "pan"@cs .
 
-<authority/civility/PANI> a skos:Concept;
+<authority/civility/PANI> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "pl", "sk", "cs";
   skos:inScheme scheme:civility;
   rdfs:label "p.", "paní";
   skos:prefLabel "p."@sk, "paní"@cs;
   skos:altLabel "p."@sk, "paní"@cs .
 
-<authority/civility/KUNGS> a skos:Concept;
+<authority/civility/KUNGS> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "lv";
   skos:inScheme scheme:civility .
 
-<authority/civility/KUNDZE> a skos:Concept;
+<authority/civility/KUNDZE> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "lv";
   skos:inScheme scheme:civility .
 
-<authority/civility/AVV.> a skos:Concept;
+<authority/civility/AVV.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "it";
   rdfs:label "Avv.";
   skos:prefLabel "Avv."@it;
   skos:altLabel "Avvocato"@it;
   skos:inScheme scheme:civility .
 
-<authority/civility/BAR.> a skos:Concept;
+<authority/civility/BAR.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "fr";
   rdfs:label "Bar.";
   skos:prefLabel "Bar."@fr;
   skos:altLabel "Baron"@fr;
   skos:inScheme scheme:civility .
 
-<authority/civility/BARS.> a skos:Concept;
+<authority/civility/BARS.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "en";
   rdfs:label "Baroness";
   skos:prefLabel "Baroness"@en;
   skos:altLabel "Baroness"@en;
   skos:inScheme scheme:civility .
 
-<authority/civility/OMRI> a skos:Concept;
+<authority/civility/OMRI> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "it";
   rdfs:label "Cavaliere della Rep. – Commendatore della Rep.";
   skos:prefLabel "Cavaliere della Rep. – Commendatore della Rep."@it;
   skos:altLabel "Cavaliere della Rep. – Commendatore della Rep."@it;
   skos:inScheme scheme:civility .
 
-<authority/civility/DAME> a skos:Concept;
+<authority/civility/DAME> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "en";
   rdfs:label "Dame";
   skos:prefLabel "Dame"@en;
   skos:altLabel "Dame"@en;
   skos:inScheme scheme:civility .
 
-<authority/civility/DE%20HEER> a skos:Concept;
+<authority/civility/DE%20HEER> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "nl";
   rdfs:label "De Heer";
   skos:prefLabel "De Heer"@nl;
   skos:altLabel "De Heer"@nl;
   skos:inScheme scheme:civility .
 
-<authority/civility/DI> a skos:Concept;
+<authority/civility/DI> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "ro";
   rdfs:label "Dl.";
   skos:prefLabel "Dl."@ro;
   skos:altLabel "Dl."@ro;
   skos:inScheme scheme:civility .
 
-<authority/civility/D-NA> a skos:Concept;
+<authority/civility/D-NA> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "ro";
   rdfs:label "Dna";
   skos:prefLabel "Dna"@ro;
   skos:altLabel "Doamnei"@ro;
   skos:inScheme scheme:civility .
 
-<authority/civility/DONA> a skos:Concept;
+<authority/civility/DONA> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "es";
   rdfs:label "Dona";
   skos:prefLabel "Dona"@es;
   skos:altLabel "Dona"@es;
   skos:inScheme scheme:civility .
 
-<authority/civility/DOTT.> a skos:Concept;
+<authority/civility/DOTT.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "it";
   rdfs:label "Dott.";
   skos:prefLabel "Dott."@it;
   skos:altLabel "Dottore"@it;
   skos:inScheme scheme:civility .
 
-<authority/civility/DR.> a skos:Concept;
+<authority/civility/DR.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "de";
   rdfs:label "Dr.";
   skos:prefLabel "Dr."@de;
   skos:altLabel "Doktor"@de;
   skos:inScheme scheme:civility .
 
-<authority/civility/DR> a skos:Concept;
+<authority/civility/DR> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "en";
   rdfs:label "Dr.";
   skos:prefLabel "Dr."@en;
   skos:altLabel "Doctor"@en;
   skos:inScheme scheme:civility .
 
-<authority/civility/DR.PROF.> a skos:Concept;
+<authority/civility/DR.PROF.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "de";
   rdfs:label "Dr.Prof.";
   skos:prefLabel "Dr.Prof."@de;
   skos:altLabel "Doktor Professor"@de;
   skos:inScheme scheme:civility .
 
-<authority/civility/DR.SA> a skos:Concept;
+<authority/civility/DR.SA> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "it";
   rdfs:label "Dr.sa";
   skos:prefLabel "Dr.sa"@it;
   skos:altLabel "Dottoressa"@it;
   skos:inScheme scheme:civility .
 
-<authority/civility/ESQ.> a skos:Concept;
+<authority/civility/ESQ.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "en";
   rdfs:label "Esq.";
   skos:prefLabel "Esq."@en;
   skos:altLabel "Esquire"@en;
   skos:inScheme scheme:civility .
 
-<authority/civility/FR.> a skos:Concept;
+<authority/civility/FR.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "de";
   rdfs:label "Frau";
   skos:prefLabel "Frau"@de;
   skos:altLabel "Frau"@de;
   skos:inScheme scheme:civility .
 
-<authority/civility/FRK.> a skos:Concept;
+<authority/civility/FRK.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "sv";
   rdfs:label "Frk.";
   skos:prefLabel "Frk."@sv;
   skos:altLabel "Fröken"@sv;
   skos:inScheme scheme:civility .
 
-<authority/civility/FRL.> a skos:Concept;
+<authority/civility/FRL.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "de";
   rdfs:label "Frl.";
   skos:prefLabel "Frl."@de;
   skos:altLabel "Fräulein"@de;
   skos:inScheme scheme:civility .
 
-<authority/civility/FRL.DR.> a skos:Concept;
+<authority/civility/FRL.DR.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "de";
   rdfs:label "Frl.Dr.";
   skos:prefLabel "Frl.Dr."@de;
   skos:altLabel "Fraulein Doktor"@de;
   skos:inScheme scheme:civility .
 
-<authority/civility/FR> a skos:Concept;
+<authority/civility/FR> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "da";
   rdfs:label "Fru";
   skos:prefLabel "Fru"@da;
   skos:altLabel "Fru/Froeken"@da;
   skos:inScheme scheme:civility .
 
-<authority/civility/FRU> a skos:Concept;
+<authority/civility/FRU> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "sv";
   rdfs:label "Fru";
   skos:prefLabel "Fru"@sv;
   skos:altLabel "Fru"@sv;
   skos:inScheme scheme:civility .
 
-<authority/civility/GRAF> a skos:Concept;
+<authority/civility/GRAF> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "de";
   rdfs:label "Graf";
   skos:prefLabel "Graf"@de;
   skos:altLabel "Graf"@de;
   skos:inScheme scheme:civility .
 
-<authority/civility/GRAF%20VON> a skos:Concept;
+<authority/civility/GRAF%20VON> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "de";
   rdfs:label "Graf von";
   skos:prefLabel "Graf von"@de;
   skos:altLabel "Graf von"@de;
   skos:inScheme scheme:civility .
 
-<authority/civility/HR.> a skos:Concept;
+<authority/civility/HR.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "de";
   rdfs:label "Herr";
   skos:prefLabel "Herr"@de;
   skos:altLabel "Herr"@de;
   skos:inScheme scheme:civility .
 
-<authority/civility/HRN.> a skos:Concept;
+<authority/civility/HRN.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "de";
   rdfs:label "Herrn";
   skos:prefLabel "Herrn"@de;
   skos:altLabel "Herrn"@de;
   skos:inScheme scheme:civility .
 
-<authority/civility/HR> a skos:Concept;
+<authority/civility/HR> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "nl", "et";
   rdfs:label "Hr";
   skos:prefLabel "Hr"@nl, "Hr"@et;
   skos:altLabel "Hr."@nl, "Hr"@et;
   skos:inScheme scheme:civility .
 
-<authority/civility/HERR> a skos:Concept;
+<authority/civility/HERR> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "sv";
   rdfs:label "Hr.";
   skos:prefLabel "Hr."@sv;
   skos:altLabel "Herr"@sv;
   skos:inScheme scheme:civility .
 
-<authority/civility/HR.DA> a skos:Concept;
+<authority/civility/HR.DA> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "da";
   rdfs:label "Hr.";
   skos:prefLabel "Hr."@da;
   skos:altLabel "Hr."@da;
   skos:inScheme scheme:civility .
 
-<authority/civility/IS-SINJURA> a skos:Concept;
+<authority/civility/IS-SINJURA> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "mt";
   rdfs:label "Is-Sinjura";
   skos:prefLabel "Is-Sinjura"@mt;
   skos:altLabel "Is-Sinjura"@mt;
   skos:inScheme scheme:civility .
 
-<authority/civility/IS-SUR> a skos:Concept;
+<authority/civility/IS-SUR> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "mt";
   rdfs:label "Is-Sur";
   skos:prefLabel "Is-Sur"@mt;
   skos:altLabel "Is-Sur"@mt;
   skos:inScheme scheme:civility .
 
-<authority/civility/L-ONOR.> a skos:Concept;
+<authority/civility/L-ONOR.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "mt";
   rdfs:label "L-Onor.";
   skos:prefLabel "L-Onor."@mt;
   skos:altLabel "L-Onor."@mt;
   skos:inScheme scheme:civility .
 
-<authority/civility/LADY> a skos:Concept;
+<authority/civility/LADY> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "en";
   rdfs:label "Lady";
   skos:prefLabel "Lady"@en;
   skos:altLabel "Lady"@en;
   skos:inScheme scheme:civility .
 
-<authority/civility/M.> a skos:Concept;
+<authority/civility/M.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "fr";
   rdfs:label "M.";
   skos:prefLabel "M."@fr;
   skos:altLabel "Monsieur"@fr;
   skos:inScheme scheme:civility .
 
-<authority/civility/M.%20ET%20MME> a skos:Concept;
+<authority/civility/M.%20ET%20MME> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "fr";
   rdfs:label "M. et Mme";
   skos:prefLabel "M. et Mme"@fr;
   skos:altLabel "Monsieur et Madame"@fr;
   skos:inScheme scheme:civility .
 
-<authority/civility/M/MME> a skos:Concept;
+<authority/civility/M/MME> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "fr";
   rdfs:label "M. ou Mme";
   skos:prefLabel "M. ou Mme"@fr;
   skos:altLabel "Monsieur ou Madame"@fr;
   skos:inScheme scheme:civility .
 
-<authority/civility/MM.> a skos:Concept;
+<authority/civility/MM.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "fr";
   rdfs:label "MM.";
   skos:prefLabel "MM."@fr;
   skos:altLabel "Messieurs"@fr;
   skos:inScheme scheme:civility .
 
-<authority/civility/MAD.> a skos:Concept;
+<authority/civility/MAD.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "fr";
   rdfs:label "Mad.";
   skos:prefLabel "Mad."@fr;
   skos:altLabel "Mad."@fr;
   skos:inScheme scheme:civility .
 
-<authority/civility/MAG.> a skos:Concept;
+<authority/civility/MAG.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "de";
   rdfs:label "Mag.";
   skos:prefLabel "Mag."@de;
   skos:altLabel "Mag."@de;
   skos:inScheme scheme:civility .
 
-<authority/civility/MARQ.> a skos:Concept;
+<authority/civility/MARQ.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "fr";
   rdfs:label "Marq.";
   skos:prefLabel "Marq."@fr;
   skos:altLabel "Marquis"@fr;
   skos:inScheme scheme:civility .
 
-<authority/civility/MARQ.EN> a skos:Concept;
+<authority/civility/MARQ.EN> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "en";
   rdfs:label "Marquess";
   skos:prefLabel "Marquess"@en;
   skos:altLabel "Marquess"@en;
   skos:inScheme scheme:civility .
 
-<authority/civility/MEVR.> a skos:Concept;
+<authority/civility/MEVR.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "nl";
   rdfs:label "Mevr.";
   skos:prefLabel "Mevr."@nl;
   skos:altLabel "Mevrouw"@nl;
   skos:inScheme scheme:civility .
 
-<authority/civility/MGR.> a skos:Concept;
+<authority/civility/MGR.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "fr";
   rdfs:label "Mgr.";
   skos:prefLabel "Mgr."@fr;
   skos:altLabel "Monseigneur"@fr;
   skos:inScheme scheme:civility .
 
-<authority/civility/MLLE> a skos:Concept;
+<authority/civility/MLLE> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "fr";
   rdfs:label "Mlle";
   skos:prefLabel "Mlle"@fr;
   skos:altLabel "Mademoiselle"@fr;
   skos:inScheme scheme:civility .
 
-<authority/civility/MME> a skos:Concept;
+<authority/civility/MME> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "fr";
   rdfs:label "Mme";
   skos:prefLabel "Mme"@fr;
   skos:altLabel "Madame"@fr;
   skos:inScheme scheme:civility .
 
-<authority/civility/MR.> a skos:Concept;
+<authority/civility/MR.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "en";
   rdfs:label "Mr";
   skos:prefLabel "Mr"@en;
   skos:altLabel "Mister"@en;
   skos:inScheme scheme:civility .
 
-<authority/civility/MR> a skos:Concept;
+<authority/civility/MR> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "nl";
   rdfs:label "Mr";
   skos:prefLabel "Mr"@nl;
   skos:altLabel "De Heer"@nl;
   skos:inScheme scheme:civility .
 
-<authority/civility/MR1> a skos:Concept;
+<authority/civility/MR1> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "ga";
   rdfs:label "Mr";
   skos:prefLabel "Mr"@ga;
   skos:altLabel "Mr"@ga;
   skos:inScheme scheme:civility .
 
-<authority/civility/M/MEVR> a skos:Concept;
+<authority/civility/M/MEVR> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "nl";
   rdfs:label "Mr / Mevr";
   skos:prefLabel "Mr / Mevr"@nl;
   skos:altLabel "Mr / Mevr"@nl;
   skos:inScheme scheme:civility .
 
-<authority/civility/MR.%20&%20MRS.> a skos:Concept;
+<authority/civility/MR.%20&amp;%20MRS.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "en";
   rdfs:label "Mr. & Mrs.";
   skos:prefLabel "Mr. & Mrs."@en;
   skos:altLabel "Mr and Mrs"@en;
   skos:inScheme scheme:civility .
 
-<authority/civility/MRS.> a skos:Concept;
+<authority/civility/MRS.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "en";
   rdfs:label "Mrs";
   skos:prefLabel "Mrs"@en;
   skos:altLabel "Mrs"@en;
   skos:inScheme scheme:civility .
 
-<authority/civility/MRS1> a skos:Concept;
+<authority/civility/MRS1> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "ga";
   rdfs:label "Mrs";
   skos:prefLabel "Mrs"@ga;
   skos:altLabel "Mrs"@ga;
   skos:inScheme scheme:civility .
 
-<authority/civility/MS.> a skos:Concept;
+<authority/civility/MS.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "en";
   rdfs:label "Ms";
   skos:prefLabel "Ms"@en;
   skos:altLabel "Ms"@en;
   skos:inScheme scheme:civility .
 
-<authority/civility/ON.LE> a skos:Concept;
+<authority/civility/ON.LE> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "it";
   rdfs:label "On.";
   skos:prefLabel "On."@it;
   skos:altLabel "Onorevole"@it;
   skos:inScheme scheme:civility .
 
-<authority/civility/PR> a skos:Concept;
+<authority/civility/PR> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "et";
   rdfs:label "Pr";
   skos:prefLabel "Pr"@et;
   skos:altLabel "Pr"@et;
   skos:inScheme scheme:civility .
 
-<authority/civility/PRI.> a skos:Concept;
+<authority/civility/PRI.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "de";
   rdfs:label "Pri.";
   skos:prefLabel "Pri."@de;
   skos:altLabel "Prinzessin"@de;
   skos:inScheme scheme:civility .
 
-<authority/civility/PROF.> a skos:Concept;
+<authority/civility/PROF.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "de";
   rdfs:label "Prof.";
   skos:prefLabel "Prof."@de;
   skos:altLabel "Professor"@de;
   skos:inScheme scheme:civility .
 
-<authority/civility/PROF.DR.> a skos:Concept;
+<authority/civility/PROF.DR.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "de";
   rdfs:label "Prof.Dr.";
   skos:prefLabel "Prof.Dr."@de;
   skos:altLabel "Professor Doktor"@de;
   skos:inScheme scheme:civility .
 
-<authority/civility/PROF.SA> a skos:Concept;
+<authority/civility/PROF.SA> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "it";
   rdfs:label "Prof.sa";
   skos:prefLabel "Prof.sa"@it;
   skos:altLabel "Professoressa"@it;
   skos:inScheme scheme:civility .
 
-<authority/civility/PROF.SIR> a skos:Concept;
+<authority/civility/PROF.SIR> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "en";
   rdfs:label "Professor Sir";
   skos:prefLabel "Professor Sir"@en;
   skos:altLabel "Professor Sir"@en;
   skos:inScheme scheme:civility .
 
-<authority/civility/RT.HON> a skos:Concept;
+<authority/civility/RT.HON> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "en";
   rdfs:label "Rt. Hon.";
   skos:prefLabel "Rt. Hon."@en;
   skos:altLabel "Right Honourable"@en;
   skos:inScheme scheme:civility .
 
-<authority/civility/S.E.> a skos:Concept;
+<authority/civility/S.E.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "fr";
   rdfs:label "S.E.";
   skos:prefLabel "S.E."@fr;
   skos:altLabel "Son Excellence"@fr;
   skos:inScheme scheme:civility .
 
-<authority/civility/SIG.> a skos:Concept;
+<authority/civility/SIG.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "it";
   rdfs:label "Sig.";
   skos:prefLabel "Sig."@it;
   skos:altLabel "Signor"@it;
   skos:inScheme scheme:civility .
 
-<authority/civility/SIG.NA> a skos:Concept;
+<authority/civility/SIG.NA> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "it";
   rdfs:label "Sig.na";
   skos:prefLabel "Sig.na"@it;
   skos:altLabel "Signorina"@it;
   skos:inScheme scheme:civility .
 
-<authority/civility/SIG.RA> a skos:Concept;
+<authority/civility/SIG.RA> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "it";
   rdfs:label "Sig.ra";
   skos:prefLabel "Sig.ra"@it;
   skos:altLabel "Signora"@it;
   skos:inScheme scheme:civility .
 
-<authority/civility/SIR> a skos:Concept;
+<authority/civility/SIR> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "en";
   rdfs:label "Sir";
   skos:prefLabel "Sir"@en;
   skos:altLabel "Sir"@en;
   skos:inScheme scheme:civility .
 
-<authority/civility/SR.> a skos:Concept;
+<authority/civility/SR.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "es";
   rdfs:label "Sr.";
   skos:prefLabel "Sr."@es;
   skos:altLabel "Señor"@es;
   skos:inScheme scheme:civility .
 
-<authority/civility/SR2> a skos:Concept;
+<authority/civility/SR2> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "pt";
   rdfs:label "Sr.";
   skos:prefLabel "Sr."@pt;
   skos:altLabel "Senhor"@pt;
   skos:inScheme scheme:civility .
 
-<authority/civility/SRA.> a skos:Concept;
+<authority/civility/SRA.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "es";
   rdfs:label "Sra.";
   skos:prefLabel "Sra."@es;
   skos:altLabel "Señora"@es;
   skos:inScheme scheme:civility .
 
-<authority/civility/SRA2> a skos:Concept;
+<authority/civility/SRA2> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "pt";
   rdfs:label "Sra.";
   skos:prefLabel "Sra."@pt;
   skos:altLabel "Senhora"@pt;
   skos:inScheme scheme:civility .
 
-<authority/civility/SRA%20D.> a skos:Concept;
+<authority/civility/SRA%20D.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "pt";
   rdfs:label "Sra.";
   skos:prefLabel "Sra."@pt;
   skos:altLabel "Sra. D."@pt;
   skos:inScheme scheme:civility .
 
-<authority/civility/SRTA.> a skos:Concept;
+<authority/civility/SRTA.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "es";
   rdfs:label "Srta.";
   skos:prefLabel "Srta."@es;
   skos:altLabel "Señorita"@es;
   skos:inScheme scheme:civility .
 
-<authority/civility/EARL> a skos:Concept;
+<authority/civility/EARL> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "en";
   rdfs:label "The Earl of";
   skos:prefLabel "The Earl of"@en;
   skos:altLabel "The Earl of"@en;
   skos:inScheme scheme:civility .
 
-<authority/civility/HON.> a skos:Concept;
+<authority/civility/HON.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "en";
   rdfs:label "The Hon.";
   skos:prefLabel "The Hon."@en;
   skos:altLabel "The Honorable"@en;
   skos:inScheme scheme:civility .
 
-<authority/civility/LORD> a skos:Concept;
+<authority/civility/LORD> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "en";
   rdfs:label "The Lord";
   skos:prefLabel "The Lord"@en;
   skos:altLabel "The Lord"@en;
   skos:inScheme scheme:civility .
 
-<authority/civility/DR%20HAB.> a skos:Concept;
+<authority/civility/DR%20HAB.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "pl";
   rdfs:label "dr hab.";
   skos:prefLabel "dr hab."@pl;
   skos:altLabel "dr hab."@pl;
   skos:inScheme scheme:civility .
 
-<authority/civility/G.> a skos:Concept;
+<authority/civility/G.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "sl";
   rdfs:label "g.";
   skos:prefLabel "g."@sl;
   skos:altLabel "g."@sl;
   skos:inScheme scheme:civility .
 
-<authority/civility/GOSPODIN> a skos:Concept;
+<authority/civility/GOSPODIN> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "hr";
   rdfs:label "g.";
   skos:prefLabel "g."@hr;
   skos:altLabel "Gospodin"@hr;
   skos:inScheme scheme:civility .
 
-<authority/civility/GA.> a skos:Concept;
+<authority/civility/GA.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "sl";
   rdfs:label "ga.";
   skos:prefLabel "ga."@sl;
   skos:altLabel "ga."@sl;
   skos:inScheme scheme:civility .
 
-<authority/civility/GOSPODA> a skos:Concept;
+<authority/civility/GOSPODA> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "hr";
   rdfs:label "gđa";
   skos:prefLabel "gđa"@hr;
   skos:altLabel "Gospođa"@hr;
   skos:inScheme scheme:civility .
 
-<authority/civility/PONAS> a skos:Concept;
+<authority/civility/PONAS> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "lt";
   rdfs:label "p.";
   skos:prefLabel "p."@lt;
   skos:altLabel "p."@lt;
   skos:inScheme scheme:civility .
 
-<authority/civility/PONIA> a skos:Concept;
+<authority/civility/PONIA> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "lt";
   rdfs:label "p.";
   skos:prefLabel "p."@lt;
   skos:altLabel "p."@lt;
   skos:inScheme scheme:civility .
 
-<authority/civility/KO.> a skos:Concept;
+<authority/civility/KO.> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "el";
   rdfs:label "κ.";
   skos:prefLabel "κ."@el;
   skos:altLabel "Κύριο"@el;
   skos:inScheme scheme:civility .
 
-<authority/civility/KA> a skos:Concept;
+<authority/civility/KA> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "el";
   rdfs:label "κα";
   skos:prefLabel "κα"@el;
   skos:altLabel "Κυρία"@el;
   skos:inScheme scheme:civility .
 
-<authority/civility/GZHA> a skos:Concept;
+<authority/civility/GZHA> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "bg";
   rdfs:label "Г-жа";
   skos:prefLabel "Г-жа"@bg;
   skos:altLabel "Г-жа"@bg;
   skos:inScheme scheme:civility .
 
-<authority/civility/GN> a skos:Concept;
+<authority/civility/GN> a skos:Concept, eponto:Civility;
   eponto:isoLanguage "bg";
   rdfs:label "Г-н";
   skos:prefLabel "Г-н"@bg;
