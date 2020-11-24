@@ -6,28 +6,28 @@
 # Bien faire attention aux cas où la propriété a plusieurs valeurs, cela doit
 # générer un tableau en sortie (exemple du hasLogisticMeeting ci-dessous)
 {
-	"uri" : "iPlMeetingGroup:PlenarySession_20191216-20191219",
-	"type" : "iPlMeetingGroup",
+	"uri" : "iPlMeetingGroup:20191216-20191219",
+	"type" : "PlenarySession",
 	"label" : "Plenary Session from 2019-12-16 to 2019-12-19",
 	"datePlenaryWeekBegin" : "2019-12-16",
 	"datePlenaryWeekEnd" : "2019-12-19",
-	"consistsOf" : [
+	"plenarySessionConsistOfPlenarySitting" : [
 		{
-			"uri" : "iPlMeeting:PlenarySitting_20191219",
-			"type" : "iPlMeeting",
+			"uri" : "iPlMeeting:20191219",
+			"type" : "PlenarySitting",
 			"label" : "SESP 2019-12-19",
 			"datePlenarySitting" : "2019-12-19",
-			"formsPartOf" : "iPlMeetingGroup:PlenarySession_20191216-20191219",
-			"hasAdoptedTextList" : "/reds:iPlTa_Toc/TA-9-2019-12-19-TOC",
-			"hasAgenda" : "/reds:iPlOj_Sit/OJQ-9-2019-12-19",
-			"hasAttendanceList" : "...",
-			"hasCre" : "...",
-			"hasMinutes" : "...",
-			"hasRollCallVotes" : "...",
-			"haVoteResult" : "...",
+			"plenarySittingFormsPartOfPlenarySession" : "iPlMeetingGroup:20191216-20191219",
+			"hasAdoptedTextList" : "reference:reds:iPlTa_Toc/TA-9-2019-12-19-TOC",
+			"hasAgenda" : "reference:reds:iPlOj_Sit/OJQ-9-2019-12-19",
+			"hasAttendanceList" : "reference:...",
+			"hasCre" : "reference:...",
+			"hasMinutes" : "reference:...",
+			"hasRollCallVotes" : "reference:...",
+			"haVoteResult" : "reference:...",
 			"hasLogisticMeeting" : [
-				"...",
-				"..."
+				"reference:...",
+				"reference:..."
 			],
 			"hasParticipant" : [
 				"person:MEP_123456",
@@ -36,23 +36,27 @@
 			]
 		},
 		{
-			"uri" : "iPlMeeting:PlenarySitting_20191218",
+			"uri" : "iPlMeeting:20191218",
 			"..."
 		},
 		{
-			"uri" : "iPlMeeting:PlenarySitting_20191217",
+			"uri" : "iPlMeeting:20191217",
 			"..."
 		}
 	],
 	"@context" : {		
 		"rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
-		"eponto" : "http://data.europa.eu/xxx/ontology/ep/",
-		"iPlMeetingGroup" : "http://data.europa.eu/xxx/iPlMeetingGroup:",
-		"iPlMeeting" : "http://data.europa.eu/xxx/iPlMeeting:",
+		"eponto" : "http://data.europarl.europa.eu/ontology/ep#",
 		"xsd" : "http://www.w3.org/2001/XMLSchema#",
+		"reference" : "http://data.europarl.europa.eu/reference/",
+		"iPlMeetingGroup" : "http://data.europarl.europa.eu/eli/dl/iPlMeetingGroup/",
+		"iPlMeeting" : "http://data.europarl.europa.eu/eli/dl/iPlMeeting/",
+		"person" : "http://data.europarl.europa.eu/person/",		
 		"uri" : "@id",
 		"type" : "@type",
 		"label" : "rdfs:label",
+		"PlenarySitting" : "eponto:PlenarySitting",
+		"PlenarySession" : "eponto:PlenarySession",
 		"datePlenaryWeekBegin" : {
 			"@id": "eponto:datePlenaryWeekBegin",
 			"@type": "xsd:date"
@@ -65,11 +69,16 @@
 			"@id": "eponto:datePlenarySitting",
 			"@type": "xsd:date"
 		},
-		"consistsOf" : "eponto:consistsOf",
-		"iPlMeetingGroup" : "eponto:PlenarySession",
-		"iPlMeeting" : "eponto:PlenarySitting",
-		"hasAdoptedTextList" : {
-			"@type" : "@id"
-		}
+		"plenarySessionConsistOfPlenarySitting" : "eponto:plenarySessionConsistOfPlenarySitting",
+		"hasAdoptedTextList" : { "@type" : "@id" },
+		"hasAgenda" : { "@type" : "@id" },
+		"hasAttendanceList" : { "@type" : "@id" },
+		"hasCre" : { "@type" : "@id" },
+		"hasMinutes" : { "@type" : "@id" },
+		"hasRollCallVotes" : { "@type" : "@id" },
+		"haVoteResult" : { "@type" : "@id" },
+		"hasLogisticMeeting" : { "@type" : "@id" },
+		"hasAnnex" : { "@type" : "@id" },
+		"hasParticipant" : { "@type" : "@id" },
 	}
 }
