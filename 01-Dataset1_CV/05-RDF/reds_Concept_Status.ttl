@@ -9,62 +9,62 @@
 @prefix scheme: <http://data.europarl.europa.eu/authority/> .
 @prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> .
 
-<authority/conceptStatus/ACTIVE> a skos:Concept;
+<authority/conceptStatus/ACTIVE> a skos:Concept, eponto:ConceptStatus;
   rdfs:label "ACTIVE";
   skos:prefLabel "Active"@en, "Active"@fr;
   skos:inScheme scheme:conceptStatus .
 
-<authority/conceptStatus/NOT-ACTIVE> a skos:Concept;
+<authority/conceptStatus/NOT-ACTIVE> a skos:Concept, eponto:ConceptStatus;
   rdfs:label "NOT_ACTIVE";
   skos:prefLabel "Not Active"@en, "Non Active"@fr;
   skos:inScheme scheme:conceptStatus .
 
-<authority/conceptStatus/ADOPTED> a skos:Concept;
+<authority/conceptStatus/ADOPTED> a skos:Concept, eponto:ConceptStatus;
   rdfs:label "ADOPTED";
   skos:prefLabel "Adopted"@en, "Adoptée"@fr;
   skos:inScheme scheme:conceptStatus .
 
-<authority/conceptStatus/CREATE> a skos:Concept;
+<authority/conceptStatus/CREATE> a skos:Concept, eponto:ConceptStatus;
   rdfs:label "CREATE";
   skos:prefLabel "Created"@en, "Initié"@fr;
   skos:inScheme scheme:conceptStatus .
 
-<authority/conceptStatus/DELETED> a skos:Concept;
+<authority/conceptStatus/DELETED> a skos:Concept, eponto:ConceptStatus;
   rdfs:label "DELETED";
   skos:prefLabel "Deleted"@en, "Supprimé"@fr;
   skos:inScheme scheme:conceptStatus .
 
-<authority/conceptStatus/ENDED> a skos:Concept;
+<authority/conceptStatus/ENDED> a skos:Concept, eponto:ConceptStatus;
   rdfs:label "ENDED";
   skos:prefLabel "Ended"@en, "Terminé"@fr;
   skos:inScheme scheme:conceptStatus .
 
-<authority/conceptStatus/HISTORICAL> a skos:Concept;
+<authority/conceptStatus/HISTORICAL> a skos:Concept, eponto:ConceptStatus;
   rdfs:label "HISTORICAL";
   skos:prefLabel "Historic"@en, "Historique"@fr;
   skos:inScheme scheme:conceptStatus .
 
-<authority/conceptStatus/MAJORITY> a skos:Concept;
+<authority/conceptStatus/MAJORITY> a skos:Concept, eponto:ConceptStatus;
   rdfs:label "MAJORITY";
   skos:prefLabel "Closed with majority"@en, "Clôturée avec les signatures de la majorité des membres"@fr;
   skos:inScheme scheme:conceptStatus .
 
-<authority/conceptStatus/OBSOLETE> a skos:Concept;
+<authority/conceptStatus/OBSOLETE> a skos:Concept, eponto:ConceptStatus;
   rdfs:label "OBSOLETE";
   skos:prefLabel "Obsolete"@en, "Caduque"@fr;
   skos:inScheme scheme:conceptStatus .
 
-<authority/conceptStatus/RECALL> a skos:Concept;
+<authority/conceptStatus/RECALL> a skos:Concept, eponto:ConceptStatus;
   rdfs:label "RECALL";
   skos:prefLabel "Recall"@en, "Retiré"@fr;
   skos:inScheme scheme:conceptStatus .
 
-<authority/conceptStatus/SUSPENDED> a skos:Concept;
+<authority/conceptStatus/SUSPENDED> a skos:Concept, eponto:ConceptStatus;
   rdfs:label "SUSPENDED";
   skos:prefLabel "Lapsed as the conditions for admissibility are no longer met"@en,
     "Caduque, car les conditions de recevabilité ne sont plus remplies"@fr;
   skos:inScheme scheme:conceptStatus .
 
-<authority/conceptStatus/RESTRICTED> a skos:Concept;
+<authority/conceptStatus/RESTRICTED> a skos:Concept, eponto:ConceptStatus;
   rdfs:label "RESTRICTED";
   skos:inScheme scheme:conceptStatus .

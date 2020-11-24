@@ -9,7 +9,7 @@
 @prefix scheme: <http://data.europarl.europa.eu/authority/> .
 @prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> .
 
-<authority/country/AF> a skos:Concept;
+<authority/country/AF> a skos:Concept, eponto:Country;
   rdfs:label "Afghanistan";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -31,7 +31,7 @@
     "République islamique d'Afghanistan"@fr, "Poblacht Ioslamach na hAfganastáine"@ga,
     "Ισλαμική Δημοκρατία του Αφγανιστάν "@el, "Ислямска република Афганистан"@bg .
 
-<authority/country/AL> a skos:Concept;
+<authority/country/AL> a skos:Concept, eponto:Country;
   rdfs:label "Albania";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -51,7 +51,7 @@
     "República da Albânia"@pt, "República de Albania"@es, "République d'Albanie"@fr, "Poblacht na hAlbáine"@ga,
     "Δημοκρατία της Αλβανίας "@el, "Република Албания"@bg .
 
-<authority/country/DZ> a skos:Concept;
+<authority/country/DZ> a skos:Concept, eponto:Country;
   rdfs:label "Algeria";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -76,7 +76,7 @@
     "République algérienne démocratique et populaire"@fr, "Daon-Phoblacht Dhaonlathach na hAilgéire"@ga,
     "Λαϊκή Δημοκρατία της Αλγερίας "@el, "Алжирска демократична народна република"@bg .
 
-<authority/country/AS> a skos:Concept;
+<authority/country/AS> a skos:Concept, eponto:Country;
   rdfs:label "American Samoa";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -98,7 +98,7 @@
     "Territorio de Samoa Americana"@es, "Samoa américaines"@fr, "Críoch Shamó Mheiriceá"@ga,
     "Έδαφος της Αμερικανικής Σαμόα "@el, "Американска Самоа"@bg .
 
-<authority/country/AD> a skos:Concept;
+<authority/country/AD> a skos:Concept, eponto:Country;
   rdfs:label "Andorra";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -117,7 +117,7 @@
     "Principato di Andorra"@it, "Principado de Andorra"@pt, "Principado de Andorra"@es,
     "Principauté d'Andorre"@fr, "Prionsacht Andóra"@ga, "Πριγκιπάτο της Ανδόρας"@el, "Княжество Андора"@bg .
 
-<authority/country/AO> a skos:Concept;
+<authority/country/AO> a skos:Concept, eponto:Country;
   rdfs:label "Angola";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -136,7 +136,7 @@
     "República de Angola"@pt, "República de Angola"@es, "République d'Angola"@fr, "Poblacht Angóla"@ga,
     "Δημοκρατία της Ανγκόλας"@el, "Република Ангола"@bg .
 
-<authority/country/AI> a skos:Concept;
+<authority/country/AI> a skos:Concept, eponto:Country;
   rdfs:label "Anguilla";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -154,7 +154,7 @@
     "Anguilla"@it, "Anguila"@pt, "Anguila"@es, "Anguilla"@fr, "Anguilla"@ga, "Ανγκουίλα"@el,
     "Ангила"@bg .
 
-<authority/country/AQ> a skos:Concept;
+<authority/country/AQ> a skos:Concept, eponto:Country;
   rdfs:label "Antarctica";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -172,7 +172,7 @@
     "Antarktis"@de, "Antarctica"@ro, "Antartide"@it, "Antártida"@pt, "Antártida"@es, "Antarctique"@fr,
     "Antartaice"@ga, "Ανταρκτική"@el, "Антарктика"@bg .
 
-<authority/country/AG> a skos:Concept;
+<authority/country/AG> a skos:Concept, eponto:Country;
   rdfs:label "Antigua and Barbuda";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -194,7 +194,7 @@
     "Antigua y Barbuda"@es, "Antigua-et-Barbuda"@fr, "Antigua agus Barbúda"@ga, "Αντίγκουα και Μπαρμπούντα"@el,
     "Антигуа и Барбуда"@bg .
 
-<authority/country/AR> a skos:Concept;
+<authority/country/AR> a skos:Concept, eponto:Country;
   rdfs:label "Argentina";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -215,7 +215,7 @@
     "República Argentina"@pt, "República Argentina"@es, "République argentine"@fr, "Poblacht na hAirgintíne"@ga,
     "Δημοκρατία της Αργεντινής"@el, "Република Аржентина"@bg .
 
-<authority/country/AM> a skos:Concept;
+<authority/country/AM> a skos:Concept, eponto:Country;
   rdfs:label "Armenia";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -235,7 +235,7 @@
     "República da Arménia"@pt, "República de Armenia"@es, "République d'Arménie"@fr, "Poblacht na hAirméine"@ga,
     "Δημοκρατία της Αρμενίας"@el, "Република Армения"@bg .
 
-<authority/country/AW> a skos:Concept;
+<authority/country/AW> a skos:Concept, eponto:Country;
   rdfs:label "Aruba";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -251,7 +251,7 @@
     "Aruba"@sl, "Aruba"@pl, "Aruba"@de, "Aruba"@ro, "Aruba"@it, "Aruba"@pt, "Aruba"@es,
     "Aruba"@fr, "Arúba"@ga, "Αρούμπα"@el, "Аруба"@bg .
 
-<authority/country/AU> a skos:Concept;
+<authority/country/AU> a skos:Concept, eponto:Country;
   rdfs:label "Australia";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -271,7 +271,7 @@
     "Comunidade da Austrália"@pt, "Australia"@es, "Commonwealth d'Australie"@fr, "Comhlathas na hAstráile"@ga,
     "Κοινοπολιτεία της Αυστραλίας"@el, "Австралийски съюз"@bg .
 
-<authority/country/AT> a skos:Concept;
+<authority/country/AT> a skos:Concept, eponto:Country;
   rdfs:label "Austria";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -293,7 +293,7 @@
     "République d'Autriche"@fr, "Poblacht na hOstaire"@ga, "Δημοκρατία της Αυστρίας"@el,
     "Република Австрия"@bg .
 
-<authority/country/AZ> a skos:Concept;
+<authority/country/AZ> a skos:Concept, eponto:Country;
   rdfs:label "Azerbaijan";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -314,7 +314,7 @@
     "República do Azerbaijão"@pt, "República de Azerbaiyán"@es, "République d'Azerbaïdjan"@fr,
     "Poblacht na hAsarbaiseáine"@ga, "Δημοκρατία του Αζερμπαϊτζάν"@el, "Азербайджанска република"@bg .
 
-<authority/country/BS> a skos:Concept;
+<authority/country/BS> a skos:Concept, eponto:Country;
   rdfs:label "Bahamas";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -333,7 +333,7 @@
     "Comunidade das Baamas"@pt, "Commonwealth de las Bahamas"@es, "Commonwealth des Bahamas"@fr,
     "Comhlathas na mBahámaí"@ga, "Κοινοπολιτεία Μπαχαμών"@el, "Бахамска общност"@bg .
 
-<authority/country/BH> a skos:Concept;
+<authority/country/BH> a skos:Concept, eponto:Country;
   rdfs:label "Bahrain";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -353,7 +353,7 @@
     "Reino de Baréin"@es, "Royaume de Bahreïn"@fr, "Ríocht Bhairéin"@ga, "Βασίλειο του Μπαχρέιν"@el,
     "Кралство Бахрейн"@bg .
 
-<authority/country/BD> a skos:Concept;
+<authority/country/BD> a skos:Concept, eponto:Country;
   rdfs:label "Bangladesh";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -374,7 +374,7 @@
     "República Popular do Bangladeche"@pt, "República Popular de Bangladés"@es, "République populaire du Bangladesh"@fr,
     "Daon-Phoblacht na Banglaidéise"@ga, "Λαϊκή Δημοκρατία του Μπανγκλαντές "@el, "Народна република Бангладеш"@bg .
 
-<authority/country/BB> a skos:Concept;
+<authority/country/BB> a skos:Concept, eponto:Country;
   rdfs:label "Barbados";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -392,7 +392,7 @@
     "Barbados"@it, "Barbados"@pt, "Barbados"@es, "Barbade"@fr, "Barbadós"@ga, "Μπαρμπάντος"@el,
     "Барбадос"@bg .
 
-<authority/country/BY> a skos:Concept;
+<authority/country/BY> a skos:Concept, eponto:Country;
   rdfs:label "Belarus";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -413,7 +413,7 @@
     "República de Bielorrusia"@es, "République du Belarus"@fr, "Poblacht na Bealarúise"@ga,
     "Δημοκρατία της Λευκορωσίας "@el, "Република Беларус"@bg .
 
-<authority/country/BE> a skos:Concept;
+<authority/country/BE> a skos:Concept, eponto:Country;
   rdfs:label "Belgium";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -435,7 +435,7 @@
     "Reino de Bélgica"@es, "Royaume de Belgique"@fr, "Ríocht na Beilge"@ga, "Βασίλειο του Βελγίου"@el,
     "Кралство Белгия"@bg .
 
-<authority/country/BZ> a skos:Concept;
+<authority/country/BZ> a skos:Concept, eponto:Country;
   rdfs:label "Belize";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -451,7 +451,7 @@
     "Belize"@sl, "Belize"@pl, "Belize"@de, "Belize"@ro, "Belize"@it, "Belize"@pt, "Belice"@es,
     "Belize"@fr, "an Bheilís"@ga, "Μπελίζ"@el, "Белиз"@bg .
 
-<authority/country/BJ> a skos:Concept;
+<authority/country/BJ> a skos:Concept, eponto:Country;
   rdfs:label "Benin";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -470,7 +470,7 @@
     "República de Benín"@es, "République du Bénin"@fr, "Poblacht Bheinin"@ga, "Δημοκρατία του Μπενίν "@el,
     "Република Бенин"@bg .
 
-<authority/country/BM> a skos:Concept;
+<authority/country/BM> a skos:Concept, eponto:Country;
   rdfs:label "Bermuda";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -488,7 +488,7 @@
     "Bermuda"@it, "Bermudas"@pt, "Bermudas"@es, "Bermudes"@fr, "Beirmiúda"@ga, "Βερμούδες"@el,
     "Бермуда"@bg .
 
-<authority/country/BT> a skos:Concept;
+<authority/country/BT> a skos:Concept, eponto:Country;
   rdfs:label "Bhutan";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -507,7 +507,7 @@
     "Bután"@es, "Royaume du Bhoutan"@fr, "Ríocht na Bútáine"@ga, "Βασίλειο του Μπουτάν"@el,
     "Кралство Бутан"@bg .
 
-<authority/country/BO> a skos:Concept;
+<authority/country/BO> a skos:Concept, eponto:Country;
   rdfs:label "Bolivia";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -529,7 +529,7 @@
     "République de Bolivie"@fr, "Stát Ilnáisiún na Bolaive"@ga, "Πολυεθνοτικό κράτος της Βολιβίας "@el,
     "Многонационална държава Боливия"@bg .
 
-<authority/country/BA> a skos:Concept;
+<authority/country/BA> a skos:Concept, eponto:Country;
   rdfs:label "Bosnia and Herzegovina";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -553,7 +553,7 @@
     "Bosnie-Herzégovine"@fr, "an Bhoisnia agus an Heirseagaivéin"@ga, "Βοσνία και Ερζεγοβίνη"@el,
     "Босна и Херцеговина"@bg .
 
-<authority/country/BW> a skos:Concept;
+<authority/country/BW> a skos:Concept, eponto:Country;
   rdfs:label "Botswana";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -573,7 +573,7 @@
     "República do Botsuana"@pt, "República de Botsuana"@es, "République du Botswana"@fr,
     "Poblacht na Botsuáine"@ga, "Δημοκρατία της Μποτσουάνας "@el, "Република Ботсуана"@bg .
 
-<authority/country/BV> a skos:Concept;
+<authority/country/BV> a skos:Concept, eponto:Country;
   rdfs:label "Bouvet Island";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -591,7 +591,7 @@
     "Wyspa Bouveta"@pl, "Bouvetinsel"@de, "Insula Bouvet"@ro, "Isola di Bouvet"@it, "Ilha Bouvet"@pt,
     "Isla Bouvet "@es, "Île Bouvet"@fr, "Oileán Bouvet"@ga, "Νήσος Μπουβέ"@el, "Остров Буве"@bg .
 
-<authority/country/BR> a skos:Concept;
+<authority/country/BR> a skos:Concept, eponto:Country;
   rdfs:label "Brazil";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -613,7 +613,7 @@
     "Poblacht Chónaidhmitheach na Brasaíle"@ga, "Ομοσπονδιακή Δημοκρατία της Βραζιλίας"@el,
     "Федеративна република Бразилия"@bg .
 
-<authority/country/IO> a skos:Concept;
+<authority/country/IO> a skos:Concept, eponto:Country;
   rdfs:label "British Indian Ocean Territory";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -643,7 +643,7 @@
     "Territoire britannique de l'océan Indien"@fr, "Críoch Aigéan Indiach na Breataine"@ga,
     "Βρετανικό Έδαφος Ινδικού Ωκεανού"@el, "Британски територии в Индийския океан"@bg .
 
-<authority/country/VG> a skos:Concept;
+<authority/country/VG> a skos:Concept, eponto:Country;
   rdfs:label "British Virgin Islands";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -667,7 +667,7 @@
     "Ilhas Virgens Britânicas"@pt, "Islas Vírgenes Británicas"@es, "Îles Vierges britanniques"@fr,
     "Oileáin Bhriotanacha na Maighdean"@ga, "Βρετανικές Παρθένοι Νήσοι"@el, "Британски Вирджински острови"@bg .
 
-<authority/country/BN> a skos:Concept;
+<authority/country/BN> a skos:Concept, eponto:Country;
   rdfs:label "Brunei";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -687,7 +687,7 @@
     "Estado de Brunéi Darusalam"@es, "Negara Brunei Darussalam"@fr, "Brúiné Darasalám"@ga,
     "Κράτος του Μπρουνέι, κατοικία της ειρήνης"@el, "Бруней Даруссалам"@bg .
 
-<authority/country/BG> a skos:Concept;
+<authority/country/BG> a skos:Concept, eponto:Country;
   rdfs:label "Bulgaria";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -709,7 +709,7 @@
     "República da Bulgária"@pt, "República de Bulgaria"@es, "République de Bulgarie"@fr,
     "Poblacht na Bulgáire"@ga, "Δημοκρατία της Βουλγαρίας"@el, "Република България"@bg .
 
-<authority/country/BF> a skos:Concept;
+<authority/country/BF> a skos:Concept, eponto:Country;
   rdfs:label "Burkina Faso";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -728,7 +728,7 @@
     "Burquina Faso"@pt, "Burkina Faso"@es, "Burkina Faso"@fr, "Burcíne Fasó"@ga, "Μπουρκίνα Φάσο"@el,
     "Буркина Фасо"@bg .
 
-<authority/country/BU> a skos:Concept;
+<authority/country/BU> a skos:Concept, eponto:Country;
   rdfs:label "Burma";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -746,7 +746,7 @@
     "Birma"@de, "Birmania"@ro, "Myanmar/Birmania"@it, "Birmânia"@pt, "Myanmar/Birmania"@es,
     "Birmanie"@fr, "Burma"@ga, "Βιρμανία"@el, "Бирма"@bg .
 
-<authority/country/BI> a skos:Concept;
+<authority/country/BI> a skos:Concept, eponto:Country;
   rdfs:label "Burundi";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -766,7 +766,7 @@
     "República do Burundi"@pt, "República de Burundi"@es, "République du Burundi"@fr,
     "Poblacht na Burúine"@ga, "Δημοκρατία του Μπουρούντι "@el, "Република Бурунди"@bg .
 
-<authority/country/KH> a skos:Concept;
+<authority/country/KH> a skos:Concept, eponto:Country;
   rdfs:label "Cambodia";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -786,7 +786,7 @@
     "Reino do Camboja"@pt, "Reino de Camboya"@es, "Royaume du Cambodge"@fr, "Ríocht na Cambóide"@ga,
     "Βασίλειο της Καμπότζης"@el, "Кралство Камбоджа"@bg .
 
-<authority/country/CM> a skos:Concept;
+<authority/country/CM> a skos:Concept, eponto:Country;
   rdfs:label "Cameroon";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -806,7 +806,7 @@
     "República dos Camarões"@pt, "República de Camerún"@es, "République du Cameroun"@fr,
     "Poblacht Chamarún"@ga, "Δημοκρατία του Καμερούν "@el, "Република Камерун"@bg .
 
-<authority/country/CA> a skos:Concept;
+<authority/country/CA> a skos:Concept, eponto:Country;
   rdfs:label "Canada";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -822,7 +822,7 @@
     "Kanada"@sl, "Kanada"@pl, "Kanada"@de, "Canada"@ro, "Canada"@it, "Canadá"@pt, "Canadá"@es,
     "Canada"@fr, "Ceanada"@ga, "Καναδάς"@el, "Канада"@bg .
 
-<authority/country/CT> a skos:Concept;
+<authority/country/CT> a skos:Concept, eponto:Country;
   rdfs:label "Canton and Enderbury Islands";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -848,7 +848,7 @@
     "Iles Canton et Enderbury"@fr, "Oileáin Chantúin agus Enderbury"@ga, "Νήσοι Καντών και Εντέρμπουρυ"@el,
     "Острови Кантон и Ендърбъри"@bg .
 
-<authority/country/CV> a skos:Concept;
+<authority/country/CV> a skos:Concept, eponto:Country;
   rdfs:label "Cape Verde";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -870,7 +870,7 @@
     "República de Cabo Verde"@pt, "República de Cabo Verde"@es, "République du Cap-Vert"@fr,
     "Poblacht Rinn Verde"@ga, "Δημοκρατία του Πράσινου Ακρωτηρίου "@el, "Република Кабо Верде"@bg .
 
-<authority/country/BQ> a skos:Concept;
+<authority/country/BQ> a skos:Concept, eponto:Country;
   rdfs:label "Caribbean Netherlands";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -896,7 +896,7 @@
     "Bonaire, San Eustaquio y Saba"@es, "Bonaire, Saint-Eustache et Saba"@fr, "Bonaire, Saint-Eustache agus Saba"@ga,
     "Μποναίρ, Άγιος Ευστάθιος και Σάμπα"@el, "Бонер, Синт Еустациус и Саба"@bg .
 
-<authority/country/KY> a skos:Concept;
+<authority/country/KY> a skos:Concept, eponto:Country;
   rdfs:label "Cayman Islands";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -916,7 +916,7 @@
     "Ilhas Caimão"@pt, "Islas Caimán "@es, "Îles Caïmanes"@fr, "Oileáin Cayman"@ga, "Νήσοι Κάιμαν "@el,
     "Кайманови острови"@bg .
 
-<authority/country/CF> a skos:Concept;
+<authority/country/CF> a skos:Concept, eponto:Country;
   rdfs:label "Central African Republic";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -940,7 +940,7 @@
     "República Centro-Africana"@pt, "República Centroafricana"@es, "République centrafricaine"@fr,
     "Poblacht na hAfraice Láir"@ga, "Κεντροαφρικανική Δημοκρατία"@el, "Централноафриканска република"@bg .
 
-<authority/country/TD> a skos:Concept;
+<authority/country/TD> a skos:Concept, eponto:Country;
   rdfs:label "Chad";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -959,7 +959,7 @@
     "República de Chad"@es, "République du Tchad"@fr, "Poblacht Shead"@ga, "Δημοκρατία του Τσαντ "@el,
     "Република Чад"@bg .
 
-<authority/country/CL> a skos:Concept;
+<authority/country/CL> a skos:Concept, eponto:Country;
   rdfs:label "Chile";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -978,7 +978,7 @@
     "República de Chile"@es, "République du Chili"@fr, "Poblacht na Sile"@ga, "Δημοκρατία της Χιλής"@el,
     "Република Чили"@bg .
 
-<authority/country/CN> a skos:Concept;
+<authority/country/CN> a skos:Concept, eponto:Country;
   rdfs:label "China";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -998,7 +998,7 @@
     "República Popular China"@es, "République populaire de Chine"@fr, "Daon-Phoblacht na Síne"@ga,
     "Λαϊκή Δημοκρατία της Κίνας "@el, "Китайска народна република"@bg .
 
-<authority/country/CX> a skos:Concept;
+<authority/country/CX> a skos:Concept, eponto:Country;
   rdfs:label "Christmas Island";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1020,7 +1020,7 @@
     "Território da Ilha do Natal"@pt, "Territorio de la Isla Christmas"@es, "Île Christmas"@fr,
     "Críoch Oileán na Nollag"@ga, "Έδαφος της Νήσου των Χριστουγέννων "@el, "Територия остров Рождество"@bg .
 
-<authority/country/CC> a skos:Concept;
+<authority/country/CC> a skos:Concept, eponto:Country;
   rdfs:label "Cocos (Keeling) Islands";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1044,7 +1044,7 @@
     "Îles Cocos (Keeling)"@fr, "Críoch Oileáin Cocos (Keeling)"@ga, "Έδαφος των Νήσων Κόκος (Κίλινγκ) "@el,
     "Територия Кокосови острови"@bg .
 
-<authority/country/CO> a skos:Concept;
+<authority/country/CO> a skos:Concept, eponto:Country;
   rdfs:label "Colombia";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1065,7 +1065,7 @@
     "République de Colombie"@fr, "Poblacht na Colóime"@ga, "Δημοκρατία της Κολομβίας "@el,
     "Република Колумбия"@bg .
 
-<authority/country/KM> a skos:Concept;
+<authority/country/KM> a skos:Concept, eponto:Country;
   rdfs:label "Comoros";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1084,7 +1084,7 @@
     "Uniunea Comorelor"@ro, "Unione delle Comore"@it, "União das Comores"@pt, "Unión de las Comoras"@es,
     "Union des Comores"@fr, "Aontas Oileáin Chomóra"@ga, "Ένωση των Κομορών "@el, "Съюз на Коморските острови"@bg .
 
-<authority/country/CG> a skos:Concept;
+<authority/country/CG> a skos:Concept, eponto:Country;
   rdfs:label "Congo";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1103,7 +1103,7 @@
     "República do Congo"@pt, "República del Congo"@es, "République du Congo"@fr, "Poblacht an Chongó"@ga,
     "Δημοκρατία του Κονγκό "@el, "Република Конго"@bg .
 
-<authority/country/CK> a skos:Concept;
+<authority/country/CK> a skos:Concept, eponto:Country;
   rdfs:label "Cook Islands";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1121,7 +1121,7 @@
     "Wyspy Cooka"@pl, "Cookinseln"@de, "Insulele Cook"@ro, "Isole Cook"@it, "Ilhas Cook"@pt,
     "Islas Cook "@es, "Îles Cook"@fr, "Oileáin Cook"@ga, "Νήσοι Κουκ "@el, "Острови Кук"@bg .
 
-<authority/country/CR> a skos:Concept;
+<authority/country/CR> a skos:Concept, eponto:Country;
   rdfs:label "Costa Rica";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1142,7 +1142,7 @@
     "República de Costa Rica"@es, "République du Costa Rica"@fr, "Poblacht Chósta Ríce"@ga,
     "Δημοκρατία της Κόστα Ρίκα"@el, "Република Коста Рика"@bg .
 
-<authority/country/HR> a skos:Concept;
+<authority/country/HR> a skos:Concept, eponto:Country;
   rdfs:label "Croatia";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -1164,7 +1164,7 @@
     "República da Croácia"@pt, "República de Croacia"@es, "République de Croatie"@fr,
     "Poblacht na Cróite"@ga, "Δημοκρατία της Κροατίας "@el, "Република Хърватия"@bg .
 
-<authority/country/CU> a skos:Concept;
+<authority/country/CU> a skos:Concept, eponto:Country;
   rdfs:label "Cuba";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1183,7 +1183,7 @@
     "República de Cuba"@es, "République de Cuba"@fr, "Poblacht Chúba"@ga, "Δημοκρατία της Κούβας"@el,
     "Република Куба"@bg .
 
-<authority/country/CW> a skos:Concept;
+<authority/country/CW> a skos:Concept, eponto:Country;
   rdfs:label "Curacao";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1201,7 +1201,7 @@
     "Curaçao"@it, "Curaçao"@pt, "Curazao"@es, "Curaçao"@fr, "Curaçao"@ga, "Κουρασάο"@el,
     "Кюрасао"@bg .
 
-<authority/country/CY> a skos:Concept;
+<authority/country/CY> a skos:Concept, eponto:Country;
   rdfs:label "Cyprus";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -1222,7 +1222,7 @@
     "República de Chipre"@es, "République de Chypre"@fr, "Poblacht na Cipire"@ga, "Κυπριακή Δημοκρατία "@el,
     "Република Кипър"@bg .
 
-<authority/country/CZ> a skos:Concept;
+<authority/country/CZ> a skos:Concept, eponto:Country;
   rdfs:label "Czechia";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -1243,7 +1243,7 @@
     "República Checa"@es, "République tchèque"@fr, "Poblacht na Seice"@ga, "Τσεχική Δημοκρατία"@el,
     "Чешка република"@bg .
 
-<authority/country/CI> a skos:Concept;
+<authority/country/CI> a skos:Concept, eponto:Country;
   rdfs:label "Côte d'Ivoire";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1266,7 +1266,7 @@
     "República da Costa do Marfim"@pt, "República de Costa de Marfil"@es, "République de Côte d'Ivoire"@fr,
     "Poblacht an Chósta Eabhair"@ga, "Δημοκρατία της Ακτής του Ελεφαντοστού"@el, "Република Кот д'Ивоар"@bg .
 
-<authority/country/CD> a skos:Concept;
+<authority/country/CD> a skos:Concept, eponto:Country;
   rdfs:label "Democratic Republic of Congo";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1291,7 +1291,7 @@
     "République Démocratique du Congo"@fr, "Poblacht Dhaonlathach an Chongó"@ga, "Λαϊκή Δημοκρατία του Κονγκό"@el,
     "Демократична република Конго"@bg .
 
-<authority/country/DK> a skos:Concept;
+<authority/country/DK> a skos:Concept, eponto:Country;
   rdfs:label "Denmark";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -1312,7 +1312,7 @@
     "Reino de Dinamarca"@es, "Royaume du Danemark"@fr, "Ríocht na Danmhairge"@ga, "Βασίλειο της Δανίας"@el,
     "Кралство Дания"@bg .
 
-<authority/country/DJ> a skos:Concept;
+<authority/country/DJ> a skos:Concept, eponto:Country;
   rdfs:label "Djibouti";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1332,7 +1332,7 @@
     "República do Jibuti"@pt, "República de Yibuti"@es, "République de Djibouti"@fr, "Poblacht Djibouti"@ga,
     "Δημοκρατία του Τζιμπουτί"@el, "Република Джибути"@bg .
 
-<authority/country/DM> a skos:Concept;
+<authority/country/DM> a skos:Concept, eponto:Country;
   rdfs:label "Dominica";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1353,7 +1353,7 @@
     "Commonwealth de Dominica"@es, "Commonwealth de Dominique"@fr, "Comhlathas Dhoiminice"@ga,
     "Κοινοπολιτεία της Δομίνικας"@el, "Доминиканска общност"@bg .
 
-<authority/country/DO> a skos:Concept;
+<authority/country/DO> a skos:Concept, eponto:Country;
   rdfs:label "Dominican Republic";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1377,7 +1377,7 @@
     "República Dominicana"@pt, "República Dominicana"@es, "République dominicaine"@fr,
     "an Phoblacht Dhoiminiceach"@ga, "Δομινικανή Δημοκρατία"@el, "Доминиканска република"@bg .
 
-<authority/country/TL> a skos:Concept;
+<authority/country/TL> a skos:Concept, eponto:Country;
   rdfs:label "East Timor";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1403,7 +1403,7 @@
     "Poblacht Dhaonlathach Thíomór Thoir"@ga, "Λαϊκή Δημοκρατία του Ανατολικού Τιμόρ"@el,
     "Демократична република Източен Тимор"@bg .
 
-<authority/country/TP> a skos:Concept;
+<authority/country/TP> a skos:Concept, eponto:Country;
   rdfs:label "East Timor";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1425,7 +1425,7 @@
     "Timor-Leste"@pt, "República Democrática de Timor Oriental"@es, "Timor Oriental"@fr,
     "Poblacht Dhaonlathach Thíomór Thoir"@ga, "Ανατολικό Τιμόρ"@el, "Демократична република Източен Тимор"@bg .
 
-<authority/country/EC> a skos:Concept;
+<authority/country/EC> a skos:Concept, eponto:Country;
   rdfs:label "Ecuador";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1445,7 +1445,7 @@
     "República do Equador"@pt, "República del Ecuador"@es, "République de l'Équateur"@fr,
     "Poblacht Eacuadór"@ga, "Δημοκρατία του Ισημερινού "@el, "Република Еквадор"@bg .
 
-<authority/country/EG> a skos:Concept;
+<authority/country/EG> a skos:Concept, eponto:Country;
   rdfs:label "Egypt";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1465,7 +1465,7 @@
     "República Árabe do Egito"@pt, "República Árabe de Egipto"@es, "République arabe d'Égypte"@fr,
     "Poblacht Arabach na hÉigipte"@ga, "Αραβική Δημοκρατία της Αιγύπτου"@el, "Арабска република Египет"@bg .
 
-<authority/country/SV> a skos:Concept;
+<authority/country/SV> a skos:Concept, eponto:Country;
   rdfs:label "El Salvador";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1486,7 +1486,7 @@
     "República de El Salvador"@es, "République d'El Salvador"@fr, "Poblacht na Salvadóire"@ga,
     "Δημοκρατία του Ελ Σαλβαδόρ "@el, "Република Ел Салвадор"@bg .
 
-<authority/country/GQ> a skos:Concept;
+<authority/country/GQ> a skos:Concept, eponto:Country;
   rdfs:label "Equatorial Guinea";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1510,7 +1510,7 @@
     "République de Guinée équatoriale"@fr, "Poblacht na Guine Meánchiorclaí"@ga, "Δημοκρατία της Ισημερινής Γουινέας"@el,
     "Република Екваториална Гвинея"@bg .
 
-<authority/country/ER> a skos:Concept;
+<authority/country/ER> a skos:Concept, eponto:Country;
   rdfs:label "Eritrea";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1529,7 +1529,7 @@
     "Stato di Eritrea"@it, "Estado da Eritreia"@pt, "Estado de Eritrea"@es, "État d'Érythrée"@fr,
     "Stát na hEiritré"@ga, "Κράτος της Ερυθραίας "@el, "Държавата Еритрея"@bg .
 
-<authority/country/EE> a skos:Concept;
+<authority/country/EE> a skos:Concept, eponto:Country;
   rdfs:label "Estonia";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -1551,7 +1551,7 @@
     "République d'Estonie"@fr, "Poblacht na hEastóine"@ga, "Δημοκρατία της Εσθονίας"@el,
     "Република Естония"@bg .
 
-<authority/country/ET> a skos:Concept;
+<authority/country/ET> a skos:Concept, eponto:Country;
   rdfs:label "Ethiopia";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1576,7 +1576,7 @@
     "République démocratique fédérale d'Éthiopie"@fr, "Poblacht Dhaonlathach Chónaidhme na hAetóipe"@ga,
     "Ομοσπονδιακή Λαϊκή Δημοκρατία της Αιθιοπίας "@el, "Федерална демократична република Етиопия"@bg .
 
-<authority/country/XE> a skos:Concept;
+<authority/country/XE> a skos:Concept, eponto:Country;
   rdfs:label "European Monetary Fund";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1602,7 +1602,7 @@
     "Fond Européen de Coopération Monétaire"@fr, "an Ciste Airgeadaíochta Eorpach"@ga,
     "Ευρωπαϊκό Ταμείο Νομισματικής Συνεργασίας"@el, "Европейски валутен фонд"@bg .
 
-<authority/country/FK> a skos:Concept;
+<authority/country/FK> a skos:Concept, eponto:Country;
   rdfs:label "Falkland Islands";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1624,7 +1624,7 @@
     "Islas Malvinas"@es, "Îles Falkland (Malouines)"@fr, "Oileáin Fháclainne"@ga, "Νήσοι Φώκλαντ (Μαλβίνες)"@el,
     "Фолкландски острови"@bg .
 
-<authority/country/FO> a skos:Concept;
+<authority/country/FO> a skos:Concept, eponto:Country;
   rdfs:label "Faroe Islands";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1642,7 +1642,7 @@
     "Wyspy Owcze"@pl, "Färöer"@de, "Insulele Feroe"@ro, "Isole Fær Øer"@it, "Ilhas Faroé"@pt,
     "Islas Feroe"@es, "Îles Féroé"@fr, "Oileáin Fharó"@ga, "Νήσοι Φερόες"@el, "Фарьорски острови"@bg .
 
-<authority/country/FJ> a skos:Concept;
+<authority/country/FJ> a skos:Concept, eponto:Country;
   rdfs:label "Fiji";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1661,7 +1661,7 @@
     "República de Fiyi"@es, "République des Fidji"@fr, "Poblacht Fhidsí"@ga, "Δημοκρατία των Φίτζι "@el,
     "Република Фиджи"@bg .
 
-<authority/country/FI> a skos:Concept;
+<authority/country/FI> a skos:Concept, eponto:Country;
   rdfs:label "Finland";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -1683,7 +1683,7 @@
     "República de Finlandia"@es, "République de Finlande"@fr, "Poblacht na Fionlainne"@ga,
     "Δημοκρατία της Φινλανδίας "@el, "Република Финландия"@bg .
 
-<authority/country/FR> a skos:Concept;
+<authority/country/FR> a skos:Concept, eponto:Country;
   rdfs:label "France";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -1705,7 +1705,7 @@
     "República Francesa"@pt, "República Francesa"@es, "République française"@fr, "Poblacht na Fraince"@ga,
     "Γαλλική Δημοκρατία "@el, "Френска република"@bg .
 
-<authority/country/FX> a skos:Concept;
+<authority/country/FX> a skos:Concept, eponto:Country;
   rdfs:label "France, metropolitan";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1730,7 +1730,7 @@
     "France Métropolitaine"@fr, "An Fhrainc (Meitreapholaiteach)"@ga, "Μητροπολιτική Γαλλία"@el,
     "континентална Франция"@bg .
 
-<authority/country/GF> a skos:Concept;
+<authority/country/GF> a skos:Concept, eponto:Country;
   rdfs:label "French Guiana";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1752,7 +1752,7 @@
     "Guayana Francesa"@es, "Département de Guyane Française"@fr, "Roinn Ghuáin na Fraince"@ga,
     "Διαμέρισμα Γαλλικής Γουιάνας"@el, "Френска Гвиана"@bg .
 
-<authority/country/PF> a skos:Concept;
+<authority/country/PF> a skos:Concept, eponto:Country;
   rdfs:label "French Polynesia";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1775,7 +1775,7 @@
     "Territoire de Polynésie Française"@fr, "Críoch Pholainéis na Fraince"@ga, "Έδαφος της Γαλλικής Πολυνησίας"@el,
     "Френска Полинезия"@bg .
 
-<authority/country/TF> a skos:Concept;
+<authority/country/TF> a skos:Concept, eponto:Country;
   rdfs:label "French Southern and Antarctic Lands";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1806,7 +1806,7 @@
     "Terres australes françaises"@fr, "Críocha an Deiscirt agus an Antartaigh de chuid na Fraince"@ga,
     "Γαλλικά Νότια και Ανταρκτικά Εδάφη "@el, "Френски южни и антарктически територии"@bg .
 
-<authority/country/GA> a skos:Concept;
+<authority/country/GA> a skos:Concept, eponto:Country;
   rdfs:label "Gabon";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1825,7 +1825,7 @@
     "República Gabonesa"@pt, "República Gabonesa"@es, "République gabonaise"@fr, "Poblacht na Gabúine"@ga,
     "Δημοκρατία της Γκαμπόν "@el, "Република Габон"@bg .
 
-<authority/country/GM> a skos:Concept;
+<authority/country/GM> a skos:Concept, eponto:Country;
   rdfs:label "Gambia";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1844,7 +1844,7 @@
     "República da Gâmbia"@pt, "República de Gambia"@es, "République de Gambie"@fr, "Poblacht na Gaimbia"@ga,
     "Δημοκρατία της Γκάμπιας"@el, "Република Гамбия"@bg .
 
-<authority/country/GE> a skos:Concept;
+<authority/country/GE> a skos:Concept, eponto:Country;
   rdfs:label "Georgia";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1862,7 +1862,7 @@
     "Georgia"@it, "Geórgia"@pt, "Georgia"@es, "Géorgie"@fr, "an tSeoirsia"@ga, "Γεωργία"@el,
     "Грузия"@bg .
 
-<authority/country/DD> a skos:Concept;
+<authority/country/DD> a skos:Concept, eponto:Country;
   rdfs:label "German Democratic Republic";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1887,7 +1887,7 @@
     "République Démocratique Allemande"@fr, "Poblacht Dhaonlathach na Gearmáine"@ga, "Λαϊκή Δημοκρατία της Γερμανίας"@el,
     "Германска демократична република"@bg .
 
-<authority/country/DE> a skos:Concept;
+<authority/country/DE> a skos:Concept, eponto:Country;
   rdfs:label "Germany";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -1911,7 +1911,7 @@
     "République fédérale d'Allemagne"@fr, "Poblacht Chónaidhme na Gearmáine"@ga, "Ομοσπονδιακή Δημοκρατία της Γερμανίας"@el,
     "Федерална република Германия"@bg .
 
-<authority/country/GH> a skos:Concept;
+<authority/country/GH> a skos:Concept, eponto:Country;
   rdfs:label "Ghana";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1930,7 +1930,7 @@
     "República de Ghana"@es, "République du Ghana"@fr, "Poblacht Ghána"@ga, "Δημοκρατία της Γκάνας "@el,
     "Република Гана"@bg .
 
-<authority/country/GI> a skos:Concept;
+<authority/country/GI> a skos:Concept, eponto:Country;
   rdfs:label "Gibraltar";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1948,7 +1948,7 @@
     "Gibilterra"@it, "Gibraltar"@pt, "Gibraltar"@es, "Gibraltar"@fr, "Giobráltar"@ga,
     "Γιβραλτάρ"@el, "Гибралтар"@bg .
 
-<authority/country/GR> a skos:Concept;
+<authority/country/GR> a skos:Concept, eponto:Country;
   rdfs:label "Greece";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -1969,7 +1969,7 @@
     "República Helénica"@pt, "República Helénica"@es, "République hellénique"@fr, "an Phoblacht Heilléanach"@ga,
     "Ελληνική Δημοκρατία"@el, "Република Гърция"@bg .
 
-<authority/country/GL> a skos:Concept;
+<authority/country/GL> a skos:Concept, eponto:Country;
   rdfs:label "Greenland";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -1987,7 +1987,7 @@
     "Groenlanda"@ro, "Groenlandia"@it, "Gronelândia"@pt, "Groenlandia"@es, "Groenland"@fr,
     "an Ghraonlainn"@ga, "Γροιλανδία"@el, "Гренландия"@bg .
 
-<authority/country/GD> a skos:Concept;
+<authority/country/GD> a skos:Concept, eponto:Country;
   rdfs:label "Grenada";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2005,7 +2005,7 @@
     "Grenada"@it, "Granada"@pt, "Granada"@es, "Grenade"@fr, "Greanáda"@ga, "Γρενάδα"@el,
     "Гренада"@bg .
 
-<authority/country/GP> a skos:Concept;
+<authority/country/GP> a skos:Concept, eponto:Country;
   rdfs:label "Guadeloupe";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2023,7 +2023,7 @@
     "Gwadelupa"@pl, "Guadeloupe"@de, "Guadelupa"@ro, "Guadalupa"@it, "Guadalupe"@pt, "Guadalupe"@es,
     "Guadeloupe"@fr, "Guadalúip"@ga, "Γουαδελούπη"@el, "Гваделупа"@bg .
 
-<authority/country/GU> a skos:Concept;
+<authority/country/GU> a skos:Concept, eponto:Country;
   rdfs:label "Guam";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2041,7 +2041,7 @@
     "Territorio di Guam"@it, "Território de Guame"@pt, "Territorio de Guam"@es, "Territoire de Guam"@fr,
     "Críoch Guam"@ga, "Έδαφος του Γκουάμ "@el, "Гуам"@bg .
 
-<authority/country/GT> a skos:Concept;
+<authority/country/GT> a skos:Concept, eponto:Country;
   rdfs:label "Guatemala";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2062,7 +2062,7 @@
     "République du Guatemala"@fr, "Poblacht Ghuatamala"@ga, "Δημοκρατία της Γουατεμάλας "@el,
     "Република Гватемала"@bg .
 
-<authority/country/GG> a skos:Concept;
+<authority/country/GG> a skos:Concept, eponto:Country;
   rdfs:label "Guernsey";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2081,7 +2081,7 @@
     "Domeniul Guernsey"@ro, "Baliato di Guernsey"@it, "Bailiado de Guernesey"@pt, "Bailía de Guernesey"@es,
     "Guernesey"@fr, "Báillcheantar Gheansaí"@ga, "Γκέρνσεϊ"@el, "Департамент Гърнзи"@bg .
 
-<authority/country/GN> a skos:Concept;
+<authority/country/GN> a skos:Concept, eponto:Country;
   rdfs:label "Guinea";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2100,7 +2100,7 @@
     "República da Guiné"@pt, "República de Guinea"@es, "République de Guinée"@fr, "Poblacht na Guine"@ga,
     "Δημοκρατία της Γουινέας "@el, "Република Гвинея"@bg .
 
-<authority/country/GW> a skos:Concept;
+<authority/country/GW> a skos:Concept, eponto:Country;
   rdfs:label "Guinea-Bissau";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2122,7 +2122,7 @@
     "República da Guiné-Bissau"@pt, "Guinea-Bissau"@es, "République de Guinée-Bissau"@fr,
     "Poblacht Ghuine Bissau"@ga, "Δημοκρατία της Γουινέας Μπισσάου"@el, "Република Гвинея Бисау"@bg .
 
-<authority/country/GY> a skos:Concept;
+<authority/country/GY> a skos:Concept, eponto:Country;
   rdfs:label "Guyana";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2142,7 +2142,7 @@
     "República Cooperativa da Guiana"@pt, "República Cooperativa de Guyana"@es, "République coopérative de Guyana"@fr,
     "Comharphoblacht na Guáine"@ga, "Συνεργατική Δημοκρατία της Γουιάνας"@el, "Кооперативна република Гвиана"@bg .
 
-<authority/country/HT> a skos:Concept;
+<authority/country/HT> a skos:Concept, eponto:Country;
   rdfs:label "Haiti";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2161,7 +2161,7 @@
     "República de Haití"@es, "République de Haïti"@fr, "Poblacht Háítí"@ga, "Δημοκρατία της Αϊτής "@el,
     "Република Хаити"@bg .
 
-<authority/country/HM> a skos:Concept;
+<authority/country/HM> a skos:Concept, eponto:Country;
   rdfs:label "Heard Island and McDonald Islands";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2190,7 +2190,7 @@
     "Críoch Oileán Heard agus Oileáin McDonald"@ga, "Έδαφος των Νήσων Χερντ και Μακντόναλντ "@el,
     "Хърд и Макдоналд"@bg .
 
-<authority/country/VA> a skos:Concept;
+<authority/country/VA> a skos:Concept, eponto:Country;
   rdfs:label "Holy See (Vatican)";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2216,7 +2216,7 @@
     "Santa Sede"@es, "Saint-Siège (État de la Cité du Vatican )"@fr, "an Suí Naofa/Cathair na Vatacáine"@ga,
     "Αγία Έδρα (Βατικανό)"@el, "Светия престол/град държава Ватикан"@bg .
 
-<authority/country/HN> a skos:Concept;
+<authority/country/HN> a skos:Concept, eponto:Country;
   rdfs:label "Honduras";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2236,7 +2236,7 @@
     "República das Honduras"@pt, "República de Honduras"@es, "République du Honduras"@fr,
     "Poblacht Hondúras"@ga, "Δημοκρατία της Ονδούρας"@el, "Република Хондурас"@bg .
 
-<authority/country/HK> a skos:Concept;
+<authority/country/HK> a skos:Concept, eponto:Country;
   rdfs:label "Hong Kong";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2261,7 +2261,7 @@
     "Hong Kong"@fr, "Sainréigiún Riaracháin Hong Cong i nDaonphoblacht na Síne"@ga, "Χονγκ Κονγκ"@el,
     "Специален административен район на Китайската народна република Хонконг"@bg .
 
-<authority/country/HU> a skos:Concept;
+<authority/country/HU> a skos:Concept, eponto:Country;
   rdfs:label "Hungary";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -2281,7 +2281,7 @@
     "Ungheria"@it, "Hungria"@pt, "Hungría"@es, "Hongrie"@fr, "an Ungáir"@ga, "Ουγγαρία"@el,
     "Унгария"@bg .
 
-<authority/country/IS> a skos:Concept;
+<authority/country/IS> a skos:Concept, eponto:Country;
   rdfs:label "Iceland";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2299,7 +2299,7 @@
     "Island"@de, "Republica Islanda"@ro, "Islanda"@it, "República da Islândia"@pt, "Islandia"@es,
     "Islande"@fr, "Poblacht na hÍoslainne"@ga, "Δημοκρατία της Ισλανδίας "@el, "Република Исландия"@bg .
 
-<authority/country/IN> a skos:Concept;
+<authority/country/IN> a skos:Concept, eponto:Country;
   rdfs:label "India";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2318,7 +2318,7 @@
     "República de la India"@es, "République de l'Inde"@fr, "Poblacht na hIndia"@ga, "Δημοκρατία της Ινδίας "@el,
     "Република Индия"@bg .
 
-<authority/country/ID> a skos:Concept;
+<authority/country/ID> a skos:Concept, eponto:Country;
   rdfs:label "Indonesia";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2339,7 +2339,7 @@
     "República de Indonesia"@es, "République d'Indonésie"@fr, "Poblacht na hIndinéise"@ga,
     "Δημοκρατία της Ινδονησίας"@el, "Република Индонезия"@bg .
 
-<authority/country/XD> a skos:Concept;
+<authority/country/XD> a skos:Concept, eponto:Country;
   rdfs:label "International Monetary Fund";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2363,7 +2363,7 @@
     "Fundo Monetário Internacional"@pt, "Fondo Monetario Internacional"@es, "Fond Monétaire International"@fr,
     "an Ciste Airgeadaíochta Idirnáisiúnta"@ga, "Διεθνές Νομισματικό Ταμείο"@el, "Международен валутен фонд"@bg .
 
-<authority/country/IR> a skos:Concept;
+<authority/country/IR> a skos:Concept, eponto:Country;
   rdfs:label "Iran";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2383,7 +2383,7 @@
     "República Islâmica do Irão"@pt, "República Islámica de Irán"@es, "République islamique d'Iran"@fr,
     "Poblacht Ioslamach na hIaráine"@ga, "Ισλαμική Δημοκρατία του Ιράν "@el, "Ислямска република Иран"@bg .
 
-<authority/country/IQ> a skos:Concept;
+<authority/country/IQ> a skos:Concept, eponto:Country;
   rdfs:label "Iraq";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2402,7 +2402,7 @@
     "República de Irak"@es, "République d'Iraq"@fr, "Poblacht na hIaráice"@ga, "Δημοκρατία του Ιράκ "@el,
     "Република Ирак"@bg .
 
-<authority/country/IE> a skos:Concept;
+<authority/country/IE> a skos:Concept, eponto:Country;
   rdfs:label "Ireland";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -2421,7 +2421,7 @@
     "Irlanda"@ro, "Irlanda"@it, "Irlanda"@pt, "Irlanda"@es, "Irlande"@fr, "Éire"@ga, "Ιρλανδία"@el,
     "Ирландия"@bg .
 
-<authority/country/IM> a skos:Concept;
+<authority/country/IM> a skos:Concept, eponto:Country;
   rdfs:label "Isle of Man";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2439,7 +2439,7 @@
     "Insula Man"@ro, "Isola di Man"@it, "Ilha de Man"@pt, "Isla de Man"@es, "Île de Man"@fr,
     "Manainn"@ga, "Νήσος του Μαν"@el, "Остров Ман"@bg .
 
-<authority/country/IL> a skos:Concept;
+<authority/country/IL> a skos:Concept, eponto:Country;
   rdfs:label "Israel";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2456,7 +2456,7 @@
     "Staat Israel"@de, "Statul Israel"@ro, "Israele"@it, "Estado de Israel"@pt, "Estado de Israel"@es,
     "Israël"@fr, "Stát Iosrael"@ga, "Ισραήλ"@el, "Държавата Израел"@bg .
 
-<authority/country/IT> a skos:Concept;
+<authority/country/IT> a skos:Concept, eponto:Country;
   rdfs:label "Italy";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -2477,7 +2477,7 @@
     "República Italiana"@es, "République italienne"@fr, "Poblacht na hIodáile"@ga, "Ιταλική Δημοκρατία "@el,
     "Италианска република"@bg .
 
-<authority/country/JM> a skos:Concept;
+<authority/country/JM> a skos:Concept, eponto:Country;
   rdfs:label "Jamaica";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2495,7 +2495,7 @@
     "Giamaica"@it, "Jamaica"@pt, "Jamaica"@es, "Jamaïque"@fr, "Iamáice"@ga, "Τζαμάικα"@el,
     "Ямайка"@bg .
 
-<authority/country/JP> a skos:Concept;
+<authority/country/JP> a skos:Concept, eponto:Country;
   rdfs:label "Japan";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2511,7 +2511,7 @@
     "Japan"@hr, "Japonska"@sl, "Japonia"@pl, "Japan"@de, "Japonia"@ro, "Giappone"@it,
     "Japão"@pt, "Japón"@es, "Japon"@fr, "an tSeapáin"@ga, "Ιαπωνία"@el, "Япония"@bg .
 
-<authority/country/JE> a skos:Concept;
+<authority/country/JE> a skos:Concept, eponto:Country;
   rdfs:label "Jersey";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2528,7 +2528,7 @@
     "Baliwat Jersey"@pl, "Jersey"@de, "Domeniul Jersey"@ro, "Baliato di Jersey"@it, "Bailiado de Jersey"@pt,
     "Bailía de Jersey"@es, "Jersey"@fr, "Báillcheantar Gheirsí"@ga, "Τζέρσεϊ"@el, "Департамент Джърси"@bg .
 
-<authority/country/JT> a skos:Concept;
+<authority/country/JT> a skos:Concept, eponto:Country;
   rdfs:label "Johnston Island";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2548,7 +2548,7 @@
     "Ilha Johnston"@pt, "atolón de Johnston"@es, "Ile Johnston"@fr, "Oileán Johnston"@ga,
     "Νήσος Τζόνστον"@el, "Остров Джонстън"@bg .
 
-<authority/country/JO> a skos:Concept;
+<authority/country/JO> a skos:Concept, eponto:Country;
   rdfs:label "Jordan";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2570,7 +2570,7 @@
     "Reino Hachemí de Jordania"@es, "Royaume hachémite de Jordanie"@fr, "Ríocht Haisimíteach na hIordáine"@ga,
     "Χασεμιτικό Βασίλειο της Ιορδανίας"@el, "Хашемитско кралство Йордания"@bg .
 
-<authority/country/KZ> a skos:Concept;
+<authority/country/KZ> a skos:Concept, eponto:Country;
   rdfs:label "Kazakhstan";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2590,7 +2590,7 @@
     "República do Cazaquistão"@pt, "República de Kazajistán"@es, "République du Kazakhstan"@fr,
     "Poblacht na Casacstáine"@ga, "Δημοκρατία του Καζαχστάν "@el, "Република Казахстан"@bg .
 
-<authority/country/KE> a skos:Concept;
+<authority/country/KE> a skos:Concept, eponto:Country;
   rdfs:label "Kenya";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2609,7 +2609,7 @@
     "República de Kenia"@es, "République du Kenya"@fr, "Poblacht na Céinia"@ga, "Δημοκρατία της Κένυας "@el,
     "Република Кения"@bg .
 
-<authority/country/KI> a skos:Concept;
+<authority/country/KI> a skos:Concept, eponto:Country;
   rdfs:label "Kiribati";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2629,7 +2629,7 @@
     "República de Quiribáti"@pt, "República de Kiribati"@es, "République de Kiribati"@fr,
     "Poblacht Chireabaití"@ga, "Δημοκρατία του Κιριμπάτι "@el, "Република Кирибати"@bg .
 
-<authority/country/XK> a skos:Concept;
+<authority/country/XK> a skos:Concept, eponto:Country;
   rdfs:label "Kosovo (under UNSCR 1244/99)";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2652,7 +2652,7 @@
     "an Chosaiv (faoi Rún 1244/99 CSNA)"@ga, "Κοσσυφοπέδιο (όπως ορίζεται στην απόφαση 1244 του ΣΑ των ΗΕ )"@el,
     "Косово (съгласно Резолюция 1244/1999 на Съвета за сигурност на ООН) Косово"@bg .
 
-<authority/country/KW> a skos:Concept;
+<authority/country/KW> a skos:Concept, eponto:Country;
   rdfs:label "Kuwait";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2670,7 +2670,7 @@
     "Stato del Kuwait"@it, "Estado do Koweit"@pt, "Estado de Kuwait"@es, "État du Koweït"@fr,
     "Stát Chuáit"@ga, "Κράτος του Κουβέιτ "@el, "Държавата Кувейт"@bg .
 
-<authority/country/KG> a skos:Concept;
+<authority/country/KG> a skos:Concept, eponto:Country;
   rdfs:label "Kyrgyzstan";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2690,7 +2690,7 @@
     "República Quirguiz"@pt, "República Kirguisa"@es, "République Kirghize"@fr, "Poblacht na Cirgise"@ga,
     "Δημοκρατία της Κιργιζίας "@el, "Киргизка република"@bg .
 
-<authority/country/LA> a skos:Concept;
+<authority/country/LA> a skos:Concept, eponto:Country;
   rdfs:label "Laos";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2713,7 +2713,7 @@
     "République Démocratique Populaire Lao"@fr, "Daon-Phoblacht Dhaonlathach Laos"@ga,
     "Λαϊκή Δημοκρατία του Λάος"@el, "Лаоска народнодемократична република"@bg .
 
-<authority/country/LV> a skos:Concept;
+<authority/country/LV> a skos:Concept, eponto:Country;
   rdfs:label "Latvia";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -2735,7 +2735,7 @@
     "République de Lettonie"@fr, "Poblacht na Laitvia"@ga, "Δημοκρατία της Λετονίας"@el,
     "Република Латвия"@bg .
 
-<authority/country/LB> a skos:Concept;
+<authority/country/LB> a skos:Concept, eponto:Country;
   rdfs:label "Lebanon";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2754,7 +2754,7 @@
     "República Libanesa"@pt, "República Libanesa"@es, "République libanaise"@fr, "Poblacht na Liobáine"@ga,
     "Δημοκρατία του Λιβάνου "@el, "Ливанска република"@bg .
 
-<authority/country/LS> a skos:Concept;
+<authority/country/LS> a skos:Concept, eponto:Country;
   rdfs:label "Lesotho";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2773,7 +2773,7 @@
     "Reino de Lesoto"@es, "Royaume du Lesotho"@fr, "Ríocht Leosóta"@ga, "Βασίλειο του Λεσόθο"@el,
     "Кралство Лесото"@bg .
 
-<authority/country/LR> a skos:Concept;
+<authority/country/LR> a skos:Concept, eponto:Country;
   rdfs:label "Liberia";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2793,7 +2793,7 @@
     "República da Libéria"@pt, "República de Liberia"@es, "République du Liberia"@fr,
     "Poblacht na Libéire"@ga, "Δημοκρατία της Λιβερίας "@el, "Република Либерия"@bg .
 
-<authority/country/LY> a skos:Concept;
+<authority/country/LY> a skos:Concept, eponto:Country;
   rdfs:label "Libya";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2813,7 +2813,7 @@
     "Seamaithír Mhór Shóisialach Arabach na Libia"@ga, "Μεγάλη Σοσιαλιστική Λαϊκή Λιβυκή Αραβική Τζαμαχιρίγια "@el,
     "Либия"@bg .
 
-<authority/country/LI> a skos:Concept;
+<authority/country/LI> a skos:Concept, eponto:Country;
   rdfs:label "Liechtenstein";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2835,7 +2835,7 @@
     "Principado do Listenstaine"@pt, "Principado de Liechtenstein"@es, "Principauté de Liechtenstein"@fr,
     "Prionsacht Lichtinstéin"@ga, "Πριγκιπάτο του Λιχτενστάιν"@el, "Княжество Лихтенщайн"@bg .
 
-<authority/country/LT> a skos:Concept;
+<authority/country/LT> a skos:Concept, eponto:Country;
   rdfs:label "Lithuania";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -2856,7 +2856,7 @@
     "República da Lituânia"@pt, "República de Lituania"@es, "République de Lituanie"@fr,
     "Poblacht na Liotuáine"@ga, "Δημοκρατία της Λιθουανίας "@el, "Република Литва"@bg .
 
-<authority/country/LU> a skos:Concept;
+<authority/country/LU> a skos:Concept, eponto:Country;
   rdfs:label "Luxembourg";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -2879,7 +2879,7 @@
     "Grão-Ducado do Luxemburgo"@pt, "Gran Ducado de Luxemburgo"@es, "Grand-Duché de Luxembourg"@fr,
     "Ard-Diúcacht Lucsamburg"@ga, "Μεγάλο Δουκάτο του Λουξεμβούργου"@el, "Велико херцогство Люксембург"@bg .
 
-<authority/country/MO> a skos:Concept;
+<authority/country/MO> a skos:Concept, eponto:Country;
   rdfs:label "Macao";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2902,7 +2902,7 @@
     "Macao"@fr, "Sainréigiún Riaracháin Macao de Dhaon-Phoblacht na Síne"@ga, "Μακάο"@el,
     "Специален административен район на Китайската народна република Макао"@bg .
 
-<authority/country/MG> a skos:Concept;
+<authority/country/MG> a skos:Concept, eponto:Country;
   rdfs:label "Madagascar";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2923,7 +2923,7 @@
     "República de Madagáscar"@pt, "República de Madagascar"@es, "République de Madagascar"@fr,
     "Poblacht Mhadagascar"@ga, "Δημοκρατία της Μαδαγασκάρης "@el, "Република Мадагаскар"@bg .
 
-<authority/country/MW> a skos:Concept;
+<authority/country/MW> a skos:Concept, eponto:Country;
   rdfs:label "Malawi";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2942,7 +2942,7 @@
     "República do Maláui"@pt, "República de Malaui"@es, "République du Malawi"@fr, "Poblacht na Maláive"@ga,
     "Δημοκρατία του Μαλάουι "@el, "Република Малави"@bg .
 
-<authority/country/MY> a skos:Concept;
+<authority/country/MY> a skos:Concept, eponto:Country;
   rdfs:label "Malaysia";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2960,7 +2960,7 @@
     "Malaysia"@it, "Malásia"@pt, "Malasia"@es, "Malaisie"@fr, "an Mhalaeisia"@ga, "Μαλαισία"@el,
     "Малайзия"@bg .
 
-<authority/country/MV> a skos:Concept;
+<authority/country/MV> a skos:Concept, eponto:Country;
   rdfs:label "Maldives";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2980,7 +2980,7 @@
     "República das Maldivas"@pt, "República de Maldivas"@es, "République des Maldives"@fr,
     "Poblacht Oileáin Mhaildíve"@ga, "Δημοκρατία των Μαλδιβών "@el, "Република Малдиви"@bg .
 
-<authority/country/ML> a skos:Concept;
+<authority/country/ML> a skos:Concept, eponto:Country;
   rdfs:label "Mali";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -2998,7 +2998,7 @@
     "Republica Mali"@ro, "Repubblica del Mali"@it, "República do Mali"@pt, "República de Malí"@es,
     "République du Mali"@fr, "Poblacht Mhailí"@ga, "Δημοκρατία του Μάλι "@el, "Република Мали"@bg .
 
-<authority/country/MT> a skos:Concept;
+<authority/country/MT> a skos:Concept, eponto:Country;
   rdfs:label "Malta";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -3019,7 +3019,7 @@
     "República de Malta"@es, "République de Malte"@fr, "Poblacht Mhálta"@ga, "Δημοκρατία της Μάλτας "@el,
     "Република Малта"@bg .
 
-<authority/country/MH> a skos:Concept;
+<authority/country/MH> a skos:Concept, eponto:Country;
   rdfs:label "Marshall Islands";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3043,7 +3043,7 @@
     "République des îles Marshall"@fr, "Poblacht Oileáin Marshall"@ga, "Δημοκρατία των Νήσων Μάρσαλ "@el,
     "Република Маршалови острови"@bg .
 
-<authority/country/MQ> a skos:Concept;
+<authority/country/MQ> a skos:Concept, eponto:Country;
   rdfs:label "Martinique";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3062,7 +3062,7 @@
     "Martinica"@it, "Martinica"@pt, "Martinica"@es, "Département de Martinique"@fr, "Roinn Martinique"@ga,
     "Διαμέρισμα Μαρτινίκας"@el, "Мартиника"@bg .
 
-<authority/country/MR> a skos:Concept;
+<authority/country/MR> a skos:Concept, eponto:Country;
   rdfs:label "Mauritania";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3084,7 +3084,7 @@
     "République islamique de Mauritanie"@fr, "Poblacht Ioslamach na Máratáine"@ga, "Ισλαμική Δημοκρατία της Μαυριτανίας"@el,
     "Ислямска република Мавритания"@bg .
 
-<authority/country/MU> a skos:Concept;
+<authority/country/MU> a skos:Concept, eponto:Country;
   rdfs:label "Mauritius";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3105,7 +3105,7 @@
     "República de Mauricio"@es, "République de Maurice"@fr, "Poblacht Oileán Mhuirís"@ga,
     "Δημοκρατία του Μαυρικίου "@el, "Република Мавриций"@bg .
 
-<authority/country/YT> a skos:Concept;
+<authority/country/YT> a skos:Concept, eponto:Country;
   rdfs:label "Mayotte";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3124,7 +3124,7 @@
     "Coletividade Departamental de Maiote"@pt, "Mayotte "@es, "Collectivité territoriale de Mayotte"@fr,
     "Comhroinn Chríochach Mayotte"@ga, "Εδαφική Κοινότητα της Μαγιότ"@el, "Майот"@bg .
 
-<authority/country/MX> a skos:Concept;
+<authority/country/MX> a skos:Concept, eponto:Country;
   rdfs:label "Mexico";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3144,7 +3144,7 @@
     "Estados Unidos Mexicanos"@pt, "Estados Unidos Mexicanos"@es, "États-Unis mexicains"@fr,
     "Stáit Aontaithe Mheicsiceo"@ga, "Ηνωμένες Πολιτείες του Μεξικού "@el, "Мексикански съединени щати"@bg .
 
-<authority/country/FM> a skos:Concept;
+<authority/country/FM> a skos:Concept, eponto:Country;
   rdfs:label "Micronesia";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3165,7 +3165,7 @@
     "Estados Federados da Micronésia"@pt, "Estados Federados de Micronesia"@es, "Etats fédérés de Micronésie"@fr,
     "Stáit Chónaidhme na Micrinéise"@ga, "Ομόσπονδες Πολιτείες της Μικρονησίας"@el, "Федеративни щати Микронезия"@bg .
 
-<authority/country/MI> a skos:Concept;
+<authority/country/MI> a skos:Concept, eponto:Country;
   rdfs:label "Midway Islands";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3185,7 +3185,7 @@
     "Ilhas Midway"@pt, "islas Midway"@es, "Iles Midway"@fr, "Oileáin Midway"@ga, "Νήσοι Μιντγουέι"@el,
     "Острови Мидуей"@bg .
 
-<authority/country/MD> a skos:Concept;
+<authority/country/MD> a skos:Concept, eponto:Country;
   rdfs:label "Moldova";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3205,7 +3205,7 @@
     "República da Moldávia"@pt, "República de Moldavia"@es, "République de Moldavie"@fr,
     "Poblacht na Moldóive"@ga, "Δημοκρατία της Μολδαβίας"@el, "Република Молдова"@bg .
 
-<authority/country/MC> a skos:Concept;
+<authority/country/MC> a skos:Concept, eponto:Country;
   rdfs:label "Monaco";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3223,7 +3223,7 @@
     "Principatul Monaco"@ro, "Principato di Monaco"@it, "Principado do Mónaco"@pt, "Principado de Mónaco"@es,
     "Principauté de Monaco"@fr, "Prionsacht Mhonacó"@ga, "Πριγκιπάτο του Μονακό"@el, "Княжество Монако"@bg .
 
-<authority/country/MN> a skos:Concept;
+<authority/country/MN> a skos:Concept, eponto:Country;
   rdfs:label "Mongolia";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3241,7 +3241,7 @@
     "Mongolia"@it, "Mongólia"@pt, "Mongolia"@es, "Mongolie"@fr, "an Mhongóil"@ga, "Μογγολία"@el,
     "Монголия"@bg .
 
-<authority/country/ME> a skos:Concept;
+<authority/country/ME> a skos:Concept, eponto:Country;
   rdfs:label "Montenegro";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3260,7 +3260,7 @@
     "Muntenegru"@ro, "Montenegro"@it, "Montenegro"@pt, "Montenegro"@es, "République du Monténégro"@fr,
     "Poblacht Mhontainéagró"@ga, "Δημοκρατία του Μαυροβουνίου "@el, "Черна гора"@bg .
 
-<authority/country/MS> a skos:Concept;
+<authority/country/MS> a skos:Concept, eponto:Country;
   rdfs:label "Montserrat";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3278,7 +3278,7 @@
     "Montserrat"@pl, "Montserrat"@de, "Montserrat"@ro, "Montserrat"@it, "Monserrate"@pt,
     "Montserrat"@es, "Montserrat"@fr, "Montsarat"@ga, "Μονσεράτ"@el, "Монтсерат"@bg .
 
-<authority/country/MA> a skos:Concept;
+<authority/country/MA> a skos:Concept, eponto:Country;
   rdfs:label "Morocco";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3297,7 +3297,7 @@
     "Reino de Marruecos"@es, "Royaume du Maroc"@fr, "Ríocht Mharacó"@ga, "Βασίλειο του Μαρόκου"@el,
     "Кралство Мароко"@bg .
 
-<authority/country/MZ> a skos:Concept;
+<authority/country/MZ> a skos:Concept, eponto:Country;
   rdfs:label "Mozambique";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3317,7 +3317,7 @@
     "República de Moçambique"@pt, "República de Mozambique"@es, "République du Mozambique"@fr,
     "Poblacht Mhósaimbíc"@ga, "Δημοκρατία της Μοζαμβίκης "@el, "Република Мозамбик"@bg .
 
-<authority/country/MM> a skos:Concept;
+<authority/country/MM> a skos:Concept, eponto:Country;
   rdfs:label "Myanmar";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3338,7 +3338,7 @@
     "Myanmar/Birmania"@es, "République de l'Union du Myanmar"@fr, "Poblacht Aontas Mhaenmar"@ga,
     "Δημοκρατία της Ένωσης του Μιανμάρ "@el, "Мианмар/Бирма"@bg .
 
-<authority/country/NA> a skos:Concept;
+<authority/country/NA> a skos:Concept, eponto:Country;
   rdfs:label "Namibia";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3358,7 +3358,7 @@
     "República de Namibia"@es, "République de Namibie"@fr, "Poblacht na Namaibe"@ga, "Ναμίμπια"@el,
     "Република Намибия"@bg .
 
-<authority/country/NR> a skos:Concept;
+<authority/country/NR> a skos:Concept, eponto:Country;
   rdfs:label "Nauru";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3377,7 +3377,7 @@
     "República de Nauru"@es, "République de Nauru"@fr, "Poblacht Nárú"@ga, "Δημοκρατία του Ναουρού "@el,
     "Република Науру"@bg .
 
-<authority/country/NP> a skos:Concept;
+<authority/country/NP> a skos:Concept, eponto:Country;
   rdfs:label "Nepal";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3395,7 +3395,7 @@
     "Nepal"@pt, "Nepal"@es, "République démocratique fédérale du Népal"@fr, "Ríocht Neipeal"@ga,
     "Βασίλειο του Νεπάλ"@el, "Непал"@bg .
 
-<authority/country/NL> a skos:Concept;
+<authority/country/NL> a skos:Concept, eponto:Country;
   rdfs:label "Netherlands";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -3418,7 +3418,7 @@
     "Reino dos Países Baixos"@pt, "Reino de los Países Bajos"@es, "Royaume des Pays-Bas"@fr,
     "Ríocht na hÍsiltíre"@ga, "Βασίλειο των Κάτω Χωρών"@el, "Кралство Нидерландия"@bg .
 
-<authority/country/AN> a skos:Concept;
+<authority/country/AN> a skos:Concept, eponto:Country;
   rdfs:label "Netherlands Antilles";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3440,7 +3440,7 @@
     "Antille Olandesi"@it, "Antilhas Neerlandesas"@pt, "Antillas Neerlandesas"@es, "Antilles Néerlandaises"@fr,
     "Aintillí na hÍsiltíre"@ga, "Ολλανδικές Αντίλλες"@el, "Нидерландски Антили"@bg .
 
-<authority/country/NT> a skos:Concept;
+<authority/country/NT> a skos:Concept, eponto:Country;
   rdfs:label "Neutral Zone";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3461,7 +3461,7 @@
     "Zona Neutra"@pt, "Zona neutra"@es, "Zone Neutre"@fr, "Crios Neodrach"@ga, "Ουδέτερη  Ζώνη"@el,
     "Неутрална зона"@bg .
 
-<authority/country/NC> a skos:Concept;
+<authority/country/NC> a skos:Concept, eponto:Country;
   rdfs:label "New Caledonia";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3481,7 +3481,7 @@
     "Noua Caledonie"@ro, "Nuova Caledonia"@it, "Nova Caledónia"@pt, "Nueva Caledonia"@es,
     "Nouvelle-Calédonie"@fr, "an Nua-Chaladóin"@ga, "Νέα Καληδονία"@el, "Нова Каледония"@bg .
 
-<authority/country/NZ> a skos:Concept;
+<authority/country/NZ> a skos:Concept, eponto:Country;
   rdfs:label "New Zealand";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3501,7 +3501,7 @@
     "Nueva Zelanda"@es, "Nouvelle-Zélande"@fr, "an Nua-Shéalainn"@ga, "Νέα Ζηλανδία"@el,
     "Нова Зеландия"@bg .
 
-<authority/country/NI> a skos:Concept;
+<authority/country/NI> a skos:Concept, eponto:Country;
   rdfs:label "Nicaragua";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3522,7 +3522,7 @@
     "République du Nicaragua"@fr, "Poblacht Nicearagua"@ga, "Δημοκρατία της Νικαράγουας "@el,
     "Република Никарагуа"@bg .
 
-<authority/country/NE> a skos:Concept;
+<authority/country/NE> a skos:Concept, eponto:Country;
   rdfs:label "Niger";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3541,7 +3541,7 @@
     "República de Níger"@es, "République du Niger"@fr, "Poblacht na Nígire"@ga, "Δημοκρατία του Νίγηρα"@el,
     "Република Нигер"@bg .
 
-<authority/country/NG> a skos:Concept;
+<authority/country/NG> a skos:Concept, eponto:Country;
   rdfs:label "Nigeria";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3562,7 +3562,7 @@
     "República Federal da Nigéria"@pt, "República Federal de Nigeria"@es, "République fédérale du Nigéria"@fr,
     "Poblacht Chónaidhme na Nigéire"@ga, "Ομοσπονδιακή Δημοκρατία της Νιγηρίας "@el, "Федерална република Нигерия"@bg .
 
-<authority/country/NU> a skos:Concept;
+<authority/country/NU> a skos:Concept, eponto:Country;
   rdfs:label "Niue";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3578,7 +3578,7 @@
     "Niue"@de, "Niue"@ro, "Niue"@it, "Niuê"@pt, "Niue"@es, "Niue"@fr, "Niue"@ga, "Νιούε"@el,
     "Ниуе"@bg .
 
-<authority/country/NF> a skos:Concept;
+<authority/country/NF> a skos:Concept, eponto:Country;
   rdfs:label "Norfolk Island";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3599,7 +3599,7 @@
     "Território da Ilha Norfolk"@pt, "Territorio de la Isla Norfolk"@es, "Territoire de l'Ile Norfolk"@fr,
     "Críoch Oileán Norfolk"@ga, "Έδαφος της Νήσου Νόρφοκ "@el, "Територия остров Норфолк"@bg .
 
-<authority/country/KP> a skos:Concept;
+<authority/country/KP> a skos:Concept, eponto:Country;
   rdfs:label "North Korea";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3625,7 +3625,7 @@
     "République Populaire Démocratique de Corée"@fr, "Daon-Phoblacht Dhaonlathach na Cóiré"@ga,
     "Λαοκρατική Δημοκρατία της Κορέας"@el, "Корейска народнодемократична република"@bg .
 
-<authority/country/MK> a skos:Concept;
+<authority/country/MK> a skos:Concept, eponto:Country;
   rdfs:label "North Macedonia ";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3648,7 +3648,7 @@
     "República da Macedónia do Norte"@pt, "República de Macedonia del Norte"@es, "République de Macédoine du Nord"@fr,
     "Poblacht na Macadóine Thuaidh"@ga, "Δημοκρατία της Βόρειας Μακεδονίας"@el, "Република Северна Македония"@bg .
 
-<authority/country/MP> a skos:Concept;
+<authority/country/MP> a skos:Concept, eponto:Country;
   rdfs:label "Northern Mariana Islands";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3674,7 +3674,7 @@
     "Commonwealth des îles Mariannes du Nord"@fr, "Comhlathas na nOileán Máirianach Thuaidh"@ga,
     "Κοινοπολιτεία των Βορείων Μαριανών Νήσων"@el, "Общност Северни Мариански острови"@bg .
 
-<authority/country/NO> a skos:Concept;
+<authority/country/NO> a skos:Concept, eponto:Country;
   rdfs:label "Norway";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3693,7 +3693,7 @@
     "Reino de Noruega"@es, "Royaume de Norvège"@fr, "Ríocht na hIorua"@ga, "Βασίλειο της Νορβηγίας"@el,
     "Кралство Норвегия"@bg .
 
-<authority/country/OM> a skos:Concept;
+<authority/country/OM> a skos:Concept, eponto:Country;
   rdfs:label "Oman";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3712,7 +3712,7 @@
     "Sultanato de Omán"@es, "Sultanat d'Oman"@fr, "Sabhdánacht Óman"@ga, "Σουλτανάτο του Ομάν "@el,
     "Султанат Оман"@bg .
 
-<authority/country/PC> a skos:Concept;
+<authority/country/PC> a skos:Concept, eponto:Country;
   rdfs:label "Pacific Islands";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3734,7 +3734,7 @@
     "Ilhas do Pacífico"@pt, "islas del Pacífico"@es, "Iles du Pacifique"@fr, "Oileáin san Aigéan Ciúin"@ga,
     "Νήσοι του Ειρηνικού"@el, "Тихоокеански острови"@bg .
 
-<authority/country/PK> a skos:Concept;
+<authority/country/PK> a skos:Concept, eponto:Country;
   rdfs:label "Pakistan";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3755,7 +3755,7 @@
     "República Islâmica do Paquistão"@pt, "República Islámica de Pakistán"@es, "République islamique de Pakistan"@fr,
     "Poblacht Ioslamach na Pacastáine"@ga, "Ισλαμική Δημοκρατία του Πακιστάν "@el, "Ислямска република Пакистан"@bg .
 
-<authority/country/PW> a skos:Concept;
+<authority/country/PW> a skos:Concept, eponto:Country;
   rdfs:label "Palau";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3774,7 +3774,7 @@
     "República de Palaos"@es, "République de Palau"@fr, "Poblacht Oileáin Palau"@ga, "Δημοκρατία του Παλάου"@el,
     "Република Палау"@bg .
 
-<authority/country/PS> a skos:Concept;
+<authority/country/PS> a skos:Concept, eponto:Country;
   rdfs:label "Palestinian territories";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3800,7 +3800,7 @@
     "Territoire palestinien occupé"@fr, "na Críocha Palaistíneacha"@ga, "Παλαιστινιακά εδάφη"@el,
     "палестински територии"@bg .
 
-<authority/country/PA> a skos:Concept;
+<authority/country/PA> a skos:Concept, eponto:Country;
   rdfs:label "Panama";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3819,7 +3819,7 @@
     "República de Panamá"@es, "République du Panama"@fr, "Poblacht Phanama"@ga, "Δημοκρατία του Παναμά"@el,
     "Република Панама"@bg .
 
-<authority/country/PG> a skos:Concept;
+<authority/country/PG> a skos:Concept, eponto:Country;
   rdfs:label "Papua New Guinea";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3846,7 +3846,7 @@
     "État indépendant de Papouasie-Nouvelle-Guinée"@fr, "Stát Neamhspléach Nua-Ghuine Phapua"@ga,
     "Ανεξάρτητο Κράτος της Παπουασίας-Νέας Γουινέας "@el, "Независима държава Папуа-Нова Гвинея"@bg .
 
-<authority/country/PY> a skos:Concept;
+<authority/country/PY> a skos:Concept, eponto:Country;
   rdfs:label "Paraguay";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3867,7 +3867,7 @@
     "République du Paraguay"@fr, "Poblacht Pharagua"@ga, "Δημοκρατία της Παραγουάης "@el,
     "Република Парагвай"@bg .
 
-<authority/country/PE> a skos:Concept;
+<authority/country/PE> a skos:Concept, eponto:Country;
   rdfs:label "Peru";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3885,7 +3885,7 @@
     "Republica Peru"@ro, "Repubblica del Perú"@it, "República do Peru"@pt, "República del Perú"@es,
     "République du Pérou"@fr, "Poblacht Pheiriú"@ga, "Δημοκρατία του Περού "@el, "Република Перу"@bg .
 
-<authority/country/PH> a skos:Concept;
+<authority/country/PH> a skos:Concept, eponto:Country;
   rdfs:label "Philippines";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3906,7 +3906,7 @@
     "République des Philippines"@fr, "Poblacht na nOileán Filipíneach"@ga, "Δημοκρατία των Φιλιππινών "@el,
     "Република Филипини"@bg .
 
-<authority/country/PN> a skos:Concept;
+<authority/country/PN> a skos:Concept, eponto:Country;
   rdfs:label "Pitcairn Islands";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3927,7 +3927,7 @@
     "Islas Pitcairn "@es, "Îles Pitcairn"@fr, "Oileán Pitcairn"@ga, "Νήσοι Πίτκερν"@el,
     "Острови Питкерн"@bg .
 
-<authority/country/PL> a skos:Concept;
+<authority/country/PL> a skos:Concept, eponto:Country;
   rdfs:label "Poland";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -3948,7 +3948,7 @@
     "República da Polónia"@pt, "República de Polonia"@es, "République de Pologne"@fr,
     "Poblacht na Polainne"@ga, "Δημοκρατία της Πολωνίας "@el, "Република Полша"@bg .
 
-<authority/country/PT> a skos:Concept;
+<authority/country/PT> a skos:Concept, eponto:Country;
   rdfs:label "Portugal";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -3971,7 +3971,7 @@
     "República Portuguesa"@pt, "República Portuguesa"@es, "République portugaise"@fr,
     "Poblacht na Portaingéile"@ga, "Πορτογαλική Δημοκρατία "@el, "Португалска република"@bg .
 
-<authority/country/PR> a skos:Concept;
+<authority/country/PR> a skos:Concept, eponto:Country;
   rdfs:label "Puerto Rico";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -3993,7 +3993,7 @@
     "Commonwealth de Porto Rico"@fr, "Comhlathas Phórtó Ríce"@ga, "Κοινοπολιτεία του Πουέρτο Ρίκο"@el,
     "Пуерториканска общност"@bg .
 
-<authority/country/QA> a skos:Concept;
+<authority/country/QA> a skos:Concept, eponto:Country;
   rdfs:label "Qatar";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4011,7 +4011,7 @@
     "Estado do Catar"@pt, "Estado de Qatar"@es, "État du Qatar"@fr, "Stát Chatar"@ga,
     "Κράτος του Κατάρ"@el, "Държавата Катар"@bg .
 
-<authority/country/NQ> a skos:Concept;
+<authority/country/NQ> a skos:Concept, eponto:Country;
   rdfs:label "Queen Maud Land";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4033,7 +4033,7 @@
     "Tierra de la Reina Maud"@es, "Terre de la Reine Maud"@fr, "Críoch na Banríona Maud"@ga,
     "Γη της Βασίλισσας Μάουντ"@el, "Земя Кралица Мод"@bg .
 
-<authority/country/RO> a skos:Concept;
+<authority/country/RO> a skos:Concept, eponto:Country;
   rdfs:label "Romania";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -4053,7 +4053,7 @@
     "Romania"@it, "Roménia"@pt, "Rumanía"@es, "Roumanie"@fr, "an Rómáin"@ga, "Ρουμανία"@el,
     "Румъния"@bg .
 
-<authority/country/RU> a skos:Concept;
+<authority/country/RU> a skos:Concept, eponto:Country;
   rdfs:label "Russia";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4072,7 +4072,7 @@
     "Federação da Rússia"@pt, "Federación de Rusia"@es, "Fédération de Russie"@fr, "Cónaidhm na Rúise"@ga,
     "Ρωσική Ομοσπονδία"@el, "Руска федерация"@bg .
 
-<authority/country/RW> a skos:Concept;
+<authority/country/RW> a skos:Concept, eponto:Country;
   rdfs:label "Rwanda";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4091,7 +4091,7 @@
     "República de Ruanda"@es, "République du Rwanda"@fr, "Poblacht Ruanda"@ga, "Δημοκρατία της Ρουάντα"@el,
     "Република Руанда"@bg .
 
-<authority/country/RE> a skos:Concept;
+<authority/country/RE> a skos:Concept, eponto:Country;
   rdfs:label "Réunion";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4110,7 +4110,7 @@
     "Reunión"@es, "Département de la Réunion"@fr, "Roinn La Réunion"@ga, "Διαμέρισμα της Ρεουνιόν"@el,
     "Реюнион"@bg .
 
-<authority/country/KN> a skos:Concept;
+<authority/country/KN> a skos:Concept, eponto:Country;
   rdfs:label "Saint Kitts and Nevis";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4136,7 +4136,7 @@
     "Saint-Christophe-et-Nevies"@fr, "Cónaidhm San Críostóir-Nimheas"@ga, "Ομοσπονδία Αγίου Χριστοφόρου και Νέβις "@el,
     "Федерация Сейнт Китс и Невис"@bg .
 
-<authority/country/PM> a skos:Concept;
+<authority/country/PM> a skos:Concept, eponto:Country;
   rdfs:label "Saint Pierre and Miquelon";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4164,7 +4164,7 @@
     "Collectivité territoriale de Saint-Pierre-et-Miquelon"@fr, "Comhroinn Chríochach San Pierre agus Miquelon"@ga,
     "Εδαφική Κοινότητα του Σαιν Πιερ και Μικελόν "@el, "Териториална общност Сен Пиер и Микелон"@bg .
 
-<authority/country/VC> a skos:Concept;
+<authority/country/VC> a skos:Concept, eponto:Country;
   rdfs:label "Saint Vincent and the Grenadines";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4190,7 +4190,7 @@
     "Saint-Vincent-et-les-Grenadines"@fr, "San Uinseann agus na Greanáidíní"@ga, "Άγιος Βικέντιος και Γρεναδίνες"@el,
     "Сейнт Винсънт и Гренадини"@bg .
 
-<authority/country/BL> a skos:Concept;
+<authority/country/BL> a skos:Concept, eponto:Country;
   rdfs:label "Saint-Barthélemy";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4212,7 +4212,7 @@
     "Collettività di Saint-Barthélemy"@it, "Coletividade de São Bartolomeu"@pt, "Colectividad de San Bartolomé"@es,
     "Saint-Barthélemy"@fr, "Comhroinn Saint-Barthélemy"@ga, "Άγιος Βαρθολομαίος"@el, "Общност Сен Бартелеми"@bg .
 
-<authority/country/MF> a skos:Concept;
+<authority/country/MF> a skos:Concept, eponto:Country;
   rdfs:label "Saint-Martin";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4235,7 +4235,7 @@
     "Saint Martin (partie française)"@fr, "Comhroinn Saint-Martin"@ga, "Άγιος Μαρτίνος (γαλλικό τμήμα)"@el,
     "Общност Сен Мартен"@bg .
 
-<authority/country/WS> a skos:Concept;
+<authority/country/WS> a skos:Concept, eponto:Country;
   rdfs:label "Samoa";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4255,7 +4255,7 @@
     "Estado Independiente de Samoa"@es, "État indépendant du Samoa"@fr, "Stát Neamhspleách Shamó"@ga,
     "Ανεξάρτητο Κράτος της Σαμόα "@el, "Независима държава Самоа"@bg .
 
-<authority/country/SM> a skos:Concept;
+<authority/country/SM> a skos:Concept, eponto:Country;
   rdfs:label "San Marino";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4276,7 +4276,7 @@
     "República de San Marino"@es, "République de Saint-Marin"@fr, "Poblacht San Mairíne"@ga,
     "Δημοκρατία του Αγίου Μαρίνου "@el, "Република Сан Марино"@bg .
 
-<authority/country/ST> a skos:Concept;
+<authority/country/ST> a skos:Concept, eponto:Country;
   rdfs:label "Sao Tome and Principe";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4304,7 +4304,7 @@
     "République démocratique de São Tomé e Príncipe"@fr, "Poblacht Dhaonlathach São Tomé agus Príncipe"@ga,
     "Λαϊκή Δημοκρατία του Σάο Τομέ και Πρίνσιπε "@el, "Демократична република Сао Томе и Принсипи"@bg .
 
-<authority/country/SA> a skos:Concept;
+<authority/country/SA> a skos:Concept, eponto:Country;
   rdfs:label "Saudi Arabia";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4326,7 +4326,7 @@
     "Reino da Arábia Saudita"@pt, "Reino de Arabia Saudí"@es, "Royaume d'Arabie Saoudite"@fr,
     "Ríocht na hAraibe Sádaí"@ga, "Βασίλειο της Σαουδικής Αραβίας"@el, "Кралство Саудитска Арабия"@bg .
 
-<authority/country/SN> a skos:Concept;
+<authority/country/SN> a skos:Concept, eponto:Country;
   rdfs:label "Senegal";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4346,7 +4346,7 @@
     "República do Senegal"@pt, "República de Senegal"@es, "République du Sénégal"@fr,
     "Poblacht na Seineagáile"@ga, "Δημοκρατία της Σενεγάλης "@el, "Република Сенегал"@bg .
 
-<authority/country/RS> a skos:Concept;
+<authority/country/RS> a skos:Concept, eponto:Country;
   rdfs:label "Serbia";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4365,7 +4365,7 @@
     "República da Sérvia"@pt, "República de Serbia"@es, "République de Serbie"@fr, "Poblacht na Seirbia"@ga,
     "Δημοκρατία της Σερβίας "@el, "Република Сърбия"@bg .
 
-<authority/country/CS> a skos:Concept;
+<authority/country/CS> a skos:Concept, eponto:Country;
   rdfs:label "Serbia and Montenegro";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4388,7 +4388,7 @@
     "Sérvia e Montenegro"@pt, "República de Serbia"@es, "Serbie-et-Montenegro"@fr, "Seirbia agus Montainéagró"@ga,
     "Сърбия и Черна гора"@bg .
 
-<authority/country/SC> a skos:Concept;
+<authority/country/SC> a skos:Concept, eponto:Country;
   rdfs:label "Seychelles";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4409,7 +4409,7 @@
     "République des Seychelles"@fr, "Poblacht na Séiséal"@ga, "Δημοκρατία των Σεϋχελλών "@el,
     "Република Сейшели"@bg .
 
-<authority/country/SL> a skos:Concept;
+<authority/country/SL> a skos:Concept, eponto:Country;
   rdfs:label "Sierra Leone";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4430,7 +4430,7 @@
     "República da Serra Leoa"@pt, "República de Sierra Leona"@es, "République de Sierra Leone"@fr,
     "Poblacht Shiarra Leon"@ga, "Δημοκρατία της Σιέρρα Λεόνε"@el, "Република Сиера Леоне"@bg .
 
-<authority/country/SG> a skos:Concept;
+<authority/country/SG> a skos:Concept, eponto:Country;
   rdfs:label "Singapore";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4451,7 +4451,7 @@
     "República de Singapur"@es, "République de Singapour"@fr, "Poblacht Shingeapór"@ga,
     "Δημοκρατία της Σινγκαπούρης "@el, "Република Сингапур"@bg .
 
-<authority/country/SX> a skos:Concept;
+<authority/country/SX> a skos:Concept, eponto:Country;
   rdfs:label "Sint Maarten";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4473,7 +4473,7 @@
     "San Martín (Estado autónomo del Reino de los Países Bajos )"@es, "Saint-Martin (partie néerlandaise)"@fr,
     "Saint-Martin (cuid na hÍsiltíre)"@ga, "Άγιος Μαρτίνος (ολλανδικό τμήμα)"@el, "Синт Мартен"@bg .
 
-<authority/country/SK> a skos:Concept;
+<authority/country/SK> a skos:Concept, eponto:Country;
   rdfs:label "Slovakia";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -4495,7 +4495,7 @@
     "República Eslovaca"@pt, "República Eslovaca"@es, "République slovaque"@fr, "Poblacht na Slóvaice"@ga,
     "Σλοβακική Δημοκρατία "@el, "Словашка република"@bg .
 
-<authority/country/SI> a skos:Concept;
+<authority/country/SI> a skos:Concept, eponto:Country;
   rdfs:label "Slovenia";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -4517,7 +4517,7 @@
     "República da Eslovénia"@pt, "República de Eslovenia"@es, "République de Slovénie"@fr,
     "Poblacht na Slóivéine"@ga, "Δημοκρατία της Σλοβενίας"@el, "Република Словения"@bg .
 
-<authority/country/SB> a skos:Concept;
+<authority/country/SB> a skos:Concept, eponto:Country;
   rdfs:label "Solomon Islands";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4537,7 +4537,7 @@
     "Insulele Solomon"@ro, "Isole Salomone"@it, "Ilhas Salomão"@pt, "Islas Salomón"@es,
     "Îles Salomon"@fr, "Oileáin Sholomón"@ga, "Νήσοι Σολομώντος"@el, "Соломонови острови"@bg .
 
-<authority/country/SO> a skos:Concept;
+<authority/country/SO> a skos:Concept, eponto:Country;
   rdfs:label "Somalia";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4558,7 +4558,7 @@
     "República Federal de Somalia"@es, "Somalie"@fr, "Poblacht Chónaidhme na Somáile"@ga,
     "Σομαλία"@el, "Република Сомалия"@bg .
 
-<authority/country/ZA> a skos:Concept;
+<authority/country/ZA> a skos:Concept, eponto:Country;
   rdfs:label "South Africa";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4580,7 +4580,7 @@
     "República da África do Sul"@pt, "República de Sudáfrica"@es, "République d'Afrique du Sud"@fr,
     "Poblacht na hAfraice Theas"@ga, "Δημοκρατία της Νότιας Αφρικής"@el, "Република Южна Африка"@bg .
 
-<authority/country/GS> a skos:Concept;
+<authority/country/GS> a skos:Concept, eponto:Country;
   rdfs:label "South Georgia and the South Sandwich Islands";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4612,7 +4612,7 @@
     "Géorgie du Sud et les Îles Sandwich du Sud"@fr, "an tSeoirsia Theas agus Oileáin Sandwich Theas"@ga,
     "Νότια Γεωργία και Νότιες Νήσοι Σάντουιτς"@el, "Южна Джорджия и Южни Сандвичеви острови"@bg .
 
-<authority/country/KR> a skos:Concept;
+<authority/country/KR> a skos:Concept, eponto:Country;
   rdfs:label "South Korea";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4633,7 +4633,7 @@
     "República de Corea"@es, "République de Corée"@fr, "Poblacht na Cóiré"@ga, "Δημοκρατία της Κορέας "@el,
     "Република Корея"@bg .
 
-<authority/country/SS> a skos:Concept;
+<authority/country/SS> a skos:Concept, eponto:Country;
   rdfs:label "South Sudan";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4655,7 +4655,7 @@
     "República de Sudán del Sur"@es, "République du Soudan du Sud"@fr, "Poblacht na Súdáine Theas"@ga,
     "Δημοκρατία του Νοτίου Σουδάν "@el, "Република Южен Судан"@bg .
 
-<authority/country/ES> a skos:Concept;
+<authority/country/ES> a skos:Concept, eponto:Country;
   rdfs:label "Spain";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -4676,7 +4676,7 @@
     "Reino de España"@es, "Royaume d'Espagne"@fr, "Ríocht na Spáinne"@ga, "Βασίλειο της Ισπανίας"@el,
     "Кралство Испания"@bg .
 
-<authority/country/LK> a skos:Concept;
+<authority/country/LK> a skos:Concept, eponto:Country;
   rdfs:label "Sri Lanka";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4701,7 +4701,7 @@
     "Poblacht Dhaonlathach Shóisialach Shrí Lanca"@ga, "Λαϊκή Σοσιαλιστική Δημοκρατία της Σρι Λάνκα "@el,
     "Демократична социалистическа република Шри Ланка"@bg .
 
-<authority/country/SH> a skos:Concept;
+<authority/country/SH> a skos:Concept, eponto:Country;
   rdfs:label "St. Helena";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4729,7 +4729,7 @@
     "Sainte-Hélène et dépendances"@fr, "San Héilin agus a Spleáchríocha"@ga, "Αγία Ελένη"@el,
     "Света Елена, Възнесение и Тристан да Куня"@bg .
 
-<authority/country/LC> a skos:Concept;
+<authority/country/LC> a skos:Concept, eponto:Country;
   rdfs:label "St. Lucia";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4747,7 +4747,7 @@
     "Saint Lucia"@pl, "St. Lucia"@de, "Saint Lucia"@ro, "Santa Lucia"@it, "Santa Lúcia"@pt,
     "Santa Lucía"@es, "Sainte-Lucie"@fr, "Saint Lucia"@ga, "Αγία Λουκία"@el, "Сейнт Лусия"@bg .
 
-<authority/country/ZZ> a skos:Concept;
+<authority/country/ZZ> a skos:Concept, eponto:Country;
   rdfs:label "Stateless";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4765,7 +4765,7 @@
     "Bezpaństwowiec"@pl, "Staatenlos"@de, "Apatrid"@ro, "Apolide"@it, "Apátrida"@pt, "apátrida"@es,
     "Apatride"@fr, "Gan stát"@ga, "Άπατρις"@el, "без гражданство"@bg .
 
-<authority/country/SD> a skos:Concept;
+<authority/country/SD> a skos:Concept, eponto:Country;
   rdfs:label "Sudan";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4784,7 +4784,7 @@
     "República de Sudán"@es, "République du Soudan"@fr, "Poblacht na Súdáine"@ga, "Δημοκρατία του Σουδάν"@el,
     "Република Судан"@bg .
 
-<authority/country/SR> a skos:Concept;
+<authority/country/SR> a skos:Concept, eponto:Country;
   rdfs:label "Suriname";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4804,7 +4804,7 @@
     "República do Suriname"@pt, "República de Surinam"@es, "République du Suriname"@fr,
     "Poblacht Shuranam"@ga, "Δημοκρατία του Σουρινάμ "@el, "Република Суринам"@bg .
 
-<authority/country/SJ> a skos:Concept;
+<authority/country/SJ> a skos:Concept, eponto:Country;
   rdfs:label "Svalbard and Jan Mayen";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4828,7 +4828,7 @@
     "Svalbard e Jan Mayen"@pt, "Svalbard y Jan Mayen "@es, "Svalbard et Île Jan Mayen"@fr,
     "Svalbard agus Jan Mayen"@ga, "Νήσοι Σβάλμπαρντ και Γιαν Μαγιέν"@el, "Свалбард и Ян Майен"@bg .
 
-<authority/country/SZ> a skos:Concept;
+<authority/country/SZ> a skos:Concept, eponto:Country;
   rdfs:label "Swaziland";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4848,7 +4848,7 @@
     "Reino da Suazilândia"@pt, "Reino de Suazilandia"@es, "Royaume du Swaziland"@fr, "Ríocht na Suasalainne"@ga,
     "Βασίλειο της Σουαζιλάνδης"@el, "Кралство Свазиленд"@bg .
 
-<authority/country/SE> a skos:Concept;
+<authority/country/SE> a skos:Concept, eponto:Country;
   rdfs:label "Sweden";
   skos:inScheme scheme:country;
   eponto:euCandidate true;
@@ -4870,7 +4870,7 @@
     "Reino de Suecia"@es, "Royaume de Suède"@fr, "Ríocht na Sualainne"@ga, "Βασίλειο της Σουηδίας"@el,
     "Кралство Швеция"@bg .
 
-<authority/country/CH> a skos:Concept;
+<authority/country/CH> a skos:Concept, eponto:Country;
   rdfs:label "Switzerland";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4891,7 +4891,7 @@
     "Confederação Suíça"@pt, "Confederación Suiza"@es, "Confédération suisse"@fr, "Cónaidhm na hEilvéise"@ga,
     "Ελβετική Συνομοσπονδία"@el, "Конфедерация Швейцария"@bg .
 
-<authority/country/SY> a skos:Concept;
+<authority/country/SY> a skos:Concept, eponto:Country;
   rdfs:label "Syria";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4911,7 +4911,7 @@
     "República Árabe Síria"@pt, "República Árabe Siria"@es, "République Arabe Syrienne"@fr,
     "Poblacht Arabach na Siria"@ga, "Αραβική Δημοκρατία της Συρίας"@el, "Сирийска арабска република"@bg .
 
-<authority/country/TW> a skos:Concept;
+<authority/country/TW> a skos:Concept, eponto:Country;
   rdfs:label "Taiwan";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4929,7 +4929,7 @@
     "Taiwan"@de, "Taiwan"@ro, "Taiwan"@it, "Taiwan"@pt, "Taiwán"@es, "Taïwan"@fr, "an Téaváin, Poblacht na Síne"@ga,
     "Ταϊβάν, Δημοκρατία της Κίνας"@el, "Тайван"@bg .
 
-<authority/country/TJ> a skos:Concept;
+<authority/country/TJ> a skos:Concept, eponto:Country;
   rdfs:label "Tajikistan";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4950,7 +4950,7 @@
     "República do Tajiquistão"@pt, "República de Tayikistán"@es, "République du Tadjikistan"@fr,
     "Poblacht na Táidsíceastáine"@ga, "Δημοκρατία του Τατζικιστάν "@el, "Република Таджикистан"@bg .
 
-<authority/country/TZ> a skos:Concept;
+<authority/country/TZ> a skos:Concept, eponto:Country;
   rdfs:label "Tanzania";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4971,7 +4971,7 @@
     "República Unida da Tanzânia"@pt, "República Unida de Tanzania"@es, "République unie de Tanzanie"@fr,
     "Poblacht Aontaithe na Tansáine"@ga, "Ενωμένη Δημοκρατία της Τανζανίας "@el, "Обединена република Танзания"@bg .
 
-<authority/country/TH> a skos:Concept;
+<authority/country/TH> a skos:Concept, eponto:Country;
   rdfs:label "Thailand";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -4991,7 +4991,7 @@
     "Reino da Tailândia"@pt, "Reino de Tailandia"@es, "Royaume de Thaïlande"@fr, "Ríocht na Téalainne"@ga,
     "Βασίλειο της Ταϊλάνδης"@el, "Кралство Тайланд"@bg .
 
-<authority/country/TG> a skos:Concept;
+<authority/country/TG> a skos:Concept, eponto:Country;
   rdfs:label "Togo";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5009,7 +5009,7 @@
     "Republica Togoleză"@ro, "Repubblica del Togo"@it, "República Togolesa"@pt, "República Togolesa"@es,
     "République togolaise"@fr, "Poblacht Thóga"@ga, "Δημοκρατία του Τόγκο  "@el, "Република Того"@bg .
 
-<authority/country/TK> a skos:Concept;
+<authority/country/TK> a skos:Concept, eponto:Country;
   rdfs:label "Tokelau";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5027,7 +5027,7 @@
     "Tokelau"@it, "Toquelau"@pt, "Tokelau "@es, "Tokelau"@fr, "Tócalá"@ga, "Τοκελάου"@el,
     "Токелау"@bg .
 
-<authority/country/TO> a skos:Concept;
+<authority/country/TO> a skos:Concept, eponto:Country;
   rdfs:label "Tonga";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5046,7 +5046,7 @@
     "Reino de Tonga"@es, "Royaume de Tonga"@fr, "Ríocht Thonga"@ga, "Βασίλειο της Τόνγκα"@el,
     "Кралство Тонга"@bg .
 
-<authority/country/TT> a skos:Concept;
+<authority/country/TT> a skos:Concept, eponto:Country;
   rdfs:label "Trinidad and Tobago";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5070,7 +5070,7 @@
     "République de Trinidad-et-Tobago"@fr, "Poblacht Oileán na Tríonóide agus Tobága"@ga,
     "Δημοκρατία Τρινιδάδ και Τομπάγκο"@el, "Тринидад и Тобаго"@bg .
 
-<authority/country/TN> a skos:Concept;
+<authority/country/TN> a skos:Concept, eponto:Country;
   rdfs:label "Tunisia";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5090,7 +5090,7 @@
     "República Tunisina"@pt, "República de Túnez"@es, "République tunisienne"@fr, "Poblacht na Túinéise"@ga,
     "Δημοκρατία της Τυνησίας "@el, "Тунизийска република"@bg .
 
-<authority/country/TR> a skos:Concept;
+<authority/country/TR> a skos:Concept, eponto:Country;
   rdfs:label "Turkey";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5109,7 +5109,7 @@
     "República da Turquia"@pt, "República de Turquía"@es, "République de Turquie"@fr,
     "Poblacht na Tuirce"@ga, "Δημοκρατία της Τουρκίας"@el, "Република Турция"@bg .
 
-<authority/country/TM> a skos:Concept;
+<authority/country/TM> a skos:Concept, eponto:Country;
   rdfs:label "Turkmenistan";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5129,7 +5129,7 @@
     "Turkmenistán"@es, "Turkménistan"@fr, "an Tuircméanastáin"@ga, "Τουρκμενιστάν"@el,
     "Туркменистан"@bg .
 
-<authority/country/TC> a skos:Concept;
+<authority/country/TC> a skos:Concept, eponto:Country;
   rdfs:label "Turks and Caicos Islands";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5153,7 +5153,7 @@
     "Islas Turcas y Caicos "@es, "Îles Turques-et-Caïques"@fr, "Oileáin na dTurcach agus Caicos"@ga,
     "Νήσοι Τερκ και Κάικος"@el, "Търкс и Кайкос"@bg .
 
-<authority/country/TV> a skos:Concept;
+<authority/country/TV> a skos:Concept, eponto:Country;
   rdfs:label "Tuvalu";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5169,7 +5169,7 @@
     "Tuvalu"@sl, "Tuvalu"@pl, "Tuvalu"@de, "Tuvalu"@ro, "Tuvalu"@it, "Tuvalu"@pt, "Tuvalu"@es,
     "Tuvalu"@fr, "Tuvalu"@ga, "Τουβαλού"@el, "Тувалу"@bg .
 
-<authority/country/SU> a skos:Concept;
+<authority/country/SU> a skos:Concept, eponto:Country;
   rdfs:label "USSR";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5189,7 +5189,7 @@
     "Unión de Repúblicas Socialistas Soviéticas"@es, "URSS"@fr, "Aontas na bPoblachtaí Sóivéadacha Sóisialacha"@ga,
     "ΕΣΣΔ"@el, "СССР"@bg .
 
-<authority/country/UG> a skos:Concept;
+<authority/country/UG> a skos:Concept, eponto:Country;
   rdfs:label "Uganda";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5208,7 +5208,7 @@
     "República de Uganda"@es, "République d'Ouganda"@fr, "Poblacht Uganda"@ga, "Δημοκρατία της Ουγκάντας "@el,
     "Република Уганда"@bg .
 
-<authority/country/UA> a skos:Concept;
+<authority/country/UA> a skos:Concept, eponto:Country;
   rdfs:label "Ukraine";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5226,7 +5226,7 @@
     "Ucraina"@it, "Ucrânia"@pt, "Ucrania"@es, "Ukraine"@fr, "an Úcráin"@ga, "Ουκρανία"@el,
     "Украйна"@bg .
 
-<authority/country/AE> a skos:Concept;
+<authority/country/AE> a skos:Concept, eponto:Country;
   rdfs:label "United Arab Emirates";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5250,7 +5250,7 @@
     "Emirados Árabes Unidos"@pt, "Emiratos Árabes Unidos"@es, "Émirats arabes unis"@fr,
     "Aontas na nÉimíríochtaí Arabacha"@ga, "Ηνωμένα Αραβικά Εμιράτα"@el, "Обединени арабски емирства"@bg .
 
-<authority/country/GB> a skos:Concept;
+<authority/country/GB> a skos:Concept, eponto:Country;
   rdfs:label "United Kingdom";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5279,7 +5279,7 @@
     "Royaume-Uni de Grande-Bretagne et d’Irlande du Nord"@fr, "Ríocht Aontaithe na Breataine Móire agus Thuaisceart Éireann"@ga,
     "Ηνωμένο Βασίλειο της Μεγάλης Βρετανίας και της Βόρειας Ιρλανδίας"@el, "Обединено кралство Великобритания и Северна Ирландия"@bg .
 
-<authority/country/US> a skos:Concept;
+<authority/country/US> a skos:Concept, eponto:Country;
   rdfs:label "United States";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5301,7 +5301,7 @@
     "Estados Unidos da América"@pt, "Estados Unidos de América"@es, "États-Unis d'Amérique"@fr,
     "Stáit Aontaithe Mheiriceá"@ga, "Ηνωμένες Πολιτείες της Αμερικής "@el, "Съединени американски щати"@bg .
 
-<authority/country/UM> a skos:Concept;
+<authority/country/UM> a skos:Concept, eponto:Country;
   rdfs:label "United States Minor Outlying Islands";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5331,7 +5331,7 @@
     "Îles mineures éloignées des Etats-Unis"@fr, "Oileáin Bheaga Fhorimeallacha na Stát Aontaithe"@ga,
     "Απομακρυσμένες Νησίδες των Ηνωμένων Πολιτειών"@el, "Малки отдалечени острови на Съединените щати"@bg .
 
-<authority/country/VI> a skos:Concept;
+<authority/country/VI> a skos:Concept, eponto:Country;
   rdfs:label "United States Virgin Islands";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5357,7 +5357,7 @@
     "Îles Vierges des États-Unis"@fr, "Oileáin Mheiriceánacha na Maighdean"@ga, "Παρθένοι Νήσοι των Ηνωμένων Πολιτειών"@el,
     "Американски Вирджински острови"@bg .
 
-<authority/country/UY> a skos:Concept;
+<authority/country/UY> a skos:Concept, eponto:Country;
   rdfs:label "Uruguay";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5378,7 +5378,7 @@
     "República Oriental do Uruguai"@pt, "República Oriental del Uruguay"@es, "République orientale de l'Uruguay"@fr,
     "Poblacht Oirthearach Uragua"@ga, "Ανατολική Δημοκρατία της Ουρουγουάης "@el, "Източна република Уругвай"@bg .
 
-<authority/country/UZ> a skos:Concept;
+<authority/country/UZ> a skos:Concept, eponto:Country;
   rdfs:label "Uzbekistan";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5399,7 +5399,7 @@
     "République d'Ouzbékistan"@fr, "Poblacht na hÚisbéiceastáine"@ga, "Δημοκρατία του Ουζμπεκιστάν "@el,
     "Република Узбекистан"@bg .
 
-<authority/country/VU> a skos:Concept;
+<authority/country/VU> a skos:Concept, eponto:Country;
   rdfs:label "Vanuatu";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5419,7 +5419,7 @@
     "República de Vanuatu"@pt, "República de Vanuatu"@es, "République de Vanuatu"@fr,
     "Poblacht Vanuatú"@ga, "Δημοκρατία του Βανουάτου"@el, "Република Вануату"@bg .
 
-<authority/country/PU> a skos:Concept;
+<authority/country/PU> a skos:Concept, eponto:Country;
   rdfs:label "Various Pacific Islands (United States)";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5449,7 +5449,7 @@
     "Oileáin Éagsúla san Aigéan Ciúin (Na Stáit Aontaithe)"@ga, "Διάφορα νησιά του Ειρηνικού (Ηνωμένες Πολιτείες)"@el,
     "Различни тихоокеански острови (САЩ)"@bg .
 
-<authority/country/VE> a skos:Concept;
+<authority/country/VE> a skos:Concept, eponto:Country;
   rdfs:label "Venezuela";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5472,7 +5472,7 @@
     "République bolivarienne du Venezuela"@fr, "Poblacht Bholavarach Veiniséala"@ga, "Βολιβαριανή Δημοκρατία της Βενεζουέλας"@el,
     "Боливарска република Венецуела"@bg .
 
-<authority/country/VN> a skos:Concept;
+<authority/country/VN> a skos:Concept, eponto:Country;
   rdfs:label "Vietnam";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5494,7 +5494,7 @@
     "République socialiste du Viêt Nam"@fr, "Poblacht Shóisialach Vítneam"@ga, "Σοσιαλιστική Δημοκρατία του Βιετνάμ "@el,
     "Социалистическа република Виетнам"@bg .
 
-<authority/country/WK> a skos:Concept;
+<authority/country/WK> a skos:Concept, eponto:Country;
   rdfs:label "Wake Island";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5512,7 +5512,7 @@
     "Insulele Wake"@ro, "Isola Wake"@it, "Ilha de Wake"@pt, "isla Wake"@es, "Ile de Wake"@fr,
     "Oileán Wake"@ga, "Νήσος Γουέικ"@el, "Остров Уейк"@bg .
 
-<authority/country/WF> a skos:Concept;
+<authority/country/WF> a skos:Concept, eponto:Country;
   rdfs:label "Wallis and Futuna";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5535,7 +5535,7 @@
     "Críoch Oileáin Vailís agus Futúna"@ga, "Έδαφος των Νήσων Ουαλίς και Φουτουνά "@el,
     "Уолис и Футуна"@bg .
 
-<authority/country/EH> a skos:Concept;
+<authority/country/EH> a skos:Concept, eponto:Country;
   rdfs:label "Western Sahara";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5555,7 +5555,7 @@
     "Sahara Occidentală"@ro, "Sahara occidentale"@it, "Sara Ocidental"@pt, "Sáhara Occidental "@es,
     "Sahara occidental"@fr, "an Sahára Thiar"@ga, "Δυτική Σαχάρα"@el, "Западна Сахара"@bg .
 
-<authority/country/YD> a skos:Concept;
+<authority/country/YD> a skos:Concept, eponto:Country;
   rdfs:label "Yemen";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5575,7 +5575,7 @@
     "Iémen Democrático"@pt, "República de Yemen"@es, "Yemen Démocratique"@fr, "Poblacht Éimin"@ga,
     "Λαϊκή Δημοκρατία της Υεμένης"@el, "Република Йемен"@bg .
 
-<authority/country/YE> a skos:Concept;
+<authority/country/YE> a skos:Concept, eponto:Country;
   rdfs:label "Yemen";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5594,7 +5594,7 @@
     "República de Yemen"@es, "République du Yémen"@fr, "Poblacht Éimin"@ga, "Δημοκρατία της Υεμένης "@el,
     "Република Йемен"@bg .
 
-<authority/country/YU> a skos:Concept;
+<authority/country/YU> a skos:Concept, eponto:Country;
   rdfs:label "Yugoslavia";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5614,7 +5614,7 @@
     "Jugoslávia"@pt, "Antigua República Yugoslava de Macedonia"@es, "Yougoslavie"@fr,
     "Poblacht Shóisialach Chónaidhme na hIúgslaive"@ga, "Γιουγκοσλαβία"@el, "Югославия"@bg .
 
-<authority/country/ZR> a skos:Concept;
+<authority/country/ZR> a skos:Concept, eponto:Country;
   rdfs:label "Zaire";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5630,7 +5630,7 @@
     "Zaire"@sv, "Zair"@hr, "Zair"@sl, "Republika Zairu"@pl, "Zaire"@de, "Zair"@ro, "Repubblica democratica del Congo"@it,
     "Zaire"@pt, "Zaire"@es, "Zaïre"@fr, "Poblacht na Sáíre"@ga, "Ζαΐρ"@el, "Заир"@bg .
 
-<authority/country/ZM> a skos:Concept;
+<authority/country/ZM> a skos:Concept, eponto:Country;
   rdfs:label "Zambia";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5649,7 +5649,7 @@
     "República da Zâmbia"@pt, "República de Zambia"@es, "République de Zambie"@fr, "Poblacht na Saimbia"@ga,
     "Δημοκρατία της Ζάμπιας "@el, "Република Замбия"@bg .
 
-<authority/country/ZW> a skos:Concept;
+<authority/country/ZW> a skos:Concept, eponto:Country;
   rdfs:label "Zimbabwe";
   skos:inScheme scheme:country;
   eponto:euCandidate false;
@@ -5670,7 +5670,7 @@
     "République du Zimbabwe"@fr, "Poblacht na Siombáibe"@ga, "Δημοκρατία της Ζιμπάμπουε "@el,
     "Република Зимбабве"@bg .
 
-<authority/country/AX> a skos:Concept;
+<authority/country/AX> a skos:Concept, eponto:Country;
   rdfs:label "Åland Islands";
   skos:inScheme scheme:country;
   eponto:euCandidate false;

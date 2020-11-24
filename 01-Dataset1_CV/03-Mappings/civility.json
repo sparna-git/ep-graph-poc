@@ -987,7 +987,7 @@
       ],
       "subject": {
         "transformation": {
-          "expression": "'http://data.europarl.europa.eu/authority/civility/'+trim(cells['ep:uri'].value.split(':')[1].split('_')[1])",
+          "expression": "escape('http://data.europarl.europa.eu/authority/civility/'+trim(cells['ep:uri'].value.split(':')[1].split('_')[1]),'html')",
           "language": "grel"
         },
         "valueSource": {
@@ -1003,6 +1003,16 @@
           "valueSource": {
             "source": "constant",
             "constant": "Concept"
+          }
+        },
+        {
+          "transformation": {
+            "expression": "eponto",
+            "language": "prefix"
+          },
+          "valueSource": {
+            "source": "constant",
+            "constant": "Civility"
           }
         }
       ]

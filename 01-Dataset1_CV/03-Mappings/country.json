@@ -1669,6 +1669,16 @@
             "source": "constant",
             "constant": "Concept"
           }
+        },
+        {
+          "transformation": {
+            "expression": "eponto",
+            "language": "prefix"
+          },
+          "valueSource": {
+            "source": "constant",
+            "constant": "Country"
+          }
         }
       ]
     }
