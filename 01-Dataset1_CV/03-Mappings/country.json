@@ -8,7 +8,8 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "ep": "http://data.europarl.europa.eu/",
     "epsh": "http://data.europarl.europa.eu/shapes#",
-    "scheme": "http://data.europarl.europa.eu/"
+    "scheme": "http://data.europarl.europa.eu/authority/",
+    "eponto": "http://data.europarl.europa.eu/ontology/ep#"
   },
   "subjectMappings": [
     {
@@ -32,6 +33,226 @@
               },
               "valueType": {
                 "type": "literal"
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "skos",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "inScheme"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "scheme",
+                "language": "prefix"
+              },
+              "valueSource": {
+                "source": "constant",
+                "constant": "country"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "eponto",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "euCandidate"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "ep:euCandidate",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "boolean"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "eponto",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "euCountry"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "ep:euCountry",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "boolean"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "eponto",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "euStartDate"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "cells['ep:euStartDate'].value.toDate('yyyy-mm-dd').toString('yyyy-mm-dd')",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "date"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "eponto",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "formalOrder"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "ep:formalOrder",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "integer"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "eponto",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "isoCode"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "ep:isoCode",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "eponto",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "isoNumber"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "ep:isoNumber",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "integer"
+                  }
+                }
               }
             }
           ]
@@ -1427,231 +1648,11 @@
               }
             }
           ]
-        },
-        {
-          "property": {
-            "transformation": {
-              "expression": "ep",
-              "language": "prefix"
-            },
-            "valueSource": {
-              "source": "constant",
-              "constant": "euCandidate"
-            }
-          },
-          "values": [
-            {
-              "valueSource": {
-                "columnName": "ep:euCandidate",
-                "source": "column"
-              },
-              "valueType": {
-                "type": "datatype_literal",
-                "datatype": {
-                  "transformation": {
-                    "expression": "xsd",
-                    "language": "prefix"
-                  },
-                  "valueSource": {
-                    "source": "constant",
-                    "constant": "boolean"
-                  }
-                }
-              }
-            }
-          ]
-        },
-        {
-          "property": {
-            "transformation": {
-              "expression": "ep",
-              "language": "prefix"
-            },
-            "valueSource": {
-              "source": "constant",
-              "constant": "euCountry"
-            }
-          },
-          "values": [
-            {
-              "valueSource": {
-                "columnName": "ep:euCountry",
-                "source": "column"
-              },
-              "valueType": {
-                "type": "datatype_literal",
-                "datatype": {
-                  "transformation": {
-                    "expression": "xsd",
-                    "language": "prefix"
-                  },
-                  "valueSource": {
-                    "source": "constant",
-                    "constant": "boolean"
-                  }
-                }
-              }
-            }
-          ]
-        },
-        {
-          "property": {
-            "transformation": {
-              "expression": "ep",
-              "language": "prefix"
-            },
-            "valueSource": {
-              "source": "constant",
-              "constant": "euStartDate"
-            }
-          },
-          "values": [
-            {
-              "transformation": {
-                "expression": "cells['ep:euStartDate'].value.toDate('yyyy-mm-dd').toString('yyyy-mm-dd')",
-                "language": "grel"
-              },
-              "valueSource": {
-                "source": "row_index"
-              },
-              "valueType": {
-                "type": "datatype_literal",
-                "datatype": {
-                  "transformation": {
-                    "expression": "xsd",
-                    "language": "prefix"
-                  },
-                  "valueSource": {
-                    "source": "constant",
-                    "constant": "date"
-                  }
-                }
-              }
-            }
-          ]
-        },
-        {
-          "property": {
-            "transformation": {
-              "expression": "ep",
-              "language": "prefix"
-            },
-            "valueSource": {
-              "source": "constant",
-              "constant": "formalOrder"
-            }
-          },
-          "values": [
-            {
-              "valueSource": {
-                "columnName": "ep:formalOrder",
-                "source": "column"
-              },
-              "valueType": {
-                "type": "datatype_literal",
-                "datatype": {
-                  "transformation": {
-                    "expression": "xsd",
-                    "language": "prefix"
-                  },
-                  "valueSource": {
-                    "source": "constant",
-                    "constant": "integer"
-                  }
-                }
-              }
-            }
-          ]
-        },
-        {
-          "property": {
-            "transformation": {
-              "expression": "ep",
-              "language": "prefix"
-            },
-            "valueSource": {
-              "source": "constant",
-              "constant": "isoCode"
-            }
-          },
-          "values": [
-            {
-              "valueSource": {
-                "columnName": "ep:isoCode",
-                "source": "column"
-              },
-              "valueType": {
-                "type": "literal"
-              }
-            }
-          ]
-        },
-        {
-          "property": {
-            "transformation": {
-              "expression": "ep",
-              "language": "prefix"
-            },
-            "valueSource": {
-              "source": "constant",
-              "constant": "isoNumber"
-            }
-          },
-          "values": [
-            {
-              "valueSource": {
-                "columnName": "ep:isoNumber",
-                "source": "column"
-              },
-              "valueType": {
-                "type": "datatype_literal",
-                "datatype": {
-                  "transformation": {
-                    "expression": "xsd",
-                    "language": "prefix"
-                  },
-                  "valueSource": {
-                    "source": "constant",
-                    "constant": "integer"
-                  }
-                }
-              }
-            }
-          ]
-        },
-        {
-          "property": {
-            "transformation": {
-              "expression": "skos",
-              "language": "prefix"
-            },
-            "valueSource": {
-              "source": "constant",
-              "constant": "inScheme"
-            }
-          },
-          "values": [
-            {
-              "transformation": {
-                "expression": "scheme",
-                "language": "prefix"
-              },
-              "valueSource": {
-                "source": "constant",
-                "constant": "Country"
-              },
-              "valueType": {
-                "propertyMappings": [],
-                "type": "iri",
-                "typeMappings": []
-              }
-            }
-          ]
         }
       ],
       "subject": {
         "transformation": {
-          "expression": "trim(cells[trim('ep:uri')].value.split(':')[1])",
+          "expression": "'http://data.europarl.europa.eu/authority/country/'+trim(cells[trim('ep:uri')].value.split(':')[1].split('_')[1])",
           "language": "grel"
         },
         "valueSource": {

@@ -9,7 +9,8 @@
     "schema": "https://schema.org/#",
     "ep": "http://data.europarl.europa.eu/",
     "epsh": "http://data.europarl.europa.eu/shapes#",
-    "scheme": "http://data.europarl.europa.eu/"
+    "scheme": "http://data.europarl.europa.eu/authority/",
+    "eponto": "http://data.europarl.europa.eu/ontology/ep#"
   },
   "subjectMappings": [
     {
@@ -759,7 +760,7 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
@@ -798,7 +799,7 @@
               },
               "valueSource": {
                 "source": "constant",
-                "constant": "Gender"
+                "constant": "gender"
               },
               "valueType": {
                 "propertyMappings": [],
@@ -811,7 +812,7 @@
       ],
       "subject": {
         "transformation": {
-          "expression": "trim(cells[trim('ep:uri')].value.split(':')[1])",
+          "expression": "'http://data.europarl.europa.eu/authority/gender/'+trim(cells[trim('ep:uri')].value.split(':')[1].split('_')[1])",
           "language": "grel"
         },
         "valueSource": {

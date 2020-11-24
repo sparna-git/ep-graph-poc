@@ -8,7 +8,8 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "ep": "http://data.europarl.europa.eu/",
     "epsh": "http://data.europarl.europa.eu/shapes#",
-    "scheme": "http://data.europarl.europa.eu/"
+    "scheme": "http://data.europarl.europa.eu/authority/",
+    "eponto": "http://data.europarl.europa.eu/ontology/ep#"
   },
   "subjectMappings": [
     {
@@ -16,7 +17,7 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
@@ -973,7 +974,7 @@
               },
               "valueSource": {
                 "source": "constant",
-                "constant": "Civility"
+                "constant": "civility"
               },
               "valueType": {
                 "propertyMappings": [],
@@ -986,7 +987,7 @@
       ],
       "subject": {
         "transformation": {
-          "expression": "trim(cells['ep:uri'].value.split(':')[1])",
+          "expression": "'http://data.europarl.europa.eu/authority/civility/'+trim(cells['ep:uri'].value.split(':')[1].split('_')[1])",
           "language": "grel"
         },
         "valueSource": {
