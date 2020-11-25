@@ -9,7 +9,8 @@
     "epsh": "http://data.europarl.europa.eu/shapes#",
     "schema": "https://schema.org/#",
     "org": "http://www.w3.org/ns/org#",
-    "ep": "http://data.europarl.europa.eu/"
+    "ep": "http://data.europarl.europa.eu/",
+    "eponto": "http://data.europarl.europa.eu/ontology/ep#"
   },
   "subjectMappings": [
     {
@@ -86,7 +87,7 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
@@ -97,7 +98,7 @@
           "values": [
             {
               "transformation": {
-                "expression": "trim(cells[trim('ep:Civility.ep:uri')].value.split(':')[1])",
+                "expression": "'http://data.europarl.europa.eu/authority/civility/'+trim(cells['ep:Civility.ep:uri'].value.split(':')[1].split('_')[1])",
                 "language": "grel"
               },
               "valueSource": {
@@ -114,7 +115,7 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
@@ -125,7 +126,7 @@
           "values": [
             {
               "transformation": {
-                "expression": "trim(cells[trim('ep:Gender.ep:uri')].value.split(':')[1])",
+                "expression": "'http://data.europarl.europa.eu/authority/gender/'+\ntrim(cells[trim('ep:Gender.ep:uri')].value.split(':')[1].split('_')[1])",
                 "language": "grel"
               },
               "valueSource": {
@@ -142,7 +143,7 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
@@ -153,7 +154,7 @@
           "values": [
             {
               "transformation": {
-                "expression": "trim(cells[trim('ep:Status.ep:uri')].value.split(':')[1])",
+                "expression": "'http://data.europarl.europa.eu/authority/conceptStatus/'+\ntrim(cells[trim('ep:Status.ep:uri')].value.split(':')[1].split('_')[1])",
                 "language": "grel"
               },
               "valueSource": {
@@ -170,7 +171,7 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
@@ -181,7 +182,7 @@
           "values": [
             {
               "transformation": {
-                "expression": "trim(cells[trim('ep:hasBirthCountry.ep:uri')].value.split(':')[1])",
+                "expression": "'http://data.europarl.europa.eu/authority/country/'+\ntrim(cells[trim('ep:hasBirthCountry.ep:uri')].value.split(':')[1].split('_')[1])",
                 "language": "grel"
               },
               "valueSource": {
@@ -209,7 +210,7 @@
           "values": [
             {
               "transformation": {
-                "expression": "trim(cells[trim('ep:MEP.ep:uri')].value.split(':')[1])\n+'/'+\n'membership'",
+                "expression": "escape('http://data.europarl.europa.eu/person/'+\ntrim(cells[trim('ep:MEP.ep:uri')].value.split(':')[1])+'/membership/1','html')",
                 "language": "grel"
               },
               "valueSource": {
@@ -231,7 +232,7 @@
                     "values": [
                       {
                         "transformation": {
-                          "expression": "trim(cells[trim('ep:hasPoliticalGroup.ep:uri')].value.split(':')[1])",
+                          "expression": "escape('http://data.europarl.europa.eu/org/group/'+\ntrim(\nsubstring(trim(cells[trim('ep:hasPoliticalGroup.ep:uri')].value.split(':')[1].split('_')[1]),\nindexOf(trim(cells[trim('ep:hasPoliticalGroup.ep:uri')].value.split(':')[1].split('_')[1]),'-')+1,\ntrim(cells[trim('ep:hasPoliticalGroup.ep:uri')].value.split(':')[1].split('_')[1]).length())),'html')",
                           "language": "grel"
                         },
                         "valueSource": {
@@ -257,6 +258,16 @@
                       "source": "constant",
                       "constant": "Membership"
                     }
+                  },
+                  {
+                    "transformation": {
+                      "expression": "eponto",
+                      "language": "prefix"
+                    },
+                    "valueSource": {
+                      "source": "constant",
+                      "constant": "MembershipMEP"
+                    }
                   }
                 ]
               }
@@ -266,7 +277,7 @@
       ],
       "subject": {
         "transformation": {
-          "expression": "trim(cells[trim('ep:MEP.ep:uri')].value.split(':')[1])",
+          "expression": "'http://data.europarl.europa.eu/person/'+\ntrim(cells[trim('ep:MEP.ep:uri')].value.split(':')[1])",
           "language": "grel"
         },
         "valueSource": {
@@ -276,7 +287,7 @@
       "typeMappings": [
         {
           "transformation": {
-            "expression": "ep",
+            "expression": "eponto",
             "language": "prefix"
           },
           "valueSource": {

@@ -3,13 +3,13 @@
   "namespaces": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "geo": "http://www.opengis.net/ont/geosparql#",
     "foaf": "http://xmlns.com/foaf/0.1/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "ep": "http://data.europarl.europa.eu/",
     "epsh": "http://data.europarl.europa.eu/shapes#",
-    "elidl": "http://data.europa.eu/eli/eli-draft-legislation-ontology#"
+    "elidl": "http://data.europa.eu/eli/eli-draft-legislation-ontology#",
+    "eponto": "http://data.europarl.europa.eu/ontology/ep#"
   },
   "subjectMappings": [
     {
@@ -471,7 +471,7 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
@@ -507,7 +507,7 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
@@ -518,7 +518,7 @@
           "values": [
             {
               "transformation": {
-                "expression": "row.record.cells['_ - activities - _ - hasAdoptedTextList - relatedReference - _ - uri'][0].value",
+                "expression": "escape(\n'http://data.europarl.europa.eu/reference'+\nrow.record.cells['_ - activities - _ - hasAdoptedTextList - relatedReference - _ - uri'][0].value,'html')",
                 "language": "grel"
               },
               "valueSource": {
@@ -535,7 +535,7 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
@@ -546,7 +546,7 @@
           "values": [
             {
               "transformation": {
-                "expression": "row.record.cells['_ - activities - _ - hasAgenda - relatedReference - _ - uri'][0].value",
+                "expression": "escape(\n'http://data.europarl.europa.eu/reference'+\nrow.record.cells['_ - activities - _ - hasAgenda - relatedReference - _ - uri'][0].value,'html')",
                 "language": "grel"
               },
               "valueSource": {
@@ -563,7 +563,7 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
@@ -574,7 +574,7 @@
           "values": [
             {
               "transformation": {
-                "expression": "row.record.cells['_ - activities - _ - hasAttendanceList - relatedReference - _ - uri'][0].value",
+                "expression": "escape(\n'http://data.europarl.europa.eu/reference'+\nrow.record.cells['_ - activities - _ - hasAttendanceList - relatedReference - _ - uri'][0].value,'html')",
                 "language": "grel"
               },
               "valueSource": {
@@ -591,7 +591,7 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
@@ -602,7 +602,7 @@
           "values": [
             {
               "transformation": {
-                "expression": "row.record.cells['_ - activities - _ - hasCre - relatedReference - _ - uri'][0].value",
+                "expression": "escape(\n'http://data.europarl.europa.eu/reference'+\nrow.record.cells['_ - activities - _ - hasCre - relatedReference - _ - uri'][0].value,'html')",
                 "language": "grel"
               },
               "valueSource": {
@@ -619,7 +619,7 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
@@ -630,7 +630,7 @@
           "values": [
             {
               "transformation": {
-                "expression": "row.record.cells['_ - activities - _ - hasMinutes - relatedReference - _ - uri'][0].value",
+                "expression": "escape(\n'http://data.europarl.europa.eu/reference'+\nrow.record.cells['_ - activities - _ - hasMinutes - relatedReference - _ - uri'][0].value,'html')",
                 "language": "grel"
               },
               "valueSource": {
@@ -647,7 +647,7 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
@@ -658,7 +658,7 @@
           "values": [
             {
               "transformation": {
-                "expression": "row.record.cells['_ - activities - _ - hasRollCallVotes - relatedReference - _ - uri'][0].value",
+                "expression": "escape(\n'http://data.europarl.europa.eu/reference'+\nrow.record.cells['_ - activities - _ - hasRollCallVotes - relatedReference - _ - uri'][0].value,'html')",
                 "language": "grel"
               },
               "valueSource": {
@@ -675,7 +675,7 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
@@ -686,7 +686,7 @@
           "values": [
             {
               "transformation": {
-                "expression": "row.record.cells['_ - activities - _ - hasVoteResult - relatedReference - _ - uri'][0].value",
+                "expression": "escape(\n'http://data.europarl.europa.eu/reference'+\nrow.record.cells['_ - activities - _ - hasVoteResult - relatedReference - _ - uri'][0].value,'html')",
                 "language": "grel"
               },
               "valueSource": {
@@ -703,7 +703,7 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
@@ -714,7 +714,7 @@
           "values": [
             {
               "transformation": {
-                "expression": "row.record.cells['_ - activities - _ - hasLogisticMeeting - relatedReference - _ - uri'][0].value",
+                "expression": "escape(\n'http://data.europarl.europa.eu/reference'+\nrow.record.cells['_ - activities - _ - hasLogisticMeeting - relatedReference - _ - uri'][0].value,'html')",
                 "language": "grel"
               },
               "valueSource": {
@@ -731,7 +731,7 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
@@ -759,12 +759,12 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
               "source": "constant",
-              "constant": "formsPartOf"
+              "constant": "plenarySittingFormsPartOfPlenarySession"
             }
           },
           "values": [
@@ -787,7 +787,7 @@
       ],
       "subject": {
         "transformation": {
-          "expression": "'PlenarySitting_'+row.record.cells['_ - activities - _ - datePlenarySitting - eventDate'][0].value.toDate('yyyy-mm-dd').toString('yyyymmdd')",
+          "expression": "escape(\n'http://data.europarl.europa.eu/eli/dl/iPlMeeting/'\n+row.record.cells['_ - activities - _ - datePlenarySitting - eventDate'][0].value.toDate('yyyy-mm-dd').toString('yyyymmdd'),'html')",
           "language": "grel"
         },
         "valueSource": {
@@ -797,7 +797,7 @@
       "typeMappings": [
         {
           "transformation": {
-            "expression": "ep",
+            "expression": "eponto",
             "language": "prefix"
           },
           "valueSource": {
@@ -812,7 +812,7 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
@@ -848,7 +848,7 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
@@ -884,12 +884,12 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
               "source": "constant",
-              "constant": "consistsOf"
+              "constant": "plenarySessionConsistsOfPlenarySitting"
             }
           },
           "values": [
@@ -938,7 +938,7 @@
       ],
       "subject": {
         "transformation": {
-          "expression": "'PlenarySession_'+row.record.cells['_ - activities - _ - datePlenaryWeekBegin - eventDate'][0].value.toDate('yyyy-mm-dd').toString('yyyymmdd')+'-'+row.record.cells['_ - activities - _ - datePlenaryWeekEnd - eventDate'][0].value.toDate('yyyy-mm-dd').toString('yyyymmdd')",
+          "expression": "escape(\n'http://data.europarl.europa.eu/eli/dl/iPlMeetingGroup/'\n+\nrow.record.cells['_ - activities - _ - datePlenaryWeekBegin - eventDate'][0].value.toDate('yyyy-mm-dd').toString('yyyymmdd')+'-'+row.record.cells['_ - activities - _ - datePlenaryWeekEnd - eventDate'][0].value.toDate('yyyy-mm-dd').toString('yyyymmdd'),'html')",
           "language": "grel"
         },
         "valueSource": {
@@ -948,7 +948,7 @@
       "typeMappings": [
         {
           "transformation": {
-            "expression": "ep",
+            "expression": "eponto",
             "language": "prefix"
           },
           "valueSource": {
