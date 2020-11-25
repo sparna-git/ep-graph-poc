@@ -1,5 +1,8 @@
 # Regenerate gender CSV file
 
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX eponto: <http://data.europarl.europa.eu/ontology/ep#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT
 	?uri
 	?label
@@ -33,8 +36,8 @@ SELECT
 
 WHERE {
 	?uri a skos:Concept .
-	?uri skos:inScheme <http://data.europarl.europa.eu/Gender> .
-	?uri ep:isoCode ?isoCode .
+	?uri skos:inScheme <http://data.europarl.europa.eu/authority/gender> .
+	?uri eponto:isoCode ?isoCode .
 	?uri skos:notation ?notation .
 
 	OPTIONAL { ?uri rdfs:label ?label . }

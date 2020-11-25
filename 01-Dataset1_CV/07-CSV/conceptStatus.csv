@@ -1,0 +1,13 @@
+uri,label,preferred_label_en,preferred_label_fr
+http://data.europarl.europa.eu/authority/conceptStatus/ACTIVE,ACTIVE,Active,Active
+http://data.europarl.europa.eu/authority/conceptStatus/ADOPTED,ADOPTED,Adopted,Adoptée
+http://data.europarl.europa.eu/authority/conceptStatus/CREATE,CREATE,Created,Initié
+http://data.europarl.europa.eu/authority/conceptStatus/DELETED,DELETED,Deleted,Supprimé
+http://data.europarl.europa.eu/authority/conceptStatus/ENDED,ENDED,Ended,Terminé
+http://data.europarl.europa.eu/authority/conceptStatus/HISTORICAL,HISTORICAL,Historic,Historique
+http://data.europarl.europa.eu/authority/conceptStatus/MAJORITY,MAJORITY,Closed with majority,Clôturée avec les signatures de la majorité des membres
+http://data.europarl.europa.eu/authority/conceptStatus/NOT-ACTIVE,NOT_ACTIVE,Not Active,Non Active
+http://data.europarl.europa.eu/authority/conceptStatus/OBSOLETE,OBSOLETE,Obsolete,Caduque
+http://data.europarl.europa.eu/authority/conceptStatus/RECALL,RECALL,Recall,Retiré
+http://data.europarl.europa.eu/authority/conceptStatus/RESTRICTED,RESTRICTED,,
+http://data.europarl.europa.eu/authority/conceptStatus/SUSPENDED,SUSPENDED,Lapsed as the conditions for admissibility are no longer met,"Caduque, car les conditions de recevabilité ne sont plus remplies"

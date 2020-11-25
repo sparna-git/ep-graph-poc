@@ -1,5 +1,8 @@
 # Regenerate country CSV file
 
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX eponto: <http://data.europarl.europa.eu/ontology/ep#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT 
 	?uri
 	?label
@@ -62,13 +65,13 @@ SELECT
 
 WHERE {
 	?uri a skos:Concept .
-	?uri skos:inScheme <http://data.europarl.europa.eu/Country> .
-	OPTIONAL { ?uri ep:euCandidate ?euCandidate_raw . }
-	OPTIONAL { ?uri ep:euCountry ?euCountry_raw . }
-	OPTIONAL { ?uri ep:euStartDate	?euStartDate_raw . }
-	OPTIONAL { ?uri ep:formalOrder ?formalOrder_raw . }
-	?uri ep:isoCode ?isoCode_raw .
-	?uri ep:isoNumber ?isoNumber_raw .
+	?uri skos:inScheme <http://data.europarl.europa.eu/authority/country> .
+	OPTIONAL { ?uri eponto:euCandidate ?euCandidate_raw . }
+	OPTIONAL { ?uri eponto:euCountry ?euCountry_raw . }
+	OPTIONAL { ?uri eponto:euStartDate	?euStartDate_raw . }
+	OPTIONAL { ?uri eponto:formalOrder ?formalOrder_raw . }
+	?uri eponto:isoCode ?isoCode_raw .
+	?uri eponto:isoNumber ?isoNumber_raw .
 	OPTIONAL { ?uri rdfs:label ?label . }
     
     # prefLabels

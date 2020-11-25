@@ -1,0 +1,23 @@
+# Regenerate ConceptStatus CSV file
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT
+	?uri
+	?label
+	(STR(?prefLabel_en) AS ?preferred_label_en)
+	(STR(?prefLabel_fr) AS ?preferred_label_fr)
+
+WHERE {
+	?uri a skos:Concept .
+	?uri skos:inScheme <http://data.europarl.europa.eu/authority/conceptStatus> .
+	?uri rdfs:label ?label .
+
+	OPTIONAL { ?uri rdfs:label ?label . }
+
+	# prefLabels
+
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_en FILTER(lang(?prefLabel_en) = "en")}
+	OPTIONAL { ?uri skos:prefLabel ?prefLabel_fr FILTER(lang(?prefLabel_fr) = "fr")}
+}
+ORDER BY ?label 
