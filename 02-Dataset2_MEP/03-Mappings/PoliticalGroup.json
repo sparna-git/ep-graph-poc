@@ -9,7 +9,8 @@
     "ep": "http://data.europarl.europa.eu/",
     "org": "http://www.w3.org/ns/org#",
     "dcterms": "http://purl.org/dc/terms/",
-    "epsh": "http://data.europarl.europa.eu/shapes#"
+    "epsh": "http://data.europarl.europa.eu/shapes#",
+    "eponto": "http://data.europarl.europa.eu/ontology/ep#"
   },
   "subjectMappings": [
     {
@@ -17,7 +18,7 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
@@ -53,7 +54,7 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
@@ -89,7 +90,7 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
@@ -125,7 +126,7 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
@@ -581,7 +582,7 @@
       ],
       "subject": {
         "transformation": {
-          "expression": "trim(cells[trim('ep:uri')].value.split(':')[1])",
+          "expression": "escape('http://data.europarl.europa.eu/org/group/'+\ntrim(\nsubstring(trim(cells[trim('ep:uri')].value.split(':')[1].split('_')[1]),\nindexOf(trim(cells[trim('ep:uri')].value.split(':')[1].split('_')[1]),'-')+1,\ntrim(cells[trim('ep:uri')].value.split(':')[1].split('_')[1]).length())),'html')",
           "language": "grel"
         },
         "valueSource": {
@@ -591,12 +592,12 @@
       "typeMappings": [
         {
           "transformation": {
-            "expression": "org",
+            "expression": "eponto",
             "language": "prefix"
           },
           "valueSource": {
             "source": "constant",
-            "constant": "Organization"
+            "constant": "PoliticalGroup"
           }
         }
       ]
