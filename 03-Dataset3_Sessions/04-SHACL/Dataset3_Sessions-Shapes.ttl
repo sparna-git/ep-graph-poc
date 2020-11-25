@@ -25,9 +25,9 @@ Example :
 /eli/dl/iPlMeetingGroup/20191216-20191219""";
   rdfs:label "Plenary Session"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx7119 .
+  sh:ignoredProperties _:node1em6ifuhbx7150 .
 
-_:node1em6ifuhbx7119 rdf:first rdf:type;
+_:node1em6ifuhbx7150 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:PlenarySession sh:nodeKind sh:IRI;
@@ -42,9 +42,9 @@ Example :
 /eli/dl/iPlMeeting/20191219""";
   rdfs:label "Plneary Sitting"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx7120 .
+  sh:ignoredProperties _:node1em6ifuhbx7151 .
 
-_:node1em6ifuhbx7120 rdf:first rdf:type;
+_:node1em6ifuhbx7151 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:PlenarySitting sh:nodeKind sh:IRI;
@@ -88,78 +88,78 @@ epsh:P20 sh:datatype xsd:string;
   sh:pattern "SESP [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" .
 
 epsh:P21 sh:datatype rdf:langString;
-  sh:languageIn _:node1em6ifuhbx7123 .
+  sh:languageIn _:node1em6ifuhbx7154 .
 
-_:node1em6ifuhbx7123 rdf:first "hu";
-  rdf:rest _:node1em6ifuhbx7124 .
+_:node1em6ifuhbx7154 rdf:first "hu";
+  rdf:rest _:node1em6ifuhbx7155 .
 
-_:node1em6ifuhbx7124 rdf:first "et";
-  rdf:rest _:node1em6ifuhbx7125 .
+_:node1em6ifuhbx7155 rdf:first "et";
+  rdf:rest _:node1em6ifuhbx7156 .
 
-_:node1em6ifuhbx7125 rdf:first "fi";
-  rdf:rest _:node1em6ifuhbx7126 .
+_:node1em6ifuhbx7156 rdf:first "fi";
+  rdf:rest _:node1em6ifuhbx7157 .
 
-_:node1em6ifuhbx7126 rdf:first "cs";
-  rdf:rest _:node1em6ifuhbx7127 .
+_:node1em6ifuhbx7157 rdf:first "cs";
+  rdf:rest _:node1em6ifuhbx7158 .
 
-_:node1em6ifuhbx7127 rdf:first "sk";
-  rdf:rest _:node1em6ifuhbx7128 .
+_:node1em6ifuhbx7158 rdf:first "sk";
+  rdf:rest _:node1em6ifuhbx7159 .
 
-_:node1em6ifuhbx7128 rdf:first "lt";
-  rdf:rest _:node1em6ifuhbx7129 .
+_:node1em6ifuhbx7159 rdf:first "lt";
+  rdf:rest _:node1em6ifuhbx7160 .
 
-_:node1em6ifuhbx7129 rdf:first "lv";
-  rdf:rest _:node1em6ifuhbx7130 .
+_:node1em6ifuhbx7160 rdf:first "lv";
+  rdf:rest _:node1em6ifuhbx7161 .
 
-_:node1em6ifuhbx7130 rdf:first "mt";
-  rdf:rest _:node1em6ifuhbx7131 .
+_:node1em6ifuhbx7161 rdf:first "mt";
+  rdf:rest _:node1em6ifuhbx7162 .
 
-_:node1em6ifuhbx7131 rdf:first "en";
-  rdf:rest _:node1em6ifuhbx7132 .
+_:node1em6ifuhbx7162 rdf:first "en";
+  rdf:rest _:node1em6ifuhbx7163 .
 
-_:node1em6ifuhbx7132 rdf:first "da";
-  rdf:rest _:node1em6ifuhbx7133 .
+_:node1em6ifuhbx7163 rdf:first "da";
+  rdf:rest _:node1em6ifuhbx7164 .
 
-_:node1em6ifuhbx7133 rdf:first "nl";
-  rdf:rest _:node1em6ifuhbx7134 .
+_:node1em6ifuhbx7164 rdf:first "nl";
+  rdf:rest _:node1em6ifuhbx7165 .
 
-_:node1em6ifuhbx7134 rdf:first "sv";
-  rdf:rest _:node1em6ifuhbx7135 .
+_:node1em6ifuhbx7165 rdf:first "sv";
+  rdf:rest _:node1em6ifuhbx7166 .
 
-_:node1em6ifuhbx7135 rdf:first "hr";
-  rdf:rest _:node1em6ifuhbx7136 .
+_:node1em6ifuhbx7166 rdf:first "hr";
+  rdf:rest _:node1em6ifuhbx7167 .
 
-_:node1em6ifuhbx7136 rdf:first "sl";
-  rdf:rest _:node1em6ifuhbx7137 .
+_:node1em6ifuhbx7167 rdf:first "sl";
+  rdf:rest _:node1em6ifuhbx7168 .
 
-_:node1em6ifuhbx7137 rdf:first "pl";
-  rdf:rest _:node1em6ifuhbx7138 .
+_:node1em6ifuhbx7168 rdf:first "pl";
+  rdf:rest _:node1em6ifuhbx7169 .
 
-_:node1em6ifuhbx7138 rdf:first "de";
-  rdf:rest _:node1em6ifuhbx7139 .
+_:node1em6ifuhbx7169 rdf:first "de";
+  rdf:rest _:node1em6ifuhbx7170 .
 
-_:node1em6ifuhbx7139 rdf:first "ro";
-  rdf:rest _:node1em6ifuhbx7140 .
+_:node1em6ifuhbx7170 rdf:first "ro";
+  rdf:rest _:node1em6ifuhbx7171 .
 
-_:node1em6ifuhbx7140 rdf:first "it";
-  rdf:rest _:node1em6ifuhbx7141 .
+_:node1em6ifuhbx7171 rdf:first "it";
+  rdf:rest _:node1em6ifuhbx7172 .
 
-_:node1em6ifuhbx7141 rdf:first "pt";
-  rdf:rest _:node1em6ifuhbx7142 .
+_:node1em6ifuhbx7172 rdf:first "pt";
+  rdf:rest _:node1em6ifuhbx7173 .
 
-_:node1em6ifuhbx7142 rdf:first "es";
-  rdf:rest _:node1em6ifuhbx7143 .
+_:node1em6ifuhbx7173 rdf:first "es";
+  rdf:rest _:node1em6ifuhbx7174 .
 
-_:node1em6ifuhbx7143 rdf:first "fr";
-  rdf:rest _:node1em6ifuhbx7144 .
+_:node1em6ifuhbx7174 rdf:first "fr";
+  rdf:rest _:node1em6ifuhbx7175 .
 
-_:node1em6ifuhbx7144 rdf:first "ga";
-  rdf:rest _:node1em6ifuhbx7145 .
+_:node1em6ifuhbx7175 rdf:first "ga";
+  rdf:rest _:node1em6ifuhbx7176 .
 
-_:node1em6ifuhbx7145 rdf:first "el";
-  rdf:rest _:node1em6ifuhbx7146 .
+_:node1em6ifuhbx7176 rdf:first "el";
+  rdf:rest _:node1em6ifuhbx7177 .
 
-_:node1em6ifuhbx7146 rdf:first "bg";
+_:node1em6ifuhbx7177 rdf:first "bg";
   rdf:rest rdf:nil .
 
 epsh:P21 sh:maxCount 23;
@@ -228,7 +228,6 @@ epsh:P32 sh:nodeKind sh:IRI;
   sh:path eponto:hasAnnex;
   sh:pattern "^http://data.europarl.europa.eu/reference/reds:.*$" .
 
-epsh:P33 sh:minCount 1;
-  sh:nodeKind sh:IRI;
+epsh:P33 sh:nodeKind sh:IRI;
   sh:path eponto:hasParticipant;
   sh:pattern "^http://data.europarl.europa.eu/person/MEP_[0-9][0-9][0-9][0-9]?[0-9]?[0-9]?$" .
