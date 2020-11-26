@@ -25,9 +25,9 @@ Example :
 /eli/dl/iPlMeetingGroup/20191216-20191219""";
   rdfs:label "Plenary Session"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx7150 .
+  sh:ignoredProperties _:node1em6ifuhbx7243 .
 
-_:node1em6ifuhbx7150 rdf:first rdf:type;
+_:node1em6ifuhbx7243 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:PlenarySession sh:nodeKind sh:IRI;
@@ -42,9 +42,9 @@ Example :
 /eli/dl/iPlMeeting/20191219""";
   rdfs:label "Plneary Sitting"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx7151 .
+  sh:ignoredProperties _:node1em6ifuhbx7244 .
 
-_:node1em6ifuhbx7151 rdf:first rdf:type;
+_:node1em6ifuhbx7244 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:PlenarySitting sh:nodeKind sh:IRI;
@@ -75,8 +75,8 @@ epsh:P13 sh:datatype xsd:date;
   sh:nodeKind sh:Literal;
   sh:path eponto:datePlenaryWeekEnd .
 
-epsh:P14 sh:minCount 1;
-  sh:node epsh:PlenarySitting;
+epsh:P14 sh:class eponto:PlenarySitting;
+  sh:minCount 1;
   sh:nodeKind sh:IRI;
   sh:path eponto:plenarySessionConsistsOfPlenarySitting .
 
@@ -88,78 +88,78 @@ epsh:P20 sh:datatype xsd:string;
   sh:pattern "SESP [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" .
 
 epsh:P21 sh:datatype rdf:langString;
-  sh:languageIn _:node1em6ifuhbx7154 .
+  sh:languageIn _:node1em6ifuhbx7247 .
 
-_:node1em6ifuhbx7154 rdf:first "hu";
-  rdf:rest _:node1em6ifuhbx7155 .
+_:node1em6ifuhbx7247 rdf:first "hu";
+  rdf:rest _:node1em6ifuhbx7248 .
 
-_:node1em6ifuhbx7155 rdf:first "et";
-  rdf:rest _:node1em6ifuhbx7156 .
+_:node1em6ifuhbx7248 rdf:first "et";
+  rdf:rest _:node1em6ifuhbx7249 .
 
-_:node1em6ifuhbx7156 rdf:first "fi";
-  rdf:rest _:node1em6ifuhbx7157 .
+_:node1em6ifuhbx7249 rdf:first "fi";
+  rdf:rest _:node1em6ifuhbx7250 .
 
-_:node1em6ifuhbx7157 rdf:first "cs";
-  rdf:rest _:node1em6ifuhbx7158 .
+_:node1em6ifuhbx7250 rdf:first "cs";
+  rdf:rest _:node1em6ifuhbx7251 .
 
-_:node1em6ifuhbx7158 rdf:first "sk";
-  rdf:rest _:node1em6ifuhbx7159 .
+_:node1em6ifuhbx7251 rdf:first "sk";
+  rdf:rest _:node1em6ifuhbx7252 .
 
-_:node1em6ifuhbx7159 rdf:first "lt";
-  rdf:rest _:node1em6ifuhbx7160 .
+_:node1em6ifuhbx7252 rdf:first "lt";
+  rdf:rest _:node1em6ifuhbx7253 .
 
-_:node1em6ifuhbx7160 rdf:first "lv";
-  rdf:rest _:node1em6ifuhbx7161 .
+_:node1em6ifuhbx7253 rdf:first "lv";
+  rdf:rest _:node1em6ifuhbx7254 .
 
-_:node1em6ifuhbx7161 rdf:first "mt";
-  rdf:rest _:node1em6ifuhbx7162 .
+_:node1em6ifuhbx7254 rdf:first "mt";
+  rdf:rest _:node1em6ifuhbx7255 .
 
-_:node1em6ifuhbx7162 rdf:first "en";
-  rdf:rest _:node1em6ifuhbx7163 .
+_:node1em6ifuhbx7255 rdf:first "en";
+  rdf:rest _:node1em6ifuhbx7256 .
 
-_:node1em6ifuhbx7163 rdf:first "da";
-  rdf:rest _:node1em6ifuhbx7164 .
+_:node1em6ifuhbx7256 rdf:first "da";
+  rdf:rest _:node1em6ifuhbx7257 .
 
-_:node1em6ifuhbx7164 rdf:first "nl";
-  rdf:rest _:node1em6ifuhbx7165 .
+_:node1em6ifuhbx7257 rdf:first "nl";
+  rdf:rest _:node1em6ifuhbx7258 .
 
-_:node1em6ifuhbx7165 rdf:first "sv";
-  rdf:rest _:node1em6ifuhbx7166 .
+_:node1em6ifuhbx7258 rdf:first "sv";
+  rdf:rest _:node1em6ifuhbx7259 .
 
-_:node1em6ifuhbx7166 rdf:first "hr";
-  rdf:rest _:node1em6ifuhbx7167 .
+_:node1em6ifuhbx7259 rdf:first "hr";
+  rdf:rest _:node1em6ifuhbx7260 .
 
-_:node1em6ifuhbx7167 rdf:first "sl";
-  rdf:rest _:node1em6ifuhbx7168 .
+_:node1em6ifuhbx7260 rdf:first "sl";
+  rdf:rest _:node1em6ifuhbx7261 .
 
-_:node1em6ifuhbx7168 rdf:first "pl";
-  rdf:rest _:node1em6ifuhbx7169 .
+_:node1em6ifuhbx7261 rdf:first "pl";
+  rdf:rest _:node1em6ifuhbx7262 .
 
-_:node1em6ifuhbx7169 rdf:first "de";
-  rdf:rest _:node1em6ifuhbx7170 .
+_:node1em6ifuhbx7262 rdf:first "de";
+  rdf:rest _:node1em6ifuhbx7263 .
 
-_:node1em6ifuhbx7170 rdf:first "ro";
-  rdf:rest _:node1em6ifuhbx7171 .
+_:node1em6ifuhbx7263 rdf:first "ro";
+  rdf:rest _:node1em6ifuhbx7264 .
 
-_:node1em6ifuhbx7171 rdf:first "it";
-  rdf:rest _:node1em6ifuhbx7172 .
+_:node1em6ifuhbx7264 rdf:first "it";
+  rdf:rest _:node1em6ifuhbx7265 .
 
-_:node1em6ifuhbx7172 rdf:first "pt";
-  rdf:rest _:node1em6ifuhbx7173 .
+_:node1em6ifuhbx7265 rdf:first "pt";
+  rdf:rest _:node1em6ifuhbx7266 .
 
-_:node1em6ifuhbx7173 rdf:first "es";
-  rdf:rest _:node1em6ifuhbx7174 .
+_:node1em6ifuhbx7266 rdf:first "es";
+  rdf:rest _:node1em6ifuhbx7267 .
 
-_:node1em6ifuhbx7174 rdf:first "fr";
-  rdf:rest _:node1em6ifuhbx7175 .
+_:node1em6ifuhbx7267 rdf:first "fr";
+  rdf:rest _:node1em6ifuhbx7268 .
 
-_:node1em6ifuhbx7175 rdf:first "ga";
-  rdf:rest _:node1em6ifuhbx7176 .
+_:node1em6ifuhbx7268 rdf:first "ga";
+  rdf:rest _:node1em6ifuhbx7269 .
 
-_:node1em6ifuhbx7176 rdf:first "el";
-  rdf:rest _:node1em6ifuhbx7177 .
+_:node1em6ifuhbx7269 rdf:first "el";
+  rdf:rest _:node1em6ifuhbx7270 .
 
-_:node1em6ifuhbx7177 rdf:first "bg";
+_:node1em6ifuhbx7270 rdf:first "bg";
   rdf:rest rdf:nil .
 
 epsh:P21 sh:maxCount 23;
@@ -173,9 +173,9 @@ epsh:P22 sh:datatype xsd:date;
   sh:nodeKind sh:Literal;
   sh:path eponto:datePlenarySitting .
 
-epsh:P23 sh:maxCount 1;
+epsh:P23 sh:class eponto:PlenarySession;
+  sh:maxCount 1;
   sh:minCount 1;
-  sh:node epsh:PlenarySession;
   sh:nodeKind sh:IRI;
   sh:path eponto:plenarySittingFormsPartOfPlenarySession .
 
