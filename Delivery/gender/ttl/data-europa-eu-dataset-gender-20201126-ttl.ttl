@@ -1,0 +1,54 @@
+@base <http://data.europarl.europa.eu/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <https://schema.org/#> .
+@prefix ep: <http://data.europarl.europa.eu/> .
+@prefix epsh: <http://data.europarl.europa.eu/shapes#> .
+@prefix scheme: <http://data.europarl.europa.eu/authority/> .
+@prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> .
+
+<authority/gender/F> a skos:Concept, eponto:Gender;
+  rdfs:label "female";
+  skos:notation "F";
+  skos:prefLabel "nőnemű"@hu, "naine"@et, "nainen"@fi, "ženské"@cs, "Ženské"@sk, "moteriška"@lt,
+    "sieviešu dz."@lv, "femminil"@mt, "female"@en, "hunkøn"@da, "vrouwelijk"@nl, "feminin"@sv,
+    "ženski"@hr, "ženski spol"@sl, "żeński"@pl, "weiblich"@de, "feminin"@ro, "feminine"@it,
+    "feminino"@pt, "feminino"@es, "féminin"@fr, "bean"@ga, "θηλυκό"@el, "женски"@bg;
+  eponto:isoCode "2";
+  skos:inScheme scheme:gender .
+
+<authority/gender/M> a skos:Concept, eponto:Gender;
+  rdfs:label "male";
+  skos:notation "M";
+  skos:prefLabel "hímnemű"@hu, "mees"@et, "mies"@fi, "mužské"@cs, "Mužské"@sk, "vyriška"@lt,
+    "vīriešu dz."@lv, "maskil"@mt, "male"@en, "hankøn"@da, "manlijk"@nl, "maskulin"@sv,
+    "muški"@hr, "moški spol"@sl, "męski"@pl, "männlich"@de, "masculin"@ro, "maschile"@it,
+    "masculino"@pt, "masculino"@es, "masculin"@fr, "fear"@ga, "αρσενικ"@el, "мъжки"@bg;
+  eponto:isoCode "1";
+  skos:inScheme scheme:gender .
+
+<authority/gender/X> a skos:Concept, eponto:Gender;
+  rdfs:label "unknown";
+  skos:notation "X";
+  skos:prefLabel "ismeretlen"@hu, "pole teada"@et, "tuntematonen"@fi, "neznámé"@cs,
+    "Neznáme"@sk, "nežinoma"@lt, "nezināms"@lv, "mhux magħruf"@mt, "unknown"@en, "ikke kendt"@da,
+    "onbekend"@nl, "okänd"@sv, "nepoznat"@hr, "neznan"@sl, "nieznany"@pl, "unbekannt"@de,
+    "necunoscut"@ro, "Sconosciuto"@it, "desconhecido"@pt, "desconocido"@es, "pas connu"@fr,
+    "ní fios"@ga, "άγνωστο"@el, "неизвестен"@bg;
+  eponto:isoCode "0";
+  skos:inScheme scheme:gender .
+
+<authority/gender/U> a skos:Concept, eponto:Gender;
+  rdfs:label "unspecified";
+  skos:notation "U";
+  skos:prefLabel "meg nem határozott"@hu, "määramata"@et, "määrittelemätön"@fi, "neuvedeno"@cs,
+    "Nešpecifikované"@sk, "nenurodyta"@lt, "nav noteikts"@lv, "mhux speċifikat"@mt, "unspecified"@en,
+    "ikke specificeret"@da, "niet aangegeven"@nl, "oväntad"@sv, "nespecificirane"@hr,
+    "nedoločen"@sl, "nieokreślony"@pl, "nicht spezifiert"@de, "nespecificat"@ro, "non specificato"@it,
+    "não especificado"@pt, "no espicificado"@es, "pas spécifié"@fr, "ní shonraítear"@ga,
+    "απροσδιόριστο"@el, "неопределен"@bg;
+  eponto:isoCode "9";
+  skos:inScheme scheme:gender .
