@@ -1,0 +1,431 @@
+MEP,firstName,familyName,persId,Civility,Gender,Status,birthCountry,politicalGroup
+http://data.europarl.europa.eu/person/MEP_101039,Paolo,Borchia,101039,Sig.,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_101585,Niels,Fuglsang,101585,Hr.,male,ACTIVE,Denmark,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_103381,Terry,Reintke,103381,Frau,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_106936,Daniel,Freund,106936,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_107212,Andrey,Novakov,107212,Г-н,male,ACTIVE,Bulgaria,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_112744,Tonino,Picula,112744,g.,male,ACTIVE,Croatia,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_112748,Biljana,Borzan,112748,gđa,female,ACTIVE,Croatia,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_113892,Eric,Andrieu,113892,M.,male,ACTIVE,France,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_114268,Nils,Torvalds,114268,Hr.,male,ACTIVE,Finland,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_118859,Roberta,Metsola,118859,Is-Sinjura,female,ACTIVE,Malta,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_118949,Ondřej,Kovařík,118949,p.,male,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_118949,Ondřej,Kovařík,118949,pan,male,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_119431,Ruža,Tomašić,119431,gđa,female,ACTIVE,Bosnia and Herzegovina,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_120478,Martina,Michels,120478,Frau,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/GUE/NGL-5151
+http://data.europarl.europa.eu/person/MEP_123562,Charlie,Weimers,123562,Mr,male,ACTIVE,Sweden,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_124691,Costas,Mavrides,124691,κ.,male,ACTIVE,Cyprus,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_124692,Demetris,Papadakis,124692,κ.,male,ACTIVE,Cyprus,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_124693,Pascal,Durand,124693,M.,male,ACTIVE,France,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_124696,Andrus,Ansip,124696,Hr,male,ACTIVE,Estonia,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_124700,Yana,Toom,124700,Pr,female,ACTIVE,Estonia,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_124701,Luděk,Niedermayer,124701,p.,male,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_124701,Luděk,Niedermayer,124701,pan,male,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_124704,Stanislav,Polčák,124704,p.,male,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_124704,Stanislav,Polčák,124704,pan,male,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_124708,Dita,Charanzová,124708,p.,female,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_124708,Dita,Charanzová,124708,paní,female,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_124709,Martina,Dlabajová,124709,p.,female,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_124709,Martina,Dlabajová,124709,paní,female,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_124710,Michaela,Šojdrová,124710,p.,female,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_124710,Michaela,Šojdrová,124710,paní,female,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_124713,Tomáš,Zdechovský,124713,p.,male,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_124713,Tomáš,Zdechovský,124713,pan,male,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_124734,Cláudia,Monteiro de Aguiar,124734,Sra.,female,ACTIVE,Portugal,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_124738,Gilles,Lebreton,124738,M.,male,ACTIVE,France,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_124739,Carlos,Zorrinho,124739,Sr.,male,ACTIVE,Portugal,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_124747,Pedro,Silva Pereira,124747,Sr.,male,ACTIVE,Portugal,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_124760,Nicolas,Bay,124760,M.,male,ACTIVE,France,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_124765,Joëlle,Mélin,124765,Mme,female,ACTIVE,France,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_124766,Petras,Auštrevičius,124766,p.,male,ACTIVE,Lithuania,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_124770,Jean-François,Jalkh,124770,M.,male,ACTIVE,France,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_124771,Dominique,Bilde,124771,Mme,female,ACTIVE,France,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_124777,Tiziana,Beghin,124777,On.,female,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/NI-5152
+http://data.europarl.europa.eu/person/MEP_124779,Eleonora,Evi,124779,On.,female,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/NI-5152
+http://data.europarl.europa.eu/person/MEP_124780,Marco,Zanni,124780,On.,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_124781,Alfred,Sant,124781,Is-Sur,male,ACTIVE,Malta,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_124784,Dan,Nica,124784,Dl.,male,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_124785,Maria,Grapini,124785,Dna,female,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_124799,Alessandra,Moretti,124799,On.,female,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_124802,Siegfried,Mureşan,124802,Dl.,male,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_124806,David,McAllister,124806,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_124807,Jens,Gieseke,124807,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_124808,Norbert,Lins,124808,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_124809,Sven,Schulze,124809,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_124812,Fabio Massimo,Castaldo,124812,On.,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/NI-5152
+http://data.europarl.europa.eu/person/MEP_124814,Simona,Bonafè,124814,On.,female,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_124821,Nicola,Danti,124821,On.,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_124822,Dietmar,Köster,124822,Dr.,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_124828,Fulvio,Martusciello,124828,Avv.,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_124831,Isabella,Adinolfi,124831,On.,female,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/NI-5152
+http://data.europarl.europa.eu/person/MEP_124833,Laura,Ferrara,124833,On.,female,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/NI-5152
+http://data.europarl.europa.eu/person/MEP_124834,Martin,Sonneborn,124834,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/NI-5152
+http://data.europarl.europa.eu/person/MEP_124835,Rosa,D'Amato,124835,On.,female,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/NI-5152
+http://data.europarl.europa.eu/person/MEP_124836,Maria,Noichl,124836,Frau,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_124837,Joachim,Schuster,124837,Dr.,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_124844,Piernicola,Pedicini,124844,Dott.,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/NI-5152
+http://data.europarl.europa.eu/person/MEP_124846,Pina,Picierno,124846,On.,female,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_124850,Emil,Radev,124850,Г-н,male,ACTIVE,Bulgaria,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_124852,Sergei,Stanishev,124852,Г-н,male,ACTIVE,Bulgaria,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_124856,Ignazio,Corrao,124856,On.,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/NI-5152
+http://data.europarl.europa.eu/person/MEP_124861,Caterina,Chinnici,124861,On.,female,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_124862,Ulrike,Müller,124862,Frau,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_124866,Ilhan,Kyuchyuk,124866,Г-н,male,ACTIVE,Bulgaria,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_124867,Brando,Benifei,124867,On.,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_124872,Morten,Petersen,124872,Hr.,male,ACTIVE,Denmark,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_124873,Angel,Dzhambazki,124873,Г-н,male,ACTIVE,Bulgaria,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_124877,Jadwiga,Wiśniewska,124877,p.,female,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_124877,Jadwiga,Wiśniewska,124877,paní,female,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_124884,Kosma,Złotowski,124884,Mr,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_124895,Krzysztof,Hetman,124895,p.,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_124895,Krzysztof,Hetman,124895,pan,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_124929,Ivan,Štefanec,124929,p.,male,ACTIVE,Slovakia,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_124929,Ivan,Štefanec,124929,pan,male,ACTIVE,Slovakia,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_124934,Monika,Vana,124934,Dr.,female,ACTIVE,Austria,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_124936,Maria,Arena,124936,Mme,female,ACTIVE,Belgium,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_124970,Miriam,Dalli,124970,Is-Sinjura,female,ACTIVE,Malta,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_124972,Ernest,Urtasun,124972,Sr.,male,ACTIVE,Spain,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_124973,Gerolf,Annemans,124973,De Heer,male,ACTIVE,Belgium,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_124985,Luke Ming,Flanagan,124985,Mr,male,ACTIVE,Ireland,http://data.europarl.europa.eu/org/group/GUE/NGL-5151
+http://data.europarl.europa.eu/person/MEP_124988,Deirdre,Clune,124988,Mrs,female,ACTIVE,Ireland,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_124989,Fredrick,Federley,124989,Hr.,male,ACTIVE,Sweden,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_124991,Jytte,Guteland,124991,Fru,female,ACTIVE,Sweden,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_124992,Malin,Björk,124992,Fru,female,ACTIVE,Sweden,http://data.europarl.europa.eu/org/group/GUE/NGL-5151
+http://data.europarl.europa.eu/person/MEP_124996,Peter,Lundgren,124996,Hr.,male,ACTIVE,Sweden,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_125001,Harald,Vilimsky,125001,Herr,male,ACTIVE,Austria,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_125004,Franc,Bogovič,125004,g.,male,ACTIVE,Slovenia,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_125005,Javier,Nart,125005,Sr.,male,ACTIVE,Spain,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_125012,Daniel,Buda,125012,Dl.,male,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_125020,Paul,Tang,125020,Dr.,male,ACTIVE,Netherlands,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_125021,Agnes,Jongerius,125021,Mevr.,female,ACTIVE,Netherlands,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_125023,Anja,Hazekamp,125023,Mevr.,female,ACTIVE,Netherlands,http://data.europarl.europa.eu/org/group/GUE/NGL-5151
+http://data.europarl.europa.eu/person/MEP_125025,Marcel,de Graaff,125025,De Heer,male,ACTIVE,Netherlands,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_125027,Esteban,González Pons,125027,Sr.,male,ACTIVE,Spain,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_125030,Annie,Schreijer-Pierik,125030,Mevr.,female,ACTIVE,Netherlands,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_125038,Maite,Pagazaurtundúa,125038,Sra.,female,ACTIVE,Spain,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_125042,Javi,López,125042,Sr.,male,ACTIVE,Spain,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_125043,Inma,Rodríguez-Piñero,125043,Sra.,female,ACTIVE,Spain,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_125045,Clara,Aguilera,125045,Sra.,female,ACTIVE,Spain,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_125046,Jonás,Fernández,125046,Sr.,male,ACTIVE,Spain,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_125063,Georgios,Kyrtsos,125063,κ.,male,ACTIVE,Greece,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_125064,Maria,Spyraki,125064,κα,female,ACTIVE,Greece,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_125065,Elissavet,Vozemberg-Vrionidi,125065,κα,female,ACTIVE,Greece,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_125067,Theodoros,Zagorakis,125067,κ.,male,ACTIVE,Greece,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_125068,Manolis,Kefalogiannis,125068,κ.,male,ACTIVE,Greece,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_125093,Kostas,Papadakis,125093,κ.,male,ACTIVE,Greece,http://data.europarl.europa.eu/org/group/NI-5152
+http://data.europarl.europa.eu/person/MEP_125104,Romana,Tomc,125104,ga.,female,ACTIVE,Slovenia,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_125106,Johan,Van Overtveldt,125106,De Heer,male,ACTIVE,Belgium,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_125109,Eva,Kaili,125109,κα,female,ACTIVE,Greece,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_125110,Nikos,Androulakis,125110,κ.,male,ACTIVE,Greece,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_125128,Iskra,Mihaylova,125128,Г-жа,female,ACTIVE,Bulgaria,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_125214,Bronis,Ropė,125214,p.,male,ACTIVE,Lithuania,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_125237,Marco,Zullo,125237,On.,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/NI-5152
+http://data.europarl.europa.eu/person/MEP_125670,Massimiliano,Salini,125670,On.,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_125706,Jiří,Pospíšil,125706,p.,male,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_125706,Jiří,Pospíšil,125706,pan,male,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_127096,Domènec,Ruiz Devesa,127096,Mr,male,ACTIVE,Spain,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_128483,Markus,Buchheit,128483,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_129073,Urmas,Paet,129073,Hr,male,ACTIVE,Estonia,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_130100,Hilde,Vautmans,130100,Mevr.,female,ACTIVE,Belgium,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_130833,Stelios,Kouloglou,130833,κ.,male,ACTIVE,Greece,http://data.europarl.europa.eu/org/group/GUE/NGL-5151
+http://data.europarl.europa.eu/person/MEP_131507,Miguel,Urbán Crespo,131507,Sr.,male,ACTIVE,Spain,http://data.europarl.europa.eu/org/group/GUE/NGL-5151
+http://data.europarl.europa.eu/person/MEP_132191,Gunnar,Beck,132191,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_134605,Ramona,Strugariu,134605,Dna,female,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_183338,Jakop,Dalunde,183338,Hr.,male,ACTIVE,Sweden,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_183793,Angelo,Ciocca,183793,On.,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_183916,Alexandra,Geese,183916,Frau,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_185341,Željana,Zovko,185341,gđa,female,ACTIVE,Bosnia and Herzegovina,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_1854,Constanze,Krehl,1854,Frau,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_185619,Tiemo,Wölken,185619,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_185771,Tom,Vandendriessche,185771,M.,male,ACTIVE,Belgium,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_185974,Jordi,Solé,185974,Sr.,male,ACTIVE,Spain,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_187917,Marc,Botenga,187917,M.,male,ACTIVE,Belgium,http://data.europarl.europa.eu/org/group/GUE/NGL-5151
+http://data.europarl.europa.eu/person/MEP_188945,Dennis,Radtke,188945,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_189065,France,Jamet,189065,Mme,female,ACTIVE,France,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_189525,Asim,Ademov,189525,Г-н,male,ACTIVE,Bulgaria,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_190464,Thomas,Waitz,190464,Herr,male,ACTIVE,Austria,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_190517,Martin,Schirdewan,190517,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/GUE/NGL-5151
+http://data.europarl.europa.eu/person/MEP_190518,Jörg,Meuthen,190518,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_190519,Caroline,Nagtegaal,190519,Mevr.,female,ACTIVE,Netherlands,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_190713,Lukas,Mandl,190713,Herr,male,ACTIVE,Austria,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_190774,Geoffroy,Didier,190774,M.,male,ACTIVE,France,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_1909,Bernd,Lange,1909,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_1913,Evelyne,Gebhardt,1913,Frau,female,ACTIVE,France,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_1917,Markus,Ferber,1917,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_192634,Giuseppe,Ferrandino,192634,On.,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_192635,Danilo Oscar,Lancini,192635,On.,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_1927,Peter,Liese,1927,Dr.,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_193273,Romeo,Franz,193273,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_193292,Tilly,Metz,193292,Mme,female,ACTIVE,Luxembourg,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_197390,Sara,Skyttedal,197390,Fru,female,ACTIVE,Sweden,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_197391,Heléne,Fritzon,197391,Fru,female,ACTIVE,Sweden,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_197392,Evin,Incir,197392,Fru,female,ACTIVE,Turkey,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_197395,Alice,Kuhnke,197395,Fru,female,ACTIVE,Sweden,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_197398,Pär,Holmgren,197398,Hr.,male,ACTIVE,Sweden,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_197400,Abir,Al-Sahlani,197400,Fru,female,ACTIVE,Iraq,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_197401,Karin,Karlsbro,197401,Fru,female,ACTIVE,Sweden,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_197403,Alex,Agius Saliba,197403,Is-Sur,male,ACTIVE,Malta,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_197404,Jessica,Polfjärd,197404,Fru,female,ACTIVE,Sweden,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_197408,Hildegard,Bentele,197408,Frau,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_197410,Stefan,Berger,197410,Dr.,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_197412,Niclas,Herbst,197412,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_197415,Niyazi,Kizilyürek,197415,Dr.,male,ACTIVE,Cyprus,http://data.europarl.europa.eu/org/group/GUE/NGL-5151
+http://data.europarl.europa.eu/person/MEP_197421,Isabel,Wiseler-Lima,197421,Mme,female,ACTIVE,Portugal,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_197422,Christine,Schneider,197422,Frau,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_197423,Nico,Semsrott,197423,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_197425,Ralf,Seekatz,197425,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_197426,Sven,Simon,197426,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_197429,Marion,Walsmann,197429,Frau,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_197430,Engin,Eroglu,197430,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_197431,Patrick,Breyer,197431,Dr.,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_197433,Katarina,Barley,197433,Dr.,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_197435,Gabriele,Bischoff,197435,Frau,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_197436,Helmut,Geuking,197436,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_197439,Damian,Boeselager,197439,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_197440,Delara,Burkhardt,197440,Frau,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_197443,Andreas,Glück,197443,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_197444,Svenja,Hahn,197444,Frau,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_197445,Moritz,Körner,197445,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_197446,Milan,Brglez,197446,Dr.,male,ACTIVE,Slovenia,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_197448,Rasmus,Andresen,197448,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_197449,Michael,Bloss,197449,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_197453,Anna,Deparnay-Grunenberg,197453,Frau,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_197457,Henrike,Hahn,197457,Frau,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_197459,Pierrette,Herzberger-Fofana,197459,Dr.,female,ACTIVE,Mali,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_197460,Sergey,Lagodinsky,197460,Dr.,male,ACTIVE,Russia,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_197461,Katrin,Langensiepen,197461,Frau,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_197462,Erik,Marquardt,197462,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_197464,Hannah,Neumann,197464,Frau,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_197465,Niklas,Nienaß,197465,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_197466,Jutta,Paulus,197466,Frau,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_197468,Özlem,Demirel,197468,Frau,female,ACTIVE,Turkey,http://data.europarl.europa.eu/org/group/GUE/NGL-5151
+http://data.europarl.europa.eu/person/MEP_197473,Christian,Doleschal,197473,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_197478,Lars Patrick,Berg,197478,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_197480,Nicolaus,Fest,197480,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_197481,Maximilian,Krah,197481,Dr.,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_197482,Joachim,Kuhs,197482,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_197483,Sylvia,Limmer,197483,Dr.,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_197488,Guido,Reil,197488,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_197489,Bernhard,Zimniok,197489,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_197490,Magdalena,Adamowicz,197490,Dr.,female,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_197494,Nathalie,Loiseau,197494,Mme,female,ACTIVE,France,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_197495,Marek Paweł,Balt,197495,p.,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_197495,Marek Paweł,Balt,197495,pan,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_197496,Marek,Belka,197496,p.,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_197496,Marek,Belka,197496,pan,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_197512,Benoît,Biteau,197512,M.,male,ACTIVE,France,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_197519,Beata,Kempa,197519,p.,female,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_197519,Beata,Kempa,197519,paní,female,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_197521,Manuel,Bompard,197521,M.,male,ACTIVE,France,http://data.europarl.europa.eu/org/group/GUE/NGL-5151
+http://data.europarl.europa.eu/person/MEP_197533,Manon,Aubry,197533,Mme,female,ACTIVE,France,http://data.europarl.europa.eu/org/group/GUE/NGL-5151
+http://data.europarl.europa.eu/person/MEP_197534,François-Xavier,Bellamy,197534,M.,male,ACTIVE,France,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_197535,Agnès,Evren,197535,Mme,female,ACTIVE,France,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_197537,Alexandr,Vondra,197537,Dr.,male,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_197548,Radosław,Sikorski,197548,p.,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_197548,Radosław,Sikorski,197548,pan,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_197555,Søren,Gade,197555,Hr.,male,ACTIVE,Denmark,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_197556,Ivan,David,197556,p.,male,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_197556,Ivan,David,197556,pan,male,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_197558,Asger,Christensen,197558,Hr.,male,ACTIVE,Denmark,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_197566,Witold Jan,Waszczykowski,197566,p.,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_197566,Witold Jan,Waszczykowski,197566,pan,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_197570,Peter,Kofod,197570,Hr.,male,ACTIVE,Denmark,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_197572,Anna,Zalewska,197572,p.,female,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_197572,Anna,Zalewska,197572,paní,female,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_197573,Kira Marie,Peter-Hansen,197573,Fru,female,ACTIVE,Denmark,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_197574,Damien,Carême,197574,M.,male,ACTIVE,France,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_197577,Gilles,Boyer,197577,M.,male,ACTIVE,France,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_197588,Katalin,Cseh,197588,Dr.,female,ACTIVE,Canada,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_197593,Véronique,Trillet-Lenoir,197593,Mme,female,ACTIVE,France,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_197616,Rosanna,Conte,197616,Avv.,female,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_197636,Ioan-Rareş,Bogdan,197636,Dl.,male,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_197637,Vasile,Blaga,197637,Dl.,male,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_197646,Mircea-Gheorghe,Hava,197646,Dl.,male,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_197647,Dan-Ştefan,Motreanu,197647,Dl.,male,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_197648,Alexander,Bernhuber,197648,Herr,male,ACTIVE,Austria,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_197649,Gheorghe,Falcă,197649,Dl.,male,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_197651,Carmen,Avram,197651,Dna,female,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_197652,Angelika,Winzig,197652,Dr.,female,ACTIVE,Austria,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_197653,Claudiu,Manda,197653,Dl.,male,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_197655,Cristian,Terheş,197655,Dl.,male,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_197657,Tudor,Ciuhodaru,197657,Dl.,male,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_197658,Adrian-Dragoş,Benea,197658,Dl.,male,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_197661,Cristian,Ghinea,197661,Dl.,male,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_197663,Dragoş,Pîslaru,197663,Dl.,male,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_197664,Clotilde,Armand,197664,Dna,female,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_197668,Vlad-Marius,Botoş,197668,Dl.,male,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_197671,Traian,Băsescu,197671,Dl.,male,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_197677,Günther,Sidl,197677,Dr.,male,ACTIVE,Austria,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_197687,Philippe,Olivier,197687,M.,male,ACTIVE,France,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_197690,André,Rougé,197690,M.,male,ACTIVE,France,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_197709,Robert,Roos,197709,Hr,male,ACTIVE,Netherlands,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_197721,César,Luena,197721,Dr.,male,ACTIVE,Spain,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_197763,Milan,Uhrík,197763,Dr.,male,ACTIVE,Slovakia,http://data.europarl.europa.eu/org/group/NI-5152
+http://data.europarl.europa.eu/person/MEP_197782,Mohammed,Chahim,197782,Dr.,male,ACTIVE,Morocco,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_197788,Anna,Bonfrisco,197788,Dr.sa,female,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_197791,Massimiliano,Smeriglio,197791,Sig.,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_197801,Franco,Roberti,197801,Dott.,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_197841,Liudas,Mažylis,197841,p.,male,ACTIVE,Lithuania,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_198176,Roman,Haider,198176,Herr,male,ACTIVE,Austria,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_1992,José Manuel,García-Margallo y Marfil,1992,Sr.,male,ACTIVE,Spain,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_199941,Marianne,Vind,199941,Fru,female,ACTIVE,Denmark,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_206158,Manuela,Ripa,206158,Mme,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_2187,Antonio,Tajani,2187,On.,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_22858,Fabienne,Keller,22858,Mme,female,ACTIVE,France,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_2323,Rainer,Wieland,2323,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_2341,Michael,Gahler,2341,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_23699,Kateřina,Konečná,23699,p.,female,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/GUE/NGL-5151
+http://data.europarl.europa.eu/person/MEP_23699,Kateřina,Konečná,23699,paní,female,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/GUE/NGL-5151
+http://data.europarl.europa.eu/person/MEP_23712,Jan,Zahradil,23712,p.,male,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_23712,Jan,Zahradil,23712,pan,male,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_23768,Bogusław,Liberadzki,23768,p.,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_23768,Bogusław,Liberadzki,23768,pan,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_23781,Janusz,Lewandowski,23781,p.,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_23781,Janusz,Lewandowski,23781,pan,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_23788,Adam,Bielan,23788,p.,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_23788,Adam,Bielan,23788,pan,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_23821,József,Szájer,23821,Dr.,male,ACTIVE,Hungary,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_23868,Monika,Beňová,23868,p.,female,ACTIVE,Slovakia,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_23868,Monika,Beňová,23868,paní,female,ACTIVE,Slovakia,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_24505,Emmanuel,Maurel,24505,M.,male,ACTIVE,France,http://data.europarl.europa.eu/org/group/GUE/NGL-5151
+http://data.europarl.europa.eu/person/MEP_24594,Anne,Sander,24594,Mme,female,ACTIVE,France,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_24922,Pascal,Arimont,24922,Herr,male,ACTIVE,Belgium,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_26837,Lefteris,Christoforou,26837,κ.,male,ACTIVE,Cyprus,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_27714,Edina,Tóth,27714,Mad.,female,ACTIVE,Hungary,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_28115,Mairead,McGuinness,28115,Mrs,female,ACTIVE,Ireland,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_28122,David,Casa,28122,Is-Sur,male,ACTIVE,Malta,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_28150,Kinga,Gál,28150,Dr.,female,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_28161,Margrete,Auken,28161,Fru,female,ACTIVE,Denmark,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_28219,Daniel,Caspary,28219,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_28223,Andreas,Schwab,28223,Dr.,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_28224,Markus,Pieper,28224,Dr.,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_28226,Christian,Ehler,28226,Dr.,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_28229,Manfred,Weber,28229,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_28266,Sophia,in 't Veld,28266,Mevr.,female,ACTIVE,Netherlands,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_28269,Jerzy,Buzek,28269,p.,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_28269,Jerzy,Buzek,28269,pan,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_28288,Jan,Olbrycht,28288,p.,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_28288,Jan,Olbrycht,28288,pan,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_28294,Ljudmila,Novak,28294,ga.,female,ACTIVE,Slovenia,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_28297,Jacek,Saryusz-Wolski,28297,p.,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_28297,Jacek,Saryusz-Wolski,28297,pan,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_28298,Iratxe,García Pérez,28298,Sra.,female,ACTIVE,Spain,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_28340,Patrizia,Toia,28340,On.,female,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_28347,Javier,Moreno Sánchez,28347,Sr.,male,ACTIVE,Switzerland,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_28353,Anna,Fotyga,28353,p.,female,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_28353,Anna,Fotyga,28353,paní,female,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_28372,Ryszard,Czarnecki,28372,p.,male,ACTIVE,United Kingdom,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_28372,Ryszard,Czarnecki,28372,pan,male,ACTIVE,United Kingdom,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_28389,Zbigniew,Kuźmiuk,28389,p.,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_28389,Zbigniew,Kuźmiuk,28389,pan,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_28390,Pilar,del Castillo Vera,28390,Sra.,female,ACTIVE,Morocco,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_28399,Antonio,López-Istúriz White,28399,Sr.,male,ACTIVE,Spain,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_28400,Francisco José,Millán Mon,28400,Sr.,male,ACTIVE,Spain,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_28586,Dimitrios,Papadimoulis,28586,κ.,male,ACTIVE,Greece,http://data.europarl.europa.eu/org/group/GUE/NGL-5151
+http://data.europarl.europa.eu/person/MEP_29579,Marc,Tarabella,29579,M.,male,ACTIVE,Belgium,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_30482,Younous,Omarjee,30482,M.,male,ACTIVE,France,http://data.europarl.europa.eu/org/group/GUE/NGL-5151
+http://data.europarl.europa.eu/person/MEP_33982,Marian-Jean,Marinescu,33982,Dl.,male,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_33997,Corina,Crețu,33997,Dna,female,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_34578,Robert,Hajšel,34578,M.,male,ACTIVE,Slovakia,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_35016,Marco,Campomenosi,35016,Mr,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_36392,Aldo,Patriciello,36392,On.,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_37229,Kati,Piri,37229,Mevr.,female,ACTIVE,Hungary,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_37312,Christel,Schaldemose,37312,Fru,female,ACTIVE,Denmark,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_38398,Esther,de Lange,38398,Mevr.,female,ACTIVE,Netherlands,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_38420,Cristian-Silviu,Buşoi,38420,Dl.,male,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_38511,Georg,Mayer,38511,Dr.,male,ACTIVE,Austria,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_38542,Johan,Danielsson,38542,Mr,male,ACTIVE,Sweden,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_38595,Rovana,Plumb,38595,Dna,female,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_4246,Othmar,Karas,4246,Dr.,male,ACTIVE,Austria,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_4253,Frédérique,Ries,4253,Mme,female,ACTIVE,Belgium,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_4267,Udo,Bullmann,4267,Dr.,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_4344,María Soraya,Rodríguez Ramos,4344,Sra.,female,ACTIVE,Spain,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_4391,Silvio,Berlusconi,4391,On.,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_4465,Raffaele,Fitto,4465,On.,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_4560,Antonius,Manders,4560,De Heer,male,ACTIVE,Netherlands,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_4746,Sergio,Berlato,4746,On.,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_5392,Lara,Wolters,5392,Ms,female,ACTIVE,Netherlands,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_5565,Brice,Hortefeux,5565,M.,male,ACTIVE,France,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_5729,Kathleen,Van Brempt,5729,Mevr.,female,ACTIVE,Belgium,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_58766,Nicolae,Ştefănuță,58766,Dl.,male,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_58789,Jan,Huitema,58789,De Heer,male,ACTIVE,Netherlands,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_72779,Nadine,Morano,72779,Mme,female,ACTIVE,France,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_840,Charles,Goerens,840,M.,male,ACTIVE,Luxembourg,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_86793,Anna,Cavazzini,86793,Frau,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_88715,José,Gusmão,88715,M.,male,ACTIVE,Portugal,http://data.europarl.europa.eu/org/group/GUE/NGL-5151
+http://data.europarl.europa.eu/person/MEP_88882,Victor,Negrescu,88882,Dl.,male,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_94649,Catherine,Griset,94649,Mme,female,ACTIVE,France,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_95074,Jeroen,Lenaers,95074,De Heer,male,ACTIVE,Netherlands,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96646,Helmut,Scholz,96646,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/GUE/NGL-5151
+http://data.europarl.europa.eu/person/MEP_96648,Philippe,Lamberts,96648,M.,male,ACTIVE,Belgium,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_96668,Seán,Kelly,96668,Mr,male,ACTIVE,Ireland,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96681,Vilija,Blinkevičiūtė,96681,p.,female,ACTIVE,Lithuania,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_96697,Valdemar,Tomaševski,96697,p.,male,ACTIVE,Lithuania,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_96698,Viktor,Uspaskich,96698,p.,male,ACTIVE,Lithuania,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_96706,João,Ferreira,96706,Sr.,male,ACTIVE,Portugal,http://data.europarl.europa.eu/org/group/GUE/NGL-5151
+http://data.europarl.europa.eu/person/MEP_96709,Morten,Løkkegaard,96709,Hr.,male,ACTIVE,Denmark,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_96711,Pascal,Canfin,96711,M.,male,ACTIVE,France,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_96713,Evžen,Tošenovský,96713,p.,male,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_96713,Evžen,Tošenovský,96713,pan,male,ACTIVE,Czechia,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_96725,Bas,Eickhout,96725,De Heer,male,ACTIVE,Netherlands,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_96730,Sven,Giegold,96730,Herr,male,ACTIVE,Spain,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_96734,Ska,Keller,96734,Frau,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_96739,Reinhard,Bütikofer,96739,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_96740,Yannick,Jadot,96740,M.,male,ACTIVE,France,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_96743,Michèle,Rivasi,96743,Mme,female,ACTIVE,France,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_96747,Arnaud,Danjean,96747,M.,male,ACTIVE,France,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96750,François,Alfonsi,96750,M.,male,ACTIVE,France,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_96752,Martin,Häusling,96752,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_96756,Sabine,Verheyen,96756,Frau,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96761,Axel,Voss,96761,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96771,Jarosław,Kalinowski,96771,p.,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96771,Jarosław,Kalinowski,96771,pan,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96772,Peter,Jahr,96772,Dr.,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96776,Róża,Thun und Hohenstein,96776,p.,female,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96776,Róża,Thun und Hohenstein,96776,paní,female,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96779,Danuta Maria,Hübner,96779,p.,female,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96779,Danuta Maria,Hübner,96779,paní,female,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96780,Monika,Hohlmeier,96780,Frau,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96787,Herbert,Dorfmann,96787,Herr,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96791,Elżbieta Katarzyna,Łukacijewska,96791,p.,female,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96791,Elżbieta Katarzyna,Łukacijewska,96791,paní,female,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96796,Ryszard Antoni,Legutko,96796,p.,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_96796,Ryszard Antoni,Legutko,96796,pan,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_96801,Tomasz Piotr,Poręba,96801,p.,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_96801,Tomasz Piotr,Poręba,96801,pan,male,ACTIVE,Poland,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_96808,Pablo,Arias Echeverría,96808,Sr.,male,ACTIVE,Spain,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96809,Peter,van Dalen,96809,De Heer,male,ACTIVE,Netherlands,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96810,Carlo,Fidanza,96810,On.,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_96811,Rosa,Estaràs Ferragut,96811,Sra.,female,ACTIVE,Spain,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96812,Juan Fernando,López Aguilar,96812,Sr.,male,ACTIVE,Spain,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_96820,Marisa,Matias,96820,Sra.,female,ACTIVE,Portugal,http://data.europarl.europa.eu/org/group/GUE/NGL-5151
+http://data.europarl.europa.eu/person/MEP_96833,Jens,Geier,96833,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_96837,Petra,Kammerevert,96837,Frau,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_96842,Ismail,Ertug,96842,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_96844,Norbert,Neuser,96844,Herr,male,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_96852,Cornelia,Ernst,96852,Dr.,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/GUE/NGL-5151
+http://data.europarl.europa.eu/person/MEP_96864,David Maria,Sassoli,96864,On.,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_96867,Maria Da Graça,Carvalho,96867,Sra.,female,ACTIVE,Portugal,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96868,Karima,Delli,96868,Mme,female,ACTIVE,France,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_96880,Andrea,Cozzolino,96880,On.,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_96885,Dominique,Riquet,96885,M.,male,ACTIVE,France,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_96891,Paolo,De Castro,96891,On.,male,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_96899,José Manuel,Fernandes,96899,Sr.,male,ACTIVE,Portugal,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96903,Paulo,Rangel,96903,Sr.,male,ACTIVE,Portugal,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96911,Tanja,Fajon,96911,ga.,female,ACTIVE,Slovenia,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_96922,Izaskun,Bilbao Barandica,96922,Sra.,female,ACTIVE,Spain,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_96932,Birgit,Sippel,96932,Frau,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_96933,Milan,Zver,96933,Dr.,male,ACTIVE,Slovenia,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96936,Gabriel,Mato,96936,Sr.,male,ACTIVE,Spain,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96952,Sylvie,Guillaume,96952,Mme,female,ACTIVE,France,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_96978,Nuno,Melo,96978,Sr.,male,ACTIVE,Portugal,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_96991,Eider,Gardiazabal Rubial,96991,Sra.,female,ACTIVE,Spain,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_96998,Evelyn,Regner,96998,Frau,female,ACTIVE,Austria,http://data.europarl.europa.eu/org/group/S&amp;D-5154
+http://data.europarl.europa.eu/person/MEP_97058,Guy,Verhofstadt,97058,De Heer,male,ACTIVE,Belgium,http://data.europarl.europa.eu/org/group/Renew-5704
+http://data.europarl.europa.eu/person/MEP_97133,Derk Jan,Eppink,97133,De Heer,male,ACTIVE,Netherlands,http://data.europarl.europa.eu/org/group/ECR-5148
+http://data.europarl.europa.eu/person/MEP_97198,Mara,Bizzotto,97198,On.,female,ACTIVE,Italy,http://data.europarl.europa.eu/org/group/ID-5588
+http://data.europarl.europa.eu/person/MEP_97236,Marie,Toussaint,97236,Mad.,female,ACTIVE,France,http://data.europarl.europa.eu/org/group/Verts/ALE-5155
+http://data.europarl.europa.eu/person/MEP_97968,Andrey,Kovatchev,97968,Г-н,male,ACTIVE,Bulgaria,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_98341,Eva,Maydell,98341,Г-жа,female,ACTIVE,Bulgaria,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_98582,Loránt,Vincze,98582,Dl.,male,ACTIVE,Romania,http://data.europarl.europa.eu/org/group/PPE-5153
+http://data.europarl.europa.eu/person/MEP_99945,Lena,Düpont,99945,Frau,female,ACTIVE,Germany,http://data.europarl.europa.eu/org/group/PPE-5153
