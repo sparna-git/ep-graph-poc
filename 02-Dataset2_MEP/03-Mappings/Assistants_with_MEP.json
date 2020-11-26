@@ -9,7 +9,8 @@
     "epsh": "http://data.europarl.europa.eu/shapes#",
     "dcterms": "http://purl.org/dc/terms/",
     "org": "http://www.w3.org/ns/org#",
-    "ep": "http://data.europarl.europa.eu/"
+    "ep": "http://data.europarl.europa.eu/",
+    "eponto": "http://data.europarl.europa.eu/ontology/ep#"
   },
   "subjectMappings": [
     {
@@ -63,7 +64,7 @@
         {
           "property": {
             "transformation": {
-              "expression": "ep",
+              "expression": "eponto",
               "language": "prefix"
             },
             "valueSource": {
@@ -97,7 +98,7 @@
           "values": [
             {
               "transformation": {
-                "expression": "trim(cells[trim('ep:Assistant.ep:uri')].value.split(':')[1])+'/membership'\n+'/'+trim(cells[trim('ep:MEP.ep:uri')].value.split(':')[1])",
+                "expression": "'http://data.europarl.europa.eu/person/'+\ntrim(cells[trim('ep:Assistant.ep:uri')].value.split(':')[1])+'/membership/'+\n(row.index+1)",
                 "language": "grel"
               },
               "valueSource": {
@@ -119,16 +120,14 @@
                     "values": [
                       {
                         "transformation": {
-                          "expression": "trim(cells[trim('ep:MEP.ep:uri')].value.split(':')[1])",
+                          "expression": "'http://data.europarl.europa.eu/person/'+\ntrim(cells[trim('ep:MEP.ep:uri')].value.split(':')[1])",
                           "language": "grel"
                         },
                         "valueSource": {
                           "source": "row_index"
                         },
                         "valueType": {
-                          "propertyMappings": [],
-                          "type": "iri",
-                          "typeMappings": []
+                          "type": "literal"
                         }
                       }
                     ]
@@ -145,6 +144,16 @@
                       "source": "constant",
                       "constant": "Membership"
                     }
+                  },
+                  {
+                    "transformation": {
+                      "expression": "eponto",
+                      "language": "prefix"
+                    },
+                    "valueSource": {
+                      "source": "constant",
+                      "constant": "MembershipAssistant"
+                    }
                   }
                 ]
               }
@@ -154,7 +163,7 @@
       ],
       "subject": {
         "transformation": {
-          "expression": "trim(cells[trim('ep:Assistant.ep:uri')].value.split(':')[1])",
+          "expression": "'http://data.europarl.europa.eu/person/'+\ntrim(cells[trim('ep:Assistant.ep:uri')].value.split(':')[1])",
           "language": "grel"
         },
         "valueSource": {
@@ -164,7 +173,7 @@
       "typeMappings": [
         {
           "transformation": {
-            "expression": "ep",
+            "expression": "eponto",
             "language": "prefix"
           },
           "valueSource": {
