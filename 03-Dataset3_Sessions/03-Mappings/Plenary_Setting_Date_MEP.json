@@ -1,0 +1,86 @@
+{
+  "baseIRI": "http://data.europarl.europa.eu/",
+  "namespaces": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ep": "http://data.europarl.europa.eu/",
+    "epsh": "http://data.europarl.europa.eu/shapes#",
+    "eponto": "http://data.europarl.europa.eu/ontology/ep#"
+  },
+  "subjectMappings": [
+    {
+      "propertyMappings": [
+        {
+          "property": {
+            "transformation": {
+              "expression": "rdf",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "Type"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "eponto",
+                "language": "prefix"
+              },
+              "valueSource": {
+                "source": "constant",
+                "constant": "PlenarySitting"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "eponto",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "hasParticipant"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "escape(\n'http://data.europarl.europa.eu/person/MEP_'+\ncells['PV.AttendanceRegister - Attendance.Participant.Name - MEP.Identifier'].value,'html')",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        }
+      ],
+      "subject": {
+        "transformation": {
+          "expression": "escape(\n'http://data.europarl.europa.eu/eli/dl/iPlMeeting/'+\nrow.record.cells['PV.AttendanceRegister - Sitting.Date'][0].value.toDate('yyyy-mm-dd').toString('yyyymmd'),'html')",
+          "language": "grel"
+        },
+        "valueSource": {
+          "source": "row_index"
+        }
+      },
+      "typeMappings": []
+    }
+  ]
+}
