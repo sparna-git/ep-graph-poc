@@ -127,7 +127,9 @@
                           "source": "row_index"
                         },
                         "valueType": {
-                          "type": "literal"
+                          "propertyMappings": [],
+                          "type": "iri",
+                          "typeMappings": []
                         }
                       }
                     ]
