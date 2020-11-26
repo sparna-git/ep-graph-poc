@@ -31,7 +31,7 @@ Direct link to SHACL SVG diagram : https://shacl-play.sparna.fr/play/view?url=ht
 
 ParlementarySessions + Sittings : [![SHACL Play Badge](https://img.shields.io/endpoint?url=https%3a%2f%2fshacl-play.sparna.fr%2fplay%2fbadge%3furl%3dhttps%3a%2f%2fgithub.com%2fsparna-git%2fep-graph-poc%2fraw%2fmain%2f03-Dataset3_Sessions%2f05-RDF%2fPlenary_Setting_Session.ttl%26shapesUrl%3dhttps%3a%2f%2fgithub.com%2fsparna-git%2fep-graph-poc%2fraw%2fmain%2f03-Dataset3_Sessions%2f04-SHACL%2fDataset3_Sessions-Shapes.ttl)](https://shacl-play.sparna.fr/play/validate?url=https://github.com/sparna-git/ep-graph-poc/raw/main/03-Dataset3_Sessions/05-RDF/Plenary_Setting_Session.ttl&shapesUrl=https://github.com/sparna-git/ep-graph-poc/raw/main/03-Dataset3_Sessions/04-SHACL/Dataset3_Sessions-Shapes.ttl)
 
-Attendees : TODO
+Attendees/Participants : [![SHACL Play Badge](https://img.shields.io/endpoint?url=https%3a%2f%2fshacl-play.sparna.fr%2fplay%2fbadge%3furl%3dhttps%3a%2f%2fgithub.com%2fsparna-git%2fep-graph-poc%2fraw%2fmain%2f03-Dataset3_Sessions%2f05-RDF%2fPlenary_Setting_Date_MEP.ttl%26shapesUrl%3dhttps%3a%2f%2fgithub.com%2fsparna-git%2fep-graph-poc%2fraw%2fmain%2f03-Dataset3_Sessions%2f04-SHACL%2fDataset3_Sessions-Shapes.ttl)](https://shacl-play.sparna.fr/play/validate?url=https://github.com/sparna-git/ep-graph-poc/raw/main/03-Dataset3_Sessions/05-RDF/Plenary_Setting_Date_MEP.ttl&shapesUrl=https://github.com/sparna-git/ep-graph-poc/raw/main/03-Dataset3_Sessions/04-SHACL/Dataset3_Sessions-Shapes.ttl)
 
 
 
