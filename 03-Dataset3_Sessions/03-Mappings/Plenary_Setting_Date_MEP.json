@@ -16,35 +16,6 @@
         {
           "property": {
             "transformation": {
-              "expression": "rdf",
-              "language": "prefix"
-            },
-            "valueSource": {
-              "source": "constant",
-              "constant": "Type"
-            }
-          },
-          "values": [
-            {
-              "transformation": {
-                "expression": "eponto",
-                "language": "prefix"
-              },
-              "valueSource": {
-                "source": "constant",
-                "constant": "PlenarySitting"
-              },
-              "valueType": {
-                "propertyMappings": [],
-                "type": "iri",
-                "typeMappings": []
-              }
-            }
-          ]
-        },
-        {
-          "property": {
-            "transformation": {
               "expression": "eponto",
               "language": "prefix"
             },
@@ -80,7 +51,18 @@
           "source": "row_index"
         }
       },
-      "typeMappings": []
+      "typeMappings": [
+        {
+          "transformation": {
+            "expression": "eponto",
+            "language": "prefix"
+          },
+          "valueSource": {
+            "source": "constant",
+            "constant": "PlenarySitting"
+          }
+        }
+      ]
     }
   ]
 }

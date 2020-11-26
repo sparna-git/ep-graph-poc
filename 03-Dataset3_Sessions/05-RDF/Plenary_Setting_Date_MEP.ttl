@@ -8,7 +8,7 @@
 @prefix epsh: <http://data.europarl.europa.eu/shapes#> .
 @prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> .
 
-<eli/dl/iPlMeeting/20190114> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190114> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124831>, <person/MEP_124797>,
     <person/MEP_125045>, <person/MEP_124842>, <person/MEP_99650>, <person/MEP_34250>,
     <person/MEP_1179>, <person/MEP_124949>, <person/MEP_113959>, <person/MEP_124994>,
@@ -155,7 +155,7 @@
     <person/MEP_191377>, <person/MEP_131051>, <person/MEP_124902>, <person/MEP_124739>,
     <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933>, <person/MEP_28301> .
 
-<eli/dl/iPlMeeting/20190115> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190115> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124831>, <person/MEP_124797>,
     <person/MEP_124811>, <person/MEP_96897>, <person/MEP_125045>, <person/MEP_124842>,
     <person/MEP_99650>, <person/MEP_125048>, <person/MEP_34250>, <person/MEP_1179>, <person/MEP_124949>,
@@ -239,7 +239,7 @@
     <person/MEP_96728>, <person/MEP_125684>, <person/MEP_96709>, <person/MEP_96765>, <person/MEP_125042>,
     <person/MEP_96812>, <person/MEP_125047>, <person/MEP_28399>, <person/MEP_124820>,
     <person/MEP_96673>, <person/MEP_96791>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_124996>, <person/MEP_124883>, <person/MEP_124806>,
     <person/MEP_2327>, <person/MEP_96919>, <person/MEP_28115>, <person/MEP_111011>, <person/MEP_96824>,
     <person/MEP_119436>, <person/MEP_111027>, <person/MEP_124746>, <person/MEP_190713>,
@@ -319,7 +319,7 @@
     <person/MEP_131051>, <person/MEP_124902>, <person/MEP_124739>, <person/MEP_185341>,
     <person/MEP_125237>, <person/MEP_96933>, <person/MEP_28301> .
 
-<eli/dl/iPlMeeting/20190116> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190116> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124831>, <person/MEP_124797>,
     <person/MEP_124811>, <person/MEP_96897>, <person/MEP_125045>, <person/MEP_124842>,
     <person/MEP_99650>, <person/MEP_34250>, <person/MEP_1179>, <person/MEP_124949>, <person/MEP_113959>,
@@ -473,7 +473,7 @@
     <person/MEP_125001>, <person/MEP_124791>, <person/MEP_124875>, <person/MEP_124832>,
     <person/MEP_96761>, <person/MEP_125065>, <person/MEP_190464>, <person/MEP_96774>,
     <person/MEP_124963>, <person/MEP_111014>, <person/MEP_124826>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_96839>, <person/MEP_2323>, <person/MEP_183022>,
     <person/MEP_96677>, <person/MEP_124995>, <person/MEP_96764>, <person/MEP_39725>, <person/MEP_195912>,
     <person/MEP_124877>, <person/MEP_185619>, <person/MEP_124966>, <person/MEP_23894>,
@@ -484,7 +484,7 @@
     <person/MEP_131051>, <person/MEP_124902>, <person/MEP_124739>, <person/MEP_185341>,
     <person/MEP_125237>, <person/MEP_96933>, <person/MEP_28301> .
 
-<eli/dl/iPlMeeting/20190117> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190117> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124831>, <person/MEP_124797>,
     <person/MEP_96897>, <person/MEP_125045>, <person/MEP_124842>, <person/MEP_99650>,
     <person/MEP_34250>, <person/MEP_1179>, <person/MEP_124949>, <person/MEP_113959>, <person/MEP_124994>,
@@ -632,7 +632,7 @@
     <person/MEP_191377>, <person/MEP_131051>, <person/MEP_124902>, <person/MEP_124739>,
     <person/MEP_185341>, <person/MEP_96933>, <person/MEP_28301> .
 
-<eli/dl/iPlMeeting/20190130> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190130> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124831>, <person/MEP_124797>,
     <person/MEP_124811>, <person/MEP_96897>, <person/MEP_125045>, <person/MEP_124842>,
     <person/MEP_125048>, <person/MEP_34250>, <person/MEP_1179>, <person/MEP_113959>, <person/MEP_124994>,
@@ -706,7 +706,7 @@
     <person/MEP_72754>, <person/MEP_23781>, <person/MEP_23768>, <person/MEP_1927>, <person/MEP_124839>,
     <person/MEP_124808>, <person/MEP_96728>, <person/MEP_125684>, <person/MEP_96709>,
     <person/MEP_96765>, <person/MEP_125042>, <person/MEP_96812>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_125047>, <person/MEP_28399>, <person/MEP_196042>,
     <person/MEP_124820>, <person/MEP_96673>, <person/MEP_96791>, <person/MEP_124996>,
     <person/MEP_124883>, <person/MEP_124806>, <person/MEP_96919>, <person/MEP_28115>,
@@ -779,7 +779,7 @@
     <person/MEP_124902>, <person/MEP_124739>, <person/MEP_185341>, <person/MEP_125237>,
     <person/MEP_96933>, <person/MEP_28301> .
 
-<eli/dl/iPlMeeting/20190131> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190131> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124831>, <person/MEP_124797>,
     <person/MEP_96897>, <person/MEP_125045>, <person/MEP_124842>, <person/MEP_125048>,
     <person/MEP_34250>, <person/MEP_1179>, <person/MEP_124949>, <person/MEP_113959>, <person/MEP_113892>,
@@ -930,7 +930,7 @@
     <person/MEP_131051>, <person/MEP_124902>, <person/MEP_124739>, <person/MEP_185341>,
     <person/MEP_125237>, <person/MEP_96933>, <person/MEP_28301> .
 
-<eli/dl/iPlMeeting/20190211> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190211> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_124797>, <person/MEP_124811>, <person/MEP_96897>,
     <person/MEP_125045>, <person/MEP_124842>, <person/MEP_99650>, <person/MEP_34250>,
     <person/MEP_1179>, <person/MEP_124949>, <person/MEP_113959>, <person/MEP_124994>,
@@ -943,7 +943,7 @@
     <person/MEP_4507>, <person/MEP_28257>, <person/MEP_96705>, <person/MEP_135490>, <person/MEP_23868>,
     <person/MEP_1985>, <person/MEP_124740>, <person/MEP_124819>, <person/MEP_96922>, <person/MEP_124771>,
     <person/MEP_97198>, <person/MEP_124992>, <person/MEP_96681>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_124712>, <person/MEP_1037>, <person/MEP_125004>,
     <person/MEP_124814>, <person/MEP_124896>, <person/MEP_21817>, <person/MEP_124796>,
     <person/MEP_112748>, <person/MEP_39711>, <person/MEP_124964>, <person/MEP_124753>,
@@ -1075,7 +1075,7 @@
     <person/MEP_124884>, <person/MEP_191377>, <person/MEP_124902>, <person/MEP_124739>,
     <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933>, <person/MEP_28301> .
 
-<eli/dl/iPlMeeting/20190212> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190212> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124797>, <person/MEP_124811>,
     <person/MEP_96897>, <person/MEP_125045>, <person/MEP_124842>, <person/MEP_99650>,
     <person/MEP_125048>, <person/MEP_34250>, <person/MEP_1179>, <person/MEP_124949>, <person/MEP_113959>,
@@ -1174,7 +1174,7 @@
     <person/MEP_72779>, <person/MEP_124788>, <person/MEP_38596>, <person/MEP_124868>,
     <person/MEP_124862>, <person/MEP_124802>, <person/MEP_124729>, <person/MEP_28429>,
     <person/MEP_190519>, <person/MEP_124926>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_125005>, <person/MEP_125013>, <person/MEP_96844>,
     <person/MEP_124784>, <person/MEP_1318>, <person/MEP_4289>, <person/MEP_124701>, <person/MEP_124723>,
     <person/MEP_124987>, <person/MEP_28165>, <person/MEP_124836>, <person/MEP_107212>,
@@ -1236,7 +1236,7 @@
     <person/MEP_124739>, <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933>,
     <person/MEP_28301> .
 
-<eli/dl/iPlMeeting/20190213> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190213> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124797>, <person/MEP_124811>,
     <person/MEP_96897>, <person/MEP_125045>, <person/MEP_124842>, <person/MEP_99650>,
     <person/MEP_125048>, <person/MEP_34250>, <person/MEP_1179>, <person/MEP_124949>, <person/MEP_113959>,
@@ -1395,7 +1395,7 @@
     <person/MEP_124739>, <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933>,
     <person/MEP_28301> .
 
-<eli/dl/iPlMeeting/20190214> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190214> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124797>, <person/MEP_124811>,
     <person/MEP_96897>, <person/MEP_125045>, <person/MEP_124842>, <person/MEP_99650>,
     <person/MEP_125048>, <person/MEP_34250>, <person/MEP_1179>, <person/MEP_124949>, <person/MEP_113959>,
@@ -1410,7 +1410,7 @@
     <person/MEP_97198>, <person/MEP_125044>, <person/MEP_96681>, <person/MEP_124712>,
     <person/MEP_1037>, <person/MEP_125004>, <person/MEP_124896>, <person/MEP_21817>, <person/MEP_124796>,
     <person/MEP_112748>, <person/MEP_39711>, <person/MEP_124753>, <person/MEP_96744>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_28346>, <person/MEP_124787>, <person/MEP_124757>,
     <person/MEP_1263>, <person/MEP_124818>, <person/MEP_125012>, <person/MEP_188733>,
     <person/MEP_38420>, <person/MEP_96739>, <person/MEP_28269>, <person/MEP_125041>, <person/MEP_96849>,
@@ -1541,7 +1541,7 @@
     <person/MEP_131051>, <person/MEP_124739>, <person/MEP_185341>, <person/MEP_125237>,
     <person/MEP_96933>, <person/MEP_28301> .
 
-<eli/dl/iPlMeeting/20190311> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190311> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124831>, <person/MEP_124797>,
     <person/MEP_124811>, <person/MEP_96897>, <person/MEP_125045>, <person/MEP_124842>,
     <person/MEP_99650>, <person/MEP_34250>, <person/MEP_1179>, <person/MEP_124949>, <person/MEP_113959>,
@@ -1643,7 +1643,7 @@
     <person/MEP_96998>, <person/MEP_124935>, <person/MEP_103381>, <person/MEP_124287>,
     <person/MEP_124733>, <person/MEP_4253>, <person/MEP_96885>, <person/MEP_97022>, <person/MEP_125099>,
     <person/MEP_124737>, <person/MEP_125043>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_93624>, <person/MEP_96710>, <person/MEP_125107>,
     <person/MEP_125214>, <person/MEP_28394>, <person/MEP_103845>, <person/MEP_124730>,
     <person/MEP_2278>, <person/MEP_132366>, <person/MEP_111033>, <person/MEP_4345>, <person/MEP_2002>,
@@ -1682,7 +1682,7 @@
     <person/MEP_124884>, <person/MEP_191377>, <person/MEP_131051>, <person/MEP_124739>,
     <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20190312> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190312> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124831>, <person/MEP_124797>,
     <person/MEP_124811>, <person/MEP_96897>, <person/MEP_125045>, <person/MEP_124842>,
     <person/MEP_99650>, <person/MEP_125048>, <person/MEP_34250>, <person/MEP_1179>, <person/MEP_124949>,
@@ -1844,7 +1844,7 @@
     <person/MEP_191377>, <person/MEP_131051>, <person/MEP_124739>, <person/MEP_185341>,
     <person/MEP_125237>, <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20190313> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190313> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124831>, <person/MEP_124797>,
     <person/MEP_124811>, <person/MEP_96897>, <person/MEP_125045>, <person/MEP_124842>,
     <person/MEP_99650>, <person/MEP_125048>, <person/MEP_34250>, <person/MEP_1179>, <person/MEP_124949>,
@@ -1880,7 +1880,7 @@
     <person/MEP_96868>, <person/MEP_124776>, <person/MEP_117477>, <person/MEP_124803>,
     <person/MEP_1473>, <person/MEP_28228>, <person/MEP_190799>, <person/MEP_96826>, <person/MEP_4556>,
     <person/MEP_124805>, <person/MEP_28397>, <person/MEP_190774>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_124709>, <person/MEP_96951>, <person/MEP_124878>,
     <person/MEP_96787>, <person/MEP_124750>, <person/MEP_124693>, <person/MEP_124873>,
     <person/MEP_124863>, <person/MEP_28226>, <person/MEP_96725>, <person/MEP_188445>,
@@ -2007,7 +2007,7 @@
     <person/MEP_124884>, <person/MEP_191377>, <person/MEP_131051>, <person/MEP_124739>,
     <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20190314> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190314> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124811>, <person/MEP_96897>,
     <person/MEP_125045>, <person/MEP_124842>, <person/MEP_125048>, <person/MEP_34250>,
     <person/MEP_1179>, <person/MEP_124949>, <person/MEP_113959>, <person/MEP_113892>,
@@ -2113,7 +2113,7 @@
     <person/MEP_125706>, <person/MEP_124997>, <person/MEP_96838>, <person/MEP_124830>,
     <person/MEP_124888>, <person/MEP_90110>, <person/MEP_1055>, <person/MEP_112753>, <person/MEP_124816>,
     <person/MEP_96998>, <person/MEP_106202>, <person/MEP_124935>, <person/MEP_124287>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_124733>, <person/MEP_4253>, <person/MEP_96885>,
     <person/MEP_96743>, <person/MEP_97022>, <person/MEP_125099>, <person/MEP_125043>,
     <person/MEP_93624>, <person/MEP_96710>, <person/MEP_125107>, <person/MEP_125214>,
@@ -2154,7 +2154,7 @@
     <person/MEP_124884>, <person/MEP_191377>, <person/MEP_131051>, <person/MEP_124739>,
     <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20190325> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190325> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124797>, <person/MEP_96897>,
     <person/MEP_125045>, <person/MEP_124842>, <person/MEP_99650>, <person/MEP_125048>,
     <person/MEP_124949>, <person/MEP_113959>, <person/MEP_124994>, <person/MEP_113892>,
@@ -2292,7 +2292,7 @@
     <person/MEP_124884>, <person/MEP_131051>, <person/MEP_124902>, <person/MEP_124739>,
     <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933>, <person/MEP_28301> .
 
-<eli/dl/iPlMeeting/20190326> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190326> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124831>, <person/MEP_124797>,
     <person/MEP_124811>, <person/MEP_96897>, <person/MEP_125045>, <person/MEP_124842>,
     <person/MEP_99650>, <person/MEP_125048>, <person/MEP_34250>, <person/MEP_1179>, <person/MEP_124949>,
@@ -2348,7 +2348,7 @@
     <person/MEP_193879>, <person/MEP_28208>, <person/MEP_124961>, <person/MEP_124745>,
     <person/MEP_2025>, <person/MEP_23785>, <person/MEP_96892>, <person/MEP_96768>, <person/MEP_96952>,
     <person/MEP_124763>, <person/MEP_124991>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_23816>, <person/MEP_96907>, <person/MEP_124727>,
     <person/MEP_96851>, <person/MEP_4555>, <person/MEP_193419>, <person/MEP_28116>, <person/MEP_96752>,
     <person/MEP_2054>, <person/MEP_118658>, <person/MEP_125023>, <person/MEP_28131>, <person/MEP_124823>,
@@ -2453,7 +2453,7 @@
     <person/MEP_124739>, <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933>,
     <person/MEP_28301> .
 
-<eli/dl/iPlMeeting/20190327> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190327> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124831>, <person/MEP_124797>,
     <person/MEP_124811>, <person/MEP_96897>, <person/MEP_125045>, <person/MEP_124842>,
     <person/MEP_99650>, <person/MEP_125048>, <person/MEP_34250>, <person/MEP_1179>, <person/MEP_124949>,
@@ -2580,7 +2580,7 @@
     <person/MEP_96996>, <person/MEP_96718>, <person/MEP_134243>, <person/MEP_194658>,
     <person/MEP_125049>, <person/MEP_124794>, <person/MEP_124741>, <person/MEP_124950>,
     <person/MEP_23787>, <person/MEP_124747>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_96836>, <person/MEP_124948>, <person/MEP_96932>,
     <person/MEP_124927>, <person/MEP_124756>, <person/MEP_28508>, <person/MEP_96655>,
     <person/MEP_39724>, <person/MEP_124710>, <person/MEP_185974>, <person/MEP_125003>,
@@ -2612,7 +2612,7 @@
     <person/MEP_124884>, <person/MEP_191377>, <person/MEP_131051>, <person/MEP_124739>,
     <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933>, <person/MEP_28301> .
 
-<eli/dl/iPlMeeting/20190328> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190328> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124831>, <person/MEP_124811>,
     <person/MEP_96897>, <person/MEP_125045>, <person/MEP_124842>, <person/MEP_99650>,
     <person/MEP_125048>, <person/MEP_34250>, <person/MEP_1179>, <person/MEP_124949>, <person/MEP_113959>,
@@ -2754,7 +2754,7 @@
     <person/MEP_191377>, <person/MEP_131051>, <person/MEP_124739>, <person/MEP_185341>,
     <person/MEP_125237>, <person/MEP_96933>, <person/MEP_28301> .
 
-<eli/dl/iPlMeeting/2019043> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/2019043> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124831>, <person/MEP_124797>,
     <person/MEP_96897>, <person/MEP_125045>, <person/MEP_124842>, <person/MEP_125048>,
     <person/MEP_34250>, <person/MEP_1179>, <person/MEP_113959>, <person/MEP_124994>, <person/MEP_113892>,
@@ -2813,7 +2813,7 @@
     <person/MEP_124728>, <person/MEP_124892>, <person/MEP_96884>, <person/MEP_97014>,
     <person/MEP_96771>, <person/MEP_96934>, <person/MEP_96837>, <person/MEP_125024>, <person/MEP_4246>,
     <person/MEP_122885>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_28481>, <person/MEP_124887>, <person/MEP_191693>,
     <person/MEP_1849>, <person/MEP_124695>, <person/MEP_96734>, <person/MEP_96668>, <person/MEP_124953>,
     <person/MEP_135541>, <person/MEP_1852>, <person/MEP_124870>, <person/MEP_28331>, <person/MEP_186884>,
@@ -2892,7 +2892,7 @@
     <person/MEP_124884>, <person/MEP_191377>, <person/MEP_131051>, <person/MEP_124739>,
     <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933>, <person/MEP_28301> .
 
-<eli/dl/iPlMeeting/2019044> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/2019044> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124831>, <person/MEP_124797>,
     <person/MEP_96897>, <person/MEP_125045>, <person/MEP_124842>, <person/MEP_99650>,
     <person/MEP_125048>, <person/MEP_34250>, <person/MEP_1179>, <person/MEP_124949>, <person/MEP_113959>,
@@ -3039,7 +3039,7 @@
     <person/MEP_124739>, <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933>,
     <person/MEP_28301> .
 
-<eli/dl/iPlMeeting/20190415> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190415> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124797>, <person/MEP_124811>,
     <person/MEP_125045>, <person/MEP_99650>, <person/MEP_125048>, <person/MEP_34250>,
     <person/MEP_1179>, <person/MEP_124949>, <person/MEP_113959>, <person/MEP_124994>,
@@ -3048,7 +3048,7 @@
     <person/MEP_28292>, <person/MEP_4319>, <person/MEP_96937>, <person/MEP_97293>, <person/MEP_124744>,
     <person/MEP_96680>, <person/MEP_96877>, <person/MEP_124871>, <person/MEP_124956>,
     <person/MEP_28497>, <person/MEP_124760>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_125002>, <person/MEP_96955>, <person/MEP_125040>,
     <person/MEP_107041>, <person/MEP_124777>, <person/MEP_4507>, <person/MEP_28257>, <person/MEP_96705>,
     <person/MEP_124867>, <person/MEP_135490>, <person/MEP_23868>, <person/MEP_1985>, <person/MEP_124740>,
@@ -3179,7 +3179,7 @@
     <person/MEP_124739>, <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933>,
     <person/MEP_28301> .
 
-<eli/dl/iPlMeeting/20190416> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190416> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124797>, <person/MEP_124811>,
     <person/MEP_125045>, <person/MEP_124842>, <person/MEP_99650>, <person/MEP_125048>,
     <person/MEP_34250>, <person/MEP_1179>, <person/MEP_124949>, <person/MEP_113959>, <person/MEP_124994>,
@@ -3280,7 +3280,7 @@
     <person/MEP_125013>, <person/MEP_96844>, <person/MEP_124784>, <person/MEP_1318>, <person/MEP_96825>,
     <person/MEP_4289>, <person/MEP_124701>, <person/MEP_124723>, <person/MEP_124987>,
     <person/MEP_28165>, <person/MEP_124836>, <person/MEP_107212>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_96805>, <person/MEP_96981>, <person/MEP_124940>,
     <person/MEP_28288>, <person/MEP_30482>, <person/MEP_124897>, <person/MEP_195454>,
     <person/MEP_129073>, <person/MEP_125038>, <person/MEP_96694>, <person/MEP_190099>,
@@ -3339,7 +3339,7 @@
     <person/MEP_124739>, <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933>,
     <person/MEP_28301> .
 
-<eli/dl/iPlMeeting/20190417> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190417> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124797>, <person/MEP_124811>,
     <person/MEP_96897>, <person/MEP_125045>, <person/MEP_124842>, <person/MEP_99650>,
     <person/MEP_125048>, <person/MEP_34250>, <person/MEP_1179>, <person/MEP_124949>, <person/MEP_113959>,
@@ -3494,7 +3494,7 @@
     <person/MEP_124902>, <person/MEP_124739>, <person/MEP_185341>, <person/MEP_125237>,
     <person/MEP_96933>, <person/MEP_28301> .
 
-<eli/dl/iPlMeeting/20190418> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190418> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124797>, <person/MEP_124811>,
     <person/MEP_125045>, <person/MEP_124842>, <person/MEP_99650>, <person/MEP_125048>,
     <person/MEP_34250>, <person/MEP_1179>, <person/MEP_124949>, <person/MEP_113959>, <person/MEP_124994>,
@@ -3516,7 +3516,7 @@
     <person/MEP_124861>, <person/MEP_26851>, <person/MEP_28154>, <person/MEP_125061>,
     <person/MEP_124988>, <person/MEP_124967>, <person/MEP_1892>, <person/MEP_96915>, <person/MEP_191510>,
     <person/MEP_96674>, <person/MEP_2309>, <person/MEP_124856>, <person/MEP_96917>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_125997>, <person/MEP_28238>, <person/MEP_40224>,
     <person/MEP_124930>, <person/MEP_28372>, <person/MEP_132925>, <person/MEP_96809>,
     <person/MEP_124970>, <person/MEP_35135>, <person/MEP_183338>, <person/MEP_124835>,
@@ -3637,7 +3637,7 @@
     <person/MEP_124739>, <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933>,
     <person/MEP_28301> .
 
-<eli/dl/iPlMeeting/2019072> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/2019072> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197490>, <person/MEP_189525>, <person/MEP_124831>,
     <person/MEP_197403>, <person/MEP_198096>, <person/MEP_125045>, <person/MEP_197696>,
     <person/MEP_197836>, <person/MEP_96750>, <person/MEP_197848>, <person/MEP_197644>,
@@ -3756,7 +3756,7 @@
     <person/MEP_125038>, <person/MEP_190099>, <person/MEP_99283>, <person/MEP_124692>,
     <person/MEP_125093>, <person/MEP_28586>, <person/MEP_197620>, <person/MEP_197466>,
     <person/MEP_197420>, <person/MEP_197563>, <person/MEP_197539>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197527>, <person/MEP_197845>, <person/MEP_197754>,
     <person/MEP_197573>, <person/MEP_124872>, <person/MEP_197710>, <person/MEP_99461>,
     <person/MEP_124846>, <person/MEP_112744>, <person/MEP_28224>, <person/MEP_40599>,
@@ -3808,7 +3808,7 @@
     <person/MEP_124713>, <person/MEP_197489>, <person/MEP_124884>, <person/MEP_197621>,
     <person/MEP_124739>, <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/2019073> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/2019073> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197490>, <person/MEP_189525>, <person/MEP_124831>,
     <person/MEP_197826>, <person/MEP_197403>, <person/MEP_198096>, <person/MEP_125045>,
     <person/MEP_197696>, <person/MEP_197836>, <person/MEP_96750>, <person/MEP_197848>,
@@ -3989,7 +3989,7 @@
     <person/MEP_124884>, <person/MEP_197621>, <person/MEP_124739>, <person/MEP_185341>,
     <person/MEP_125237>, <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/2019074> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/2019074> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197490>, <person/MEP_189525>, <person/MEP_124831>,
     <person/MEP_197826>, <person/MEP_197403>, <person/MEP_198096>, <person/MEP_125045>,
     <person/MEP_197696>, <person/MEP_197836>, <person/MEP_96750>, <person/MEP_197848>,
@@ -4006,7 +4006,7 @@
     <person/MEP_124867>, <person/MEP_197679>, <person/MEP_112014>, <person/MEP_23868>,
     <person/MEP_197408>, <person/MEP_197778>, <person/MEP_197478>, <person/MEP_197410>,
     <person/MEP_197648>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197498>, <person/MEP_23788>, <person/MEP_197551>,
     <person/MEP_96922>, <person/MEP_197771>, <person/MEP_124771>, <person/MEP_197435>,
     <person/MEP_197512>, <person/MEP_97198>, <person/MEP_124992>, <person/MEP_197637>,
@@ -4166,7 +4166,7 @@
     <person/MEP_124884>, <person/MEP_197621>, <person/MEP_124739>, <person/MEP_185341>,
     <person/MEP_125237>, <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20190715> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190715> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197490>, <person/MEP_189525>, <person/MEP_124831>,
     <person/MEP_197826>, <person/MEP_198096>, <person/MEP_197696>, <person/MEP_197400>,
     <person/MEP_197836>, <person/MEP_197848>, <person/MEP_197644>, <person/MEP_197746>,
@@ -4252,7 +4252,7 @@
     <person/MEP_197464>, <person/MEP_96844>, <person/MEP_1394>, <person/MEP_4289>, <person/MEP_124701>,
     <person/MEP_197465>, <person/MEP_197802>, <person/MEP_197734>, <person/MEP_124836>,
     <person/MEP_28294>, <person/MEP_107212>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197889>, <person/MEP_197432>, <person/MEP_28288>,
     <person/MEP_197687>, <person/MEP_30482>, <person/MEP_197712>, <person/MEP_129073>,
     <person/MEP_125038>, <person/MEP_124692>, <person/MEP_125093>, <person/MEP_28586>,
@@ -4298,7 +4298,7 @@
     <person/MEP_124713>, <person/MEP_197489>, <person/MEP_124739>, <person/MEP_185341>,
     <person/MEP_125237>, <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20190716> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190716> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197490>, <person/MEP_189525>, <person/MEP_124831>,
     <person/MEP_197826>, <person/MEP_197403>, <person/MEP_198096>, <person/MEP_125045>,
     <person/MEP_197696>, <person/MEP_197400>, <person/MEP_197836>, <person/MEP_96750>,
@@ -4479,7 +4479,7 @@
     <person/MEP_197489>, <person/MEP_124884>, <person/MEP_197621>, <person/MEP_124739>,
     <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20190717> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190717> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197490>, <person/MEP_189525>, <person/MEP_124831>,
     <person/MEP_197826>, <person/MEP_197403>, <person/MEP_198096>, <person/MEP_125045>,
     <person/MEP_197696>, <person/MEP_197400>, <person/MEP_197836>, <person/MEP_96750>,
@@ -4503,7 +4503,7 @@
     <person/MEP_125004>, <person/MEP_197521>, <person/MEP_124814>, <person/MEP_197788>,
     <person/MEP_101039>, <person/MEP_112748>, <person/MEP_187917>, <person/MEP_197668>,
     <person/MEP_197467>, <person/MEP_197577>, <person/MEP_197431>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197446>, <person/MEP_197470>, <person/MEP_197501>,
     <person/MEP_182995>, <person/MEP_197576>, <person/MEP_128483>, <person/MEP_124818>,
     <person/MEP_125012>, <person/MEP_4267>, <person/MEP_188733>, <person/MEP_197739>,
@@ -4656,7 +4656,7 @@
     <person/MEP_124713>, <person/MEP_197489>, <person/MEP_124884>, <person/MEP_197621>,
     <person/MEP_124739>, <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20190718> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190718> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197490>, <person/MEP_189525>, <person/MEP_124831>,
     <person/MEP_197826>, <person/MEP_197403>, <person/MEP_198096>, <person/MEP_125045>,
     <person/MEP_197400>, <person/MEP_197836>, <person/MEP_96750>, <person/MEP_197848>,
@@ -4749,7 +4749,7 @@
     <person/MEP_197597>, <person/MEP_197698>, <person/MEP_124738>, <person/MEP_197686>,
     <person/MEP_197393>, <person/MEP_197635>, <person/MEP_95074>, <person/MEP_23768>,
     <person/MEP_1927>, <person/MEP_197483>, <person/MEP_124808>, <person/MEP_197611>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197494>, <person/MEP_197816>, <person/MEP_197807>,
     <person/MEP_125042>, <person/MEP_197777>, <person/MEP_28399>, <person/MEP_197759>,
     <person/MEP_197721>, <person/MEP_96791>, <person/MEP_124996>, <person/MEP_197458>,
@@ -4823,7 +4823,7 @@
     <person/MEP_124884>, <person/MEP_197621>, <person/MEP_124739>, <person/MEP_185341>,
     <person/MEP_125237>, <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20190916> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190916> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124831>, <person/MEP_197826>,
     <person/MEP_197403>, <person/MEP_198096>, <person/MEP_125045>, <person/MEP_197696>,
     <person/MEP_197400>, <person/MEP_197836>, <person/MEP_96750>, <person/MEP_197848>,
@@ -4980,7 +4980,7 @@
     <person/MEP_197621>, <person/MEP_124739>, <person/MEP_185341>, <person/MEP_125237>,
     <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20190917> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190917> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124831>, <person/MEP_197826>,
     <person/MEP_197403>, <person/MEP_198096>, <person/MEP_125045>, <person/MEP_197696>,
     <person/MEP_197400>, <person/MEP_197836>, <person/MEP_96750>, <person/MEP_197848>,
@@ -5000,7 +5000,7 @@
     <person/MEP_197551>, <person/MEP_96922>, <person/MEP_197771>, <person/MEP_124771>,
     <person/MEP_197435>, <person/MEP_197512>, <person/MEP_97198>, <person/MEP_124992>,
     <person/MEP_197637>, <person/MEP_197564>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_96681>, <person/MEP_197449>, <person/MEP_124712>,
     <person/MEP_125004>, <person/MEP_197521>, <person/MEP_124814>, <person/MEP_197788>,
     <person/MEP_101039>, <person/MEP_112748>, <person/MEP_187917>, <person/MEP_197668>,
@@ -5158,7 +5158,7 @@
     <person/MEP_197489>, <person/MEP_124884>, <person/MEP_197621>, <person/MEP_124739>,
     <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20190918> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190918> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124831>, <person/MEP_197826>,
     <person/MEP_197403>, <person/MEP_198096>, <person/MEP_125045>, <person/MEP_197400>,
     <person/MEP_197836>, <person/MEP_197848>, <person/MEP_197644>, <person/MEP_197746>,
@@ -5246,7 +5246,7 @@
     <person/MEP_124953>, <person/MEP_197415>, <person/MEP_197520>, <person/MEP_197528>,
     <person/MEP_197570>, <person/MEP_197523>, <person/MEP_197406>, <person/MEP_197743>,
     <person/MEP_197546>, <person/MEP_197438>, <person/MEP_23699>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197740>, <person/MEP_197525>, <person/MEP_197530>,
     <person/MEP_197445>, <person/MEP_96829>, <person/MEP_124822>, <person/MEP_130833>,
     <person/MEP_197699>, <person/MEP_118949>, <person/MEP_97968>, <person/MEP_197481>,
@@ -5338,7 +5338,7 @@
     <person/MEP_197621>, <person/MEP_124739>, <person/MEP_185341>, <person/MEP_125237>,
     <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20190919> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20190919> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197490>, <person/MEP_189525>, <person/MEP_124831>,
     <person/MEP_197826>, <person/MEP_197403>, <person/MEP_198096>, <person/MEP_125045>,
     <person/MEP_197400>, <person/MEP_197836>, <person/MEP_96750>, <person/MEP_197848>,
@@ -5494,7 +5494,7 @@
     <person/MEP_5729>, <person/MEP_185771>, <person/MEP_4513>, <person/MEP_125106>, <person/MEP_197870>,
     <person/MEP_130100>, <person/MEP_197502>, <person/MEP_96756>, <person/MEP_125001>,
     <person/MEP_197827>, <person/MEP_197571>, <person/MEP_98582>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_199941>, <person/MEP_124726>, <person/MEP_197844>,
     <person/MEP_197749>, <person/MEP_197678>, <person/MEP_197537>, <person/MEP_197625>,
     <person/MEP_96761>, <person/MEP_125065>, <person/MEP_197552>, <person/MEP_197798>,
@@ -5508,7 +5508,7 @@
     <person/MEP_197489>, <person/MEP_124884>, <person/MEP_197621>, <person/MEP_124739>,
     <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/2019109> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/2019109> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124831>, <person/MEP_197826>,
     <person/MEP_197403>, <person/MEP_125045>, <person/MEP_197696>, <person/MEP_197836>,
     <person/MEP_96750>, <person/MEP_197848>, <person/MEP_197644>, <person/MEP_197400>,
@@ -5646,7 +5646,7 @@
     <person/MEP_124884>, <person/MEP_197621>, <person/MEP_124739>, <person/MEP_185341>,
     <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20191010> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20191010> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_124831>, <person/MEP_197826>,
     <person/MEP_197403>, <person/MEP_198096>, <person/MEP_125045>, <person/MEP_197696>,
     <person/MEP_197836>, <person/MEP_96750>, <person/MEP_197848>, <person/MEP_197644>,
@@ -5741,7 +5741,7 @@
     <person/MEP_24505>, <person/MEP_98341>, <person/MEP_197538>, <person/MEP_197841>,
     <person/MEP_197662>, <person/MEP_118859>, <person/MEP_193292>, <person/MEP_190518>,
     <person/MEP_120478>, <person/MEP_125128>, <person/MEP_197497>, <person/MEP_197824>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_28400>, <person/MEP_197540>, <person/MEP_189391>,
     <person/MEP_197805>, <person/MEP_197811>, <person/MEP_124734>, <person/MEP_197704>,
     <person/MEP_197711>, <person/MEP_4519>, <person/MEP_72779>, <person/MEP_28347>, <person/MEP_124799>,
@@ -5798,7 +5798,7 @@
     <person/MEP_28619>, <person/MEP_124713>, <person/MEP_28615>, <person/MEP_197489>,
     <person/MEP_124884>, <person/MEP_124739>, <person/MEP_185341>, <person/MEP_125237> .
 
-<eli/dl/iPlMeeting/20191021> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20191021> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197490>, <person/MEP_189525>, <person/MEP_124831>,
     <person/MEP_197826>, <person/MEP_197403>, <person/MEP_198096>, <person/MEP_125045>,
     <person/MEP_197836>, <person/MEP_96750>, <person/MEP_197848>, <person/MEP_197644>,
@@ -5959,7 +5959,7 @@
     <person/MEP_124884>, <person/MEP_197621>, <person/MEP_124739>, <person/MEP_185341>,
     <person/MEP_125237>, <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20191022> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20191022> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197490>, <person/MEP_189525>, <person/MEP_124831>,
     <person/MEP_197826>, <person/MEP_197403>, <person/MEP_198096>, <person/MEP_125045>,
     <person/MEP_197696>, <person/MEP_197836>, <person/MEP_96750>, <person/MEP_197848>,
@@ -5990,7 +5990,7 @@
     <person/MEP_197797>, <person/MEP_124986>, <person/MEP_199996>, <person/MEP_96867>,
     <person/MEP_28122>, <person/MEP_197796>, <person/MEP_28219>, <person/MEP_124812>,
     <person/MEP_28390>, <person/MEP_86793>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197786>, <person/MEP_197641>, <person/MEP_197505>,
     <person/MEP_197782>, <person/MEP_197529>, <person/MEP_124708>, <person/MEP_197463>,
     <person/MEP_124861>, <person/MEP_197714>, <person/MEP_197558>, <person/MEP_26837>,
@@ -6137,7 +6137,7 @@
     <person/MEP_197489>, <person/MEP_124884>, <person/MEP_197621>, <person/MEP_124739>,
     <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20191023> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20191023> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197490>, <person/MEP_189525>, <person/MEP_124831>,
     <person/MEP_197826>, <person/MEP_197403>, <person/MEP_198096>, <person/MEP_125045>,
     <person/MEP_197696>, <person/MEP_197836>, <person/MEP_96750>, <person/MEP_197848>,
@@ -6236,7 +6236,7 @@
     <person/MEP_197611>, <person/MEP_197494>, <person/MEP_96709>, <person/MEP_197816>,
     <person/MEP_197807>, <person/MEP_125042>, <person/MEP_96812>, <person/MEP_197777>,
     <person/MEP_28399>, <person/MEP_197759>, <person/MEP_197721>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_96791>, <person/MEP_124996>, <person/MEP_197458>,
     <person/MEP_124806>, <person/MEP_28115>, <person/MEP_111011>, <person/MEP_30490>,
     <person/MEP_197493>, <person/MEP_197719>, <person/MEP_197812>, <person/MEP_197592>,
@@ -6314,7 +6314,7 @@
     <person/MEP_197489>, <person/MEP_124884>, <person/MEP_197621>, <person/MEP_124739>,
     <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20191024> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20191024> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_124831>, <person/MEP_197826>, <person/MEP_197403>,
     <person/MEP_198096>, <person/MEP_125045>, <person/MEP_197696>, <person/MEP_197836>,
     <person/MEP_96750>, <person/MEP_197848>, <person/MEP_197644>, <person/MEP_197400>,
@@ -6478,7 +6478,7 @@
     <person/MEP_197621>, <person/MEP_124739>, <person/MEP_185341>, <person/MEP_125237>,
     <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20191113> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20191113> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197490>, <person/MEP_189525>, <person/MEP_197826>,
     <person/MEP_197403>, <person/MEP_125045>, <person/MEP_197836>, <person/MEP_96750>,
     <person/MEP_197848>, <person/MEP_197644>, <person/MEP_197400>, <person/MEP_197783>,
@@ -6488,7 +6488,7 @@
     <person/MEP_197651>, <person/MEP_197495>, <person/MEP_131580>, <person/MEP_197433>,
     <person/MEP_197808>, <person/MEP_197671>, <person/MEP_197610>, <person/MEP_197779>,
     <person/MEP_124760>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_96955>, <person/MEP_132191>, <person/MEP_197437>,
     <person/MEP_124777>, <person/MEP_197680>, <person/MEP_197496>, <person/MEP_197534>,
     <person/MEP_197658>, <person/MEP_124867>, <person/MEP_197679>, <person/MEP_112014>,
@@ -6623,7 +6623,7 @@
     <person/MEP_197621>, <person/MEP_124739>, <person/MEP_185341>, <person/MEP_125237>,
     <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20191114> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20191114> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197490>, <person/MEP_189525>, <person/MEP_197826>,
     <person/MEP_197403>, <person/MEP_198096>, <person/MEP_125045>, <person/MEP_197696>,
     <person/MEP_197836>, <person/MEP_96750>, <person/MEP_197848>, <person/MEP_197644>,
@@ -6735,7 +6735,7 @@
     <person/MEP_124704>, <person/MEP_197404>, <person/MEP_197765>, <person/MEP_96801>,
     <person/MEP_197820>, <person/MEP_197813>, <person/MEP_197764>, <person/MEP_124850>,
     <person/MEP_188945>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197868>, <person/MEP_197544>, <person/MEP_96903>,
     <person/MEP_197790>, <person/MEP_197681>, <person/MEP_197488>, <person/MEP_197413>,
     <person/MEP_197832>, <person/MEP_4253>, <person/MEP_197787>, <person/MEP_96885>, <person/MEP_96743>,
@@ -6776,7 +6776,7 @@
     <person/MEP_28615>, <person/MEP_197489>, <person/MEP_124884>, <person/MEP_197621>,
     <person/MEP_124739>, <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20191125> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20191125> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197490>, <person/MEP_189525>, <person/MEP_124831>,
     <person/MEP_197826>, <person/MEP_197403>, <person/MEP_198096>, <person/MEP_125045>,
     <person/MEP_197836>, <person/MEP_96750>, <person/MEP_197848>, <person/MEP_197644>,
@@ -6933,7 +6933,7 @@
     <person/MEP_124884>, <person/MEP_197621>, <person/MEP_124739>, <person/MEP_185341>,
     <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20191126> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20191126> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197490>, <person/MEP_189525>, <person/MEP_124831>,
     <person/MEP_197826>, <person/MEP_197403>, <person/MEP_198096>, <person/MEP_125045>,
     <person/MEP_197836>, <person/MEP_96750>, <person/MEP_197848>, <person/MEP_197644>,
@@ -6985,7 +6985,7 @@
     <person/MEP_197649>, <person/MEP_197589>, <person/MEP_124989>, <person/MEP_1917>,
     <person/MEP_96899>, <person/MEP_125046>, <person/MEP_192634>, <person/MEP_124833>,
     <person/MEP_96706>, <person/MEP_197480>, <person/MEP_96810>, <person/MEP_197607>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_4465>, <person/MEP_197720>, <person/MEP_124985>,
     <person/MEP_197419>, <person/MEP_197703>, <person/MEP_28353>, <person/MEP_197414>,
     <person/MEP_197708>, <person/MEP_198490>, <person/MEP_197513>, <person/MEP_197455>,
@@ -7106,7 +7106,7 @@
     <person/MEP_197489>, <person/MEP_124884>, <person/MEP_197621>, <person/MEP_124739>,
     <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20191127> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20191127> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197490>, <person/MEP_189525>, <person/MEP_124831>,
     <person/MEP_197826>, <person/MEP_197403>, <person/MEP_198096>, <person/MEP_125045>,
     <person/MEP_197696>, <person/MEP_197836>, <person/MEP_96750>, <person/MEP_197848>,
@@ -7233,7 +7233,7 @@
     <person/MEP_99461>, <person/MEP_124846>, <person/MEP_112744>, <person/MEP_28224>,
     <person/MEP_40599>, <person/MEP_197619>, <person/MEP_197828>, <person/MEP_197629>,
     <person/MEP_37229>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197590>, <person/MEP_197663>, <person/MEP_197732>,
     <person/MEP_38595>, <person/MEP_124704>, <person/MEP_197404>, <person/MEP_96801>,
     <person/MEP_197700>, <person/MEP_125706>, <person/MEP_197820>, <person/MEP_197764>,
@@ -7284,7 +7284,7 @@
     <person/MEP_124884>, <person/MEP_197621>, <person/MEP_124739>, <person/MEP_185341>,
     <person/MEP_125237>, <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20191128> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20191128> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197490>, <person/MEP_189525>, <person/MEP_124831>,
     <person/MEP_197826>, <person/MEP_197403>, <person/MEP_198096>, <person/MEP_125045>,
     <person/MEP_197696>, <person/MEP_197836>, <person/MEP_96750>, <person/MEP_197848>,
@@ -7450,7 +7450,7 @@
     <person/MEP_197489>, <person/MEP_124884>, <person/MEP_197621>, <person/MEP_124739>,
     <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20191211> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20191211> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_189525>, <person/MEP_197403>, <person/MEP_125045>,
     <person/MEP_197696>, <person/MEP_96750>, <person/MEP_197848>, <person/MEP_197400>,
     <person/MEP_197746>, <person/MEP_197783>, <person/MEP_197448>, <person/MEP_124696>,
@@ -7483,7 +7483,7 @@
     <person/MEP_197643>, <person/MEP_28226>, <person/MEP_97133>, <person/MEP_96852>, <person/MEP_197430>,
     <person/MEP_96842>, <person/MEP_96811>, <person/MEP_197535>, <person/MEP_96911>, <person/MEP_197649>,
     <person/MEP_197589>, <person/MEP_124989>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_1917>, <person/MEP_96899>, <person/MEP_125046>,
     <person/MEP_96706>, <person/MEP_197480>, <person/MEP_197607>, <person/MEP_4465>, <person/MEP_197720>,
     <person/MEP_197419>, <person/MEP_197414>, <person/MEP_198490>, <person/MEP_197513>,
@@ -7566,7 +7566,7 @@
     <person/MEP_28615>, <person/MEP_197489>, <person/MEP_124884>, <person/MEP_124739>,
     <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20191216> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20191216> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197490>, <person/MEP_189525>, <person/MEP_124831>,
     <person/MEP_197826>, <person/MEP_197403>, <person/MEP_198096>, <person/MEP_125045>,
     <person/MEP_197836>, <person/MEP_96750>, <person/MEP_197848>, <person/MEP_197644>,
@@ -7723,7 +7723,7 @@
     <person/MEP_197621>, <person/MEP_124739>, <person/MEP_185341>, <person/MEP_125237>,
     <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20191217> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20191217> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197490>, <person/MEP_189525>, <person/MEP_124831>,
     <person/MEP_197826>, <person/MEP_197403>, <person/MEP_198096>, <person/MEP_125045>,
     <person/MEP_197836>, <person/MEP_96750>, <person/MEP_197848>, <person/MEP_197644>,
@@ -7732,7 +7732,7 @@
     <person/MEP_202073>, <person/MEP_124973>, <person/MEP_124696>, <person/MEP_197587>,
     <person/MEP_124936>, <person/MEP_96808>, <person/MEP_24922>, <person/MEP_197492>,
     <person/MEP_197664>, <person/MEP_197701>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197695>, <person/MEP_28161>, <person/MEP_124766>,
     <person/MEP_197651>, <person/MEP_197781>, <person/MEP_197789>, <person/MEP_197495>,
     <person/MEP_131580>, <person/MEP_197433>, <person/MEP_197684>, <person/MEP_197808>,
@@ -7897,7 +7897,7 @@
     <person/MEP_197621>, <person/MEP_124739>, <person/MEP_185341>, <person/MEP_125237>,
     <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20191218> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20191218> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197490>, <person/MEP_189525>, <person/MEP_124831>,
     <person/MEP_197826>, <person/MEP_197403>, <person/MEP_198096>, <person/MEP_125045>,
     <person/MEP_197836>, <person/MEP_96750>, <person/MEP_197848>, <person/MEP_197644>,
@@ -7979,7 +7979,7 @@
     <person/MEP_197469>, <person/MEP_4246>, <person/MEP_197585>, <person/MEP_197401>,
     <person/MEP_124887>, <person/MEP_191693>, <person/MEP_125068>, <person/MEP_197818>,
     <person/MEP_22858>, <person/MEP_96734>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_96668>, <person/MEP_197519>, <person/MEP_124953>,
     <person/MEP_197415>, <person/MEP_197520>, <person/MEP_197528>, <person/MEP_197570>,
     <person/MEP_197523>, <person/MEP_197406>, <person/MEP_197743>, <person/MEP_197546>,
@@ -8071,7 +8071,7 @@
     <person/MEP_28615>, <person/MEP_124884>, <person/MEP_197621>, <person/MEP_124739>,
     <person/MEP_185341>, <person/MEP_125237>, <person/MEP_96933> .
 
-<eli/dl/iPlMeeting/20191219> rdf:Type eponto:PlenarySitting;
+<eli/dl/iPlMeeting/20191219> a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_197490>, <person/MEP_189525>, <person/MEP_124831>,
     <person/MEP_197826>, <person/MEP_197403>, <person/MEP_198096>, <person/MEP_125045>,
     <person/MEP_197836>, <person/MEP_96750>, <person/MEP_197848>, <person/MEP_197644>,
@@ -8227,7 +8227,7 @@
     <person/MEP_197429>, <person/MEP_124963>, <person/MEP_197566>, <person/MEP_123562>,
     <person/MEP_197515>, <person/MEP_197757>, <person/MEP_197744>, <person/MEP_2323>,
     <person/MEP_197675>, <person/MEP_197769>;
-  rdf:Type eponto:PlenarySitting;
+  a eponto:PlenarySitting;
   eponto:hasParticipant <person/MEP_39725>, <person/MEP_197652>, <person/MEP_197421>,
     <person/MEP_124877>, <person/MEP_185619>, <person/MEP_5392>, <person/MEP_197511>,
     <person/MEP_197581>, <person/MEP_197842>, <person/MEP_197499>, <person/MEP_125067>,
