@@ -44,7 +44,7 @@
       ],
       "subject": {
         "transformation": {
-          "expression": "escape(\n'http://data.europarl.europa.eu/eli/dl/iPlMeeting/'+\nrow.record.cells['PV.AttendanceRegister - Sitting.Date'][0].value.toDate('yyyy-mm-dd').toString('yyyymmd'),'html')",
+          "expression": "escape(\n'http://data.europarl.europa.eu/eli/dl/iPlMeeting/'+\nrow.record.cells['PV.AttendanceRegister - Sitting.Date'][0].value.toDate('yyyy-mm-dd').toString('yyyymmdd'),'html')",
           "language": "grel"
         },
         "valueSource": {

@@ -742,7 +742,7 @@
           "values": [
             {
               "transformation": {
-                "expression": "row.record.cells['_ - activities - _ - hasAnnex - relatedReference - _ - uri'][0].value",
+                "expression": "escape(\n'http://data.europarl.europa.eu/reference'+\nrow.record.cells['_ - activities - _ - hasAnnex - relatedReference - _ - uri'][0].value,'html')",
                 "language": "grel"
               },
               "valueSource": {

@@ -56,7 +56,7 @@
   eponto:hasRollCallVotes <reference/reds:iPlPv_Rcv/PV-9-2019-12-18-RCV>;
   eponto:hasVoteResult <reference/reds:iPlPv_Vot/PV-9-2019-12-18-VOT>;
   eponto:hasLogisticMeeting <reference/reds:iCalPlMeeting/CMTG-PL-2019-011670-01>;
-  eponto:hasAnnex <reds%3AiPlPv_Ann/PV-9-2019-12-18-ANN-1>;
+  eponto:hasAnnex <reference/reds:iPlPv_Ann/PV-9-2019-12-18-ANN-1>;
   eponto:plenarySittingFormsPartOfPlenarySession ep:PlenarySession_20191216-20191219 .
 
 <eli/dl/iPlMeeting/20191217> a eponto:PlenarySitting;
@@ -78,7 +78,7 @@
   eponto:hasRollCallVotes <reference/reds:iPlPv_Rcv/PV-9-2019-12-17-RCV>;
   eponto:hasVoteResult <reference/reds:iPlPv_Vot/PV-9-2019-12-17-VOT>;
   eponto:hasLogisticMeeting <reference/reds:iCalPlMeeting/CMTG-PL-2019-011669-01>;
-  eponto:hasAnnex <reds%3AiPlPv_Ann/PV-9-2019-12-17-ANN-1>;
+  eponto:hasAnnex <reference/reds:iPlPv_Ann/PV-9-2019-12-17-ANN-1>;
   eponto:plenarySittingFormsPartOfPlenarySession ep:PlenarySession_20191216-20191219 .
 
 <eli/dl/iPlMeeting/20191216> a eponto:PlenarySitting;
@@ -191,7 +191,7 @@
   eponto:hasRollCallVotes <reference/reds:iPlPv_Rcv/PV-9-2019-11-26-RCV>;
   eponto:hasVoteResult <reference/reds:iPlPv_Vot/PV-9-2019-11-26-VOT>;
   eponto:hasLogisticMeeting <reference/reds:iCalPlMeeting/CMTG-PL-2019-011665-01>;
-  eponto:hasAnnex <reds%3AiPlPv_Ann/PV-9-2019-11-26-ANN-1>;
+  eponto:hasAnnex <reference/reds:iPlPv_Ann/PV-9-2019-11-26-ANN-1>;
   eponto:plenarySittingFormsPartOfPlenarySession ep:PlenarySession_20191125-20191128 .
 
 <eli/dl/iPlMeeting/20191125> a eponto:PlenarySitting;
@@ -346,7 +346,7 @@
   eponto:hasMinutes <reference/reds:iPlPv_Sit/PV-9-2019-10-21>;
   eponto:hasRollCallVotes <reference/reds:iPlPv_Rcv/PV-9-2019-10-21-RCV>;
   eponto:hasLogisticMeeting <reference/reds:iCalPlMeeting/CMTG-PL-2019-011656-01>;
-  eponto:hasAnnex <reds%3AiPlPv_Ann/PV-9-2019-10-21-ANN-1>;
+  eponto:hasAnnex <reference/reds:iPlPv_Ann/PV-9-2019-10-21-ANN-1>;
   eponto:plenarySittingFormsPartOfPlenarySession ep:PlenarySession_20191021-20191024 .
 
 <eli/dl/iPlMeeting/20191010> a eponto:PlenarySitting;
@@ -463,7 +463,7 @@
   eponto:hasRollCallVotes <reference/reds:iPlPv_Rcv/PV-9-2019-09-17-RCV>;
   eponto:hasVoteResult <reference/reds:iPlPv_Vot/PV-9-2019-09-17-VOT>;
   eponto:hasLogisticMeeting <reference/reds:iCalPlMeeting/CMTG-PL-2019-011629-01>;
-  eponto:hasAnnex <reds%3AiPlPv_Ann/PV-9-2019-09-17-ANN-1>;
+  eponto:hasAnnex <reference/reds:iPlPv_Ann/PV-9-2019-09-17-ANN-1>;
   eponto:plenarySittingFormsPartOfPlenarySession ep:PlenarySession_20190916-20190919 .
 
 <eli/dl/iPlMeeting/20190916> a eponto:PlenarySitting;
@@ -531,7 +531,7 @@
   eponto:hasMinutes <reference/reds:iPlPv_Sit/PV-9-2019-07-17>;
   eponto:hasVoteResult <reference/reds:iPlPv_Vot/PV-9-2019-07-17-VOT>;
   eponto:hasLogisticMeeting <reference/reds:iCalPlMeeting/CMTG-PL-2019-010389-01>;
-  eponto:hasAnnex <reds%3AiPlPv_Ann/PV-9-2019-07-17-ANN-1>;
+  eponto:hasAnnex <reference/reds:iPlPv_Ann/PV-9-2019-07-17-ANN-1>;
   eponto:plenarySittingFormsPartOfPlenarySession ep:PlenarySession_20190715-20190718 .
 
 <eli/dl/iPlMeeting/20190716> a eponto:PlenarySitting;
@@ -551,7 +551,7 @@
   eponto:hasCre <reference/reds:iPlCre_Sit/CRE-9-2019-07-16>;
   eponto:hasMinutes <reference/reds:iPlPv_Sit/PV-9-2019-07-16>;
   eponto:hasLogisticMeeting <reference/reds:iCalPlMeeting/CMTG-PL-2019-010388-01>;
-  eponto:hasAnnex <reds%3AiPlPv_Ann/PV-9-2019-07-16-ANN-1>;
+  eponto:hasAnnex <reference/reds:iPlPv_Ann/PV-9-2019-07-16-ANN-1>;
   eponto:plenarySittingFormsPartOfPlenarySession ep:PlenarySession_20190715-20190718 .
 
 <eli/dl/iPlMeeting/20190715> a eponto:PlenarySitting;
@@ -589,7 +589,7 @@
   eponto:hasCre <reference/reds:iPlCre_Sit/CRE-9-2019-07-04>;
   eponto:hasMinutes <reference/reds:iPlPv_Sit/PV-9-2019-07-04>;
   eponto:hasLogisticMeeting <reference/reds:iCalPlMeeting/CMTG-PL-2019-010385-01>;
-  eponto:hasAnnex <reds%3AiPlPv_Ann/PV-9-2019-07-04-ANN-1>;
+  eponto:hasAnnex <reference/reds:iPlPv_Ann/PV-9-2019-07-04-ANN-1>;
   eponto:plenarySittingFormsPartOfPlenarySession ep:PlenarySession_20190702-20190704 .
 
 <eli/dl/iPlMeetingGroup/20190702-20190704> a eponto:PlenarySession;
@@ -616,7 +616,7 @@
   eponto:hasMinutes <reference/reds:iPlPv_Sit/PV-9-2019-07-03>;
   eponto:hasVoteResult <reference/reds:iPlPv_Vot/PV-9-2019-07-03-VOT>;
   eponto:hasLogisticMeeting <reference/reds:iCalPlMeeting/CMTG-PL-2019-010383-01>;
-  eponto:hasAnnex <reds%3AiPlPv_Ann/PV-9-2019-07-03-ANN-1>;
+  eponto:hasAnnex <reference/reds:iPlPv_Ann/PV-9-2019-07-03-ANN-1>;
   eponto:plenarySittingFormsPartOfPlenarySession ep:PlenarySession_20190702-20190704 .
 
 <eli/dl/iPlMeeting/20190702> a eponto:PlenarySitting;
@@ -713,7 +713,7 @@
   eponto:hasRollCallVotes <reference/reds:iPlPv_Rcv/PV-8-2019-04-16-RCV>;
   eponto:hasVoteResult <reference/reds:iPlPv_Vot/PV-8-2019-04-16-VOT>;
   eponto:hasLogisticMeeting <reference/reds:iCalPlMeeting/CMTG-PL-2019-001389-01>;
-  eponto:hasAnnex <reds%3AiPlPv_Ann/PV-8-2019-04-16-ANN-1>;
+  eponto:hasAnnex <reference/reds:iPlPv_Ann/PV-8-2019-04-16-ANN-1>;
   eponto:plenarySittingFormsPartOfPlenarySession ep:PlenarySession_20190415-20190418 .
 
 <eli/dl/iPlMeeting/20190415> a eponto:PlenarySitting;
@@ -889,7 +889,7 @@
   eponto:hasRollCallVotes <reference/reds:iPlPv_Rcv/PV-8-2019-03-14-RCV>;
   eponto:hasVoteResult <reference/reds:iPlPv_Vot/PV-8-2019-03-14-VOT>;
   eponto:hasLogisticMeeting <reference/reds:iCalPlMeeting/CMTG-PL-2019-001348-01>;
-  eponto:hasAnnex <reds%3AiPlPv_Ann/PV-8-2019-03-14-ANN-1>;
+  eponto:hasAnnex <reference/reds:iPlPv_Ann/PV-8-2019-03-14-ANN-1>;
   eponto:plenarySittingFormsPartOfPlenarySession ep:PlenarySession_20190311-20190314 .
 
 <eli/dl/iPlMeetingGroup/20190311-20190314> a eponto:PlenarySession;
@@ -1068,7 +1068,7 @@
   eponto:hasRollCallVotes <reference/reds:iPlPv_Rcv/PV-8-2019-01-31-RCV>;
   eponto:hasVoteResult <reference/reds:iPlPv_Vot/PV-8-2019-01-31-VOT>;
   eponto:hasLogisticMeeting <reference/reds:iCalPlMeeting/CMTG-PL-2019-001548-01>;
-  eponto:hasAnnex <reds%3AiPlPv_Ann/PV-8-2019-01-31-ANN-1>;
+  eponto:hasAnnex <reference/reds:iPlPv_Ann/PV-8-2019-01-31-ANN-1>;
   eponto:plenarySittingFormsPartOfPlenarySession ep:PlenarySession_20190130-20190131 .
 
 <eli/dl/iPlMeetingGroup/20190130-20190131> a eponto:PlenarySession;
