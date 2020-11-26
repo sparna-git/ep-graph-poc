@@ -1,5 +1,8 @@
 # Regenerate PoliticalGroup CSV file
 
+PREFIX eponto: <http://data.europarl.europa.eu/ontology/ep#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT 
 	?uri
 	(STR(?activatedDate_raw) AS ?activatedDate)
@@ -36,11 +39,11 @@ SELECT
 
 WHERE {
 	
-	?uri a org:Organization .
-	?uri ep:activatedDate ?activatedDate_raw .
-	?uri ep:startDate ?startDate_raw .
-	?uri ep:endDate ?endDate_raw .
-	?uri ep:orderNumber ?orderNumber_raw .
+	?uri a eponto:PoliticalGroup .
+	?uri eponto:activatedDate ?activatedDate_raw .
+	?uri eponto:startDate ?startDate_raw .
+	?uri eponto:endDate ?endDate_raw .
+	?uri eponto:orderNumber ?orderNumber_raw .
 	?uri skos:notation ?notation .
 
 	OPTIONAL { ?uri rdfs:label ?label . }

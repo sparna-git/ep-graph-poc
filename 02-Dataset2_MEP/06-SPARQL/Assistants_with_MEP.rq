@@ -1,4 +1,8 @@
 
+PREFIX ep: <http://data.europarl.europa.eu/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX eponto: <http://data.europarl.europa.eu/ontology/ep#>
+PREFIX org: <http://www.w3.org/ns/org#>
 
 SELECT 
 	?Assistant
@@ -12,7 +16,7 @@ WHERE {
 	?Assistant a ep:Assistant .	
     ?Assistant foaf:familyName ?familyName .
     ?Assistant foaf:firstName ?firstName .
-    ?Assistant ep:assistantType ?assistantType .
+    ?Assistant eponto:assistantType ?assistantType .
     ?Assistant org:hasMembership ?membership .
 	?membership org:organization ?MEP	.    
     ?MEP foaf:familyName ?MEP_familyName .

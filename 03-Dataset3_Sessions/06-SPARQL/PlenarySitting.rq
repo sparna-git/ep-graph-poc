@@ -1,17 +1,21 @@
-base <http://data.europarl.europa.eu/>
-PREFIX mapper: <http://www.ontotext.com/mapper/>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX eponto: <http://data.europarl.europa.eu/ontology/ep#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX epsh: <http://data.europarl.europa.eu/shapes#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX org: <http://www.w3.org/ns/org#>
-PREFIX ep: <http://data.europarl.europa.eu/>
 SELECT 
    	?PlenarySitting_uri
-   	?PlenarySittingLabel
+   	?label
+	?datePlenarySitting
+	?session
+
+	?adoptedTextList
+	?agenda
+	?attendanceList
+	?cre
+	?minutes
+	?rollCallVotes
+	?voteResult
+	?logisticMeeting
+	?annex
 
 	(STR(?prefLabel_en) AS ?preferred_label_en)
 	(STR(?prefLabel_fr) AS ?preferred_label_fr)
@@ -37,21 +41,24 @@ SELECT
 	(STR(?prefLabel_fi) AS ?preferred_label_fi)
     (STR(?prefLabel_sv) AS ?preferred_label_sv)
 
-	?datePlenarySittin
-	?hasAdoptetextlist
-	?hasAgenda
-	?hasAttendancelist
-	?hasCre
-	?hasMinutes
-	?hasRollCallVotes
-	?hasVoteResult
-	?hasLogisticMeeting
-	?hasAnnex
-	?formsPart
 
 WHERE {
-    ?PlenarySitting_uri a ep:PlenarySitting .
-    ?PlenarySitting_uri rdfs:label ?PlenarySittingLabel .
+    ?PlenarySitting_uri a eponto:PlenarySitting .
+    ?PlenarySitting_uri rdfs:label ?label .
+
+    ?PlenarySitting_uri eponto:datePlenarySitting ?datePlenarySitting .
+    ?PlenarySitting_uri eponto:plenarySittingFormsPartOfPlenarySession ?session .
+
+	OPTIONAL { ?PlenarySitting_uri eponto:hasAdoptedTextList ?adoptedTextList . }
+	OPTIONAL { ?PlenarySitting_uri eponto:hasAgenda ?agenda . }
+	OPTIONAL { ?PlenarySitting_uri eponto:hasAttendanceList ?attendanceList . }
+	OPTIONAL { ?PlenarySitting_uri eponto:hasCre ?cre . }
+	OPTIONAL { ?PlenarySitting_uri eponto:hasMinutes ?minutes . }
+	OPTIONAL { ?PlenarySitting_uri eponto:hasRollCallVotes ?rollCallVotes . }
+	OPTIONAL { ?PlenarySitting_uri eponto:hasVoteResult ?voteResult . }
+	OPTIONAL { ?PlenarySitting_uri eponto:hasLogisticMeeting ?logisticMeeting . }
+	OPTIONAL { ?PlenarySitting_uri eponto:hasAnnex ?annex . }
+
 
     #Preflabel
 
@@ -77,18 +84,6 @@ WHERE {
     OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_sk FILTER(lang(?prefLabel_sk) = "sk")}
     OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_sl FILTER(lang(?prefLabel_sl) = "sl")}
     OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_fi FILTER(lang(?prefLabel_fi) = "fi")}
-    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_sv FILTER(lang(?prefLabel_sv) = "sv")}
-
-    ?PlenarySitting_uri ep:datePlenarySitting ?datePlenarySittin .
-	?PlenarySitting_uri ep:hasAdoptedTextList ?hasAdoptetextlist .
-	?PlenarySitting_uri ep:hasAgenda ?hasAgenda .
-	?PlenarySitting_uri ep:hasAttendanceList ?hasAttendancelist .
-	?PlenarySitting_uri ep:hasCre ?hasCre .
-	?PlenarySitting_uri ep:hasMinutes ?hasMinutes .
-	?PlenarySitting_uri ep:hasRollCallVotes ?hasRollCallVotes .
-	?PlenarySitting_uri ep:hasVoteResult ?hasVoteResult .
-	?PlenarySitting_uri ep:hasLogisticMeeting ?hasLogisticMeeting .
-	?PlenarySitting_uri ep:hasAnnex ?hasAnnex .
-	?PlenarySitting_uri ep:formsPartOf ?formsPart	
+    OPTIONAL { ?PlenarySitting_uri skos:prefLabel ?prefLabel_sv FILTER(lang(?prefLabel_sv) = "sv")}	
 }
-ORDER BY ?PlenarySitting_uri
+ORDER BY ?datePlenarySitting

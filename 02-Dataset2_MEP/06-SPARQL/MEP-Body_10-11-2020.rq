@@ -1,26 +1,30 @@
-
+PREFIX eponto: <http://data.europarl.europa.eu/ontology/ep#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX org: <http://www.w3.org/ns/org#>
 
 SELECT 
-	?MEP_uri
-	?MEP_firstName
-	?MEP_familyName
-	?MEP_persId
-	?Civility_uri
-	?Gender_uri
-	?Status_uri
-	?hasBirthCountry_uri
-	?hasPoliticalGroup_uri
+	?MEP
+	?firstName
+	?familyName
+	?persId
+	?Civility
+	?Gender
+	?Status
+	?birthCountry
+	?politicalGroup
 
 WHERE {
-	?MEP_uri a ep:MEP .
-	?MEP_uri foaf:firstName ?MEP_firstName .
-	?MEP_uri foaf:familyName ?MEP_familyName .
-	?MEP_uri skos:notation ?MEP_persId .
-	?MEP_uri ep:Civility ?Civility_uri .
-	?MEP_uri ep:Gender ?Gender_uri .
-	?MEP_uri ep:Status ?Status_uri .
-	?MEP_uri ep:hasBirthCountry ?hasBirthCountry_uri .
-	?MEP_uri org:hasMembership ?membership .
-	?membership org:organization ?hasPoliticalGroup_uri	.
+	?MEP a eponto:MEP .
+	?MEP foaf:firstName ?firstName .
+	?MEP foaf:familyName ?familyName .
+	?MEP skos:notation ?persId .
+	?MEP eponto:Civility/rdfs:label ?Civility .
+	?MEP eponto:Gender/rdfs:label ?Gender .
+	?MEP eponto:Status/rdfs:label ?Status .
+	?MEP eponto:hasBirthCountry/rdfs:label ?birthCountry .
+	?MEP org:hasMembership ?membership .
+	?membership org:organization ?politicalGroup	.
 }
-ORDER BY ?MEP_uri
+ORDER BY ?MEP
