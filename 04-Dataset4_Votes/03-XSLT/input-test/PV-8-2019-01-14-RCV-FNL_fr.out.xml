@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:eponto="http://data.europarl.europa.eu/ontology/ep#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <eponto:Vote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1">
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6089"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6601"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6098"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6041"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6626"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6631"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6644"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6510"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6100"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6722"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6281"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6181"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6710"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5864"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6667"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6446"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6494"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6695"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6593"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6741"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6630"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6629"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6123"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6610"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6228"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6598"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5237"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5886"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6693"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6076"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6023"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6628"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6369"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5909"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6653"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5992"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6310"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6643"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5596"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6727"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6641"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5837"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6655"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6444"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6321"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6030"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6678"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6676"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6469"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6279"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6553"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6378"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5173"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6449"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5465"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6421"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6489"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6083"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6458"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6437"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6763"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6012"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6620"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6769"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_3827"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5495"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5497"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5425"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6688"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6720"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6107"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5261"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6745"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5870"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6624"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6009"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_3756"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6326"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6571"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6508"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6739"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6459"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6689"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_3823"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6477"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5860"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6521"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6380"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5314"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6565"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6351"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6016"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6352"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5483"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6323"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5648"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5894"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6609"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6526"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6136"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6371"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5813"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6357"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5713"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6438"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6375"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6008"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6093"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6427"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5624"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6282"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5859"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_4990"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6582"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6235"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6011"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6735"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6434"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5957"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6373"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6455"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5358"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6730"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6040"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6324"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6703"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6775"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5353"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_4535"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6350"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5838"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5902"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6732"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6453"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6552"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6529"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6560"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6738"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_4983"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6204"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6549"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6551"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6757"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6407"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_1060"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5330"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6338"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6740"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5857"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_4676"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6056"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6154"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6337"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6729"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6719"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6712"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6516"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6452"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6539"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6358"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6460"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6531"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6461"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6530"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5453"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5507"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_1230"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6536"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6512"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6464"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6682"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5892"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6466"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6711"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6515"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6559"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6577"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6384"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6524"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6557"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6482"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6412"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6179"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5010"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6387"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6699"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6389"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6134"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6392"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6414"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5450"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5039"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5044"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6106"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6669"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6668"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6670"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6585"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_4742"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6191"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5377"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5885"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6343"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6613"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6535"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5928"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5341"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5236"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6273"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5921"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6345"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5350"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6342"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_3833"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5903"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_1508"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_4659"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5280"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6615"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6780"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6441"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5342"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_4032"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5109"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5018"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6346"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5945"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6666"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5542"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5855"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_3759"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6527"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5403"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5840"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5727"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6363"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6592"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5105"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6442"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5517"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6761"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5646"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5985"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6096"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5518"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6366"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5732"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6436"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_4712"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6332"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5407"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5033"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6537"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6010"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6224"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6750"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6365"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_4596"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_3991"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6698"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6370"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6619"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5265"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6636"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5345"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5111"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5781"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6341"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5418"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6333"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5778"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6680"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6672"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5143"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5949"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6681"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6007"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6706"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5930"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6356"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5934"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5947"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5782"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6532"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6094"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5420"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6651"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6650"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6647"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6014"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6652"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6424"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6130"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6103"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6707"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6753"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6339"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6340"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5385"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6066"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6748"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6590"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6584"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6563"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6541"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_1380"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6768"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_3800"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6679"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5809"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6684"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_5094"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6418"/>
+      </eponto:voteConsistsOfMEPVote>
+      <eponto:voteConsistsOfMEPVote>
+         <eponto:MEPVote rdf:about="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114/1/MEP_6764"/>
+      </eponto:voteConsistsOfMEPVote>
+   </eponto:Vote>
+</rdf:RDF>
