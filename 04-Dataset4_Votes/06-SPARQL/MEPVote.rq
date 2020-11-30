@@ -1,0 +1,30 @@
+PREFIX eponto: <http://data.europarl.europa.eu/ontology/ep#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT 
+    ?VoteDate
+    ?VoteIdentifier
+    ?mepFirstName
+    ?mepFamilyName
+    ?PoliticalGroup
+    (STR(?PositionEn) AS ?Position)
+WHERE {
+    ?MEPVote a eponto:MEPVote .
+    
+    ?MEPVote eponto:MEPVoteFormsPartOfVote ?Vote .
+    ?Vote eponto:voteIdentifier ?VoteIdentifier .
+    ?Vote eponto:voteFormsPartOfPlenarySitting ?ps .
+    ?ps eponto:datePlenarySitting ?VoteDate .
+
+    ?MEPVote eponto:voteByMEP ?MEP .
+    ?MEP foaf:firstName ?mepFirstName .
+    ?MEP foaf:familyName ?mepFamilyName .
+    
+    ?MEPVote eponto:voteFromPoliticalGroup ?pg .
+    ?pg rdfs:label ?PoliticalGroup .
+    
+    ?MEPVote eponto:votePosition ?p .
+    ?p skos:prefLabel ?PositionEn .
+}
+ORDER BY ?mepFamilyName

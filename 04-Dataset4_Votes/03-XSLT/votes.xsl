@@ -42,6 +42,8 @@
 			
 			<skos:prefLabel xml:lang="fr"><xsl:value-of select="RollCallVote.Description.Text" /></skos:prefLabel>
 			
+			<eponto:voteIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select="count(preceding-sibling::RollCallVote.Result)+1" /></eponto:voteIdentifier>
+			
 			<xsl:apply-templates select="
 				Result.For/Result.PoliticalGroup.List/PoliticalGroup.Member.Name
 				|
@@ -55,6 +57,8 @@
 				|
 				Result.Abstention/Result.PoliticalGroup.List/Member.Name
 			"></xsl:apply-templates>
+			
+			<eponto:voteFormsPartOfPlenarySitting rdf:resource="{eponto:URI_PlenarySitting(translate(/PV.RollCallVoteResults/@Sitting.Date, '-', ''))}" />
 			
 		</eponto:Vote>
 	</xsl:template>
@@ -111,6 +115,11 @@
 		<xsl:param name="date" />
 		<xsl:param name="number" />
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/eli/dl/iPlMeeting/', $date, '/', $number)" />
+	</xsl:function>
+
+	<xsl:function name="eponto:URI_PlenarySitting">
+		<xsl:param name="date" />
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/eli/dl/iPlMeeting/', $date)" />
 	</xsl:function>
 	
 	<xsl:function name="eponto:URI_MEPVote">

@@ -1,0 +1,45 @@
+PREFIX eponto: <http://data.europarl.europa.eu/ontology/ep#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT 
+    ?Vote
+   	(STR(?D) AS ?Date)
+   	(xsd:integer(?VoteNumberString) AS ?VoteNumber)
+	(STR(?VoteTitleFr) AS ?VoteTitle)
+    (STR(?For) AS ?ResultFor)
+    (STR(?Against) AS ?ResultAgainst)
+    (STR(?Abstention) AS ?ResultAbstention)
+
+WHERE {
+    ?Vote a eponto:Vote .
+    ?Vote eponto:voteFormsPartOfPlenarySitting ?PlenarySitting .
+    ?PlenarySitting eponto:datePlenarySitting ?D .
+    ?Vote skos:prefLabel ?VoteTitleFr .
+    ?Vote eponto:voteIdentifier ?VoteNumberString .
+    
+    {
+        SELECT (COUNT(?mepvote) AS ?For) ?Vote
+        WHERE {
+            ?mepvote eponto:MEPVoteFormsPartOfVote ?Vote .
+            ?mepvote eponto:votePosition <http://data.europarl.europa.eu/authority/votePosition/for> .
+        } GROUP BY ?Vote
+    }
+    
+    {
+        SELECT (COUNT(?mepvote) AS ?Against) ?Vote
+        WHERE {
+            ?mepvote eponto:MEPVoteFormsPartOfVote ?Vote .
+            ?mepvote eponto:votePosition <http://data.europarl.europa.eu/authority/votePosition/against> .
+        } GROUP BY ?Vote
+    }
+
+    {
+        SELECT (COUNT(?mepvote) AS ?Abstention) ?Vote
+        WHERE {
+            ?mepvote eponto:MEPVoteFormsPartOfVote ?Vote .
+            ?mepvote eponto:votePosition <http://data.europarl.europa.eu/authority/votePosition/abstention> .
+        } GROUP BY ?Vote
+    }
+
+}
+ORDER BY ?Date ?VoteNumber
