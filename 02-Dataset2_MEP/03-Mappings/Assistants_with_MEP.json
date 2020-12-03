@@ -98,7 +98,7 @@
           "values": [
             {
               "transformation": {
-                "expression": "'http://data.europarl.europa.eu/person/'+\ntrim(cells[trim('ep:Assistant.ep:uri')].value.split(':')[1])+'/membership/'+\n(row.index+1)",
+                "expression": "escape('http://data.europarl.europa.eu/person/'+\ntrim(cells[trim('ep:Assistant.ep:uri')].value.split(':')[1])+'/membership/'+\ncells['Id_seq_membership_MEP'].value,'html')",
                 "language": "grel"
               },
               "valueSource": {
