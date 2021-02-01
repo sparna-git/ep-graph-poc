@@ -23,7 +23,8 @@ epsh:MEP a sh:NodeShape ;
 	sh:targetClass eponto:MEP ;
 	sh:sparql [
 		a sh:SPARQLConstraint ;
-		sh:message "Members cannot belong to more than 1 political group" ;
+		skos:definition "Members cannot belong to more than 1 political group" ;
+		sh:message "MEP belongs to more than one PoliticalGroup" ;
 		sh:select """
 					PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 					prefix ep: <http://data.europarl.europa.eu/> 

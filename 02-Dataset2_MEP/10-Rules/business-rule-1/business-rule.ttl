@@ -23,6 +23,7 @@ epsh:PoliticalGroup a sh:NodeShape ;
 	sh:targetClass eponto:PoliticalGroup ;
 	sh:sparql [
 		a sh:SPARQLConstraint ;
+		skos:definition "A political group should have at least 23 MEPs. There are members who belong to no political group NI (Non-attached members). “NI” is labeled as “political group” in the dataset." ;
 		sh:message "Political group has less than 23 MEPs" ;
 		sh:select """
 		prefix ep: <http://data.europarl.europa.eu/> 
