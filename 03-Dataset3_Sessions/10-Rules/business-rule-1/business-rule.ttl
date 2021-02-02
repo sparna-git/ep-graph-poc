@@ -1,3 +1,4 @@
+# The starting and ending date of each vote must be situated within the session duration. 
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
@@ -19,26 +20,25 @@
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-epsh:Vote a sh:NodeShape ;
-sh:targetClass eponto:Vote ;
+epsh:PlenarySitting a sh:NodeShape ;
+sh:targetClass eponto:PlenarySitting ;
 sh:sparql [
 		a sh:SPARQLConstraint ;
-		sh:message "The same MEP can’t vote more than once for the same vote." ;
+		skos:definition "The starting and ending date of each vote must be situated within the session duration." ;
+		sh:message "PlenarySitting date is not within the PlenarySession date boundaries" ;
 		sh:select """
-				PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-				prefix ep: <http://data.europarl.europa.eu/> 
-				prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> 
-				prefix org: <http://www.w3.org/ns/org#>
-				prefix skos: <http://www.w3.org/2004/02/skos/core#>
-
-				SELECT $this ?value
-				WHERE {
-				    $this eponto:voteConsistsOfMEPVote ?MEPVote .
-				    $this rdf:type eponto:Vote .
-				    ?MEPVote rdf:type eponto:MEPVote .
-				    ?MEPVote eponto:voteByMEP ?value
-				}
-				GROUP BY $this ?value
-				HAVING (COUNT(?value) > 1)			
-				"""	;			
-				] .
+			PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+			prefix ep: <http://data.europarl.europa.eu/> 
+			prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> 
+			prefix org: <http://www.w3.org/ns/org#>
+			prefix skos: <http://www.w3.org/2004/02/skos/core#>
+			SELECT $this
+			WHERE {
+			      $this eponto:datePlenarySitting ?value .
+				  $this eponto:plenarySittingFormsPartOfPlenarySession ?PlenarySession .
+				  ?PlenarySession eponto:datePlenaryWeekBegin ?Begin_Date .
+				  ?PlenarySession eponto:datePlenaryWeekEnd ?End_Date .
+				  ?PlenarySession rdf:type eponto:PlenarySession .
+				  FILTER (?value < ?Begin_Date || ?value > ?End_Date)				  
+			}
+			"""  ] .

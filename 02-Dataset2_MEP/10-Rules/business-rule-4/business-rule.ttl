@@ -19,30 +19,29 @@
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-epsh:PoliticalGroup a sh:NodeShape ;
-	sh:targetClass eponto:PoliticalGroup ;
+epsh:MEP a sh:NodeShape ;
+	sh:targetClass eponto:MEP ;
 	sh:sparql [
 		a sh:SPARQLConstraint ;
-		skos:definition "A political group should have at least 23 MEPs. There are members who belong to no political group NI (Non-attached members). “NI” is labeled as “political group” in the dataset." ;
-		sh:message "Political group has less than 23 MEPs" ;
+		skos:definition "Members cannot belong to more than 1 political group" ;
+		sh:message "MEP belongs to more than one PoliticalGroup" ;
 		sh:select """
-		prefix ep: <http://data.europarl.europa.eu/> 
-		prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> 
-		prefix org: <http://www.w3.org/ns/org#>
-		prefix skos: <http://www.w3.org/2004/02/skos/core#>
-		SELECT $this
-		WHERE {
-		    $this a eponto:PoliticalGroup .
-		    $this skos:notation ?notation .
-		    FILTER(?notation != 'NI') .
-		    OPTIONAL {
-		    	?MEP a eponto:MEP .
-		    	?MEP org:hasMembership ?MEMBERSHIP .
-		    	?MEMBERSHIP org:organization $this .
-		    }
-		}
-		GROUP BY $this
-		HAVING (COUNT(?MEP) < 23)
-		"""  
-	]
-.
+					PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+					prefix ep: <http://data.europarl.europa.eu/> 
+					prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> 
+					prefix org: <http://www.w3.org/ns/org#>
+					prefix skos: <http://www.w3.org/2004/02/skos/core#>
+
+					SELECT $this
+					WHERE {
+					     $this rdf:type eponto:MEP .
+					     $this org:hasMembership ?MEMBERSHIP .
+					     ?MEMBERSHIP org:organization ?POLITICALGROUP .
+					     ?POLITICALGROUP rdf:type eponto:PoliticalGroup .
+					}
+					GROUP BY $this
+					HAVING (COUNT(?POLITICALGROUP) > 1) 
+			"""
+			] .
+
+

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>SHACL validation report</title>
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Datatable style with bootstrap -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+	  
+	  <!-- JQuery -->
+	  <script
+				  src="http://code.jquery.com/jquery-3.4.1.slim.min.js"
+				  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+				  crossorigin="anonymous"></script>
+	  
+	<!-- Datatables -->
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	<!-- Datatable with bootstrap -->
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+	
+	<!-- fontawesome -->
+	<link href="fa/css/all.min.css" rel="stylesheet"> <!--load all styles -->
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row justify-content-center" style="padding-top:1em;">
+			<div class="col-10">
+				
+<style type="text/css">
+	.report-section {
+		margin-top: 2em;
+	}
+	
+	.table-outer {
+		height:250px;
+		overflow:hidden;
+	}
+	
+	.table-outer.open {
+		height:unset;
+		overflow:visible;
+	}
+</style>
+
+<div class="row  justify-content-center">
+<div class="col">
+
+<div class="report-header card">
+          <div class="card-header bg-danger">
+	      	<h3>
+
+	2 Violations
+	
+
+
+	      	</h3>
+          </div>
+          <div class="card-body">
+            <ul style="list-style-type: none;">
+            		<li>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	2 <em>"Vote has more MEPVote that number of active MEP (704)"</em>
+		(in shape ep:shapes#Vote)
+	&nbsp;<small><a href="#-706 131 010">see details</a></small>
+
+</li>
+            </ul>
+          </div>
+</div><!-- /.report-header -->
+
+<div class="report-body">
+	<div id="-706 131 010" class="report-section">
+		<h3>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	2 <em>"Vote has more MEPVote that number of active MEP (704)"</em>
+
+</h3>
+
+		<div class="report-section-card card">
+          <div class="card-header">
+			<ul>
+				<li>Shape : ep:shapes#Vote</li>
+				<li>Constraint : sh:SPARQLConstraintComponent</li>
+			</ul>
+          </div>
+          <div class="card-body">
+        	     <table class="table table-borderless table-sm">
+                    <thead>
+                      <tr>
+                        <th>Focus node</th>
+                        <th>Property or path</th>
+                        <th>Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/5">ep:eli/dl/iPlMeeting/20190918/5</span></td>
+                            <td>&nbsp;</td>
+                            <td>ep:eli/dl/iPlMeeting/20190918/5</td>
+                          </tr>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/8">ep:eli/dl/iPlMeeting/20190918/8</span></td>
+                            <td>&nbsp;</td>
+                            <td>ep:eli/dl/iPlMeeting/20190918/8</td>
+                          </tr>
+                    </tbody>
+                </table>
+          </div>
+		</div><!-- /.report-section -->
+	</div>
+</div> <!-- /.report-body -->
+
+</div>
+</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	$(document).ready(function() {
+    	var table = $('#resultTable').DataTable();
+
+    	// add the toggle link behavior
+        $( ".toggleTableLink" ).click(function(event) {
+    		$(this).parent().prev(".table-outer").toggleClass("open");
+    		return false;
+        });
+	});
+</script>
+</html>

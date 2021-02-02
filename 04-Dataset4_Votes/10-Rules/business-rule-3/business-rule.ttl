@@ -20,28 +20,36 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 epsh:Vote a sh:NodeShape ;
-sh:targetClass eponto:MEPVote ;
+sh:targetClass eponto:Vote ;
 sh:sparql [
 		a sh:SPARQLConstraint ;
-		sh:message "MEPs can not vote pro or against if they are not in the attendance list. " ;
+		skos:definition "The number of votes should not be higher than the number of active MEPs. " ;
+		sh:message "Vote has more MEPVote that number of active MEP ({$?nbActiveMep})" ;
 		sh:select """
 				PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 				prefix ep: <http://data.europarl.europa.eu/> 
 				prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> 
 				prefix org: <http://www.w3.org/ns/org#>
-				prefix skos: <http://www.w3.org/2004/02/skos/core#>
-				SELECT $this
+				PREFIX scheme: <http://data.europarl.europa.eu/authority/>
+				PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+				SELECT $this ?nbMepVote (COUNT(?activeMep) AS ?nbActiveMep)
 				WHERE {
-				    $this eponto:voteByMEP ?value .
-				    $this eponto:votePosition ?Vote_Position .
-				    $this eponto:MEPVoteFormsPartOfVote ?Vote .
-				    ?Vote rdf:type eponto:Vote .
-				    ?Vote eponto:voteFormsPartOfPlenarySitting ?VoteParticipantPlenarySitting .
-				    ?VoteParticipantPlenarySitting rdf:type eponto:PlenarySitting .
-				    FILTER NOT EXISTS {
-				    	?VoteParticipantPlenarySitting eponto:hasParticipant ?value .
+				    # Subquery count number of MEP votes for each vote
+				    {
+				        SELECT $this (COUNT(?mepVotes) AS ?nbMepVote)
+				        WHERE {
+				            $this a eponto:Vote .
+				    		$this eponto:voteConsistsOfMEPVote ?mepVotes .
+				        }
+				        GROUP BY $this
 				    }
-				    FILTER (?Vote_Position IN (<http://data.europarl.europa.eu/authority/votePosition/against>,<http://data.europarl.europa.eu/authority/votePosition/for>))
+
+				    # main query counts the number of active MEP
+				    ?activeMep a eponto:MEP .
+				    ?activeMep eponto:Status <http://data.europarl.europa.eu/authority/conceptStatus/ACTIVE> .
 				}
-				"""	;			
-				] .
+				GROUP BY $this ?nbMepVote
+				# Keep the problematic votes where number of MEP votes is higher than
+				# total number of active MEPs
+				HAVING(?nbMepVote > ?nbActiveMep)
+				    """  ] .

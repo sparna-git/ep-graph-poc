@@ -19,30 +19,25 @@
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-epsh:PoliticalGroup a sh:NodeShape ;
-	sh:targetClass eponto:PoliticalGroup ;
-	sh:sparql [
+epsh:MEPVote a sh:NodeShape ;
+sh:targetClass eponto:MEPVote ;
+sh:sparql [
 		a sh:SPARQLConstraint ;
-		skos:definition "A political group should have at least 23 MEPs. There are members who belong to no political group NI (Non-attached members). “NI” is labeled as “political group” in the dataset." ;
-		sh:message "Political group has less than 23 MEPs" ;
+		skos:definition "Only active members can vote. " ;
+		sh:message "Found an MEP Vote from an MEP that is not active" ;
 		sh:select """
-		prefix ep: <http://data.europarl.europa.eu/> 
-		prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> 
-		prefix org: <http://www.w3.org/ns/org#>
-		prefix skos: <http://www.w3.org/2004/02/skos/core#>
-		SELECT $this
-		WHERE {
-		    $this a eponto:PoliticalGroup .
-		    $this skos:notation ?notation .
-		    FILTER(?notation != 'NI') .
-		    OPTIONAL {
-		    	?MEP a eponto:MEP .
-		    	?MEP org:hasMembership ?MEMBERSHIP .
-		    	?MEMBERSHIP org:organization $this .
-		    }
-		}
-		GROUP BY $this
-		HAVING (COUNT(?MEP) < 23)
-		"""  
-	]
-.
+				PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+				prefix ep: <http://data.europarl.europa.eu/> 
+				prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> 
+				prefix org: <http://www.w3.org/ns/org#>
+				PREFIX scheme: <http://data.europarl.europa.eu/authority/>
+				PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+				SELECT $this
+				WHERE {
+				    $this a eponto:MEPVote .
+				    $this eponto:voteByMEP ?MEP .
+				    ?MEP a eponto:MEP .
+				    ?MEP eponto:Status ?MEP_Status .
+				    FILTER (?MEP_Status != <http://data.europarl.europa.eu/authority/conceptStatus/ACTIVE>)
+				}
+    """  ] .

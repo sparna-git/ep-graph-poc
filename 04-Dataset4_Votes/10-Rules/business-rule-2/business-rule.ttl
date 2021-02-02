@@ -20,32 +20,29 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 epsh:Vote a sh:NodeShape ;
-sh:targetClass eponto:Vote ;
+sh:targetClass eponto:MEPVote ;
 sh:sparql [
 		a sh:SPARQLConstraint ;
-		sh:message "The number of votes should not be higher than the number of active MEPs. " ;
+		skos:definition "MEPs can not vote pro or against if they are not in the attendance list. " ;
+		sh:message "MEP voted but was not in the attendance list" ;
 		sh:select """
 				PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 				prefix ep: <http://data.europarl.europa.eu/> 
 				prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> 
 				prefix org: <http://www.w3.org/ns/org#>
-				PREFIX scheme: <http://data.europarl.europa.eu/authority/>
-				PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-				SELECT $this ?nbMepVote (COUNT(?activeMep) AS ?nbActiveMep)
+				prefix skos: <http://www.w3.org/2004/02/skos/core#>
+				SELECT $this
 				WHERE {
-					$this rdf:type eponto:Vote .
-				    ?activeMep rdf:type eponto:MEP .
-				    ?activeMep eponto:Status ?MEP_Status .
-				    FILTER (?MEP_Status = <http://data.europarl.europa.eu/authority/conceptStatus/ACTIVE>)
-				    {
-				        SELECT $this (COUNT(?VoteListMep) AS ?nbMepVote)
-				        WHERE {
-				            $this rdf:type eponto:Vote .
-				    		$this eponto:voteConsistsOfMEPVote ?VoteListMep .
-				        }
-				        GROUP BY $this
+				    $this eponto:voteByMEP ?mep .
+				    $this eponto:votePosition ?Vote_Position .
+				    FILTER (?Vote_Position IN (<http://data.europarl.europa.eu/authority/votePosition/against>,<http://data.europarl.europa.eu/authority/votePosition/for>))
+				    $this eponto:MEPVoteFormsPartOfVote ?Vote .
+				    ?Vote a eponto:Vote .
+				    ?Vote eponto:voteFormsPartOfPlenarySitting ?sitting .
+				    ?sitting a eponto:PlenarySitting .
+				    FILTER NOT EXISTS {
+				    	?sitting eponto:hasParticipant ?mep .
 				    }
 				}
-				GROUP BY $this ?nbMepVote
-				HAVING(?nbMepVote > ?nbActiveMep)
-				    """  ] .
+				"""	;			
+				] .

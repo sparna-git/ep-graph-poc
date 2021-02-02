@@ -19,24 +19,24 @@
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-epsh:MEPVote a sh:NodeShape ;
-sh:targetClass eponto:MEPVote ;
-sh:sparql [
+epsh:PoliticalGroup a sh:NodeShape ;
+	sh:targetNode eponto:MEP ;
+	sh:sparql [
 		a sh:SPARQLConstraint ;
-		sh:message "Only active members can vote. " ;
+		skos:definition "The number of active members is at least 705." ;
+		sh:message "Not enough MEP ({$nbMep}), was expecting at least 705" ;
 		sh:select """
-				PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-				prefix ep: <http://data.europarl.europa.eu/> 
-				prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> 
-				prefix org: <http://www.w3.org/ns/org#>
-				PREFIX scheme: <http://data.europarl.europa.eu/authority/>
-				PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-				SELECT $this
-				WHERE {
-				    $this rdf:type eponto:MEPVote .
-				    $this eponto:voteByMEP ?MEP .
-				    ?MEP rdf:type eponto:MEP .
-				    ?MEP eponto:Status ?MEP_Status .
-				    FILTER (?MEP_Status != <http://data.europarl.europa.eu/authority/conceptStatus/ACTIVE>)
-				}
-    """  ] .
+		prefix ep: <http://data.europarl.europa.eu/> 
+		prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> 
+		prefix org: <http://www.w3.org/ns/org#>
+		prefix skos: <http://www.w3.org/2004/02/skos/core#>
+		SELECT $this (COUNT(?mep) AS ?nbMep)
+		WHERE {
+		    ?mep a $this .
+		    ?mep eponto:Status <http://data.europarl.europa.eu/authority/conceptStatus/ACTIVE> .
+		}
+		GROUP BY $this
+		HAVING (?nbMep < 705)
+		"""  
+	]
+.

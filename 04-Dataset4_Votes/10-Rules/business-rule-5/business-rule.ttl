@@ -1,0 +1,53 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ep: <http://data.europarl.europa.eu/> .
+@prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> .
+@prefix epsh: <http://data.europarl.europa.eu/shapes#> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epsh:Vote a sh:NodeShape ;
+sh:targetClass eponto:Vote ;
+sh:sparql [
+		a sh:SPARQLConstraint ;
+		skos:definition "The vote results are valid only if 1/3 of the MEPs are present for the voting. " ;
+		sh:message "Vote with less participants (in the sitting) than 1/3 of active MEP" ;
+		sh:select """
+				PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+				prefix ep: <http://data.europarl.europa.eu/> 
+				prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> 
+				prefix org: <http://www.w3.org/ns/org#>
+				PREFIX scheme: <http://data.europarl.europa.eu/authority/>
+				PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+				SELECT $this ?nbParticipant
+				WHERE {
+				    {
+				        SELECT $this (COUNT(?mep) AS ?nbParticipant)
+				        WHERE {
+				            $this a eponto:Vote .
+				            $this eponto:voteFormsPartOfPlenarySitting ?sitting .
+				            ?sitting eponto:hasParticipant ?mep .
+				        }
+				        GROUP BY $this
+				    }
+
+				    ?activeMep a eponto:MEP .
+				    ?activeMep eponto:Status ?MEP_Status .
+				    FILTER (?MEP_Status = <http://data.europarl.europa.eu/authority/conceptStatus/ACTIVE>)
+				}
+				GROUP BY $this ?nbParticipant
+				HAVING(?nbParticipant < (COUNT(?activeMep)/3))
+				    """  ] .

@@ -23,30 +23,23 @@ epsh:Vote a sh:NodeShape ;
 sh:targetClass eponto:Vote ;
 sh:sparql [
 		a sh:SPARQLConstraint ;
-		sh:message "The vote results are valid only if 1/3 of the MEPs are present for the voting. " ;
+		skos:definition "The same MEP can’t vote more than once for the same vote." ;
+		sh:message "MEP voted more than once in a vote" ;
 		sh:select """
 				PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 				prefix ep: <http://data.europarl.europa.eu/> 
 				prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> 
 				prefix org: <http://www.w3.org/ns/org#>
-				PREFIX scheme: <http://data.europarl.europa.eu/authority/>
-				PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-				SELECT $this ?nbParticipant
+				prefix skos: <http://www.w3.org/2004/02/skos/core#>
+
+				SELECT $this ?value
 				WHERE {
-				    $this rdf:type eponto:Vote .
-				    ?activeMep eponto:Status ?MEP_Status .
-				    ?activeMep rdf:type eponto:MEP .
-				    FILTER (?MEP_Status = <http://data.europarl.europa.eu/authority/conceptStatus/ACTIVE>)
-				    {
-				        SELECT $this (COUNT(?mep) AS ?nbParticipant)
-				        WHERE {
-				            $this rdf:type eponto:Vote .
-				            $this eponto:voteFormsPartOfPlenarySitting ?sitting .
-				            ?sitting eponto:hasParticipant ?mep .
-				        }
-				        GROUP BY $this
-				    }
+				    $this a eponto:Vote .
+				    $this eponto:voteConsistsOfMEPVote ?MEPVote .
+				    ?MEPVote a eponto:MEPVote .
+				    ?MEPVote eponto:voteByMEP ?value .
 				}
-				GROUP BY $this ?nbParticipant
-				HAVING(?nbParticipant < (COUNT(?activeMep)/3))
-				    """  ] .
+				GROUP BY $this ?value
+				HAVING (COUNT(?value) > 1)			
+				"""	;			
+				] .
