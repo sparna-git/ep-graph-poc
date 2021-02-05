@@ -20,632 +20,688 @@
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-epsh:Civility a sh:NodeShape;
-  rdfs:label "Civility"@fr;
-  sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx6756 .
+<http://data.europarl.europa.eu/shapes/cv> a owl:Ontology;
+  rdfs:label "Controlled Vocabularies" .
 
-_:node1em6ifuhbx6756 rdf:first rdf:type;
+epsh:Civility a sh:NodeShape;
+  rdfs:label "Civility"@en, "Civilité"@fr;
+  sh:closed true;
+  sh:ignoredProperties _:node1esit516mx2595 .
+
+_:node1esit516mx2595 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:Civility sh:nodeKind sh:IRI;
   sh:order 1;
   sh:pattern "^http://data.europarl.europa.eu/authority/civility/.*$";
-  sh:property epsh:P12, epsh:P13, epsh:P14, epsh:P15, epsh:P16, epsh:P17;
+  sh:property epsh:P13, epsh:P14, epsh:P15, epsh:P16, epsh:P17, epsh:P18;
   sh:targetClass eponto:Civility .
 
 epsh:Gender a sh:NodeShape;
-  rdfs:label "Gender"@fr;
+  rdfs:label "Gender"@en, "Genre"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx6757 .
+  sh:ignoredProperties _:node1esit516mx2596 .
 
-_:node1em6ifuhbx6757 rdf:first rdf:type;
+_:node1esit516mx2596 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:Gender sh:nodeKind sh:IRI;
   sh:order 2;
   sh:pattern "^http://data.europarl.europa.eu/authority/gender/.*$";
-  sh:property epsh:P20, epsh:P21, epsh:P22, epsh:P23, epsh:P24, epsh:P25;
+  sh:property epsh:P21, epsh:P22, epsh:P23, epsh:P24, epsh:P25, epsh:P26;
   sh:targetClass eponto:Gender .
 
 epsh:Country a sh:NodeShape;
-  rdfs:label "Country"@fr;
+  rdfs:label "Country"@en, "Pays"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx6758 .
+  sh:ignoredProperties _:node1esit516mx2597 .
 
-_:node1em6ifuhbx6758 rdf:first rdf:type;
+_:node1esit516mx2597 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:Country sh:nodeKind sh:IRI;
   sh:order 3;
   sh:pattern "^http://data.europarl.europa.eu/authority/country/.*$";
-  sh:property epsh:P27, epsh:P28, epsh:P29, epsh:P30, epsh:P31, epsh:P32, epsh:P33,
-    epsh:P34, epsh:P35, epsh:P36, epsh:P37;
+  sh:property epsh:P28, epsh:P29, epsh:P30, epsh:P31, epsh:P32, epsh:P33, epsh:P34,
+    epsh:P35, epsh:P36, epsh:P37, epsh:P38;
   sh:targetClass eponto:Country .
 
 epsh:ConceptStatus a sh:NodeShape;
-  rdfs:label "Concept Status"@fr;
+  rdfs:label "Concept Status"@en, "Statut de Concept"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1em6ifuhbx6759 .
+  sh:ignoredProperties _:node1esit516mx2598 .
 
-_:node1em6ifuhbx6759 rdf:first rdf:type;
+_:node1esit516mx2598 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:ConceptStatus sh:nodeKind sh:IRI;
   sh:order 4;
   sh:pattern "^http://data.europarl.europa.eu/authority/conceptStatus/.*$";
-  sh:property epsh:P39, epsh:P40, epsh:P41, epsh:P42;
+  sh:property epsh:P40, epsh:P41, epsh:P42, epsh:P43;
   sh:targetClass eponto:ConceptStatus .
 
-epsh:P12 sh:hasValue scheme:civility;
+epsh:P13 sh:hasValue scheme:civility;
   sh:maxCount 1;
   sh:minCount 1;
-  sh:name "Contraintes de skos:inScheme sur un epsh:Civility"@fr;
+  sh:name "in scheme"@en;
   sh:nodeKind sh:IRI;
-  sh:path skos:inScheme;
-  sh:severity sh:Violation .
-
-epsh:P13 sh:datatype xsd:string;
-  sh:maxCount 1;
-  sh:minCount 1;
-  sh:nodeKind sh:Literal;
-  sh:path eponto:isoLanguage;
-  sh:pattern "[a-z][a-z]" .
+  sh:order 1;
+  sh:path skos:inScheme .
 
 epsh:P14 sh:datatype xsd:string;
   sh:maxCount 1;
   sh:minCount 1;
+  sh:name "ISO langage"@en;
   sh:nodeKind sh:Literal;
+  sh:order 2;
+  sh:path eponto:isoLanguage;
+  sh:pattern "[a-z][a-z]" .
+
+epsh:P15 sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "default label"@en;
+  sh:nodeKind sh:Literal;
+  sh:order 3;
   sh:path rdfs:label .
 
-epsh:P15 sh:datatype rdf:langString;
-  sh:languageIn _:node1em6ifuhbx6762 .
+epsh:P16 sh:datatype rdf:langString;
+  sh:languageIn _:node1esit516mx2601 .
 
-_:node1em6ifuhbx6762 rdf:first "hu";
-  rdf:rest _:node1em6ifuhbx6763 .
+_:node1esit516mx2601 rdf:first "hu";
+  rdf:rest _:node1esit516mx2602 .
 
-_:node1em6ifuhbx6763 rdf:first "et";
-  rdf:rest _:node1em6ifuhbx6764 .
+_:node1esit516mx2602 rdf:first "et";
+  rdf:rest _:node1esit516mx2603 .
 
-_:node1em6ifuhbx6764 rdf:first "fi";
-  rdf:rest _:node1em6ifuhbx6765 .
+_:node1esit516mx2603 rdf:first "fi";
+  rdf:rest _:node1esit516mx2604 .
 
-_:node1em6ifuhbx6765 rdf:first "cs";
-  rdf:rest _:node1em6ifuhbx6766 .
+_:node1esit516mx2604 rdf:first "cs";
+  rdf:rest _:node1esit516mx2605 .
 
-_:node1em6ifuhbx6766 rdf:first "sk";
-  rdf:rest _:node1em6ifuhbx6767 .
+_:node1esit516mx2605 rdf:first "sk";
+  rdf:rest _:node1esit516mx2606 .
 
-_:node1em6ifuhbx6767 rdf:first "lt";
-  rdf:rest _:node1em6ifuhbx6768 .
+_:node1esit516mx2606 rdf:first "lt";
+  rdf:rest _:node1esit516mx2607 .
 
-_:node1em6ifuhbx6768 rdf:first "lv";
-  rdf:rest _:node1em6ifuhbx6769 .
+_:node1esit516mx2607 rdf:first "lv";
+  rdf:rest _:node1esit516mx2608 .
 
-_:node1em6ifuhbx6769 rdf:first "mt";
-  rdf:rest _:node1em6ifuhbx6770 .
+_:node1esit516mx2608 rdf:first "mt";
+  rdf:rest _:node1esit516mx2609 .
 
-_:node1em6ifuhbx6770 rdf:first "en";
-  rdf:rest _:node1em6ifuhbx6771 .
+_:node1esit516mx2609 rdf:first "en";
+  rdf:rest _:node1esit516mx2610 .
 
-_:node1em6ifuhbx6771 rdf:first "da";
-  rdf:rest _:node1em6ifuhbx6772 .
+_:node1esit516mx2610 rdf:first "da";
+  rdf:rest _:node1esit516mx2611 .
 
-_:node1em6ifuhbx6772 rdf:first "nl";
-  rdf:rest _:node1em6ifuhbx6773 .
+_:node1esit516mx2611 rdf:first "nl";
+  rdf:rest _:node1esit516mx2612 .
 
-_:node1em6ifuhbx6773 rdf:first "sv";
-  rdf:rest _:node1em6ifuhbx6774 .
+_:node1esit516mx2612 rdf:first "sv";
+  rdf:rest _:node1esit516mx2613 .
 
-_:node1em6ifuhbx6774 rdf:first "hr";
-  rdf:rest _:node1em6ifuhbx6775 .
+_:node1esit516mx2613 rdf:first "hr";
+  rdf:rest _:node1esit516mx2614 .
 
-_:node1em6ifuhbx6775 rdf:first "sl";
-  rdf:rest _:node1em6ifuhbx6776 .
+_:node1esit516mx2614 rdf:first "sl";
+  rdf:rest _:node1esit516mx2615 .
 
-_:node1em6ifuhbx6776 rdf:first "pl";
-  rdf:rest _:node1em6ifuhbx6777 .
+_:node1esit516mx2615 rdf:first "pl";
+  rdf:rest _:node1esit516mx2616 .
 
-_:node1em6ifuhbx6777 rdf:first "de";
-  rdf:rest _:node1em6ifuhbx6778 .
+_:node1esit516mx2616 rdf:first "de";
+  rdf:rest _:node1esit516mx2617 .
 
-_:node1em6ifuhbx6778 rdf:first "ro";
-  rdf:rest _:node1em6ifuhbx6779 .
+_:node1esit516mx2617 rdf:first "ro";
+  rdf:rest _:node1esit516mx2618 .
 
-_:node1em6ifuhbx6779 rdf:first "it";
-  rdf:rest _:node1em6ifuhbx6780 .
+_:node1esit516mx2618 rdf:first "it";
+  rdf:rest _:node1esit516mx2619 .
 
-_:node1em6ifuhbx6780 rdf:first "pt";
-  rdf:rest _:node1em6ifuhbx6781 .
+_:node1esit516mx2619 rdf:first "pt";
+  rdf:rest _:node1esit516mx2620 .
 
-_:node1em6ifuhbx6781 rdf:first "es";
-  rdf:rest _:node1em6ifuhbx6782 .
+_:node1esit516mx2620 rdf:first "es";
+  rdf:rest _:node1esit516mx2621 .
 
-_:node1em6ifuhbx6782 rdf:first "fr";
-  rdf:rest _:node1em6ifuhbx6783 .
+_:node1esit516mx2621 rdf:first "fr";
+  rdf:rest _:node1esit516mx2622 .
 
-_:node1em6ifuhbx6783 rdf:first "ga";
-  rdf:rest _:node1em6ifuhbx6784 .
+_:node1esit516mx2622 rdf:first "ga";
+  rdf:rest _:node1esit516mx2623 .
 
-_:node1em6ifuhbx6784 rdf:first "el";
-  rdf:rest _:node1em6ifuhbx6785 .
+_:node1esit516mx2623 rdf:first "el";
+  rdf:rest _:node1esit516mx2624 .
 
-_:node1em6ifuhbx6785 rdf:first "bg";
+_:node1esit516mx2624 rdf:first "bg";
   rdf:rest rdf:nil .
 
-epsh:P15 sh:nodeKind sh:Literal;
+epsh:P16 sh:name "alternative label"@en;
+  sh:nodeKind sh:Literal;
+  sh:order 4;
   sh:path skos:altLabel .
 
-epsh:P16 sh:datatype rdf:langString;
-  sh:languageIn _:node1em6ifuhbx6786 .
+epsh:P17 sh:datatype rdf:langString;
+  sh:languageIn _:node1esit516mx2625 .
 
-_:node1em6ifuhbx6786 rdf:first "hu";
-  rdf:rest _:node1em6ifuhbx6787 .
+_:node1esit516mx2625 rdf:first "hu";
+  rdf:rest _:node1esit516mx2626 .
 
-_:node1em6ifuhbx6787 rdf:first "et";
-  rdf:rest _:node1em6ifuhbx6788 .
+_:node1esit516mx2626 rdf:first "et";
+  rdf:rest _:node1esit516mx2627 .
 
-_:node1em6ifuhbx6788 rdf:first "fi";
-  rdf:rest _:node1em6ifuhbx6789 .
+_:node1esit516mx2627 rdf:first "fi";
+  rdf:rest _:node1esit516mx2628 .
 
-_:node1em6ifuhbx6789 rdf:first "cs";
-  rdf:rest _:node1em6ifuhbx6790 .
+_:node1esit516mx2628 rdf:first "cs";
+  rdf:rest _:node1esit516mx2629 .
 
-_:node1em6ifuhbx6790 rdf:first "sk";
-  rdf:rest _:node1em6ifuhbx6791 .
+_:node1esit516mx2629 rdf:first "sk";
+  rdf:rest _:node1esit516mx2630 .
 
-_:node1em6ifuhbx6791 rdf:first "lt";
-  rdf:rest _:node1em6ifuhbx6792 .
+_:node1esit516mx2630 rdf:first "lt";
+  rdf:rest _:node1esit516mx2631 .
 
-_:node1em6ifuhbx6792 rdf:first "lv";
-  rdf:rest _:node1em6ifuhbx6793 .
+_:node1esit516mx2631 rdf:first "lv";
+  rdf:rest _:node1esit516mx2632 .
 
-_:node1em6ifuhbx6793 rdf:first "mt";
-  rdf:rest _:node1em6ifuhbx6794 .
+_:node1esit516mx2632 rdf:first "mt";
+  rdf:rest _:node1esit516mx2633 .
 
-_:node1em6ifuhbx6794 rdf:first "en";
-  rdf:rest _:node1em6ifuhbx6795 .
+_:node1esit516mx2633 rdf:first "en";
+  rdf:rest _:node1esit516mx2634 .
 
-_:node1em6ifuhbx6795 rdf:first "da";
-  rdf:rest _:node1em6ifuhbx6796 .
+_:node1esit516mx2634 rdf:first "da";
+  rdf:rest _:node1esit516mx2635 .
 
-_:node1em6ifuhbx6796 rdf:first "nl";
-  rdf:rest _:node1em6ifuhbx6797 .
+_:node1esit516mx2635 rdf:first "nl";
+  rdf:rest _:node1esit516mx2636 .
 
-_:node1em6ifuhbx6797 rdf:first "sv";
-  rdf:rest _:node1em6ifuhbx6798 .
+_:node1esit516mx2636 rdf:first "sv";
+  rdf:rest _:node1esit516mx2637 .
 
-_:node1em6ifuhbx6798 rdf:first "hr";
-  rdf:rest _:node1em6ifuhbx6799 .
+_:node1esit516mx2637 rdf:first "hr";
+  rdf:rest _:node1esit516mx2638 .
 
-_:node1em6ifuhbx6799 rdf:first "sl";
-  rdf:rest _:node1em6ifuhbx6800 .
+_:node1esit516mx2638 rdf:first "sl";
+  rdf:rest _:node1esit516mx2639 .
 
-_:node1em6ifuhbx6800 rdf:first "pl";
-  rdf:rest _:node1em6ifuhbx6801 .
+_:node1esit516mx2639 rdf:first "pl";
+  rdf:rest _:node1esit516mx2640 .
 
-_:node1em6ifuhbx6801 rdf:first "de";
-  rdf:rest _:node1em6ifuhbx6802 .
+_:node1esit516mx2640 rdf:first "de";
+  rdf:rest _:node1esit516mx2641 .
 
-_:node1em6ifuhbx6802 rdf:first "ro";
-  rdf:rest _:node1em6ifuhbx6803 .
+_:node1esit516mx2641 rdf:first "ro";
+  rdf:rest _:node1esit516mx2642 .
 
-_:node1em6ifuhbx6803 rdf:first "it";
-  rdf:rest _:node1em6ifuhbx6804 .
+_:node1esit516mx2642 rdf:first "it";
+  rdf:rest _:node1esit516mx2643 .
 
-_:node1em6ifuhbx6804 rdf:first "pt";
-  rdf:rest _:node1em6ifuhbx6805 .
+_:node1esit516mx2643 rdf:first "pt";
+  rdf:rest _:node1esit516mx2644 .
 
-_:node1em6ifuhbx6805 rdf:first "es";
-  rdf:rest _:node1em6ifuhbx6806 .
+_:node1esit516mx2644 rdf:first "es";
+  rdf:rest _:node1esit516mx2645 .
 
-_:node1em6ifuhbx6806 rdf:first "fr";
-  rdf:rest _:node1em6ifuhbx6807 .
+_:node1esit516mx2645 rdf:first "fr";
+  rdf:rest _:node1esit516mx2646 .
 
-_:node1em6ifuhbx6807 rdf:first "ga";
-  rdf:rest _:node1em6ifuhbx6808 .
+_:node1esit516mx2646 rdf:first "ga";
+  rdf:rest _:node1esit516mx2647 .
 
-_:node1em6ifuhbx6808 rdf:first "el";
-  rdf:rest _:node1em6ifuhbx6809 .
+_:node1esit516mx2647 rdf:first "el";
+  rdf:rest _:node1esit516mx2648 .
 
-_:node1em6ifuhbx6809 rdf:first "bg";
+_:node1esit516mx2648 rdf:first "bg";
   rdf:rest rdf:nil .
 
-epsh:P16 sh:minCount 1;
+epsh:P17 sh:minCount 1;
+  sh:name "preferred label"@en;
   sh:nodeKind sh:Literal;
+  sh:order 5;
   sh:path skos:prefLabel;
   sh:uniqueLang true .
 
-epsh:P17 sh:in _:node1em6ifuhbx6810 .
+epsh:P18 sh:description "2 types are expected : the class of the controlled vocabulary and skos:Concept";
+  sh:in _:node1esit516mx2649 .
 
-_:node1em6ifuhbx6810 rdf:first skos:Concept;
-  rdf:rest _:node1em6ifuhbx6811 .
+_:node1esit516mx2649 rdf:first skos:Concept;
+  rdf:rest _:node1esit516mx2650 .
 
-_:node1em6ifuhbx6811 rdf:first eponto:Civility;
+_:node1esit516mx2650 rdf:first eponto:Civility;
   rdf:rest rdf:nil .
 
-epsh:P17 sh:maxCount 2;
+epsh:P18 sh:maxCount 2;
   sh:minCount 2;
+  sh:name "type"@en;
+  sh:order 6;
   sh:path rdf:type .
 
-epsh:P20 sh:hasValue scheme:gender;
+epsh:P21 sh:hasValue scheme:gender;
   sh:maxCount 1;
   sh:minCount 1;
-  sh:name "Contraintes de skos:inScheme sur un epsh:Gender"@fr;
+  sh:name "in scheme"@en;
   sh:nodeKind sh:IRI;
-  sh:path skos:inScheme;
-  sh:severity sh:Violation .
-
-epsh:P21 sh:datatype xsd:string;
-  sh:maxCount 1;
-  sh:minCount 1;
-  sh:nodeKind sh:Literal;
-  sh:path rdfs:label .
+  sh:order 1;
+  sh:path skos:inScheme .
 
 epsh:P22 sh:datatype xsd:string;
   sh:maxCount 1;
   sh:minCount 1;
+  sh:name "default label"@en;
   sh:nodeKind sh:Literal;
-  sh:path eponto:isoCode .
+  sh:order 2;
+  sh:path rdfs:label .
 
 epsh:P23 sh:datatype xsd:string;
   sh:maxCount 1;
   sh:minCount 1;
+  sh:name "ISO code"@en;
   sh:nodeKind sh:Literal;
+  sh:order 3;
+  sh:path eponto:isoCode .
+
+epsh:P24 sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "notation"@en;
+  sh:nodeKind sh:Literal;
+  sh:order 4;
   sh:path skos:notation .
 
-epsh:P24 sh:datatype rdf:langString;
-  sh:languageIn _:node1em6ifuhbx6812 .
+epsh:P25 sh:datatype rdf:langString;
+  sh:languageIn _:node1esit516mx2651 .
 
-_:node1em6ifuhbx6812 rdf:first "hu";
-  rdf:rest _:node1em6ifuhbx6813 .
+_:node1esit516mx2651 rdf:first "hu";
+  rdf:rest _:node1esit516mx2652 .
 
-_:node1em6ifuhbx6813 rdf:first "et";
-  rdf:rest _:node1em6ifuhbx6814 .
+_:node1esit516mx2652 rdf:first "et";
+  rdf:rest _:node1esit516mx2653 .
 
-_:node1em6ifuhbx6814 rdf:first "fi";
-  rdf:rest _:node1em6ifuhbx6815 .
+_:node1esit516mx2653 rdf:first "fi";
+  rdf:rest _:node1esit516mx2654 .
 
-_:node1em6ifuhbx6815 rdf:first "cs";
-  rdf:rest _:node1em6ifuhbx6816 .
+_:node1esit516mx2654 rdf:first "cs";
+  rdf:rest _:node1esit516mx2655 .
 
-_:node1em6ifuhbx6816 rdf:first "sk";
-  rdf:rest _:node1em6ifuhbx6817 .
+_:node1esit516mx2655 rdf:first "sk";
+  rdf:rest _:node1esit516mx2656 .
 
-_:node1em6ifuhbx6817 rdf:first "lt";
-  rdf:rest _:node1em6ifuhbx6818 .
+_:node1esit516mx2656 rdf:first "lt";
+  rdf:rest _:node1esit516mx2657 .
 
-_:node1em6ifuhbx6818 rdf:first "lv";
-  rdf:rest _:node1em6ifuhbx6819 .
+_:node1esit516mx2657 rdf:first "lv";
+  rdf:rest _:node1esit516mx2658 .
 
-_:node1em6ifuhbx6819 rdf:first "mt";
-  rdf:rest _:node1em6ifuhbx6820 .
+_:node1esit516mx2658 rdf:first "mt";
+  rdf:rest _:node1esit516mx2659 .
 
-_:node1em6ifuhbx6820 rdf:first "en";
-  rdf:rest _:node1em6ifuhbx6821 .
+_:node1esit516mx2659 rdf:first "en";
+  rdf:rest _:node1esit516mx2660 .
 
-_:node1em6ifuhbx6821 rdf:first "da";
-  rdf:rest _:node1em6ifuhbx6822 .
+_:node1esit516mx2660 rdf:first "da";
+  rdf:rest _:node1esit516mx2661 .
 
-_:node1em6ifuhbx6822 rdf:first "nl";
-  rdf:rest _:node1em6ifuhbx6823 .
+_:node1esit516mx2661 rdf:first "nl";
+  rdf:rest _:node1esit516mx2662 .
 
-_:node1em6ifuhbx6823 rdf:first "sv";
-  rdf:rest _:node1em6ifuhbx6824 .
+_:node1esit516mx2662 rdf:first "sv";
+  rdf:rest _:node1esit516mx2663 .
 
-_:node1em6ifuhbx6824 rdf:first "hr";
-  rdf:rest _:node1em6ifuhbx6825 .
+_:node1esit516mx2663 rdf:first "hr";
+  rdf:rest _:node1esit516mx2664 .
 
-_:node1em6ifuhbx6825 rdf:first "sl";
-  rdf:rest _:node1em6ifuhbx6826 .
+_:node1esit516mx2664 rdf:first "sl";
+  rdf:rest _:node1esit516mx2665 .
 
-_:node1em6ifuhbx6826 rdf:first "pl";
-  rdf:rest _:node1em6ifuhbx6827 .
+_:node1esit516mx2665 rdf:first "pl";
+  rdf:rest _:node1esit516mx2666 .
 
-_:node1em6ifuhbx6827 rdf:first "de";
-  rdf:rest _:node1em6ifuhbx6828 .
+_:node1esit516mx2666 rdf:first "de";
+  rdf:rest _:node1esit516mx2667 .
 
-_:node1em6ifuhbx6828 rdf:first "ro";
-  rdf:rest _:node1em6ifuhbx6829 .
+_:node1esit516mx2667 rdf:first "ro";
+  rdf:rest _:node1esit516mx2668 .
 
-_:node1em6ifuhbx6829 rdf:first "it";
-  rdf:rest _:node1em6ifuhbx6830 .
+_:node1esit516mx2668 rdf:first "it";
+  rdf:rest _:node1esit516mx2669 .
 
-_:node1em6ifuhbx6830 rdf:first "pt";
-  rdf:rest _:node1em6ifuhbx6831 .
+_:node1esit516mx2669 rdf:first "pt";
+  rdf:rest _:node1esit516mx2670 .
 
-_:node1em6ifuhbx6831 rdf:first "es";
-  rdf:rest _:node1em6ifuhbx6832 .
+_:node1esit516mx2670 rdf:first "es";
+  rdf:rest _:node1esit516mx2671 .
 
-_:node1em6ifuhbx6832 rdf:first "fr";
-  rdf:rest _:node1em6ifuhbx6833 .
+_:node1esit516mx2671 rdf:first "fr";
+  rdf:rest _:node1esit516mx2672 .
 
-_:node1em6ifuhbx6833 rdf:first "ga";
-  rdf:rest _:node1em6ifuhbx6834 .
+_:node1esit516mx2672 rdf:first "ga";
+  rdf:rest _:node1esit516mx2673 .
 
-_:node1em6ifuhbx6834 rdf:first "el";
-  rdf:rest _:node1em6ifuhbx6835 .
+_:node1esit516mx2673 rdf:first "el";
+  rdf:rest _:node1esit516mx2674 .
 
-_:node1em6ifuhbx6835 rdf:first "bg";
+_:node1esit516mx2674 rdf:first "bg";
   rdf:rest rdf:nil .
 
-epsh:P24 sh:maxCount 24;
+epsh:P25 sh:maxCount 24;
   sh:minCount 24;
+  sh:name "preferred label"@en;
   sh:nodeKind sh:Literal;
+  sh:order 5;
   sh:path skos:prefLabel;
   sh:uniqueLang true .
 
-epsh:P25 sh:in _:node1em6ifuhbx6836 .
+epsh:P26 sh:description "2 types are expected : the class of the controlled vocabulary and skos:Concept";
+  sh:in _:node1esit516mx2675 .
 
-_:node1em6ifuhbx6836 rdf:first skos:Concept;
-  rdf:rest _:node1em6ifuhbx6837 .
+_:node1esit516mx2675 rdf:first skos:Concept;
+  rdf:rest _:node1esit516mx2676 .
 
-_:node1em6ifuhbx6837 rdf:first eponto:Gender;
+_:node1esit516mx2676 rdf:first eponto:Gender;
   rdf:rest rdf:nil .
 
-epsh:P25 sh:maxCount 2;
+epsh:P26 sh:maxCount 2;
   sh:minCount 2;
+  sh:name "type"@en;
+  sh:order 6;
   sh:path rdf:type .
 
-epsh:P27 sh:hasValue scheme:country;
+epsh:P28 sh:hasValue scheme:country;
   sh:maxCount 1;
   sh:minCount 1;
-  sh:name "Contraintes de skos:inScheme sur un epsh:Country"@fr;
+  sh:name "in scheme"@en;
   sh:nodeKind sh:IRI;
-  sh:path skos:inScheme;
-  sh:severity sh:Violation .
+  sh:order 1;
+  sh:path skos:inScheme .
 
-epsh:P28 sh:datatype xsd:string;
+epsh:P29 sh:datatype xsd:string;
   sh:maxCount 1;
   sh:minCount 1;
+  sh:name "default label"@en;
   sh:nodeKind sh:Literal;
+  sh:order 2;
   sh:path rdfs:label .
-
-epsh:P29 sh:datatype xsd:boolean;
-  sh:maxCount 1;
-  sh:minCount 1;
-  sh:nodeKind sh:Literal;
-  sh:path eponto:euCandidate .
 
 epsh:P30 sh:datatype xsd:boolean;
   sh:maxCount 1;
   sh:minCount 1;
+  sh:name "EU candidate"@en;
   sh:nodeKind sh:Literal;
-  sh:path eponto:euCountry .
+  sh:order 3;
+  sh:path eponto:euCandidate .
 
-epsh:P31 sh:datatype xsd:date;
-  sh:maxCount 1;
-  sh:nodeKind sh:Literal;
-  sh:path eponto:euStartDate .
-
-epsh:P32 sh:datatype xsd:integer;
-  sh:maxCount 1;
-  sh:nodeKind sh:Literal;
-  sh:path eponto:formalOrder .
-
-epsh:P33 sh:datatype xsd:string;
+epsh:P31 sh:datatype xsd:boolean;
   sh:maxCount 1;
   sh:minCount 1;
+  sh:name "EU country"@en;
   sh:nodeKind sh:Literal;
+  sh:order 4;
+  sh:path eponto:euCountry .
+
+epsh:P32 sh:datatype xsd:date;
+  sh:maxCount 1;
+  sh:name "EU start date"@en;
+  sh:nodeKind sh:Literal;
+  sh:order 5;
+  sh:path eponto:euStartDate .
+
+epsh:P33 sh:datatype xsd:integer;
+  sh:maxCount 1;
+  sh:name "formal order"@en;
+  sh:nodeKind sh:Literal;
+  sh:order 6;
+  sh:path eponto:formalOrder .
+
+epsh:P34 sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "ISO code"@en;
+  sh:nodeKind sh:Literal;
+  sh:order 7;
   sh:path eponto:isoCode;
   sh:pattern "[A-Z][A-Z]" .
 
-epsh:P34 sh:datatype xsd:integer;
+epsh:P35 sh:datatype xsd:integer;
   sh:maxCount 1;
   sh:minCount 1;
+  sh:name "ISO number"@en;
   sh:nodeKind sh:Literal;
+  sh:order 8;
   sh:path eponto:isoNumber .
 
-epsh:P35 sh:datatype rdf:langString;
-  sh:languageIn _:node1em6ifuhbx6838 .
-
-_:node1em6ifuhbx6838 rdf:first "hu";
-  rdf:rest _:node1em6ifuhbx6839 .
-
-_:node1em6ifuhbx6839 rdf:first "et";
-  rdf:rest _:node1em6ifuhbx6840 .
-
-_:node1em6ifuhbx6840 rdf:first "fi";
-  rdf:rest _:node1em6ifuhbx6841 .
-
-_:node1em6ifuhbx6841 rdf:first "cs";
-  rdf:rest _:node1em6ifuhbx6842 .
-
-_:node1em6ifuhbx6842 rdf:first "sk";
-  rdf:rest _:node1em6ifuhbx6843 .
-
-_:node1em6ifuhbx6843 rdf:first "lt";
-  rdf:rest _:node1em6ifuhbx6844 .
-
-_:node1em6ifuhbx6844 rdf:first "lv";
-  rdf:rest _:node1em6ifuhbx6845 .
-
-_:node1em6ifuhbx6845 rdf:first "mt";
-  rdf:rest _:node1em6ifuhbx6846 .
-
-_:node1em6ifuhbx6846 rdf:first "en";
-  rdf:rest _:node1em6ifuhbx6847 .
-
-_:node1em6ifuhbx6847 rdf:first "da";
-  rdf:rest _:node1em6ifuhbx6848 .
-
-_:node1em6ifuhbx6848 rdf:first "nl";
-  rdf:rest _:node1em6ifuhbx6849 .
-
-_:node1em6ifuhbx6849 rdf:first "sv";
-  rdf:rest _:node1em6ifuhbx6850 .
-
-_:node1em6ifuhbx6850 rdf:first "hr";
-  rdf:rest _:node1em6ifuhbx6851 .
-
-_:node1em6ifuhbx6851 rdf:first "sl";
-  rdf:rest _:node1em6ifuhbx6852 .
-
-_:node1em6ifuhbx6852 rdf:first "pl";
-  rdf:rest _:node1em6ifuhbx6853 .
-
-_:node1em6ifuhbx6853 rdf:first "de";
-  rdf:rest _:node1em6ifuhbx6854 .
-
-_:node1em6ifuhbx6854 rdf:first "ro";
-  rdf:rest _:node1em6ifuhbx6855 .
-
-_:node1em6ifuhbx6855 rdf:first "it";
-  rdf:rest _:node1em6ifuhbx6856 .
-
-_:node1em6ifuhbx6856 rdf:first "pt";
-  rdf:rest _:node1em6ifuhbx6857 .
-
-_:node1em6ifuhbx6857 rdf:first "es";
-  rdf:rest _:node1em6ifuhbx6858 .
-
-_:node1em6ifuhbx6858 rdf:first "fr";
-  rdf:rest _:node1em6ifuhbx6859 .
-
-_:node1em6ifuhbx6859 rdf:first "ga";
-  rdf:rest _:node1em6ifuhbx6860 .
-
-_:node1em6ifuhbx6860 rdf:first "el";
-  rdf:rest _:node1em6ifuhbx6861 .
-
-_:node1em6ifuhbx6861 rdf:first "bg";
-  rdf:rest rdf:nil .
-
-epsh:P35 sh:maxCount 24;
-  sh:minCount 24;
-  sh:nodeKind sh:Literal;
-  sh:path skos:prefLabel;
-  sh:uniqueLang true .
-
 epsh:P36 sh:datatype rdf:langString;
-  sh:languageIn _:node1em6ifuhbx6862 .
+  sh:description "24 values are expected";
+  sh:languageIn _:node1esit516mx2677 .
 
-_:node1em6ifuhbx6862 rdf:first "hu";
-  rdf:rest _:node1em6ifuhbx6863 .
+_:node1esit516mx2677 rdf:first "hu";
+  rdf:rest _:node1esit516mx2678 .
 
-_:node1em6ifuhbx6863 rdf:first "et";
-  rdf:rest _:node1em6ifuhbx6864 .
+_:node1esit516mx2678 rdf:first "et";
+  rdf:rest _:node1esit516mx2679 .
 
-_:node1em6ifuhbx6864 rdf:first "fi";
-  rdf:rest _:node1em6ifuhbx6865 .
+_:node1esit516mx2679 rdf:first "fi";
+  rdf:rest _:node1esit516mx2680 .
 
-_:node1em6ifuhbx6865 rdf:first "cs";
-  rdf:rest _:node1em6ifuhbx6866 .
+_:node1esit516mx2680 rdf:first "cs";
+  rdf:rest _:node1esit516mx2681 .
 
-_:node1em6ifuhbx6866 rdf:first "sk";
-  rdf:rest _:node1em6ifuhbx6867 .
+_:node1esit516mx2681 rdf:first "sk";
+  rdf:rest _:node1esit516mx2682 .
 
-_:node1em6ifuhbx6867 rdf:first "lt";
-  rdf:rest _:node1em6ifuhbx6868 .
+_:node1esit516mx2682 rdf:first "lt";
+  rdf:rest _:node1esit516mx2683 .
 
-_:node1em6ifuhbx6868 rdf:first "lv";
-  rdf:rest _:node1em6ifuhbx6869 .
+_:node1esit516mx2683 rdf:first "lv";
+  rdf:rest _:node1esit516mx2684 .
 
-_:node1em6ifuhbx6869 rdf:first "mt";
-  rdf:rest _:node1em6ifuhbx6870 .
+_:node1esit516mx2684 rdf:first "mt";
+  rdf:rest _:node1esit516mx2685 .
 
-_:node1em6ifuhbx6870 rdf:first "en";
-  rdf:rest _:node1em6ifuhbx6871 .
+_:node1esit516mx2685 rdf:first "en";
+  rdf:rest _:node1esit516mx2686 .
 
-_:node1em6ifuhbx6871 rdf:first "da";
-  rdf:rest _:node1em6ifuhbx6872 .
+_:node1esit516mx2686 rdf:first "da";
+  rdf:rest _:node1esit516mx2687 .
 
-_:node1em6ifuhbx6872 rdf:first "nl";
-  rdf:rest _:node1em6ifuhbx6873 .
+_:node1esit516mx2687 rdf:first "nl";
+  rdf:rest _:node1esit516mx2688 .
 
-_:node1em6ifuhbx6873 rdf:first "sv";
-  rdf:rest _:node1em6ifuhbx6874 .
+_:node1esit516mx2688 rdf:first "sv";
+  rdf:rest _:node1esit516mx2689 .
 
-_:node1em6ifuhbx6874 rdf:first "hr";
-  rdf:rest _:node1em6ifuhbx6875 .
+_:node1esit516mx2689 rdf:first "hr";
+  rdf:rest _:node1esit516mx2690 .
 
-_:node1em6ifuhbx6875 rdf:first "sl";
-  rdf:rest _:node1em6ifuhbx6876 .
+_:node1esit516mx2690 rdf:first "sl";
+  rdf:rest _:node1esit516mx2691 .
 
-_:node1em6ifuhbx6876 rdf:first "pl";
-  rdf:rest _:node1em6ifuhbx6877 .
+_:node1esit516mx2691 rdf:first "pl";
+  rdf:rest _:node1esit516mx2692 .
 
-_:node1em6ifuhbx6877 rdf:first "de";
-  rdf:rest _:node1em6ifuhbx6878 .
+_:node1esit516mx2692 rdf:first "de";
+  rdf:rest _:node1esit516mx2693 .
 
-_:node1em6ifuhbx6878 rdf:first "ro";
-  rdf:rest _:node1em6ifuhbx6879 .
+_:node1esit516mx2693 rdf:first "ro";
+  rdf:rest _:node1esit516mx2694 .
 
-_:node1em6ifuhbx6879 rdf:first "it";
-  rdf:rest _:node1em6ifuhbx6880 .
+_:node1esit516mx2694 rdf:first "it";
+  rdf:rest _:node1esit516mx2695 .
 
-_:node1em6ifuhbx6880 rdf:first "pt";
-  rdf:rest _:node1em6ifuhbx6881 .
+_:node1esit516mx2695 rdf:first "pt";
+  rdf:rest _:node1esit516mx2696 .
 
-_:node1em6ifuhbx6881 rdf:first "es";
-  rdf:rest _:node1em6ifuhbx6882 .
+_:node1esit516mx2696 rdf:first "es";
+  rdf:rest _:node1esit516mx2697 .
 
-_:node1em6ifuhbx6882 rdf:first "fr";
-  rdf:rest _:node1em6ifuhbx6883 .
+_:node1esit516mx2697 rdf:first "fr";
+  rdf:rest _:node1esit516mx2698 .
 
-_:node1em6ifuhbx6883 rdf:first "ga";
-  rdf:rest _:node1em6ifuhbx6884 .
+_:node1esit516mx2698 rdf:first "ga";
+  rdf:rest _:node1esit516mx2699 .
 
-_:node1em6ifuhbx6884 rdf:first "el";
-  rdf:rest _:node1em6ifuhbx6885 .
+_:node1esit516mx2699 rdf:first "el";
+  rdf:rest _:node1esit516mx2700 .
 
-_:node1em6ifuhbx6885 rdf:first "bg";
+_:node1esit516mx2700 rdf:first "bg";
   rdf:rest rdf:nil .
 
 epsh:P36 sh:maxCount 24;
   sh:minCount 24;
+  sh:name "preferred label"@en;
   sh:nodeKind sh:Literal;
-  sh:path skos:altLabel .
-
-epsh:P37 sh:in _:node1em6ifuhbx6886 .
-
-_:node1em6ifuhbx6886 rdf:first skos:Concept;
-  rdf:rest _:node1em6ifuhbx6887 .
-
-_:node1em6ifuhbx6887 rdf:first eponto:Country;
-  rdf:rest rdf:nil .
-
-epsh:P37 sh:maxCount 2;
-  sh:minCount 2;
-  sh:path rdf:type .
-
-epsh:P39 sh:hasValue scheme:conceptStatus;
-  sh:maxCount 1;
-  sh:minCount 1;
-  sh:name "Contraintes de skos:inScheme sur un epsh:ConceptStatus"@fr;
-  sh:nodeKind sh:IRI;
-  sh:path skos:inScheme;
-  sh:severity sh:Violation .
-
-epsh:P40 sh:datatype xsd:string;
-  sh:maxCount 1;
-  sh:minCount 1;
-  sh:nodeKind sh:Literal;
-  sh:path rdfs:label .
-
-epsh:P41 sh:datatype rdf:langString;
-  sh:languageIn _:node1em6ifuhbx6888 .
-
-_:node1em6ifuhbx6888 rdf:first "en";
-  rdf:rest _:node1em6ifuhbx6889 .
-
-_:node1em6ifuhbx6889 rdf:first "fr";
-  rdf:rest rdf:nil .
-
-epsh:P41 sh:maxCount 2;
-  sh:minCount 1;
-  sh:nodeKind sh:Literal;
+  sh:order 9;
   sh:path skos:prefLabel;
   sh:uniqueLang true .
 
-epsh:P42 sh:in _:node1em6ifuhbx6890 .
+epsh:P37 sh:datatype rdf:langString;
+  sh:description "24 values are expected";
+  sh:languageIn _:node1esit516mx2701 .
 
-_:node1em6ifuhbx6890 rdf:first skos:Concept;
-  rdf:rest _:node1em6ifuhbx6891 .
+_:node1esit516mx2701 rdf:first "hu";
+  rdf:rest _:node1esit516mx2702 .
 
-_:node1em6ifuhbx6891 rdf:first eponto:ConceptStatus;
+_:node1esit516mx2702 rdf:first "et";
+  rdf:rest _:node1esit516mx2703 .
+
+_:node1esit516mx2703 rdf:first "fi";
+  rdf:rest _:node1esit516mx2704 .
+
+_:node1esit516mx2704 rdf:first "cs";
+  rdf:rest _:node1esit516mx2705 .
+
+_:node1esit516mx2705 rdf:first "sk";
+  rdf:rest _:node1esit516mx2706 .
+
+_:node1esit516mx2706 rdf:first "lt";
+  rdf:rest _:node1esit516mx2707 .
+
+_:node1esit516mx2707 rdf:first "lv";
+  rdf:rest _:node1esit516mx2708 .
+
+_:node1esit516mx2708 rdf:first "mt";
+  rdf:rest _:node1esit516mx2709 .
+
+_:node1esit516mx2709 rdf:first "en";
+  rdf:rest _:node1esit516mx2710 .
+
+_:node1esit516mx2710 rdf:first "da";
+  rdf:rest _:node1esit516mx2711 .
+
+_:node1esit516mx2711 rdf:first "nl";
+  rdf:rest _:node1esit516mx2712 .
+
+_:node1esit516mx2712 rdf:first "sv";
+  rdf:rest _:node1esit516mx2713 .
+
+_:node1esit516mx2713 rdf:first "hr";
+  rdf:rest _:node1esit516mx2714 .
+
+_:node1esit516mx2714 rdf:first "sl";
+  rdf:rest _:node1esit516mx2715 .
+
+_:node1esit516mx2715 rdf:first "pl";
+  rdf:rest _:node1esit516mx2716 .
+
+_:node1esit516mx2716 rdf:first "de";
+  rdf:rest _:node1esit516mx2717 .
+
+_:node1esit516mx2717 rdf:first "ro";
+  rdf:rest _:node1esit516mx2718 .
+
+_:node1esit516mx2718 rdf:first "it";
+  rdf:rest _:node1esit516mx2719 .
+
+_:node1esit516mx2719 rdf:first "pt";
+  rdf:rest _:node1esit516mx2720 .
+
+_:node1esit516mx2720 rdf:first "es";
+  rdf:rest _:node1esit516mx2721 .
+
+_:node1esit516mx2721 rdf:first "fr";
+  rdf:rest _:node1esit516mx2722 .
+
+_:node1esit516mx2722 rdf:first "ga";
+  rdf:rest _:node1esit516mx2723 .
+
+_:node1esit516mx2723 rdf:first "el";
+  rdf:rest _:node1esit516mx2724 .
+
+_:node1esit516mx2724 rdf:first "bg";
+  rdf:rest rdf:nil .
+
+epsh:P37 sh:maxCount 24;
+  sh:minCount 24;
+  sh:name "alternative label"@en;
+  sh:nodeKind sh:Literal;
+  sh:order 10;
+  sh:path skos:altLabel .
+
+epsh:P38 sh:description "2 types are expected : the class of the controlled vocabulary and skos:Concept";
+  sh:in _:node1esit516mx2725 .
+
+_:node1esit516mx2725 rdf:first skos:Concept;
+  rdf:rest _:node1esit516mx2726 .
+
+_:node1esit516mx2726 rdf:first eponto:Country;
+  rdf:rest rdf:nil .
+
+epsh:P38 sh:maxCount 2;
+  sh:minCount 2;
+  sh:name "type"@en;
+  sh:order 11;
+  sh:path rdf:type .
+
+epsh:P40 sh:hasValue scheme:conceptStatus;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "in scheme"@en;
+  sh:nodeKind sh:IRI;
+  sh:order 1;
+  sh:path skos:inScheme .
+
+epsh:P41 sh:datatype xsd:string;
+  sh:description "The (default) label";
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "label"@en;
+  sh:nodeKind sh:Literal;
+  sh:order 2;
+  sh:path rdfs:label .
+
+epsh:P42 sh:datatype rdf:langString;
+  sh:languageIn _:node1esit516mx2727 .
+
+_:node1esit516mx2727 rdf:first "en";
+  rdf:rest _:node1esit516mx2728 .
+
+_:node1esit516mx2728 rdf:first "fr";
   rdf:rest rdf:nil .
 
 epsh:P42 sh:maxCount 2;
+  sh:minCount 1;
+  sh:name "preferred label"@en;
+  sh:nodeKind sh:Literal;
+  sh:order 3;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+epsh:P43 sh:description "2 types are expected : the class of the controlled vocabulary and skos:Concept";
+  sh:in _:node1esit516mx2729 .
+
+_:node1esit516mx2729 rdf:first skos:Concept;
+  rdf:rest _:node1esit516mx2730 .
+
+_:node1esit516mx2730 rdf:first eponto:ConceptStatus;
+  rdf:rest rdf:nil .
+
+epsh:P43 sh:maxCount 2;
   sh:minCount 2;
+  sh:name "type"@en;
+  sh:order 4;
   sh:path rdf:type .
