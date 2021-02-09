@@ -23,14 +23,13 @@
   rdfs:label "Sessions and Sittings" .
 
 epsh:PlenarySession a sh:NodeShape;
-  rdfs:comment """eli/dl/iPlMeetingGroup/{starting date}-{ending date}
-Example :
-/eli/dl/iPlMeetingGroup/20191216-20191219""";
+  rdfs:comment """A Plenary Session spans multiple days and is identified with its begin date and end date. Example URI \"
+/eli/dl/iPlMeetingGroup/20191216-20191219\"""";
   rdfs:label "Plenary Session"@en, "Session plénière"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1esit516mx2774 .
+  sh:ignoredProperties _:node1esit516mx3133 .
 
-_:node1esit516mx2774 rdf:first rdf:type;
+_:node1esit516mx3133 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:PlenarySession sh:nodeKind sh:IRI;
@@ -40,14 +39,12 @@ epsh:PlenarySession sh:nodeKind sh:IRI;
   sh:targetClass eponto:PlenarySession .
 
 epsh:PlenarySitting a sh:NodeShape;
-  rdfs:comment """/eli/dl/iPlMeeting/{date}
-Example :
-/eli/dl/iPlMeeting/20191219""";
+  rdfs:comment "A Plenary Sitting is a single day within a plenary session.";
   rdfs:label "Plenary Sitting"@en, "Séance plénière"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1esit516mx2775 .
+  sh:ignoredProperties _:node1esit516mx3134 .
 
-_:node1esit516mx2775 rdf:first rdf:type;
+_:node1esit516mx3134 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:PlenarySitting sh:nodeKind sh:IRI;
@@ -58,6 +55,7 @@ epsh:PlenarySitting sh:nodeKind sh:IRI;
   sh:targetClass eponto:PlenarySitting .
 
 epsh:Vote a sh:NodeShape;
+  rdfs:comment "Represents a Vote that took place within a Plenary Sitting";
   rdfs:label "Vote"@en, "Vote"@fr;
   sh:nodeKind sh:IRI;
   sh:order 3 .
@@ -73,6 +71,7 @@ epsh:P11 sh:datatype xsd:string;
   sh:pattern "Plenary session from [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9] to [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" .
 
 epsh:P12 sh:datatype xsd:date;
+  sh:description "First day of this plenary session";
   sh:maxCount 1;
   sh:minCount 1;
   sh:name "begin date"@en;
@@ -81,6 +80,7 @@ epsh:P12 sh:datatype xsd:date;
   sh:path eponto:datePlenaryWeekBegin .
 
 epsh:P13 sh:datatype xsd:date;
+  sh:description "Last day of this plenar session";
   sh:maxCount 1;
   sh:minCount 1;
   sh:name "end date"@en;
@@ -89,6 +89,7 @@ epsh:P13 sh:datatype xsd:date;
   sh:path eponto:datePlenaryWeekEnd .
 
 epsh:P14 sh:class eponto:PlenarySitting;
+  sh:description "Reference to each sitting within that session";
   sh:minCount 1;
   sh:name "consists of sitting"@en;
   sh:nodeKind sh:IRI;
@@ -105,78 +106,78 @@ epsh:P18 sh:datatype xsd:string;
   sh:pattern "SESP [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" .
 
 epsh:P19 sh:datatype rdf:langString;
-  sh:languageIn _:node1esit516mx2778 .
+  sh:languageIn _:node1esit516mx3137 .
 
-_:node1esit516mx2778 rdf:first "hu";
-  rdf:rest _:node1esit516mx2779 .
+_:node1esit516mx3137 rdf:first "hu";
+  rdf:rest _:node1esit516mx3138 .
 
-_:node1esit516mx2779 rdf:first "et";
-  rdf:rest _:node1esit516mx2780 .
+_:node1esit516mx3138 rdf:first "et";
+  rdf:rest _:node1esit516mx3139 .
 
-_:node1esit516mx2780 rdf:first "fi";
-  rdf:rest _:node1esit516mx2781 .
+_:node1esit516mx3139 rdf:first "fi";
+  rdf:rest _:node1esit516mx3140 .
 
-_:node1esit516mx2781 rdf:first "cs";
-  rdf:rest _:node1esit516mx2782 .
+_:node1esit516mx3140 rdf:first "cs";
+  rdf:rest _:node1esit516mx3141 .
 
-_:node1esit516mx2782 rdf:first "sk";
-  rdf:rest _:node1esit516mx2783 .
+_:node1esit516mx3141 rdf:first "sk";
+  rdf:rest _:node1esit516mx3142 .
 
-_:node1esit516mx2783 rdf:first "lt";
-  rdf:rest _:node1esit516mx2784 .
+_:node1esit516mx3142 rdf:first "lt";
+  rdf:rest _:node1esit516mx3143 .
 
-_:node1esit516mx2784 rdf:first "lv";
-  rdf:rest _:node1esit516mx2785 .
+_:node1esit516mx3143 rdf:first "lv";
+  rdf:rest _:node1esit516mx3144 .
 
-_:node1esit516mx2785 rdf:first "mt";
-  rdf:rest _:node1esit516mx2786 .
+_:node1esit516mx3144 rdf:first "mt";
+  rdf:rest _:node1esit516mx3145 .
 
-_:node1esit516mx2786 rdf:first "en";
-  rdf:rest _:node1esit516mx2787 .
+_:node1esit516mx3145 rdf:first "en";
+  rdf:rest _:node1esit516mx3146 .
 
-_:node1esit516mx2787 rdf:first "da";
-  rdf:rest _:node1esit516mx2788 .
+_:node1esit516mx3146 rdf:first "da";
+  rdf:rest _:node1esit516mx3147 .
 
-_:node1esit516mx2788 rdf:first "nl";
-  rdf:rest _:node1esit516mx2789 .
+_:node1esit516mx3147 rdf:first "nl";
+  rdf:rest _:node1esit516mx3148 .
 
-_:node1esit516mx2789 rdf:first "sv";
-  rdf:rest _:node1esit516mx2790 .
+_:node1esit516mx3148 rdf:first "sv";
+  rdf:rest _:node1esit516mx3149 .
 
-_:node1esit516mx2790 rdf:first "hr";
-  rdf:rest _:node1esit516mx2791 .
+_:node1esit516mx3149 rdf:first "hr";
+  rdf:rest _:node1esit516mx3150 .
 
-_:node1esit516mx2791 rdf:first "sl";
-  rdf:rest _:node1esit516mx2792 .
+_:node1esit516mx3150 rdf:first "sl";
+  rdf:rest _:node1esit516mx3151 .
 
-_:node1esit516mx2792 rdf:first "pl";
-  rdf:rest _:node1esit516mx2793 .
+_:node1esit516mx3151 rdf:first "pl";
+  rdf:rest _:node1esit516mx3152 .
 
-_:node1esit516mx2793 rdf:first "de";
-  rdf:rest _:node1esit516mx2794 .
+_:node1esit516mx3152 rdf:first "de";
+  rdf:rest _:node1esit516mx3153 .
 
-_:node1esit516mx2794 rdf:first "ro";
-  rdf:rest _:node1esit516mx2795 .
+_:node1esit516mx3153 rdf:first "ro";
+  rdf:rest _:node1esit516mx3154 .
 
-_:node1esit516mx2795 rdf:first "it";
-  rdf:rest _:node1esit516mx2796 .
+_:node1esit516mx3154 rdf:first "it";
+  rdf:rest _:node1esit516mx3155 .
 
-_:node1esit516mx2796 rdf:first "pt";
-  rdf:rest _:node1esit516mx2797 .
+_:node1esit516mx3155 rdf:first "pt";
+  rdf:rest _:node1esit516mx3156 .
 
-_:node1esit516mx2797 rdf:first "es";
-  rdf:rest _:node1esit516mx2798 .
+_:node1esit516mx3156 rdf:first "es";
+  rdf:rest _:node1esit516mx3157 .
 
-_:node1esit516mx2798 rdf:first "fr";
-  rdf:rest _:node1esit516mx2799 .
+_:node1esit516mx3157 rdf:first "fr";
+  rdf:rest _:node1esit516mx3158 .
 
-_:node1esit516mx2799 rdf:first "ga";
-  rdf:rest _:node1esit516mx2800 .
+_:node1esit516mx3158 rdf:first "ga";
+  rdf:rest _:node1esit516mx3159 .
 
-_:node1esit516mx2800 rdf:first "el";
-  rdf:rest _:node1esit516mx2801 .
+_:node1esit516mx3159 rdf:first "el";
+  rdf:rest _:node1esit516mx3160 .
 
-_:node1esit516mx2801 rdf:first "bg";
+_:node1esit516mx3160 rdf:first "bg";
   rdf:rest rdf:nil .
 
 epsh:P19 sh:maxCount 23;
@@ -187,6 +188,7 @@ epsh:P19 sh:maxCount 23;
   sh:path skos:prefLabel .
 
 epsh:P20 sh:datatype xsd:date;
+  sh:description "Date of the sitting";
   sh:maxCount 1;
   sh:minCount 1;
   sh:name "date of sitting"@en;
@@ -194,19 +196,22 @@ epsh:P20 sh:datatype xsd:date;
   sh:order 3;
   sh:path eponto:datePlenarySitting .
 
-epsh:P21 sh:name "has participant"@en;
+epsh:P21 sh:description "Points to every MEP participant that was present during this sitting.";
+  sh:name "has participant"@en;
   sh:nodeKind sh:IRI;
   sh:order 4;
   sh:path eponto:hasParticipant;
   sh:pattern "^http://data.europarl.europa.eu/person/MEP_[0-9][0-9][0-9][0-9]?[0-9]?[0-9]?$" .
 
-epsh:P22 sh:name "consists of vote"@en;
+epsh:P22 sh:description "Reference to the identifier of a Vote that took place during its sitting. Votes are described in a separate Dataset.";
+  sh:name "consists of vote"@en;
   sh:node epsh:Vote;
   sh:nodeKind sh:IRI;
   sh:order 5;
   sh:path eponto:plenarySittingConsistsOfVote .
 
 epsh:P23 sh:class eponto:PlenarySession;
+  sh:description "Reference to the plenary session in which this sitting occurred.";
   sh:maxCount 1;
   sh:minCount 1;
   sh:name "forms part ofplenary session"@en;

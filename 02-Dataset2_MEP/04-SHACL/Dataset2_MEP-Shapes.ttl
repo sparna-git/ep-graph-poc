@@ -23,14 +23,13 @@
   rdfs:label "MEPs" .
 
 epsh:MEP a sh:NodeShape;
-  rdfs:comment """/person/{person id } 
-Example
-/person/MEP_342"""@fr;
+  rdfs:comment """A Member of European Parliament. Example URI \"
+/person/MEP_342\""""@en;
   rdfs:label "MEP"@en, "MEP"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1esit516mx2734 .
+  sh:ignoredProperties _:node1esit516mx3164 .
 
-_:node1esit516mx2734 rdf:first rdf:type;
+_:node1esit516mx3164 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:MEP sh:nodeKind sh:IRI;
@@ -41,16 +40,12 @@ epsh:MEP sh:nodeKind sh:IRI;
   sh:targetClass eponto:MEP .
 
 epsh:MembershipMEP a sh:NodeShape;
-  rdfs:comment """person/{id }/membership/{serial}
-Example
-person/MEP_342/membership/1
-
-(toujours mettre /1 à la fin)"""@fr;
+  rdfs:comment "A relation between MEP and the political group (s)he belongs to at a given point in time. Example URI \"person/MEP_342/membership/1\""@en;
   rdfs:label "MEP political party membership"@en, "Relation MEP / groupe politique"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1esit516mx2735 .
+  sh:ignoredProperties _:node1esit516mx3165 .
 
-_:node1esit516mx2735 rdf:first rdf:type;
+_:node1esit516mx3165 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:MembershipMEP sh:nodeKind sh:IRI;
@@ -60,14 +55,12 @@ epsh:MembershipMEP sh:nodeKind sh:IRI;
   sh:targetClass eponto:MembershipMEP .
 
 epsh:PoliticalGroup a sh:NodeShape;
-  rdfs:comment """org/{org-type}/{natural identifier} 
-Example : 
-/org/group/CD-497"""@fr;
+  rdfs:comment "A Political Group. Example URI \"/org/group/CD-497\""@en;
   rdfs:label "Groupe politique"@fr, "Political Group"@en;
   sh:closed true;
-  sh:ignoredProperties _:node1esit516mx2736 .
+  sh:ignoredProperties _:node1esit516mx3166 .
 
-_:node1esit516mx2736 rdf:first rdf:type;
+_:node1esit516mx3166 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:PoliticalGroup sh:nodeKind sh:IRI;
@@ -77,14 +70,12 @@ epsh:PoliticalGroup sh:nodeKind sh:IRI;
   sh:targetClass eponto:PoliticalGroup .
 
 epsh:Assistant a sh:NodeShape;
-  rdfs:comment """/person/{person id } 
-Example
-/person/Assistant_45"""@fr;
+  rdfs:comment "An assistant to an MEP. Example URI \"/person/Assistant_45\""@en;
   rdfs:label "Assistant"@en, "Assistant"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1esit516mx2737 .
+  sh:ignoredProperties _:node1esit516mx3167 .
 
-_:node1esit516mx2737 rdf:first rdf:type;
+_:node1esit516mx3167 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:Assistant sh:nodeKind sh:IRI;
@@ -94,16 +85,12 @@ epsh:Assistant sh:nodeKind sh:IRI;
   sh:targetClass eponto:Assistant .
 
 epsh:MembershipAssistant a sh:NodeShape;
-  rdfs:comment """person/{id }/membership/{serial}
-Example
-person/MEP_342/membership/1
-
-Mettre un numéro séquentiel dans les membership"""@fr;
+  rdfs:comment "A relation between an Assistant and its MEP. An assistant may assist more than 1 MEP. Example URI \"person/Assistant_45/membership/1\""@en;
   rdfs:label "Assistant membership to an MEP"@en, "Relation Assistant / MEP"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1esit516mx2738 .
+  sh:ignoredProperties _:node1esit516mx3168 .
 
-_:node1esit516mx2738 rdf:first rdf:type;
+_:node1esit516mx3168 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:MembershipAssistant sh:nodeKind sh:IRI;
@@ -176,7 +163,8 @@ epsh:P18 sh:maxCount 1;
   sh:order 8;
   sh:path org:hasMembership .
 
-epsh:P21 sh:maxCount 1;
+epsh:P21 sh:description "Theoretically points to Shape PoliticalGroup, but this constraint is removed when validating files, because MEP and Political Groups are in different source files";
+  sh:maxCount 1;
   sh:minCount 1;
   sh:name "political party"@en;
   sh:nodeKind sh:IRI;
@@ -184,12 +172,12 @@ epsh:P21 sh:maxCount 1;
   sh:path org:organization;
   sh:pattern "^http://data.europarl.europa.eu/org/group/.*$" .
 
-epsh:P22 sh:in _:node1esit516mx2741 .
+epsh:P22 sh:in _:node1esit516mx3171 .
 
-_:node1esit516mx2741 rdf:first org:Membership;
-  rdf:rest _:node1esit516mx2742 .
+_:node1esit516mx3171 rdf:first org:Membership;
+  rdf:rest _:node1esit516mx3172 .
 
-_:node1esit516mx2742 rdf:first eponto:MembershipMEP;
+_:node1esit516mx3172 rdf:first eponto:MembershipMEP;
   rdf:rest rdf:nil .
 
 epsh:P22 sh:maxCount 2;
@@ -208,78 +196,78 @@ epsh:P25 sh:datatype xsd:string;
   sh:path rdfs:label .
 
 epsh:P26 sh:datatype rdf:langString;
-  sh:languageIn _:node1esit516mx2743 .
+  sh:languageIn _:node1esit516mx3173 .
 
-_:node1esit516mx2743 rdf:first "hu";
-  rdf:rest _:node1esit516mx2744 .
+_:node1esit516mx3173 rdf:first "hu";
+  rdf:rest _:node1esit516mx3174 .
 
-_:node1esit516mx2744 rdf:first "et";
-  rdf:rest _:node1esit516mx2745 .
+_:node1esit516mx3174 rdf:first "et";
+  rdf:rest _:node1esit516mx3175 .
 
-_:node1esit516mx2745 rdf:first "fi";
-  rdf:rest _:node1esit516mx2746 .
+_:node1esit516mx3175 rdf:first "fi";
+  rdf:rest _:node1esit516mx3176 .
 
-_:node1esit516mx2746 rdf:first "cs";
-  rdf:rest _:node1esit516mx2747 .
+_:node1esit516mx3176 rdf:first "cs";
+  rdf:rest _:node1esit516mx3177 .
 
-_:node1esit516mx2747 rdf:first "sk";
-  rdf:rest _:node1esit516mx2748 .
+_:node1esit516mx3177 rdf:first "sk";
+  rdf:rest _:node1esit516mx3178 .
 
-_:node1esit516mx2748 rdf:first "lt";
-  rdf:rest _:node1esit516mx2749 .
+_:node1esit516mx3178 rdf:first "lt";
+  rdf:rest _:node1esit516mx3179 .
 
-_:node1esit516mx2749 rdf:first "lv";
-  rdf:rest _:node1esit516mx2750 .
+_:node1esit516mx3179 rdf:first "lv";
+  rdf:rest _:node1esit516mx3180 .
 
-_:node1esit516mx2750 rdf:first "mt";
-  rdf:rest _:node1esit516mx2751 .
+_:node1esit516mx3180 rdf:first "mt";
+  rdf:rest _:node1esit516mx3181 .
 
-_:node1esit516mx2751 rdf:first "en";
-  rdf:rest _:node1esit516mx2752 .
+_:node1esit516mx3181 rdf:first "en";
+  rdf:rest _:node1esit516mx3182 .
 
-_:node1esit516mx2752 rdf:first "da";
-  rdf:rest _:node1esit516mx2753 .
+_:node1esit516mx3182 rdf:first "da";
+  rdf:rest _:node1esit516mx3183 .
 
-_:node1esit516mx2753 rdf:first "nl";
-  rdf:rest _:node1esit516mx2754 .
+_:node1esit516mx3183 rdf:first "nl";
+  rdf:rest _:node1esit516mx3184 .
 
-_:node1esit516mx2754 rdf:first "sv";
-  rdf:rest _:node1esit516mx2755 .
+_:node1esit516mx3184 rdf:first "sv";
+  rdf:rest _:node1esit516mx3185 .
 
-_:node1esit516mx2755 rdf:first "hr";
-  rdf:rest _:node1esit516mx2756 .
+_:node1esit516mx3185 rdf:first "hr";
+  rdf:rest _:node1esit516mx3186 .
 
-_:node1esit516mx2756 rdf:first "sl";
-  rdf:rest _:node1esit516mx2757 .
+_:node1esit516mx3186 rdf:first "sl";
+  rdf:rest _:node1esit516mx3187 .
 
-_:node1esit516mx2757 rdf:first "pl";
-  rdf:rest _:node1esit516mx2758 .
+_:node1esit516mx3187 rdf:first "pl";
+  rdf:rest _:node1esit516mx3188 .
 
-_:node1esit516mx2758 rdf:first "de";
-  rdf:rest _:node1esit516mx2759 .
+_:node1esit516mx3188 rdf:first "de";
+  rdf:rest _:node1esit516mx3189 .
 
-_:node1esit516mx2759 rdf:first "ro";
-  rdf:rest _:node1esit516mx2760 .
+_:node1esit516mx3189 rdf:first "ro";
+  rdf:rest _:node1esit516mx3190 .
 
-_:node1esit516mx2760 rdf:first "it";
-  rdf:rest _:node1esit516mx2761 .
+_:node1esit516mx3190 rdf:first "it";
+  rdf:rest _:node1esit516mx3191 .
 
-_:node1esit516mx2761 rdf:first "pt";
-  rdf:rest _:node1esit516mx2762 .
+_:node1esit516mx3191 rdf:first "pt";
+  rdf:rest _:node1esit516mx3192 .
 
-_:node1esit516mx2762 rdf:first "es";
-  rdf:rest _:node1esit516mx2763 .
+_:node1esit516mx3192 rdf:first "es";
+  rdf:rest _:node1esit516mx3193 .
 
-_:node1esit516mx2763 rdf:first "fr";
-  rdf:rest _:node1esit516mx2764 .
+_:node1esit516mx3193 rdf:first "fr";
+  rdf:rest _:node1esit516mx3194 .
 
-_:node1esit516mx2764 rdf:first "ga";
-  rdf:rest _:node1esit516mx2765 .
+_:node1esit516mx3194 rdf:first "ga";
+  rdf:rest _:node1esit516mx3195 .
 
-_:node1esit516mx2765 rdf:first "el";
-  rdf:rest _:node1esit516mx2766 .
+_:node1esit516mx3195 rdf:first "el";
+  rdf:rest _:node1esit516mx3196 .
 
-_:node1esit516mx2766 rdf:first "bg";
+_:node1esit516mx3196 rdf:first "bg";
   rdf:rest rdf:nil .
 
 epsh:P26 sh:maxCount 24;
@@ -347,12 +335,12 @@ epsh:P35 sh:datatype xsd:string;
   sh:path foaf:familyName .
 
 epsh:P36 sh:datatype xsd:string;
-  sh:in _:node1esit516mx2767 .
+  sh:in _:node1esit516mx3197 .
 
-_:node1esit516mx2767 rdf:first "Local";
-  rdf:rest _:node1esit516mx2768 .
+_:node1esit516mx3197 rdf:first "Local";
+  rdf:rest _:node1esit516mx3198 .
 
-_:node1esit516mx2768 rdf:first "Accredited";
+_:node1esit516mx3198 rdf:first "Accredited";
   rdf:rest rdf:nil .
 
 epsh:P36 sh:maxCount 1;
@@ -370,7 +358,8 @@ epsh:P37 sh:description "Note : a single assistant can be the assistant of multi
   sh:order 4;
   sh:path org:hasMembership .
 
-epsh:P40 sh:maxCount 1;
+epsh:P40 sh:description "Theoretically points to Shape MEP, but this constraint is removed when validating files, because Assistant and MEP are in different source files";
+  sh:maxCount 1;
   sh:minCount 1;
   sh:name "MEP"@en;
   sh:nodeKind sh:IRI;
@@ -378,12 +367,12 @@ epsh:P40 sh:maxCount 1;
   sh:path org:organization;
   sh:pattern "^http://data.europarl.europa.eu/person/MEP_[0-9][0-9][0-9][0-9]?[0-9]?[0-9]?$" .
 
-epsh:P41 sh:in _:node1esit516mx2769 .
+epsh:P41 sh:in _:node1esit516mx3199 .
 
-_:node1esit516mx2769 rdf:first org:Membership;
-  rdf:rest _:node1esit516mx2770 .
+_:node1esit516mx3199 rdf:first org:Membership;
+  rdf:rest _:node1esit516mx3200 .
 
-_:node1esit516mx2770 rdf:first eponto:MembershipAssistant;
+_:node1esit516mx3200 rdf:first eponto:MembershipAssistant;
   rdf:rest rdf:nil .
 
 epsh:P41 sh:maxCount 2;
