@@ -1,7 +1,6 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix ep: <http://data.europarl.europa.eu/> .
 @prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> .
 @prefix epsh: <http://data.europarl.europa.eu/shapes#> .
 @prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
@@ -27,79 +26,79 @@ epsh:MEP a sh:NodeShape;
 /person/MEP_342\""""@en;
   rdfs:label "MEP"@en, "MEP"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1esit516mx3164 .
+  sh:ignoredProperties _:node1esit516mx4235 .
 
-_:node1esit516mx3164 rdf:first rdf:type;
+_:node1esit516mx4235 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:MEP sh:nodeKind sh:IRI;
   sh:order 1;
   sh:pattern "^http://data.europarl.europa.eu/person/MEP_[0-9][0-9][0-9][0-9]?[0-9]?[0-9]?$";
-  sh:property epsh:P11, epsh:P12, epsh:P13, epsh:P14, epsh:P15, epsh:P16, epsh:P17,
-    epsh:P18;
+  sh:property epsh:P10, epsh:P11, epsh:P12, epsh:P13, epsh:P14, epsh:P15, epsh:P16,
+    epsh:P17;
   sh:targetClass eponto:MEP .
 
 epsh:MembershipMEP a sh:NodeShape;
   rdfs:comment "A relation between MEP and the political group (s)he belongs to at a given point in time. Example URI \"person/MEP_342/membership/1\""@en;
   rdfs:label "MEP political party membership"@en, "Relation MEP / groupe politique"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1esit516mx3165 .
+  sh:ignoredProperties _:node1esit516mx4236 .
 
-_:node1esit516mx3165 rdf:first rdf:type;
+_:node1esit516mx4236 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:MembershipMEP sh:nodeKind sh:IRI;
   sh:order 2;
   sh:pattern "^http://data.europarl.europa.eu/person/MEP_[0-9][0-9][0-9][0-9]?[0-9]?[0-9]?/membership/[0-9][0-9]?[0-9]?[0-9]?[0-9]?$";
-  sh:property epsh:P21, epsh:P22;
+  sh:property epsh:P20, epsh:P21;
   sh:targetClass eponto:MembershipMEP .
 
 epsh:PoliticalGroup a sh:NodeShape;
   rdfs:comment "A Political Group. Example URI \"/org/group/CD-497\""@en;
   rdfs:label "Groupe politique"@fr, "Political Group"@en;
   sh:closed true;
-  sh:ignoredProperties _:node1esit516mx3166 .
+  sh:ignoredProperties _:node1esit516mx4237 .
 
-_:node1esit516mx3166 rdf:first rdf:type;
+_:node1esit516mx4237 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:PoliticalGroup sh:nodeKind sh:IRI;
   sh:order 3;
   sh:pattern "^http://data.europarl.europa.eu/org/group/.*$";
-  sh:property epsh:P25, epsh:P26, epsh:P27, epsh:P28, epsh:P29, epsh:P30, epsh:P31;
+  sh:property epsh:P24, epsh:P25, epsh:P26, epsh:P27, epsh:P28, epsh:P29, epsh:P30;
   sh:targetClass eponto:PoliticalGroup .
 
 epsh:Assistant a sh:NodeShape;
   rdfs:comment "An assistant to an MEP. Example URI \"/person/Assistant_45\""@en;
   rdfs:label "Assistant"@en, "Assistant"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1esit516mx3167 .
+  sh:ignoredProperties _:node1esit516mx4238 .
 
-_:node1esit516mx3167 rdf:first rdf:type;
+_:node1esit516mx4238 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:Assistant sh:nodeKind sh:IRI;
   sh:order 4;
   sh:pattern "^http://data.europarl.europa.eu/person/Assistant_[0-9][0-9][0-9][0-9][0-9]?[0-9]?$";
-  sh:property epsh:P34, epsh:P35, epsh:P36, epsh:P37;
+  sh:property epsh:P33, epsh:P34, epsh:P35, epsh:P36;
   sh:targetClass eponto:Assistant .
 
 epsh:MembershipAssistant a sh:NodeShape;
   rdfs:comment "A relation between an Assistant and its MEP. An assistant may assist more than 1 MEP. Example URI \"person/Assistant_45/membership/1\""@en;
   rdfs:label "Assistant membership to an MEP"@en, "Relation Assistant / MEP"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1esit516mx3168 .
+  sh:ignoredProperties _:node1esit516mx4239 .
 
-_:node1esit516mx3168 rdf:first rdf:type;
+_:node1esit516mx4239 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:MembershipAssistant sh:nodeKind sh:IRI;
   sh:order 5;
   sh:pattern "^http://data.europarl.europa.eu/person/Assistant_[0-9][0-9][0-9][0-9][0-9]?[0-9]?/membership/[0-9]$";
-  sh:property epsh:P40, epsh:P41;
+  sh:property epsh:P39, epsh:P40;
   sh:targetClass eponto:MembershipAssistant .
 
-epsh:P11 sh:datatype xsd:string;
+epsh:P10 sh:datatype xsd:string;
   sh:maxCount 1;
   sh:minCount 1;
   sh:name "first name"@en;
@@ -107,7 +106,7 @@ epsh:P11 sh:datatype xsd:string;
   sh:order 1;
   sh:path foaf:firstName .
 
-epsh:P12 sh:datatype xsd:string;
+epsh:P11 sh:datatype xsd:string;
   sh:maxCount 1;
   sh:minCount 1;
   sh:name "family name"@en;
@@ -115,7 +114,7 @@ epsh:P12 sh:datatype xsd:string;
   sh:order 2;
   sh:path foaf:familyName .
 
-epsh:P13 sh:maxCount 1;
+epsh:P12 sh:maxCount 1;
   sh:minCount 0;
   sh:name "civility"@en;
   sh:nodeKind sh:IRI;
@@ -123,7 +122,7 @@ epsh:P13 sh:maxCount 1;
   sh:path eponto:Civility;
   sh:pattern "^http://data.europarl.europa.eu/authority/civility/.*$" .
 
-epsh:P14 sh:datatype xsd:string;
+epsh:P13 sh:datatype xsd:string;
   sh:maxCount 1;
   sh:minCount 1;
   sh:name "notation"@en;
@@ -131,7 +130,7 @@ epsh:P14 sh:datatype xsd:string;
   sh:order 4;
   sh:path skos:notation .
 
-epsh:P15 sh:maxCount 1;
+epsh:P14 sh:maxCount 1;
   sh:minCount 1;
   sh:name "gender"@en;
   sh:nodeKind sh:IRI;
@@ -139,7 +138,7 @@ epsh:P15 sh:maxCount 1;
   sh:path eponto:Gender;
   sh:pattern "^http://data.europarl.europa.eu/authority/gender/.*$" .
 
-epsh:P16 sh:maxCount 1;
+epsh:P15 sh:maxCount 1;
   sh:minCount 1;
   sh:name "status"@en;
   sh:nodeKind sh:IRI;
@@ -147,7 +146,7 @@ epsh:P16 sh:maxCount 1;
   sh:path eponto:Status;
   sh:pattern "^http://data.europarl.europa.eu/authority/conceptStatus/.*$" .
 
-epsh:P17 sh:maxCount 1;
+epsh:P16 sh:maxCount 1;
   sh:minCount 0;
   sh:name "birth country"@en;
   sh:nodeKind sh:IRI;
@@ -155,7 +154,7 @@ epsh:P17 sh:maxCount 1;
   sh:path eponto:hasBirthCountry;
   sh:pattern "^http://data.europarl.europa.eu/authority/country/.*$" .
 
-epsh:P18 sh:maxCount 1;
+epsh:P17 sh:maxCount 1;
   sh:minCount 1;
   sh:name "membership"@en;
   sh:node epsh:MembershipMEP;
@@ -163,31 +162,32 @@ epsh:P18 sh:maxCount 1;
   sh:order 8;
   sh:path org:hasMembership .
 
-epsh:P21 sh:description "Theoretically points to Shape PoliticalGroup, but this constraint is removed when validating files, because MEP and Political Groups are in different source files";
+epsh:P20 sh:description "Theoretically points to Shape PoliticalGroup, but this constraint is removed when validating converted files, because MEP and Political Groups are in different source files";
   sh:maxCount 1;
   sh:minCount 1;
   sh:name "political party"@en;
+  sh:node epsh:PoliticalGroup;
   sh:nodeKind sh:IRI;
   sh:order 1;
   sh:path org:organization;
   sh:pattern "^http://data.europarl.europa.eu/org/group/.*$" .
 
-epsh:P22 sh:in _:node1esit516mx3171 .
+epsh:P21 sh:in _:node1esit516mx4242 .
 
-_:node1esit516mx3171 rdf:first org:Membership;
-  rdf:rest _:node1esit516mx3172 .
+_:node1esit516mx4242 rdf:first org:Membership;
+  rdf:rest _:node1esit516mx4243 .
 
-_:node1esit516mx3172 rdf:first eponto:MembershipMEP;
+_:node1esit516mx4243 rdf:first eponto:MembershipMEP;
   rdf:rest rdf:nil .
 
-epsh:P22 sh:maxCount 2;
+epsh:P21 sh:maxCount 2;
   sh:minCount 2;
   sh:name "type"@en;
   sh:nodeKind sh:IRI;
   sh:order 2;
   sh:path rdf:type .
 
-epsh:P25 sh:datatype xsd:string;
+epsh:P24 sh:datatype xsd:string;
   sh:maxCount 1;
   sh:minCount 1;
   sh:name "default label"@en;
@@ -195,82 +195,82 @@ epsh:P25 sh:datatype xsd:string;
   sh:order 1;
   sh:path rdfs:label .
 
-epsh:P26 sh:datatype rdf:langString;
-  sh:languageIn _:node1esit516mx3173 .
+epsh:P25 sh:datatype rdf:langString;
+  sh:languageIn _:node1esit516mx4244 .
 
-_:node1esit516mx3173 rdf:first "hu";
-  rdf:rest _:node1esit516mx3174 .
+_:node1esit516mx4244 rdf:first "hu";
+  rdf:rest _:node1esit516mx4245 .
 
-_:node1esit516mx3174 rdf:first "et";
-  rdf:rest _:node1esit516mx3175 .
+_:node1esit516mx4245 rdf:first "et";
+  rdf:rest _:node1esit516mx4246 .
 
-_:node1esit516mx3175 rdf:first "fi";
-  rdf:rest _:node1esit516mx3176 .
+_:node1esit516mx4246 rdf:first "fi";
+  rdf:rest _:node1esit516mx4247 .
 
-_:node1esit516mx3176 rdf:first "cs";
-  rdf:rest _:node1esit516mx3177 .
+_:node1esit516mx4247 rdf:first "cs";
+  rdf:rest _:node1esit516mx4248 .
 
-_:node1esit516mx3177 rdf:first "sk";
-  rdf:rest _:node1esit516mx3178 .
+_:node1esit516mx4248 rdf:first "sk";
+  rdf:rest _:node1esit516mx4249 .
 
-_:node1esit516mx3178 rdf:first "lt";
-  rdf:rest _:node1esit516mx3179 .
+_:node1esit516mx4249 rdf:first "lt";
+  rdf:rest _:node1esit516mx4250 .
 
-_:node1esit516mx3179 rdf:first "lv";
-  rdf:rest _:node1esit516mx3180 .
+_:node1esit516mx4250 rdf:first "lv";
+  rdf:rest _:node1esit516mx4251 .
 
-_:node1esit516mx3180 rdf:first "mt";
-  rdf:rest _:node1esit516mx3181 .
+_:node1esit516mx4251 rdf:first "mt";
+  rdf:rest _:node1esit516mx4252 .
 
-_:node1esit516mx3181 rdf:first "en";
-  rdf:rest _:node1esit516mx3182 .
+_:node1esit516mx4252 rdf:first "en";
+  rdf:rest _:node1esit516mx4253 .
 
-_:node1esit516mx3182 rdf:first "da";
-  rdf:rest _:node1esit516mx3183 .
+_:node1esit516mx4253 rdf:first "da";
+  rdf:rest _:node1esit516mx4254 .
 
-_:node1esit516mx3183 rdf:first "nl";
-  rdf:rest _:node1esit516mx3184 .
+_:node1esit516mx4254 rdf:first "nl";
+  rdf:rest _:node1esit516mx4255 .
 
-_:node1esit516mx3184 rdf:first "sv";
-  rdf:rest _:node1esit516mx3185 .
+_:node1esit516mx4255 rdf:first "sv";
+  rdf:rest _:node1esit516mx4256 .
 
-_:node1esit516mx3185 rdf:first "hr";
-  rdf:rest _:node1esit516mx3186 .
+_:node1esit516mx4256 rdf:first "hr";
+  rdf:rest _:node1esit516mx4257 .
 
-_:node1esit516mx3186 rdf:first "sl";
-  rdf:rest _:node1esit516mx3187 .
+_:node1esit516mx4257 rdf:first "sl";
+  rdf:rest _:node1esit516mx4258 .
 
-_:node1esit516mx3187 rdf:first "pl";
-  rdf:rest _:node1esit516mx3188 .
+_:node1esit516mx4258 rdf:first "pl";
+  rdf:rest _:node1esit516mx4259 .
 
-_:node1esit516mx3188 rdf:first "de";
-  rdf:rest _:node1esit516mx3189 .
+_:node1esit516mx4259 rdf:first "de";
+  rdf:rest _:node1esit516mx4260 .
 
-_:node1esit516mx3189 rdf:first "ro";
-  rdf:rest _:node1esit516mx3190 .
+_:node1esit516mx4260 rdf:first "ro";
+  rdf:rest _:node1esit516mx4261 .
 
-_:node1esit516mx3190 rdf:first "it";
-  rdf:rest _:node1esit516mx3191 .
+_:node1esit516mx4261 rdf:first "it";
+  rdf:rest _:node1esit516mx4262 .
 
-_:node1esit516mx3191 rdf:first "pt";
-  rdf:rest _:node1esit516mx3192 .
+_:node1esit516mx4262 rdf:first "pt";
+  rdf:rest _:node1esit516mx4263 .
 
-_:node1esit516mx3192 rdf:first "es";
-  rdf:rest _:node1esit516mx3193 .
+_:node1esit516mx4263 rdf:first "es";
+  rdf:rest _:node1esit516mx4264 .
 
-_:node1esit516mx3193 rdf:first "fr";
-  rdf:rest _:node1esit516mx3194 .
+_:node1esit516mx4264 rdf:first "fr";
+  rdf:rest _:node1esit516mx4265 .
 
-_:node1esit516mx3194 rdf:first "ga";
-  rdf:rest _:node1esit516mx3195 .
+_:node1esit516mx4265 rdf:first "ga";
+  rdf:rest _:node1esit516mx4266 .
 
-_:node1esit516mx3195 rdf:first "el";
-  rdf:rest _:node1esit516mx3196 .
+_:node1esit516mx4266 rdf:first "el";
+  rdf:rest _:node1esit516mx4267 .
 
-_:node1esit516mx3196 rdf:first "bg";
+_:node1esit516mx4267 rdf:first "bg";
   rdf:rest rdf:nil .
 
-epsh:P26 sh:maxCount 24;
+epsh:P25 sh:maxCount 24;
   sh:minCount 24;
   sh:name "preferred label"@en;
   sh:nodeKind sh:Literal;
@@ -278,7 +278,7 @@ epsh:P26 sh:maxCount 24;
   sh:path skos:prefLabel;
   sh:uniqueLang true .
 
-epsh:P27 sh:datatype xsd:date;
+epsh:P26 sh:datatype xsd:date;
   sh:maxCount 1;
   sh:minCount 1;
   sh:name "activated date"@en;
@@ -286,7 +286,7 @@ epsh:P27 sh:datatype xsd:date;
   sh:order 3;
   sh:path eponto:activatedDate .
 
-epsh:P28 sh:datatype xsd:date;
+epsh:P27 sh:datatype xsd:date;
   sh:maxCount 1;
   sh:minCount 1;
   sh:name "start date"@en;
@@ -294,7 +294,7 @@ epsh:P28 sh:datatype xsd:date;
   sh:order 4;
   sh:path eponto:startDate .
 
-epsh:P29 sh:datatype xsd:date;
+epsh:P28 sh:datatype xsd:date;
   sh:maxCount 1;
   sh:minCount 1;
   sh:name "end date"@en;
@@ -302,7 +302,7 @@ epsh:P29 sh:datatype xsd:date;
   sh:order 5;
   sh:path eponto:endDate .
 
-epsh:P30 sh:datatype xsd:integer;
+epsh:P29 sh:datatype xsd:integer;
   sh:maxCount 1;
   sh:minCount 1;
   sh:name "order number"@en;
@@ -310,7 +310,7 @@ epsh:P30 sh:datatype xsd:integer;
   sh:order 6;
   sh:path eponto:orderNumber .
 
-epsh:P31 sh:datatype xsd:string;
+epsh:P30 sh:datatype xsd:string;
   sh:maxCount 1;
   sh:minCount 1;
   sh:name "notation"@en;
@@ -318,7 +318,7 @@ epsh:P31 sh:datatype xsd:string;
   sh:order 7;
   sh:path skos:notation .
 
-epsh:P34 sh:datatype xsd:string;
+epsh:P33 sh:datatype xsd:string;
   sh:maxCount 1;
   sh:minCount 1;
   sh:name "first name"@en;
@@ -326,7 +326,7 @@ epsh:P34 sh:datatype xsd:string;
   sh:order 1;
   sh:path foaf:firstName .
 
-epsh:P35 sh:datatype xsd:string;
+epsh:P34 sh:datatype xsd:string;
   sh:maxCount 1;
   sh:minCount 1;
   sh:name "family name"@en;
@@ -334,23 +334,23 @@ epsh:P35 sh:datatype xsd:string;
   sh:order 2;
   sh:path foaf:familyName .
 
-epsh:P36 sh:datatype xsd:string;
-  sh:in _:node1esit516mx3197 .
+epsh:P35 sh:datatype xsd:string;
+  sh:in _:node1esit516mx4268 .
 
-_:node1esit516mx3197 rdf:first "Local";
-  rdf:rest _:node1esit516mx3198 .
+_:node1esit516mx4268 rdf:first "Local";
+  rdf:rest _:node1esit516mx4269 .
 
-_:node1esit516mx3198 rdf:first "Accredited";
+_:node1esit516mx4269 rdf:first "Accredited";
   rdf:rest rdf:nil .
 
-epsh:P36 sh:maxCount 1;
+epsh:P35 sh:maxCount 1;
   sh:minCount 1;
   sh:name "type of assistant"@en;
   sh:nodeKind sh:Literal;
   sh:order 3;
   sh:path eponto:assistantType .
 
-epsh:P37 sh:description "Note : a single assistant can be the assistant of multiple MEP";
+epsh:P36 sh:description "Note : a single assistant can be the assistant of multiple MEP";
   sh:minCount 1;
   sh:name "membership"@en;
   sh:node epsh:MembershipAssistant;
@@ -358,24 +358,25 @@ epsh:P37 sh:description "Note : a single assistant can be the assistant of multi
   sh:order 4;
   sh:path org:hasMembership .
 
-epsh:P40 sh:description "Theoretically points to Shape MEP, but this constraint is removed when validating files, because Assistant and MEP are in different source files";
+epsh:P39 sh:description "Theoretically points to Shape MEP, but this constraint is removed when validating converted files, because Assistant and MEP are in different source files";
   sh:maxCount 1;
   sh:minCount 1;
   sh:name "MEP"@en;
+  sh:node epsh:MEP;
   sh:nodeKind sh:IRI;
   sh:order 1;
   sh:path org:organization;
   sh:pattern "^http://data.europarl.europa.eu/person/MEP_[0-9][0-9][0-9][0-9]?[0-9]?[0-9]?$" .
 
-epsh:P41 sh:in _:node1esit516mx3199 .
+epsh:P40 sh:in _:node1esit516mx4270 .
 
-_:node1esit516mx3199 rdf:first org:Membership;
-  rdf:rest _:node1esit516mx3200 .
+_:node1esit516mx4270 rdf:first org:Membership;
+  rdf:rest _:node1esit516mx4271 .
 
-_:node1esit516mx3200 rdf:first eponto:MembershipAssistant;
+_:node1esit516mx4271 rdf:first eponto:MembershipAssistant;
   rdf:rest rdf:nil .
 
-epsh:P41 sh:maxCount 2;
+epsh:P40 sh:maxCount 2;
   sh:minCount 2;
   sh:name "type"@en;
   sh:nodeKind sh:IRI;

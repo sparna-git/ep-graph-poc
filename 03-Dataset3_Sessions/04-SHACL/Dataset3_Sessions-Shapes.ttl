@@ -1,7 +1,6 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix ep: <http://data.europarl.europa.eu/> .
 @prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> .
 @prefix epsh: <http://data.europarl.europa.eu/shapes#> .
 @prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
@@ -27,31 +26,31 @@ epsh:PlenarySession a sh:NodeShape;
 /eli/dl/iPlMeetingGroup/20191216-20191219\"""";
   rdfs:label "Plenary Session"@en, "Session plénière"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1esit516mx3133 .
+  sh:ignoredProperties _:node1esit516mx4321 .
 
-_:node1esit516mx3133 rdf:first rdf:type;
+_:node1esit516mx4321 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:PlenarySession sh:nodeKind sh:IRI;
   sh:order 1;
   sh:pattern "^http://data.europarl.europa.eu/eli/dl/iPlMeetingGroup/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$";
-  sh:property epsh:P11, epsh:P12, epsh:P13, epsh:P14;
+  sh:property epsh:P10, epsh:P11, epsh:P12, epsh:P13;
   sh:targetClass eponto:PlenarySession .
 
 epsh:PlenarySitting a sh:NodeShape;
   rdfs:comment "A Plenary Sitting is a single day within a plenary session.";
   rdfs:label "Plenary Sitting"@en, "Séance plénière"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1esit516mx3134 .
+  sh:ignoredProperties _:node1esit516mx4322 .
 
-_:node1esit516mx3134 rdf:first rdf:type;
+_:node1esit516mx4322 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:PlenarySitting sh:nodeKind sh:IRI;
   sh:order 2;
   sh:pattern "^http://data.europarl.europa.eu/eli/dl/iPlMeeting/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$";
-  sh:property epsh:P18, epsh:P19, epsh:P20, epsh:P21, epsh:P22, epsh:P23, epsh:P24,
-    epsh:P25, epsh:P26, epsh:P27, epsh:P28, epsh:P29, epsh:P30, epsh:P31, epsh:P32;
+  sh:property epsh:P17, epsh:P18, epsh:P19, epsh:P20, epsh:P21, epsh:P22, epsh:P23,
+    epsh:P24, epsh:P25, epsh:P26, epsh:P27, epsh:P28, epsh:P29, epsh:P30, epsh:P31;
   sh:targetClass eponto:PlenarySitting .
 
 epsh:Vote a sh:NodeShape;
@@ -60,7 +59,7 @@ epsh:Vote a sh:NodeShape;
   sh:nodeKind sh:IRI;
   sh:order 3 .
 
-epsh:P11 sh:datatype xsd:string;
+epsh:P10 sh:datatype xsd:string;
   sh:description "Label is automatically generated with the begin date and end date of the session";
   sh:maxCount 1;
   sh:minCount 1;
@@ -70,7 +69,7 @@ epsh:P11 sh:datatype xsd:string;
   sh:path rdfs:label;
   sh:pattern "Plenary session from [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9] to [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" .
 
-epsh:P12 sh:datatype xsd:date;
+epsh:P11 sh:datatype xsd:date;
   sh:description "First day of this plenary session";
   sh:maxCount 1;
   sh:minCount 1;
@@ -79,7 +78,7 @@ epsh:P12 sh:datatype xsd:date;
   sh:order 2;
   sh:path eponto:datePlenaryWeekBegin .
 
-epsh:P13 sh:datatype xsd:date;
+epsh:P12 sh:datatype xsd:date;
   sh:description "Last day of this plenar session";
   sh:maxCount 1;
   sh:minCount 1;
@@ -88,7 +87,7 @@ epsh:P13 sh:datatype xsd:date;
   sh:order 3;
   sh:path eponto:datePlenaryWeekEnd .
 
-epsh:P14 sh:class eponto:PlenarySitting;
+epsh:P13 sh:class eponto:PlenarySitting;
   sh:description "Reference to each sitting within that session";
   sh:minCount 1;
   sh:name "consists of sitting"@en;
@@ -96,7 +95,7 @@ epsh:P14 sh:class eponto:PlenarySitting;
   sh:order 4;
   sh:path eponto:plenarySessionConsistsOfPlenarySitting .
 
-epsh:P18 sh:datatype xsd:string;
+epsh:P17 sh:datatype xsd:string;
   sh:maxCount 1;
   sh:minCount 1;
   sh:name "default label"@en;
@@ -105,89 +104,89 @@ epsh:P18 sh:datatype xsd:string;
   sh:path rdfs:label;
   sh:pattern "SESP [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" .
 
-epsh:P19 sh:datatype rdf:langString;
-  sh:languageIn _:node1esit516mx3137 .
+epsh:P18 sh:datatype rdf:langString;
+  sh:languageIn _:node1esit516mx4325 .
 
-_:node1esit516mx3137 rdf:first "hu";
-  rdf:rest _:node1esit516mx3138 .
+_:node1esit516mx4325 rdf:first "hu";
+  rdf:rest _:node1esit516mx4326 .
 
-_:node1esit516mx3138 rdf:first "et";
-  rdf:rest _:node1esit516mx3139 .
+_:node1esit516mx4326 rdf:first "et";
+  rdf:rest _:node1esit516mx4327 .
 
-_:node1esit516mx3139 rdf:first "fi";
-  rdf:rest _:node1esit516mx3140 .
+_:node1esit516mx4327 rdf:first "fi";
+  rdf:rest _:node1esit516mx4328 .
 
-_:node1esit516mx3140 rdf:first "cs";
-  rdf:rest _:node1esit516mx3141 .
+_:node1esit516mx4328 rdf:first "cs";
+  rdf:rest _:node1esit516mx4329 .
 
-_:node1esit516mx3141 rdf:first "sk";
-  rdf:rest _:node1esit516mx3142 .
+_:node1esit516mx4329 rdf:first "sk";
+  rdf:rest _:node1esit516mx4330 .
 
-_:node1esit516mx3142 rdf:first "lt";
-  rdf:rest _:node1esit516mx3143 .
+_:node1esit516mx4330 rdf:first "lt";
+  rdf:rest _:node1esit516mx4331 .
 
-_:node1esit516mx3143 rdf:first "lv";
-  rdf:rest _:node1esit516mx3144 .
+_:node1esit516mx4331 rdf:first "lv";
+  rdf:rest _:node1esit516mx4332 .
 
-_:node1esit516mx3144 rdf:first "mt";
-  rdf:rest _:node1esit516mx3145 .
+_:node1esit516mx4332 rdf:first "mt";
+  rdf:rest _:node1esit516mx4333 .
 
-_:node1esit516mx3145 rdf:first "en";
-  rdf:rest _:node1esit516mx3146 .
+_:node1esit516mx4333 rdf:first "en";
+  rdf:rest _:node1esit516mx4334 .
 
-_:node1esit516mx3146 rdf:first "da";
-  rdf:rest _:node1esit516mx3147 .
+_:node1esit516mx4334 rdf:first "da";
+  rdf:rest _:node1esit516mx4335 .
 
-_:node1esit516mx3147 rdf:first "nl";
-  rdf:rest _:node1esit516mx3148 .
+_:node1esit516mx4335 rdf:first "nl";
+  rdf:rest _:node1esit516mx4336 .
 
-_:node1esit516mx3148 rdf:first "sv";
-  rdf:rest _:node1esit516mx3149 .
+_:node1esit516mx4336 rdf:first "sv";
+  rdf:rest _:node1esit516mx4337 .
 
-_:node1esit516mx3149 rdf:first "hr";
-  rdf:rest _:node1esit516mx3150 .
+_:node1esit516mx4337 rdf:first "hr";
+  rdf:rest _:node1esit516mx4338 .
 
-_:node1esit516mx3150 rdf:first "sl";
-  rdf:rest _:node1esit516mx3151 .
+_:node1esit516mx4338 rdf:first "sl";
+  rdf:rest _:node1esit516mx4339 .
 
-_:node1esit516mx3151 rdf:first "pl";
-  rdf:rest _:node1esit516mx3152 .
+_:node1esit516mx4339 rdf:first "pl";
+  rdf:rest _:node1esit516mx4340 .
 
-_:node1esit516mx3152 rdf:first "de";
-  rdf:rest _:node1esit516mx3153 .
+_:node1esit516mx4340 rdf:first "de";
+  rdf:rest _:node1esit516mx4341 .
 
-_:node1esit516mx3153 rdf:first "ro";
-  rdf:rest _:node1esit516mx3154 .
+_:node1esit516mx4341 rdf:first "ro";
+  rdf:rest _:node1esit516mx4342 .
 
-_:node1esit516mx3154 rdf:first "it";
-  rdf:rest _:node1esit516mx3155 .
+_:node1esit516mx4342 rdf:first "it";
+  rdf:rest _:node1esit516mx4343 .
 
-_:node1esit516mx3155 rdf:first "pt";
-  rdf:rest _:node1esit516mx3156 .
+_:node1esit516mx4343 rdf:first "pt";
+  rdf:rest _:node1esit516mx4344 .
 
-_:node1esit516mx3156 rdf:first "es";
-  rdf:rest _:node1esit516mx3157 .
+_:node1esit516mx4344 rdf:first "es";
+  rdf:rest _:node1esit516mx4345 .
 
-_:node1esit516mx3157 rdf:first "fr";
-  rdf:rest _:node1esit516mx3158 .
+_:node1esit516mx4345 rdf:first "fr";
+  rdf:rest _:node1esit516mx4346 .
 
-_:node1esit516mx3158 rdf:first "ga";
-  rdf:rest _:node1esit516mx3159 .
+_:node1esit516mx4346 rdf:first "ga";
+  rdf:rest _:node1esit516mx4347 .
 
-_:node1esit516mx3159 rdf:first "el";
-  rdf:rest _:node1esit516mx3160 .
+_:node1esit516mx4347 rdf:first "el";
+  rdf:rest _:node1esit516mx4348 .
 
-_:node1esit516mx3160 rdf:first "bg";
+_:node1esit516mx4348 rdf:first "bg";
   rdf:rest rdf:nil .
 
-epsh:P19 sh:maxCount 23;
+epsh:P18 sh:maxCount 23;
   sh:minCount 23;
   sh:name "preferred label"@en;
   sh:nodeKind sh:Literal;
   sh:order 2;
   sh:path skos:prefLabel .
 
-epsh:P20 sh:datatype xsd:date;
+epsh:P19 sh:datatype xsd:date;
   sh:description "Date of the sitting";
   sh:maxCount 1;
   sh:minCount 1;
@@ -196,21 +195,21 @@ epsh:P20 sh:datatype xsd:date;
   sh:order 3;
   sh:path eponto:datePlenarySitting .
 
-epsh:P21 sh:description "Points to every MEP participant that was present during this sitting.";
+epsh:P20 sh:description "Points to every MEP participant that was present during this sitting.";
   sh:name "has participant"@en;
   sh:nodeKind sh:IRI;
   sh:order 4;
   sh:path eponto:hasParticipant;
   sh:pattern "^http://data.europarl.europa.eu/person/MEP_[0-9][0-9][0-9][0-9]?[0-9]?[0-9]?$" .
 
-epsh:P22 sh:description "Reference to the identifier of a Vote that took place during its sitting. Votes are described in a separate Dataset.";
+epsh:P21 sh:description "Reference to the identifier of a Vote that took place during its sitting. Votes are described in a separate Dataset.";
   sh:name "consists of vote"@en;
   sh:node epsh:Vote;
   sh:nodeKind sh:IRI;
   sh:order 5;
   sh:path eponto:plenarySittingConsistsOfVote .
 
-epsh:P23 sh:class eponto:PlenarySession;
+epsh:P22 sh:class eponto:PlenarySession;
   sh:description "Reference to the plenary session in which this sitting occurred.";
   sh:maxCount 1;
   sh:minCount 1;
@@ -219,14 +218,14 @@ epsh:P23 sh:class eponto:PlenarySession;
   sh:order 6;
   sh:path eponto:plenarySittingFormsPartOfPlenarySession .
 
-epsh:P24 sh:maxCount 1;
+epsh:P23 sh:maxCount 1;
   sh:name "adopted text list"@en;
   sh:nodeKind sh:IRI;
   sh:order 7;
   sh:path eponto:hasAdoptedTextList;
   sh:pattern "^http://data.europarl.europa.eu/reference/reds:.*/entity$" .
 
-epsh:P25 sh:maxCount 1;
+epsh:P24 sh:maxCount 1;
   sh:minCount 1;
   sh:name "agenda"@en;
   sh:nodeKind sh:IRI;
@@ -234,7 +233,7 @@ epsh:P25 sh:maxCount 1;
   sh:path eponto:hasAgenda;
   sh:pattern "^http://data.europarl.europa.eu/reference/reds:.*/entity$" .
 
-epsh:P26 sh:maxCount 1;
+epsh:P25 sh:maxCount 1;
   sh:minCount 1;
   sh:name "attendance list"@en;
   sh:nodeKind sh:IRI;
@@ -242,7 +241,7 @@ epsh:P26 sh:maxCount 1;
   sh:path eponto:hasAttendanceList;
   sh:pattern "^http://data.europarl.europa.eu/reference/reds:.*/entity$" .
 
-epsh:P27 sh:maxCount 1;
+epsh:P26 sh:maxCount 1;
   sh:minCount 1;
   sh:name "cre"@en;
   sh:nodeKind sh:IRI;
@@ -250,7 +249,7 @@ epsh:P27 sh:maxCount 1;
   sh:path eponto:hasCre;
   sh:pattern "^http://data.europarl.europa.eu/reference/reds:.*/entity$" .
 
-epsh:P28 sh:maxCount 1;
+epsh:P27 sh:maxCount 1;
   sh:minCount 1;
   sh:name "minutes"@en;
   sh:nodeKind sh:IRI;
@@ -258,29 +257,28 @@ epsh:P28 sh:maxCount 1;
   sh:path eponto:hasMinutes;
   sh:pattern "^http://data.europarl.europa.eu/reference/reds:.*/entity$" .
 
-epsh:P29 sh:maxCount 1;
+epsh:P28 sh:maxCount 1;
   sh:name "roll call votes"@en;
   sh:nodeKind sh:IRI;
   sh:order 12;
   sh:path eponto:hasRollCallVotes;
   sh:pattern "^http://data.europarl.europa.eu/reference/reds:.*/entity$" .
 
-epsh:P30 sh:maxCount 1;
+epsh:P29 sh:maxCount 1;
   sh:name "vote result"@en;
   sh:nodeKind sh:IRI;
   sh:order 13;
   sh:path eponto:hasVoteResult;
   sh:pattern "^http://data.europarl.europa.eu/reference/reds:.*/entity$" .
 
-epsh:P31 sh:maxCount 1;
-  sh:minCount 1;
+epsh:P30 sh:minCount 1;
   sh:name "logistic meeting"@en;
   sh:nodeKind sh:IRI;
   sh:order 14;
   sh:path eponto:hasLogisticMeeting;
   sh:pattern "^http://data.europarl.europa.eu/reference/reds:.*/entity$" .
 
-epsh:P32 sh:name "annex"@en;
+epsh:P31 sh:name "annex"@en;
   sh:nodeKind sh:IRI;
   sh:order 15;
   sh:path eponto:hasAnnex;
