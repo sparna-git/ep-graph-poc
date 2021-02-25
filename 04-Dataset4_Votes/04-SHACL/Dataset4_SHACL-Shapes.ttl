@@ -20,15 +20,18 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://data.europarl.europa.eu/shapes/votes> a owl:Ontology;
-  rdfs:label "Votes" .
+  dct:modified "2021-02-28"^^xsd:date;
+  rdfs:comment "This dataset describes the votes and the position of each MEP within a given vote";
+  rdfs:label "Votes";
+  owl:versionInfo "v1" .
 
 epsh:Vote a sh:NodeShape;
   rdfs:comment "A Vote that took place within a sitting, identified with a vote number. Example URI \"/eli/dl/iPlMeeting/20191219/3\"";
   rdfs:label "Vote"@en, "Vote"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1esit516mx4306 .
+  sh:ignoredProperties _:node1ev72u98ex358 .
 
-_:node1esit516mx4306 rdf:first rdf:type;
+_:node1ev72u98ex358 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:Vote sh:nodeKind sh:IRI;
@@ -41,9 +44,9 @@ epsh:MEPVote a sh:NodeShape;
   rdfs:comment "Represents the vote of a single MEP within a Vote. This is identified by the Vote number and the MEP ID. Example URI \"/eli/dl/iPlMeeting/20191219/3/MEP_342\"";
   rdfs:label "MEP Vote"@en, "Vote d’un MEP"@fr;
   sh:closed true;
-  sh:ignoredProperties _:node1esit516mx4307 .
+  sh:ignoredProperties _:node1ev72u98ex359 .
 
-_:node1esit516mx4307 rdf:first rdf:type;
+_:node1ev72u98ex359 rdf:first rdf:type;
   rdf:rest rdf:nil .
 
 epsh:MEPVote sh:nodeKind sh:IRI;
@@ -54,100 +57,114 @@ epsh:MEPVote sh:nodeKind sh:IRI;
 
 epsh:PlenarySitting a sh:NodeShape;
   rdfs:comment "A plenary sitting";
+  rdfs:label "Plenary Sitting"@en, "Séance plénière"@fr;
   sh:nodeKind sh:IRI;
+  sh:order 3;
   sh:pattern "^http://data.europarl.europa.eu/eli/dl/iPlMeeting/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$" .
 
 epsh:VotePosition a sh:NodeShape;
   rdfs:comment "A reference to a vote position (for, against, abstention)";
-  sh:nodeKind sh:IRI .
+  rdfs:label "Choix de vote"@fr, "Vote Position"@en;
+  sh:nodeKind sh:IRI;
+  sh:order 4 .
 
 epsh:PoliticalGroup a sh:NodeShape;
   rdfs:comment "A reference to a Political Group";
+  rdfs:label "Groupe parlementaire"@fr, "Political group"@en;
   sh:nodeKind sh:IRI;
+  sh:order 5;
   sh:pattern "^http://data.europarl.europa.eu/org/group/.*$" .
 
 epsh:MEP a sh:NodeShape;
   rdfs:comment "A reference to an MEP";
+  rdfs:label "MEP"@en, "MEP"@fr;
   sh:nodeKind sh:IRI;
+  sh:order 6;
   sh:pattern "^http://data.europarl.europa.eu/person/MEP_.*$" .
 
 epsh:P10 sh:datatype rdf:langString;
-  sh:languageIn _:node1esit516mx4310 .
+  sh:description "Name of the voted text (from RollCallVote.Description.Text)"@en;
+  sh:languageIn _:node1ev72u98ex362 .
 
-_:node1esit516mx4310 rdf:first "fr";
+_:node1ev72u98ex362 rdf:first "fr";
   rdf:rest rdf:nil .
 
 epsh:P10 sh:maxCount 1;
   sh:minCount 1;
-  sh:name "Name of the voted text (from RollCallVote.Description.Text)"@fr, "preferred label"@en;
+  sh:name "titre du vote"@fr, "vote title"@en;
   sh:nodeKind sh:Literal;
   sh:order 1;
   sh:path skos:prefLabel .
 
 epsh:P11 sh:datatype xsd:integer;
+  sh:description "Number of the vote (from RollCallVote.Result/@Number)"@en;
   sh:maxCount 1;
   sh:minCount 1;
-  sh:name "Number of the vote (from RollCallVote.Result/@Number)"@fr, "vote identifier"@en;
+  sh:name "identifiant du vote"@fr, "vote identifier"@en;
   sh:nodeKind sh:Literal;
   sh:order 2;
   sh:path eponto:voteIdentifier .
 
 epsh:P12 sh:class eponto:MEPVote;
+  sh:description "Link to MEP votes in that Vote"@en;
   sh:minCount 1;
-  sh:name "Link to MEP votes in that Vote"@fr, "consists of MEP vote"@en;
+  sh:name "consists of MEP vote"@en, "contient le vote d’un MEP"@fr;
   sh:nodeKind sh:IRI;
   sh:order 3;
   sh:path eponto:voteConsistsOfMEPVote .
 
-epsh:P13 sh:maxCount 1;
+epsh:P13 sh:description "Link to plenary sitting during which the vote took place"@en;
+  sh:maxCount 1;
   sh:minCount 1;
-  sh:name "Link to plenary sitting during which the vote took place"@fr, "preferred labellenary sitting"@en;
+  sh:name "fait partie d’une séance plénière"@fr, "forms part of plenary sitting"@en;
   sh:node epsh:PlenarySitting;
   sh:nodeKind sh:IRI;
   sh:order 4;
   sh:path eponto:voteFormsPartOfPlenarySitting .
 
-epsh:P17 sh:maxCount 1;
+epsh:P17 sh:description "Link to the MEP that voted"@en;
+  sh:maxCount 1;
   sh:minCount 1;
-  sh:name "Link to the MEP that voted"@fr, "mep"@en;
+  sh:name "mep"@en, "mep"@fr;
   sh:node epsh:MEP;
   sh:nodeKind sh:IRI;
   sh:order 1;
   sh:path eponto:voteByMEP .
 
-epsh:P18 sh:in _:node1esit516mx4311 .
+epsh:P18 sh:description "Indicates whether to vote is « for », « against » or « abstention »"@en;
+  sh:in _:node1ev72u98ex363 .
 
-_:node1esit516mx4311 rdf:first position:for;
-  rdf:rest _:node1esit516mx4312 .
+_:node1ev72u98ex363 rdf:first position:for;
+  rdf:rest _:node1ev72u98ex364 .
 
-_:node1esit516mx4312 rdf:first position:against;
-  rdf:rest _:node1esit516mx4313 .
+_:node1ev72u98ex364 rdf:first position:against;
+  rdf:rest _:node1ev72u98ex365 .
 
-_:node1esit516mx4313 rdf:first position:abstention;
+_:node1ev72u98ex365 rdf:first position:abstention;
   rdf:rest rdf:nil .
 
 epsh:P18 sh:maxCount 1;
   sh:minCount 1;
-  sh:name "Indicates whether to vote is « for », « against » or « abstention »"@fr,
-    "position"@en;
+  sh:name "position"@en, "position"@fr;
   sh:node epsh:VotePosition;
   sh:nodeKind sh:IRI;
   sh:order 2;
   sh:path eponto:votePosition .
 
-epsh:P19 sh:maxCount 1;
+epsh:P19 sh:description "Link to political group to which the MEP belongs when the vote took place"@en;
+  sh:maxCount 1;
   sh:minCount 1;
-  sh:name "Link to political group to which the MEP belongs when the vote took place"@fr,
-    "political group"@en;
+  sh:name "groupe parlementaire"@fr, "political group"@en;
   sh:node epsh:PoliticalGroup;
   sh:nodeKind sh:IRI;
   sh:order 3;
   sh:path eponto:voteFromPoliticalGroup .
 
 epsh:P20 sh:class eponto:Vote;
+  sh:description "Link to the vote"@en;
   sh:maxCount 1;
   sh:minCount 1;
-  sh:name "Link to the vote"@fr, "forms part of vote"@en;
+  sh:name "fait partie du vote"@fr, "forms part of vote"@en;
   sh:nodeKind sh:IRI;
   sh:order 4;
   sh:path eponto:MEPVoteFormsPartOfVote .
