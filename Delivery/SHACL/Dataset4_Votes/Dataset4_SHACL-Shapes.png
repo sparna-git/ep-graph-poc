@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+
+
+
+<!-- setup the locale for the messages based on the language in the session -->
+
+
+
+
+
+<html>
+	<head>
+		<title>SHACL Play!</title>
+		
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+	    <!-- Font Awesome -->
+	    <link rel="stylesheet" href="/play/resources/fa/css/all.min.css">
+		
+		<link rel="stylesheet" href="/play/resources/MDB-Free/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/play/resources/MDB-Free/css/mdb.min.css">
+		<link rel="stylesheet" href="/play/resources/jasny-bootstrap/jasny-bootstrap.min.css" />
+		<link rel="stylesheet" href="/play/resources/css/shacl-play.css" />	
+			
+		
+		<script type="text/javascript">
+			
+			function enabledShapeInput(selected) {
+				document.getElementById('sourceShape-' + selected).checked = true;
+				document.getElementById('inputShapeUrl').disabled = selected != 'inputShapeUrl';
+				document.getElementById('inputShapeCatalog').disabled = selected != 'inputShapeCatalog';
+				document.getElementById('inputShapeFile').disabled = selected != 'inputShapeFile';
+				document.getElementById('inputShapeInline').disabled = selected != 'inputShapeInline';
+			}
+
+	    </script>
+		
+		
+	</head>
+	<body>
+
+	
+
+
+
+
+
+<!-- setup the locale for the messages based on the language in the session -->
+
+
+
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light" id="globalnav">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="/play/"><i class="fal fa-home"></i>&nbsp;SHACL Play!</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+                <a class="nav-link" href="/play/validate">Valider</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="/play/convert">Convertir</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/play/draw">Dessiner<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="/play/doc">Générer une doc</a>
+            </li>
+            <li class="navbar-text">|</li>
+            <li class="nav-item ">
+                <a class="nav-link" href="/play/shapes-catalog">Catalogue de Shapes</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="/play/rules-catalog">Catalogue de Règles</a>
+            </li>
+        </ul>
+        <!-- /Links -->
+        
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="langMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span style="font-size:1.25rem;"><i class="fal fa-globe-africa"></i></span>&nbsp;&nbsp;fr
+            </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="langMenuLink">
+              <a class="dropdown-item" href="/play/home?lang=fr">fr</a>
+              <a class="dropdown-item" href="/play/home?lang=en">en</a>
+            </div>
+          </li>
+        </ul>
+
+    </div>
+    <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+                
+
+    <div class="container-fluid">
+    
+    	<div class="row justify-content-md-center">
+            <div class="col-6">
+ 
+	    		<div class="messages">
+					
+				</div>
+				
+				<h1 class="display-3">Dessiner mon SHACL en UML</h1>	
+	 
+			  	<form id="upload_form" action="draw" method="POST" enctype="multipart/form-data" class="form-horizontal">
+				      
+					  
+
+						  <h2><i class="fal fa-shapes"></i>&nbsp;&nbsp;Règles</h2>
+						  <blockquote class="blockquote bq-primary">		  
+						  
+						      <div class="form-group row">
+		
+							    <label for="inputShapeFile" class="col-sm-3 col-form-label">
+							    
+							    	<input
+											type="radio"
+											name="shapesSource"
+											id="sourceShape-inputShapeFile"
+											value="file"
+											checked="checked"
+											onchange="enabledShapeInput('inputShapeFile')" />
+							    	Uploader
+							    
+							    </label>
+							    <div class="col-sm-9">
+							    		<div class="fileinput fileinput-new input-group" data-provides="fileinput">
+										  <div class="form-control" data-trigger="fileinput" id="inputShapeFile">
+										    <i class="fal fa-upload"></i><span class="fileinput-filename with-icon"></span>
+										  </div>
+										  <span class="input-group-append">
+										    <span class="input-group-text fileinput-exists" data-dismiss="fileinput">
+										      Annuler
+										    </span>
+										
+										    <span class="input-group-text btn-file">
+										      <span class="fileinput-new">Sélectionner un fichier</span>
+										      <span class="fileinput-exists">Modifier</span>
+										      <input type="file" name="inputShapeFile" multiple onchange="enabledShapeInput('inputShapeFile')">
+										    </span>
+										  </span>
+										</div>
+										<small class="form-text text-muted">
+											  Vous pouvez sélectionnez plusieurs fichiers d'un coup. Extensions supportées : .rdf, .ttl, .n3, .trig. Les autres extensions seront considérées comme du RDF/XML
+									  </small>
+							    </div>
+							  </div>
+						      
+						      
+							      <div class="form-group row">	
+								    <label for="inputShapeCatalog" class="col-sm-3 col-form-label">
+								    
+								    	<input
+												type="radio"
+												name="shapesSource"
+												id="sourceShape-inputShapeCatalog"
+												value="catalog"
+												onchange="enabledShapeInput('inputShapeCatalog')" />
+								    	Sélectionner dans le <a href="shapes-catalog">catalogue de shapes</a>					    
+								    </label>
+								    <div class="col-sm-9">
+								    		<select class="form-control" id="inputShapeCatalog" name="inputShapeCatalog" onchange="enabledShapeInput('inputShapeCatalog');">
+										      	
+										      		<option value="eli">ELI Shapes</option>
+										      	
+										      		<option value="shaclplay-catalog">SHACL Play! Catalog shapes</option>
+										      	
+										      		<option value="shsh">SHACL for SHACL</option>
+										      	
+										      		<option value="op-skosShapes">SKOS Shapes (Office of Publications)</option>
+										      	
+										      		<option value="lode">LODE Shapes from DBPedia Archivo</option>
+										      	
+										      		<option value="scoLOMFR">ScoLOMFR Application Profile</option>
+										      	
+										      		<option value="openarchaeo">OpenArchaeo Shapes</option>
+										      	
+										    </select>
+										    <small class="form-text text-muted">
+												  Pour que votre SHACL apparaisse dans la liste, éditez directement le <a target="_blank" href="https://github.com/sparna-git/SHACL-Catalog/blob/master/shapes-catalog.ttl">catalogue dans Github</a>.
+										    </small>
+								    </div>
+								  </div>
+							  
+							  
+							  <div class="form-group row">
+							    <label for="inputShapeUrl" class="col-sm-3 col-form-label">
+							    
+							    	<input
+											type="radio"
+											name="shapesSource"
+											id="sourceShape-inputShapeUrl"
+											value="url"
+											onchange="enabledShapeInput('inputShapeUrl')" />
+							    	URL
+							    </label>
+							    <div class="col-sm-9">
+							      <input 
+							      	type="text"
+							      	class="form-control"
+							      	id="inputShapeUrl"
+							      	name="inputShapeUrl"
+							      	placeholder="http://... (URL du fichier SHACL)"
+							      	onkeypress="enabledShapeInput('inputShapeUrl');"
+							      	onchange="enabledShapeInput('inputShapeUrl')"
+							      >
+							      <small class="form-text text-muted">
+									  URL d'un fichier RDF valide - supporte les mêmes extensions que l'upload ci-dessus.
+							    </small>
+							    </div>
+							  </div>
+							  <div class="form-group row">
+							    <label for="inputShapeInline" class="col-sm-3 col-form-label">
+							    
+							    	<input
+											type="radio"
+											name="shapesSource"
+											id="sourceShape-inputShapeInline"
+											value="inline"
+											onchange="enabledShapeInput('inputShapeInline')" />
+							    	Copier/coller les règles SHACL
+							    </label>
+							    <div class="col-sm-9">
+							      <textarea 
+							      	class="form-control"
+							      	id="inputShapeInline"
+							      	name="inputShapeInline"
+							      	rows="5"
+							      	onkeypress="enabledShapeInput('inputShapeInline');"
+							      	onpaste="enabledShapeInput('inputShapeInline');"
+							      ></textarea>
+							      <small class="form-text text-muted">
+									  Syntaxes supportées : Turtle, RDF/XML, JSON-LD, TriG, TriX, N-Quads. Privilégiez Turtle.
+								  </small>
+							    </div>	
+						      </div>
+					      </blockquote>					  
+					  
+					  
+					  <h2><i class="fal fa-tools"></i>&nbsp;&nbsp;Options</h2>
+				      <blockquote class="blockquote bq-warning">
+				      <div class="form-group row">
+
+							<label for="inputShapeCatalog" class="col-sm-3 col-form-label">
+								Format des sortie					    
+							</label>
+						    <div class="col-sm-9">
+					    		<select class="form-control" id="format" name="format" >
+					    			<option value="svg">SVG</option>
+					    			<option value="png">PNG</option>
+							    </select>
+						    </div>
+								    
+					  </div>
+					  </blockquote>
+					  
+				    <button type="submit" id="validate-button" class="btn btn-info btn-lg">Dessiner</button>			  	
+			  	</form>
+ 		
+			</div>
+		</div>
+
+    </div><!-- /.container-fluid -->
+
+			
+	
+
+
+
+
+<!-- setup the locale for the messages based on the language in the session -->
+
+
+
+<footer id="footer" style="margin-top:30px;">
+	    SHACL Play! by <a href="http://blog.sparna.fr" target="_blank">Thomas Francart</a>, <a href="http://sparna.fr" target="_blank"><img src="/play/resources/img/sparna.png" /></a>
+      	&nbsp;|&nbsp;
+      	version : 0.4 (timestamp)
+      	&nbsp;|&nbsp;
+      	SHACL Play! embeds <a href="https://github.com/TopQuadrant/shacl" target="_blank">TobBraid SHACL API</a> from <a href="https://www.topquadrant.com/" target="_blank">TopQuadrant</a>
+      	<br />
+      	<br />
+</footer>
+	
+	<!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="/play/resources/MDB-Free/js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="/play/resources/MDB-Free/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="/play/resources/MDB-Free/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="/play/resources/MDB-Free/js/mdb.min.js"></script>
+	
+    <script type="text/javascript" src="/play/resources/jasny-bootstrap/jasny-bootstrap.min.js"></script>
+
+    
+    <script>
+    	$(document).ready(function () {
+	    	$('#htmlOrRdf a').click(function (e) {
+	    	  e.preventDefault();
+	    	  $(this).tab('show')
+	    	});
+	    	
+	        // Initialize CodeMirror editor and the update callbacks
+	        var sourceText = document.getElementById('text');
+	        var editorOptions = {
+	          mode: 'text/html',
+	          tabMode: 'indent'
+	        };
+	        
+	        // CodeMirror commented for now
+	        // var editor = CodeMirror.fromTextArea(sourceText, editorOptions);
+	        // editor.on("change", function(cm, event) { enabledInput('text'); });
+    	});
+    </script>
+    
+  </body>
+</html>

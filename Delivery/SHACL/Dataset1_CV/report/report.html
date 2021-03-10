@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>SHACL validation report</title>
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Datatable style with bootstrap -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+	  
+	  <!-- JQuery -->
+	  <script
+				  src="http://code.jquery.com/jquery-3.4.1.slim.min.js"
+				  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+				  crossorigin="anonymous"></script>
+	  
+	<!-- Datatables -->
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	<!-- Datatable with bootstrap -->
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+	
+	<!-- fontawesome -->
+	<link href="fa/css/all.min.css" rel="stylesheet"> <!--load all styles -->
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row justify-content-center" style="padding-top:1em;">
+			<div class="col-10">
+				
+<style type="text/css">
+	.report-section {
+		margin-top: 2em;
+	}
+	
+	.table-outer {
+		height:250px;
+		overflow:hidden;
+	}
+	
+	.table-outer.open {
+		height:unset;
+		overflow:visible;
+	}
+</style>
+
+<div class="row  justify-content-center">
+<div class="col">
+
+<div class="report-header card">
+          <div class="card-header bg-danger">
+	      	<h3>
+
+	24 Violations
+	
+
+
+	      	</h3>
+          </div>
+          <div class="card-body">
+            <ul style="list-style-type: none;">
+            		<li>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	7 <em>"Property needs to have at least 1 values, but found 0"</em>
+		(skos:prefLabel in shape ep:shapes#P15)
+	&nbsp;<small><a href="#1 946 069 923">see details</a></small>
+
+</li>
+            		<li>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	7 <em>"Property needs to have at least 1 values, but found 0"</em>
+		(rdfs:label in shape ep:shapes#P13)
+	&nbsp;<small><a href="#-2 021 436 153">see details</a></small>
+
+</li>
+            		<li>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	2 <em>"Property may only have 1 value, but found 2"</em>
+		(rdfs:label in shape ep:shapes#P13)
+	&nbsp;<small><a href="#-369 029 223">see details</a></small>
+
+</li>
+            		<li>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	2 <em>"Property may only have 1 value, but found 3"</em>
+		(ep:ontology/ep#isoLanguage in shape ep:shapes#P12)
+	&nbsp;<small><a href="#1 333 026 421">see details</a></small>
+
+</li>
+            		<li>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	2 <em>"Property needs to have at least 24 values, but found 23"</em>
+		(skos:prefLabel in shape ep:shapes#P34)
+	&nbsp;<small><a href="#1 280 115 808">see details</a></small>
+
+</li>
+            		<li>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	2 <em>"Property needs to have at least 24 values, but found 23"</em>
+		(skos:altLabel in shape ep:shapes#P35)
+	&nbsp;<small><a href="#-732 827 525">see details</a></small>
+
+</li>
+            		<li>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	1 <em>"Property may only have 1 value, but found 2"</em>
+		(ep:ontology/ep#isoLanguage in shape ep:shapes#P12)
+	&nbsp;<small><a href="#1 333 026 421">see details</a></small>
+
+</li>
+            		<li>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	1 <em>"Property needs to have at least 1 values, but found 0"</em>
+		(skos:prefLabel in shape ep:shapes#P40)
+	&nbsp;<small><a href="#-1 690 204 165">see details</a></small>
+
+</li>
+            </ul>
+          </div>
+</div><!-- /.report-header -->
+
+<div class="report-body">
+	<div id="1 946 069 923" class="report-section">
+		<h3>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	7 <em>"Property needs to have at least 1 values, but found 0"</em>
+		(skos:prefLabel)
+
+</h3>
+
+		<div class="report-section-card card">
+          <div class="card-header">
+			<ul>
+				<li>Shape : ep:shapes#P15</li>
+				<li>Constraint : sh:MinCountConstraintComponent</li>
+			</ul>
+          </div>
+          <div class="card-body">
+        	     <table class="table table-borderless table-sm">
+                    <thead>
+                      <tr>
+                        <th>Focus node</th>
+                        <th>Property or path</th>
+                        <th>Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/authority/civility/HRA">scheme:civility/HRA</span></td>
+                            <td><span title="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</span</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/authority/civility/KUNDZE">scheme:civility/KUNDZE</span></td>
+                            <td><span title="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</span</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/authority/civility/KUNGS">scheme:civility/KUNGS</span></td>
+                            <td><span title="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</span</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/authority/civility/NTI">scheme:civility/NTI</span></td>
+                            <td><span title="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</span</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/authority/civility/RVA">scheme:civility/RVA</span></td>
+                            <td><span title="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</span</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/authority/civility/UR">scheme:civility/UR</span></td>
+                            <td><span title="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</span</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/authority/civility/URHOLGY">scheme:civility/URHOLGY</span></td>
+                            <td><span title="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</span</td>
+                            <td></td>
+                          </tr>
+                    </tbody>
+                </table>
+          </div>
+		</div><!-- /.report-section -->
+	</div>
+	<div id="-2 021 436 153" class="report-section">
+		<h3>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	7 <em>"Property needs to have at least 1 values, but found 0"</em>
+		(rdfs:label)
+
+</h3>
+
+		<div class="report-section-card card">
+          <div class="card-header">
+			<ul>
+				<li>Shape : ep:shapes#P13</li>
+				<li>Constraint : sh:MinCountConstraintComponent</li>
+			</ul>
+          </div>
+          <div class="card-body">
+        	     <table class="table table-borderless table-sm">
+                    <thead>
+                      <tr>
+                        <th>Focus node</th>
+                        <th>Property or path</th>
+                        <th>Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/authority/civility/HRA">scheme:civility/HRA</span></td>
+                            <td><span title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</span</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/authority/civility/KUNDZE">scheme:civility/KUNDZE</span></td>
+                            <td><span title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</span</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/authority/civility/KUNGS">scheme:civility/KUNGS</span></td>
+                            <td><span title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</span</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/authority/civility/NTI">scheme:civility/NTI</span></td>
+                            <td><span title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</span</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/authority/civility/RVA">scheme:civility/RVA</span></td>
+                            <td><span title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</span</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/authority/civility/UR">scheme:civility/UR</span></td>
+                            <td><span title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</span</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/authority/civility/URHOLGY">scheme:civility/URHOLGY</span></td>
+                            <td><span title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</span</td>
+                            <td></td>
+                          </tr>
+                    </tbody>
+                </table>
+          </div>
+		</div><!-- /.report-section -->
+	</div>
+	<div id="-369 029 223" class="report-section">
+		<h3>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	2 <em>"Property may only have 1 value, but found 2"</em>
+		(rdfs:label)
+
+</h3>
+
+		<div class="report-section-card card">
+          <div class="card-header">
+			<ul>
+				<li>Shape : ep:shapes#P13</li>
+				<li>Constraint : sh:MaxCountConstraintComponent</li>
+			</ul>
+          </div>
+          <div class="card-body">
+        	     <table class="table table-borderless table-sm">
+                    <thead>
+                      <tr>
+                        <th>Focus node</th>
+                        <th>Property or path</th>
+                        <th>Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/authority/civility/PAN">scheme:civility/PAN</span></td>
+                            <td><span title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</span</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/authority/civility/PANI">scheme:civility/PANI</span></td>
+                            <td><span title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</span</td>
+                            <td></td>
+                          </tr>
+                    </tbody>
+                </table>
+          </div>
+		</div><!-- /.report-section -->
+	</div>
+	<div id="1 333 026 421" class="report-section">
+		<h3>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	2 <em>"Property may only have 1 value, but found 3"</em>
+		(ep:ontology/ep#isoLanguage)
+
+</h3>
+
+		<div class="report-section-card card">
+          <div class="card-header">
+			<ul>
+				<li>Shape : ep:shapes#P12</li>
+				<li>Constraint : sh:MaxCountConstraintComponent</li>
+			</ul>
+          </div>
+          <div class="card-body">
+        	     <table class="table table-borderless table-sm">
+                    <thead>
+                      <tr>
+                        <th>Focus node</th>
+                        <th>Property or path</th>
+                        <th>Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/authority/civility/PAN">scheme:civility/PAN</span></td>
+                            <td><span title="http://data.europarl.europa.eu/ontology/ep#isoLanguage">ep:ontology/ep#isoLanguage</span</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/authority/civility/PANI">scheme:civility/PANI</span></td>
+                            <td><span title="http://data.europarl.europa.eu/ontology/ep#isoLanguage">ep:ontology/ep#isoLanguage</span</td>
+                            <td></td>
+                          </tr>
+                    </tbody>
+                </table>
+          </div>
+		</div><!-- /.report-section -->
+	</div>
+	<div id="1 280 115 808" class="report-section">
+		<h3>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	2 <em>"Property needs to have at least 24 values, but found 23"</em>
+		(skos:prefLabel)
+
+</h3>
+
+		<div class="report-section-card card">
+          <div class="card-header">
+			<ul>
+				<li>Shape : ep:shapes#P34</li>
+				<li>Constraint : sh:MinCountConstraintComponent</li>
+			</ul>
+          </div>
+          <div class="card-body">
+        	     <table class="table table-borderless table-sm">
+                    <thead>
+                      <tr>
+                        <th>Focus node</th>
+                        <th>Property or path</th>
+                        <th>Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/authority/country/CS">scheme:country/CS</span></td>
+                            <td><span title="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</span</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/authority/country/ZZ">scheme:country/ZZ</span></td>
+                            <td><span title="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</span</td>
+                            <td></td>
+                          </tr>
+                    </tbody>
+                </table>
+          </div>
+		</div><!-- /.report-section -->
+	</div>
+	<div id="-732 827 525" class="report-section">
+		<h3>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	2 <em>"Property needs to have at least 24 values, but found 23"</em>
+		(skos:altLabel)
+
+</h3>
+
+		<div class="report-section-card card">
+          <div class="card-header">
+			<ul>
+				<li>Shape : ep:shapes#P35</li>
+				<li>Constraint : sh:MinCountConstraintComponent</li>
+			</ul>
+          </div>
+          <div class="card-body">
+        	     <table class="table table-borderless table-sm">
+                    <thead>
+                      <tr>
+                        <th>Focus node</th>
+                        <th>Property or path</th>
+                        <th>Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/authority/country/CS">scheme:country/CS</span></td>
+                            <td><span title="http://www.w3.org/2004/02/skos/core#altLabel">skos:altLabel</span</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/authority/country/ZZ">scheme:country/ZZ</span></td>
+                            <td><span title="http://www.w3.org/2004/02/skos/core#altLabel">skos:altLabel</span</td>
+                            <td></td>
+                          </tr>
+                    </tbody>
+                </table>
+          </div>
+		</div><!-- /.report-section -->
+	</div>
+	<div id="1 333 026 421" class="report-section">
+		<h3>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	1 <em>"Property may only have 1 value, but found 2"</em>
+		(ep:ontology/ep#isoLanguage)
+
+</h3>
+
+		<div class="report-section-card card">
+          <div class="card-header">
+			<ul>
+				<li>Shape : ep:shapes#P12</li>
+				<li>Constraint : sh:MaxCountConstraintComponent</li>
+			</ul>
+          </div>
+          <div class="card-body">
+        	     <table class="table table-borderless table-sm">
+                    <thead>
+                      <tr>
+                        <th>Focus node</th>
+                        <th>Property or path</th>
+                        <th>Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/authority/civility/HR">scheme:civility/HR</span></td>
+                            <td><span title="http://data.europarl.europa.eu/ontology/ep#isoLanguage">ep:ontology/ep#isoLanguage</span</td>
+                            <td></td>
+                          </tr>
+                    </tbody>
+                </table>
+          </div>
+		</div><!-- /.report-section -->
+	</div>
+	<div id="-1 690 204 165" class="report-section">
+		<h3>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	1 <em>"Property needs to have at least 1 values, but found 0"</em>
+		(skos:prefLabel)
+
+</h3>
+
+		<div class="report-section-card card">
+          <div class="card-header">
+			<ul>
+				<li>Shape : ep:shapes#P40</li>
+				<li>Constraint : sh:MinCountConstraintComponent</li>
+			</ul>
+          </div>
+          <div class="card-body">
+        	     <table class="table table-borderless table-sm">
+                    <thead>
+                      <tr>
+                        <th>Focus node</th>
+                        <th>Property or path</th>
+                        <th>Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/authority/conceptStatus/RESTRICTED">scheme:conceptStatus/RESTRICTED</span></td>
+                            <td><span title="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</span</td>
+                            <td></td>
+                          </tr>
+                    </tbody>
+                </table>
+          </div>
+		</div><!-- /.report-section -->
+	</div>
+</div> <!-- /.report-body -->
+
+</div>
+</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	$(document).ready(function() {
+    	var table = $('#resultTable').DataTable();
+
+    	// add the toggle link behavior
+        $( ".toggleTableLink" ).click(function(event) {
+    		$(this).parent().prev(".table-outer").toggleClass("open");
+    		return false;
+        });
+	});
+</script>
+</html>

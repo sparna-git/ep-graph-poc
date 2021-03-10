@@ -1,0 +1,2308 @@
+@prefix schema: <http://schema.org/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix epsh:  <http://data.europarl.europa.eu/shapes#> .
+@prefix qb:    <http://purl.org/linked-data/cube#> .
+@prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix position: <http://data.europarl.europa.eu/authority/votePosition/> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+[ a            sh:ValidationReport ;
+  sh:conforms  false ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/19> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "19"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/10> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "10"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/26> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "26"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/4> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "4"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/12> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "12"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/7> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "7"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/109> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "109"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/106> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "106"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/19> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "19"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/8> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "8"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/28> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "28"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190917/3> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "3"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/8> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "8"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/84> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "84"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/18> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "18"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/1> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "1"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/17> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "17"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/53> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "53"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/40> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "40"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/22> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "22"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/2> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "2"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/14> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "14"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/48> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "48"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/88> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "88"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/82> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "82"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/12> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "12"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/35> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "35"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/57> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "57"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/14> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "14"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/6> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "6"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/31> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "31"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/5> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "5"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/32> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "32"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/33> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "33"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/5> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "5"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/29> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "29"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/86> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "86"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/8> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "8"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/99> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "99"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/20> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "20"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/1> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "1"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/62> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "62"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/87> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "87"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/15> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "15"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/17> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "17"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/48> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "48"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/41> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "41"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/74> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "74"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/79> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "79"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/90> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "90"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/59> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "59"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/38> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "38"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/37> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "37"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/34> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "34"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/69> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "69"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/6> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "6"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/25> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "25"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/13> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "13"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/46> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "46"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190917/2> ;
+                 sh:resultMessage              "Property needs to have at least 1 values, but found 0" ;
+                 sh:resultPath                 eponto:voteConsistsOfMEPVote ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent ;
+                 sh:sourceShape                epsh:P12
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/27> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "27"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/77> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "77"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/30> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "30"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/9> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "9"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/44> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "44"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/9> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "9"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/37> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "37"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/49> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "49"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/108> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "108"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/5> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "5"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/49> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "49"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/9> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "9"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/8> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "8"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/71> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "71"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/2> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "2"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/15> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "15"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/16> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "16"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/6> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "6"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/89> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "89"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/30> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "30"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/11> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "11"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/24> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "24"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/35> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "35"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/7> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "7"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/4> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "4"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/96> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "96"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/20> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "20"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/31> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "31"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/2> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "2"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/94> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "94"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/3> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "3"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/21> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "21"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/14> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "14"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/5> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "5"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/4> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "4"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/53> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "53"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190916/1> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "1"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190916/3> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "3"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/3> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "3"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/2> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "2"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/12> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "12"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/35> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "35"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/52> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "52"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/2> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "2"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191022/3> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "3"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/61> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "61"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/47> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "47"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/55> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "55"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/16> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "16"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/56> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "56"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/1> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "1"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/65> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "65"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/23> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "23"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/42> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "42"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/10> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "10"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/4> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "4"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/3> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "3"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/4> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "4"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/81> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "81"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/32> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "32"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/4> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "4"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/102> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "102"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/38> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "38"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/60> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "60"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191022/1> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "1"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/41> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "41"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/4> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "4"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/1> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "1"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/22> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "22"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/25> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "25"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191009/2> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "2"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/50> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "50"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/70> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "70"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/5> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "5"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/85> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "85"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/66> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "66"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/6> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "6"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/7> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "7"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/20> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "20"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/33> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "33"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/3> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "3"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/26> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "26"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/37> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "37"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/29> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "29"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/107> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "107"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191022/2> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "2"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/14> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "14"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/28> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "28"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/24> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "24"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/3> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "3"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/105> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "105"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/23> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "23"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/13> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "13"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/28> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "28"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/16> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "16"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/51> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "51"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/13> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "13"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/51> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "51"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/50> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "50"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/92> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "92"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/34> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "34"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/43> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "43"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/68> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "68"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/5> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "5"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/19> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "19"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/22> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "22"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/29> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "29"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/7> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "7"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/76> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "76"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/101> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "101"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/83> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "83"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/1> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "1"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/91> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "91"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/64> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "64"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/6> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "6"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/23> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "23"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/11> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "11"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/7> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "7"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/9> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "9"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191022/4> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "4"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/52> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "52"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/7> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "7"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/18> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "18"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/98> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "98"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190715/1> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "1"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/12> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "12"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/27> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "27"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/72> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "72"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/110> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "110"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/24> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "24"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/39> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "39"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/54> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "54"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/10> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "10"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/3> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "3"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/45> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "45"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/31> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "31"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/10> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "10"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/36> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "36"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/46> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "46"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/21> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "21"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/45> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "45"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/15> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "15"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/17> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "17"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/47> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "47"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/80> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "80"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/13> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "13"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/6> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "6"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/18> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "18"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190917/1> ;
+                 sh:resultMessage              "Property needs to have at least 1 values, but found 0" ;
+                 sh:resultPath                 eponto:voteConsistsOfMEPVote ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent ;
+                 sh:sourceShape                epsh:P12
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/32> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "32"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/58> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "58"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/40> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "40"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/39> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "39"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/1> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "1"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/43> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "43"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/11> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "11"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/21> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "21"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/3> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "3"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/11> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "11"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/36> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "36"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/78> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "78"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/104> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "104"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/67> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "67"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/2> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "2"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/5> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "5"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/95> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "95"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/73> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "73"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190917/1> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "1"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/1> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "1"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/44> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "44"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/36> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "36"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/9> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "9"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/33> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "33"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/27> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "27"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/97> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "97"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/26> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "26"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191009/1> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "1"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/16> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "16"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/15> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "15"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/54> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "54"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/8> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "8"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/30> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "30"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/93> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "93"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/8> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "8"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190916/2> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "2"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/34> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "34"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/2> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "2"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/75> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "75"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/103> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "103"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/42> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "42"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/25> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "25"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/63> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "63"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190917/2> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "2"
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/100> ;
+                 sh:resultMessage              "Value must be a valid literal of type integer" ;
+                 sh:resultPath                 eponto:voteIdentifier ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:DatatypeConstraintComponent ;
+                 sh:sourceShape                epsh:P11 ;
+                 sh:value                      "100"
+               ]
+] .

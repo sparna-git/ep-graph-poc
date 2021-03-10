@@ -1,0 +1,285 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> .
+@prefix epsh: <http://data.europarl.europa.eu/shapes#> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.europarl.europa.eu/shapes/sessions> a owl:Ontology;
+  rdfs:label "Sessions and Sittings" .
+
+epsh:PlenarySession a sh:NodeShape;
+  rdfs:comment """A Plenary Session spans multiple days and is identified with its begin date and end date. Example URI \"
+/eli/dl/iPlMeetingGroup/20191216-20191219\"""";
+  rdfs:label "Plenary Session"@en, "Session plénière"@fr;
+  sh:closed true;
+  sh:ignoredProperties _:node1evd38hhgx2988 .
+
+_:node1evd38hhgx2988 rdf:first rdf:type;
+  rdf:rest rdf:nil .
+
+epsh:PlenarySession sh:nodeKind sh:IRI;
+  sh:order 1;
+  sh:pattern "^http://data.europarl.europa.eu/eli/dl/iPlMeetingGroup/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$";
+  sh:property epsh:P10, epsh:P11, epsh:P12, epsh:P13;
+  sh:targetClass eponto:PlenarySession .
+
+epsh:PlenarySitting a sh:NodeShape;
+  rdfs:comment "A Plenary Sitting is a single day within a plenary session.";
+  rdfs:label "Plenary Sitting"@en, "Séance plénière"@fr;
+  sh:closed true;
+  sh:ignoredProperties _:node1evd38hhgx2989 .
+
+_:node1evd38hhgx2989 rdf:first rdf:type;
+  rdf:rest rdf:nil .
+
+epsh:PlenarySitting sh:nodeKind sh:IRI;
+  sh:order 2;
+  sh:pattern "^http://data.europarl.europa.eu/eli/dl/iPlMeeting/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$";
+  sh:property epsh:P17, epsh:P18, epsh:P19, epsh:P20, epsh:P21, epsh:P22, epsh:P23,
+    epsh:P24, epsh:P25, epsh:P26, epsh:P27, epsh:P28, epsh:P29, epsh:P30, epsh:P31;
+  sh:targetClass eponto:PlenarySitting .
+
+epsh:Vote a sh:NodeShape;
+  rdfs:comment "Represents a Vote that took place within a Plenary Sitting";
+  rdfs:label "Vote"@en, "Vote"@fr;
+  sh:nodeKind sh:IRI;
+  sh:order 3 .
+
+epsh:P10 sh:datatype xsd:string;
+  sh:description "Label is automatically generated with the begin date and end date of the session";
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "label"@en;
+  sh:nodeKind sh:Literal;
+  sh:order 1;
+  sh:path rdfs:label;
+  sh:pattern "Plenary session from [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9] to [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" .
+
+epsh:P11 sh:datatype xsd:date;
+  sh:description "First day of this plenary session";
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "begin date"@en;
+  sh:nodeKind sh:Literal;
+  sh:order 2;
+  sh:path eponto:datePlenaryWeekBegin .
+
+epsh:P12 sh:datatype xsd:date;
+  sh:description "Last day of this plenar session";
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "end date"@en;
+  sh:nodeKind sh:Literal;
+  sh:order 3;
+  sh:path eponto:datePlenaryWeekEnd .
+
+epsh:P13 sh:class eponto:PlenarySitting;
+  sh:description "Reference to each sitting within that session";
+  sh:minCount 1;
+  sh:name "consists of sitting"@en;
+  sh:nodeKind sh:IRI;
+  sh:order 4;
+  sh:path eponto:plenarySessionConsistsOfPlenarySitting .
+
+epsh:P17 sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "default label"@en;
+  sh:nodeKind sh:Literal;
+  sh:order 1;
+  sh:path rdfs:label;
+  sh:pattern "SESP [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" .
+
+epsh:P18 sh:datatype rdf:langString;
+  sh:languageIn _:node1evd38hhgx2992 .
+
+_:node1evd38hhgx2992 rdf:first "hu";
+  rdf:rest _:node1evd38hhgx2993 .
+
+_:node1evd38hhgx2993 rdf:first "et";
+  rdf:rest _:node1evd38hhgx2994 .
+
+_:node1evd38hhgx2994 rdf:first "fi";
+  rdf:rest _:node1evd38hhgx2995 .
+
+_:node1evd38hhgx2995 rdf:first "cs";
+  rdf:rest _:node1evd38hhgx2996 .
+
+_:node1evd38hhgx2996 rdf:first "sk";
+  rdf:rest _:node1evd38hhgx2997 .
+
+_:node1evd38hhgx2997 rdf:first "lt";
+  rdf:rest _:node1evd38hhgx2998 .
+
+_:node1evd38hhgx2998 rdf:first "lv";
+  rdf:rest _:node1evd38hhgx2999 .
+
+_:node1evd38hhgx2999 rdf:first "mt";
+  rdf:rest _:node1evd38hhgx3000 .
+
+_:node1evd38hhgx3000 rdf:first "en";
+  rdf:rest _:node1evd38hhgx3001 .
+
+_:node1evd38hhgx3001 rdf:first "da";
+  rdf:rest _:node1evd38hhgx3002 .
+
+_:node1evd38hhgx3002 rdf:first "nl";
+  rdf:rest _:node1evd38hhgx3003 .
+
+_:node1evd38hhgx3003 rdf:first "sv";
+  rdf:rest _:node1evd38hhgx3004 .
+
+_:node1evd38hhgx3004 rdf:first "hr";
+  rdf:rest _:node1evd38hhgx3005 .
+
+_:node1evd38hhgx3005 rdf:first "sl";
+  rdf:rest _:node1evd38hhgx3006 .
+
+_:node1evd38hhgx3006 rdf:first "pl";
+  rdf:rest _:node1evd38hhgx3007 .
+
+_:node1evd38hhgx3007 rdf:first "de";
+  rdf:rest _:node1evd38hhgx3008 .
+
+_:node1evd38hhgx3008 rdf:first "ro";
+  rdf:rest _:node1evd38hhgx3009 .
+
+_:node1evd38hhgx3009 rdf:first "it";
+  rdf:rest _:node1evd38hhgx3010 .
+
+_:node1evd38hhgx3010 rdf:first "pt";
+  rdf:rest _:node1evd38hhgx3011 .
+
+_:node1evd38hhgx3011 rdf:first "es";
+  rdf:rest _:node1evd38hhgx3012 .
+
+_:node1evd38hhgx3012 rdf:first "fr";
+  rdf:rest _:node1evd38hhgx3013 .
+
+_:node1evd38hhgx3013 rdf:first "ga";
+  rdf:rest _:node1evd38hhgx3014 .
+
+_:node1evd38hhgx3014 rdf:first "el";
+  rdf:rest _:node1evd38hhgx3015 .
+
+_:node1evd38hhgx3015 rdf:first "bg";
+  rdf:rest rdf:nil .
+
+epsh:P18 sh:maxCount 23;
+  sh:minCount 23;
+  sh:name "preferred label"@en;
+  sh:nodeKind sh:Literal;
+  sh:order 2;
+  sh:path skos:prefLabel .
+
+epsh:P19 sh:datatype xsd:date;
+  sh:description "Date of the sitting";
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "date of sitting"@en;
+  sh:nodeKind sh:Literal;
+  sh:order 3;
+  sh:path eponto:datePlenarySitting .
+
+epsh:P20 sh:description "Points to every MEP participant that was present during this sitting.";
+  sh:name "has participant"@en;
+  sh:nodeKind sh:IRI;
+  sh:order 4;
+  sh:path eponto:hasParticipant;
+  sh:pattern "^http://data.europarl.europa.eu/person/MEP_[0-9][0-9][0-9][0-9]?[0-9]?[0-9]?$" .
+
+epsh:P21 sh:description "Reference to the identifier of a Vote that took place during its sitting. Votes are described in a separate Dataset.";
+  sh:name "consists of vote"@en;
+  sh:node epsh:Vote;
+  sh:nodeKind sh:IRI;
+  sh:order 5;
+  sh:path eponto:plenarySittingConsistsOfVote .
+
+epsh:P22 sh:class eponto:PlenarySession;
+  sh:description "Reference to the plenary session in which this sitting occurred.";
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "forms part ofplenary session"@en;
+  sh:nodeKind sh:IRI;
+  sh:order 6;
+  sh:path eponto:plenarySittingFormsPartOfPlenarySession .
+
+epsh:P23 sh:maxCount 1;
+  sh:name "adopted text list"@en;
+  sh:nodeKind sh:IRI;
+  sh:order 7;
+  sh:path eponto:hasAdoptedTextList;
+  sh:pattern "^http://data.europarl.europa.eu/reference/reds:.*/entity$" .
+
+epsh:P24 sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "agenda"@en;
+  sh:nodeKind sh:IRI;
+  sh:order 8;
+  sh:path eponto:hasAgenda;
+  sh:pattern "^http://data.europarl.europa.eu/reference/reds:.*/entity$" .
+
+epsh:P25 sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "attendance list"@en;
+  sh:nodeKind sh:IRI;
+  sh:order 9;
+  sh:path eponto:hasAttendanceList;
+  sh:pattern "^http://data.europarl.europa.eu/reference/reds:.*/entity$" .
+
+epsh:P26 sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "cre"@en;
+  sh:nodeKind sh:IRI;
+  sh:order 10;
+  sh:path eponto:hasCre;
+  sh:pattern "^http://data.europarl.europa.eu/reference/reds:.*/entity$" .
+
+epsh:P27 sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "minutes"@en;
+  sh:nodeKind sh:IRI;
+  sh:order 11;
+  sh:path eponto:hasMinutes;
+  sh:pattern "^http://data.europarl.europa.eu/reference/reds:.*/entity$" .
+
+epsh:P28 sh:maxCount 1;
+  sh:name "roll call votes"@en;
+  sh:nodeKind sh:IRI;
+  sh:order 12;
+  sh:path eponto:hasRollCallVotes;
+  sh:pattern "^http://data.europarl.europa.eu/reference/reds:.*/entity$" .
+
+epsh:P29 sh:maxCount 1;
+  sh:name "vote result"@en;
+  sh:nodeKind sh:IRI;
+  sh:order 13;
+  sh:path eponto:hasVoteResult;
+  sh:pattern "^http://data.europarl.europa.eu/reference/reds:.*/entity$" .
+
+epsh:P30 sh:minCount 1;
+  sh:name "logistic meeting"@en;
+  sh:nodeKind sh:IRI;
+  sh:order 14;
+  sh:path eponto:hasLogisticMeeting;
+  sh:pattern "^http://data.europarl.europa.eu/reference/reds:.*/entity$" .
+
+epsh:P31 sh:name "annex"@en;
+  sh:nodeKind sh:IRI;
+  sh:order 15;
+  sh:path eponto:hasAnnex;
+  sh:pattern "^http://data.europarl.europa.eu/reference/reds:.*/entity$" .

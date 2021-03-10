@@ -1,0 +1,43 @@
+@prefix schema: <http://schema.org/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix elidl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#> .
+@prefix ep:    <http://data.europarl.europa.eu/> .
+@prefix epsh:  <http://data.europarl.europa.eu/shapes#> .
+@prefix qb:    <http://purl.org/linked-data/cube#> .
+@prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+[ a            sh:ValidationReport ;
+  sh:conforms  false ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190131> ;
+                 sh:resultMessage              "PlenarySitting date is not within the PlenarySession date boundaries" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PlenarySitting ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190131>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114> ;
+                 sh:resultMessage              "PlenarySitting date is not within the PlenarySession date boundaries" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PlenarySitting ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114>
+               ]
+] .

@@ -1,0 +1,613 @@
+@prefix schema: <http://schema.org/> .
+@prefix wgs:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix scheme: <http://data.europarl.europa.eu/authority/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix gn:    <http://www.geonames.org/ontology#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ep:    <http://data.europarl.europa.eu/> .
+@prefix epsh:  <http://data.europarl.europa.eu/shapes#> .
+@prefix qb:    <http://purl.org/linked-data/cube#> .
+@prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+[ a            sh:ValidationReport ;
+  sh:conforms  false ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/ELDR-515> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/ELDR-515>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/Verts/ALE-1538> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/Verts/ALE-1538>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/GUE/NGL-4281> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/GUE/NGL-4281>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/PSE-509> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/PSE-509>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/L-498> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/L-498>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/EFD-2967> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/EFD-2967>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/UEN-1539> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/UEN-1539>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/DE-499> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/DE-499>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/CD-1050> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/CD-1050>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/S&amp;D-2953> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/S&amp;D-2953>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/PPE-514> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/PPE-514>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/EDD-988> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/EDD-988>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/DEP-500> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/DEP-500>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/PPE-DE-1533> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/PPE-DE-1533>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/EDN-513> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/EDN-513>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/PPE-4273> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/PPE-4273>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/GUE-494> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/GUE-494>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/S-496> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/S-496>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/EFDD-4880> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/EFDD-4880>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/ARC-490> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/ARC-490>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/Verts/ALE-2965> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/Verts/ALE-2965>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/FE-511> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/FE-511>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/ECR-2977> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/ECR-2977>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/GUE/NGL-2954> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/GUE/NGL-2954>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/C-502> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/C-502>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/ARE-512> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/ARE-512>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/GUE/NGL-1537> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/GUE/NGL-1537>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/GUE-510> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/GUE-510>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/ALDE-4283> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/ALDE-4283>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/ENF-4908> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/ENF-4908>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/ALDE-2966> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/ALDE-2966>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/L-1229> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/L-1229>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/ALDE-1550> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/ALDE-1550>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/LDR-488> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/LDR-488>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/CG-495> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/CG-495>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/CTDI-504> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/CTDI-504>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/COM-503> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/COM-503>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/I-EDN-518> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/I-EDN-518>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/CDI-508> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/CDI-508>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/CD-497> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/CD-497>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/PPE-DE-994> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/PPE-DE-994>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/Verts/ALE-4285> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/Verts/ALE-4285>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/ARC-506> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/ARC-506>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/IND/DEM-1554> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/IND/DEM-1554>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/S-485> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/S-485>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/TDI-993> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/TDI-993>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/ED-486> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/ED-486>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/UPE-517> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/UPE-517>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/PPE-2952> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/PPE-2952>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/UEN-990> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/UEN-990>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/COM-487> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/COM-487>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/GUE/NGL-516> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/GUE/NGL-516>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/Verts/ALE-991> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/Verts/ALE-991>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/ITS-2345> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/ITS-2345>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/Aucun-2602> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/Aucun-2602>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/RDE-489> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/RDE-489>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/S&amp;D-4284> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/S&amp;D-4284>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/DEP-501> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/DEP-501>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/V-493> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/V-493>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/PPE-484> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/PPE-484>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/EFDD-4280> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/EFDD-4280>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/ECR-4275> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/ECR-4275>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/PSE-1534> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/PSE-1534>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/DR-491> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/DR-491>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/org/group/DR-507> ;
+                 sh:resultMessage              "Political group has less than 23 MEPs" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PoliticalGroup ;
+                 sh:value                      <http://data.europarl.europa.eu/org/group/DR-507>
+               ]
+] .

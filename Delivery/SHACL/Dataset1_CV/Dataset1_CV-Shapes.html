@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html lang="en">
+   <head>
+      <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+            crossorigin="anonymous"/>
+      <style type="text/css">
+					.anchor {
+					float: left;
+					padding-right: 4px;
+					margin-left: -20px;
+					line-height: 1;
+					padding-top:12px;
+					}
+
+					.monospace {
+					  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+					  font-size: 87.5%;
+					}
+				</style>
+   </head>
+   <body>
+      <div class="container-md">
+         <br/>
+         <h1>
+            <center>Controlled Vocabularies</center>
+         </h1>
+         <br/>
+         <br/>
+         <hr/>
+         <br/>
+         <br/>
+         <div>
+            <h2>Table of Content</h2>
+            <a href="#diagram">Dataset diagram</a>
+            <br/>
+            <a href="#prefixes">Namespaces</a>
+            <br/>
+            <a href="#">Civility</a>
+            <br/>
+            <a href="#">Gender</a>
+            <br/>
+            <a href="#">Country</a>
+            <br/>
+            <a href="#">Concept Status</a>
+            <br/>
+         </div>
+         <br/>
+         <div id="diagram">
+            <h2>Dataset diagram</h2>
+            <div style="text-align:center;"><?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="363px" preserveAspectRatio="none" style="width:603px;height:363px;" version="1.1" viewBox="0 0 603 363" width="603px" zoomAndPan="magnify"><defs><filter height="300%" id="fh999sr" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class Gender--><a target="_top" xlink:actuate="onRequest" xlink:href="#Gender" xlink:show="new" xlink:title="#Gender" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fh999sr)" height="111.125" style="stroke: #A80036; stroke-width: 1.5;" width="280" x="6" y="8"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="52" x="120" y="25.9951">Gender</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="285" y1="34.2969" y2="34.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="146" x="12" y="48.5073">inScheme  [1..1] [gender]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="138" x="12" y="61.312">label  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="157" x="12" y="74.1167">isoCode  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="157" x="12" y="86.9214">notation  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="268" x="12" y="99.7261">prefLabel  : rdf:langString  [24..24] uniqueLang</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="62" x="12" y="112.5308">type  [2..2]</text></a><!--class ConceptStatus--><a target="_top" xlink:actuate="onRequest" xlink:href="#ConceptStatus" xlink:show="new" xlink:title="#ConceptStatus" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fh999sr)" height="85.5156" style="stroke: #A80036; stroke-width: 1.5;" width="266" x="321" y="20.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="103" x="402.5" y="38.4951">ConceptStatus</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="322" x2="586" y1="46.7969" y2="46.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="187" x="327" y="61.0073">inScheme  [1..1] [conceptStatus]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="138" x="327" y="73.812">label  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="254" x="327" y="86.6167">prefLabel  : rdf:langString  [1..2] uniqueLang</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="62" x="327" y="99.4214">type  [2..2]</text></a><!--class Civility--><a target="_top" xlink:actuate="onRequest" xlink:href="#Civility" xlink:show="new" xlink:title="#Civility" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fh999sr)" height="111.125" style="stroke: #A80036; stroke-width: 1.5;" width="265" x="13.5" y="211"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="41" x="125.5" y="228.9951">Civility</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="14.5" x2="277.5" y1="237.2969" y2="237.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="140" x="19.5" y="251.5073">inScheme  [1..1] [civility]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="183" x="19.5" y="264.312">isoLanguage  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="138" x="19.5" y="277.1167">label  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="138" x="19.5" y="289.9214">altLabel  : rdf:langString</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="253" x="19.5" y="302.7261">prefLabel  : rdf:langString  [1..*] uniqueLang</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="62" x="19.5" y="315.5308">type  [2..2]</text></a><!--class Country--><a target="_top" xlink:actuate="onRequest" xlink:href="#Country" xlink:show="new" xlink:title="#Country" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fh999sr)" height="175.1484" style="stroke: #A80036; stroke-width: 1.5;" width="280" x="314" y="179"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="54" x="427" y="196.9951">Country</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="315" x2="593" y1="205.2969" y2="205.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="148" x="320" y="219.5073">inScheme  [1..1] [country]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="138" x="320" y="232.312">label  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="194" x="320" y="245.1167">euCandidate  : xsd:boolean  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="181" x="320" y="257.9214">euCountry  : xsd:boolean  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="171" x="320" y="270.7261">euStartDate  : xsd:date  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="188" x="320" y="283.5308">formalOrder  : xsd:integer  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="157" x="320" y="296.3354">isoCode  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="180" x="320" y="309.1401">isoNumber  : xsd:integer  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="268" x="320" y="321.9448">prefLabel  : rdf:langString  [24..24] uniqueLang</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="190" x="320" y="334.7495">altLabel  : rdf:langString  [24..24]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="62" x="320" y="347.5542">type  [2..2]</text></a></g></svg></div>
+            <small class="form-text text-muted">Click diagram to navigate to corresponding section</small>
+         </div>
+         <br/>
+         <div id="prefixes">
+            <h2>Namespaces</h2>
+            <table class="table table-striped table-sm" style="width:60%">
+               <thead>
+                  <tr>
+                     <th>Prefix</th>
+                     <th>Namespace</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>eponto</td>
+                     <td>http://data.europarl.europa.eu/ontology/ep#</td>
+                  </tr>
+                  <tr>
+                     <td>scheme</td>
+                     <td>http://data.europarl.europa.eu/authority/</td>
+                  </tr>
+                  <tr>
+                     <td>rdf</td>
+                     <td>http://www.w3.org/1999/02/22-rdf-syntax-ns#</td>
+                  </tr>
+                  <tr>
+                     <td>xsd</td>
+                     <td>http://www.w3.org/2001/XMLSchema#</td>
+                  </tr>
+                  <tr>
+                     <td>skos</td>
+                     <td>http://www.w3.org/2004/02/skos/core#</td>
+                  </tr>
+                  <tr>
+                     <td>rdfs</td>
+                     <td>http://www.w3.org/2000/01/rdf-schema#</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br/>
+         <div id="Civility">
+            <h2>Civility</h2>
+            <ul>
+               <li>Target Class: <a href="http://data.europarl.europa.eu/ontology/ep#Civility">eponto:Civility</a>
+               </li>
+               <li>Nodes: sh:IRI</li>
+               <li>URI: <span class="monospace">^http://data.europarl.europa.eu/authority/civility/.*$</span>
+               </li>
+            </ul>
+            <table class="table table-striped" style="width:100%">
+               <thead>
+                  <tr>
+                     <th>Property name</th>
+                     <th>URI</th>
+                     <th>Expected value</th>
+                     <th>Card.</th>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>in scheme</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://www.w3.org/2004/02/skos/core#inScheme">skos:inScheme</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace">IRI</span>
+                        <br/>
+                     </td>
+                     <td>1..1</td>
+                     <td/>
+                  </tr>
+                  <tr>
+                     <td>ISO langage</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://data.europarl.europa.eu/ontology/ep#isoLanguage">eponto:isoLanguage</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace">xsd:string</span>
+                        <br/>
+                     </td>
+                     <td>1..1</td>
+                     <td/>
+                  </tr>
+                  <tr>
+                     <td>default label</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace">xsd:string</span>
+                        <br/>
+                     </td>
+                     <td>1..1</td>
+                     <td/>
+                  </tr>
+                  <tr>
+                     <td>alternative label</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://www.w3.org/2004/02/skos/core#altLabel">skos:altLabel</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace">rdf:langString</span>
+                        <br/>
+                     </td>
+                     <td>0..*</td>
+                     <td/>
+                  </tr>
+                  <tr>
+                     <td>preferred label</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace">rdf:langString</span>
+                        <br/>
+                     </td>
+                     <td>1..*</td>
+                     <td/>
+                  </tr>
+                  <tr>
+                     <td>type</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace"/>
+                        <br/>
+                        <p>
+                           <small>(skos:Concept, eponto:Civility)</small>
+                        </p>
+                     </td>
+                     <td>2..2</td>
+                     <td>2 types are expected : the class of the controlled vocabulary and skos:Concept</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br/>
+         <div id="Gender">
+            <h2>Gender</h2>
+            <ul>
+               <li>Target Class: <a href="http://data.europarl.europa.eu/ontology/ep#Gender">eponto:Gender</a>
+               </li>
+               <li>Nodes: sh:IRI</li>
+               <li>URI: <span class="monospace">^http://data.europarl.europa.eu/authority/gender/.*$</span>
+               </li>
+            </ul>
+            <table class="table table-striped" style="width:100%">
+               <thead>
+                  <tr>
+                     <th>Property name</th>
+                     <th>URI</th>
+                     <th>Expected value</th>
+                     <th>Card.</th>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>in scheme</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://www.w3.org/2004/02/skos/core#inScheme">skos:inScheme</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace">IRI</span>
+                        <br/>
+                     </td>
+                     <td>1..1</td>
+                     <td/>
+                  </tr>
+                  <tr>
+                     <td>default label</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace">xsd:string</span>
+                        <br/>
+                     </td>
+                     <td>1..1</td>
+                     <td/>
+                  </tr>
+                  <tr>
+                     <td>ISO code</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://data.europarl.europa.eu/ontology/ep#isoCode">eponto:isoCode</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace">xsd:string</span>
+                        <br/>
+                     </td>
+                     <td>1..1</td>
+                     <td/>
+                  </tr>
+                  <tr>
+                     <td>notation</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://www.w3.org/2004/02/skos/core#notation">skos:notation</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace">xsd:string</span>
+                        <br/>
+                     </td>
+                     <td>1..1</td>
+                     <td/>
+                  </tr>
+                  <tr>
+                     <td>preferred label</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace">rdf:langString</span>
+                        <br/>
+                     </td>
+                     <td>24..24</td>
+                     <td/>
+                  </tr>
+                  <tr>
+                     <td>type</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace"/>
+                        <br/>
+                        <p>
+                           <small>(skos:Concept, eponto:Gender)</small>
+                        </p>
+                     </td>
+                     <td>2..2</td>
+                     <td>2 types are expected : the class of the controlled vocabulary and skos:Concept</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br/>
+         <div id="Country">
+            <h2>Country</h2>
+            <ul>
+               <li>Target Class: <a href="http://data.europarl.europa.eu/ontology/ep#Country">eponto:Country</a>
+               </li>
+               <li>Nodes: sh:IRI</li>
+               <li>URI: <span class="monospace">^http://data.europarl.europa.eu/authority/country/.*$</span>
+               </li>
+            </ul>
+            <table class="table table-striped" style="width:100%">
+               <thead>
+                  <tr>
+                     <th>Property name</th>
+                     <th>URI</th>
+                     <th>Expected value</th>
+                     <th>Card.</th>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>in scheme</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://www.w3.org/2004/02/skos/core#inScheme">skos:inScheme</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace">IRI</span>
+                        <br/>
+                     </td>
+                     <td>1..1</td>
+                     <td/>
+                  </tr>
+                  <tr>
+                     <td>default label</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace">xsd:string</span>
+                        <br/>
+                     </td>
+                     <td>1..1</td>
+                     <td/>
+                  </tr>
+                  <tr>
+                     <td>EU candidate</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://data.europarl.europa.eu/ontology/ep#euCandidate">eponto:euCandidate</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace">xsd:boolean</span>
+                        <br/>
+                     </td>
+                     <td>1..1</td>
+                     <td/>
+                  </tr>
+                  <tr>
+                     <td>EU country</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://data.europarl.europa.eu/ontology/ep#euCountry">eponto:euCountry</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace">xsd:boolean</span>
+                        <br/>
+                     </td>
+                     <td>1..1</td>
+                     <td/>
+                  </tr>
+                  <tr>
+                     <td>EU start date</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://data.europarl.europa.eu/ontology/ep#euStartDate">eponto:euStartDate</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace">xsd:date</span>
+                        <br/>
+                     </td>
+                     <td>0..1</td>
+                     <td/>
+                  </tr>
+                  <tr>
+                     <td>formal order</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://data.europarl.europa.eu/ontology/ep#formalOrder">eponto:formalOrder</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace">xsd:integer</span>
+                        <br/>
+                     </td>
+                     <td>0..1</td>
+                     <td/>
+                  </tr>
+                  <tr>
+                     <td>ISO code</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://data.europarl.europa.eu/ontology/ep#isoCode">eponto:isoCode</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace">xsd:string</span>
+                        <br/>
+                     </td>
+                     <td>1..1</td>
+                     <td/>
+                  </tr>
+                  <tr>
+                     <td>ISO number</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://data.europarl.europa.eu/ontology/ep#isoNumber">eponto:isoNumber</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace">xsd:integer</span>
+                        <br/>
+                     </td>
+                     <td>1..1</td>
+                     <td/>
+                  </tr>
+                  <tr>
+                     <td>preferred label</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace">rdf:langString</span>
+                        <br/>
+                     </td>
+                     <td>24..24</td>
+                     <td>24 values are expected</td>
+                  </tr>
+                  <tr>
+                     <td>alternative label</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://www.w3.org/2004/02/skos/core#altLabel">skos:altLabel</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace">rdf:langString</span>
+                        <br/>
+                     </td>
+                     <td>24..24</td>
+                     <td>24 values are expected</td>
+                  </tr>
+                  <tr>
+                     <td>type</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace"/>
+                        <br/>
+                        <p>
+                           <small>(skos:Concept, eponto:Country)</small>
+                        </p>
+                     </td>
+                     <td>2..2</td>
+                     <td>2 types are expected : the class of the controlled vocabulary and skos:Concept</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br/>
+         <div id="ConceptStatus">
+            <h2>Concept Status</h2>
+            <ul>
+               <li>Target Class: <a href="http://data.europarl.europa.eu/ontology/ep#ConceptStatus">eponto:ConceptStatus</a>
+               </li>
+               <li>Nodes: sh:IRI</li>
+               <li>URI: <span class="monospace">^http://data.europarl.europa.eu/authority/conceptStatus/.*$</span>
+               </li>
+            </ul>
+            <table class="table table-striped" style="width:100%">
+               <thead>
+                  <tr>
+                     <th>Property name</th>
+                     <th>URI</th>
+                     <th>Expected value</th>
+                     <th>Card.</th>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>in scheme</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://www.w3.org/2004/02/skos/core#inScheme">skos:inScheme</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace">IRI</span>
+                        <br/>
+                     </td>
+                     <td>1..1</td>
+                     <td/>
+                  </tr>
+                  <tr>
+                     <td>label</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace">xsd:string</span>
+                        <br/>
+                     </td>
+                     <td>1..1</td>
+                     <td>The (default) label</td>
+                  </tr>
+                  <tr>
+                     <td>preferred label</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace">rdf:langString</span>
+                        <br/>
+                     </td>
+                     <td>1..2</td>
+                     <td/>
+                  </tr>
+                  <tr>
+                     <td>type</td>
+                     <td class="text-break">
+                        <code>
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <span class="monospace"/>
+                        <br/>
+                        <p>
+                           <small>(skos:Concept, eponto:ConceptStatus)</small>
+                        </p>
+                     </td>
+                     <td>2..2</td>
+                     <td>2 types are expected : the class of the controlled vocabulary and skos:Concept</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br/>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>SHACL validation report</title>
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Datatable style with bootstrap -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+	  
+	  <!-- JQuery -->
+	  <script
+				  src="http://code.jquery.com/jquery-3.4.1.slim.min.js"
+				  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+				  crossorigin="anonymous"></script>
+	  
+	<!-- Datatables -->
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	<!-- Datatable with bootstrap -->
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+	
+	<!-- fontawesome -->
+	<link href="fa/css/all.min.css" rel="stylesheet"> <!--load all styles -->
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row justify-content-center" style="padding-top:1em;">
+			<div class="col-10">
+				
+<style type="text/css">
+	.report-section {
+		margin-top: 2em;
+	}
+	
+	.table-outer {
+		height:250px;
+		overflow:hidden;
+	}
+	
+	.table-outer.open {
+		height:unset;
+		overflow:visible;
+	}
+</style>
+
+<div class="row  justify-content-center">
+<div class="col">
+
+<div class="report-header card">
+          <div class="card-header bg-danger">
+	      	<h3>
+
+	254 Violations
+	
+
+
+	      	</h3>
+          </div>
+          <div class="card-body">
+            <ul style="list-style-type: none;">
+            		<li>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	252 <em>"Value must be a valid literal of type integer"</em>
+		(eponto:voteIdentifier in shape epsh:P11)
+	&nbsp;<small><a href="#726 906 011">see details</a></small>
+
+</li>
+            		<li>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	2 <em>"Property needs to have at least 1 values, but found 0"</em>
+		(eponto:voteConsistsOfMEPVote in shape epsh:P12)
+	&nbsp;<small><a href="#260 547 527">see details</a></small>
+
+</li>
+            </ul>
+          </div>
+</div><!-- /.report-header -->
+
+<div class="report-body">
+	<div id="726 906 011" class="report-section">
+		<h3>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	252 <em>"Value must be a valid literal of type integer"</em>
+		(eponto:voteIdentifier)
+
+</h3>
+
+		<div class="report-section-card card">
+          <div class="card-header">
+			<ul>
+				<li>Shape : epsh:P11</li>
+				<li>Constraint : sh:DatatypeConstraintComponent</li>
+			</ul>
+          </div>
+          <div class="card-body">
+                <div class="table-outer">
+        			<table class="table table-borderless table-sm">
+                        <thead>
+                          <tr>
+                            <th>Focus node</th>
+                            <th>Property or path</th>
+                            <th>Value</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190715/1">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190715/1</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"1"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/1">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/1</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"1"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/2">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/2</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"2"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/3">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/3</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"3"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/4">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/4</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"4"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/5">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/5</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"5"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/6">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/6</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"6"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/7">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/7</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"7"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/8">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/8</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"8"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/9">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/9</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"9"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190916/1">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190916/1</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"1"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190916/2">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190916/2</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"2"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190916/3">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190916/3</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"3"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190917/1">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190917/1</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"1"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190917/2">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190917/2</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"2"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190917/3">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190917/3</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"3"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/1">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/1</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"1"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/2">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/2</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"2"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/3">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/3</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"3"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/4">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/4</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"4"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/5">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/5</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"5"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/6">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/6</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"6"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/7">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/7</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"7"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/8">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/8</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"8"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/1">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/1</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"1"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/10">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/10</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"10"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/11">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/11</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"11"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/12">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/12</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"12"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/13">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/13</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"13"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/14">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/14</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"14"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/15">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/15</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"15"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/16">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/16</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"16"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/2">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/2</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"2"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/3">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/3</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"3"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/4">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/4</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"4"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/5">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/5</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"5"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/6">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/6</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"6"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/7">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/7</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"7"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/8">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/8</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"8"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/9">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/9</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"9"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191009/1">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191009/1</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"1"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191009/2">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191009/2</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"2"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/1">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/1</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"1"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/10">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/10</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"10"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/11">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/11</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"11"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/12">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/12</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"12"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/13">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/13</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"13"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/14">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/14</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"14"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/15">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/15</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"15"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/16">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/16</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"16"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/17">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/17</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"17"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/18">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/18</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"18"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/19">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/19</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"19"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/2">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/2</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"2"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/20">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/20</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"20"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/21">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/21</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"21"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/22">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/22</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"22"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/23">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/23</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"23"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/24">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/24</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"24"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/25">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/25</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"25"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/26">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/26</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"26"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/27">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/27</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"27"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/28">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/28</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"28"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/29">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/29</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"29"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/3">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/3</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"3"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/30">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/30</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"30"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/31">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/31</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"31"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/32">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/32</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"32"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/33">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/33</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"33"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/34">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/34</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"34"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/35">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/35</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"35"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/36">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/36</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"36"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/37">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/37</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"37"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/4">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/4</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"4"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/5">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/5</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"5"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/6">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/6</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"6"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/7">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/7</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"7"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/8">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/8</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"8"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/9">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/9</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"9"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/1">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/1</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"1"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/2">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/2</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"2"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/3">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/3</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"3"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/4">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/4</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"4"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/5">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/5</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"5"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191022/1">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191022/1</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"1"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191022/2">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191022/2</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"2"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191022/3">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191022/3</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"3"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191022/4">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191022/4</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"4"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/1">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/1</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"1"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/10">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/10</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"10"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/11">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/11</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"11"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/12">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/12</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"12"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/13">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/13</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"13"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/14">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/14</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"14"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/15">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/15</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"15"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/16">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/16</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"16"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/17">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/17</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"17"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/18">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/18</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"18"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/19">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/19</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"19"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/2">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/2</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"2"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/20">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/20</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"20"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/21">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/21</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"21"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/22">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/22</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"22"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/23">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/23</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"23"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/24">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/24</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"24"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/25">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/25</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"25"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/26">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/26</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"26"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/27">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/27</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"27"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/28">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/28</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"28"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/29">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/29</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"29"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/3">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/3</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"3"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/30">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/30</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"30"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/31">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/31</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"31"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/32">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/32</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"32"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/33">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/33</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"33"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/34">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/34</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"34"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/35">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/35</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"35"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/36">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/36</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"36"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/37">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/37</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"37"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/38">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/38</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"38"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/39">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/39</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"39"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/4">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/4</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"4"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/40">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/40</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"40"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/41">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/41</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"41"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/42">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/42</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"42"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/43">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/43</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"43"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/44">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/44</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"44"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/45">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/45</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"45"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/46">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/46</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"46"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/47">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/47</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"47"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/48">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/48</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"48"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/49">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/49</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"49"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/5">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/5</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"5"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/50">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/50</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"50"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/51">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/51</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"51"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/52">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/52</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"52"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/53">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/53</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"53"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/54">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/54</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"54"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/6">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/6</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"6"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/7">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/7</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"7"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/8">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/8</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"8"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/9">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/9</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"9"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/1">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/1</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"1"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/10">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/10</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"10"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/100">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/100</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"100"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/101">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/101</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"101"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/102">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/102</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"102"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/103">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/103</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"103"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/104">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/104</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"104"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/105">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/105</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"105"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/106">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/106</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"106"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/107">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/107</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"107"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/108">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/108</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"108"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/109">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/109</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"109"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/11">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/11</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"11"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/110">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/110</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"110"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/12">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/12</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"12"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/13">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/13</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"13"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/14">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/14</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"14"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/15">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/15</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"15"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/16">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/16</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"16"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/17">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/17</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"17"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/18">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/18</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"18"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/19">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/19</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"19"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/2">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/2</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"2"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/20">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/20</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"20"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/21">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/21</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"21"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/22">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/22</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"22"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/23">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/23</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"23"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/24">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/24</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"24"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/25">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/25</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"25"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/26">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/26</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"26"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/27">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/27</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"27"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/28">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/28</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"28"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/29">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/29</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"29"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/3">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/3</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"3"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/30">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/30</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"30"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/31">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/31</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"31"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/32">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/32</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"32"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/33">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/33</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"33"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/34">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/34</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"34"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/35">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/35</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"35"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/36">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/36</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"36"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/37">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/37</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"37"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/38">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/38</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"38"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/39">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/39</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"39"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/4">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/4</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"4"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/40">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/40</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"40"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/41">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/41</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"41"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/42">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/42</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"42"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/43">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/43</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"43"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/44">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/44</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"44"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/45">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/45</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"45"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/46">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/46</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"46"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/47">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/47</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"47"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/48">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/48</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"48"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/49">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/49</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"49"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/5">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/5</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"5"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/50">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/50</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"50"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/51">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/51</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"51"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/52">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/52</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"52"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/53">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/53</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"53"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/54">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/54</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"54"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/55">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/55</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"55"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/56">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/56</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"56"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/57">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/57</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"57"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/58">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/58</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"58"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/59">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/59</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"59"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/6">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/6</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"6"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/60">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/60</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"60"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/61">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/61</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"61"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/62">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/62</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"62"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/63">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/63</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"63"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/64">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/64</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"64"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/65">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/65</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"65"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/66">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/66</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"66"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/67">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/67</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"67"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/68">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/68</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"68"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/69">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/69</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"69"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/7">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/7</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"7"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/70">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/70</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"70"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/71">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/71</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"71"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/72">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/72</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"72"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/73">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/73</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"73"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/74">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/74</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"74"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/75">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/75</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"75"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/76">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/76</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"76"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/77">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/77</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"77"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/78">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/78</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"78"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/79">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/79</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"79"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/8">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/8</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"8"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/80">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/80</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"80"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/81">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/81</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"81"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/82">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/82</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"82"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/83">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/83</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"83"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/84">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/84</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"84"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/85">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/85</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"85"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/86">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/86</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"86"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/87">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/87</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"87"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/88">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/88</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"88"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/89">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/89</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"89"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/9">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/9</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"9"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/90">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/90</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"90"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/91">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/91</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"91"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/92">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/92</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"92"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/93">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/93</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"93"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/94">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/94</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"94"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/95">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/95</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"95"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/96">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/96</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"96"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/97">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/97</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"97"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/98">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/98</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"98"<sup>^^xsd:string</sup></td>
+                              </tr>
+                              <tr>
+                                <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/99">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/99</span></td>
+                                <td><span title="http://data.europarl.europa.eu/ontology/ep#voteIdentifier">eponto:voteIdentifier</span</td>
+                                <td>"99"<sup>^^xsd:string</sup></td>
+                              </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div><a class="toggleTableLink" href="#"><i>show/hide 252 results </i></a></div>
+          </div>
+		</div><!-- /.report-section -->
+	</div>
+	<div id="260 547 527" class="report-section">
+		<h3>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	2 <em>"Property needs to have at least 1 values, but found 0"</em>
+		(eponto:voteConsistsOfMEPVote)
+
+</h3>
+
+		<div class="report-section-card card">
+          <div class="card-header">
+			<ul>
+				<li>Shape : epsh:P12</li>
+				<li>Constraint : sh:MinCountConstraintComponent</li>
+			</ul>
+          </div>
+          <div class="card-body">
+        	     <table class="table table-borderless table-sm">
+                    <thead>
+                      <tr>
+                        <th>Focus node</th>
+                        <th>Property or path</th>
+                        <th>Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190917/1">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190917/1</span></td>
+                            <td><span title="http://data.europarl.europa.eu/ontology/ep#voteConsistsOfMEPVote">eponto:voteConsistsOfMEPVote</span</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190917/2">http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190917/2</span></td>
+                            <td><span title="http://data.europarl.europa.eu/ontology/ep#voteConsistsOfMEPVote">eponto:voteConsistsOfMEPVote</span</td>
+                            <td></td>
+                          </tr>
+                    </tbody>
+                </table>
+          </div>
+		</div><!-- /.report-section -->
+	</div>
+</div> <!-- /.report-body -->
+
+</div>
+</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	$(document).ready(function() {
+    	var table = $('#resultTable').DataTable();
+
+    	// add the toggle link behavior
+        $( ".toggleTableLink" ).click(function(event) {
+    		$(this).parent().prev(".table-outer").toggleClass("open");
+    		return false;
+        });
+	});
+</script>
+</html>

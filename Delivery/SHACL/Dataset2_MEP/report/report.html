@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>SHACL validation report</title>
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Datatable style with bootstrap -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+	  
+	  <!-- JQuery -->
+	  <script
+				  src="http://code.jquery.com/jquery-3.4.1.slim.min.js"
+				  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+				  crossorigin="anonymous"></script>
+	  
+	<!-- Datatables -->
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	<!-- Datatable with bootstrap -->
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+	
+	<!-- fontawesome -->
+	<link href="fa/css/all.min.css" rel="stylesheet"> <!--load all styles -->
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row justify-content-center" style="padding-top:1em;">
+			<div class="col-10">
+				
+<style type="text/css">
+	.report-section {
+		margin-top: 2em;
+	}
+	
+	.table-outer {
+		height:250px;
+		overflow:hidden;
+	}
+	
+	.table-outer.open {
+		height:unset;
+		overflow:visible;
+	}
+</style>
+
+<div class="row  justify-content-center">
+<div class="col">
+
+<div class="report-header card">
+          <div class="card-header bg-danger">
+	      	<h3>
+
+	3 Violations
+	
+
+
+	      	</h3>
+          </div>
+          <div class="card-body">
+            <ul style="list-style-type: none;">
+            		<li>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	1 <em>"Property needs to have at least 1 values, but found 0"</em>
+		(ep:ontology/ep#orderNumber in shape ep:shapes#P29)
+	&nbsp;<small><a href="#1 263 746 883">see details</a></small>
+
+</li>
+            		<li>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	1 <em>"Property needs to have at least 24 values, but found 1"</em>
+		(skos:prefLabel in shape ep:shapes#P25)
+	&nbsp;<small><a href="#762 722 626">see details</a></small>
+
+</li>
+            		<li>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	1 <em>"Property needs to have at least 24 values, but found 19"</em>
+		(skos:prefLabel in shape ep:shapes#P25)
+	&nbsp;<small><a href="#762 722 626">see details</a></small>
+
+</li>
+            </ul>
+          </div>
+</div><!-- /.report-header -->
+
+<div class="report-body">
+	<div id="1 263 746 883" class="report-section">
+		<h3>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	1 <em>"Property needs to have at least 1 values, but found 0"</em>
+		(ep:ontology/ep#orderNumber)
+
+</h3>
+
+		<div class="report-section-card card">
+          <div class="card-header">
+			<ul>
+				<li>Shape : ep:shapes#P29</li>
+				<li>Constraint : sh:MinCountConstraintComponent</li>
+			</ul>
+          </div>
+          <div class="card-body">
+        	     <table class="table table-borderless table-sm">
+                    <thead>
+                      <tr>
+                        <th>Focus node</th>
+                        <th>Property or path</th>
+                        <th>Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/org/group/Aucun-2602">ep:org/group/Aucun-2602</span></td>
+                            <td><span title="http://data.europarl.europa.eu/ontology/ep#orderNumber">ep:ontology/ep#orderNumber</span</td>
+                            <td></td>
+                          </tr>
+                    </tbody>
+                </table>
+          </div>
+		</div><!-- /.report-section -->
+	</div>
+	<div id="762 722 626" class="report-section">
+		<h3>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	1 <em>"Property needs to have at least 24 values, but found 1"</em>
+		(skos:prefLabel)
+
+</h3>
+
+		<div class="report-section-card card">
+          <div class="card-header">
+			<ul>
+				<li>Shape : ep:shapes#P25</li>
+				<li>Constraint : sh:MinCountConstraintComponent</li>
+			</ul>
+          </div>
+          <div class="card-body">
+        	     <table class="table table-borderless table-sm">
+                    <thead>
+                      <tr>
+                        <th>Focus node</th>
+                        <th>Property or path</th>
+                        <th>Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/org/group/Aucun-2602">ep:org/group/Aucun-2602</span></td>
+                            <td><span title="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</span</td>
+                            <td></td>
+                          </tr>
+                    </tbody>
+                </table>
+          </div>
+		</div><!-- /.report-section -->
+	</div>
+	<div id="762 722 626" class="report-section">
+		<h3>
+	<span class="badge badge-pill badge-danger">Violation</span>
+
+	1 <em>"Property needs to have at least 24 values, but found 19"</em>
+		(skos:prefLabel)
+
+</h3>
+
+		<div class="report-section-card card">
+          <div class="card-header">
+			<ul>
+				<li>Shape : ep:shapes#P25</li>
+				<li>Constraint : sh:MinCountConstraintComponent</li>
+			</ul>
+          </div>
+          <div class="card-body">
+        	     <table class="table table-borderless table-sm">
+                    <thead>
+                      <tr>
+                        <th>Focus node</th>
+                        <th>Property or path</th>
+                        <th>Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                          <tr>
+                            <td><span title="http://data.europarl.europa.eu/org/group/CD-1050">ep:org/group/CD-1050</span></td>
+                            <td><span title="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</span</td>
+                            <td></td>
+                          </tr>
+                    </tbody>
+                </table>
+          </div>
+		</div><!-- /.report-section -->
+	</div>
+</div> <!-- /.report-body -->
+
+</div>
+</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	$(document).ready(function() {
+    	var table = $('#resultTable').DataTable();
+
+    	// add the toggle link behavior
+        $( ".toggleTableLink" ).click(function(event) {
+    		$(this).parent().prev(".table-outer").toggleClass("open");
+    		return false;
+        });
+	});
+</script>
+</html>
