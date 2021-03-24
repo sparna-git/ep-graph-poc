@@ -1,0 +1,671 @@
+@prefix : <http://www.semanticweb.org/owl/owlapi/turtle#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix lexvo: <http://lexvo.org/ontology#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ep-aut: <http://data.europarl.europa.eu/authority/> .
+@prefix ep-org: <http://data.europarl.europa.eu/ontology/ep-org#> .
+@prefix schema: <http://schema.org/> .
+@prefix ep-orgr: <http://data.europarl.europa.eu/resource/> .
+@base <http://data.europarl.europa.eu/resources> .
+
+<http://data.europarl.europa.eu/resources> rdf:type owl:Ontology ;
+                                            dc:description "Individuals"@en ;
+                                            dc:issued "2021-01-18" ;
+                                            dc:modified "2021-01-18" ;
+                                            dc:publisher "EP" ;
+                                            dc:rights "EP" ;
+                                            dc:title "Resources - Ontology for EP ODP"@en ;
+                                            vann:preferredNamespacePrefix "epr" ;
+                                            owl:versionInfo 1.0 ,
+                                                            "20210118-0" ;
+                                            skos:historyNote [ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://data.europarl.europa.eu/ontology/ep-org#Person
+ep-org:Person rdf:type owl:AnnotationProperty .
+
+
+###  http://data.europarl.europa.eu/ontology/ep-org#assistantType
+ep-org:assistantType rdf:type owl:AnnotationProperty .
+
+
+###  http://data.europarl.europa.eu/ontology/ep-org#constituency
+ep-org:constituency rdf:type owl:AnnotationProperty .
+
+
+###  http://data.europarl.europa.eu/ontology/ep-org#curriculumVitae
+ep-org:curriculumVitae rdf:type owl:AnnotationProperty .
+
+
+###  http://data.europarl.europa.eu/ontology/ep-org#hasMembershipType
+ep-org:hasMembershipType rdf:type owl:AnnotationProperty .
+
+
+###  http://data.europarl.europa.eu/ontology/ep-org#hasCorporateBody
+ep-org:hasCorporateBody rdf:type owl:AnnotationProperty .
+
+
+###  http://data.europarl.europa.eu/ontology/ep-org#hasParliamentaryTerm
+ep-org:hasParliamentaryTerm rdf:type owl:AnnotationProperty .
+
+
+###  http://data.europarl.europa.eu/ontology/ep-org#hasparliamentaryterm
+ep-org:hasparliamentaryterm rdf:type owl:AnnotationProperty .
+
+
+###  http://data.europarl.europa.eu/ontology/ep-org#memberSeatBru
+ep-org:memberSeatBru rdf:type owl:AnnotationProperty .
+
+
+###  http://data.europarl.europa.eu/ontology/ep-org#memberSeatStr
+ep-org:memberSeatStr rdf:type owl:AnnotationProperty .
+
+
+###  http://data.europarl.europa.eu/ontology/ep-org#officialFamilyName
+ep-org:officialFamilyName rdf:type owl:AnnotationProperty .
+
+
+###  http://data.europarl.europa.eu/ontology/ep-org#officialFirstName
+ep-org:officialFirstName rdf:type owl:AnnotationProperty .
+
+
+
+
+###  http://data.europarl.europa.eu/ontology/ep-org#officialUpperFamilyName
+ep-org:officialUpperFamilyName rdf:type owl:AnnotationProperty .
+
+
+###  http://data.europarl.europa.eu/ontology/ep-org#officialUpperFirstName
+ep-org:officialUpperFirstName rdf:type owl:AnnotationProperty .
+
+
+###  http://data.europarl.europa.eu/ontology/ep-org#persId
+ep-org:persId rdf:type owl:AnnotationProperty .
+
+
+###  http://data.europarl.europa.eu/ontology/ep-org#site
+ep-org:site rdf:type owl:AnnotationProperty .
+
+
+###  http://data.europarl.europa.eu/ontology/ep-org#upperFamilyName
+ep-org:upperFamilyName rdf:type owl:AnnotationProperty .
+
+
+###  http://data.europarl.europa.eu/ontology/ep-org#upperFirstName
+ep-org:upperFirstName rdf:type owl:AnnotationProperty .
+
+
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+dc:date rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/issued
+dc:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/modified
+dc:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/publisher
+dc:publisher rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+dc:rights rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/hasPart
+dct:hasPart rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/spacial
+dct:spacial rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/ContactPoint
+schema:ContactPoint rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/addressCountry
+schema:addressCountry rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/addressLocality
+schema:addressLocality rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/birthPlace
+schema:birthPlace rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/contactType
+schema:contactType rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/email
+schema:email rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/endDate
+schema:endDate rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/faxNumber
+schema:faxNumber rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/honorificPrefix
+schema:honorificPrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/startDate
+schema:startDate rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/telephone
+schema:telephone rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/url
+schema:url rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+rdf:value rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#historyNote
+skos:historyNote rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+skos:notation rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#bday
+vcard:bday rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#hasGender
+vcard:hasGender rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#hasHonorificPrefix
+vcard:hasHonorificPrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/org#hasMembership
+org:hasMembership rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/org#hasMembershipBasedOn
+org:hasMembershipBasedOn rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/org#organization
+org:organization rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/org#organizationType
+ep-org:hasOrganizationType rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/org#role
+org:role rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/org#subOrganizationOf
+org:subOrganizationOf rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/familyName
+foaf:familyName rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/firstName
+foaf:firstName rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/gender
+foaf:gender rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/img
+foaf:img rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://data.europarl.europa.eu/authority/notation-type/codict
+<http://data.europarl.europa.eu/authority/notation-type/codict> rdf:type rdfs:Datatype .
+
+
+###  http://data.europarl.europa.eu/authority/notation-type/od
+<http://data.europarl.europa.eu/authority/notation-type/od> rdf:type rdfs:Datatype .
+
+
+###  http://data.europarl.europa.eu/authority/notation-type/codict/bodycode
+<http://data.europarl.europa.eu/authority/notation-type/codict/bodycode> rdf:type rdfs:Datatype .
+
+
+###  http://data.europarl.europa.eu/authority/notation-type/codict/mnemocode
+<http://data.europarl.europa.eu/authority/notation-type/codict/mnemocode> rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://data.europarl.europa.eu/ontology/ep-org#MEP
+ep-org:MEP rdf:type owl:Class .
+
+
+###  http://data.europarl.europa.eu/ontology/ep-org#Membership
+ep-org:Membership rdf:type owl:Class .
+
+
+###  http://data.europarl.europa.eu/ontology/ep-org#Organization
+ep-org:Organization rdf:type owl:Class .
+
+
+###  http://data.europarl.europa.eu/ontology/ep-org#Person
+ep-org:Person rdf:type owl:Class .
+
+
+###  http://schema.org/ContactPoint
+schema:ContactPoint rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://data.europarl.europa.eu/resource/contact-point/electronic/124936/FBP1234
+<http://data.europarl.europa.eu/resource/contact-point/electronic/124936/FBP1234> rdf:type owl:NamedIndividual ,
+                                                                                           schema:ContactPoint ;
+                                                                                  schema:contactType <http://data.europarl.europa.eu/authority/contact-point-type-type/FBP> ;
+                                                                                  schema:url "https://www.facebook.com/marie.arena"^^xsd:string.
+
+
+###  http://data.europarl.europa.eu/resource/contact-point/electronic/124936/GWS1235
+<http://data.europarl.europa.eu/resource/contact-point/electronic/124936/GWS1235> rdf:type owl:NamedIndividual ,
+                                                                                           schema:ContactPoint ;
+                                                                                           dc:identifier "GWS1235";
+                                                                                  schema:contactType <http://data.europarl.europa.eu/authority/contact-point-type/GWS> ;
+                                                                                  schema:email "mailto:maria.arena@europarl.europa.eu"^^xsd:string .
+
+
+###  http://data.europarl.europa.eu/resource/contact-point/electronic/124936/URL1236
+<http://data.europarl.europa.eu/resource/contact-point/electronic/124936/URL1236> rdf:type owl:NamedIndividual ,
+                                                                                           schema:ContactPoint ;
+                                                                                           dc:identifier "URL1236";
+                                                                                  schema:contactType <http://data.europarl.europa.eu/authority/contact-point-type/URL> ;
+                                                                                  schema:url "https://mariearena.eu/"^^xsd:string .
+
+
+###  http://data.europarl.europa.eu/resource/contact-point/place/124936/T12044
+<http://data.europarl.europa.eu/resource/contact-point/place/124936/T12044> rdf:type owl:NamedIndividual ,
+                                                                                     schema:PostalAddress ;
+                                                                            ep-org:hasSite <http://publications.europa.eu/resource/authority/site/LOW> ;
+                                                                            schema:addressCountry <http://publications.europa.eu/resource/authority/country/FRA> ;
+                                                                            schema:addressLocality <http://publications.europa.eu/resource/authority/place/FRA_SXB> ;
+                                                                            schema:contactType <http://data.europarl.europa.eu/authority/contact-point-type/OFFICE> ;
+                                                                            schema:faxNumber "0033 3 88 1 79690"^^xsd:string ;
+                                                                            schema:telephone "0033 3 88 1 75690"^^xsd:string ;
+                                                                            ep-org:officeId "T12044"^^xsd:string .
+
+
+###  http://data.europarl.europa.eu/resource/contact-point/place/124936/15G305
+<http://data.europarl.europa.eu/resource/contact-point/place/124936/15G305> rdf:type owl:NamedIndividual ,
+                                                                                     schema:PostalAddress ;
+                                                                            ep-org:hasSite <http://publications.europa.eu/resource/authority/site/ASP> ;
+                                                                            schema:addressCountry <http://publications.europa.eu/resource/authority/country/BEL> ;
+                                                                            schema:addressLocality <http://publications.europa.eu/resource/authority/place/BEL_BRU> ;
+                                                                            schema:faxNumber "0032 2 28 49690"^^xsd:string ;
+                                                                            schema:telephone "0032 2 28 45690"^^xsd:string ;
+                                                                            ep-org:officeId "15G305"^^xsd:string .
+
+
+###  http://data.europarl.europa.eu/resource/org/AFET-111
+<http://data.europarl.europa.eu/resource/org/AFET-111> rdf:type owl:NamedIndividual ,
+                                                                ep-org:Organization ;
+                                                       ep-org:hasCorporateBody <http://data.europarl.europa.eu/authority/committee-body/AFET> ;
+                                                       rdfs:label "AFET" ;
+                                                       skos:notation "AFET"^^<http://data.europarl.europa.eu/authority/notation-type/od> ,
+                                                                     "AFET"^^<http://data.europarl.europa.eu/authority/notation-type/codict/mnemocode> ;
+                                                       ep-org:hasOrganizationType <http://data.europarl.europa.eu/authority/org-type/CO> .
+
+
+###  http://data.europarl.europa.eu/resource/org/CJ26-111
+<http://data.europarl.europa.eu/resource/org/CJ26-111> rdf:type owl:NamedIndividual ,
+                                                                ep-org:Organization ;
+                                                                dc:identifier "111";
+                                                       ep-org:hasCorporateBody <http://data.europarl.europa.eu/authority/committee-body/CJ26> ;
+                                                       dct:hasPart <http://data.europarl.europa.eu/resource/org/AFET-111> ,
+                                                                   <http://data.europarl.europa.eu/resource/org/ENVI-111> ;
+                                                       skos:notation "CJ26"^^<http://data.europarl.europa.eu/authority/notation-type/od> ,
+                                                                     "CJ26"^^<http://data.europarl.europa.eu/authority/notation-type/codict/bodycode> ,
+                                                                     "CJ26"^^<http://data.europarl.europa.eu/authority/notation-type/codict/mnemocode> ;
+                                                       skos:prefLabel "Joint Committe AFET-ENVI"@en ;
+                                                       ep-org:hasOrganizationType <http://data.europarl.europa.eu/authority/org-type/CJ>;
+                                                       schema:startDate "2014-07-08T22:00:00"^^xsd:dateTime;
+                                                       schema:endDate "2019-07-08T22:00:00"^^xsd:dateTime;.
+
+
+###  http://data.europarl.europa.eu/resource/org/DROI-111
+<http://data.europarl.europa.eu/resource/org/DROI-111> rdf:type owl:NamedIndividual ,
+                                                                ep-org:Organization ;
+                                                       ep-org:hasCorporateBody <http://data.europarl.europa.eu/authority/committee-body/DROI> ;
+                                                       skos:notation "DROI"^^<http://data.europarl.europa.eu/authority/notation-type/od> ,
+                                                                     "DROI"^^<http://data.europarl.europa.eu/authority/notation-type/codict/mnemocode> ,
+                                                                     "SC01A"^^<http://data.europarl.europa.eu/authority/notation-type/codict/bodycode> ;
+                                                       skos:prefLabel "Committee DROI...."@en ;
+                                                       ep-org:hasOrganizationType <http://data.europarl.europa.eu/authority/org-type/SC> ;
+                                                       org:subOrganizationOf <http://data.europarl.europa.eu/resource/org/AFET-111> .
+
+
+###  http://data.europarl.europa.eu/resource/org/ENVI-111
+<http://data.europarl.europa.eu/resource/org/ENVI-111> rdf:type owl:NamedIndividual ,
+                                                                ep-org:Organization ;
+                                                       ep-org:hasCorporateBody <http://data.europarl.europa.eu/authority/committee-body/ENVI> ;
+                                                       rdfs:label "ENVI" ;
+                                                       skos:notation "ENVI"^^<http://data.europarl.europa.eu/authority/notation-type/od> ;
+                                                       ep-org:hasOrganizationType <http://data.europarl.europa.eu/authority/org-type/CO> .
+
+
+###  http://data.europarl.europa.eu/resource/org/MR-111
+<http://data.europarl.europa.eu/resource/org/MR-111> rdf:type owl:NamedIndividual ,
+                                                              ep-org:Organization ;
+                                                     ep-org:hasCorporateBody <http://data.europarl.europa.eu/authority/national-party-body/MR> ;
+                                                     ep-org:subOrganizationOf <http://publications.europa.eu/resource/authority/country/BEL> ;
+                                                     skos:notation "MR"^^<http://data.europarl.europa.eu/authority/notation-type/od> ;
+                                                     skos:prefLabel "Mouvement Réformateur"@en ,
+                                                                    "Mouvement Réformateur"@fr ;
+                                                     ep-org:hasOrganizationType <http://data.europarl.europa.eu/authority/org-type/PN> .
+
+
+###  http://data.europarl.europa.eu/resource/org/PS-111
+<http://data.europarl.europa.eu/resource/org/PS-111> rdf:type owl:NamedIndividual ,
+                                                              ep-org:Organization ;
+                                                     ep-org:hasCorporateBody <http://data.europarl.europa.eu/authority/national-party-body/PS> ;
+                                                     ep-org:subOrganizationOf  <http://publications.europa.eu/resource/authority/country/BEL> ;
+                                                     skos:notation "PS"^^<http://data.europarl.europa.eu/authority/notation-type/od> ;
+                                                     skos:prefLabel "Parti Socialiste"@fr ;
+                                                     ep-org:hasOrganizationType <http://data.europarl.europa.eu/authority/org-type/PN> .
+
+
+###  http://data.europarl.europa.eu/resource/org/SD-111
+<http://data.europarl.europa.eu/resource/org/SD-111> rdf:type owl:NamedIndividual ,
+                                                              ep-org:Organization ;
+                                                              dc:identifier "111";
+                                                     ep-org:hasCorporateBody <http://data.europarl.europa.eu/authority/political-group-body/SD> ;
+                                                     skos:notation "S&D"^^<http://data.europarl.europa.eu/authority/notation-type/codict/bodycode> ,
+                                                                   "S&D" ;
+                                                     skos:prefLabel "Group of the Progressive Alliance of Socialists and Democrats in the European Parliament"@en ;
+                                                     ep-org:hasOrganizationType <http://data.europarl.europa.eu/authority/org-type/GP> .
+
+
+###  http://data.europarl.europa.eu/resource/person/124936
+<http://data.europarl.europa.eu/resource/person/124936> rdf:type owl:NamedIndividual ,
+                                                                 ep-org:MEP ;
+                                                        ep-org:curriculumVitae "1/9/1987 - 30/6/1988 Catholic University of Mons\\r\\n1/1/1990 - 31/12/2000 International expert on employment and adult education\\r\\n17/7/2009 - 13/6/2010 Member of the Chamber of Representatives\\r\\n13/6/2010 - 2014 Senator\\r\\n1/1/2000 - 31/12/2009 Minister\\r\\n"@en ,
+                                                                               "1/9/1987 - 30/6/1988 Facultés universitaires catholiques de Mons\\r\\n1/1/1990 - 31/12/2000 experte internationale en matière d'emploi et de formation des adultes\\r\\n17/7/2009 - 13/6/2010 députée à la Chambre des représentants\\r\\n13/6/2010 - 2014 sénatrice\\r\\n1/1/2000 - 31/12/2009 ministre\\r\\n"@fr ;
+                                                        ep-org:personId "124936"^^xsd:string ;
+                                                        ep-org:upperFamilyName "ARENA"^^xsd:string ;
+                                                        ep-org:upperFirstName "MARIA"^^xsd:string ;
+                                                        schema:contactPoint <http://data.europarl.europa.eu/resource/contact-point/electronic/124936/FBP1234> ,
+                                                                            <http://data.europarl.europa.eu/resource/contact-point/electronic/124936/GWS1235> ,
+                                                                            <http://data.europarl.europa.eu/resource/contact-point/electronic/124936/URL1236> ,
+                                                                            <http://data.europarl.europa.eu/resource/contact-point/place/124936/T12044> ,
+                                                                            <http://data.europarl.europa.eu/resource/contact-point/place/124936/15G305> ;
+                                                        schema:birthPlace <http://publications.europa.eu/resource/authority/place/BEL_MQS> ;
+                                                        schema:nationality <http://publications.europa.eu/resource/authority/country/BEL> ;
+                                                        schema:honorificPrefix <http://data.europarl.europa.eu/authority/civility/MME> ;
+                                                        schema:birthDate "1966-12-17T00:00:00"^^xsd:dateTime ;
+                                                        schema:gender  <http://data.europarl.europa.eu/authority/gender/F> ;
+                                                        org:hasMembership <http://data.europarl.europa.eu/resource/person/124936/membership/11111118> ,
+                                                                          <http://data.europarl.europa.eu/resource/person/124936/membership/11111119> ,
+                                                                          <http://data.europarl.europa.eu/resource/person/124936/membership/888800001> ,
+                                                                          <http://data.europarl.europa.eu/resource/person/124936/membership/888800002> ,
+                                                                          <http://data.europarl.europa.eu/resource/person/124936/membership/888800003> ,
+                                                                          <http://data.europarl.europa.eu/resource/person/124936/membership/888800004> ,
+                                                                          <http://data.europarl.europa.eu/resource/person/124936/membership/999900001> ,
+                                                                          <http://data.europarl.europa.eu/resource/person/124936/membership/999900002> ,
+                                                                          <http://data.europarl.europa.eu/resource/person/124936/membership/999900003> ,
+                                                                          <http://data.europarl.europa.eu/resource/person/124936/membership/999900004> ,
+                                                                          <http://data.europarl.europa.eu/resource/person/124936/membership/999900005> ;
+                                                        foaf:familyName "Arena"^^xsd:string ;
+                                                        foaf:firstName "Maria"^^xsd:string ;
+                                                        foaf:img "https://www.europarl.europa.eu/mepphoto/124936.jpg";
+                                                        ep-org:dateEndActivity "2099-01-01T00:00:00"^^xsd:dateTime ;
+.
+
+
+###  http://data.europarl.europa.eu/resource/person/189525
+<http://data.europarl.europa.eu/resource/person/189525> rdf:type owl:NamedIndividual ,
+                                                                 ep-org:MEP ;
+                                                        ep-org:officialFamilyName "Адемов"^^xsd:string ;
+                                                        ep-org:officialFirstName "Асим"^^xsd:string ;
+                                                        ep-org:officialNameLanguage <http://publications.europa.eu/resource/authority/language/BUL>;
+                                                        ep-org:officialNameScript <http://www.lexvo.org/page/script/Cyrl>;
+                                                        ep-org:officialUpperFamilyName "АДЕМОВ"^^xsd:string ;
+                                                        ep-org:officialUpperFirstName "АСИМ"^^xsd:string ;
+                                                        ep-org:upperFamilyName "ADEMOV"^^xsd:string ;
+                                                        ep-org:upperFirstName "ASIM"^^xsd:string ;
+                                                        schema:birthDate "1968-12-03T00:00:00"^^xsd:dateTime ;
+                                                        schema:honorificPrefix <http://data.europarl.europa.eu/authority/civility/GN> ;
+                                                        foaf:familyName "Ademov"^^xsd:string ;
+                                                        foaf:firstName "Asim"^^xsd:string;
+                                                        foaf:img "https://www.europarl.europa.eu/mepphoto/189525.jpg" ;
+.
+
+###  http://data.europarl.europa.eu/resource/person/311270
+<http://data.europarl.europa.eu/resource/person/311270> rdf:type owl:NamedIndividual ,
+                                                                 ep-org:Person ;
+                                                        ep-org:hasPersonType <http://data.europarl.europa.eu/authority/person-type/AST-APA>;
+                                                        ep-org:personId "311270"^^xsd:string ;
+                                                        org:hasMembership <http://data.europarl.europa.eu/resource/person/311270/membership/90001> ;
+                                                        foaf:familyName "Deschamps"^^xsd:string ;
+                                                        foaf:firstName "Veronique"^^xsd:string;
+                                                        ep-org:upperFamilyName "DESCHAMPS"^^xsd:string ;
+                                                        ep-org:upperFirstName "VERONIQUE"^^xsd:string ;.
+
+
+###  http://data.europarl.europa.eu/resource/person/124936/membership/11111118
+<http://data.europarl.europa.eu/resource/person/124936/membership/11111118> rdf:type owl:NamedIndividual ,
+                                                                                     ep-org:Membership ;
+                                                                                     dc:identifier "11111118";
+                                                                            ep-org:constituency <http://data.europarl.europa.eu/authority/constituency/BEL-111> ;
+                                                                            ep-org:hasMembershipType <http://data.europarl.europa.eu/authority/membership-type/MANDATE> ;
+                                                                            ep-org:hasParliamentaryTerm <http://data.europarl.europa.eu/authority/parliamentary-term/8> ;
+                                                                            schema:endDate "2019-07-01T00:00:00"^^xsd:dateTime ;
+                                                                            schema:startDate "2014-07-01T10:00:00"^^xsd:dateTime ;
+                                                                            ep-org:hasOrganization <http://publications.europa.eu/resource/authority/country/BEL> .
+
+
+###  http://data.europarl.europa.eu/resource/person/124936/membership/11111119
+<http://data.europarl.europa.eu/resource/person/124936/membership/11111119> rdf:type owl:NamedIndividual ,
+                                                                                     ep-org:Membership ;
+                                                                                      dc:identifier "11111119";
+                                                                            ep-org:constituency <http://data.europarl.europa.eu/authority/constituency/BEL-111> ;
+                                                                            ep-org:hasMembershipType <http://data.europarl.europa.eu/authority/membership-type/MANDATE> ;
+                                                                            ep-org:hasParliamentaryTerm <http://data.europarl.europa.eu/authority/parliamentary-term/9> ;
+                                                                            ep-org:memberSeatBru "123"^^xsd:string ;
+                                                                            ep-org:memberSeatStr "241"^^xsd:string ;
+                                                                            schema:endDate "2024-07-02T00:00:00"^^xsd:dateTime ;
+                                                                            schema:startDate "2019-07-02T10:00:00"^^xsd:dateTime ;
+                                                                            ep-org:hasOrganization <http://publications.europa.eu/resource/authority/country/BEL> .
+
+
+###  http://data.europarl.europa.eu/resource/person/124936/membership/888800001
+<http://data.europarl.europa.eu/resource/person/124936/membership/888800001> rdf:type owl:NamedIndividual ,
+                                                                                      ep-org:Membership ;
+                                                                             ep-org:hasMembershipType <http://data.europarl.europa.eu/authority/membership-type/POLITICAL-GROUP> ;
+                                                                             ep-org:hasParliamentaryTerm <http://data.europarl.europa.eu/authority/parliamentary-term/8> ;
+                                                                             schema:endDate "2019-07-01T00:00:00"^^xsd:dateTime ;
+                                                                             schema:startDate "2014-07-01T00:00:00"^^xsd:dateTime ;
+                                                                             org:hasMembershipBasedOn <http://data.europarl.europa.eu/resource/person/124936/membership/11111118> ;
+                                                                             ep-org:hasOrganization <http://data.europarl.europa.eu/resource/org/SD-123> ;
+                                                                             org:role <http://data.europarl.europa.eu/authority/function/MEF> .
+
+
+###  http://data.europarl.europa.eu/resource/person/124936/membership/888800002
+<http://data.europarl.europa.eu/resource/person/124936/membership/888800002> rdf:type owl:NamedIndividual ,
+                                                                                      ep-org:Membership ;
+                                                                             ep-org:hasMembershipType <http://data.europarl.europa.eu/authority/membership-type/COMMITTEE> ;
+                                                                             ep-org:hasparliamentaryterm <http://data.europarl.europa.eu/authority/parliamentary-term/8> ;
+                                                                             schema:endDate "2017-01-18T00:00:00"^^xsd:dateTime ;
+                                                                             schema:startDate "2014-07-01T00:00:00"^^xsd:dateTime ;
+                                                                             org:hasMembershipBasedOn <http://data.europarl.europa.eu/resource/person/124936/membership/11111118> ;
+                                                                             ep-org:hasOrganization <http://data.europarl.europa.eu/resource/org/DROI-123> ;
+                                                                             org:role <http://data.europarl.europa.eu/authority/function/MEF> .
+
+
+###  http://data.europarl.europa.eu/resource/person/124936/membership/888800003
+<http://data.europarl.europa.eu/resource/person/124936/membership/888800003> rdf:type owl:NamedIndividual ,
+                                                                                      ep-org:Membership ;
+                                                                             ep-org:hasMembershipType <http://data.europarl.europa.eu/authority/membership-type/COMMITTEE> ;
+                                                                             ep-org:hasParliamentaryTerm <http://data.europarl.europa.eu/authority/parliamentary-term/8> ;
+                                                                             schema:endDate "2019-07-01T00:00:00"^^xsd:dateTime ;
+                                                                             schema:startDate "2019-07-09T00:00:00"^^xsd:dateTime ;
+                                                                             org:hasMembershipBasedOn <http://data.europarl.europa.eu/resource/person/124936/membership/11111118> ;
+                                                                             ep-org:hasOrganization <http://data.europarl.europa.eu/resource/org/INTA-123> ;
+                                                                             org:role <http://data.europarl.europa.eu/authority/function/MEF> .
+
+
+###  http://data.europarl.europa.eu/resource/person/124936/membership/888800004
+<http://data.europarl.europa.eu/resource/person/124936/membership/888800004> rdf:type owl:NamedIndividual ,
+                                                                                      ep-org:Membership ;
+                                                                             ep-org:hasMembershipType <http://data.europarl.europa.eu/authority/membership-type/NATIONAL-PARTY> ;
+                                                                             ep-org:hasParliamentaryTerm <http://data.europarl.europa.eu/authority/parliamentary-term/8> ;
+                                                                             schema:endDate "2019-07-01T00:00:00"^^xsd:dateTime ;
+                                                                             schema:startDate "2014-07-01T00:00:00"^^xsd:dateTime ;
+                                                                             org:hasMembershipBasedOn <http://data.europarl.europa.eu/resource/person/124936/membership/11111118> ;
+                                                                             ep-org:hasOrganization <http://data.europarl.europa.eu/resource/org/MR-111> ;
+                                                                             org:role <http://data.europarl.europa.eu/authority/function/MEF> .
+
+
+###  http://data.europarl.europa.eu/resource/person/124936/membership/999900001
+<http://data.europarl.europa.eu/resource/person/124936/membership/999900001> rdf:type owl:NamedIndividual ,
+                                                                                      ep-org:Membership ;
+                                                                             ep-org:hasMembershipType <http://data.europarl.europa.eu/authority/membership-type/POLITICAL-GROUP> ;
+                                                                             ep-org:hasParliamentaryTerm <http://data.europarl.europa.eu/authority/parliamentary-term/9> ;
+                                                                             schema:startDate "2019-07-02T00:00:00"^^xsd:dateTime ;
+                                                                             org:hasMembershipBasedOn <http://data.europarl.europa.eu/resource/person/124936/membership/11111119> ;
+                                                                             ep-org:hasOrganization <http://data.europarl.europa.eu/resource/org/SD-111> ;
+                                                                             org:role <http://data.europarl.europa.eu/authority/function/MEF> .
+
+
+###  http://data.europarl.europa.eu/resource/person/124936/membership/999900002
+<http://data.europarl.europa.eu/resource/person/124936/membership/999900002> rdf:type owl:NamedIndividual ,
+                                                                                      ep-org:Membership ;
+                                                                             ep-org:hasMembershipType <http://data.europarl.europa.eu/authority/membership-type/COMMITTEE> ;
+                                                                             ep-org:hasParliamentaryTerm <http://data.europarl.europa.eu/authority/parliamentary-term/9> ;
+                                                                             schema:endDate "2019-07-09T00:00:00"^^xsd:dateTime ;
+                                                                             schema:startDate "2019-07-02T00:00:00"^^xsd:dateTime ;
+                                                                             org:hasMembershipBasedOn <http://data.europarl.europa.eu/resource/person/124936/membership/11111119> ;
+                                                                             ep-org:hasOrganization <http://data.europarl.europa.eu/resource/org/AFET-111> ;
+                                                                             org:role <http://data.europarl.europa.eu/authority/function/MEF> .
+
+
+###  http://data.europarl.europa.eu/resource/person/124936/membership/999900003
+<http://data.europarl.europa.eu/resource/person/124936/membership/999900003> rdf:type owl:NamedIndividual ,
+                                                                                      ep-org:Membership ;
+                                                                             ep-org:hasMembershipType <http://data.europarl.europa.eu/authority/membership-type/COMMITTEE> ;
+                                                                             schema:startDate "2019-07-09T00:00:00"^^xsd:dateTime ;
+                                                                             org:hasMembershipBasedOn <http://data.europarl.europa.eu/resource/person/124936/membership/11111119> ;
+                                                                             ep-org:hasOrganization <http://data.europarl.europa.eu/resource/org/DROI-111> ;
+                                                                             org:role <http://data.europarl.europa.eu/authority/function/PAF> .
+
+
+###  http://data.europarl.europa.eu/resource/person/124936/membership/999900004
+<http://data.europarl.europa.eu/resource/person/124936/membership/999900004> rdf:type owl:NamedIndividual ,
+                                                                                      ep-org:Membership ;
+                                                                             ep-org:hasMembershipType <http://data.europarl.europa.eu/authority/membership-type/NATIONAL-PARTY> ;
+                                                                             ep-org:hasParliamentaryTerm <http://data.europarl.europa.eu/authority/parliamentary-term/9> ;
+                                                                             schema:startDate "2019-07-02T00:00:00"^^xsd:dateTime ;
+                                                                             org:hasMembershipBasedOn <http://data.europarl.europa.eu/resource/person/124936/membership/11111119> ;
+                                                                             ep-org:hasOrganization <http://data.europarl.europa.eu/resource/org/MR-111> ;
+                                                                             org:role <http://data.europarl.europa.eu/authority/function/MEF> .
+
+
+###  http://data.europarl.europa.eu/resource/person/124936/membership/999900005
+<http://data.europarl.europa.eu/resource/person/124936/membership/999900005> rdf:type owl:NamedIndividual ,
+                                                                                      ep-org:Membership ;
+                                                                             ep-org:hasMembershipType <http://data.europarl.europa.eu/authority/membership-type/POLITICAL-GROUP> ;
+                                                                             ep-org:hasParliamentaryTerm <http://data.europarl.europa.eu/authority/parliamentary-term/9> ;
+                                                                             schema:startDate "2019-10-10T00:00:00"^^xsd:dateTime ;
+                                                                             org:hasMembershipBasedOn <http://data.europarl.europa.eu/resource/person/124936/membership/11111119> ;
+                                                                             ep-org:hasOrganization <http://data.europarl.europa.eu/resource/org/SD-111> ;
+                                                                             org:role <http://data.europarl.europa.eu/authority/function/MEF> .
+
+
+
+###  http://data.europarl.europa.eu/resource/person/311270/membership/90001
+<http://data.europarl.europa.eu/resource/person/311270/membership/90001> rdf:type owl:NamedIndividual ,
+                                                                                  ep-org:Membership ;
+                                                                         ep-org:hasOrganization <http://data.europarl.europa.eu/resource/person/124936> ;
+                                                                         ep-org:hasMembershipType <http://data.europarl.europa.eu/authority/membership-type/PERSON>;
+                                                                         org:role <http://data.europarl.europa.eu/authority/function/ASSISTANT> .
+
+
+###  http://publications.europa.eu/resource/authority/country/BEL
+<http://publications.europa.eu/resource/authority/country/BEL> rdf:type owl:NamedIndividual .
+
+
+###  http://publications.europa.eu/resource/authority/place/BEL_BRU
+<http://publications.europa.eu/resource/authority/place/BEL_BRU> rdf:type owl:NamedIndividual .
+
+
+###  http://publications.europa.eu/resource/authority/place/BEL_MQS
+<http://publications.europa.eu/resource/authority/place/BEL_MQS> rdf:type owl:NamedIndividual .
+
+
+###  http://publications.europa.eu/resource/authority/place/FRA_SXB
+<http://publications.europa.eu/resource/authority/place/FRA_SXB> rdf:type owl:NamedIndividual .
+
+
+[ dc:creator "EP@AUR" ;
+  dc:date "April 14 2020" ;
+  rdf:value "Primo draft work version"
+] .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://data.europarl.europa.eu/ontology/ep-org" uri="ep-org.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://data.europarl.europa.eu/authorities" uri="ep-authorities.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://data.europarl.europa.eu/resources" uri="ep-resources.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://xmlns.com/foaf/0.1/" uri="foaf.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/2004/02/skos/core" uri="skos.rdf"/>
+</catalog>

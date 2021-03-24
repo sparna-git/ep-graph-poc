@@ -1,0 +1,955 @@
+@prefix : <http://data.europarl.europa.eu/ontology/ep-org#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix lexvo: <http://lexvo.org/ontology#> .
+@prefix ep-aut: <http://data.europarl.europa.eu/authority/> .
+@prefix op-aut: <http://publications.europa.eu/resource/authority/> .
+@prefix schema: <http://schema.org/> .
+@prefix ep-orgr: <http://data.europarl.europa.eu/resource/> .
+
+<http://data.europarl.europa.eu/ontology/ep-org> a owl:Ontology ;
+	owl:imports <http://www.w3.org/2004/02/skos/core> , <http://xmlns.com/foaf/0.1/> ;
+	dct:created ""@en , "2021-19-01"@en ;
+	rdfs:comment """European Parliant ontology for Organization and Person
+v00-1 : 20210218 : first draft version"""@en ;
+	rdfs:label "European Parliament ontology for Political Data"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#endDate
+
+:endDate a owl:AnnotationProperty ;
+	rdfs:subPropertyOf dc:date .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#inputRule
+
+:inputRule a owl:AnnotationProperty .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#inputSource
+
+:inputSource a owl:AnnotationProperty .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#rangeDescription
+
+:rangeDescription a owl:AnnotationProperty .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#startDate
+
+:startDate a owl:AnnotationProperty ;
+	rdfs:subPropertyOf dc:date .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#uriTemplate
+
+:uriTemplate a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/created
+
+dct:created a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2000/01/rdf-schema#definition
+
+rdfs:definition a owl:AnnotationProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#hasConstituency
+
+:hasConstituency a owl:ObjectProperty ;
+	rdfs:domain :Membership ;
+	rdfs:range :Constituency ;
+	rdfs:comment "Depending on MEP's Country, only defined for op-aut:country/BEL, op-aut:country/IRL, op-aut:country/ITA."@en .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#hasCorporateBody
+
+:hasCorporateBody a owl:ObjectProperty ;
+	rdfs:domain :Organization ;
+	rdfs:range :CorporateBody ;
+	rdfs:definition "An organisation has a Corporate Body."@en .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#hasMembershipBasedOn
+
+:hasMembershipBasedOn a owl:ObjectProperty ;
+	rdfs:domain :Membership ;
+	rdfs:range :Membership ;
+	rdfs:definition """Membership are based on a mandate.
+                 A mandate represents the authorization and/or command by a person, group, or organization to another such to take a certain course of action. In the case, the Members of the European Parliament that won an election, have the authority given by the electorate to carry out a policy."""@en .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#hasMembershipType
+
+:hasMembershipType a owl:ObjectProperty ;
+	rdfs:domain :Membership ;
+	rdfs:range :MembershipType ;
+	rdfs:comment """Depending on ep-org:hasOrganization -> ep-org:Organization[ep-org:hasOrganizationType]
+ep-aut:membership-type/COMMITTEE:
+ - ep-aut:org-type/CO 
+ - ep-aut:org-type/CI
+ - ep-aut:org-type/SC
+ - ep-aut:org-type/CE
+ - ep-aut:org-type/CT
+ - ep-aut:org-type/CJ
+ - ep-aut:org-type/CM 
+ep-aut:membership-type/DELEGATION:
+ - ep-aut:org-type/AP
+ - ep-aut:org-type/DA
+ - ep-aut:org-type/DC
+ - ep-aut:org-type/DE
+ - ep-aut:org-type/DH
+ - ep-aut:org-type/DM
+ep-aut:membership-type/MANDATE:
+ - ep-aut:org-type/PE
+ep-aut:membership-type/POLITICAL-GROUP:
+ - ep-aut:org-type/GP
+ep-aut:membership-type/NATIONAL-PARTY:
+ - ep-aut:org-type/PN 
+OR
+Depending on ep-org:hasOrganization -> ep-org:MEP
+ membership-type/PERSON""" ;
+	rdfs:definition "Defines the type of membership: mandate, member of Parliament, membership in a Political group, assistant of a MEP..."@en .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#hasOrganization
+
+:hasOrganization a owl:ObjectProperty ;
+	rdfs:domain :Membership ;
+	rdfs:range foaf:Agent .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#hasOrganizationType
+
+:hasOrganizationType a owl:ObjectProperty ;
+	rdfs:domain :Organization ;
+	rdfs:range :OrganizationType ;
+	rdfs:comment """ep-org:CommitteeBody:
+- ep-org:hasOrganizationType value ep-aut:org-type/CO
+- ep-org:hasOrganizationType value ep-aut:org-type/CI
+- ep-org:hasOrganizationType value ep-aut:org-type/SC
+- ep-org:hasOrganizationType value ep-aut:org-type/CE
+- ep-org:hasOrganizationType value ep-aut:org-type/CT
+- ep-org:hasOrganizationType value ep-aut:org-type/CJ
+- ep-org:hasOrganizationType value ep-aut:org-type/CM 
+
+ep-org:DelegationBody:
+- ep-org:hasOrganizationType value ep-aut:org-type/AP
+- ep-org:hasOrganizationType value ep-aut:org-type/DA
+- ep-org:hasOrganizationType value ep-aut:org-type/DC
+- ep-org:hasOrganizationType value ep-aut:org-type/DE
+- ep-org:hasOrganizationType value ep-aut:org-type/DH
+- ep-org:hasOrganizationType value ep-aut:org-type/DM
+
+ep-org:InstitutionBody:
+- ep-org:hasOrganizatiotionType value ep-aut:org-type/PE
+
+ep-org:PoliticalGroupBody:
+- ep-org:hasOrganizationType value ep-aut:org-type/GP
+
+ep-org:GovernanceBody:
+- ep-org:hasOrganizationType value ep-aut:org-type/BU
+- ep-org:hasOrganizationType value ep-aut:org-type/OD
+"""@en .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#hasParliamentaryTerm
+
+:hasParliamentaryTerm a owl:ObjectProperty ;
+	rdfs:domain :Membership ;
+	rdfs:range :ParliamentaryTerm ;
+	rdfs:definition "MEPs´ mandate and meetings could be linked to a certain parliamentary term of five years."@en .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#hasPersonType
+
+:hasPersonType a owl:ObjectProperty ;
+	rdfs:domain :Person ;
+	rdfs:range :PersonType ;
+	:inputRule """                
+- a -> ep-aut:person-type/AST-APA
+- l  -> ep-aut:person-type/AST-LOC
+- if assistant is accredited for more then one mep -> ep-aut:person-type/AST-APA-GRP """ ;
+	:inputSource "CODICT/MEP/assistanttype" ;
+	rdfs:definition """Assistants could be two types: accredited parliamentrary assistants or local assistants. 
+- Accredited parliamentary assistants (APAs) are chosen by a Member or a group of Members and employed under a direct contract with the European Parliament. They are based on Parliament’s premises, in one of its three places of work – Brussels, Strasbourg or Luxembourg – and assist Members directly in their work, under their direction and authority and on a basis of mutual trust.
+- Local assistants are people who have concluded employment contracts with Members to assist them in the Member States in which they were elected. These contracts are governed by the national law of the Member State."""@en .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#officialNameLanguage
+
+:officialNameLanguage a owl:ObjectProperty ;
+	rdfs:domain :Person ;
+	rdfs:range schema:Language .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#officialNameScript
+
+:officialNameScript a owl:ObjectProperty ;
+	rdfs:domain :Person ;
+	rdfs:comment "The property of a name being written or having being written in a specific script by a considerable group of language users."@en;
+	rdfs:range lexvo:Script;
+               rdfs:label "Official name script"@en; .
+# 
+# http://schema.org/addressCountry
+
+schema:addressCountry a owl:ObjectProperty ;
+	rdfs:domain schema:PostalAddress ;
+	rdfs:range :Country ;
+	rdfs:comment "The country. For example, USA. You can also provide the two-letter [ISO 3166-1 alpha-2 country code](http://en.wikipedia.org/wiki/ISO_3166-1)." ;
+	rdfs:label "addressCountry" .
+# 
+# http://schema.org/addressLocality
+
+schema:addressLocality a owl:ObjectProperty ;
+	rdfs:domain schema:PostalAddress ;
+	rdfs:range :Town ;
+	rdfs:comment "The locality in which the street address is, and which is in the region. For example, Mountain View." ;
+	rdfs:label "addressLocality" .
+# 
+# http://schema.org/birthPlace
+
+schema:birthPlace a owl:ObjectProperty ;
+	rdfs:domain schema:Person ;
+	rdfs:range :Town ;
+	rdfs:comment "The place where the person was born." ;
+	rdfs:label "birthPlace" .
+# 
+# http://schema.org/contactPoint
+
+schema:contactPoint a owl:ObjectProperty ;
+	rdfs:domain foaf:Agent ;
+	rdfs:range schema:ContactPoint ;
+	rdfs:comment "A contact point for a person or organization." ;
+	rdfs:label "contactPoint" .
+# 
+# http://schema.org/contactType
+
+schema:contactType a owl:ObjectProperty ;
+	rdfs:domain schema:ContactPoint ;
+	rdfs:range :ContactPointType ;
+	rdfs:comment "A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point." ;
+	rdfs:label "contactType" .
+# 
+# http://schema.org/gender
+
+schema:gender a owl:ObjectProperty ;
+	rdfs:domain schema:Person ;
+	rdfs:range :Gender ;
+	rdfs:comment "Gender of something, typically a [[Person]]" ;
+	rdfs:label "gender" .
+# 
+# http://schema.org/honorificPrefix
+
+schema:honorificPrefix a owl:ObjectProperty ;
+	rdfs:domain :Person ;
+	rdfs:range :Civility ;
+	rdfs:comment "An honorific prefix preceding a Person's name such as Dr/Mrs/Mr." ;
+	rdfs:label "honorificPrefix" .
+# 
+# http://schema.org/honorificSuffix
+
+schema:honorificSuffix a owl:ObjectProperty ;
+	rdfs:domain :Person ;
+	rdfs:range :Civility ;
+	rdfs:comment "An honorific suffix following a Person's name such as M.D. /PhD/MSCSW." ;
+	rdfs:label "honorificSuffix" .
+# 
+# http://schema.org/language
+
+schema:language a owl:ObjectProperty ;
+	rdfs:domain owl:Thing ;
+	rdfs:range schema:Language ;
+	rdfs:comment "The language used" ;
+	rdfs:label "language" .
+# 
+# http://schema.org/nationality
+
+schema:nationality a owl:ObjectProperty ;
+	rdfs:domain :MEP ;
+	rdfs:range :Country ;
+	rdfs:comment "Nationality of the person." ;
+	rdfs:label "nationality" .
+# 
+# http://www.w3.org/ns/org#hasSubOrganization
+
+org:hasSubOrganization a owl:ObjectProperty ;
+	owl:inverseOf org:subOrganizationOf ;
+	rdfs:domain org:Organization ;
+	rdfs:range org:Organization ;
+	rdfs:comment "Indique le statut de dépendance hiérarchique pour des Organisations ou des Unités Opérationnelles; indique une Organisation qui est une sous-partie ou une branche d'une Organisation plus large. C'est la propriété inverse de `org:subOrganizationOf`."@fr , "Organización jerárquica de organizaciones o unidades. Indica que una organización es parte de otra organización más amplia o pertenece a ella. Es la relación inversa de `org:subOrganizationOf`."@es , "Rappresenta un contenimento gerarchico di una Organization o di una OrganizationalUnit. Indica una organizzazione che è parte di una organizzazione più grande. È l'inverso di `org:subOrganizationOf`."@it , "Represents hierarchical containment of Organizations or Organizational Units; indicates an organization which is a sub-part or child of this organization.  Inverse of `org:subOrganizationOf`."@en , "組織または組織単位の階層的包含を表わします。この組織のサブパートまたは子である組織を示します。"@ja ;
+	rdfs:isDefinedBy <http://www.w3.org/ns/org> ;
+	rdfs:label "a une Sous-Organization"@fr , "ha sotto-Organization"@it , "has SubOrganization"@en , "tiene suborganización"@es .
+# 
+# http://www.w3.org/ns/org#role
+
+org:role a owl:ObjectProperty ;
+	rdfs:domain org:Membership ;
+	rdfs:range org:Role ;
+	rdfs:comment "Actividad que el agente desempeña en una relación de pertenencia a una organización."@es , "Indica il Role che un Agent ricopre in una relazione di Membership con una Organization"@it , "Indicates the Role that the Agent plays in a Membership relationship with an Organization."@en , "Indique le Rôle de l'Agent dans son Engagement avec l'Organisation."@fr , "エージェントが組織との構成員関係において担う役割を示します。ポストの保持者が担う役割を示すためにorg:Postで用いることもできます。"@ja ;
+	rdfs:isDefinedBy <http://www.w3.org/ns/org> ;
+	rdfs:label "desempeña la actividad de"@es , "role"@en , "ruolo"@it , "rôle"@fr .
+# 
+# http://www.w3.org/ns/org#subOrganizationOf
+
+org:subOrganizationOf a owl:ObjectProperty ;
+	rdfs:domain org:Organization ;
+	rdfs:range org:Organization ;
+	rdfs:comment "Distribución jerárquica de organizaciones o unidades. Indica que una organización contiene a otra organización. Es la relación inversa de `org:hasSubOrganization`"@es , "Rappresenta un contenimento gerarchico di una Organization o di una OrganizationalUnit. È l'inverso di `org:hasSubOrganization`. Ha nome come nome alternativo hasSubOrg."@it , "Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an Organization which contains this Organization. Inverse of `org:hasSubOrganization`."@en , "Représente une relation hierarchique des Organisations ou des Unités Opérationnelles; indique une Organisation sujet qui contient cette Organisation. Inverse de `org:hasSubOrganization`."@fr , "組織または組織単位の階層的包含を表わします。この組織を含む組織を示します。"@ja ;
+	rdfs:isDefinedBy <http://www.w3.org/ns/org> ;
+	rdfs:label "es suborganización de"@es , "sotto-Organization di"@it , "sous-Organization de"@fr , "subOrganization of"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#dateEndActivity
+
+:dateEndActivity a owl:DatatypeProperty ;
+	rdfs:domain :MEP ;
+	rdfs:range xsd:dateTime ;
+	rdfs:definition "End date of activity" .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#memberSeatBru
+
+:memberSeatBru a owl:DatatypeProperty ;
+	rdfs:domain :Membership ;
+	rdfs:range xsd:string ;
+	:inputSource "CODICT/Member/getSeatBru/numero" ;
+	rdfs:definition "Seat number in Brussels" .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#memberSeatStr
+
+:memberSeatStr a owl:DatatypeProperty ;
+	rdfs:domain :Membership ;
+	rdfs:range xsd:string ;
+	:inputRule "CODICT.getSeatStr()" ;
+	rdfs:definition "Seat number in Strasbourg" .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#officeId
+
+:officeId a owl:DatatypeProperty ;
+	rdfs:subPropertyOf skos:notation ;
+	rdfs:domain schema:PostalAddress ;
+	rdfs:comment "Gives an identifier to uniquely identify an office. "@en ;
+	rdfs:label "Office identifier"@en .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#officialFamilyName
+
+:officialFamilyName a owl:DatatypeProperty ;
+	rdfs:domain :Person ;
+	rdfs:range xsd:string ;
+	rdfs:definition "The official family name of some person." .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#officialFirstName
+
+:officialFirstName a owl:DatatypeProperty ;
+	rdfs:domain :Person ;
+	rdfs:range xsd:string ;
+	rdfs:definition "The official first name of some person." .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#officialUpperFamilyName
+
+:officialUpperFamilyName a owl:DatatypeProperty ;
+	rdfs:domain :Person ;
+	rdfs:range xsd:string ;
+	rdfs:definition "The official family name of some person in uppercase." .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#officialUpperFirstName
+
+:officialUpperFirstName a owl:DatatypeProperty ;
+	rdfs:domain :Person ;
+	rdfs:range xsd:string ;
+	rdfs:definition "The official first name of some person in uppercase." .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#personId
+
+:personId a owl:DatatypeProperty ;
+	rdfs:subPropertyOf skos:notation ;
+	rdfs:domain :Person ;
+	rdfs:comment "Gives an identifier to uniquely identify a person. "@en ;
+	rdfs:label "Person identifier"@en .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#upperFamilyName
+
+:upperFamilyName a owl:DatatypeProperty ;
+	rdfs:domain :Person ;
+	rdfs:range xsd:string ;
+	rdfs:definition "The family name of some person in uppercase." .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#upperFirstName
+
+:upperFirstName a owl:DatatypeProperty ;
+	rdfs:domain :Person ;
+	rdfs:range xsd:string ;
+	rdfs:definition "The first name of some person in uppercase." .
+# 
+# http://schema.org/birthDate
+
+schema:birthDate a owl:DatatypeProperty ;
+	rdfs:domain schema:Person ;
+	rdfs:range xsd:dateTime ;
+	rdfs:label "Date of birth" .
+# 
+# http://schema.org/dateModified
+
+schema:dateModified a owl:DatatypeProperty ;
+	rdfs:range xsd:dateTime ;
+	rdfs:comment "The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed." ;
+	rdfs:label "Date modified" .
+# 
+# http://schema.org/deathDate
+
+schema:deathDate a owl:DatatypeProperty ;
+	rdfs:domain schema:Person ;
+	rdfs:range xsd:dateTime ;
+	rdfs:comment "Date of death." ;
+	rdfs:label "deathDate" .
+# 
+# http://schema.org/email
+
+schema:email a owl:DatatypeProperty ;
+	rdfs:domain schema:ContactPoint ;
+	rdfs:range xsd:string ;
+	rdfs:comment "Email address." ;
+	rdfs:label "Email" .
+# 
+# http://schema.org/endDate
+
+schema:endDate a owl:DatatypeProperty ;
+	rdfs:domain :Membership ;
+	rdfs:range xsd:dateTime ;
+	rdfs:comment "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601))." ;
+	rdfs:label "End date" .
+# 
+# http://schema.org/faxNumber
+
+schema:faxNumber a owl:DatatypeProperty ;
+	rdfs:domain schema:ContactPoint ;
+	rdfs:range xsd:string ;
+	rdfs:comment "The fax number." ;
+	rdfs:label "Fax number" .
+# 
+# http://schema.org/startDate
+
+schema:startDate a owl:DatatypeProperty ;
+	rdfs:domain :Membership ;
+	rdfs:range xsd:dateTime ;
+	rdfs:comment "The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601))." ;
+	rdfs:label "Start date" .
+# 
+# http://schema.org/telephone
+
+schema:telephone a owl:DatatypeProperty ;
+	rdfs:domain schema:ContactPoint ;
+	rdfs:range xsd:string ;
+	rdfs:comment "The telephone number." ;
+	rdfs:label "Telephone" .
+# 
+# http://schema.org/url
+
+schema:url a owl:DatatypeProperty ;
+	rdfs:domain schema:ContactPoint ;
+	rdfs:range xsd:string ;
+	rdfs:comment "URL of the item." ;
+	rdfs:label "Url" .
+# 
+# http://www.w3.org/ns/org#identifier
+
+org:identifier a owl:DatatypeProperty ;
+	rdfs:subPropertyOf skos:notation ;
+	rdfs:domain owl:Thing ;
+	rdfs:comment "Código o identificador, como por ejemplo el CIF de una empresa, que permite identificar de forma inequívoca a una organización. Existen muchos códigos de identificación tanto nacionales como internacionales. Esta ontología no obliga al uso de ningún esquema en concreto. Los códigos de identificación utilizados en cada caso se deberían indicar mediante el uso de la propiedad “datatype” del valor del identificador. El uso de la propiedad “datatype” para especificar el esquema de notación utilizado está en consonancia con las buenas prácticas recomendadas para el uso de la propiedad `skos:notation`, de la que esta propiedad es una especialización."@es , "Donne un identifiant, comme par exemple le numéro d'enregistrement d'une entreprise, qui peut être utilisé comme identifiant unique pour l'Organisation. De nombreux schémas nationaux et internationaux sont disponibles. Cette ontologie reste neutre par rapport au schéma utilisé. Le schéma particulier utilisé devrait être indiqué par le `datatype` de la valeur de l'identifiant. Utiliser les datatypes pour distinguer les schémas de notation est cohérent avec les bonnes pratiques pour `skos:notation` dont cette propriété est une spécialisation."@fr , "Gives an identifier, such as a company registration number, that can be used to used to uniquely identify the organization. Many different national and international identier schemes are available. The org ontology is neutral to which schemes are used. The particular identifier scheme should be indicated by the datatype of the identifier value.  Using datatypes to distinguish the notation scheme used is consistent with recommended best practice for `skos:notation` of which this property is a specialization."@en , "Indica un identificatore univoco per l'organizzazione, come ad esempio la partita IVA di un'azienda. Molti schemi di identificazione a livello nazionale e internazionale sono disponibili allo scopo. L'ontologia ORG è neutrale rispetto allo schema da utilizzare. Lo schema di identificazione dovrebbe essere indicato dal datatype del valore dell'identificatore. L'uso del datatype per distinguere lo schema di identificazione è coerente con le best practice per `skos:notation`, di cui questa proprietà è una specializzazione."@it , "組織を一意に識別するために使用できる会社登録番号などの識別子を与えます。"@ja ;
+	rdfs:isDefinedBy <http://www.w3.org/ns/org> ;
+	rdfs:label "identifiant"@fr , "identificatore"@it , "identifier"@en , "tiene identificador"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#Civility
+
+:Civility a owl:Class ;
+	owl:equivalentClass _:genid1 .
+
+_:genid1 a owl:Restriction ;
+	owl:onProperty skos:inScheme ;
+	owl:hasValue ep-aut:civility .
+
+:Civility rdfs:subClassOf skos:Concept ;
+	:inputRule "CODICT input : Person.titleCode" ;
+	:uriTemplate "ep-aut:civility/{skos:notation}" ;
+	rdfs:definition "Civility refers to a particular title. Examples include: Mr, Ms, Prof, Dr, Lord, Graf, etc."@en .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#CommitteeBody
+
+:CommitteeBody a owl:Class ;
+	owl:equivalentClass _:genid2 .
+
+_:genid2 a owl:Restriction ;
+	owl:onProperty skos:inScheme ;
+	owl:hasValue ep-aut:committee-body .
+
+:CommitteeBody rdfs:subClassOf :CorporateBody ;
+	:uriTemplate "ep-aut:committee-body/{skos:notation}" ;
+	rdfs:definition """The Members of the European Parliament are divided up among 20 specialised standing committees.These committees instruct legislative proposals through the adoption of reports, propose amendments to Plenary and appoint a negotiation team to conduct negotiations with the Council on EU legislation. They also adopt own-initiative reports, organise hearings with experts and scrutinise the other EU bodies and institutions.
+- A committee consists of between 25 and 81 full members and an equivalent number of substitutes.
+- Each committee elects a chair and up to four vice-chairs amongst its full members, forming together the 'committee bureau', for a two and a half year mandate. The political make-up of the committees reflects that of the plenary assembly. Parliament can also set up sub-committees and special temporary committees to deal with specific issues, and is empowered to create committees of inquiry to investigate alleged contraventions or maladministration of EU law. At conciliation stage, a specific Conciliation Committee is set up.
+- The parliamentary committees normally meet in Brussels, and their work is supported by a secretariat. Their debates are held in public and, in principle, webstreamed. 
+- The committee chairs coordinate the work of the committees in the Conference of Committee Chairs."""@en .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#Constituency
+
+:Constituency a owl:Class ;
+	owl:equivalentClass _:genid3 .
+
+_:genid3 a owl:Restriction ;
+	owl:onProperty skos:inScheme ;
+	owl:hasValue ep-aut:constituency .
+
+:Constituency rdfs:subClassOf skos:Concept ;
+	:inputSource "CODICT/Mandate/circons" ;
+	:uriTemplate "ep-aut:constituency/{ep-org:Country}-{id}" ;
+	rdfs:comment """This property is only valid for some coutries:
+ep-orgr:org/BEL: {\"Collège électoral français\" , \"Collège électoral germanophone\", \"Nederlands Kiescollege\"}
+ep-orgr:org/IRL: {\"Dublin\" , \"Midlands-North-West\" ,  \"South\"}
+ep-orgr:org/ITA: {\"Centrale\" , \"Insulare\" , \"Meridionale\" , \"Nord-Occidentale\" }""" ;
+	rdfs:definition "Refers to a group of people with shared interests or political rules within a country, for MEP's mandate in European Parliament."@en .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#ContactPointType
+
+:ContactPointType a owl:Class ;
+	owl:equivalentClass _:genid4 .
+
+_:genid4 a owl:Restriction ;
+	owl:onProperty skos:inScheme ;
+	owl:hasValue ep-aut:contact-point-type .
+
+:ContactPointType rdfs:subClassOf skos:Concept ;
+	:uriTemplate "ep-orgr:contact-point-type/electronic/{dc:identifier} or ep-orgr:contact-point-type/place/{ep-org:officeId} " ;
+	rdfs:definition "Defines the type of contact point: electronical (Facebook, Twitter...) or physical (office)"@en .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#CorporateBody
+
+:CorporateBody a owl:Class ;
+	rdfs:subClassOf skos:Concept ;
+	rdfs:definition "Groups of people that can be treated as a single organization efficiently." .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#Country
+
+:Country a owl:Class ;
+	owl:equivalentClass _:genid5 .
+
+_:genid5 a owl:Restriction ;
+	owl:onProperty skos:inScheme ;
+	owl:hasValue op-aut:country .
+
+:Country rdfs:subClassOf :Organization , skos:Concept ;
+	:inputRule "OP conceptScheme" ;
+	rdfs:definition "The term country refers to a political state or nation or its territory. It is often referred to as the land of an individual's birth, residence, or citizenship."@en .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#DelegationBody
+
+:DelegationBody a owl:Class ;
+	owl:equivalentClass _:genid6 .
+
+_:genid6 a owl:Restriction ;
+	owl:onProperty skos:inScheme ;
+	owl:hasValue ep-aut:delegation-body .
+
+:DelegationBody rdfs:subClassOf :CorporateBody ;
+	:uriTemplate "ep-aut:delegation-body/{skos:notation}" ;
+	rdfs:definition """The European Parliament's delegations are official groups of MEPs (Members of the European Parliament) that maintain and deepen relations with the parliaments of non-EU countries, regions and organisations. In this way, delegations serve as Parliament's primary link to other legislatures, at home and abroad.
+- Working in cooperation with Parliament's committees and with MEPs supporting democracy and human rights beyond the EU's borders, delegations reinforce the positions of the European Parliament.By exercising parliamentary diplomacy through regular discussions, delegations also promote the EU in general and encourage their partners to respect the EU's values and interests.
+- There are several types of delegations: joint parliamentary committees, parliamentary cooperation committees, other interparliamentary delegations and delegations to multilateral parliamentary assemblies. 
+- The European Parliament currently has 44 standing, meaning permanent, delegations. Every single MEP is a member of a standing delegation. Some belong to more than one. From one term to another, the distribution of delegations may differ significantly.
+- Committees and delegations keep one another informed of their meetings and discussions, and invite each other's members to join their proceedings and assignments."""@en .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#Gender
+
+:Gender a owl:Class ;
+	owl:equivalentClass _:genid7 .
+
+_:genid7 a owl:Restriction ;
+	owl:onProperty skos:inScheme ;
+	owl:hasValue ep-aut:gender .
+
+:Gender rdfs:subClassOf skos:Concept ;
+	:inputRule "CODICT input" ;
+	:uriTemplate "ep-aut:gender/{skos:notation}" ;
+	rdfs:definition "Gender refers to one of the defined human sexes."@en .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#GovernanceBody
+
+:GovernanceBody a owl:Class ;
+	owl:equivalentClass _:genid8 .
+
+_:genid8 a owl:Restriction ;
+	owl:onProperty skos:inScheme ;
+	owl:hasValue ep-aut:governance-body .
+
+:GovernanceBody rdfs:subClassOf :CorporateBody ;
+	:uriTemplate "ep-aut:governance-body/{skos:notation}" ;
+	rdfs:definition """There are different political bodies in the European Parliament responsible for the organisation of Parliament’s business and legislative planning or for Parliament rules as well as administrative, financial, staff and organisational matters.
+- The Conference of Presidents is the political body in Parliament responsible for the organisation of Parliament’s business and legislative planning; deciding the responsibilities and membership of committees and delegations; relations with other EU institutions, the national parliaments and non-EU countries.
+- The Bureau is the body that lays down rules for Parliament. It draws up Parliament’s preliminary draft budget and decides all administrative, staff and organisational matters.
+- The College of Quaestors is the European Parliament body responsible for administrative and financial matters directly concerning Members and their working conditions.
+- The Conference of Committee Chairs is the political body in Parliament that works for better cooperation between the committees.
+- The Conference of Delegation Chairs is the political body in Parliament that periodically considers all matters concerning the smooth running of interparliamentary delegations and delegations to the joint parliamentary committees."""@en .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#InstitutionBody
+
+:InstitutionBody a owl:Class ;
+	owl:equivalentClass _:genid9 .
+
+_:genid9 a owl:Restriction ;
+	owl:onProperty skos:inScheme ;
+	owl:hasValue ep-aut:institution-body .
+
+:InstitutionBody rdfs:subClassOf :CorporateBody ;
+	:uriTemplate "ep-aut:institution-body/{skos:notation}" ;
+	rdfs:definition "European institution."@en .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#MEP
+
+:MEP a owl:Class ;
+	rdfs:subClassOf :Person ;
+	:inputRule "CODICT Member methods" ;
+	:uriTemplate "ep-orgr:person/{ep-org:personId}" ;
+	rdfs:definition """A Member of the European Parliament (MEP) is a person who has been elected to serve as a popular representative in the European Parliament. 
+- The European Parliament is made up of 705 Members elected in the 27 Member States of the enlarged European Union. Since 1979 MEPs have been elected by direct universal suffrage for a five-year period.
+- Each country decides on the form its election will take, but must guarantee equality of the sexes and a secret ballot. EU elections are by proportional representation. Voting age is 18, aside from Austria, where it is 16.
+- Seats are allocated on the basis of population of each Member State. Slightly more than a third of MEPs are women. MEPs are grouped by political affinity, not nationality.
+- MEPs divide their time between their constituencies, Strasbourg - where 12 plenary sittings a year are held - and Brussels, where they attend additional plenary sittings, as well as committee and political group meetings.
+- The terms and conditions for Members are laid out in the Statute of 2009."""@en ;
+	rdfs:isDefinedBy "\\MEPgraph.PNG" .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#Membership
+
+:Membership a owl:Class ;
+	rdfs:subClassOf org:Membership , _:genid10 .
+
+_:genid10 a owl:Restriction ;
+	owl:onProperty :hasOrganization ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass foaf:Agent .
+
+:Membership :uriTemplate "ep-orgr:person/{ep-org:personId}/membership/{CODICT@id}" ;
+	rdfs:definition """The Members of the European Parliament could have several membership roles according to their attribution to a certain polical group, national party, governing body or participation in different committees and delegations. 
+- For example, the majority of Members belongs to a particular European polical party or a political group in the Parliament. While Members may not belong to more than one political group, some MEPs do not belong to any political group and are known as non-attached Members.
+- At the same time, every single MEP is a member of a standing delegation. Some MEPs even belong to more than one delegation."""@en .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#MembershipType
+
+:MembershipType a owl:Class ;
+	owl:equivalentClass _:genid11 .
+
+_:genid11 a owl:Restriction ;
+	owl:onProperty skos:inScheme ;
+	owl:hasValue ep-aut:membership-type .
+
+:MembershipType rdfs:subClassOf skos:Concept ;
+	:uriTemplate "ep-aut:membership-type/{skos:notation}" .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#NationalPartyBody
+
+:NationalPartyBody a owl:Class ;
+	owl:equivalentClass _:genid12 .
+
+_:genid12 a owl:Restriction ;
+	owl:onProperty skos:inScheme ;
+	owl:hasValue ep-aut:national-party-body .
+
+:NationalPartyBody rdfs:subClassOf :CorporateBody ;
+	:uriTemplate "ep-aut:national-party-body/{skos:notation}" ;
+	rdfs:definition """The Members of the European Parliament might belong to three different entities: a domestic political party, a political group in the European Parliament, and an European political party. The term national party refers to the first entity, namely a domestic political party represented in a certain Member State.
+- In general, a political party is an organized group of people who have same or similar political positions, and who contribute, according to the basic principles of democracy, to the expression of universal suffrage and the will of the people in the way defined in the party´s statues or programme. 
+- Political parties are often described as institutionalized mediators between civil society and those who decide and implement decisions. As such,  they enable their members’ and supporters’ demands to be addressed  in parliament and in government. Even though parties fulfil many vital roles and perform several functions in a democratic society, the nomination and presentation of candidates in the electoral campaign is the most visible function to the electorate."""@en .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#Organization
+
+:Organization a owl:Class ;
+	rdfs:subClassOf org:Organization ;
+	:inputRule "CODICT input" ;
+	:uriTemplate "ep-orgr:org/{skos:notation}-{CODICT@id}" .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#OrganizationType
+
+:OrganizationType a owl:Class ;
+	owl:equivalentClass _:genid13 .
+
+_:genid13 a owl:Restriction ;
+	owl:onProperty skos:inScheme ;
+	owl:hasValue ep-aut:org-type .
+
+:OrganizationType rdfs:subClassOf skos:Concept ;
+	:inputRule "CODICT input" ;
+	:uriTemplate "ep-aut:org-type/{skos:notation}" ;
+	rdfs:definition "Body type refers to the different types of structures in the parliament, for example committees, delegations, governing bodies, etc."@en .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#ParliamentaryTerm
+
+:ParliamentaryTerm a owl:Class ;
+	owl:equivalentClass _:genid14 .
+
+_:genid14 a owl:Restriction ;
+	owl:onProperty skos:inScheme ;
+	owl:hasValue ep-aut:parliamentary-term .
+
+:ParliamentaryTerm rdfs:subClassOf skos:Concept ;
+	:inputRule "CODICT input" ;
+	:uriTemplate "ep-aut:parliamentary-term/{skos:notation}" ;
+	rdfs:definition "The parliamentary term runs concurrently with the Members’ term of office, namely five years."@en .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#Person
+
+:Person a owl:Class ;
+	rdfs:subClassOf foaf:Person , _:genid15 .
+
+_:genid15 a owl:Restriction ;
+	owl:onProperty foaf:familyName ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+
+:Person :inputRule "CODICT input" ;
+	:uriTemplate "ep-orgr:person/{ep-org:personId}" ;
+	rdfs:definition "Person refers to a human being regarded as an individual."@en .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#PersonType
+
+:PersonType a owl:Class ;
+	owl:equivalentClass _:genid16 .
+
+_:genid16 a owl:Restriction ;
+	owl:onProperty skos:inScheme ;
+	owl:hasValue ep-aut:person-type .
+
+:PersonType rdfs:subClassOf skos:Concept ;
+	:uriTemplate "ep-aut:person-type/{skos:notation}" .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#PoliticalGroupBody
+
+:PoliticalGroupBody a owl:Class ;
+	owl:equivalentClass _:genid17 .
+
+_:genid17 a owl:Restriction ;
+	owl:onProperty skos:inScheme ;
+	owl:hasValue ep-aut:political-group-body .
+
+:PoliticalGroupBody rdfs:subClassOf :CorporateBody ;
+	:uriTemplate "ep-aut:political-group-body/{skos:notation}" ;
+	rdfs:definition """The Members of the European Parliament sit in political groups – they are not organised by nationality, but by political affiliation. 
+- There are currently 7 political groups in the European Parliament, representing all ideological tendencies in the EP. 
+- 25 Members are needed to form a political group, and at least one-quarter of the Member States must be represented within the group. 
+- Members may not belong to more than one political group. Some Members do not belong to any political group and are known as non-attached Members.
+- Each political group care of its own internal organisation by appointing a chair (or two cochairs in the case of some groups), a bureau and a secretariat. The places assigned to Members in the Chamber are decided by political affiliation, from left to right, by agreement with the group chairmen. Before every vote in plenary the political groups scrutinise the reports drawn up by the parliamentary committees and table amendments to them.The position adopted by the political group is arrived at by discussion within the group. No Member can be forced to vote in a particular way."""@en .
+# 
+# http://data.europarl.europa.eu/ontology/ep-org#Town
+
+:Town a owl:Class ;
+	owl:equivalentClass _:genid18 .
+
+_:genid18 a owl:Restriction ;
+	owl:onProperty skos:inScheme ;
+	owl:hasValue op-aut:place .
+
+:Town rdfs:subClassOf skos:Concept ;
+	:inputRule "OP conceptScheme" ;
+	rdfs:definition "A town is a populated area with fixed boundaries and a local government."@en .
+# 
+# http://schema.org/ContactPoint
+
+schema:ContactPoint a owl:Class ;
+	:uriTemplate "ep-orgr:contact-point/electronic/{ep-org:personId}/{dc:identifier}" ;
+	rdfs:comment "A contact point&#x2014;for example, a Customer Complaints department." ;
+	rdfs:label "ContactPoint" .
+# 
+# http://schema.org/Language
+
+schema:Language a owl:Class ;
+	owl:equivalentClass _:genid19 .
+
+_:genid19 a owl:Restriction ;
+	owl:onProperty skos:inScheme ;
+	owl:hasValue op-aut:language .
+
+schema:Language rdfs:subClassOf skos:Concept ;
+	rdfs:comment "Natural languages such as Spanish, Tamil, Hindi, English, etc. Formal language code tags expressed in [BCP 47](https://en.wikipedia.org/wiki/IETF_language_tag) can be used via the [[alternateName]] property. The Language type previously also covered programming languages such as Scheme and Lisp, which are now best represented using [[ComputerLanguage]]." ;
+	rdfs:label "Language" .
+# 
+# http://schema.org/Organization
+
+schema:Organization a owl:Class .
+# 
+# http://schema.org/PostalAddress
+
+schema:PostalAddress a owl:Class ;
+	rdfs:subClassOf schema:ContactPoint ;
+	:uriTemplate "ep-orgr:contact-point/place/{ep-org:personId}/{ep-org:officeId}" .
+# 
+# http://www.w3.org/2000/01/rdf-schema#string
+
+rdfs:string a owl:Class .
+# 
+# http://www.w3.org/ns/org#Membership
+
+org:Membership a owl:Class ;
+	owl:disjointWith org:Organization , org:Role , org:Site ;
+	rdfs:comment "Indica la natura della relazione di appartenenza di un Agent in un'organizzazione. Rappresenta una relazione n-aria tra un'Agent, un Organization e un Role. È possibile indicare direttamente la membership, indipendentemente dallo specifico Role, attraverso l'uso della proprietà `org:memberOf`"@it , "Indicates the nature of an Agent's membership of an organization. Represents an n-ary relation between an Agent, an Organization and a Role. It is possible to directly indicate membership, independent of the specific Role, through use of the `org:memberOf` property."@en , "Indique la nature de l'engagement d'un Agent dans une Organisation. Représente une relation n-aire entre un Agent, une Organisation et un Role. Il est possible d'indiquer directement l'appartenance à une organisation, independemment d'un rôle spécifique, à travers l'usage de la propriété `org:memberOf`."@fr , "Pertenencia o afiliación de un agente a una organización. Es una relación n-aria entre un agente, una organización y una actividad. Es posible indicar pertenencia mediante el uso de la propiedad `org:memberOf`, independientemente de la actividad específica que se desempeñe."@es , "組織のエージェントの構成員の本質を示します。"@ja ;
+	rdfs:isDefinedBy <http://www.w3.org/ns/org> ;
+	rdfs:label "Appartenenza"@it , "Engagement"@fr , "Membership"@en , "membresía"@es .
+# 
+# http://www.w3.org/ns/org#Organization
+
+org:Organization a owl:Class ;
+	owl:equivalentClass foaf:Organization ;
+	rdfs:subClassOf foaf:Agent ;
+	owl:disjointWith org:Role , org:Site ;
+	rdfs:comment "Grupo de personas que se organiza en una comunidad u otro tipo de estructura social, comercial o política. Dicho grupo tiene un objetivo o motivo común para su existencia que va más allá del conjunto de personas que lo forman y que puede actuar como “agente”. A menudo las organizaciones se pueden agrupar en estructuras jerárquicas. Se recomienda el uso de etiquetas de SKOS para denominar a cada “organización”. En concreto, `skos:prefLabel` para la denominación principal o recomendada (aquella reconocida legalmente, siempre que sea posible), `skos:altLabel` para denominaciones alternativas (nombre comercial, sigla, denominación por la que se conoce a la organización coloquialmente) y `skos:notation` para referirse al código que identifique a la organización en una lista de códigos. Denominaciones alternativas: _colectivo_ _corporación_ _grupo_"@es , "Rappresenta una collezione di persone organizzate all'interno di una communità o di una qualche struttura sociale, commerciale o politica. Il gruppo condivide un obiettivo o una ragione d'essere che va oltre gli stessi membri appartenenti al gruppo e  può agire come un Agent. Le organizzazioni si possono spesso suddividere in strutture gerarchiche. Si raccomanda di usare le label per l'Organization mediante le proprietà di SKOS. In particolare, `skos:prefLabel` per il nome principale (possibilmente un nome legalmente riconosciuto)”, `skos:altLabel` come nome alternativo (denominazione commerciale, denominazione colloquiale) e `skos:notation` per indicare un codice di una lista di codici."@it , "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.  It is recommended that SKOS lexical labels should be used to label the Organization. In particular `skos:prefLabel` for the primary (possibly legally recognized name), `skos:altLabel` for alternative names (trading names, colloquial names) and `skos:notation` to denote a code from a code list. Alternative names: _Collective_ _Body_ _Org_ _Group_"@en , "Représente un groupe de personnes organisées en communauté où tout autre forme de structure sociale, commerciale ou politique. Le groupe a un but commun ou une raison d'être qui va au-delà de la somme des personnes qui en font partie et peut agir en tant que \"Agent\". Les organisations sont souvent décomposables en structures hiérarchisées. Il est recommandé que des labels lexicaux SKOS soient utilisés pour nommer l'Organisation. En particulier `skos:prefLabel` pour le nom principal (en général le nom légal), `skos:altLabel` pour les noms alternatifs (marques, sigles, appellations familières) et `skos:notation` pour indiquer un code provenant d'une liste de code."@fr , "コミュニティー、その他の社会、商業、政治的な構造に共に編入された人々の集合を表わします。グループには、そこに属する人々を超えた、存在に対するある共通の目的や理由があり、エージェント（代理）を務めることができます。組織は、多くの場合、階層構造に分割できます。"@ja ;
+	rdfs:isDefinedBy <http://www.w3.org/ns/org> ;
+	rdfs:label "Organisation"@fr , "Organization"@en , "Organizzazione"@it , "organización"@es .
+# 
+# http://www.w3.org/ns/org#Role
+
+org:Role a owl:Class ;
+	owl:equivalentClass _:genid20 .
+
+_:genid20 a owl:Restriction ;
+	owl:onProperty skos:inScheme ;
+	owl:hasValue ep-aut:function .
+
+org:Role rdfs:subClassOf skos:Concept ;
+	owl:disjointWith org:Site ;
+	rdfs:comment "Denotes a role that a Person or other Agent can take in an organization. Instances of this class describe the abstract role; to denote a specific instance of a person playing that role in a specific organization use an instance of `org:Membership`. It is common for roles to be arranged in some taxonomic structure and we use SKOS to represent that. The normal SKOS lexical properties should be used when labelling the Role. Additional descriptive properties for the Role, such as a Salary band, may be added by extension vocabularies."@en , "Función que una persona o agente desempeña en el seno de una organización. Las instancias de esta clase describen la actividad en abstracto; si lo que se pretende es incluir una instancia que refleje la función o actividad que desempeña una persona en concreto en una organización específica, se indica el uso de instancias de la clase `org:Membership`. Es común que dichas actividades se representen en una estructura taxonómica mediante SKOS. Las propiedades léxicas de SKOS deberían utilizarse a la hora de denominar o etiquetar la actividad desempeñada. Para añadir propiedades descriptivas adicionales, como rango salarial, se tendrá que recurrir a vocabularios externos."@es , "Indica il ruolo che una Person o un altro Agent può assumere in un'organizzazione. Le istanze di questa classe descrivono un ruolo astratto; per esprimere il ruolo che una precisa persona ricopre in un'organizzazione si usi un'istanza di `org:Membership`. È comune organizzare i ruoli in una qualche struttura tassonomica e quindi si raccomanda SKOS per questo. Altre proprietà descrittive per il Role, come salario, possono essere aggiunte mediante l'uso di altri vocabolari."@it , "Indique le rôle qu'une Personne ou un autre Agent peut avoir dans une Organisation. Les instances de cette classe décrivent le rôle dans l'absolu; pour indiquer une personne ayant ce rôle spécifique dans une Organisation, utilisez une instance de `org:Membership`. Il est courant que les rôles soient organisés dans une sorte de taxonomie, ce qui peut être représenté avec SKOS. Les propriétés de libellés standards de SKOS devraient être utilisées pour libeller le Rôle. D'autres propriétés additionnelles pour ce rôle, comme une fourchette de Salaire peuvent être ajoutées par une extension de ce vocabulaire."@fr , "人またはその他のエージェントが組織で担うことができる役割を表わします。この種のインスタンスは、抽象的な役割を記述します。特定の組織でその役割を担っている人の特定のインスタンスを示すためには、org:Membershipのインスタンスを使用します。"@ja ;
+	rdfs:isDefinedBy <http://www.w3.org/ns/org> ;
+	rdfs:label "Role"@en , "Ruolo"@it , "Rôle"@fr , "actividad"@es .
+# 
+# http://www.w3.org/ns/org#Site
+
+org:Site a owl:Class ;
+	owl:equivalentClass _:genid21 .
+
+_:genid21 a owl:Restriction ;
+	owl:onProperty skos:inScheme ;
+	owl:hasValue op-aut:site .
+
+org:Site rdfs:subClassOf skos:Concept ;
+	rdfs:comment "An office or other premise at which the organization is located. Many organizations are spread across multiple sites and many sites will host multiple locations. In most cases a Site will be a physical location. However, we don't exclude the possibility of non-physical sites such as a virtual office with an associated post box and phone reception service. Extensions may provide subclasses to denote particular types of site."@en , "Oficina, local o cualquier otro lugar en el que se encuentra una organización. Muchas organizaciones están distribuidas en varias sedes, que a su vez están repartidas en distintas ubicaciones. En muchos casos una sede será un sitio o local físico. Sin embargo, no se excluye la posibilidad de lugares no físicos como oficinas virtuales con los correspondientes apartados de correo y servicio de atención telefónica. Se pueden añadir más subtipos mediante extensiones para incluir tipos especiales de lugares."@es , "Un ufficio o altra sede dovei l'organizzazione è situata. Molte organizzazione sono distribuite su più sedi e molte sedi ospitano più ubicazioni. Nella maggior parte dei casi un Site è una locazione fisica. Non si esclude la possibilità di indicare sedi non fisiche come ad esempio gli uffici virtuali. Le estensioni dell'ontologia potrebbero usare delle sottoclassi per rappresentare i tipi particolari di sede."@it , "Un établissement ou tout autre lieu dans lequel une Organisation est localisé. Beaucoup d'organisations sont dispersées à travers plusieurs sites. Dans la plupart des cas un Site sera un lieu physique. Toutefois, nous n'excluons pas la possibilité de sites non-physiques comme un bureau virtuel avec une boîte postale et un service de secrétariat mutualisé. Des extensions pourraient fournir des sous-classes pour décrire des types de sites particuliers."@fr , "組織が位置するオフィスやその他の敷地。多くの組織が複数のサイトに散在しており、多くのサイトが多数の場所を持つでしょう。"@ja ;
+	rdfs:isDefinedBy <http://www.w3.org/ns/org> ;
+	rdfs:label "Sede"@it , "Site"@en , "Site"@fr , "sede"@es .
+	
+# http://lexvo.org/ontology#Script
+lexvo:Script  a owl:Class ;
+  rdfs:comment "A writing system considered abstractly, i.e. independent  of language-specific variations.</rdfs:comment>"@en;
+  rdfs:label "script"@en; .
+
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://data.europarl.europa.eu/authority/civility
+
+ep-aut:civility a owl:NamedIndividual .
+# 
+# http://data.europarl.europa.eu/authority/committee-body
+
+ep-aut:committee-body a owl:NamedIndividual .
+# 
+# http://data.europarl.europa.eu/authority/constituency
+
+ep-aut:constituency a owl:NamedIndividual .
+# 
+# http://data.europarl.europa.eu/authority/contact-point-type
+
+ep-aut:contact-point-type a owl:NamedIndividual .
+# 
+# http://data.europarl.europa.eu/authority/delegation-body
+
+ep-aut:delegation-body a owl:NamedIndividual .
+# 
+# http://data.europarl.europa.eu/authority/function
+
+ep-aut:function a owl:NamedIndividual .
+# 
+# http://data.europarl.europa.eu/authority/gender
+
+ep-aut:gender a owl:NamedIndividual .
+# 
+# http://data.europarl.europa.eu/authority/governance-body
+
+ep-aut:governance-body a owl:NamedIndividual .
+# 
+# http://data.europarl.europa.eu/authority/institution-body
+
+ep-aut:institution-body a owl:NamedIndividual .
+# 
+# http://data.europarl.europa.eu/authority/membership-type
+
+ep-aut:membership-type a owl:NamedIndividual .
+# 
+# http://data.europarl.europa.eu/authority/national-party-body
+
+ep-aut:national-party-body a owl:NamedIndividual .
+# 
+# http://data.europarl.europa.eu/authority/org-type
+
+ep-aut:org-type a owl:NamedIndividual .
+# 
+# http://data.europarl.europa.eu/authority/parliamentary-term
+
+ep-aut:parliamentary-term a owl:NamedIndividual .
+# 
+# http://data.europarl.europa.eu/authority/person-type
+
+ep-aut:person-type a owl:NamedIndividual .
+# 
+# http://data.europarl.europa.eu/authority/political-group-body
+
+ep-aut:political-group-body a owl:NamedIndividual .
+# 
+# http://publications.europa.eu/resource/authority/country
+
+op-aut:country a owl:NamedIndividual .
+# 
+# http://publications.europa.eu/resource/authority/language
+
+op-aut:language a owl:NamedIndividual .
+# 
+# http://publications.europa.eu/resource/authority/place
+
+op-aut:place a owl:NamedIndividual .
+# 
+# http://publications.europa.eu/resource/authority/site
+
+op-aut:site a owl:NamedIndividual .
+# 
+# Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

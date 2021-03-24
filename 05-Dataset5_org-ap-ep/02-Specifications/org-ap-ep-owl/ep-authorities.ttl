@@ -1,0 +1,909 @@
+@prefix : <http://data.europarl.europa.eu/vocabulary> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix lexvo: <http://lexvo.org/ontology#> .
+@prefix ep-aut: <http://data.europarl.europa.eu/authority/> .
+@prefix ep-org: <http://data.europarl.europa.eu/ontology/ep-org#> .
+@prefix op-aut: <http://publications.europa.eu/resource/authority/> .
+@prefix schema: <http://schema.org/> .
+@prefix ep-orgr: <http://data.europarl.europa.eu/resource/> .
+@base <http://data.europarl.europa.eu/authorities> .
+
+<http://data.europarl.europa.eu/authorities> rdf:type owl:Ontology ;
+                                              dc:modified "2020-11-16T15:10:00"^^xsd:dateTime .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+
+###  http://data.europarl.europa.eu/authority/orderNumber
+ep-aut:orderNumber rdf:type owl:AnnotationProperty .
+
+
+###  http://data.europarl.europa.eu/ontology/ep-org#hasOrganizationType
+ep-org:hasOrganizationType rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/modified
+dc:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/address
+schema:address rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/addressCountry
+schema:addressCountry rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/addressLocality
+schema:addressLocality rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/endDate
+schema:endDate rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/language
+schema:language rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/startDate
+schema:startDate rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/streetAddress
+schema:streetAddress rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#definition
+rdfs:definition rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionNumber
+owl:versionNumber rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+skos:altLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+skos:inScheme rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#notation
+skos:notation rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+skos:ConceptScheme rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://data.europarl.europa.eu/authority/notation-type
+ep-aut:notation-type rdf:type owl:NamedIndividual ,
+                          skos:ConceptScheme ;
+                 rdfs:label "Notation type Scheme " ;
+                 owl:versionNumber "20210118-0" ;
+                 skos:prefLabel "Alignment Scheme for skos:notation"@en .
+                 
+###  http://data.europarl.europa.eu/authority/constituency
+ep-aut:constituency rdf:type owl:NamedIndividual ,
+                          skos:ConceptScheme ;
+                 rdfs:label "Constituency Scheme" ;
+                 owl:versionNumber "20210210-0" ;
+                 skos:prefLabel "Mandate's Constituency Scheme"@en .
+
+###  http://data.europarl.europa.eu/authority/building
+ep-aut:building rdf:type owl:NamedIndividual ,
+                         skos:ConceptScheme ;
+                rdfs:label "Building Scheme" ;
+                owl:versionNumber "20200423-0" ;
+                skos:prefLabel "Building Scheme"@en .
+
+
+###  http://data.europarl.europa.eu/authority/civility
+ep-aut:civility rdf:type owl:NamedIndividual ,
+                         skos:ConceptScheme ;
+                rdfs:label "Civility Scheme" ;
+                owl:versionNumber "20210118-0" ;
+                skos:prefLabel "Civility Scheme"@en .
+
+
+###  http://data.europarl.europa.eu/authority/committee-body
+ep-aut:committee-body rdf:type owl:NamedIndividual ,
+                               skos:ConceptScheme ;
+                      rdfs:label "Committee Body Scheme" ;
+                      owl:versionNumber "20210118-0" .
+
+
+###  http://data.europarl.europa.eu/authority/contact-point-type
+ep-aut:contact-point-type rdf:type owl:NamedIndividual ,
+                                   skos:ConceptScheme ;
+                          rdfs:label "Contact Point Type Scheme" ;
+                          owl:versionNumber "20210118-0" .
+
+
+###  http://data.europarl.europa.eu/authority/delegation-body
+ep-aut:delegation-body rdf:type owl:NamedIndividual ,
+                                skos:ConceptScheme ;
+                       rdfs:label "Delegation Body Scheme" ;
+                       owl:versionNumber "20210118-0" .
+
+
+###  http://data.europarl.europa.eu/authority/function
+ep-aut:function rdf:type owl:NamedIndividual ,
+                         skos:ConceptScheme ;
+                rdfs:label "Function Scheme" ;
+                owl:versionNumber "20200615-0" ;
+                skos:prefLabel "Function Scheme"@en .
+
+
+###  http://data.europarl.europa.eu/authority/gender
+ep-aut:gender rdf:type owl:NamedIndividual ,
+                       skos:ConceptScheme ;
+              rdfs:label "Gender Scheme" ;
+              owl:versionNumber "20210118-0" .
+
+
+###  http://data.europarl.europa.eu/authority/governance-body
+ep-aut:governance-body rdf:type owl:NamedIndividual ,
+                                skos:ConceptScheme ;
+                       rdfs:label "Governance Body Scheme" ;
+                       owl:versionNumber "20210118-0" .
+
+
+###  http://data.europarl.europa.eu/authority/institution-body
+ep-aut:institution-body rdf:type owl:NamedIndividual ,
+                                 skos:ConceptScheme ;
+                        rdfs:label "Institution Body Scheme" ;
+                        owl:versionNumber "20210118-0" .
+
+
+###  http://data.europarl.europa.eu/authority/membership-type
+ep-aut:membership-type rdf:type owl:NamedIndividual ,
+                                skos:ConceptScheme ;
+                       rdfs:label "Membership Type Scheme" ;
+                       owl:versionNumber "20210118-0" .
+
+
+###  http://data.europarl.europa.eu/authority/national-party-body
+ep-aut:national-party-body rdf:type owl:NamedIndividual ,
+                                    skos:ConceptScheme ;
+                           rdfs:label "National Party Body Scheme" ;
+                           owl:versionNumber "20210118-0" .
+
+
+###  http://data.europarl.europa.eu/authority/org-type
+ep-aut:org-type rdf:type owl:NamedIndividual ,
+                         skos:ConceptScheme ;
+                rdfs:label "OrganizationType Scheme" ;
+                owl:versionNumber "20210118-0" .
+
+
+###  http://data.europarl.europa.eu/authority/parliamentary-term
+ep-aut:parliamentary-term rdf:type owl:NamedIndividual ,
+                                   skos:ConceptScheme ;
+                          rdfs:label "Parliamentary term Scheme" ;
+                          owl:versionInfo "20200428-0" ;
+                          skos:prefLabel "Parliamentary Term Scheme"@en .
+
+
+###  http://data.europarl.europa.eu/authority/person-type
+ep-aut:person-type rdf:type owl:NamedIndividual ,
+                            skos:ConceptScheme ;
+                   rdfs:label "Person Type Scheme" ;
+                   owl:versionNumber "20210118-0" ;
+                   skos:prefLabel "Person Type Scheme"@en .
+
+
+###  http://data.europarl.europa.eu/authority/political-group-body
+ep-aut:political-group-body rdf:type owl:NamedIndividual ,
+                                     skos:ConceptScheme ;
+                            rdfs:label "Political Group Body Scheme" ;
+                            owl:versionNumber "20210118-0" .
+
+
+###  http://data.europarl.europa.eu/authority/notation-type/codict
+<http://data.europarl.europa.eu/authority/notation-type/codict> rdf:type owl:NamedIndividual ,
+                                                                     skos:Concept ;
+                                                                     skos:prefLabel "Codict"@en;
+                                                            skos:inScheme ep-aut:notation-type .
+
+
+###  http://data.europarl.europa.eu/authority/notation-type/od
+<http://data.europarl.europa.eu/authority/notation-type/od> rdf:type owl:NamedIndividual ,
+                                                                 skos:Concept ;
+                                                        skos:inScheme ep-aut:notation-type ;
+                                                        skos:prefLabel "Open Data"@en .
+
+###  http://data.europarl.europa.eu/authority/notation-type/iso
+<http://data.europarl.europa.eu/authority/notation-type/iso> rdf:type owl:NamedIndividual ,
+                                                                 skos:Concept ;
+                                                        skos:inScheme ep-aut:notation-type ;
+                                                        skos:prefLabel "ISO code"@en .
+
+
+###  http://data.europarl.europa.eu/authority/notation-type/codict/bodycode
+<http://data.europarl.europa.eu/authority/notation-type/codict/bodycode> rdf:type owl:NamedIndividual ,
+                                                                              skos:Concept ;
+                                                                     skos:inScheme ep-aut:notation-type ;
+                                                                     skos:prefLabel "Codict/bodyCode"@en .
+
+
+###  http://data.europarl.europa.eu/authority/notation-type/codict/mnemocode
+<http://data.europarl.europa.eu/authority/notation-type/codict/mnemocode> rdf:type owl:NamedIndividual ,
+                                                                               skos:Concept ;
+                                                                      skos:inScheme ep-aut:notation-type ;
+                                                                      skos:prefLabel "Codict/mnemoCode"@en .
+
+###  http://data.europarl.europa.eu/authority/constituency/BEL-111
+<http://data.europarl.europa.eu/authority/constituency/BEL-111> rdf:type owl:NamedIndividual ,
+                          skos:Concept ;
+                 skos:inScheme ep-aut:constituency ;
+                 skos:prefLabel "Collège électoral français"@fr ;
+                 skos:notation "BEL-111";
+                 rdfs:label "Collège électoral français";
+                 skos:broaderMatch <http://publications.europa.eu/resource/authority/country/BEL>.
+
+
+###  http://data.europarl.europa.eu/authority/constituency/BEL-222
+<http://data.europarl.europa.eu/authority/constituency/BEL-222>  rdf:type owl:NamedIndividual ,
+                          skos:Concept ;
+                 skos:inScheme ep-aut:constituency ;
+                 skos:prefLabel "Collège électoral germanophone"@fr ;
+                 skos:notation "BEL-222";
+                 rdfs:label "Collège électoral germanophone";
+                skos:broaderMatch  <http://publications.europa.eu/resource/authority/country/BEL>.
+
+###  http://data.europarl.europa.eu/authority/constituency/BEL-333
+<http://data.europarl.europa.eu/authority/constituency/BEL-333>  rdf:type owl:NamedIndividual ,
+                          skos:Concept ;
+                 skos:inScheme ep-aut:constituency ;
+                 skos:prefLabel "Nederlands Kiescollege"@nl ;
+                 skos:notation "BEL-333";
+                 rdfs:label "Nederlands Kiescollege";
+                 skos:broaderMatch  <http://publications.europa.eu/resource/authority/country/BEL>.
+
+
+
+###  http://data.europarl.europa.eu/authority/civility/M
+<http://data.europarl.europa.eu/authority/civility/M> rdf:type owl:NamedIndividual ,
+                                                               skos:Concept ;
+                                                      skos:inScheme ep-aut:civility ;
+                                                      skos:notation "M."@fr ,
+                                                                    "MR."@en ;
+                                                      schema:language <http://publications.europa.eu/resource/authority/language/ENG> ,
+                                                                      <http://publications.europa.eu/resource/authority/language/FRA> ;
+                                                      rdfs:label "Mister"@en ,
+                                                                 "Monsieur"@fr ;
+                                                      skos:altLabel "Mister"@en ,
+                                                                    "Monsieur"@fr ;
+                                                      skos:prefLabel "M."@fr ,
+                                                                     "Mr"@en .
+
+
+###  http://data.europarl.europa.eu/authority/civility/MME
+<http://data.europarl.europa.eu/authority/civility/MME> rdf:type owl:NamedIndividual ,
+                                                                 skos:Concept ;
+                                                        skos:inScheme ep-aut:civility ;
+                                                        skos:notation "MME"@fr ;
+                                                        schema:language <http://publications.europa.eu/resource/authority/language/FRA> ;
+                                                        rdfs:label "Madame" ;
+                                                        skos:altLabel "Madame"@fr ;
+                                                        skos:prefLabel "Mme"@fr .
+
+
+###  http://data.europarl.europa.eu/authority/civility/MS
+<http://data.europarl.europa.eu/authority/civility/MS> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:civility ;
+                                                       skos:notation "MS."@en ;
+                                                       schema:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+                                                       rdfs:label "Ms" ;
+                                                       skos:altLabel "Ms"@en ;
+                                                       skos:prefLabel "Ms"@en .
+
+
+###  http://data.europarl.europa.eu/authority/committee-body/AFET
+<http://data.europarl.europa.eu/authority/committee-body/AFET> rdf:type owl:NamedIndividual ,
+                                                                        skos:Concept ;
+                                                               skos:inScheme ep-aut:committee-body ;
+                                                               skos:notation "AFET" ;
+                                                               ep-org:hasOrganizationType <http://data.europarl.europa.eu/authority/org-type/CO> ;
+                                                               rdfs:label "AFET" .
+
+
+###  http://data.europarl.europa.eu/authority/committee-body/CJ26
+<http://data.europarl.europa.eu/authority/committee-body/CJ26> rdf:type owl:NamedIndividual ,
+                                                                        skos:Concept ;
+                                                               skos:inScheme ep-aut:committee-body ;
+                                                               skos:notation "CJ26" ;
+                                                               ep-org:hasOrganizationType <http://data.europarl.europa.eu/authority/org-type/CJ> ;
+                                                               rdfs:label "CJ26" .
+
+
+###  http://data.europarl.europa.eu/authority/committee-body/DROI
+<http://data.europarl.europa.eu/authority/committee-body/DROI> rdf:type owl:NamedIndividual ,
+                                                                        skos:Concept ;
+                                                               skos:inScheme ep-aut:committee-body ;
+                                                               skos:notation "DROI" ;
+                                                               ep-org:hasOrganizationType <http://data.europarl.europa.eu/authority/org-type/SC> ;
+                                                               rdfs:label "DROI" .
+
+
+###  http://data.europarl.europa.eu/authority/committee-body/ENVI
+<http://data.europarl.europa.eu/authority/committee-body/ENVI> rdf:type owl:NamedIndividual ,
+                                                                        skos:Concept ;
+                                                               skos:inScheme ep-aut:committee-body ;
+                                                               skos:notation "ENVI" ;
+                                                               ep-org:hasOrganizationType <http://data.europarl.europa.eu/authority/org-type/CO> ;
+                                                               rdfs:label "ENVI" .
+
+
+###  http://data.europarl.europa.eu/authority/committee-body/INTA
+<http://data.europarl.europa.eu/authority/committee-body/INTA> rdf:type owl:NamedIndividual ,
+                                                                        skos:Concept ;
+                                                               skos:inScheme ep-aut:committee-body ;
+                                                               skos:notation "INTA" ;
+                                                               ep-org:hasOrganizationType <http://data.europarl.europa.eu/authority/org-type/CO> ,
+                                                                                          <http://data.europarl.europa.eu/authority/org-type/SC> ;
+                                                               rdfs:label "INTA" .
+
+
+###  http://data.europarl.europa.eu/authority/contact-point-type/BLG
+<http://data.europarl.europa.eu/authority/contact-point-type/BLG> rdf:type owl:NamedIndividual ,
+                                                                           skos:Concept ;
+                                                                  skos:inScheme ep-aut:contact-point-type ;
+                                                                  skos:notation "EMA" ;
+                                                                  skos:prefLabel "Blog"@en .
+
+
+###  http://data.europarl.europa.eu/authority/contact-point-type/EMA
+<http://data.europarl.europa.eu/authority/contact-point-type/EMA> rdf:type owl:NamedIndividual ,
+                                                                           skos:Concept ;
+                                                                  skos:inScheme ep-aut:contact-point-type ;
+                                                                  skos:notation "EMA" ;
+                                                                  rdfs:label "EMA" ;
+                                                                  skos:prefLabel "Personal Email"@en .
+
+
+###  http://data.europarl.europa.eu/authority/contact-point-type/FBP
+<http://data.europarl.europa.eu/authority/contact-point-type/FBP> rdf:type owl:NamedIndividual ,
+                                                                           skos:Concept ;
+                                                                  skos:inScheme ep-aut:contact-point-type ;
+                                                                  skos:notation "FBP" ;
+                                                                  rdfs:label "FBP" ;
+                                                                  skos:prefLabel "Facebook Profile"@en .
+
+
+###  http://data.europarl.europa.eu/authority/contact-point-type/FBW
+<http://data.europarl.europa.eu/authority/contact-point-type/FBW> rdf:type owl:NamedIndividual ,
+                                                                           skos:Concept ;
+                                                                  skos:inScheme ep-aut:contact-point-type ;
+                                                                  skos:notation "FBW" ;
+                                                                  rdfs:label "FBW" ;
+                                                                  skos:prefLabel "Facebook Page"@en .
+
+
+###  http://data.europarl.europa.eu/authority/contact-point-type/GGL
+<http://data.europarl.europa.eu/authority/contact-point-type/GGL> rdf:type owl:NamedIndividual ,
+                                                                           skos:Concept ;
+                                                                  skos:inScheme ep-aut:contact-point-type ;
+                                                                  skos:notation "GGL" ;
+                                                                  rdfs:label "GGL" ;
+                                                                  skos:prefLabel "Google+ Profile"@en .
+
+
+###  http://data.europarl.europa.eu/authority/contact-point-type/GWS
+<http://data.europarl.europa.eu/authority/contact-point-type/GWS> rdf:type owl:NamedIndividual ,
+                                                                           skos:Concept ;
+                                                                  skos:inScheme ep-aut:contact-point-type ;
+                                                                  skos:notation "GWS" ;
+                                                                  rdfs:label "GWS" ;
+                                                                  skos:prefLabel "EPEmail"@en .
+
+
+###  http://data.europarl.europa.eu/authority/contact-point-type/OFFICE
+<http://data.europarl.europa.eu/authority/contact-point-type/OFFICE> rdf:type owl:NamedIndividual ,
+                                                                              skos:Concept ;
+                                                                     skos:inScheme ep-aut:contact-point-type ;
+                                                                     skos:notation "OFFICE" ;
+                                                                     rdfs:label "OFFICE" ;
+                                                                     skos:prefLabel "Office contact"@en .
+
+
+###  http://data.europarl.europa.eu/authority/contact-point-type/SND
+<http://data.europarl.europa.eu/authority/contact-point-type/SND> rdf:type owl:NamedIndividual ,
+                                                                           skos:Concept ;
+                                                                  skos:inScheme ep-aut:contact-point-type ;
+                                                                  skos:notation "SND" ;
+                                                                  rdfs:label "SND" ;
+                                                                  skos:prefLabel "Soundcloud page"@en .
+
+
+###  http://data.europarl.europa.eu/authority/contact-point-type/TWT
+<http://data.europarl.europa.eu/authority/contact-point-type/TWT> rdf:type owl:NamedIndividual ,
+                                                                           skos:Concept ;
+                                                                  skos:inScheme ep-aut:contact-point-type ;
+                                                                  skos:notation "TWT" ;
+                                                                  rdfs:label "TWT" ;
+                                                                  skos:prefLabel "Twitter Profile"@en .
+
+
+###  http://data.europarl.europa.eu/authority/contact-point-type/URL
+<http://data.europarl.europa.eu/authority/contact-point-type/URL> rdf:type owl:NamedIndividual ,
+                                                                           skos:Concept ;
+                                                                  skos:inScheme ep-aut:contact-point-type ;
+                                                                  skos:notation "URL" ;
+                                                                  rdfs:label "URL" ;
+                                                                  skos:prefLabel "WebSite"@en .
+
+
+###  http://data.europarl.europa.eu/authority/contact-point-type/YTB
+<http://data.europarl.europa.eu/authority/contact-point-type/YTB> rdf:type owl:NamedIndividual ,
+                                                                           skos:Concept ;
+                                                                  skos:inScheme ep-aut:contact-point-type ;
+                                                                  skos:notation "YTB" ;
+                                                                  rdfs:label "YTB" ;
+                                                                  skos:prefLabel "Chaîne YouTube"@en .
+
+
+###  http://data.europarl.europa.eu/authority/function/MEF
+<http://data.europarl.europa.eu/authority/function/MEF> rdf:type owl:NamedIndividual ,
+                                                                 skos:Concept ;
+                                                        skos:inScheme ep-aut:function ;
+                                                        skos:notation "MEF" ;
+                                                        rdfs:label "Member" ;
+                                                        skos:prefLabel "Member"@en .
+
+
+###  http://data.europarl.europa.eu/authority/function/PAF
+<http://data.europarl.europa.eu/authority/function/PAF> rdf:type owl:NamedIndividual ,
+                                                                 skos:Concept ;
+                                                        skos:inScheme ep-aut:function ;
+                                                        skos:notation "PAF" ;
+                                                        rdfs:label "Chair" ;
+                                                        skos:prefLabel "Chair"@en .
+                                                        
+### http://data.europarl.europa.eu/authority/function/ASSISTANT
+<http://data.europarl.europa.eu/authority/function/ASSISTANT> rdf:type owl:NamedIndividual ,
+                                                                 skos:Concept ;
+                                                        skos:inScheme ep-aut:function ;
+                                                        skos:notation "ASSISTANT" ;
+                                                        rdfs:label "Assistant" ;
+                                                        skos:prefLabel "Assistant"@en .
+
+
+###  http://data.europarl.europa.eu/authority/gender/F
+<http://data.europarl.europa.eu/authority/gender/F> rdf:type owl:NamedIndividual ,
+                                                             skos:Concept ;
+                                                    skos:inScheme ep-aut:gender ;
+                                                    skos:notation "F" ;
+                                                    skos:notation "2"^^<http://data.europarl.europa.eu/authority/notation-type/iso> ;
+                                                    rdfs:label "Female" ;
+                                                    skos:prefLabel "female"@en ,
+                                                                   "féminin"@fr .
+
+
+###  http://data.europarl.europa.eu/authority/gender/M
+<http://data.europarl.europa.eu/authority/gender/M> rdf:type owl:NamedIndividual ,
+                                                             skos:Concept ;
+                                                    skos:inScheme ep-aut:gender ;
+                                                    skos:notation "M" ;
+                                                     skos:notation "1"^^<http://data.europarl.europa.eu/authority/notation-type/iso>  ;
+                                                    rdfs:label "Male" ;
+                                                    skos:prefLabel "male"@en ,
+                                                                   "masculin"@fr .
+
+
+###  http://data.europarl.europa.eu/authority/gender/U
+<http://data.europarl.europa.eu/authority/gender/U> rdf:type owl:NamedIndividual ,
+                                                             skos:Concept ;
+                                                    skos:inScheme ep-aut:gender ;
+                                                    skos:notation "U" ;
+                                                    skos:notation "9"^^<http://data.europarl.europa.eu/authority/notation-type/iso> ;
+                                                    rdfs:label "Unspecified" ;
+                                                    skos:prefLabel "pas spécifié"@fr ,
+                                                                   "unspecified"@en .
+
+
+###  http://data.europarl.europa.eu/authority/gender/X
+<http://data.europarl.europa.eu/authority/gender/X> rdf:type owl:NamedIndividual ,
+                                                             skos:Concept ;
+                                                    skos:inScheme ep-aut:gender ;
+                                                    skos:notation "X" ;
+                                                     skos:notation "0"^^<http://data.europarl.europa.eu/authority/notation-type/iso> ;
+                                                    rdfs:label "Unknown" ;
+                                                    skos:prefLabel "Inconnu"@fr ,
+                                                                   "Unknown"@en .
+
+
+###  http://data.europarl.europa.eu/authority/membership-type/PERSON
+<http://data.europarl.europa.eu/authority/membership-type/PERSON> rdf:type owl:NamedIndividual ,
+                                                                              skos:Concept ;
+                                                                     skos:inScheme ep-aut:membership-type ;
+                                                                     skos:notation "PERSON" ;
+                                                                     skos:prefLabel "Person"@en .
+
+
+###  http://data.europarl.europa.eu/authority/membership-type/COMMITTEE
+<http://data.europarl.europa.eu/authority/membership-type/COMMITTEE> rdf:type owl:NamedIndividual ,
+                                                                              skos:Concept ;
+                                                                     skos:inScheme ep-aut:membership-type ;
+                                                                     skos:notation "COMMITTEE" ;
+                                                                     skos:prefLabel "Committee"@en .
+
+
+###  http://data.europarl.europa.eu/authority/membership-type/DELEGATION
+<http://data.europarl.europa.eu/authority/membership-type/DELEGATION> rdf:type owl:NamedIndividual ,
+                                                                               skos:Concept ;
+                                                                      skos:inScheme ep-aut:membership-type ;
+                                                                      skos:notation "DELEGATION" ;
+                                                                      skos:prefLabel "Delegation"@en .
+
+
+###  http://data.europarl.europa.eu/authority/membership-type/MANDATE
+<http://data.europarl.europa.eu/authority/membership-type/MANDATE> rdf:type owl:NamedIndividual ,
+                                                                            skos:Concept ;
+                                                                   skos:inScheme ep-aut:membership-type ;
+                                                                   skos:notation "MANDATE" ;
+                                                                   rdfs:definition """The European Parliament is composed of Members who have representative mandates. 
+This means the MEPs are authorized by the electorate to act in a certain way as their representatives on public issues. 
+- MEPs exercise their mandate independently; they may not be bound by any instructions (from national authorities, Community institutions, private interest groups, non-governmental organisations, etc.) or receive a binding mandate.
+- In principle, representatives remain in office until the expiry of the mandate given to them. The mandate lapsed on death or resignation or when Members were not re-elected."""@en ;
+                                                                   skos:prefLabel "Parliamentary mandate"@en .
+
+
+###  http://data.europarl.europa.eu/authority/membership-type/NATIONAL-PARTY
+<http://data.europarl.europa.eu/authority/membership-type/NATIONAL-PARTY> rdf:type owl:NamedIndividual ,
+                                                                                   skos:Concept ;
+                                                                          skos:inScheme ep-aut:membership-type ;
+                                                                          skos:notation "NATIONAL-PARTY" ;
+                                                                          skos:prefLabel "National party"@en .
+
+
+###  http://data.europarl.europa.eu/authority/membership-type/PARLIAMENT
+<http://data.europarl.europa.eu/authority/membership-type/PARLIAMENT> rdf:type owl:NamedIndividual ,
+                                                                               skos:Concept ;
+                                                                      skos:inScheme ep-aut:membership-type ;
+                                                                      skos:notation "PARLIAMENT" ;
+                                                                      skos:prefLabel "Member of Parliament"@en .
+
+
+###  http://data.europarl.europa.eu/authority/membership-type/POLITICAL-GROUP
+<http://data.europarl.europa.eu/authority/membership-type/POLITICAL-GROUP> rdf:type owl:NamedIndividual ,
+                                                                                    skos:Concept ;
+                                                                           skos:inScheme ep-aut:membership-type ;
+                                                                           skos:notation "POLITICAL-GROUP" ;
+                                                                           skos:prefLabel "Political group"@en .
+
+
+###  http://data.europarl.europa.eu/authority/national-party-body/MR
+<http://data.europarl.europa.eu/authority/national-party-body/MR> rdf:type owl:NamedIndividual ,
+                                                                           skos:Concept ;
+                                                                  skos:inScheme ep-aut:national-party-body ;
+                                                                  skos:broaderMatch <http://publications.europa.eu/resource/authority/country/BEL>;
+                                                                  ep-org:hasOrganizationType <http://data.europarl.europa.eu/authority/org-type/PN> .
+
+
+###  http://data.europarl.europa.eu/authority/national-party-body/PS
+<http://data.europarl.europa.eu/authority/national-party-body/PS> rdf:type owl:NamedIndividual ,
+                                                                           skos:Concept ;
+                                                                  skos:inScheme ep-aut:national-party-body ;
+                                                                  skos:broaderMatch <http://publications.europa.eu/resource/authority/country/BEL>;
+                                                                  ep-org:hasOrganizationType <http://data.europarl.europa.eu/authority/org-type/PN> .
+
+
+###  http://data.europarl.europa.eu/authority/org-type/AP
+<http://data.europarl.europa.eu/authority/org-type/AP> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:org-type ;
+                                                       skos:notation "AP" ;
+                                                       ep-aut:orderNumber "200" ;
+                                                       skos:prefLabel "Delegations to the parliamentary assemblies"@en .
+
+
+###  http://data.europarl.europa.eu/authority/org-type/BA
+<http://data.europarl.europa.eu/authority/org-type/BA> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:org-type ;
+                                                       skos:notation "BA" ;
+                                                       skos:prefLabel "Bureau des assemblées parlementaires"@fr ,
+                                                                      "[Bureau des assemblées parlementaires (FR)]"@en .
+
+
+###  http://data.europarl.europa.eu/authority/org-type/BU
+<http://data.europarl.europa.eu/authority/org-type/BU> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:org-type ;
+                                                       skos:notation "BU" ;
+                                                       ep-aut:orderNumber "20" ;
+                                                       skos:prefLabel "Bureau"@en .
+
+
+###  http://data.europarl.europa.eu/authority/org-type/CA
+<http://data.europarl.europa.eu/authority/org-type/CA> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:org-type ;
+                                                       skos:notation "CA" ;
+                                                       skos:prefLabel "[Commission des assemblées parlementaires (FR)]"@en .
+
+
+###  http://data.europarl.europa.eu/authority/org-type/CE
+<http://data.europarl.europa.eu/authority/org-type/CE> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:org-type ;
+                                                       skos:notation "CE" ;
+                                                       ep-aut:orderNumber "70" ;
+                                                       skos:prefLabel "Committee of inquiry"@en .
+
+
+###  http://data.europarl.europa.eu/authority/org-type/CI
+<http://data.europarl.europa.eu/authority/org-type/CI> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:org-type ;
+                                                       skos:notation "CI" ;
+                                                       ep-aut:orderNumber "1050" ,
+                                                                          "20" ;
+                                                       skos:prefLabel "Committees"@en .
+
+
+###  http://data.europarl.europa.eu/authority/org-type/CJ
+<http://data.europarl.europa.eu/authority/org-type/CJ> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:org-type ;
+                                                       skos:notation "CJ" ;
+                                                       ep-aut:orderNumber "99999" ;
+                                                       skos:prefLabel "Joint committees"@en .
+
+
+###  http://data.europarl.europa.eu/authority/org-type/CM
+<http://data.europarl.europa.eu/authority/org-type/CM> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:org-type ;
+                                                       skos:notation "CM" ;
+                                                       ep-aut:orderNumber "110" ;
+                                                       skos:prefLabel "Joint parliamentary committees"@en .
+
+
+###  http://data.europarl.europa.eu/authority/org-type/CO
+<http://data.europarl.europa.eu/authority/org-type/CO> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:org-type ;
+                                                       skos:notation "CO" ;
+                                                       ep-aut:orderNumber "50" ;
+                                                       skos:prefLabel "Parliamentary committees"@en .
+
+
+###  http://data.europarl.europa.eu/authority/org-type/CT
+<http://data.europarl.europa.eu/authority/org-type/CT> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:org-type ;
+                                                       skos:notation "CT" ;
+                                                       ep-aut:orderNumber "70" ;
+                                                       skos:prefLabel "Special committees"@en .
+
+
+###  http://data.europarl.europa.eu/authority/org-type/DA
+<http://data.europarl.europa.eu/authority/org-type/DA> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:org-type ;
+                                                       skos:notation "DA" ;
+                                                       ep-aut:orderNumber "200" ;
+                                                       skos:prefLabel "Other delegations"@en .
+
+
+###  http://data.europarl.europa.eu/authority/org-type/DC
+<http://data.europarl.europa.eu/authority/org-type/DC> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:org-type ;
+                                                       skos:notation "DC" ;
+                                                       ep-aut:orderNumber "200" ;
+                                                       skos:prefLabel "Delegations to the parliamentary cooperation committees"@en .
+
+
+###  http://data.europarl.europa.eu/authority/org-type/DE
+<http://data.europarl.europa.eu/authority/org-type/DE> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:org-type ;
+                                                       skos:notation "DE" ;
+                                                       ep-aut:orderNumber "200" ;
+                                                       skos:prefLabel "Interparliamentary Delegations"@en .
+
+
+###  http://data.europarl.europa.eu/authority/org-type/DH
+<http://data.europarl.europa.eu/authority/org-type/DH> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:org-type ;
+                                                       skos:notation "DH" ;
+                                                       ep-aut:orderNumber "200" ;
+                                                       skos:prefLabel "Ad Hoc Delegations"@en .
+
+
+###  http://data.europarl.europa.eu/authority/org-type/DM
+<http://data.europarl.europa.eu/authority/org-type/DM> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:org-type ;
+                                                       skos:notation "DM" ;
+                                                       ep-aut:orderNumber "200" ;
+                                                       skos:prefLabel "Delegations to the EU joint parliamentary committees"@en .
+
+
+###  http://data.europarl.europa.eu/authority/org-type/GP
+<http://data.europarl.europa.eu/authority/org-type/GP> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:org-type ;
+                                                       skos:notation "GP" ;
+                                                       ep-aut:orderNumber "40" ;
+                                                       skos:prefLabel "Groupes politiques"@fr ,
+                                                                      "Political groups"@en .
+
+
+###  http://data.europarl.europa.eu/authority/org-type/IG
+<http://data.europarl.europa.eu/authority/org-type/IG> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:org-type ;
+                                                       skos:notation "IG" ;
+                                                       ep-aut:orderNumber "40" ;
+                                                       skos:prefLabel "Intergroups of the EP"@en .
+
+
+###  http://data.europarl.europa.eu/authority/org-type/OD
+<http://data.europarl.europa.eu/authority/org-type/OD> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:org-type ;
+                                                       skos:notation "OD" ;
+                                                       ep-aut:orderNumber "30" ;
+                                                       skos:prefLabel "Governing bodies"@en .
+
+
+###  http://data.europarl.europa.eu/authority/org-type/PA
+<http://data.europarl.europa.eu/authority/org-type/PA> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:org-type ;
+                                                       skos:notation "PA" ;
+                                                       ep-aut:orderNumber "2000" ;
+                                                       skos:prefLabel "Parliamentary assemblies"@en .
+
+
+###  http://data.europarl.europa.eu/authority/org-type/PE
+<http://data.europarl.europa.eu/authority/org-type/PE> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:org-type ;
+                                                       skos:notation "PE" ;
+                                                       ep-aut:orderNumber "10" ;
+                                                       skos:prefLabel "European Parliament"@en .
+
+
+###  http://data.europarl.europa.eu/authority/org-type/PL
+<http://data.europarl.europa.eu/authority/org-type/PL> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:org-type ;
+                                                       skos:notation "PL" ;
+                                                       ep-aut:orderNumber "10" ;
+                                                       skos:prefLabel "Plenary"@en .
+
+
+###  http://data.europarl.europa.eu/authority/org-type/PN
+<http://data.europarl.europa.eu/authority/org-type/PN> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:org-type ;
+                                                       skos:notation "PN" ;
+                                                       ep-aut:orderNumber "130" ;
+                                                       rdfs:label "National parties" ;
+                                                       skos:prefLabel "National parties"@en .
+
+
+###  http://data.europarl.europa.eu/authority/org-type/SC
+<http://data.europarl.europa.eu/authority/org-type/SC> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:org-type ;
+                                                       skos:notation "SC" ;
+                                                       ep-aut:orderNumber "60" ;
+                                                       rdfs:label "Subcommittees" ;
+                                                       skos:prefLabel "Subcommittees"@en .
+
+
+###  http://data.europarl.europa.eu/authority/org-type/SO
+<http://data.europarl.europa.eu/authority/org-type/SO> rdf:type owl:NamedIndividual ,
+                                                                skos:Concept ;
+                                                       skos:inScheme ep-aut:org-type ;
+                                                       skos:notation "SO" ;
+                                                       ep-aut:orderNumber "1000" ;
+                                                       rdfs:label "Sub-bodies" ;
+                                                       skos:prefLabel "Sub-bodies"@en .
+
+
+###  http://data.europarl.europa.eu/authority/parliamentary-term/8
+<http://data.europarl.europa.eu/authority/parliamentary-term/8> rdf:type owl:NamedIndividual ,
+                                                                         skos:Concept ;
+                                                                skos:inScheme ep-aut:parliamentary-term ;
+                                                                skos:notation "8" ;
+                                                                schema:endDate "2019-07-01" ;
+                                                                schema:startDate "2014-07-01 10:00:00" ;
+                                                                rdfs:label "8" ;
+                                                                skos:prefLabel "8"@en .
+
+
+###  http://data.europarl.europa.eu/authority/parliamentary-term/9
+<http://data.europarl.europa.eu/authority/parliamentary-term/9> rdf:type owl:NamedIndividual ,
+                                                                         skos:Concept ;
+                                                                skos:inScheme ep-aut:parliamentary-term ;
+                                                                skos:notation "9" ;
+                                                                schema:endDate "2024-07-02" ;
+                                                                schema:startDate "2019-07-02 10:00:00" ;
+                                                                rdfs:label "9" ;
+                                                                skos:prefLabel "9"@en .
+
+
+###  http://data.europarl.europa.eu/authority/person-type/AST-APA
+<http://data.europarl.europa.eu/authority/person-type/AST-APA> rdf:type owl:NamedIndividual ,
+                                                                        skos:Concept ;
+                                                               skos:inScheme ep-aut:person-type ;
+                                                               skos:notation "AST-APA" ;
+                                                               rdfs:definition """Accredited parliamentary assistants (APAs) are chosen by a Member or a group of Members and employed under a direct contract with the European Parliament. 
+                                                           They are based on Parliament’s premises, in one of its three places of work – Brussels, Strasbourg or Luxembourg – and assist Members directly in their work, under their direction and authority and on a basis of mutual trust."""@en ;
+                                                               skos:prefLabel "Accredited assistant"@en ,
+                                                                              "Assistant accrédité"@fr .
+
+
+###  http://data.europarl.europa.eu/authority/person-type/AST-APA-GRP
+<http://data.europarl.europa.eu/authority/person-type/AST-APA-GRP> rdf:type owl:NamedIndividual ,
+                                                                            skos:Concept ;
+                                                                   skos:inScheme ep-aut:person-type ;
+                                                                   skos:notation "AST-APA-GRP" ;
+                                                                   rdfs:definition "Accredited assistant for more than one MEP"@en ;
+                                                                   skos:prefLabel "Accredited grouped assistant"@en ,
+                                                                                  "Assistant accrédité groupé"@fr .
+
+
+###  http://data.europarl.europa.eu/authority/person-type/AST-LOC
+<http://data.europarl.europa.eu/authority/person-type/AST-LOC> rdf:type owl:NamedIndividual ,
+                                                                        skos:Concept ;
+                                                               skos:inScheme ep-aut:person-type ;
+                                                               skos:notation "AST-LOC" ;
+                                                               rdfs:definition "Local assistants are people who have concluded employment contracts with Members to assist them in the Member States in which they were elected. These contracts are governed by the national law of the Member State."@en ;
+                                                               skos:prefLabel "Assistant local"@fr ,
+                                                                              "Local assistant"@en .
+
+
+###  http://data.europarl.europa.eu/authority/political-group-body/SD
+<http://data.europarl.europa.eu/authority/political-group-body/SD> rdf:type owl:NamedIndividual ,
+                                                                            skos:Concept ;
+                                                                   skos:inScheme ep-aut:committee-body ;
+                                                                   ep-org:hasOrganizationType <http://data.europarl.europa.eu/authority/org-type/GP> .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
