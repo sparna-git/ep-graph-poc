@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ep-org="http://data.europarl.europa.eu/ontology/ep-org#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:schema="http://schema.org/"
+>
+
+<ep-org:MEP rdf:about="http://data.europarl.europa.eu/resource/person/124936">
+	<ep-org:curriculumVitae xml:lang="en">1/9/1987 - 30/6/1988 Catholic University of Mons\r\n1/1/1990 - 31/12/2000 International expert on employment and adult education\r\n17/7/2009 - 13/6/2010 Member of the Chamber of Representatives\r\n13/6/2010 - 2014 Senator\r\n1/1/2000 - 31/12/2009 Minister\r\n</ep-org:curriculumVitae>
+	<ep-org:curriculumVitae xml:lang="fr">1/9/1987 - 30/6/1988 Facultés universitaires catholiques de Mons\r\n1/1/1990 - 31/12/2000 experte internationale en matière d'emploi et de formation des adultes\r\n17/7/2009 - 13/6/2010 députée à la Chambre des représentants\r\n13/6/2010 - 2014 sénatrice\r\n1/1/2000 - 31/12/2009 ministre\r\n</ep-org:curriculumVitae>
+	<ep-org:dateEndActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2099-01-01T00:00:00</ep-org:dateEndActivity>
+	<ep-org:personId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">124936</ep-org:personId>
+	<ep-org:upperFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARENA</ep-org:upperFamilyName>
+	<ep-org:upperFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MARIA</ep-org:upperFirstName>
+	<schema:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1966-12-17T00:00:00</schema:birthDate>
+	<foaf:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arena</foaf:familyName>
+	<foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maria</foaf:firstName>
+	<foaf:img rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.europarl.europa.eu/mepphoto/124936.jpg</foaf:img>
+	<schema:birthPlace rdf:resource="http://publications.europa.eu/resource/authority/place/BEL_MQS"/>
+	<schema:gender rdf:resource="http://data.europarl.europa.eu/authority/gender/F"/>
+	<schema:honorificPrefix rdf:resource="http://data.europarl.europa.eu/authority/civility/MME"/>
+	<schema:nationality rdf:resource="http://publications.europa.eu/resource/authority/country/BEL"/>
+
+	<schema:contactPoint>
+		<schema:ContactPoint rdf:about="http://data.europarl.europa.eu/resource/contact-point/electronic/124936/FBP1234">
+			<schema:contactType rdf:resource="http://data.europarl.europa.eu/authority/contact-point-type-type/FBP"/>
+			<schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.facebook.com/marie.arena</schema:url>
+		</schema:ContactPoint>
+	</schema:contactPoint>
+	<!-- Meme chose pour les autres ContactPoint -->
+
+	<!-- Mandat -->
+	<org:hasMembership>
+		<ep-org:Membership rdf:about="http://data.europarl.europa.eu/resource/person/124936/membership/11111118">
+			<ep-org:constituency rdf:resource="http://data.europarl.europa.eu/authority/constituency/BEL-111"/>
+			<ep-org:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/MANDATE"/>
+			<ep-org:hasOrganization rdf:resource="http://publications.europa.eu/resource/authority/country/BEL"/>
+			<ep-org:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+			<dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11111118</dc:identifier>
+			<schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-01T00:00:00</schema:endDate>
+			<schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-01T10:00:00</schema:startDate>
+		</ep-org:Membership>
+	</org:hasMembership>
+
+
+	<!-- Groupe Politique -->
+	<org:hasMembership>
+		<ep-org:Membership rdf:about="http://data.europarl.europa.eu/resource/person/124936/membership/888800001">
+			<ep-org:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/POLITICAL-GROUP"/>
+			<ep-org:hasOrganization rdf:resource="http://data.europarl.europa.eu/resource/org/SD-123"/>
+			<ep-org:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+			<schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-01T00:00:00</schema:endDate>
+			<schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-01T00:00:00</schema:startDate>
+			<org:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/resource/person/124936/membership/11111118"/>
+			<org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+		</ep-org:Membership>
+	</org:hasMembership>
+
+	<!-- Comité -->
+	<org:hasMembership>
+		<ep-org:Membership rdf:about="http://data.europarl.europa.eu/resource/person/124936/membership/888800002">
+			<ep-org:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+			<ep-org:hasOrganization rdf:resource="http://data.europarl.europa.eu/resource/org/DROI-123"/>
+			<ep-org:hasparliamentaryterm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+			<schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-18T00:00:00</schema:endDate>
+			<schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-01T00:00:00</schema:startDate>
+			<org:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/resource/person/124936/membership/11111118"/>
+			<org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+		</ep-org:Membership>
+	</org:hasMembership>
+	
+
+	<!-- Parti national -->
+	<org:hasMembership>
+		<ep-org:Membership rdf:about="http://data.europarl.europa.eu/resource/person/124936/membership/888800004">
+			<ep-org:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/NATIONAL-PARTY"/>
+			<ep-org:hasOrganization rdf:resource="http://data.europarl.europa.eu/resource/org/MR-111"/>
+			<ep-org:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+			<schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-01T00:00:00</schema:endDate>
+			<schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-01T00:00:00</schema:startDate>
+			<org:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/resource/person/124936/membership/11111118"/>
+			<org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+		</ep-org:Membership>
+	</org:hasMembership>
+</ep-org:MEP>
+
+
+<!-- Un assistant et le lien vers le député-->
+<ep-org:Person rdf:about="http://data.europarl.europa.eu/resource/person/311270">
+	<ep-org:hasPersonType rdf:resource="http://data.europarl.europa.eu/authority/person-type/AST-APA"/>
+	<ep-org:personId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">311270</ep-org:personId>
+	<ep-org:upperFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DESCHAMPS</ep-org:upperFamilyName>
+	<ep-org:upperFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VERONIQUE</ep-org:upperFirstName>
+	<foaf:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deschamps</foaf:familyName>
+	<foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Veronique</foaf:firstName>
+	<org:hasMembership>
+		<ep-org:Membership rdf:about="http://data.europarl.europa.eu/resource/person/311270/membership/90001">
+			<ep-org:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/PERSON"/>
+			<ep-org:hasOrganization rdf:resource="http://data.europarl.europa.eu/resource/person/124936"/>
+			<org:role rdf:resource="http://data.europarl.europa.eu/authority/function/ASSISTANT"/>
+		</ep-org:Membership>
+	</org:hasMembership>
+
+</ep-org:Person>
+
+
+
+
+</rdf:RDF>

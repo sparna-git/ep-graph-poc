@@ -1,0 +1,1872 @@
+<?xml version="1.0" ?>
+<all>
+	<item type="dict">
+		<identifier type="int">124936</identifier>
+		<familyName type="str">Arena</familyName>
+		<firstName type="str">Maria</firstName>
+		<upperFamilyName type="str">ARENA</upperFamilyName>
+		<upperFirstName type="str">MARIA</upperFirstName>
+		<genderIsoCode type="str">2</genderIsoCode>
+		<titleCode type="str">MME</titleCode>
+		<birthDate type="str">1966-12-16T23:00:00.000+00:00</birthDate>
+		<birthPlace type="str">Mons</birthPlace>
+		<birthCountryId type="int">16</birthCountryId>
+		<birthCountryIsoCode type="str">BE</birthCountryIsoCode>
+		<natCountryId type="int">16</natCountryId>
+		<natCountryIsoCode type="str">BE</natCountryIsoCode>
+		<sortName type="str">ARENA</sortName>
+		<status type="bool">True</status>
+		<mandateType type="str">European</mandateType>
+		<countryId type="int">16</countryId>
+		<countryIsoCode type="str">BE</countryIsoCode>
+		<countryOrder type="int">3</countryOrder>
+		<circonscription type="str">Collège électoral français</circonscription>
+		<epFunctionCode type="str">MEF</epFunctionCode>
+		<epFunctionOrder type="int">400</epFunctionOrder>
+		<gpId type="int">5154</gpId>
+		<gpCode type="str">S&amp;D</gpCode>
+		<gpFunctionCode type="str">MEF</gpFunctionCode>
+		<gpFunctionOrder type="int">400</gpFunctionOrder>
+		<updateDate type="str">2020-07-09T15:09:32.000+00:00</updateDate>
+		<entityTypeName type="str">MEP</entityTypeName>
+		<cv type="list">
+			<item type="dict">
+				<langIsoCode type="str">BG</langIsoCode>
+				<decription type="str">1/9/1987 - 30/6/1988 Католически университет на Монс
+1/1/1990 - 31/12/2000 Международен експерт по заетостта и обучението за възрастни
+17/7/2009 - 13/6/2010 Член на Камарата на представителите
+13/6/2010 - 2014 Сенатор
+1/1/2000 - 31/12/2009 Министър
+</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">CS</langIsoCode>
+				<decription type="str">1/9/1987 - 30/6/1988 Katolická univerzita v Monsu
+1/1/1990 - 31/12/2000 mezinárodní expert na  zaměstnanost a vzdělávání dospělých
+17/7/2009 - 13/6/2010 poslankyně Sněmovny reprezentantů
+13/6/2010 - 2014 senátorka
+1/1/2000 - 31/12/2009 ministryně
+</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">DA</langIsoCode>
+				<decription type="str">1/9/1987 - 30/6/1988 Facultés universitaires catholiques de Mons
+1/1/1990 - 31/12/2000 International ekspert inden for beskæftigelse og voksenuddannelse
+17/7/2009 - 13/6/2010 Medlem af Deputeretkammeret
+13/6/2010 - 2014 Senator
+1/1/2000 - 31/12/2009 Minister
+</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">DE</langIsoCode>
+				<decription type="str">1/9/1987 - 30/6/1988 Katholische Hochschulfakultäten Mons
+1/1/1990 - 31/12/2000 Internationale Sachverständige für Beschäftigung und Erwachsenenbildung
+17/7/2009 - 13/6/2010 Mitglied der Abgeordnetenkammer
+13/6/2010 - 2014 Mitglied des Senats
+1/1/2000 - 31/12/2009 Ministerin
+</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">EL</langIsoCode>
+				<decription type="str">1/9/1987 - 30/6/1988 Καθολικές πανεπιστημιακές σχολές της Mons
+1/1/1990 - 31/12/2000 Διεθνής εμπειρογνώμων σε θέματα απασχόλησης και κατάρτισης των ενηλίκων
+17/7/2009 - 13/6/2010 Βουλευτής της Βουλής των Αντιπροσώπων
+13/6/2010 - 2014 Γερουσιαστής
+1/1/2000 - 31/12/2009 Υπουργός
+</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">EN</langIsoCode>
+				<decription type="str">1/9/1987 - 30/6/1988 Catholic University of Mons
+1/1/1990 - 31/12/2000 International expert on employment and adult education
+17/7/2009 - 13/6/2010 Member of the Chamber of Representatives
+13/6/2010 - 2014 Senator
+1/1/2000 - 31/12/2009 Minister
+</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">ES</langIsoCode>
+				<decription type="str">1/9/1987 - 30/6/1988 Facultades Universitarias Católicas de Mons
+1/1/1990 - 31/12/2000 Experta internacional en las áreas de empleo y formación de adultos
+17/7/2009 - 13/6/2010 Diputada a la Cámara de Representantes
+13/6/2010 - 2014 Senadora
+1/1/2000 - 31/12/2009 Ministra
+</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">ET</langIsoCode>
+				<decription type="str">1/9/1987 - 30/6/1988 Monsi Katoliiklik Ülikool
+1/1/1990 - 31/12/2000 rahvusvaheline ekspert tööhõive ja täiskasvanuhariduse valdkonnas
+17/7/2009 - 13/6/2010 Belgia Esindajatekoja liige
+13/6/2010 - 2014 Belgia Senati liige
+1/1/2000 - 31/12/2009 minister
+</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">FI</langIsoCode>
+				<decription type="str">1/9/1987 - 30/6/1988 Monsin katolinen yliopisto (FUCaM)
+1/1/1990 - 31/12/2000 kansainvälinen asiantuntija työllisyyden ja aikuiskoulutuksen alalla
+17/7/2009 - 13/6/2010 edustajainhuoneen jäsen
+13/6/2010 - 2014 senaatin jäsen
+1/1/2000 - 31/12/2009 ministeri
+</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">FR</langIsoCode>
+				<decription type="str">1/9/1987 - 30/6/1988 Facultés universitaires catholiques de Mons
+1/1/1990 - 31/12/2000 experte internationale en matière d'emploi et de formation des adultes
+17/7/2009 - 13/6/2010 députée à la Chambre des représentants
+13/6/2010 - 2014 sénatrice
+1/1/2000 - 31/12/2009 ministre
+</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">HR</langIsoCode>
+				<decription type="str">1/9/1987 - 30/6/1988 Fakulteti katoličkog sveučilišta u Monsu
+1/1/1990 - 31/12/2000 međunarodni stručnjak u području zapošljavanja i osposobljavanja odraslih
+17/7/2009 - 13/6/2010 zastupnica u Zastupničkom domu
+13/6/2010 - 2014 senatorica
+1/1/2000 - 31/12/2009 ministrica
+</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">HU</langIsoCode>
+				<decription type="str">1/9/1987 - 30/6/1988 Facultés universitaires catholiques de Mons (katolikus egyetem)
+1/1/1990 - 31/12/2000 a foglakoztatás és felnőttképzés nemzetközi szakértője
+17/7/2009 - 13/6/2010 képviselőházi tag
+13/6/2010 - 2014 szenátor
+1/1/2000 - 31/12/2009 miniszter
+</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">IT</langIsoCode>
+				<decription type="str">1/9/1987 - 30/6/1988 facoltà universitarie cattoliche di Mons
+1/1/1990 - 31/12/2000 esperta internazionale in materia di impiego e formazione per adulti
+17/7/2009 - 13/6/2010 deputato alla Camera dei rappresentanti
+13/6/2010 - 2014 senatore
+1/1/2000 - 31/12/2009 ministro
+</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">LT</langIsoCode>
+				<decription type="str">1/9/1987 - 30/6/1988 Monso katalikiškasis universitetas
+1/1/1990 - 31/12/2000 tarptautinė suaugusiųjų užimtumo ir mokymo ekspertė
+17/7/2009 - 13/6/2010 Atstovų Rūmų narė
+13/6/2010 - 2014 senatorė
+1/1/2000 - 31/12/2009 ministrė
+</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">LV</langIsoCode>
+				<decription type="str">1/9/1987 - 30/6/1988 Monsas Katoļu universitāte
+1/1/1990 - 31/12/2000 starptautiska eksperte nodarbinātības un pieaugušo apmācības jomā
+17/7/2009 - 13/6/2010 Pārstāvju palātas deputāte
+13/6/2010 - 2014 senatore
+1/1/2000 - 31/12/2009 ministre
+</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">MT</langIsoCode>
+				<decription type="str">1/9/1987 - 30/6/1988 Università Kattolika ta' Mons (Facultés universitaires catholiques)
+1/1/1990 - 31/12/2000 esperta internazzjonali fil-qasam tal-impjiegi u tat-taħriġ tal-adulti
+17/7/2009 - 13/6/2010 deputata fil-Kamra tar-Rappreżentanti
+13/6/2010 - 2014 senatriċi
+1/1/2000 - 31/12/2009 Ministru
+</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">NL</langIsoCode>
+				<decription type="str">1/9/1987 - 30/6/1988 Facultés universitaires catholiques de Mons (Katholieke universitaire faculteiten van Bergen)
+1/1/1990 - 31/12/2000 internationaal deskundige werkgelegenheid en volwassenenonderwijs
+17/7/2009 - 13/6/2010 lid Kamer van volksvertegenwoordigers
+13/6/2010 - 2014 lid Senaat
+1/1/2000 - 31/12/2009 minister
+</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">PL</langIsoCode>
+				<decription type="str">1/9/1987 - 30/6/1988 Uniwersytet Katolicki w Mons
+1/1/1990 - 31/12/2000 Ekspert międzynarodowy w dziedzinie zatrudnienia i kształcenia dorosłych
+17/7/2009 - 13/6/2010 Deputowana do Izby Reprezentantów
+13/6/2010 - 2014 Senator
+1/1/2000 - 31/12/2009 Minister
+</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">PT</langIsoCode>
+				<decription type="str">1/9/1987 - 30/6/1988 Faculdades Universitárias Católicas de Mons
+1/1/1990 - 31/12/2000 perita internacional em matéria de emprego e de ensino para adultos
+17/7/2009 - 13/6/2010 Membro da Câmara dos Representantes
+13/6/2010 - 2014 Senadora
+1/1/2000 - 31/12/2009 Ministra
+</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">RO</langIsoCode>
+				<decription type="str">1/9/1987 - 30/6/1988 Universitatea Catolică din Mons
+1/1/1990 - 31/12/2000 expertă internațională în domeniul ocupării forței de muncă și al formării adulților
+17/7/2009 - 13/6/2010 membră a Camerei reprezentanților
+13/6/2010 - 2014 senatoare
+1/1/2000 - 31/12/2009 ministru
+</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">SK</langIsoCode>
+				<decription type="str">1/9/1987 - 30/6/1988 Facultés universitaires catholiques de Mons
+1/1/1990 - 31/12/2000 medzinárodná odborníčka v oblasti zamestnanosti a odborného vzdelávania dospelých
+17/7/2009 - 13/6/2010 poslankyňa Poslaneckej snemovne
+13/6/2010 - 2014 senátorka
+1/1/2000 - 31/12/2009 ministerka
+</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">SL</langIsoCode>
+				<decription type="str">1/9/1987 - 30/6/1988 Fakultete katoliške univerze v Monsu
+1/1/1990 - 31/12/2000 mednarodna strokovnjakinja za zaposlovanje in usposabljanje odraslih
+17/7/2009 - 13/6/2010 poslanka v belgijski poslanski zbornici
+13/6/2010 - 2014 senatorka
+1/1/2000 - 31/12/2009 ministrica
+</decription>
+			</item>
+		</cv>
+		<assistants type="list">
+			<item type="dict">
+				<identifier type="int">192903</identifier>
+				<maritalCode type="str">CE</maritalCode>
+				<richFamilyName type="str">PALMER</richFamilyName>
+				<richFirstName type="str">Candice Miranda</richFirstName>
+				<searchFamilyName type="str">PALMER</searchFamilyName>
+				<searchFirstName type="str">CANDICE MIRANDA</searchFirstName>
+				<sexeIsoCode type="str">2</sexeIsoCode>
+				<updateDate type="str">2019-10-31T22:17:01.000+00:00</updateDate>
+				<upperFamilyName type="str">PALMER</upperFamilyName>
+				<upperFirstName type="str">CANDICE MIRANDA</upperFirstName>
+				<accreditations type="list">
+					<item type="dict">
+						<identifier type="int">207098</identifier>
+						<contractId type="int">1008571</contractId>
+						<assistantId type="int">192903</assistantId>
+						<assistantType type="str">A</assistantType>
+						<contractResponsibleId type="int">124936</contractResponsibleId>
+						<accrResponsibleId type="int">124936</accrResponsibleId>
+						<accrResponsibleType type="str">PER</accrResponsibleType>
+						<startDate type="str">2019-07-02T22:00:00.000+00:00</startDate>
+						<endDate type="str">2024-07-01T22:00:00.000+00:00</endDate>
+						<statusCode type="str">V</statusCode>
+						<validationDate type="str">2019-09-16T11:39:27.000+00:00</validationDate>
+						<validationUser type="str">222439</validationUser>
+						<publicCode type="str">Y</publicCode>
+						<publicationDate type="str">2019-09-16T11:39:27.000+00:00</publicationDate>
+						<updateDate type="str">2019-09-16T11:39:27.000+00:00</updateDate>
+						<updateUser type="str">pam/222439</updateUser>
+						<creationDate type="str">2020-01-31T18:36:56.000+00:00</creationDate>
+						<creationUser type="str">pam/bmcintosh</creationUser>
+					</item>
+					<item type="dict">
+						<identifier type="int">205791</identifier>
+						<contractId type="int">1006823</contractId>
+						<assistantId type="int">192903</assistantId>
+						<assistantType type="str">A</assistantType>
+						<contractResponsibleId type="int">124936</contractResponsibleId>
+						<accrResponsibleId type="int">124936</accrResponsibleId>
+						<accrResponsibleType type="str">PER</accrResponsibleType>
+						<startDate type="str">2019-02-05T23:00:00.000+00:00</startDate>
+						<endDate type="str">2019-07-01T22:00:00.000+00:00</endDate>
+						<statusCode type="str">V</statusCode>
+						<validationDate type="str">2019-04-25T12:15:14.000+00:00</validationDate>
+						<validationUser type="str">efina</validationUser>
+						<publicCode type="str">Y</publicCode>
+						<publicationDate type="str">2019-04-25T12:15:14.000+00:00</publicationDate>
+						<updateDate type="str">2019-04-25T12:15:14.000+00:00</updateDate>
+						<updateUser type="str">pam/efina</updateUser>
+						<creationDate type="str">2020-01-31T18:34:25.000+00:00</creationDate>
+						<creationUser type="str">pam/efina</creationUser>
+					</item>
+				</accreditations>
+			</item>
+			<item type="dict">
+				<identifier type="int">193653</identifier>
+				<maritalCode type="str">CE</maritalCode>
+				<richFamilyName type="str">SULO</richFamilyName>
+				<richFirstName type="str">Meldisona</richFirstName>
+				<searchFamilyName type="str">SULO</searchFamilyName>
+				<searchFirstName type="str">MELDISONA</searchFirstName>
+				<sexeIsoCode type="str">2</sexeIsoCode>
+				<updateDate type="str">2019-02-04T08:32:16.000+00:00</updateDate>
+				<upperFamilyName type="str">SULO</upperFamilyName>
+				<upperFirstName type="str">MELDISONA</upperFirstName>
+				<accreditations type="list">
+					<item type="dict">
+						<identifier type="int">193440</identifier>
+						<contractId type="int">260088</contractId>
+						<assistantId type="int">193653</assistantId>
+						<assistantType type="str">L</assistantType>
+						<contractResponsibleId type="int">124936</contractResponsibleId>
+						<accrResponsibleId type="int">124936</accrResponsibleId>
+						<accrResponsibleType type="str">PER</accrResponsibleType>
+						<startDate type="str">2019-01-31T23:00:00.000+00:00</startDate>
+						<endDate type="str">2019-06-30T22:00:00.000+00:00</endDate>
+						<statusCode type="str">V</statusCode>
+						<validationDate type="str">2019-07-30T09:40:37.000+00:00</validationDate>
+						<validationUser type="str">arial</validationUser>
+						<publicCode type="str">Y</publicCode>
+						<publicationDate type="str">2019-07-30T09:40:37.000+00:00</publicationDate>
+						<updateDate type="str">2019-07-30T09:40:37.000+00:00</updateDate>
+						<updateUser type="str">pam/arial</updateUser>
+						<creationDate type="str">2019-07-30T17:30:16.000+00:00</creationDate>
+						<creationUser type="str">pam/mmanta</creationUser>
+					</item>
+					<item type="dict">
+						<identifier type="int">194350</identifier>
+						<contractId type="int">1011389</contractId>
+						<assistantId type="int">193653</assistantId>
+						<assistantType type="str">L</assistantType>
+						<contractResponsibleId type="int">124936</contractResponsibleId>
+						<accrResponsibleId type="int">124936</accrResponsibleId>
+						<accrResponsibleType type="str">PER</accrResponsibleType>
+						<startDate type="str">2019-07-01T22:00:00.000+00:00</startDate>
+						<endDate type="str">2024-06-29T22:00:00.000+00:00</endDate>
+						<statusCode type="str">V</statusCode>
+						<validationDate type="str">2019-08-02T10:30:58.000+00:00</validationDate>
+						<validationUser type="str">fpergola</validationUser>
+						<publicCode type="str">Y</publicCode>
+						<publicationDate type="str">2019-08-02T10:30:58.000+00:00</publicationDate>
+						<updateDate type="str">2019-08-02T10:30:58.000+00:00</updateDate>
+						<updateUser type="str">pam/fpergola</updateUser>
+						<creationDate type="str">2019-08-02T17:30:33.000+00:00</creationDate>
+						<creationUser type="str">pam/fpergola</creationUser>
+					</item>
+				</accreditations>
+			</item>
+			<item type="dict">
+				<identifier type="int">131457</identifier>
+				<maritalCode type="str">MA</maritalCode>
+				<richFamilyName type="str">EL FASSI</richFamilyName>
+				<richFirstName type="str">Chiraz</richFirstName>
+				<searchFamilyName type="str">EL FASSI</searchFamilyName>
+				<searchFirstName type="str">CHIRAZ</searchFirstName>
+				<sexeIsoCode type="str">2</sexeIsoCode>
+				<updateDate type="str">2021-02-09T21:54:53.000+00:00</updateDate>
+				<upperFamilyName type="str">EL FASSI</upperFamilyName>
+				<upperFirstName type="str">CHIRAZ</upperFirstName>
+				<accreditations type="list">
+					<item type="dict">
+						<identifier type="int">205521</identifier>
+						<contractId type="int">1007023</contractId>
+						<assistantId type="int">131457</assistantId>
+						<assistantType type="str">A</assistantType>
+						<contractResponsibleId type="int">124936</contractResponsibleId>
+						<accrResponsibleId type="int">124936</accrResponsibleId>
+						<accrResponsibleType type="str">PER</accrResponsibleType>
+						<startDate type="str">2019-07-02T22:00:00.000+00:00</startDate>
+						<endDate type="str">2024-07-01T22:00:00.000+00:00</endDate>
+						<statusCode type="str">V</statusCode>
+						<validationDate type="str">2019-09-16T11:52:29.000+00:00</validationDate>
+						<validationUser type="str">222297</validationUser>
+						<publicCode type="str">Y</publicCode>
+						<publicationDate type="str">2019-09-16T11:52:29.000+00:00</publicationDate>
+						<updateDate type="str">2019-09-16T11:52:29.000+00:00</updateDate>
+						<updateUser type="str">pam/222297</updateUser>
+						<creationDate type="str">2020-01-31T18:33:46.000+00:00</creationDate>
+						<creationUser type="str">pam/aquaresma</creationUser>
+					</item>
+					<item type="dict">
+						<identifier type="int">204739</identifier>
+						<contractId type="int">1002295</contractId>
+						<assistantId type="int">131457</assistantId>
+						<assistantType type="str">A</assistantType>
+						<contractResponsibleId type="int">124936</contractResponsibleId>
+						<accrResponsibleId type="int">124936</accrResponsibleId>
+						<accrResponsibleType type="str">PER</accrResponsibleType>
+						<startDate type="str">2015-03-31T22:00:00.000+00:00</startDate>
+						<endDate type="str">2019-07-01T22:00:00.000+00:00</endDate>
+						<statusCode type="str">V</statusCode>
+						<validationDate type="str">2019-05-29T08:46:22.000+00:00</validationDate>
+						<validationUser type="str">efina</validationUser>
+						<publicCode type="str">Y</publicCode>
+						<publicationDate type="str">2019-05-29T08:46:22.000+00:00</publicationDate>
+						<updateDate type="str">2019-05-29T08:46:22.000+00:00</updateDate>
+						<updateUser type="str">pam/efina</updateUser>
+						<creationDate type="str">2020-01-31T18:31:21.000+00:00</creationDate>
+						<creationUser type="str">pam/efina</creationUser>
+					</item>
+				</accreditations>
+			</item>
+			<item type="dict">
+				<identifier type="int">102500</identifier>
+				<maritalCode type="str">MA</maritalCode>
+				<richFamilyName type="str">MERONI</richFamilyName>
+				<richFirstName type="str">Giuseppe Mario</richFirstName>
+				<searchFamilyName type="str">MERONI</searchFamilyName>
+				<searchFirstName type="str">GIUSEPPE MARIO</searchFirstName>
+				<sexeIsoCode type="str">1</sexeIsoCode>
+				<updateDate type="str">2020-01-13T22:45:44.000+00:00</updateDate>
+				<upperFamilyName type="str">MERONI</upperFamilyName>
+				<upperFirstName type="str">GIUSEPPE MARIO</upperFirstName>
+				<accreditations type="list">
+					<item type="dict">
+						<identifier type="int">208022</identifier>
+						<contractId type="int">1000580</contractId>
+						<assistantId type="int">102500</assistantId>
+						<assistantType type="str">A</assistantType>
+						<contractResponsibleId type="int">28365</contractResponsibleId>
+						<accrResponsibleId type="int">28365</accrResponsibleId>
+						<accrResponsibleType type="str">PER</accrResponsibleType>
+						<startDate type="str">2014-07-01T22:00:00.000+00:00</startDate>
+						<endDate type="str">2019-07-01T22:00:00.000+00:00</endDate>
+						<statusCode type="str">V</statusCode>
+						<validationDate type="str">2019-11-04T16:58:23.000+00:00</validationDate>
+						<validationUser type="str">bmcintosh</validationUser>
+						<publicCode type="str">Y</publicCode>
+						<publicationDate type="str">2019-11-04T16:58:23.000+00:00</publicationDate>
+						<updateDate type="str">2019-11-04T16:58:23.000+00:00</updateDate>
+						<updateUser type="str">pam/bmcintosh</updateUser>
+						<creationDate type="str">2020-02-01T18:34:51.000+00:00</creationDate>
+						<creationUser type="str">pam/tgeorge</creationUser>
+					</item>
+					<item type="dict">
+						<identifier type="int">198377</identifier>
+						<contractId type="int">1013591</contractId>
+						<assistantId type="int">102500</assistantId>
+						<assistantType type="str">A</assistantType>
+						<contractResponsibleId type="int">124936</contractResponsibleId>
+						<accrResponsibleId type="int">29579</accrResponsibleId>
+						<accrResponsibleType type="str">PER</accrResponsibleType>
+						<startDate type="str">2019-10-17T22:00:00.000+00:00</startDate>
+						<endDate type="str">2023-01-30T23:00:00.000+00:00</endDate>
+						<statusCode type="str">V</statusCode>
+						<validationDate type="str">2019-10-03T07:48:49.000+00:00</validationDate>
+						<validationUser type="str">aquaresma</validationUser>
+						<publicCode type="str">Y</publicCode>
+						<publicationDate type="str">2019-10-03T07:48:49.000+00:00</publicationDate>
+						<updateDate type="str">2019-10-03T07:48:49.000+00:00</updateDate>
+						<updateUser type="str">pam/aquaresma</updateUser>
+						<creationDate type="str">2019-10-07T17:30:28.000+00:00</creationDate>
+						<creationUser type="str">pam/gjeanpierre</creationUser>
+						<groupId type="int">1295</groupId>
+						<groupName type="str">ASSISTANCE GM</groupName>
+					</item>
+					<item type="dict">
+						<identifier type="int">198378</identifier>
+						<contractId type="int">1013591</contractId>
+						<assistantId type="int">102500</assistantId>
+						<assistantType type="str">A</assistantType>
+						<contractResponsibleId type="int">29579</contractResponsibleId>
+						<accrResponsibleId type="int">29579</accrResponsibleId>
+						<accrResponsibleType type="str">PER</accrResponsibleType>
+						<startDate type="str">2019-10-17T22:00:00.000+00:00</startDate>
+						<endDate type="str">2023-01-30T23:00:00.000+00:00</endDate>
+						<statusCode type="str">V</statusCode>
+						<validationDate type="str">2019-10-03T07:48:49.000+00:00</validationDate>
+						<validationUser type="str">aquaresma</validationUser>
+						<publicCode type="str">Y</publicCode>
+						<publicationDate type="str">2019-10-03T07:48:49.000+00:00</publicationDate>
+						<updateDate type="str">2019-10-03T07:48:49.000+00:00</updateDate>
+						<updateUser type="str">pam/aquaresma</updateUser>
+						<creationDate type="str">2019-10-07T17:30:28.000+00:00</creationDate>
+						<creationUser type="str">pam/gjeanpierre</creationUser>
+						<groupId type="int">1295</groupId>
+						<groupName type="str">ASSISTANCE GM</groupName>
+					</item>
+					<item type="dict">
+						<identifier type="int">198058</identifier>
+						<contractId type="int">1008771</contractId>
+						<assistantId type="int">102500</assistantId>
+						<assistantType type="str">A</assistantType>
+						<contractResponsibleId type="int">124936</contractResponsibleId>
+						<accrResponsibleId type="int">124936</accrResponsibleId>
+						<accrResponsibleType type="str">PER</accrResponsibleType>
+						<startDate type="str">2019-07-02T22:00:00.000+00:00</startDate>
+						<endDate type="str">2019-10-16T22:00:00.000+00:00</endDate>
+						<statusCode type="str">V</statusCode>
+						<validationDate type="str">2019-10-02T14:09:51.000+00:00</validationDate>
+						<validationUser type="str">aquaresma</validationUser>
+						<publicCode type="str">Y</publicCode>
+						<publicationDate type="str">2019-10-02T14:09:51.000+00:00</publicationDate>
+						<updateDate type="str">2019-10-02T14:09:51.000+00:00</updateDate>
+						<updateUser type="str">pam/aquaresma</updateUser>
+						<creationDate type="str">2019-10-02T17:30:31.000+00:00</creationDate>
+						<creationUser type="str">pam/gjeanpierre</creationUser>
+					</item>
+				</accreditations>
+			</item>
+			<item type="dict">
+				<identifier type="int">27963</identifier>
+				<maritalCode type="str">DI</maritalCode>
+				<richFamilyName type="str">DESCHAMPS</richFamilyName>
+				<richFirstName type="str">Veronique</richFirstName>
+				<searchFamilyName type="str">DESCHAMPS</searchFamilyName>
+				<searchFirstName type="str">VERONIQUE</searchFirstName>
+				<sexeIsoCode type="str">2</sexeIsoCode>
+				<updateDate type="str">2021-01-20T21:37:23.000+00:00</updateDate>
+				<upperFamilyName type="str">DESCHAMPS</upperFamilyName>
+				<upperFirstName type="str">VERONIQUE</upperFirstName>
+				<accreditations type="list">
+					<item type="dict">
+						<identifier type="int">206848</identifier>
+						<contractId type="int">1004013</contractId>
+						<assistantId type="int">27963</assistantId>
+						<assistantType type="str">A</assistantType>
+						<contractResponsibleId type="int">125002</contractResponsibleId>
+						<accrResponsibleId type="int">125002</accrResponsibleId>
+						<accrResponsibleType type="str">PER</accrResponsibleType>
+						<startDate type="str">2016-07-31T22:00:00.000+00:00</startDate>
+						<endDate type="str">2018-11-29T23:00:00.000+00:00</endDate>
+						<statusCode type="str">V</statusCode>
+						<validationDate type="str">2018-12-03T12:19:25.000+00:00</validationDate>
+						<validationUser type="str">222439</validationUser>
+						<publicCode type="str">Y</publicCode>
+						<publicationDate type="str">2018-12-03T12:19:25.000+00:00</publicationDate>
+						<updateDate type="str">2018-12-03T12:19:25.000+00:00</updateDate>
+						<updateUser type="str">pam/222439</updateUser>
+						<creationDate type="str">2020-01-31T18:36:31.000+00:00</creationDate>
+						<creationUser type="str">pam/efina</creationUser>
+						<groupId type="int">1107</groupId>
+						<groupName type="str">VDASSISTANCE</groupName>
+					</item>
+					<item type="dict">
+						<identifier type="int">206849</identifier>
+						<contractId type="int">1004013</contractId>
+						<assistantId type="int">27963</assistantId>
+						<assistantType type="str">A</assistantType>
+						<contractResponsibleId type="int">29579</contractResponsibleId>
+						<accrResponsibleId type="int">29579</accrResponsibleId>
+						<accrResponsibleType type="str">PER</accrResponsibleType>
+						<startDate type="str">2018-11-30T23:00:00.000+00:00</startDate>
+						<endDate type="str">2019-07-01T22:00:00.000+00:00</endDate>
+						<statusCode type="str">V</statusCode>
+						<validationDate type="str">2018-12-03T12:19:25.000+00:00</validationDate>
+						<validationUser type="str">222439</validationUser>
+						<publicCode type="str">Y</publicCode>
+						<publicationDate type="str">2018-12-03T12:19:25.000+00:00</publicationDate>
+						<updateDate type="str">2018-12-03T12:19:25.000+00:00</updateDate>
+						<updateUser type="str">pam/222439</updateUser>
+						<creationDate type="str">2020-01-31T18:36:31.000+00:00</creationDate>
+						<creationUser type="str">pam/efina</creationUser>
+						<groupId type="int">1107</groupId>
+						<groupName type="str">VDASSISTANCE</groupName>
+					</item>
+					<item type="dict">
+						<identifier type="int">206850</identifier>
+						<contractId type="int">1004013</contractId>
+						<assistantId type="int">27963</assistantId>
+						<assistantType type="str">A</assistantType>
+						<contractResponsibleId type="int">29579</contractResponsibleId>
+						<accrResponsibleId type="int">125002</accrResponsibleId>
+						<accrResponsibleType type="str">PER</accrResponsibleType>
+						<startDate type="str">2016-07-31T22:00:00.000+00:00</startDate>
+						<endDate type="str">2018-11-29T23:00:00.000+00:00</endDate>
+						<statusCode type="str">V</statusCode>
+						<validationDate type="str">2018-12-03T12:19:25.000+00:00</validationDate>
+						<validationUser type="str">222439</validationUser>
+						<publicCode type="str">Y</publicCode>
+						<publicationDate type="str">2018-12-03T12:19:25.000+00:00</publicationDate>
+						<updateDate type="str">2018-12-03T12:19:25.000+00:00</updateDate>
+						<updateUser type="str">pam/222439</updateUser>
+						<creationDate type="str">2020-01-31T18:36:31.000+00:00</creationDate>
+						<creationUser type="str">pam/efina</creationUser>
+						<groupId type="int">1107</groupId>
+						<groupName type="str">VDASSISTANCE</groupName>
+					</item>
+					<item type="dict">
+						<identifier type="int">206851</identifier>
+						<contractId type="int">1004013</contractId>
+						<assistantId type="int">27963</assistantId>
+						<assistantType type="str">A</assistantType>
+						<contractResponsibleId type="int">124936</contractResponsibleId>
+						<accrResponsibleId type="int">29579</accrResponsibleId>
+						<accrResponsibleType type="str">PER</accrResponsibleType>
+						<startDate type="str">2018-11-30T23:00:00.000+00:00</startDate>
+						<endDate type="str">2019-07-01T22:00:00.000+00:00</endDate>
+						<statusCode type="str">V</statusCode>
+						<validationDate type="str">2018-12-03T12:19:25.000+00:00</validationDate>
+						<validationUser type="str">222439</validationUser>
+						<publicCode type="str">Y</publicCode>
+						<publicationDate type="str">2018-12-03T12:19:25.000+00:00</publicationDate>
+						<updateDate type="str">2018-12-03T12:19:25.000+00:00</updateDate>
+						<updateUser type="str">pam/222439</updateUser>
+						<creationDate type="str">2020-01-31T18:36:31.000+00:00</creationDate>
+						<creationUser type="str">pam/efina</creationUser>
+						<groupId type="int">1107</groupId>
+						<groupName type="str">VDASSISTANCE</groupName>
+					</item>
+					<item type="dict">
+						<identifier type="int">206852</identifier>
+						<contractId type="int">1004013</contractId>
+						<assistantId type="int">27963</assistantId>
+						<assistantType type="str">A</assistantType>
+						<contractResponsibleId type="int">124936</contractResponsibleId>
+						<accrResponsibleId type="int">125002</accrResponsibleId>
+						<accrResponsibleType type="str">PER</accrResponsibleType>
+						<startDate type="str">2016-07-31T22:00:00.000+00:00</startDate>
+						<endDate type="str">2018-11-29T23:00:00.000+00:00</endDate>
+						<statusCode type="str">V</statusCode>
+						<validationDate type="str">2018-12-03T12:19:25.000+00:00</validationDate>
+						<validationUser type="str">222439</validationUser>
+						<publicCode type="str">Y</publicCode>
+						<publicationDate type="str">2018-12-03T12:19:25.000+00:00</publicationDate>
+						<updateDate type="str">2018-12-03T12:19:25.000+00:00</updateDate>
+						<updateUser type="str">pam/222439</updateUser>
+						<creationDate type="str">2020-01-31T18:36:31.000+00:00</creationDate>
+						<creationUser type="str">pam/efina</creationUser>
+						<groupId type="int">1107</groupId>
+						<groupName type="str">VDASSISTANCE</groupName>
+					</item>
+					<item type="dict">
+						<identifier type="int">198382</identifier>
+						<contractId type="int">1013593</contractId>
+						<assistantId type="int">27963</assistantId>
+						<assistantType type="str">A</assistantType>
+						<contractResponsibleId type="int">124936</contractResponsibleId>
+						<accrResponsibleId type="int">124936</accrResponsibleId>
+						<accrResponsibleType type="str">PER</accrResponsibleType>
+						<startDate type="str">2019-10-17T22:00:00.000+00:00</startDate>
+						<endDate type="str">2024-07-01T22:00:00.000+00:00</endDate>
+						<statusCode type="str">V</statusCode>
+						<validationDate type="str">2019-10-03T08:52:50.000+00:00</validationDate>
+						<validationUser type="str">aquaresma</validationUser>
+						<publicCode type="str">Y</publicCode>
+						<publicationDate type="str">2019-10-03T08:52:50.000+00:00</publicationDate>
+						<updateDate type="str">2019-10-03T08:52:50.000+00:00</updateDate>
+						<updateUser type="str">pam/aquaresma</updateUser>
+						<creationDate type="str">2019-10-07T17:30:29.000+00:00</creationDate>
+						<creationUser type="str">pam/gjeanpierre</creationUser>
+						<groupId type="int">1296</groupId>
+						<groupName type="str">ASSISTANCE VD</groupName>
+					</item>
+					<item type="dict">
+						<identifier type="int">198383</identifier>
+						<contractId type="int">1013593</contractId>
+						<assistantId type="int">27963</assistantId>
+						<assistantType type="str">A</assistantType>
+						<contractResponsibleId type="int">29579</contractResponsibleId>
+						<accrResponsibleId type="int">124936</accrResponsibleId>
+						<accrResponsibleType type="str">PER</accrResponsibleType>
+						<startDate type="str">2019-10-17T22:00:00.000+00:00</startDate>
+						<endDate type="str">2024-07-01T22:00:00.000+00:00</endDate>
+						<statusCode type="str">V</statusCode>
+						<validationDate type="str">2019-10-03T08:52:50.000+00:00</validationDate>
+						<validationUser type="str">aquaresma</validationUser>
+						<publicCode type="str">Y</publicCode>
+						<publicationDate type="str">2019-10-03T08:52:50.000+00:00</publicationDate>
+						<updateDate type="str">2019-10-03T08:52:50.000+00:00</updateDate>
+						<updateUser type="str">pam/aquaresma</updateUser>
+						<creationDate type="str">2019-10-07T17:30:29.000+00:00</creationDate>
+						<creationUser type="str">pam/gjeanpierre</creationUser>
+						<groupId type="int">1296</groupId>
+						<groupName type="str">ASSISTANCE VD</groupName>
+					</item>
+					<item type="dict">
+						<identifier type="int">198007</identifier>
+						<contractId type="int">1010220</contractId>
+						<assistantId type="int">27963</assistantId>
+						<assistantType type="str">A</assistantType>
+						<contractResponsibleId type="int">29579</contractResponsibleId>
+						<accrResponsibleId type="int">29579</accrResponsibleId>
+						<accrResponsibleType type="str">PER</accrResponsibleType>
+						<startDate type="str">2019-07-14T22:00:00.000+00:00</startDate>
+						<endDate type="str">2019-10-16T22:00:00.000+00:00</endDate>
+						<statusCode type="str">V</statusCode>
+						<validationDate type="str">2019-10-02T14:08:10.000+00:00</validationDate>
+						<validationUser type="str">aquaresma</validationUser>
+						<publicCode type="str">Y</publicCode>
+						<publicationDate type="str">2019-10-02T14:08:10.000+00:00</publicationDate>
+						<updateDate type="str">2019-10-02T14:08:10.000+00:00</updateDate>
+						<updateUser type="str">pam/aquaresma</updateUser>
+						<creationDate type="str">2019-10-02T17:30:23.000+00:00</creationDate>
+						<creationUser type="str">pam/gjeanpierre</creationUser>
+					</item>
+				</accreditations>
+			</item>
+			<item type="dict">
+				<identifier type="int">201873</identifier>
+				<maritalCode type="str">CE</maritalCode>
+				<richFamilyName type="str">GHESQUIERE</richFamilyName>
+				<richFirstName type="str">Basile Jean Theophile</richFirstName>
+				<searchFamilyName type="str">GHESQUIERE</searchFamilyName>
+				<searchFirstName type="str">BASILE JEAN THEOPHILE</searchFirstName>
+				<sexeIsoCode type="str">1</sexeIsoCode>
+				<updateDate type="str">2021-01-19T21:39:23.000+00:00</updateDate>
+				<upperFamilyName type="str">GHESQUIERE</upperFamilyName>
+				<upperFirstName type="str">BASILE JEAN THEOPHILE</upperFirstName>
+				<accreditations type="list">
+					<item type="dict">
+						<identifier type="int">211362</identifier>
+						<contractId type="int">1014346</contractId>
+						<assistantId type="int">201873</assistantId>
+						<assistantType type="str">A</assistantType>
+						<contractResponsibleId type="int">124936</contractResponsibleId>
+						<accrResponsibleId type="int">124936</accrResponsibleId>
+						<accrResponsibleType type="str">PER</accrResponsibleType>
+						<startDate type="str">2019-11-28T23:00:00.000+00:00</startDate>
+						<endDate type="str">2024-07-01T22:00:00.000+00:00</endDate>
+						<statusCode type="str">V</statusCode>
+						<validationDate type="str">2020-03-26T13:08:51.000+00:00</validationDate>
+						<validationUser type="str">svandervalk</validationUser>
+						<publicCode type="str">Y</publicCode>
+						<publicationDate type="str">2020-03-26T13:08:51.000+00:00</publicationDate>
+						<updateDate type="str">2020-03-26T13:08:51.000+00:00</updateDate>
+						<updateUser type="str">pam/svandervalk</updateUser>
+						<creationDate type="str">2020-03-26T18:30:11.000+00:00</creationDate>
+						<creationUser type="str">pam/jzacna</creationUser>
+					</item>
+				</accreditations>
+			</item>
+		</assistants>
+		<mandates type="list">
+			<item type="dict">
+				<mandateId type="int">16006</mandateId>
+				<personId type="int">124936</personId>
+				<startDateTime type="str">2019-07-02T08:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2099-12-30T23:00:00.000+00:00</endDateTime>
+				<mandateType type="str">EUR</mandateType>
+				<countryId type="int">16</countryId>
+				<countryIsoCode type="str">BE</countryIsoCode>
+				<circons type="str">Collège électoral français</circons>
+			</item>
+			<item type="dict">
+				<mandateId type="int">15474</mandateId>
+				<personId type="int">124936</personId>
+				<startDateTime type="str">2014-07-01T08:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2019-07-02T07:59:59.000+00:00</endDateTime>
+				<mandateType type="str">EUR</mandateType>
+				<countryId type="int">16</countryId>
+				<countryIsoCode type="str">BE</countryIsoCode>
+				<circons type="str">Collège électoral français</circons>
+			</item>
+		</mandates>
+		<functions type="list">
+			<item type="dict">
+				<identifier type="int">145349</identifier>
+				<memberIdentifier type="int">124936</memberIdentifier>
+				<startDate type="str">2014-07-07T22:00:00.000+00:00</startDate>
+				<endDate type="str">2017-01-17T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2017-01-10T14:22:25.000+00:00</updatedDate>
+				<functionCode type="str">SUF</functionCode>
+				<functionOrder type="int">380</functionOrder>
+				<organeId type="int">3952</organeId>
+				<organeCode type="str">C07</organeCode>
+				<organeOrder type="int">7</organeOrder>
+				<typeOrganeCode type="str">CO</typeOrganeCode>
+				<typeOrganeOrder type="int">50</typeOrganeOrder>
+				<startDateTime type="str">2014-07-07T22:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2017-01-18T22:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2017-01-10T14:22:25.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">150008</identifier>
+				<memberIdentifier type="int">124936</memberIdentifier>
+				<startDate type="str">2017-01-18T23:00:00.000+00:00</startDate>
+				<endDate type="str">2019-06-30T22:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-05-15T13:05:28.000+00:00</updatedDate>
+				<functionCode type="str">SUF</functionCode>
+				<functionOrder type="int">380</functionOrder>
+				<organeId type="int">4963</organeId>
+				<organeCode type="str">C07</organeCode>
+				<organeOrder type="int">7</organeOrder>
+				<typeOrganeCode type="str">CO</typeOrganeCode>
+				<typeOrganeOrder type="int">50</typeOrganeOrder>
+				<startDateTime type="str">2017-01-18T23:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2019-07-02T07:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2019-05-15T13:05:28.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">157016</identifier>
+				<memberIdentifier type="int">124936</memberIdentifier>
+				<startDate type="str">2019-07-01T22:00:00.000+00:00</startDate>
+				<endDate type="str">2099-12-30T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-07-03T15:07:29.000+00:00</updatedDate>
+				<functionCode type="str">SUF</functionCode>
+				<functionOrder type="int">380</functionOrder>
+				<organeId type="int">5088</organeId>
+				<organeCode type="str">C08</organeCode>
+				<organeOrder type="int">8</organeOrder>
+				<typeOrganeCode type="str">CO</typeOrganeCode>
+				<typeOrganeOrder type="int">50</typeOrganeOrder>
+				<startDateTime type="str">2019-07-02T08:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2099-12-30T23:00:00.000+00:00</endDateTime>
+				<updateDate type="str">2019-07-03T15:07:29.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">151358</identifier>
+				<memberIdentifier type="int">124936</memberIdentifier>
+				<startDate type="str">2017-01-17T23:00:00.000+00:00</startDate>
+				<endDate type="str">2019-06-30T22:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-05-16T09:30:25.000+00:00</updatedDate>
+				<functionCode type="str">SUF</functionCode>
+				<functionOrder type="int">380</functionOrder>
+				<organeId type="int">4180</organeId>
+				<organeCode type="str">D10</organeCode>
+				<organeOrder type="int">10</organeOrder>
+				<typeOrganeCode type="str">DE</typeOrganeCode>
+				<typeOrganeOrder type="int">90</typeOrganeOrder>
+				<startDateTime type="str">2017-01-17T23:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2019-07-02T07:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2019-05-16T09:30:25.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">147329</identifier>
+				<memberIdentifier type="int">124936</memberIdentifier>
+				<startDate type="str">2014-09-16T22:00:00.000+00:00</startDate>
+				<endDate type="str">2017-01-16T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2017-01-18T18:27:27.000+00:00</updatedDate>
+				<functionCode type="str">SUF</functionCode>
+				<functionOrder type="int">380</functionOrder>
+				<organeId type="int">4190</organeId>
+				<organeCode type="str">D22</organeCode>
+				<organeOrder type="int">22</organeOrder>
+				<typeOrganeCode type="str">DE</typeOrganeCode>
+				<typeOrganeOrder type="int">90</typeOrganeOrder>
+				<startDateTime type="str">2014-09-16T22:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2017-01-17T22:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2017-01-18T18:27:27.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">153497</identifier>
+				<memberIdentifier type="int">124936</memberIdentifier>
+				<startDate type="str">2019-07-01T22:00:00.000+00:00</startDate>
+				<endDate type="str">2099-12-30T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-05-27T18:58:11.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">5514</organeId>
+				<organeCode type="str">PE</organeCode>
+				<typeOrganeCode type="str">PE</typeOrganeCode>
+				<typeOrganeOrder type="int">10</typeOrganeOrder>
+				<startDateTime type="str">2019-07-02T08:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2099-12-30T23:00:00.000+00:00</endDateTime>
+				<updateDate type="str">2019-05-27T18:58:11.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">141874</identifier>
+				<memberIdentifier type="int">124936</memberIdentifier>
+				<startDate type="str">2014-06-30T22:00:00.000+00:00</startDate>
+				<endDate type="str">2019-06-30T22:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-03-21T16:04:44.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">3945</organeId>
+				<organeCode type="str">PE</organeCode>
+				<typeOrganeCode type="str">PE</typeOrganeCode>
+				<typeOrganeOrder type="int">10</typeOrganeOrder>
+				<startDateTime type="str">2014-07-01T08:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2019-07-02T07:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2019-03-21T16:04:44.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">158507</identifier>
+				<memberIdentifier type="int">124936</memberIdentifier>
+				<startDate type="str">2019-07-09T22:00:00.000+00:00</startDate>
+				<endDate type="str">2099-12-30T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-07-12T10:50:05.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">5158</organeId>
+				<organeCode type="str">PRCO</organeCode>
+				<organeOrder type="int">50</organeOrder>
+				<typeOrganeCode type="str">OD</typeOrganeCode>
+				<typeOrganeOrder type="int">30</typeOrganeOrder>
+				<startDateTime type="str">2019-07-09T22:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2099-12-30T23:00:00.000+00:00</endDateTime>
+				<updateDate type="str">2019-07-12T10:50:05.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">143125</identifier>
+				<memberIdentifier type="int">124936</memberIdentifier>
+				<startDate type="str">2014-06-30T22:00:00.000+00:00</startDate>
+				<endDate type="str">2019-06-30T22:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-05-16T09:49:50.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">4284</organeId>
+				<organeCode type="str">S&amp;D</organeCode>
+				<organeOrder type="int">81599</organeOrder>
+				<typeOrganeCode type="str">GP</typeOrganeCode>
+				<typeOrganeOrder type="int">40</typeOrganeOrder>
+				<startDateTime type="str">2014-07-01T08:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2019-07-02T07:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2019-05-16T09:49:50.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">156057</identifier>
+				<memberIdentifier type="int">124936</memberIdentifier>
+				<startDate type="str">2019-07-01T22:00:00.000+00:00</startDate>
+				<endDate type="str">2099-12-30T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-06-26T17:27:48.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">5154</organeId>
+				<organeCode type="str">S&amp;D</organeCode>
+				<organeOrder type="int">85499</organeOrder>
+				<typeOrganeCode type="str">GP</typeOrganeCode>
+				<typeOrganeOrder type="int">40</typeOrganeOrder>
+				<startDateTime type="str">2019-07-02T08:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2099-12-30T23:00:00.000+00:00</endDateTime>
+				<updateDate type="str">2019-06-26T17:27:48.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">156399</identifier>
+				<memberIdentifier type="int">124936</memberIdentifier>
+				<startDate type="str">2019-07-01T22:00:00.000+00:00</startDate>
+				<endDate type="str">2099-12-30T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-07-03T15:05:57.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">5081</organeId>
+				<organeCode type="str">C01</organeCode>
+				<organeOrder type="int">1</organeOrder>
+				<typeOrganeCode type="str">CO</typeOrganeCode>
+				<typeOrganeOrder type="int">50</typeOrganeOrder>
+				<startDateTime type="str">2019-07-02T08:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2099-12-30T23:00:00.000+00:00</endDateTime>
+				<updateDate type="str">2019-07-03T15:05:57.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">149672</identifier>
+				<memberIdentifier type="int">124936</memberIdentifier>
+				<startDate type="str">2017-01-18T23:00:00.000+00:00</startDate>
+				<endDate type="str">2019-06-30T22:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-05-15T13:03:59.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">4959</organeId>
+				<organeCode type="str">C03</organeCode>
+				<organeOrder type="int">3</organeOrder>
+				<typeOrganeCode type="str">CO</typeOrganeCode>
+				<typeOrganeOrder type="int">50</typeOrganeOrder>
+				<startDateTime type="str">2017-01-18T23:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2019-07-02T07:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2019-05-15T13:03:59.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">143698</identifier>
+				<memberIdentifier type="int">124936</memberIdentifier>
+				<startDate type="str">2014-06-30T22:00:00.000+00:00</startDate>
+				<endDate type="str">2017-01-17T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2017-01-10T14:00:41.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">3948</organeId>
+				<organeCode type="str">C03</organeCode>
+				<organeOrder type="int">3</organeOrder>
+				<typeOrganeCode type="str">CO</typeOrganeCode>
+				<typeOrganeOrder type="int">50</typeOrganeOrder>
+				<startDateTime type="str">2014-07-01T08:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2017-01-18T22:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2017-01-10T14:00:41.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">144877</identifier>
+				<memberIdentifier type="int">124936</memberIdentifier>
+				<startDate type="str">2014-06-30T22:00:00.000+00:00</startDate>
+				<endDate type="str">2017-01-17T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2017-01-10T15:46:40.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">3964</organeId>
+				<organeCode type="str">C19</organeCode>
+				<organeOrder type="int">19</organeOrder>
+				<typeOrganeCode type="str">CO</typeOrganeCode>
+				<typeOrganeOrder type="int">50</typeOrganeOrder>
+				<startDateTime type="str">2014-07-01T08:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2017-01-18T22:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2017-01-10T15:46:40.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">151064</identifier>
+				<memberIdentifier type="int">124936</memberIdentifier>
+				<startDate type="str">2017-01-18T23:00:00.000+00:00</startDate>
+				<endDate type="str">2019-06-30T22:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-05-15T13:10:14.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">4975</organeId>
+				<organeCode type="str">C19</organeCode>
+				<organeOrder type="int">19</organeOrder>
+				<typeOrganeCode type="str">CO</typeOrganeCode>
+				<typeOrganeOrder type="int">50</typeOrganeOrder>
+				<startDateTime type="str">2017-01-18T23:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2019-07-02T07:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2019-05-15T13:10:14.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">158140</identifier>
+				<memberIdentifier type="int">124936</memberIdentifier>
+				<startDate type="str">2019-07-01T22:00:00.000+00:00</startDate>
+				<endDate type="str">2019-07-08T22:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-07-10T16:55:04.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">5101</organeId>
+				<organeCode type="str">SC01A</organeCode>
+				<organeOrder type="int">1</organeOrder>
+				<typeOrganeCode type="str">SC</typeOrganeCode>
+				<typeOrganeOrder type="int">60</typeOrganeOrder>
+				<startDateTime type="str">2019-07-02T08:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2019-07-09T21:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2019-07-10T16:55:04.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">161630</identifier>
+				<memberIdentifier type="int">124936</memberIdentifier>
+				<startDate type="str">2020-09-13T22:00:00.000+00:00</startDate>
+				<endDate type="str">2099-12-30T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2020-07-09T15:09:32.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">6178</organeId>
+				<organeCode type="str">CS01</organeCode>
+				<organeOrder type="int">1</organeOrder>
+				<typeOrganeCode type="str">CT</typeOrganeCode>
+				<typeOrganeOrder type="int">70</typeOrganeOrder>
+				<startDateTime type="str">2020-09-13T22:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2099-12-30T23:00:00.000+00:00</endDateTime>
+				<updateDate type="str">2020-07-09T15:09:32.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">159582</identifier>
+				<memberIdentifier type="int">124936</memberIdentifier>
+				<startDate type="str">2019-07-01T22:00:00.000+00:00</startDate>
+				<endDate type="str">2099-12-30T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-07-17T15:46:56.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">5133</organeId>
+				<organeCode type="str">D31</organeCode>
+				<organeOrder type="int">31</organeOrder>
+				<typeOrganeCode type="str">DE</typeOrganeCode>
+				<typeOrganeOrder type="int">90</typeOrganeOrder>
+				<startDateTime type="str">2019-07-02T08:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2099-12-30T23:00:00.000+00:00</endDateTime>
+				<updateDate type="str">2019-07-17T15:46:56.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">146619</identifier>
+				<memberIdentifier type="int">124936</memberIdentifier>
+				<startDate type="str">2014-07-13T22:00:00.000+00:00</startDate>
+				<endDate type="str">2019-06-30T22:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-05-16T09:42:44.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">4203</organeId>
+				<organeCode type="str">DA01</organeCode>
+				<organeOrder type="int">1</organeOrder>
+				<typeOrganeCode type="str">AP</typeOrganeCode>
+				<typeOrganeOrder type="int">100</typeOrganeOrder>
+				<startDateTime type="str">2014-07-13T22:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2019-07-02T07:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2019-05-16T09:42:44.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">159609</identifier>
+				<memberIdentifier type="int">124936</memberIdentifier>
+				<startDate type="str">2019-07-01T22:00:00.000+00:00</startDate>
+				<endDate type="str">2099-12-30T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-07-17T15:47:00.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">5142</organeId>
+				<organeCode type="str">DA01</organeCode>
+				<organeOrder type="int">1</organeOrder>
+				<typeOrganeCode type="str">AP</typeOrganeCode>
+				<typeOrganeOrder type="int">100</typeOrganeOrder>
+				<startDateTime type="str">2019-07-02T08:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2099-12-30T23:00:00.000+00:00</endDateTime>
+				<updateDate type="str">2019-07-17T15:47:00.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">151368</identifier>
+				<memberIdentifier type="int">124936</memberIdentifier>
+				<startDate type="str">2017-01-17T23:00:00.000+00:00</startDate>
+				<endDate type="str">2019-06-30T22:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-05-16T09:43:24.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">4205</organeId>
+				<organeCode type="str">DA02</organeCode>
+				<organeOrder type="int">2</organeOrder>
+				<typeOrganeCode type="str">AP</typeOrganeCode>
+				<typeOrganeOrder type="int">100</typeOrganeOrder>
+				<startDateTime type="str">2017-01-17T23:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2019-07-02T07:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2019-05-16T09:43:24.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">153501</identifier>
+				<memberIdentifier type="int">124936</memberIdentifier>
+				<startDate type="str">2019-07-01T22:00:00.000+00:00</startDate>
+				<endDate type="str">2099-12-30T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-05-27T18:59:49.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">5177</organeId>
+				<organeCode type="str">PS</organeCode>
+				<typeOrganeCode type="str">PN</typeOrganeCode>
+				<typeOrganeOrder type="int">130</typeOrganeOrder>
+				<startDateTime type="str">2019-07-02T08:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2099-12-30T23:00:00.000+00:00</endDateTime>
+				<updateDate type="str">2019-05-27T18:59:49.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">141875</identifier>
+				<memberIdentifier type="int">124936</memberIdentifier>
+				<startDate type="str">2014-06-30T22:00:00.000+00:00</startDate>
+				<endDate type="str">2019-06-30T22:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-03-21T16:04:44.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">3990</organeId>
+				<organeCode type="str">PS</organeCode>
+				<typeOrganeCode type="str">PN</typeOrganeCode>
+				<typeOrganeOrder type="int">130</typeOrganeOrder>
+				<startDateTime type="str">2014-07-01T08:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2019-07-02T07:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2019-03-21T16:04:44.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">158443</identifier>
+				<memberIdentifier type="int">124936</memberIdentifier>
+				<startDate type="str">2019-07-09T22:00:00.000+00:00</startDate>
+				<endDate type="str">2099-12-30T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-07-10T16:56:22.000+00:00</updatedDate>
+				<functionCode type="str">PAF</functionCode>
+				<functionOrder type="int">500</functionOrder>
+				<organeId type="int">5101</organeId>
+				<organeCode type="str">SC01A</organeCode>
+				<organeOrder type="int">1</organeOrder>
+				<typeOrganeCode type="str">SC</typeOrganeCode>
+				<typeOrganeOrder type="int">60</typeOrganeOrder>
+				<startDateTime type="str">2019-07-09T22:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2099-12-30T23:00:00.000+00:00</endDateTime>
+				<updateDate type="str">2019-07-10T16:56:22.000+00:00</updateDate>
+			</item>
+		</functions>
+		<eaddresses type="list">
+			<item type="dict">
+				<address type="str">maria.arena@europarl.europa.eu</address>
+				<addressType type="str">Groupwise</addressType>
+				<addressCodeType type="str">GWS</addressCodeType>
+				<order type="int">2</order>
+				<updatedDate type="str">2014-06-12T09:08:46.000+00:00</updatedDate>
+			</item>
+			<item type="dict">
+				<address type="str">maria.arena@europarl.europa.eu</address>
+				<addressType type="str">E-Mail</addressType>
+				<addressCodeType type="str">EMA</addressCodeType>
+				<order type="int">2</order>
+				<updatedDate type="str">2019-06-17T07:57:07.000+00:00</updatedDate>
+			</item>
+			<item type="dict">
+				<address type="str">https://www.facebook.com/Marie-Arena</address>
+				<addressType type="str">Facebook Profile</addressType>
+				<addressCodeType type="str">FBP</addressCodeType>
+				<order type="int">5</order>
+				<updatedDate type="str">2019-07-03T16:36:15.000+00:00</updatedDate>
+			</item>
+			<item type="dict">
+				<address type="str">https://twitter.com/Mariearenaps</address>
+				<addressType type="str">Twitter Profile</addressType>
+				<addressCodeType type="str">TWT</addressCodeType>
+				<order type="int">4</order>
+				<updatedDate type="str">2016-06-30T08:47:02.000+00:00</updatedDate>
+			</item>
+			<item type="dict">
+				<address type="str">http://www.mariearena.eu/</address>
+				<addressType type="str">Uniform Resource Locator</addressType>
+				<addressCodeType type="str">URL</addressCodeType>
+				<order type="int">3</order>
+				<updatedDate type="str">2019-06-17T07:57:23.000+00:00</updatedDate>
+			</item>
+			<item type="dict">
+				<address type="str">https://www.instagram.com/mariearenaps/</address>
+				<addressType type="str">Instagram</addressType>
+				<addressCodeType type="str">IST</addressCodeType>
+				<order type="int">6</order>
+				<updatedDate type="str">2019-06-17T07:57:40.000+00:00</updatedDate>
+			</item>
+		</eaddresses>
+		<addresses type="list">
+			<item type="dict">
+				<identifier type="int">124936</identifier>
+				<assignment type="bool">False</assignment>
+				<townId type="int">211</townId>
+				<townCode type="str">BRU</townCode>
+				<townName type="str">Bruxelles</townName>
+				<buildingId type="int">16</buildingId>
+				<buildingCode type="str">ASP</buildingCode>
+				<buildingName type="str">ALTIERO SPINELLI</buildingName>
+				<officeNum type="str">15G305</officeNum>
+				<phoneNum type="str">0032 2 28 45690</phoneNum>
+				<faxNum type="str">0032 2 28 49690</faxNum>
+			</item>
+			<item type="dict">
+				<identifier type="int">124936</identifier>
+				<assignment type="bool">False</assignment>
+				<townId type="int">1207</townId>
+				<townCode type="str">STR</townCode>
+				<townName type="str">Strasbourg</townName>
+				<buildingId type="int">20</buildingId>
+				<buildingCode type="str">LOW</buildingCode>
+				<buildingName type="str">LOUISE WEISS</buildingName>
+				<officeNum type="str">T12044</officeNum>
+				<phoneNum type="str">0033 3 88 1 75690</phoneNum>
+				<faxNum type="str">0033 3 88 1 79690</faxNum>
+			</item>
+		</addresses>
+		<seatBru type="int">279</seatBru>
+		<seatStr type="int">240</seatStr>
+	</item>
+	<item type="dict">
+		<identifier type="int">2058</identifier>
+		<familyName type="str">Jouppila</familyName>
+		<firstName type="str">Riitta</firstName>
+		<upperFamilyName type="str">JOUPPILA</upperFamilyName>
+		<upperFirstName type="str">RIITTA</upperFirstName>
+		<genderIsoCode type="str">2</genderIsoCode>
+		<birthDate type="str">1940-05-29T22:00:00.000+00:00</birthDate>
+		<birthPlace type="str">Kuopio</birthPlace>
+		<birthCountryId type="int">55</birthCountryId>
+		<birthCountryIsoCode type="str">FI</birthCountryIsoCode>
+		<natCountryId type="int">55</natCountryId>
+		<natCountryIsoCode type="str">FI</natCountryIsoCode>
+		<sortName type="str">JOUPPILA</sortName>
+		<status type="bool">False</status>
+		<mandateType type="str">European</mandateType>
+		<countryId type="int">55</countryId>
+		<countryIsoCode type="str">FI</countryIsoCode>
+		<countryOrder type="int">115</countryOrder>
+		<epFunctionCode type="str">MEF</epFunctionCode>
+		<epFunctionOrder type="int">400</epFunctionOrder>
+		<gpId type="int">514</gpId>
+		<gpCode type="str">PPE</gpCode>
+		<gpFunctionCode type="str">MEF</gpFunctionCode>
+		<gpFunctionOrder type="int">400</gpFunctionOrder>
+		<updateDate type="str">2018-05-23T06:17:30.000+00:00</updateDate>
+		<entityTypeName type="str">MEP</entityTypeName>
+		<cv type="list">
+			<item type="dict">
+				<langIsoCode type="str">DA</langIsoCode>
+				<decription type="str">Studentereksamen (1959). Licentiatgrad i medicin (1966); dr.med. (1977). Afdelingslæge (Oulus Universitets Centralsygehus). Docent (Oulus Universitet). &lt;&gt; Næstformand for Det Nationale Samlingsparti (1991-1993). &lt;&gt; Rigsdagsmedlem (indtil 1995). Formand for Uddannelsesudvalget (1991-1995). &lt;&gt; Doktorafhandling: &quot;The effect of epidural analgesia for painrelief during labour on maternal and fetal metabolism&quot; (1977). Adskillige videnskabelige udgivelser inden for medicin. &lt;&gt; Ridder af 1. klasse af Finlands Hvide Roses Orden.</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">DE</langIsoCode>
+				<decription type="str">Hochschulreife (1959). Lizentiatin der Medizin (1966); Doktor der Medizin (1977). Stationsoberärztin (Zentralkrankenhaus der Universität Oulu). Dozentin (Universität Oulu). &lt;&gt; Stellvertretende Vorsitzende der KOK (1991-1993). &lt;&gt; Mitglied des Finnischen Parlaments (bis 1995). Vorsitzende des Bildungsausschusses (1991- 1995). &lt;&gt; Dissertation &quot;The effect of epidural analgesia for painrelief during labour on maternal and fetal metabolism&quot; (1977). Zahlreiche wissenschaftliche Veröffentlichungen auf dem Gebiet der Medizin. &lt;&gt; Ritterorden Erster Klasse der Finnischen Weißen Rose.</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">EL</langIsoCode>
+				<decription type="str">Ακαδημαϊκό Απολυτήριο (1959). Πτυχιούχος Ιατρικής (1966)· Διδάκτωρ Ιατρικής (1977). Διευθυντής Κλινικής (OYKS). Αναπληρώτρια Καθηγήτρια (Πανεπιστήμιο του 'Οουλου). &lt;&gt; Αντιπρόεδρος του Εθνικού Κόμματος Συνασπισμού της Δεξιάς (1991-1993). &lt;&gt; Βουλευτής (μέχρι το 1995). Πρόεδρος της Επιτροπής Πολιτισμού (1991-1995). &lt;&gt; Διδακτορική Διατριβή &quot;Τhe effect of epidural analgesia for painrelief during labour on maternal and fetal metabolism&quot; (1977). Συγγραφεύς διαφόρων ιατρικών δημοσιευμάτων. &lt;&gt; Παράσημο Ιππότου Α' Τάξεως του Λευκού Ρόδου.</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">EN</langIsoCode>
+				<decription type="str">School leaving certificate (1959). Degree in medicine (1966). PhD in medicine (1977). Senior physician (University of Oulu Central Hospital). Lecturer (Oulu University). &lt;&gt; Deputy chairman, KOK party (1991-1993). &lt;&gt; Member of Parliament (until 1995). Chairman, Committee for Education and Culture (1991-1995). &lt;&gt; Doctoral thesis 'The effect of epidural analgesia for pain relief during labour on maternal and fetal metabolism' (1977). Author of several medical publications. &lt;&gt; Order of the White Rose, First Class.</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">ES</langIsoCode>
+				<decription type="str">Bachiller Superior (1959). Licenciada en Medicina (1966); Doctora en Medicina y Cirugía (1977). Médico jefe de departamento (Hospital Central Universitario de Oulu). Profesora universitaria (Universidad de Oulu). &lt;&gt; Vicepresidenta de la KOK (1991-1993). &lt;&gt; Miembro del Parlamento de Finlandia (hasta 1995). Presidenta de la Comisión de Educación y Cultura (1991-1995). &lt;&gt; Tesis doctoral &quot;The effect of epidural analgesia for painrelief during labour on maternal and fetal metabolism&quot; (1977). Numerosas publicaciones científicas en el campo de la medicina. &lt;&gt; Condecoración de Caballero de primera clase de la Orden de la Rosa Blanca de Finlandia.</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">FI</langIsoCode>
+				<decription type="str">Ylioppilastutkinto (1959). Lääketieteen lisensiaatti (1966); LKT (1977). Osaston ylilääkäri (OYKS). Dosentti (Oulun yliopisto). &lt;&gt; Kansallisen Kokoomuksen varapuheenjohtaja (1991-1993). &lt;&gt; Kansanedustaja (vuoteen 1995). Sivistysvaliokunnan puheenjohtaja (1991-1995). &lt;&gt; Väitöskirja &quot;The effect of epidural analgesia for painrelief during labour on maternal and fetal metabolism&quot; (1977). Useita tieteellisiä julkaisuja lääketieteen alalta. &lt;&gt; Valkoisen Ruusun I luokan ritarimerkki.</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">FR</langIsoCode>
+				<decription type="str">Baccalauréat (1959). Docteur en médecine (1966). Doctorat d'État en médecine (1977). Médecin-chef de service (CHU d'Oulu). Chargé de cours (Université d'Oulu). &lt;&gt; Vice-président du KOK (1991-1993). &lt;&gt; Député au parlement finlandais (jusqu'en 1995). Président de la commission de la culture (1991-1995). &lt;&gt; Thèse de doctorat: &quot;&quot;The effect of epidural analgesia for painrelief during labour on maternal and fetal metabolism&quot; (1977). Nombreuses publications scientifiques dans le domaine médical. &lt;&gt; Chevalier de la Rose Blanche de Première classe.</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">IT</langIsoCode>
+				<decription type="str">Maturità (1959). Laurea in medicina (dal 1966). Dottorato di Stato (1977). Medico primario (Policlinico universitario di Oulu). Professoressa all'Università di Oulu. &lt;&gt; Vicesegretario del Partito della Coalizione nazionale (1991-1993). &lt;&gt; Deputato nazionale (fino al 1995). Presidente della commissione per l'istruzione e la cultura (1991-1995). &lt;&gt; Tesi di dottorato: &quot;The effect of epidural analgesia for painrelief during labour on maternal and fetal metabolism&quot; (1977). Numerose pubblicazioni scientifiche di medicina. &lt;&gt; Decorazione di prima classe della Rosa bianca.</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">NL</langIsoCode>
+				<decription type="str">Toelatingsexamen universiteit (1959). Licentiaat medicijnen (1966); Doctoraat medicijnen (1977). Chef-arts (Academisch Ziekenhuis Oulu). Docent (Universeit Oulu). &lt;&gt; Vice-voorzitter KOK (1991-1993). &lt;&gt; Lid Fins parlement (tot aan 1995). Voorzitter Commissie cultuur (1991-1995). &lt;&gt; Dissertatie &quot;The effect of epidural analgesia for painrelief during labour on maternal and fetal metabolism&quot; (1977). Verscheidene medische publikaties. &lt;&gt; Ridder eerste klasse in de orde van de Witte Roos.</decription>
+			</item>
+			<item type="dict">
+				<langIsoCode type="str">PT</langIsoCode>
+				<decription type="str">Ensino secundário (1959). Mestrado em Medicina (1966). Doutoramento em Medicina (1977). Chefe de serviço médico (OYKS). Professora do ensino superior (Univ. de Oulu). &lt;&gt; Vice-presidente do KOK (1991- 1993). &lt;&gt; Deputada ao Parlamento finlandês (até 1995). Presidente da Comissão da Cultura (1991-1995). &lt;&gt; Tese de doutoramento &quot;The effect of epidural analgesia for painrelief during labour on maternal and fetal metabolism&quot; (1977). Numerosas publicações científicas na área da medicina. &lt;&gt; Insígnia deprimeira classe da Ordem Finlandesa da Rosa Branca.</decription>
+			</item>
+		</cv>
+		<mandates type="list">
+			<item type="dict">
+				<mandateId type="int">10510</mandateId>
+				<personId type="int">2058</personId>
+				<startDateTime type="str">1994-12-31T23:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">1996-11-10T22:59:59.000+00:00</endDateTime>
+				<mandateType type="str">EUR</mandateType>
+				<countryId type="int">55</countryId>
+				<countryIsoCode type="str">FI</countryIsoCode>
+			</item>
+		</mandates>
+		<functions type="list">
+			<item type="dict">
+				<identifier type="int">75329</identifier>
+				<memberIdentifier type="int">2058</memberIdentifier>
+				<startDate type="str">1995-01-18T23:00:00.000+00:00</startDate>
+				<endDate type="str">1996-11-09T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2014-04-09T12:18:30.000+00:00</updatedDate>
+				<functionCode type="str">SUF</functionCode>
+				<functionOrder type="int">380</functionOrder>
+				<organeId type="int">102</organeId>
+				<organeCode type="str">C11</organeCode>
+				<organeOrder type="int">11</organeOrder>
+				<typeOrganeCode type="str">CO</typeOrganeCode>
+				<typeOrganeOrder type="int">50</typeOrganeOrder>
+				<startDateTime type="str">1995-01-18T23:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">1996-11-10T22:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2014-04-09T12:18:30.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">90813</identifier>
+				<memberIdentifier type="int">2058</memberIdentifier>
+				<startDate type="str">1994-12-31T23:00:00.000+00:00</startDate>
+				<endDate type="str">1996-11-09T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2014-04-09T12:23:48.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">572</organeId>
+				<organeCode type="str">PE</organeCode>
+				<organeOrder type="int">2</organeOrder>
+				<typeOrganeCode type="str">PE</typeOrganeCode>
+				<typeOrganeOrder type="int">10</typeOrganeOrder>
+				<startDateTime type="str">1994-12-31T23:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">1996-11-10T22:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2014-04-09T12:23:48.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">89033</identifier>
+				<memberIdentifier type="int">2058</memberIdentifier>
+				<startDate type="str">1994-12-31T23:00:00.000+00:00</startDate>
+				<endDate type="str">1996-11-09T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2014-04-09T12:23:08.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">514</organeId>
+				<organeCode type="str">PPE</organeCode>
+				<organeOrder type="int">802</organeOrder>
+				<typeOrganeCode type="str">GP</typeOrganeCode>
+				<typeOrganeOrder type="int">40</typeOrganeOrder>
+				<startDateTime type="str">1994-12-31T23:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">1996-11-10T22:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2014-04-09T12:23:08.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">75286</identifier>
+				<memberIdentifier type="int">2058</memberIdentifier>
+				<startDate type="str">1995-01-18T23:00:00.000+00:00</startDate>
+				<endDate type="str">1996-11-09T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2014-04-09T12:18:30.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">96</organeId>
+				<organeCode type="str">C05</organeCode>
+				<organeOrder type="int">5</organeOrder>
+				<typeOrganeCode type="str">CO</typeOrganeCode>
+				<typeOrganeOrder type="int">50</typeOrganeOrder>
+				<startDateTime type="str">1995-01-18T23:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">1996-11-10T22:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2014-04-09T12:18:30.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">75369</identifier>
+				<memberIdentifier type="int">2058</memberIdentifier>
+				<startDate type="str">1995-01-18T23:00:00.000+00:00</startDate>
+				<endDate type="str">1996-11-09T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2014-04-09T12:18:31.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">110</organeId>
+				<organeCode type="str">C19</organeCode>
+				<organeOrder type="int">19</organeOrder>
+				<typeOrganeCode type="str">CO</typeOrganeCode>
+				<typeOrganeOrder type="int">50</typeOrganeOrder>
+				<startDateTime type="str">1995-01-18T23:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">1996-11-10T22:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2014-04-09T12:18:31.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">81101</identifier>
+				<memberIdentifier type="int">2058</memberIdentifier>
+				<startDate type="str">1995-01-17T23:00:00.000+00:00</startDate>
+				<endDate type="str">1995-07-10T22:00:00.000+00:00</endDate>
+				<updatedDate type="str">2014-04-09T12:20:17.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">459</organeId>
+				<organeCode type="str">DM05</organeCode>
+				<organeOrder type="int">5</organeOrder>
+				<typeOrganeCode type="str">DM</typeOrganeCode>
+				<typeOrganeOrder type="int">80</typeOrganeOrder>
+				<startDateTime type="str">1995-01-17T23:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">1995-07-11T21:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2014-04-09T12:20:17.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">81239</identifier>
+				<memberIdentifier type="int">2058</memberIdentifier>
+				<startDate type="str">1995-07-11T22:00:00.000+00:00</startDate>
+				<endDate type="str">1996-11-09T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2014-04-09T12:20:20.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">465</organeId>
+				<organeCode type="str">DM05</organeCode>
+				<organeOrder type="int">5</organeOrder>
+				<typeOrganeCode type="str">DM</typeOrganeCode>
+				<typeOrganeOrder type="int">80</typeOrganeOrder>
+				<startDateTime type="str">1995-07-11T22:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">1996-11-10T22:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2014-04-09T12:20:20.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">101477</identifier>
+				<memberIdentifier type="int">2058</memberIdentifier>
+				<startDate type="str">1994-12-31T23:00:00.000+00:00</startDate>
+				<endDate type="str">1996-11-09T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2014-04-09T12:28:24.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">650</organeId>
+				<organeCode type="str">KOK</organeCode>
+				<typeOrganeCode type="str">PN</typeOrganeCode>
+				<typeOrganeOrder type="int">130</typeOrganeOrder>
+				<startDateTime type="str">1994-12-31T23:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">1996-11-10T22:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2014-04-09T12:28:24.000+00:00</updateDate>
+			</item>
+		</functions>
+		<eaddresses type="list">
+			<item type="dict">
+				<address type="str">riitta.jouppila@kokoomus.reticon.be</address>
+				<addressType type="str">E-Mail</addressType>
+				<addressCodeType type="str">EMA</addressCodeType>
+				<order type="int">1</order>
+				<updatedDate type="str">2017-09-26T12:38:28.000+00:00</updatedDate>
+			</item>
+		</eaddresses>
+		<addresses type="list"/>
+		<seatBru type="int">0</seatBru>
+		<seatStr type="int">0</seatStr>
+	</item>
+	<item type="dict">
+		<identifier type="int">124939</identifier>
+		<familyName type="str">James</familyName>
+		<firstName type="str">Diane</firstName>
+		<upperFamilyName type="str">JAMES</upperFamilyName>
+		<upperFirstName type="str">DIANE</upperFirstName>
+		<genderIsoCode type="str">2</genderIsoCode>
+		<titleCode type="str">MS.</titleCode>
+		<birthDate type="str">1959-11-19T23:00:00.000+00:00</birthDate>
+		<birthCountryId type="int">62</birthCountryId>
+		<birthCountryIsoCode type="str">GB</birthCountryIsoCode>
+		<natCountryId type="int">62</natCountryId>
+		<natCountryIsoCode type="str">GB</natCountryIsoCode>
+		<sortName type="str">JAMES</sortName>
+		<status type="bool">False</status>
+		<mandateType type="str">European</mandateType>
+		<countryId type="int">62</countryId>
+		<countryIsoCode type="str">GB</countryIsoCode>
+		<countryOrder type="int">125</countryOrder>
+		<circonscription type="str">South East</circonscription>
+		<epFunctionCode type="str">MEF</epFunctionCode>
+		<epFunctionOrder type="int">400</epFunctionOrder>
+		<gpId type="int">4880</gpId>
+		<gpCode type="str">EFDD</gpCode>
+		<gpFunctionCode type="str">MEF</gpFunctionCode>
+		<gpFunctionOrder type="int">400</gpFunctionOrder>
+		<updateDate type="str">2019-10-17T06:32:40.000+00:00</updateDate>
+		<entityTypeName type="str">MEP</entityTypeName>
+		<cv type="list"/>
+		<mandates type="list">
+			<item type="dict">
+				<mandateId type="int">15486</mandateId>
+				<personId type="int">124939</personId>
+				<startDateTime type="str">2014-07-01T08:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2019-07-02T07:59:59.000+00:00</endDateTime>
+				<mandateType type="str">EUR</mandateType>
+				<countryId type="int">62</countryId>
+				<countryIsoCode type="str">GB</countryIsoCode>
+				<circons type="str">South East</circons>
+			</item>
+		</mandates>
+		<functions type="list">
+			<item type="dict">
+				<identifier type="int">148934</identifier>
+				<memberIdentifier type="int">124939</memberIdentifier>
+				<startDate type="str">2016-04-10T22:00:00.000+00:00</startDate>
+				<endDate type="str">2016-11-18T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2016-11-21T13:58:24.000+00:00</updatedDate>
+				<functionCode type="str">SUF</functionCode>
+				<functionOrder type="int">380</functionOrder>
+				<organeId type="int">3951</organeId>
+				<organeCode type="str">C06</organeCode>
+				<organeOrder type="int">6</organeOrder>
+				<typeOrganeCode type="str">CO</typeOrganeCode>
+				<typeOrganeOrder type="int">50</typeOrganeOrder>
+				<startDateTime type="str">2016-04-10T22:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2016-11-19T22:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2016-11-21T13:58:24.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">144118</identifier>
+				<memberIdentifier type="int">124939</memberIdentifier>
+				<startDate type="str">2014-06-30T22:00:00.000+00:00</startDate>
+				<endDate type="str">2016-11-18T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2016-11-21T13:58:03.000+00:00</updatedDate>
+				<functionCode type="str">SUF</functionCode>
+				<functionOrder type="int">380</functionOrder>
+				<organeId type="int">3953</organeId>
+				<organeCode type="str">C08</organeCode>
+				<organeOrder type="int">8</organeOrder>
+				<typeOrganeCode type="str">CO</typeOrganeCode>
+				<typeOrganeOrder type="int">50</typeOrganeOrder>
+				<startDateTime type="str">2014-07-01T08:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2016-11-19T22:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2016-11-21T13:58:03.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">151553</identifier>
+				<memberIdentifier type="int">124939</memberIdentifier>
+				<startDate type="str">2017-01-25T23:00:00.000+00:00</startDate>
+				<endDate type="str">2018-12-11T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2018-12-13T08:21:43.000+00:00</updatedDate>
+				<functionCode type="str">SUF</functionCode>
+				<functionOrder type="int">380</functionOrder>
+				<organeId type="int">4966</organeId>
+				<organeCode type="str">C10</organeCode>
+				<organeOrder type="int">10</organeOrder>
+				<typeOrganeCode type="str">CO</typeOrganeCode>
+				<typeOrganeOrder type="int">50</typeOrganeOrder>
+				<startDateTime type="str">2017-01-25T23:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2018-12-12T22:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2018-12-13T08:21:43.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">148312</identifier>
+				<memberIdentifier type="int">124939</memberIdentifier>
+				<startDate type="str">2015-06-23T22:00:00.000+00:00</startDate>
+				<endDate type="str">2016-11-18T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2016-11-21T13:57:31.000+00:00</updatedDate>
+				<functionCode type="str">SUF</functionCode>
+				<functionOrder type="int">380</functionOrder>
+				<organeId type="int">3962</organeId>
+				<organeCode type="str">C17</organeCode>
+				<organeOrder type="int">17</organeOrder>
+				<typeOrganeCode type="str">CO</typeOrganeCode>
+				<typeOrganeOrder type="int">50</typeOrganeOrder>
+				<startDateTime type="str">2015-06-23T22:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2016-11-19T22:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2016-11-21T13:57:31.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">145049</identifier>
+				<memberIdentifier type="int">124939</memberIdentifier>
+				<startDate type="str">2014-06-30T22:00:00.000+00:00</startDate>
+				<endDate type="str">2014-11-04T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2014-11-06T16:59:00.000+00:00</updatedDate>
+				<functionCode type="str">SUF</functionCode>
+				<functionOrder type="int">380</functionOrder>
+				<organeId type="int">3966</organeId>
+				<organeCode type="str">SC01B</organeCode>
+				<organeOrder type="int">2</organeOrder>
+				<typeOrganeCode type="str">SC</typeOrganeCode>
+				<typeOrganeOrder type="int">60</typeOrganeOrder>
+				<startDateTime type="str">2014-07-01T08:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2014-11-05T22:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2014-11-06T16:59:00.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">148314</identifier>
+				<memberIdentifier type="int">124939</memberIdentifier>
+				<startDate type="str">2015-06-23T22:00:00.000+00:00</startDate>
+				<endDate type="str">2016-11-18T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2016-11-21T13:57:00.000+00:00</updatedDate>
+				<functionCode type="str">SUF</functionCode>
+				<functionOrder type="int">380</functionOrder>
+				<organeId type="int">4190</organeId>
+				<organeCode type="str">D22</organeCode>
+				<organeOrder type="int">22</organeOrder>
+				<typeOrganeCode type="str">DE</typeOrganeCode>
+				<typeOrganeOrder type="int">90</typeOrganeOrder>
+				<startDateTime type="str">2015-06-23T22:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2016-11-19T22:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2016-11-21T13:57:00.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">148315</identifier>
+				<memberIdentifier type="int">124939</memberIdentifier>
+				<startDate type="str">2015-06-23T22:00:00.000+00:00</startDate>
+				<endDate type="str">2016-11-18T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2016-11-21T13:56:31.000+00:00</updatedDate>
+				<functionCode type="str">SUF</functionCode>
+				<functionOrder type="int">380</functionOrder>
+				<organeId type="int">4191</organeId>
+				<organeCode type="str">D25</organeCode>
+				<organeOrder type="int">25</organeOrder>
+				<typeOrganeCode type="str">DE</typeOrganeCode>
+				<typeOrganeOrder type="int">90</typeOrganeOrder>
+				<startDateTime type="str">2015-06-23T22:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2016-11-19T22:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2016-11-21T13:56:31.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">141912</identifier>
+				<memberIdentifier type="int">124939</memberIdentifier>
+				<startDate type="str">2014-06-30T22:00:00.000+00:00</startDate>
+				<endDate type="str">2019-06-30T22:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-04-11T14:05:45.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">3945</organeId>
+				<organeCode type="str">PE</organeCode>
+				<typeOrganeCode type="str">PE</typeOrganeCode>
+				<typeOrganeOrder type="int">10</typeOrganeOrder>
+				<startDateTime type="str">2014-07-01T08:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2019-07-02T07:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2019-04-11T14:05:45.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">147644</identifier>
+				<memberIdentifier type="int">124939</memberIdentifier>
+				<startDate type="str">2014-06-30T22:00:00.000+00:00</startDate>
+				<endDate type="str">2014-10-14T22:00:00.000+00:00</endDate>
+				<updatedDate type="str">2015-11-02T10:56:16.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">4280</organeId>
+				<organeCode type="str">EFDD</organeCode>
+				<organeOrder type="int">95199</organeOrder>
+				<typeOrganeCode type="str">GP</typeOrganeCode>
+				<typeOrganeOrder type="int">40</typeOrganeOrder>
+				<startDateTime type="str">2014-07-01T08:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2014-10-15T21:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2015-11-02T10:56:16.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">147741</identifier>
+				<memberIdentifier type="int">124939</memberIdentifier>
+				<startDate type="str">2014-10-19T22:00:00.000+00:00</startDate>
+				<endDate type="str">2016-11-18T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2016-11-21T13:09:38.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">4880</organeId>
+				<organeCode type="str">EFDD</organeCode>
+				<organeOrder type="int">95799</organeOrder>
+				<typeOrganeCode type="str">GP</typeOrganeCode>
+				<typeOrganeOrder type="int">40</typeOrganeOrder>
+				<startDateTime type="str">2014-10-19T22:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2016-11-19T22:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2016-11-21T13:09:38.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">152930</identifier>
+				<memberIdentifier type="int">124939</memberIdentifier>
+				<startDate type="str">2018-12-12T23:00:00.000+00:00</startDate>
+				<endDate type="str">2019-06-30T22:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-05-16T09:47:36.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">4880</organeId>
+				<organeCode type="str">EFDD</organeCode>
+				<organeOrder type="int">95799</organeOrder>
+				<typeOrganeCode type="str">GP</typeOrganeCode>
+				<typeOrganeOrder type="int">40</typeOrganeOrder>
+				<startDateTime type="str">2018-12-12T23:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2019-07-02T07:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2019-05-16T09:47:36.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">149292</identifier>
+				<memberIdentifier type="int">124939</memberIdentifier>
+				<startDate type="str">2016-11-19T23:00:00.000+00:00</startDate>
+				<endDate type="str">2018-12-11T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2018-12-13T08:20:29.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">3968</organeId>
+				<organeCode type="str">NI</organeCode>
+				<organeOrder type="int">99999</organeOrder>
+				<typeOrganeCode type="str">GP</typeOrganeCode>
+				<typeOrganeOrder type="int">40</typeOrganeOrder>
+				<startDateTime type="str">2016-11-19T23:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2018-12-12T22:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2018-12-13T08:20:29.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">147645</identifier>
+				<memberIdentifier type="int">124939</memberIdentifier>
+				<startDate type="str">2014-10-15T22:00:00.000+00:00</startDate>
+				<endDate type="str">2014-10-18T22:00:00.000+00:00</endDate>
+				<updatedDate type="str">2014-10-21T09:40:00.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">3968</organeId>
+				<organeCode type="str">NI</organeCode>
+				<organeOrder type="int">99999</organeOrder>
+				<typeOrganeCode type="str">GP</typeOrganeCode>
+				<typeOrganeOrder type="int">40</typeOrganeOrder>
+				<startDateTime type="str">2014-10-15T22:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2014-10-19T21:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2014-10-21T09:40:00.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">148255</identifier>
+				<memberIdentifier type="int">124939</memberIdentifier>
+				<startDate type="str">2015-06-07T22:00:00.000+00:00</startDate>
+				<endDate type="str">2016-04-09T22:00:00.000+00:00</endDate>
+				<updatedDate type="str">2016-04-11T12:06:45.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">3951</organeId>
+				<organeCode type="str">C06</organeCode>
+				<organeOrder type="int">6</organeOrder>
+				<typeOrganeCode type="str">CO</typeOrganeCode>
+				<typeOrganeOrder type="int">50</typeOrganeOrder>
+				<startDateTime type="str">2015-06-07T22:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2016-04-10T21:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2016-04-11T12:06:45.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">147224</identifier>
+				<memberIdentifier type="int">124939</memberIdentifier>
+				<startDate type="str">2014-07-15T22:00:00.000+00:00</startDate>
+				<endDate type="str">2015-01-11T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2015-01-13T10:42:40.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">3955</organeId>
+				<organeCode type="str">C10</organeCode>
+				<organeOrder type="int">10</organeOrder>
+				<typeOrganeCode type="str">CO</typeOrganeCode>
+				<typeOrganeOrder type="int">50</typeOrganeOrder>
+				<startDateTime type="str">2014-07-15T22:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2015-01-12T22:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2015-01-13T10:42:40.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">151036</identifier>
+				<memberIdentifier type="int">124939</memberIdentifier>
+				<startDate type="str">2017-01-18T23:00:00.000+00:00</startDate>
+				<endDate type="str">2019-06-30T22:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-05-15T13:09:54.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">4974</organeId>
+				<organeCode type="str">C18</organeCode>
+				<organeOrder type="int">18</organeOrder>
+				<typeOrganeCode type="str">CO</typeOrganeCode>
+				<typeOrganeOrder type="int">50</typeOrganeOrder>
+				<startDateTime type="str">2017-01-18T23:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2019-07-02T07:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2019-05-15T13:09:54.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">149194</identifier>
+				<memberIdentifier type="int">124939</memberIdentifier>
+				<startDate type="str">2016-07-03T22:00:00.000+00:00</startDate>
+				<endDate type="str">2017-01-17T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2017-01-10T15:43:43.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">3963</organeId>
+				<organeCode type="str">C18</organeCode>
+				<organeOrder type="int">18</organeOrder>
+				<typeOrganeCode type="str">CO</typeOrganeCode>
+				<typeOrganeOrder type="int">50</typeOrganeOrder>
+				<startDateTime type="str">2016-07-03T22:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2017-01-18T22:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2017-01-10T15:43:43.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">151552</identifier>
+				<memberIdentifier type="int">124939</memberIdentifier>
+				<startDate type="str">2017-02-01T23:00:00.000+00:00</startDate>
+				<endDate type="str">2019-06-30T22:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-05-15T13:10:39.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">4976</organeId>
+				<organeCode type="str">C20</organeCode>
+				<organeOrder type="int">20</organeOrder>
+				<typeOrganeCode type="str">CO</typeOrganeCode>
+				<typeOrganeOrder type="int">50</typeOrganeOrder>
+				<startDateTime type="str">2017-02-01T23:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2019-07-02T07:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2019-05-15T13:10:39.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">141913</identifier>
+				<memberIdentifier type="int">124939</memberIdentifier>
+				<startDate type="str">2014-06-30T22:00:00.000+00:00</startDate>
+				<endDate type="str">2016-11-18T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2016-11-21T08:18:53.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">4051</organeId>
+				<organeCode type="str">UKIP</organeCode>
+				<typeOrganeCode type="str">PN</typeOrganeCode>
+				<typeOrganeOrder type="int">130</typeOrganeOrder>
+				<startDateTime type="str">2014-07-01T08:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2016-11-19T22:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2016-11-21T08:18:53.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">153031</identifier>
+				<memberIdentifier type="int">124939</memberIdentifier>
+				<startDate type="str">2019-02-04T23:00:00.000+00:00</startDate>
+				<endDate type="str">2019-06-30T22:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-04-17T14:37:08.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">5073</organeId>
+				<organeCode type="str">BREX</organeCode>
+				<typeOrganeCode type="str">PN</typeOrganeCode>
+				<typeOrganeOrder type="int">130</typeOrganeOrder>
+				<startDateTime type="str">2019-02-04T23:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2019-07-01T21:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2019-04-17T14:37:08.000+00:00</updateDate>
+			</item>
+			<item type="dict">
+				<identifier type="int">152927</identifier>
+				<memberIdentifier type="int">124939</memberIdentifier>
+				<startDate type="str">2016-11-19T23:00:00.000+00:00</startDate>
+				<endDate type="str">2019-02-03T23:00:00.000+00:00</endDate>
+				<updatedDate type="str">2019-04-17T14:36:32.000+00:00</updatedDate>
+				<functionCode type="str">MEF</functionCode>
+				<functionOrder type="int">400</functionOrder>
+				<organeId type="int">4951</organeId>
+				<organeCode type="str">Independent</organeCode>
+				<typeOrganeCode type="str">PN</typeOrganeCode>
+				<typeOrganeOrder type="int">130</typeOrganeOrder>
+				<startDateTime type="str">2016-11-19T23:00:00.000+00:00</startDateTime>
+				<endDateTime type="str">2019-02-04T22:59:59.000+00:00</endDateTime>
+				<updateDate type="str">2019-04-17T14:36:32.000+00:00</updateDate>
+			</item>
+		</functions>
+		<eaddresses type="list">
+			<item type="dict">
+				<address type="str">diane.james@europarl.europa.eu</address>
+				<addressType type="str">E-Mail</addressType>
+				<addressCodeType type="str">EMA</addressCodeType>
+				<order type="int">2</order>
+				<updatedDate type="str">2014-07-02T14:07:17.000+00:00</updatedDate>
+			</item>
+			<item type="dict">
+				<address type="str">diane.james@europarl.europa.eu</address>
+				<addressType type="str">Groupwise</addressType>
+				<addressCodeType type="str">GWS</addressCodeType>
+				<order type="int">1</order>
+				<updatedDate type="str">2014-06-04T15:58:34.000+00:00</updatedDate>
+			</item>
+			<item type="dict">
+				<address type="str"> https://twitter.com/DianeJamesMEP</address>
+				<addressType type="str">Twitter Profile</addressType>
+				<addressCodeType type="str">TWT</addressCodeType>
+				<order type="int">1</order>
+				<updatedDate type="str">2015-03-20T10:45:47.000+00:00</updatedDate>
+			</item>
+		</eaddresses>
+		<addresses type="list"/>
+		<seatBru type="int">0</seatBru>
+		<seatStr type="int">0</seatStr>
+	</item>
+</all>
