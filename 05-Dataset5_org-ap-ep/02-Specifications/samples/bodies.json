@@ -1,0 +1,1650 @@
+[
+	{
+		"bodyId" : 3947,
+		"bodyCode" : "C02",
+		"bodyType" : "CO",
+		"otherCode" : "CDEVE04",
+		"membersCount" : 28,
+		"order" : 2,
+		"europeanFlag" : false,
+		"delegComFlag" : false,
+		"neutralizedFlag" : false,
+		"activatedDate" : "2014-06-30T22:00:00.000+00:00",
+		"deletedDate" : "2017-01-17T23:00:00.000+00:00",
+		"startDateTime" : "2014-07-01T08:00:00.000+00:00",
+		"endDateTime" : "2017-01-18T22:59:59.000+00:00",
+		"accessibleStartDate" : "2014-05-14T22:00:00.000+00:00",
+		"accessibleEndDate" : "2017-01-17T23:00:00.000+00:00",
+		"descriptions" : [{
+				"descId" : 119427,
+				"langIsoCode" : "BG",
+				"shortName" : "Развитие",
+				"fullName" : "Комисия по развитие",
+				"upperName" : "КОМИСИЯ ПО РАЗВИТИЕ",
+				"mnemoCode" : "DEVE",
+				"bodyCode" : "C02",
+				"order" : 5
+			}, {
+				"descId" : 119433,
+				"langIsoCode" : "ES",
+				"shortName" : "Desarrollo",
+				"fullName" : "Comisión de Desarrollo",
+				"upperName" : "COMISIÓN DE DESARROLLO",
+				"mnemoCode" : "DEVE",
+				"bodyCode" : "C02",
+				"order" : 10
+			}, {
+				"descId" : 119428,
+				"langIsoCode" : "CS",
+				"shortName" : "Rozvoj",
+				"fullName" : "Výbor pro rozvoj",
+				"upperName" : "VÝBOR PRO ROZVOJ",
+				"mnemoCode" : "DEVE",
+				"bodyCode" : "C02",
+				"order" : 15
+			}, {
+				"descId" : 119429,
+				"langIsoCode" : "DA",
+				"shortName" : "Udvikling",
+				"fullName" : "Udviklingsudvalget",
+				"upperName" : "UDVIKLINGSUDVALGET",
+				"mnemoCode" : "DEVE",
+				"bodyCode" : "C02",
+				"order" : 20
+			}, {
+				"descId" : 119430,
+				"langIsoCode" : "DE",
+				"shortName" : "Entwicklung",
+				"fullName" : "Entwicklungsausschuss",
+				"upperName" : "ENTWICKLUNGSAUSSCHUSS",
+				"mnemoCode" : "DEVE",
+				"bodyCode" : "C02",
+				"order" : 25
+			}, {
+				"descId" : 119434,
+				"langIsoCode" : "ET",
+				"shortName" : "Areng",
+				"fullName" : "Arengukomisjon",
+				"upperName" : "ARENGUKOMISJON",
+				"mnemoCode" : "DEVE",
+				"bodyCode" : "C02",
+				"order" : 30
+			}, {
+				"descId" : 119431,
+				"langIsoCode" : "EL",
+				"shortName" : "Ανάπτυξη",
+				"fullName" : "Επιτροπή Ανάπτυξης",
+				"upperName" : "ΕΠΙΤΡΟΠΗ ΑΝΑΠΤΥΞΗΣ",
+				"mnemoCode" : "DEVE",
+				"bodyCode" : "C02",
+				"order" : 35
+			}, {
+				"descId" : 119432,
+				"langIsoCode" : "EN",
+				"shortName" : "Development",
+				"fullName" : "Committee on Development",
+				"upperName" : "COMMITTEE ON DEVELOPMENT",
+				"mnemoCode" : "DEVE",
+				"bodyCode" : "C02",
+				"order" : 40
+			}, {
+				"descId" : 119436,
+				"langIsoCode" : "FR",
+				"shortName" : "Développement",
+				"fullName" : "Commission du développement",
+				"upperName" : "COMMISSION DU DÉVELOPPEMENT",
+				"mnemoCode" : "DEVE",
+				"bodyCode" : "C02",
+				"order" : 45
+			}, {
+				"descId" : 119437,
+				"langIsoCode" : "GA",
+				"shortName" : "Forbairt",
+				"fullName" : "An Coiste um Fhorbairt",
+				"upperName" : "AN COISTE UM FHORBAIRT",
+				"mnemoCode" : "DEVE",
+				"bodyCode" : "C02",
+				"order" : 50
+			}, {
+				"descId" : 119438,
+				"langIsoCode" : "HR",
+				"shortName" : "Razvoj",
+				"fullName" : "Odbor za razvoj",
+				"upperName" : "ODBOR ZA RAZVOJ",
+				"mnemoCode" : "DEVE",
+				"bodyCode" : "C02",
+				"order" : 52
+			}, {
+				"descId" : 119440,
+				"langIsoCode" : "IT",
+				"shortName" : "Sviluppo",
+				"fullName" : "Commissione per lo sviluppo",
+				"upperName" : "COMMISSIONE PER LO SVILUPPO",
+				"mnemoCode" : "DEVE",
+				"bodyCode" : "C02",
+				"order" : 55
+			}, {
+				"descId" : 119442,
+				"langIsoCode" : "LV",
+				"shortName" : "Attīstība",
+				"fullName" : "Attīstības komiteja",
+				"upperName" : "ATTĪSTĪBAS KOMITEJA",
+				"mnemoCode" : "DEVE",
+				"bodyCode" : "C02",
+				"order" : 60
+			}, {
+				"descId" : 119441,
+				"langIsoCode" : "LT",
+				"shortName" : "Vystymasis",
+				"fullName" : "Vystymosi komitetas",
+				"upperName" : "VYSTYMOSI KOMITETAS",
+				"mnemoCode" : "DEVE",
+				"bodyCode" : "C02",
+				"order" : 65
+			}, {
+				"descId" : 119439,
+				"langIsoCode" : "HU",
+				"shortName" : "Fejlesztés",
+				"fullName" : "Fejlesztési Bizottság",
+				"upperName" : "FEJLESZTÉSI BIZOTTSÁG",
+				"mnemoCode" : "DEVE",
+				"bodyCode" : "C02",
+				"order" : 70
+			}, {
+				"descId" : 119443,
+				"langIsoCode" : "MT",
+				"shortName" : "Żvilupp",
+				"fullName" : "Kumitat għall-Iżvilupp",
+				"upperName" : "KUMITAT GĦALL-IŻVILUPP",
+				"mnemoCode" : "DEVE",
+				"bodyCode" : "C02",
+				"order" : 75
+			}, {
+				"descId" : 119444,
+				"langIsoCode" : "NL",
+				"shortName" : "Ontwikkelingssamenwerking",
+				"fullName" : "Commissie ontwikkelingssamenwerking",
+				"upperName" : "COMMISSIE ONTWIKKELINGSSAMENWERKING",
+				"mnemoCode" : "DEVE",
+				"bodyCode" : "C02",
+				"order" : 80
+			}, {
+				"descId" : 119445,
+				"langIsoCode" : "PL",
+				"shortName" : "Rozwój",
+				"fullName" : "Komisja Rozwoju",
+				"upperName" : "KOMISJA ROZWOJU",
+				"mnemoCode" : "DEVE",
+				"bodyCode" : "C02",
+				"order" : 85
+			}, {
+				"descId" : 119446,
+				"langIsoCode" : "PT",
+				"shortName" : "Desenvolvimento",
+				"fullName" : "Comissão do Desenvolvimento",
+				"upperName" : "COMISSÃO DO DESENVOLVIMENTO",
+				"mnemoCode" : "DEVE",
+				"bodyCode" : "C02",
+				"order" : 90
+			}, {
+				"descId" : 119447,
+				"langIsoCode" : "RO",
+				"shortName" : "Dezvoltare",
+				"fullName" : "Comisia pentru dezvoltare",
+				"upperName" : "COMISIA PENTRU DEZVOLTARE",
+				"mnemoCode" : "DEVE",
+				"bodyCode" : "C02",
+				"order" : 95
+			}, {
+				"descId" : 119448,
+				"langIsoCode" : "SK",
+				"shortName" : "Rozvoj",
+				"fullName" : "Výbor pre rozvoj",
+				"upperName" : "VÝBOR PRE ROZVOJ",
+				"mnemoCode" : "DEVE",
+				"bodyCode" : "C02",
+				"order" : 100
+			}, {
+				"descId" : 119449,
+				"langIsoCode" : "SL",
+				"shortName" : "Razvoj",
+				"fullName" : "Odbor za razvoj",
+				"upperName" : "ODBOR ZA RAZVOJ",
+				"mnemoCode" : "DEVE",
+				"bodyCode" : "C02",
+				"order" : 105
+			}, {
+				"descId" : 119435,
+				"langIsoCode" : "FI",
+				"shortName" : "Kehitys",
+				"fullName" : "Kehitysvaliokunta",
+				"upperName" : "KEHITYSVALIOKUNTA",
+				"mnemoCode" : "DEVE",
+				"bodyCode" : "C02",
+				"order" : 110
+			}, {
+				"descId" : 119450,
+				"langIsoCode" : "SV",
+				"shortName" : "Utveckling",
+				"fullName" : "Utskottet för utveckling",
+				"upperName" : "UTSKOTTET FÖR UTVECKLING",
+				"mnemoCode" : "DEVE",
+				"bodyCode" : "C02",
+				"order" : 115
+			}
+		],
+		"bodiesLinked" : [],
+		"referenceNumber" : 2857,
+		"updateDate" : "2018-06-21T06:32:31.000+00:00",
+		"updateUser" : "CBOOST"
+	}, 
+	{
+		"bodyId" : 4964,
+		"bodyCode" : "C08",
+		"bodyType" : "CO",
+		"otherCode" : "CENVI04",
+		"membersCount" : 69,
+		"observersCount" : 0,
+		"order" : 8,
+		"europeanFlag" : false,
+		"delegComFlag" : false,
+		"neutralizedFlag" : false,
+		"activatedDate" : "2017-01-18T23:00:00.000+00:00",
+		"deletedDate" : "2019-06-30T22:00:00.000+00:00",
+		"startDateTime" : "2017-01-18T23:00:00.000+00:00",
+		"endDateTime" : "2019-07-02T07:59:59.000+00:00",
+		"accessibleStartDate" : "2017-01-18T23:00:00.000+00:00",
+		"accessibleEndDate" : "2019-06-30T22:00:00.000+00:00",
+		"descriptions" : [{
+				"descId" : 133531,
+				"langIsoCode" : "BG",
+				"shortName" : "Oколна среда, обществено здраве и безопасност на храните",
+				"fullName" : "Комисия по околна среда, обществено здраве и безопасност на храните",
+				"upperName" : "КОМИСИЯ ПО ОКОЛНА СРЕДА, ОБЩЕСТВЕНО ЗДРАВЕ И БЕЗОПАСНОСТ НА ХРАНИТЕ",
+				"mnemoCode" : "ENVI",
+				"bodyCode" : "C08",
+				"order" : 5
+			}, {
+				"descId" : 133537,
+				"langIsoCode" : "ES",
+				"shortName" : "Medio Ambiente, Salud Pública y Seguridad Alimentaria",
+				"fullName" : "Comisión de Medio Ambiente, Salud Pública y Seguridad Alimentaria",
+				"upperName" : "COMISIÓN DE MEDIO AMBIENTE, SALUD PÚBLICA Y SEGURIDAD ALIMENTARIA",
+				"mnemoCode" : "ENVI",
+				"bodyCode" : "C08",
+				"order" : 10
+			}, {
+				"descId" : 133532,
+				"langIsoCode" : "CS",
+				"shortName" : "Životní prostředí, veřejné zdraví a bezpečnost potravin",
+				"fullName" : "Výbor pro životní prostředí, veřejné zdraví a bezpečnost potravin",
+				"upperName" : "VÝBOR PRO ŽIVOTNÍ PROSTŘEDÍ, VEŘEJNÉ ZDRAVÍ A BEZPEČNOST POTRAVIN",
+				"mnemoCode" : "ENVI",
+				"bodyCode" : "C08",
+				"order" : 15
+			}, {
+				"descId" : 133533,
+				"langIsoCode" : "DA",
+				"shortName" : "Miljø, Folkesundhed og Fødevaresikkerhed",
+				"fullName" : "Udvalget om Miljø, Folkesundhed og Fødevaresikkerhed",
+				"upperName" : "UDVALGET OM MILJØ, FOLKESUNDHED OG FØDEVARESIKKERHED",
+				"mnemoCode" : "ENVI",
+				"bodyCode" : "C08",
+				"order" : 20
+			}, {
+				"descId" : 133534,
+				"langIsoCode" : "DE",
+				"shortName" : "Umweltfragen, öffentliche Gesundheit und Lebensmittelsicherheit",
+				"fullName" : "Ausschuss für Umweltfragen, öffentliche Gesundheit und Lebensmittelsicherheit",
+				"upperName" : "AUSSCHUSS FÜR UMWELTFRAGEN, ÖFFENTLICHE GESUNDHEIT UND LEBENSMITTELSICHERHEIT",
+				"mnemoCode" : "ENVI",
+				"bodyCode" : "C08",
+				"order" : 25
+			}, {
+				"descId" : 133538,
+				"langIsoCode" : "ET",
+				"shortName" : "Keskkond, rahvatervis ja toiduohutus",
+				"fullName" : "Keskkonna-, rahvatervise ja toiduohutuse komisjon",
+				"upperName" : "KESKKONNA-, RAHVATERVISE- JA TOIDUOHUTUSE KOMISJON",
+				"mnemoCode" : "ENVI",
+				"bodyCode" : "C08",
+				"order" : 30
+			}, {
+				"descId" : 133535,
+				"langIsoCode" : "EL",
+				"shortName" : "Περιβάλλον, Δημόσια Υγεία και Ασφάλεια των Τροφίμων",
+				"fullName" : "Επιτροπή Περιβάλλοντος, Δημόσιας Υγείας και Ασφάλειας των Τροφίμων",
+				"upperName" : "ΕΠΙΤΡΟΠΗ ΠΕΡΙΒΑΛΛΟΝΤΟΣ, ΔΗΜΟΣΙΑΣ ΥΓΕΙΑΣ ΚΑΙ ΑΣΦΑΛΕΙΑΣ ΤΩΝ ΤΡΟΦΙΜΩΝ",
+				"mnemoCode" : "ENVI",
+				"bodyCode" : "C08",
+				"order" : 35
+			}, {
+				"descId" : 133536,
+				"langIsoCode" : "EN",
+				"shortName" : "Environment, Public Health and Food Safety",
+				"fullName" : "Committee on the Environment, Public Health and Food Safety",
+				"upperName" : "COMMITTEE ON THE ENVIRONMENT, PUBLIC HEALTH AND FOOD SAFETY",
+				"mnemoCode" : "ENVI",
+				"bodyCode" : "C08",
+				"order" : 40
+			}, {
+				"descId" : 133540,
+				"langIsoCode" : "FR",
+				"shortName" : "Environnement, santé publique et sécurité alimentaire",
+				"fullName" : "Commission de l'environnement, de la santé publique et de la sécurité alimentaire",
+				"upperName" : "COMMISSION DE L'ENVIRONNEMENT, DE LA SANTÉ PUBLIQUE ET DE LA SÉCURITÉ ALIMENTAIRE",
+				"mnemoCode" : "ENVI",
+				"bodyCode" : "C08",
+				"order" : 45
+			}, {
+				"descId" : 133541,
+				"langIsoCode" : "GA",
+				"shortName" : "An Comhshaol, Sláinte Phoiblí agus Sábháilteacht Bia",
+				"fullName" : "An Coiste um an gComhshaol, um Shláinte Phoiblí agus um Shábháilteacht Bia",
+				"upperName" : "AN COISTE UM AN GCOMHSHAOL, UM SHLÁINTE PHOIBLÍ AGUS UM SHÁBHÁILTEACHT BIA",
+				"mnemoCode" : "ENVI",
+				"bodyCode" : "C08",
+				"order" : 50
+			}, {
+				"descId" : 133542,
+				"langIsoCode" : "HR",
+				"shortName" : "Okoliš, javno zdravlje i sigurnost hrane",
+				"fullName" : "Odbor za okoliš, javno zdravlje i sigurnost hrane",
+				"upperName" : "ODBOR ZA OKOLIŠ, JAVNO ZDRAVLJE I SIGURNOST HRANE",
+				"mnemoCode" : "ENVI",
+				"bodyCode" : "C08",
+				"order" : 52
+			}, {
+				"descId" : 133544,
+				"langIsoCode" : "IT",
+				"shortName" : "Ambiente, sanità pubblica e sicurezza alimentare",
+				"fullName" : "Commissione per l'ambiente, la sanità pubblica e la sicurezza alimentare",
+				"upperName" : "COMMISSIONE PER L'AMBIENTE, LA SANITÀ PUBBLICA E LA SICUREZZA ALIMENTARE",
+				"mnemoCode" : "ENVI",
+				"bodyCode" : "C08",
+				"order" : 55
+			}, {
+				"descId" : 133546,
+				"langIsoCode" : "LV",
+				"shortName" : "Vide, sabiedrības veselība un pārtikas nekaitīgums",
+				"fullName" : "Vides, sabiedrības veselības un pārtikas nekaitīguma komiteja",
+				"upperName" : "VIDES, SABIEDRĪBAS VESELĪBAS UN PĀRTIKAS NEKAITĪGUMA KOMITEJA",
+				"mnemoCode" : "ENVI",
+				"bodyCode" : "C08",
+				"order" : 60
+			}, {
+				"descId" : 133545,
+				"langIsoCode" : "LT",
+				"shortName" : "Aplinka, visuomenės sveikata ir maisto sauga",
+				"fullName" : "Aplinkos, visuomenės sveikatos ir maisto saugos komitetas",
+				"upperName" : "APLINKOS, VISUOMENĖS SVEIKATOS IR MAISTO SAUGOS KOMITETAS",
+				"mnemoCode" : "ENVI",
+				"bodyCode" : "C08",
+				"order" : 65
+			}, {
+				"descId" : 133543,
+				"langIsoCode" : "HU",
+				"shortName" : "Környezetvédelem, közegészségügy és élelmiszer-biztonság",
+				"fullName" : "Környezetvédelmi, Közegészségügyi és Élelmiszer-biztonsági Bizottság",
+				"upperName" : "KÖRNYEZETVÉDELMI, KÖZEGÉSZSÉGÜGYI ÉS ÉLELMISZER-BIZTONSÁGI BIZOTTSÁG",
+				"mnemoCode" : "ENVI",
+				"bodyCode" : "C08",
+				"order" : 70
+			}, {
+				"descId" : 133547,
+				"langIsoCode" : "MT",
+				"shortName" : "Ambjent, Saħħa Pubblika u Sikurezza ta' l-Ikel",
+				"fullName" : "Kumitat għall-Ambjent, is-Saħħa Pubblika u s-Sikurezza ta' l-Ikel",
+				"upperName" : "KUMITAT GĦALL-AMBJENT, IS-SAĦĦA PUBBLIKA U S-SIKUREZZA TA' L-IKEL",
+				"mnemoCode" : "ENVI",
+				"bodyCode" : "C08",
+				"order" : 75
+			}, {
+				"descId" : 133548,
+				"langIsoCode" : "NL",
+				"shortName" : "Milieubeheer, volksgezondheid en voedselveiligheid",
+				"fullName" : "Commissie milieubeheer, volksgezondheid en voedselveiligheid",
+				"upperName" : "COMMISSIE MILIEUBEHEER, VOLKSGEZONDHEID EN VOEDSELVEILIGHEID",
+				"mnemoCode" : "ENVI",
+				"bodyCode" : "C08",
+				"order" : 80
+			}, {
+				"descId" : 133549,
+				"langIsoCode" : "PL",
+				"shortName" : "Ochrona Środowiska Naturalnego, Zdrowie Publiczne i Bezpieczeństwo Żywności",
+				"fullName" : "Komisja Ochrony Środowiska Naturalnego, Zdrowia Publicznego i Bezpieczeństwa Żywności",
+				"upperName" : "KOMISJA OCHRONY ŚRODOWISKA NATURALNEGO, ZDROWIA PUBLICZNEGO I BEZPIECZEŃSTWA ŻYWNOŚCI",
+				"mnemoCode" : "ENVI",
+				"bodyCode" : "C08",
+				"order" : 85
+			}, {
+				"descId" : 133550,
+				"langIsoCode" : "PT",
+				"shortName" : "Ambiente, Saúde Pública e Segurança Alimentar",
+				"fullName" : "Comissão do Ambiente, da Saúde Pública e da Segurança Alimentar",
+				"upperName" : "COMISSÃO DO AMBIENTE, DA SAÚDE PÚBLICA E DA SEGURANÇA ALIMENTAR",
+				"mnemoCode" : "ENVI",
+				"bodyCode" : "C08",
+				"order" : 90
+			}, {
+				"descId" : 133551,
+				"langIsoCode" : "RO",
+				"shortName" : "Mediu, sănătate publică și siguranță alimentară",
+				"fullName" : "Comisia pentru mediu, sănătate publică și siguranță alimentară",
+				"upperName" : "COMISIA PENTRU MEDIU, SĂNĂTATE PUBLICĂ ȘI SIGURANȚĂ ALIMENTARĂ",
+				"mnemoCode" : "ENVI",
+				"bodyCode" : "C08",
+				"order" : 95
+			}, {
+				"descId" : 133552,
+				"langIsoCode" : "SK",
+				"shortName" : "Životné prostredie, verejné zdravie a bezpečnosť potravín",
+				"fullName" : "Výbor pre životné prostredie, verejné zdravie a bezpečnosť potravín",
+				"upperName" : "VÝBOR PRE ŽIVOTNÉ PROSTREDIE, VEREJNÉ ZDRAVIE A BEZPEČNOSŤ POTRAVÍN",
+				"mnemoCode" : "ENVI",
+				"bodyCode" : "C08",
+				"order" : 100
+			}, {
+				"descId" : 133553,
+				"langIsoCode" : "SL",
+				"shortName" : "Okolje, javno zdravje in varnost hrane",
+				"fullName" : "Odbor za okolje, javno zdravje in varnost hrane",
+				"upperName" : "ODBOR ZA OKOLJE, JAVNO ZDRAVJE IN VARNOST HRANE",
+				"mnemoCode" : "ENVI",
+				"bodyCode" : "C08",
+				"order" : 105
+			}, {
+				"descId" : 133539,
+				"langIsoCode" : "FI",
+				"shortName" : "Ympäristö, kansanterveys ja elintarvikkeiden turvallisuus",
+				"fullName" : "Ympäristön, kansanterveyden ja elintarvikkeiden turvallisuuden valiokunta",
+				"upperName" : "YMPÄRISTÖN, KANSANTERVEYDEN JA ELINTARVIKKEIDEN TURVALLISUUDEN VALIOKUNTA",
+				"mnemoCode" : "ENVI",
+				"bodyCode" : "C08",
+				"order" : 110
+			}, {
+				"descId" : 133554,
+				"langIsoCode" : "SV",
+				"shortName" : "Miljö, folkhälsa och livsmedelssäkerhet",
+				"fullName" : "Utskottet för miljö, folkhälsa och livsmedelssäkerhet",
+				"upperName" : "UTSKOTTET FÖR MILJÖ, FOLKHÄLSA OCH LIVSMEDELSSÄKERHET",
+				"mnemoCode" : "ENVI",
+				"bodyCode" : "C08",
+				"order" : 115
+			}
+		],
+		"bodiesLinked" : [],
+		"referenceNumber" : 2865,
+		"updateDate" : "2019-05-15T13:05:52.000+00:00",
+		"updateUser" : "MMENTZELOPOULOU"
+	}, 
+	{
+		"bodyId" : 3964,
+		"bodyCode" : "C19",
+		"bodyType" : "CO",
+		"otherCode" : "CFEMM04",
+		"membersCount" : 35,
+		"order" : 19,
+		"europeanFlag" : false,
+		"delegComFlag" : false,
+		"neutralizedFlag" : true,
+		"activatedDate" : "2014-06-30T22:00:00.000+00:00",
+		"deletedDate" : "2017-01-17T23:00:00.000+00:00",
+		"startDateTime" : "2014-07-01T08:00:00.000+00:00",
+		"endDateTime" : "2017-01-18T22:59:59.000+00:00",
+		"accessibleStartDate" : "2014-05-14T22:00:00.000+00:00",
+		"accessibleEndDate" : "2017-01-17T23:00:00.000+00:00",
+		"descriptions" : [{
+				"descId" : 119835,
+				"langIsoCode" : "BG",
+				"shortName" : "Права на жените и равенството на половете",
+				"fullName" : "Комисия по правата на жените и равенството между половете",
+				"upperName" : "КОМИСИЯ ПО ПРАВАТА НА ЖЕНИТЕ И РАВЕНСТВОТО МЕЖДУ ПОЛОВЕТЕ",
+				"mnemoCode" : "FEMM",
+				"bodyCode" : "C19",
+				"order" : 5
+			}, {
+				"descId" : 119841,
+				"langIsoCode" : "ES",
+				"shortName" : "Derechos de la Mujer e Igualdad de Género",
+				"fullName" : "Comisión de Derechos de la Mujer e Igualdad de Género",
+				"upperName" : "COMISIÓN DE DERECHOS DE LA MUJER E IGUALDAD DE GÉNERO",
+				"mnemoCode" : "FEMM",
+				"bodyCode" : "C19",
+				"order" : 10
+			}, {
+				"descId" : 119836,
+				"langIsoCode" : "CS",
+				"shortName" : "Práva žen a rovnost pohlaví",
+				"fullName" : "Výbor pro práva žen a rovnost pohlaví",
+				"upperName" : "VÝBOR PRO PRÁVA ŽEN A ROVNOST POHLAVÍ",
+				"mnemoCode" : "FEMM",
+				"bodyCode" : "C19",
+				"order" : 15
+			}, {
+				"descId" : 119837,
+				"langIsoCode" : "DA",
+				"shortName" : "Kvinders Rettigheder og Ligestilling",
+				"fullName" : "Udvalget om Kvinders Rettigheder og Ligestilling",
+				"upperName" : "UDVALGET OM KVINDERS RETTIGHEDER OG LIGESTILLING",
+				"mnemoCode" : "FEMM",
+				"bodyCode" : "C19",
+				"order" : 20
+			}, {
+				"descId" : 119838,
+				"langIsoCode" : "DE",
+				"shortName" : "Rechte der Frau und Gleichstellung der Geschlechter",
+				"fullName" : "Ausschuss für die Rechte der Frau und die Gleichstellung der Geschlechter",
+				"upperName" : "AUSSCHUSS FÜR DIE RECHTE DER FRAU UND DIE GLEICHSTELLUNG DER GESCHLECHTER",
+				"mnemoCode" : "FEMM",
+				"bodyCode" : "C19",
+				"order" : 25
+			}, {
+				"descId" : 119842,
+				"langIsoCode" : "ET",
+				"shortName" : "Naiste õigused ja sooline võrdõiguslikkus",
+				"fullName" : "Naiste õiguste ja soolise võrdõiguslikkuse komisjon",
+				"upperName" : "NAISTE ÕIGUSTE JA SOOLISE VÕRDÕIGUSLIKKUSE KOMISJON",
+				"mnemoCode" : "FEMM",
+				"bodyCode" : "C19",
+				"order" : 30
+			}, {
+				"descId" : 119839,
+				"langIsoCode" : "EL",
+				"shortName" : "Δικαιώματα των Γυναικών και Ισότητα των Φύλων",
+				"fullName" : "Επιτροπή Δικαιωμάτων των Γυναικών και Ισότητας των Φύλων",
+				"upperName" : "ΕΠΙΤΡΟΠΗ ΔΙΚΑΙΩΜΑΤΩΝ ΤΩΝ ΓΥΝΑΙΚΩΝ ΚΑΙ ΙΣΟΤΗΤΑΣ ΤΩΝ ΦΥΛΩΝ",
+				"mnemoCode" : "FEMM",
+				"bodyCode" : "C19",
+				"order" : 35
+			}, {
+				"descId" : 119840,
+				"langIsoCode" : "EN",
+				"shortName" : "Women's Rights and Gender Equality",
+				"fullName" : "Committee on Women's Rights and Gender Equality",
+				"upperName" : "COMMITTEE ON WOMEN'S RIGHTS AND GENDER EQUALITY",
+				"mnemoCode" : "FEMM",
+				"bodyCode" : "C19",
+				"order" : 40
+			}, {
+				"descId" : 119844,
+				"langIsoCode" : "FR",
+				"shortName" : "Droits de la femme et égalité des genres",
+				"fullName" : "Commission des droits de la femme et de l'égalité des genres",
+				"upperName" : "COMMISSION DES DROITS DE LA FEMME ET DE L'ÉGALITÉ DES GENRES",
+				"mnemoCode" : "FEMM",
+				"bodyCode" : "C19",
+				"order" : 45
+			}, {
+				"descId" : 119845,
+				"langIsoCode" : "GA",
+				"shortName" : "Cearta na mBan agus Comhionannas Inscne",
+				"fullName" : "An Coiste um Cearta na mBan agus Comhionannas Inscne",
+				"upperName" : "AN COISTE UM CEARTA NA MBAN AGUS COMHIONANNAS INSCNE",
+				"mnemoCode" : "FEMM",
+				"bodyCode" : "C19",
+				"order" : 50
+			}, {
+				"descId" : 119846,
+				"langIsoCode" : "HR",
+				"shortName" : "Prava žena i jednakost spolova",
+				"fullName" : "Odbor za prava žena i jednakost spolova",
+				"upperName" : "ODBOR ZA PRAVA ŽENA I JEDNAKOST SPOLOVA",
+				"mnemoCode" : "FEMM",
+				"bodyCode" : "C19",
+				"order" : 52
+			}, {
+				"descId" : 119848,
+				"langIsoCode" : "IT",
+				"shortName" : "Diritti della donna e uguaglianza di genere",
+				"fullName" : "Commissione per i diritti della donna e l'uguaglianza di genere",
+				"upperName" : "COMMISSIONE PER I DIRITTI DELLA DONNA E L'UGUAGLIANZA DI GENERE",
+				"mnemoCode" : "FEMM",
+				"bodyCode" : "C19",
+				"order" : 55
+			}, {
+				"descId" : 119850,
+				"langIsoCode" : "LV",
+				"shortName" : "Sieviešu tiesības un dzimumu līdztiesība",
+				"fullName" : "Sieviešu tiesību un dzimumu līdztiesības komiteja",
+				"upperName" : "SIEVIEŠU TIESĪBU UN DZIMUMU LĪDZTIESĪBAS KOMITEJA",
+				"mnemoCode" : "FEMM",
+				"bodyCode" : "C19",
+				"order" : 60
+			}, {
+				"descId" : 119849,
+				"langIsoCode" : "LT",
+				"shortName" : "Moterų teisės ir lyčių lygybė",
+				"fullName" : "Moterų teisių ir lyčių lygybės komitetas",
+				"upperName" : "MOTERŲ TEISIŲ IR LYČIŲ LYGYBĖS KOMITETAS",
+				"mnemoCode" : "FEMM",
+				"bodyCode" : "C19",
+				"order" : 65
+			}, {
+				"descId" : 119847,
+				"langIsoCode" : "HU",
+				"shortName" : "Nők jogai és esélyegyenlőség",
+				"fullName" : "Nőjogi és Esélyegyenlőségi Bizottság",
+				"upperName" : "NŐJOGI ÉS ESÉLYEGYENLŐSÉGI BIZOTTSÁG",
+				"mnemoCode" : "FEMM",
+				"bodyCode" : "C19",
+				"order" : 70
+			}, {
+				"descId" : 119851,
+				"langIsoCode" : "MT",
+				"shortName" : "Drittijiet tan-Nisa u Ugwaljanza bejn is-Sessi",
+				"fullName" : "Kumitat għad-Drittijiet tan-Nisa u l-Ugwaljanza bejn is-Sessi",
+				"upperName" : "KUMITAT GĦAD-DRITTIJIET TAN-NISA U L-UGWALJANZA BEJN IS-SESSI",
+				"mnemoCode" : "FEMM",
+				"bodyCode" : "C19",
+				"order" : 75
+			}, {
+				"descId" : 119852,
+				"langIsoCode" : "NL",
+				"shortName" : "Rechten van de vrouw en gendergelijkheid",
+				"fullName" : "Commissie rechten van de vrouw en gendergelijkheid",
+				"upperName" : "COMMISSIE RECHTEN VAN DE VROUW EN GENDERGELIJKHEID",
+				"mnemoCode" : "FEMM",
+				"bodyCode" : "C19",
+				"order" : 80
+			}, {
+				"descId" : 119853,
+				"langIsoCode" : "PL",
+				"shortName" : "Prawa Kobiet i Równouprawnienie",
+				"fullName" : "Komisja Praw Kobiet i Równouprawnienia",
+				"upperName" : "KOMISJA PRAW KOBIET I RÓWNOUPRAWNIENIA",
+				"mnemoCode" : "FEMM",
+				"bodyCode" : "C19",
+				"order" : 85
+			}, {
+				"descId" : 119854,
+				"langIsoCode" : "PT",
+				"shortName" : "Direitos da Mulher e Igualdade dos Géneros",
+				"fullName" : "Comissão dos Direitos da Mulher e da Igualdade dos Géneros",
+				"upperName" : "COMISSÃO DOS DIREITOS DA MULHER E DA IGUALDADE DOS GÉNEROS",
+				"mnemoCode" : "FEMM",
+				"bodyCode" : "C19",
+				"order" : 90
+			}, {
+				"descId" : 119855,
+				"langIsoCode" : "RO",
+				"shortName" : "Drepturile femeii și egalitatea de gen",
+				"fullName" : "Comisia pentru drepturile femeii și egalitatea de gen",
+				"upperName" : "COMISIA PENTRU DREPTURILE FEMEII ȘI EGALITATEA DE GEN",
+				"mnemoCode" : "FEMM",
+				"bodyCode" : "C19",
+				"order" : 95
+			}, {
+				"descId" : 119856,
+				"langIsoCode" : "SK",
+				"shortName" : "Práva žien a rodová rovnosť",
+				"fullName" : "Výbor pre práva žien a rodovú rovnosť",
+				"upperName" : "VÝBOR PRE PRÁVA ŽIEN A RODOVÚ ROVNOSŤ",
+				"mnemoCode" : "FEMM",
+				"bodyCode" : "C19",
+				"order" : 100
+			}, {
+				"descId" : 119857,
+				"langIsoCode" : "SL",
+				"shortName" : "Pravice žensk in enakost spolov",
+				"fullName" : "Odbor za pravice žensk in enakost spolov",
+				"upperName" : "ODBOR ZA PRAVICE ŽENSK IN ENAKOST SPOLOV",
+				"mnemoCode" : "FEMM",
+				"bodyCode" : "C19",
+				"order" : 105
+			}, {
+				"descId" : 119843,
+				"langIsoCode" : "FI",
+				"shortName" : "Naisten oikeudet ja sukupuolten tasa-arvo",
+				"fullName" : "Naisten oikeuksien ja sukupuolten tasa-arvon valiokunta",
+				"upperName" : "NAISTEN OIKEUKSIEN JA SUKUPUOLTEN TASA-ARVON VALIOKUNTA",
+				"mnemoCode" : "FEMM",
+				"bodyCode" : "C19",
+				"order" : 110
+			}, {
+				"descId" : 119858,
+				"langIsoCode" : "SV",
+				"shortName" : "Kvinnors rättigheter och jämställdhet mellan kvinnor och män",
+				"fullName" : "Utskottet för kvinnors rättigheter och jämställdhet mellan kvinnor och män",
+				"upperName" : "UTSKOTTET FÖR KVINNORS RÄTTIGHETER OCH JÄMSTÄLLDHET MELLAN KVINNOR OCH MÄN",
+				"mnemoCode" : "FEMM",
+				"bodyCode" : "C19",
+				"order" : 115
+			}
+		],
+		"bodiesLinked" : [],
+		"referenceNumber" : 2877,
+		"updateDate" : "2018-06-21T06:32:36.000+00:00",
+		"updateUser" : "SSEBASTIANISTULTJENS"
+	}, 
+	{
+		"bodyId" : 4191,
+		"bodyCode" : "D25",
+		"bodyType" : "DE",
+		"membersCount" : 15,
+		"order" : 25,
+		"europeanFlag" : false,
+		"delegComFlag" : false,
+		"neutralizedFlag" : false,
+		"activatedDate" : "2014-07-13T22:00:00.000+00:00",
+		"deletedDate" : "2019-06-30T22:00:00.000+00:00",
+		"startDateTime" : "2014-07-13T22:00:00.000+00:00",
+		"endDateTime" : "2019-07-02T07:59:59.000+00:00",
+		"accessibleStartDate" : "2014-07-08T22:00:00.000+00:00",
+		"accessibleEndDate" : "2019-06-30T22:00:00.000+00:00",
+		"descriptions" : [{
+				"descId" : 125228,
+				"langIsoCode" : "BG",
+				"shortName" : "Южна Азия",
+				"fullName" : "Делегация за връзки с държавите от Южна Азия",
+				"upperName" : "ДЕЛЕГАЦИЯ ЗА ВРЪЗКИ С ДЪРЖАВИТЕ ОТ ЮЖНА АЗИЯ",
+				"mnemoCode" : "DSAS",
+				"bodyCode" : "D25",
+				"order" : 5
+			}, {
+				"descId" : 125234,
+				"langIsoCode" : "ES",
+				"shortName" : "Asia Meridional",
+				"fullName" : "Delegación para las Relaciones con los Países del Asia Meridional",
+				"upperName" : "DELEGACIÓN PARA LAS RELACIONES CON LOS PAÍSES DEL ASIA MERIDIONAL",
+				"mnemoCode" : "DSAS",
+				"bodyCode" : "D25",
+				"order" : 10
+			}, {
+				"descId" : 125227,
+				"langIsoCode" : "CS",
+				"shortName" : "Jižní Asie",
+				"fullName" : "Delegace pro vztahy se zeměmi jižní Asie",
+				"upperName" : "DELEGACE PRO VZTAHY SE ZEMĚMI JIŽNÍ ASIE",
+				"mnemoCode" : "DSAS",
+				"bodyCode" : "D25",
+				"order" : 15
+			}, {
+				"descId" : 125230,
+				"langIsoCode" : "DA",
+				"shortName" : "Sydasien",
+				"fullName" : "Delegationen for Forbindelserne med Landene i Sydasien",
+				"upperName" : "DELEGATIONEN FOR FORBINDELSERNE MED LANDENE I SYDASIEN",
+				"mnemoCode" : "DSAS",
+				"bodyCode" : "D25",
+				"order" : 20
+			}, {
+				"descId" : 125243,
+				"langIsoCode" : "DE",
+				"shortName" : "Südasien",
+				"fullName" : "Delegation für die Beziehungen zu den Ländern Südasiens",
+				"upperName" : "DELEGATION FÜR DIE BEZIEHUNGEN ZU DEN LÄNDERN SÜDASIENS",
+				"mnemoCode" : "DSAS",
+				"bodyCode" : "D25",
+				"order" : 25
+			}, {
+				"descId" : 125235,
+				"langIsoCode" : "ET",
+				"shortName" : "Lõuna-Aasia riigid",
+				"fullName" : "Delegatsioon Lõuna-Aasia riikidega suhtlemiseks",
+				"upperName" : "DELEGATSIOON LÕUNA-AASIA RIIKIDEGA SUHTLEMISEKS",
+				"mnemoCode" : "DSAS",
+				"bodyCode" : "D25",
+				"order" : 30
+			}, {
+				"descId" : 125232,
+				"langIsoCode" : "EL",
+				"shortName" : "Νότια Ασία",
+				"fullName" : "Αντιπροσωπεία για τις σχέσεις με τις χώρες της Νότιας Ασίας",
+				"upperName" : "ΑΝΤΙΠΡΟΣΩΠΕΊΑ ΓΙΑ ΤΙΣ ΣΧΈΣΕΙΣ ΜΕ ΤΙΣ ΧΏΡΕΣ ΤΗΣ ΝΌΤΙΑΣ ΑΣΊΑΣ",
+				"mnemoCode" : "DSAS",
+				"bodyCode" : "D25",
+				"order" : 35
+			}, {
+				"descId" : 125233,
+				"langIsoCode" : "EN",
+				"shortName" : "South Asia",
+				"fullName" : "Delegation for relations with the countries of South Asia",
+				"upperName" : "DELEGATION FOR RELATIONS WITH THE COUNTRIES OF SOUTH ASIA",
+				"mnemoCode" : "DSAS",
+				"bodyCode" : "D25",
+				"order" : 40
+			}, {
+				"descId" : 125237,
+				"langIsoCode" : "FR",
+				"shortName" : "Asie du Sud",
+				"fullName" : "Délégation pour les relations avec les pays de l'Asie du Sud",
+				"upperName" : "DÉLÉGATION POUR LES RELATIONS AVEC LES PAYS DE L'ASIE DU SUD",
+				"mnemoCode" : "DSAS",
+				"bodyCode" : "D25",
+				"order" : 45
+			}, {
+				"descId" : 125238,
+				"langIsoCode" : "GA",
+				"shortName" : "an Áise Theas",
+				"fullName" : "Toscaireacht don chaidreamh le tíortha na hÁise Theas",
+				"upperName" : "TOSCAIREACHT DON CHAIDREAMH LE TÍORTHA NA HÁISE THEAS",
+				"mnemoCode" : "DSAS",
+				"bodyCode" : "D25",
+				"order" : 50
+			}, {
+				"descId" : 125229,
+				"langIsoCode" : "HR",
+				"shortName" : "Južna Azija",
+				"fullName" : "Izaslanstvo za odnose s državama južne Azije",
+				"upperName" : "IZASLANSTVO ZA ODNOSE S DRŽAVAMA JUŽNE AZIJE",
+				"mnemoCode" : "DSAS",
+				"bodyCode" : "D25",
+				"order" : 52
+			}, {
+				"descId" : 125240,
+				"langIsoCode" : "IT",
+				"shortName" : "Asia meridionale",
+				"fullName" : "Delegazione per le relazioni con i paesi dell'Asia meridionale",
+				"upperName" : "DELEGAZIONE PER LE RELAZIONI CON I PAESI DELL'ASIA MERIDIONALE",
+				"mnemoCode" : "DSAS",
+				"bodyCode" : "D25",
+				"order" : 55
+			}, {
+				"descId" : 125242,
+				"langIsoCode" : "LV",
+				"shortName" : "Dienvidāzija",
+				"fullName" : "Delegācija attiecībām ar Dienvidāzijas valstīm",
+				"upperName" : "DELEGĀCIJA ATTIECĪBĀM AR DIENVIDĀZIJAS VALSTĪM",
+				"mnemoCode" : "DSAS",
+				"bodyCode" : "D25",
+				"order" : 60
+			}, {
+				"descId" : 125241,
+				"langIsoCode" : "LT",
+				"shortName" : "Pietų Azija",
+				"fullName" : "Delegacija ryšiams su Pietų Azijos šalimis",
+				"upperName" : "DELEGACIJA RYŠIAMS SU PIETŲ AZIJOS ŠALIMIS",
+				"mnemoCode" : "DSAS",
+				"bodyCode" : "D25",
+				"order" : 65
+			}, {
+				"descId" : 125239,
+				"langIsoCode" : "HU",
+				"shortName" : "Dél-Ázsia",
+				"fullName" : "A dél-ázsiai országokkal fenntartott kapcsolatokért felelős küldöttség",
+				"upperName" : "A DÉL-ÁZSIAI ORSZÁGOKKAL FENNTARTOTT KAPCSOLATOKÉRT FELELŐS KÜLDÖTTSÉG",
+				"mnemoCode" : "DSAS",
+				"bodyCode" : "D25",
+				"order" : 70
+			}, {
+				"descId" : 125231,
+				"langIsoCode" : "MT",
+				"shortName" : "Asja t'Isfel",
+				"fullName" : "Delegazzjoni għar-relazzjonijiet mal-pajjiżi tal-Asja t'Isfel",
+				"upperName" : "DELEGAZZJONI GĦAR-RELAZZJONIJIET MAL-PAJJIŻI TAL-ASJA T'ISFEL",
+				"mnemoCode" : "DSAS",
+				"bodyCode" : "D25",
+				"order" : 75
+			}, {
+				"descId" : 125244,
+				"langIsoCode" : "NL",
+				"shortName" : "Zuid-Azië",
+				"fullName" : "Delegatie voor de betrekkingen met de Zuid-Aziatische landen",
+				"upperName" : "DELEGATIE VOOR DE BETREKKINGEN MET DE ZUID-AZIATISCHE LANDEN",
+				"mnemoCode" : "DSAS",
+				"bodyCode" : "D25",
+				"order" : 80
+			}, {
+				"descId" : 125245,
+				"langIsoCode" : "PL",
+				"shortName" : "Azja Południowa",
+				"fullName" : "Delegacja do spraw stosunków z państwami Azji Południowej",
+				"upperName" : "DELEGACJA DO SPRAW STOSUNKÓW Z PAŃSTWAMI AZJI POŁUDNIOWEJ",
+				"mnemoCode" : "DSAS",
+				"bodyCode" : "D25",
+				"order" : 85
+			}, {
+				"descId" : 125222,
+				"langIsoCode" : "PT",
+				"shortName" : "Ásia do Sul",
+				"fullName" : "Delegação para as Relações com os Países da Ásia do Sul",
+				"upperName" : "DELEGAÇÃO PARA AS RELAÇÕES COM OS PAÍSES DA ÁSIA DO SUL",
+				"mnemoCode" : "DSAS",
+				"bodyCode" : "D25",
+				"order" : 90
+			}, {
+				"descId" : 125223,
+				"langIsoCode" : "RO",
+				"shortName" : "Asia de Sud",
+				"fullName" : "Delegația pentru relațiile cu țările din Asia de Sud",
+				"upperName" : "DELEGAȚIA PENTRU RELAȚIILE CU ȚĂRILE DIN ASIA DE SUD",
+				"mnemoCode" : "DSAS",
+				"bodyCode" : "D25",
+				"order" : 95
+			}, {
+				"descId" : 125224,
+				"langIsoCode" : "SK",
+				"shortName" : "Južná Ázia",
+				"fullName" : "Delegácia pre vzťahy s krajinami južnej Ázie",
+				"upperName" : "DELEGÁCIA PRE VZŤAHY S KRAJINAMI JUŽNEJ ÁZIE",
+				"mnemoCode" : "DSAS",
+				"bodyCode" : "D25",
+				"order" : 100
+			}, {
+				"descId" : 125225,
+				"langIsoCode" : "SL",
+				"shortName" : "Južna Azija",
+				"fullName" : "Delegacija za odnose z državami južne Azije",
+				"upperName" : "DELEGACIJA ZA ODNOSE Z DRŽAVAMI JUŽNE AZIJE",
+				"mnemoCode" : "DSAS",
+				"bodyCode" : "D25",
+				"order" : 105
+			}, {
+				"descId" : 125236,
+				"langIsoCode" : "FI",
+				"shortName" : "Etelä-Aasia",
+				"fullName" : "Suhteista Etelä-Aasian maihin vastaava valtuuskunta",
+				"upperName" : "SUHTEISTA ETELÄ-AASIAN MAIHIN VASTAAVA VALTUUSKUNTA",
+				"mnemoCode" : "DSAS",
+				"bodyCode" : "D25",
+				"order" : 110
+			}, {
+				"descId" : 125226,
+				"langIsoCode" : "SV",
+				"shortName" : "Sydasien",
+				"fullName" : "Delegationen för förbindelserna med länderna i Sydasien",
+				"upperName" : "DELEGATIONEN FÖR FÖRBINDELSERNA MED LÄNDERNA I SYDASIEN",
+				"mnemoCode" : "DSAS",
+				"bodyCode" : "D25",
+				"order" : 115
+			}
+		],
+		"bodiesLinked" : [],
+		"referenceNumber" : 4191,
+		"updateDate" : "2019-05-16T09:36:32.000+00:00",
+		"updateUser" : "MMENTZELOPOULOU"
+	}, 
+	{
+		"bodyId" : 3945,
+		"bodyCode" : "PE",
+		"bodyType" : "PE",
+		"membersCount" : 751,
+		"europeanFlag" : false,
+		"delegComFlag" : false,
+		"neutralizedFlag" : false,
+		"activatedDate" : "2014-06-30T22:00:00.000+00:00",
+		"deletedDate" : "2019-06-30T22:00:00.000+00:00",
+		"startDateTime" : "2014-07-01T08:00:00.000+00:00",
+		"endDateTime" : "2019-07-02T07:59:59.000+00:00",
+		"accessibleStartDate" : "2014-06-30T22:00:00.000+00:00",
+		"accessibleEndDate" : "2019-06-30T22:00:00.000+00:00",
+		"descriptions" : [{
+				"descId" : 119379,
+				"langIsoCode" : "BG",
+				"shortName" : "Европейски парламент",
+				"fullName" : "Европейски парламент",
+				"upperName" : "ЕВРОПЕЙСКИ ПАРЛАМЕНТ",
+				"bodyCode" : "PE",
+				"order" : 5
+			}, {
+				"descId" : 119385,
+				"langIsoCode" : "ES",
+				"shortName" : "Parlamento Europeo",
+				"fullName" : "Parlamento Europeo",
+				"upperName" : "PARLAMENTO EUROPEO",
+				"bodyCode" : "PE",
+				"order" : 10
+			}, {
+				"descId" : 119380,
+				"langIsoCode" : "CS",
+				"shortName" : "Evropský parlament",
+				"fullName" : "Evropský parlament",
+				"upperName" : "EVROPSKÝ PARLAMENT",
+				"bodyCode" : "PE",
+				"order" : 15
+			}, {
+				"descId" : 119381,
+				"langIsoCode" : "DA",
+				"shortName" : "Europa-Parlamentet",
+				"fullName" : "Europa-Parlamentet",
+				"upperName" : "EUROPA-PARLAMENTET",
+				"bodyCode" : "PE",
+				"order" : 20
+			}, {
+				"descId" : 119382,
+				"langIsoCode" : "DE",
+				"shortName" : "Europäisches Parlament",
+				"fullName" : "Europäisches Parlament",
+				"upperName" : "EUROPÄISCHES PARLAMENT",
+				"bodyCode" : "PE",
+				"order" : 25
+			}, {
+				"descId" : 119386,
+				"langIsoCode" : "ET",
+				"shortName" : "Euroopa Parlament",
+				"fullName" : "Euroopa Parlament",
+				"upperName" : "EUROOPA PARLAMENT",
+				"bodyCode" : "PE",
+				"order" : 30
+			}, {
+				"descId" : 119383,
+				"langIsoCode" : "EL",
+				"shortName" : "Ευρωπαϊκό Κοινοβούλιο",
+				"fullName" : "Ευρωπαϊκό Κοινοβούλιο",
+				"upperName" : "ΕΥΡΩΠΑΪΚΟ ΚΟΙΝΟΒΟΥΛΙΟ",
+				"bodyCode" : "PE",
+				"order" : 35
+			}, {
+				"descId" : 119384,
+				"langIsoCode" : "EN",
+				"shortName" : "European Parliament",
+				"fullName" : "European Parliament",
+				"upperName" : "EUROPEAN PARLIAMENT",
+				"bodyCode" : "PE",
+				"order" : 40
+			}, {
+				"descId" : 119388,
+				"langIsoCode" : "FR",
+				"shortName" : "Parlement européen",
+				"fullName" : "Parlement européen",
+				"upperName" : "PARLEMENT EUROPÉEN",
+				"bodyCode" : "PE",
+				"order" : 45
+			}, {
+				"descId" : 119389,
+				"langIsoCode" : "GA",
+				"shortName" : "Parlaimint na hEorpa",
+				"fullName" : "Parlaimint na hEorpa",
+				"upperName" : "PARLAIMINT NA HEORPA",
+				"bodyCode" : "PE",
+				"order" : 50
+			}, {
+				"descId" : 119390,
+				"langIsoCode" : "HR",
+				"shortName" : "Europski parlament",
+				"fullName" : "Europski parlament",
+				"upperName" : "EUROPSKI PARLAMENT",
+				"bodyCode" : "PE",
+				"order" : 52
+			}, {
+				"descId" : 119392,
+				"langIsoCode" : "IT",
+				"shortName" : "Parlamento europeo",
+				"fullName" : "Parlamento europeo",
+				"upperName" : "PARLAMENTO EUROPEO",
+				"bodyCode" : "PE",
+				"order" : 55
+			}, {
+				"descId" : 119394,
+				"langIsoCode" : "LV",
+				"shortName" : "Eiropas Parlaments",
+				"fullName" : "Eiropas Parlaments",
+				"upperName" : "EIROPAS PARLAMENTS",
+				"bodyCode" : "PE",
+				"order" : 60
+			}, {
+				"descId" : 119393,
+				"langIsoCode" : "LT",
+				"shortName" : "Europos Parlamentas",
+				"fullName" : "Europos Parlamentas",
+				"upperName" : "EUROPOS PARLAMENTAS",
+				"bodyCode" : "PE",
+				"order" : 65
+			}, {
+				"descId" : 119391,
+				"langIsoCode" : "HU",
+				"shortName" : "Európai Parlament",
+				"fullName" : "Európai Parlament",
+				"upperName" : "EURÓPAI PARLAMENT",
+				"bodyCode" : "PE",
+				"order" : 70
+			}, {
+				"descId" : 119395,
+				"langIsoCode" : "MT",
+				"shortName" : "Parlament Ewropew",
+				"fullName" : "Parlament Ewropew",
+				"upperName" : "PARLAMENT EWROPEW",
+				"bodyCode" : "PE",
+				"order" : 75
+			}, {
+				"descId" : 119396,
+				"langIsoCode" : "NL",
+				"shortName" : "Europees Parlement",
+				"fullName" : "Europees Parlement",
+				"upperName" : "EUROPEES PARLEMENT",
+				"bodyCode" : "PE",
+				"order" : 80
+			}, {
+				"descId" : 119397,
+				"langIsoCode" : "PL",
+				"shortName" : "Parlament Europejski",
+				"fullName" : "Parlament Europejski",
+				"upperName" : "PARLAMENT EUROPEJSKI",
+				"bodyCode" : "PE",
+				"order" : 85
+			}, {
+				"descId" : 119398,
+				"langIsoCode" : "PT",
+				"shortName" : "Parlamento Europeu",
+				"fullName" : "Parlamento Europeu",
+				"upperName" : "PARLAMENTO EUROPEU",
+				"bodyCode" : "PE",
+				"order" : 90
+			}, {
+				"descId" : 119399,
+				"langIsoCode" : "RO",
+				"shortName" : "Parlamentul European",
+				"fullName" : "Parlamentul European",
+				"upperName" : "PARLAMENTUL EUROPEAN",
+				"mnemoCode" : "Parlamentu",
+				"bodyCode" : "PE",
+				"order" : 95
+			}, {
+				"descId" : 119400,
+				"langIsoCode" : "SK",
+				"shortName" : "Európsky parlament",
+				"fullName" : "Európsky parlament",
+				"upperName" : "EURÓPSKY PARLAMENT",
+				"bodyCode" : "PE",
+				"order" : 100
+			}, {
+				"descId" : 119401,
+				"langIsoCode" : "SL",
+				"shortName" : "Evropski parlament",
+				"fullName" : "Evropski parlament",
+				"upperName" : "EVROPSKI PARLAMENT",
+				"bodyCode" : "PE",
+				"order" : 105
+			}, {
+				"descId" : 119387,
+				"langIsoCode" : "FI",
+				"shortName" : "Euroopan parlamentti",
+				"fullName" : "Euroopan parlamentti",
+				"upperName" : "EUROOPAN PARLAMENTTI",
+				"bodyCode" : "PE",
+				"order" : 110
+			}, {
+				"descId" : 119402,
+				"langIsoCode" : "SV",
+				"shortName" : "Europaparlamentet",
+				"fullName" : "Europaparlamentet",
+				"upperName" : "EUROPAPARLAMENTET",
+				"bodyCode" : "PE",
+				"order" : 115
+			}
+		],
+		"bodiesLinked" : [],
+		"referenceNumber" : 1085,
+		"updateDate" : "2019-05-27T07:37:27.000+00:00",
+		"updateUser" : "MMENTZELOPOULOU"
+	}, 
+	{
+		"bodyId" : 4283,
+		"bodyCode" : "ALDE",
+		"bodyType" : "GP",
+		"membersCount" : 69,
+		"order" : 93099,
+		"europeanFlag" : false,
+		"delegComFlag" : false,
+		"neutralizedFlag" : false,
+		"activatedDate" : "2014-06-30T22:00:00.000+00:00",
+		"deletedDate" : "2019-06-30T22:00:00.000+00:00",
+		"startDateTime" : "2014-07-01T08:00:00.000+00:00",
+		"endDateTime" : "2019-07-02T07:59:59.000+00:00",
+		"accessibleStartDate" : "2014-06-30T22:00:00.000+00:00",
+		"accessibleEndDate" : "2019-06-30T22:00:00.000+00:00",
+		"descriptions" : [{
+				"descId" : 127385,
+				"langIsoCode" : "BG",
+				"shortName" : "Алианс на либералите и демократите за Европа",
+				"fullName" : "Група на Алианса на либералите и демократите за Европа",
+				"upperName" : "ГРУПА НА АЛИАНСА НА ЛИБЕРАЛИТЕ И ДЕМОКРАТИТЕ ЗА ЕВРОПА",
+				"mnemoCode" : "АЛДЕ",
+				"bodyCode" : "ALDE",
+				"order" : 5
+			}, {
+				"descId" : 127391,
+				"langIsoCode" : "ES",
+				"shortName" : "Alianza de los Demócratas y Liberales por Europa",
+				"fullName" : "Grupo de la Alianza de los Demócratas y Liberales por Europa",
+				"upperName" : "GRUPO DE LA ALIANZA DE LOS DEMÓCRATAS Y LIBERALES POR EUROPA",
+				"mnemoCode" : "ADLE",
+				"bodyCode" : "ALDE",
+				"order" : 10
+			}, {
+				"descId" : 127386,
+				"langIsoCode" : "CS",
+				"shortName" : "Aliance liberálů a demokratů pro Evropu",
+				"fullName" : "Skupina Aliance liberálů a demokratů pro Evropu",
+				"upperName" : "SKUPINA ALIANCE LIBERÁLŮ A DEMOKRATŮ PRO EVROPU",
+				"mnemoCode" : "ALDE",
+				"bodyCode" : "ALDE",
+				"order" : 15
+			}, {
+				"descId" : 127387,
+				"langIsoCode" : "DA",
+				"shortName" : "Alliancen af Liberale og Demokrater for Europa",
+				"fullName" : "Gruppen Alliancen af Liberale og Demokrater for Europa",
+				"upperName" : "GRUPPEN ALLIANCEN AF LIBERALE OG DEMOKRATER FOR EUROPA",
+				"mnemoCode" : "ALDE",
+				"bodyCode" : "ALDE",
+				"order" : 20
+			}, {
+				"descId" : 127388,
+				"langIsoCode" : "DE",
+				"shortName" : "Allianz der Liberalen und Demokraten für Europa",
+				"fullName" : "Fraktion der Allianz der Liberalen und Demokraten für Europa",
+				"upperName" : "FRAKTION DER ALLIANZ DER LIBERALEN UND DEMOKRATEN FÜR EUROPA",
+				"mnemoCode" : "ALDE",
+				"bodyCode" : "ALDE",
+				"order" : 25
+			}, {
+				"descId" : 127392,
+				"langIsoCode" : "ET",
+				"shortName" : "Euroopa Demokraatide ja Liberaalide Liidu fraktsioon",
+				"fullName" : "Euroopa Demokraatide ja Liberaalide Liidu fraktsioon",
+				"upperName" : "EUROOPA DEMOKRAATIDE JA LIBERAALIDE LIIDU FRAKTSIOON",
+				"mnemoCode" : "ALDE",
+				"bodyCode" : "ALDE",
+				"order" : 30
+			}, {
+				"descId" : 127389,
+				"langIsoCode" : "EL",
+				"shortName" : "Συμμαχία Φιλελευθέρων και Δημοκρατών για την Ευρώπη",
+				"fullName" : "Ομάδα της Συμμαχίας Φιλελευθέρων και Δημοκρατών για την Ευρώπη",
+				"upperName" : "ΟΜΑΔΑ ΤΗΣ ΣΥΜΜΑΧΙΑΣ ΦΙΛΕΛΕΥΘΕΡΩΝ ΚΑΙ ΔΗΜΟΚΡΑΤΩΝ ΓΙΑ ΤΗΝ ΕΥΡΩΠΗ",
+				"mnemoCode" : "ALDE",
+				"bodyCode" : "ALDE",
+				"order" : 35
+			}, {
+				"descId" : 127390,
+				"langIsoCode" : "EN",
+				"shortName" : "Alliance of Liberals and Democrats for Europe",
+				"fullName" : "Group of the Alliance of Liberals and Democrats for Europe",
+				"upperName" : "GROUP OF THE ALLIANCE OF LIBERALS AND DEMOCRATS FOR EUROPE",
+				"mnemoCode" : "ALDE",
+				"bodyCode" : "ALDE",
+				"order" : 40
+			}, {
+				"descId" : 127394,
+				"langIsoCode" : "FR",
+				"shortName" : "Alliance des démocrates et libéraux pour l'Europe",
+				"fullName" : "Groupe Alliance des démocrates et des libéraux pour l'Europe",
+				"upperName" : "GROUPE ALLIANCE DES DÉMOCRATES ET DES LIBÉRAUX POUR L'EUROPE",
+				"mnemoCode" : "ADLE",
+				"bodyCode" : "ALDE",
+				"order" : 45
+			}, {
+				"descId" : 127395,
+				"langIsoCode" : "GA",
+				"shortName" : "Comhghuaillíocht na Liobarálaithe agus na nDaonlathaithe don Eoraip",
+				"fullName" : "Grúpa Chomhghuaillíocht na Liobarálaithe agus na nDaonlathaithe don Eoraip",
+				"upperName" : "GRÚPA CHOMHGHUAILLÍOCHT NA LIOBARÁLAITHE AGUS NA NDAONLATHAITHE DON EORAIP",
+				"mnemoCode" : "ALDE",
+				"bodyCode" : "ALDE",
+				"order" : 50
+			}, {
+				"descId" : 127396,
+				"langIsoCode" : "HR",
+				"shortName" : "Savez liberala i demokrata za Europu",
+				"fullName" : "Klub zastupnika Saveza liberala i demokrata za Europu",
+				"upperName" : "KLUB ZASTUPNIKA SAVEZA LIBERALA I DEMOKRATA ZA EUROPU",
+				"mnemoCode" : "ALDE",
+				"bodyCode" : "ALDE",
+				"order" : 52
+			}, {
+				"descId" : 127398,
+				"langIsoCode" : "IT",
+				"shortName" : "Alleanza dei Democratici e Liberali per l'Europa",
+				"fullName" : "Gruppo dell'Alleanza dei Democratici e dei Liberali per l'Europa",
+				"upperName" : "GRUPPO DELL'ALLEANZA DEI DEMOCRATICI E DEI LIBERALI PER L'EUROPA",
+				"mnemoCode" : "ADLE",
+				"bodyCode" : "ALDE",
+				"order" : 55
+			}, {
+				"descId" : 127400,
+				"langIsoCode" : "LV",
+				"shortName" : "Eiropas Liberāļu un demokrātu apvienība",
+				"fullName" : "Eiropas Liberāļu un demokrātu apvienības grupa",
+				"upperName" : "EIROPAS LIBERĀĻU UN DEMOKRĀTU APVIENĪBAS GRUPA",
+				"mnemoCode" : "ALDE",
+				"bodyCode" : "ALDE",
+				"order" : 60
+			}, {
+				"descId" : 127399,
+				"langIsoCode" : "LT",
+				"shortName" : "Liberalų ir demokratų aljansas už Europą",
+				"fullName" : "Liberalų ir demokratų aljanso už Europą frakcija",
+				"upperName" : "LIBERALŲ IR DEMOKRATŲ ALJANSO UŽ EUROPĄ FRAKCIJA",
+				"mnemoCode" : "ALDE",
+				"bodyCode" : "ALDE",
+				"order" : 65
+			}, {
+				"descId" : 127397,
+				"langIsoCode" : "HU",
+				"shortName" : "Liberálisok és Demokraták Szövetsége Európáért",
+				"fullName" : "Liberálisok és Demokraták Szövetsége Európáért képviselőcsoport",
+				"upperName" : "LIBERÁLISOK ÉS DEMOKRATÁK SZÖVETSÉGE EURÓPÁÉRT KÉPVISELŐCSOPORT",
+				"mnemoCode" : "ALDE",
+				"bodyCode" : "ALDE",
+				"order" : 70
+			}, {
+				"descId" : 127401,
+				"langIsoCode" : "MT",
+				"shortName" : "Alleanza tal-Liberali u d-Demokratiċi għall-Ewropa",
+				"fullName" : "Grupp ta' l-Alleanza tal-Liberali u d-Demokratiċi għall-Ewropa",
+				"upperName" : "GRUPP TA' L-ALLEANZA TAL-LIBERALI U D-DEMOKRATIĊI GĦALL-EWROPA",
+				"mnemoCode" : "ALDE",
+				"bodyCode" : "ALDE",
+				"order" : 75
+			}, {
+				"descId" : 127402,
+				"langIsoCode" : "NL",
+				"shortName" : "Alliantie van Liberalen en Democraten voor Europa",
+				"fullName" : "Fractie Alliantie van Liberalen en Democraten voor Europa",
+				"upperName" : "FRACTIE ALLIANTIE VAN LIBERALEN EN DEMOCRATEN VOOR EUROPA",
+				"mnemoCode" : "ALDE",
+				"bodyCode" : "ALDE",
+				"order" : 80
+			}, {
+				"descId" : 127403,
+				"langIsoCode" : "PL",
+				"shortName" : "Porozumienie Liberałów i Demokratów na rzecz Europy",
+				"fullName" : "Grupa Porozumienia Liberałów i Demokratów na rzecz Europy",
+				"upperName" : "GRUPA POROZUMIENIA LIBERAŁÓW I DEMOKRATÓW NA RZECZ EUROPY",
+				"mnemoCode" : "ALDE",
+				"bodyCode" : "ALDE",
+				"order" : 85
+			}, {
+				"descId" : 127404,
+				"langIsoCode" : "PT",
+				"shortName" : "Aliança dos Democratas e Liberais pela Europa",
+				"fullName" : "Grupo da Aliança dos Democratas e Liberais pela Europa",
+				"upperName" : "GRUPO DA ALIANÇA DOS DEMOCRATAS E LIBERAIS PELA EUROPA",
+				"mnemoCode" : "ALDE",
+				"bodyCode" : "ALDE",
+				"order" : 90
+			}, {
+				"descId" : 127405,
+				"langIsoCode" : "RO",
+				"shortName" : "Alianța Liberalilor și Democraților pentru Europa",
+				"fullName" : "Grupul Alianței Liberalilor și Democraților pentru Europa",
+				"upperName" : "GRUPUL ALIANȚEI LIBERALILOR ȘI DEMOCRAȚILOR PENTRU EUROPA",
+				"mnemoCode" : "ALDE",
+				"bodyCode" : "ALDE",
+				"order" : 95
+			}, {
+				"descId" : 127406,
+				"langIsoCode" : "SK",
+				"shortName" : "Aliancia liberálov a demokratov za Európu",
+				"fullName" : "Skupina Aliancie liberálov a demokratov za Európu",
+				"upperName" : "SKUPINA ALIANCIE LIBERÁLOV A DEMOKRATOV ZA EURÓPU",
+				"mnemoCode" : "ALDE",
+				"bodyCode" : "ALDE",
+				"order" : 100
+			}, {
+				"descId" : 127407,
+				"langIsoCode" : "SL",
+				"shortName" : "Zavezništvo liberalcev in demokratov za Evropo",
+				"fullName" : "Skupina Zavezništva liberalcev in demokratov za Evropo",
+				"upperName" : "SKUPINA ZAVEZNIŠTVA LIBERALCEV IN DEMOKRATOV ZA EVROPO",
+				"mnemoCode" : "ALDE",
+				"bodyCode" : "ALDE",
+				"order" : 105
+			}, {
+				"descId" : 127393,
+				"langIsoCode" : "FI",
+				"shortName" : "Euroopan liberaalidemokraattien liitto",
+				"fullName" : "Euroopan liberaalidemokraattien liiton ryhmä",
+				"upperName" : "EUROOPAN LIBERAALIDEMOKRAATTIEN LIITON RYHMÄ",
+				"mnemoCode" : "ALDE",
+				"bodyCode" : "ALDE",
+				"order" : 110
+			}, {
+				"descId" : 127408,
+				"langIsoCode" : "SV",
+				"shortName" : "Alliansen liberaler och demokrater för Europa",
+				"fullName" : "Gruppen Alliansen liberaler och demokrater för Europa",
+				"upperName" : "GRUPPEN ALLIANSEN LIBERALER OCH DEMOKRATER FÖR EUROPA",
+				"mnemoCode" : "ALDE",
+				"bodyCode" : "ALDE",
+				"order" : 115
+			}
+		],
+		"bodiesLinked" : [],
+		"referenceNumber" : 4279,
+		"updateDate" : "2019-06-30T23:00:06.000+00:00",
+		"updateUser" : "MMENTZELOPOULOU"
+	},
+	{
+		"bodyId" : 3954,
+		"bodyCode" : "C09",
+		"bodyType" : "CO",
+		"otherCode" : "CITRE04",
+		"membersCount" : 67,
+		"observersCount" : 0,
+		"order" : 9,
+		"europeanFlag" : false,
+		"delegComFlag" : false,
+		"neutralizedFlag" : false,
+		"activatedDate" : "2014-06-30T22:00:00.000+00:00",
+		"deletedDate" : "2017-01-17T23:00:00.000+00:00",
+		"startDateTime" : "2014-07-01T08:00:00.000+00:00",
+		"endDateTime" : "2017-01-18T22:59:59.000+00:00",
+		"accessibleStartDate" : "2014-05-14T22:00:00.000+00:00",
+		"accessibleEndDate" : "2017-01-17T23:00:00.000+00:00",
+		"descriptions" : [{
+				"descId" : 119595,
+				"langIsoCode" : "BG",
+				"shortName" : "Промишленост, изследвания и енергетика",
+				"fullName" : "Комисия по промишленост, изследвания и енергетика",
+				"upperName" : "КОМИСИЯ ПО ПРОМИШЛЕНОСТ, ИЗСЛЕДВАНИЯ И ЕНЕРГЕТИКА",
+				"mnemoCode" : "ITRE",
+				"bodyCode" : "C09",
+				"order" : 5
+			}, {
+				"descId" : 119601,
+				"langIsoCode" : "ES",
+				"shortName" : "Industria, Investigación y Energía",
+				"fullName" : "Comisión de Industria, Investigación y Energía",
+				"upperName" : "COMISIÓN DE INDUSTRIA, INVESTIGACIÓN Y ENERGÍA",
+				"mnemoCode" : "ITRE",
+				"bodyCode" : "C09",
+				"order" : 10
+			}, {
+				"descId" : 119596,
+				"langIsoCode" : "CS",
+				"shortName" : "Průmysl, výzkum a energetika",
+				"fullName" : "Výbor pro průmysl, výzkum a energetiku",
+				"upperName" : "VÝBOR PRO PRŮMYSL, VÝZKUM A ENERGETIKU",
+				"mnemoCode" : "ITRE",
+				"bodyCode" : "C09",
+				"order" : 15
+			}, {
+				"descId" : 119597,
+				"langIsoCode" : "DA",
+				"shortName" : "Industri, Forskning og Energi",
+				"fullName" : "Udvalget om Industri, Forskning og Energi",
+				"upperName" : "UDVALGET OM INDUSTRI, FORSKNING OG ENERGI",
+				"mnemoCode" : "ITRE",
+				"bodyCode" : "C09",
+				"order" : 20
+			}, {
+				"descId" : 119598,
+				"langIsoCode" : "DE",
+				"shortName" : "Industrie, Forschung und Energie",
+				"fullName" : "Ausschuss für Industrie, Forschung und Energie",
+				"upperName" : "AUSSCHUSS FÜR INDUSTRIE, FORSCHUNG UND ENERGIE",
+				"mnemoCode" : "ITRE",
+				"bodyCode" : "C09",
+				"order" : 25
+			}, {
+				"descId" : 119602,
+				"langIsoCode" : "ET",
+				"shortName" : "Tööstus, teadusuuringud ja energeetika",
+				"fullName" : "Tööstuse, teadusuuringute ja energeetikakomisjon",
+				"upperName" : "TÖÖSTUSE, TEADUSUURINGUTE JA ENERGEETIKAKOMISJON",
+				"mnemoCode" : "ITRE",
+				"bodyCode" : "C09",
+				"order" : 30
+			}, {
+				"descId" : 119599,
+				"langIsoCode" : "EL",
+				"shortName" : "Βιομηχανία, Έρευνα και Ενέργεια",
+				"fullName" : "Επιτροπή Βιομηχανίας, Έρευνας και Ενέργειας",
+				"upperName" : "ΕΠΙΤΡΟΠΗ ΒΙΟΜΗΧΑΝΙΑΣ, ΕΡΕΥΝΑΣ ΚΑΙ ΕΝΕΡΓΕΙΑΣ",
+				"mnemoCode" : "ITRE",
+				"bodyCode" : "C09",
+				"order" : 35
+			}, {
+				"descId" : 119600,
+				"langIsoCode" : "EN",
+				"shortName" : "Industry, Research and Energy",
+				"fullName" : "Committee on Industry, Research and Energy",
+				"upperName" : "COMMITTEE ON INDUSTRY, RESEARCH AND ENERGY",
+				"mnemoCode" : "ITRE",
+				"bodyCode" : "C09",
+				"order" : 40
+			}, {
+				"descId" : 119604,
+				"langIsoCode" : "FR",
+				"shortName" : "Industrie, recherche et énergie",
+				"fullName" : "Commission de l'industrie, de la recherche et de l'énergie",
+				"upperName" : "COMMISSION DE L'INDUSTRIE, DE LA RECHERCHE ET DE L'ÉNERGIE",
+				"mnemoCode" : "ITRE",
+				"bodyCode" : "C09",
+				"order" : 45
+			}, {
+				"descId" : 119605,
+				"langIsoCode" : "GA",
+				"shortName" : "Tionsclaíocht, Taighde agus Fuinneamh",
+				"fullName" : "An Coiste um Thionsclaíocht, um Thaighde agus um Fhuinneamh",
+				"upperName" : "AN COISTE UM THIONSCLAÍOCHT, UM THAIGHDE AGUS UM FHUINNEAMH",
+				"mnemoCode" : "ITRE",
+				"bodyCode" : "C09",
+				"order" : 50
+			}, {
+				"descId" : 119606,
+				"langIsoCode" : "HR",
+				"shortName" : "Industrija, istraživanje i energija",
+				"fullName" : "Odbor za industriju, istraživanje i energiju",
+				"upperName" : "ODBOR ZA INDUSTRIJU, ISTRAŽIVANJE I ENERGIJU",
+				"mnemoCode" : "ITRE",
+				"bodyCode" : "C09",
+				"order" : 52
+			}, {
+				"descId" : 119608,
+				"langIsoCode" : "IT",
+				"shortName" : "Industria, ricerca e energia",
+				"fullName" : "Commissione per l'industria, la ricerca e l'energia",
+				"upperName" : "COMMISSIONE PER L'INDUSTRIA, LA RICERCA E L'ENERGIA",
+				"mnemoCode" : "ITRE",
+				"bodyCode" : "C09",
+				"order" : 55
+			}, {
+				"descId" : 119610,
+				"langIsoCode" : "LV",
+				"shortName" : "Rūpniecība, pētniecība un enerģētika",
+				"fullName" : "Rūpniecības, pētniecības un enerģētikas komiteja",
+				"upperName" : "RŪPNIECĪBAS, PĒTNIECĪBAS UN ENERĢĒTIKAS KOMITEJA",
+				"mnemoCode" : "ITRE",
+				"bodyCode" : "C09",
+				"order" : 60
+			}, {
+				"descId" : 119609,
+				"langIsoCode" : "LT",
+				"shortName" : "Pramonė, moksliniai tyrimai ir energetika",
+				"fullName" : "Pramonės, mokslinių tyrimų ir energetikos komitetas",
+				"upperName" : "PRAMONĖS, MOKSLINIŲ TYRIMŲ IR ENERGETIKOS KOMITETAS",
+				"mnemoCode" : "ITRE",
+				"bodyCode" : "C09",
+				"order" : 65
+			}, {
+				"descId" : 119607,
+				"langIsoCode" : "HU",
+				"shortName" : "Ipar, kutatás és energiaügy",
+				"fullName" : "Ipari, Kutatási és Energiaügyi Bizottság",
+				"upperName" : "IPARI, KUTATÁSI ÉS ENERGIAÜGYI BIZOTTSÁG",
+				"mnemoCode" : "ITRE",
+				"bodyCode" : "C09",
+				"order" : 70
+			}, {
+				"descId" : 119611,
+				"langIsoCode" : "MT",
+				"shortName" : "Industrija, Riċerka u Enerġija",
+				"fullName" : "Kumitat għall-Industrija, ir-Riċerka u l-Enerġija",
+				"upperName" : "KUMITAT GĦALL-INDUSTRIJA, IR-RIĊERKA U L-ENERĠIJA",
+				"mnemoCode" : "ITRE",
+				"bodyCode" : "C09",
+				"order" : 75
+			}, {
+				"descId" : 119612,
+				"langIsoCode" : "NL",
+				"shortName" : "Industrie, onderzoek en energie",
+				"fullName" : "Commissie industrie, onderzoek en energie",
+				"upperName" : "COMMISSIE INDUSTRIE, ONDERZOEK EN ENERGIE",
+				"mnemoCode" : "ITRE",
+				"bodyCode" : "C09",
+				"order" : 80
+			}, {
+				"descId" : 119613,
+				"langIsoCode" : "PL",
+				"shortName" : "Przemysł, Badania Naukowe i Energia",
+				"fullName" : "Komisja Przemysłu, Badań Naukowych i Energii",
+				"upperName" : "KOMISJA PRZEMYSŁU, BADAŃ NAUKOWYCH I ENERGII",
+				"mnemoCode" : "ITRE",
+				"bodyCode" : "C09",
+				"order" : 85
+			}, {
+				"descId" : 119614,
+				"langIsoCode" : "PT",
+				"shortName" : "Indústria, Investigação e Energia",
+				"fullName" : "Comissão da Indústria, da Investigação e da Energia",
+				"upperName" : "COMISSÃO DA INDÚSTRIA, DA INVESTIGAÇÃO E DA ENERGIA",
+				"mnemoCode" : "ITRE",
+				"bodyCode" : "C09",
+				"order" : 90
+			}, {
+				"descId" : 119615,
+				"langIsoCode" : "RO",
+				"shortName" : "Industrie, cercetare și energie",
+				"fullName" : "Comisia pentru industrie, cercetare și energie",
+				"upperName" : "COMISIA PENTRU INDUSTRIE, CERCETARE ȘI ENERGIE",
+				"mnemoCode" : "ITRE",
+				"bodyCode" : "C09",
+				"order" : 95
+			}, {
+				"descId" : 119616,
+				"langIsoCode" : "SK",
+				"shortName" : "Priemysel, výskum a energetika",
+				"fullName" : "Výbor pre priemysel, výskum a energetiku",
+				"upperName" : "VÝBOR PRE PRIEMYSEL, VÝSKUM A ENERGETIKU",
+				"mnemoCode" : "ITRE",
+				"bodyCode" : "C09",
+				"order" : 100
+			}, {
+				"descId" : 119617,
+				"langIsoCode" : "SL",
+				"shortName" : "Industrija, raziskave in energetika",
+				"fullName" : "Odbor za industrijo, raziskave in energetiko",
+				"upperName" : "ODBOR ZA INDUSTRIJO, RAZISKAVE IN ENERGETIKO",
+				"mnemoCode" : "ITRE",
+				"bodyCode" : "C09",
+				"order" : 105
+			}, {
+				"descId" : 119603,
+				"langIsoCode" : "FI",
+				"shortName" : "Teollisuus, tutkimus ja energia",
+				"fullName" : "Teollisuus-, tutkimus- ja energiavaliokunta",
+				"upperName" : "TEOLLISUUS-, TUTKIMUS- JA ENERGIAVALIOKUNTA",
+				"mnemoCode" : "ITRE",
+				"bodyCode" : "C09",
+				"order" : 110
+			}, {
+				"descId" : 119618,
+				"langIsoCode" : "SV",
+				"shortName" : "Industrifrågor, forskning och energi",
+				"fullName" : "Utskottet för industrifrågor, forskning och energi",
+				"upperName" : "UTSKOTTET FÖR INDUSTRIFRÅGOR, FORSKNING OCH ENERGI",
+				"mnemoCode" : "ITRE",
+				"bodyCode" : "C09",
+				"order" : 115
+			}
+		],
+		"bodiesLinked" : [],
+		"referenceNumber" : 2866,
+		"updateDate" : "2018-06-21T06:32:33.000+00:00",
+		"updateUser" : "CBOOST"
+	}
+]
