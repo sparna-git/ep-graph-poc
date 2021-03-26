@@ -3,6 +3,7 @@
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
          xmlns:schema="http://schema.org/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
 >
 
 <ep-org:MEP rdf:about="http://data.europarl.europa.eu/resource/person/124936">
