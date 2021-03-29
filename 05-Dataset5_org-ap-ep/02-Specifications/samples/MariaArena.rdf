@@ -4,6 +4,7 @@
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
          xmlns:schema="http://schema.org/"
          xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:org="http://www.w3.org/ns/org#"
 >
 
 <ep-org:MEP rdf:about="http://data.europarl.europa.eu/resource/person/124936">
@@ -22,13 +23,25 @@
 	<schema:honorificPrefix rdf:resource="http://data.europarl.europa.eu/authority/civility/MME"/>
 	<schema:nationality rdf:resource="http://publications.europa.eu/resource/authority/country/BEL"/>
 
+	<!-- ContactPoint electronic -->
 	<schema:contactPoint>
 		<schema:ContactPoint rdf:about="http://data.europarl.europa.eu/resource/contact-point/electronic/124936/FBP1234">
 			<schema:contactType rdf:resource="http://data.europarl.europa.eu/authority/contact-point-type-type/FBP"/>
 			<schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.facebook.com/marie.arena</schema:url>
 		</schema:ContactPoint>
 	</schema:contactPoint>
-	<!-- Meme chose pour les autres ContactPoint -->
+	
+	<!-- ContactPoint PostalAdress -->
+	<schema:contactPoint>
+		<schema:PostalAddress rdf:about="http://data.europarl.europa.eu/resource/contact-point/place/124936/15G305">
+			<ep-org:hasSite rdf:resource="http://publications.europa.eu/resource/authority/site/ASP"/>
+			<ep-org:officeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15G305</ep-org:officeId>
+			<schema:addressCountry rdf:resource="http://publications.europa.eu/resource/authority/country/BEL"/>
+			<schema:addressLocality rdf:resource="http://publications.europa.eu/resource/authority/place/BEL_BRU"/>
+			<schema:faxNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0032 2 28 49690</schema:faxNumber>
+			<schema:telephone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0032 2 28 45690</schema:telephone>
+		</schema:PostalAddress>
+	</schema:contactPoint>
 
 	<!-- Mandat -->
 	<org:hasMembership>
