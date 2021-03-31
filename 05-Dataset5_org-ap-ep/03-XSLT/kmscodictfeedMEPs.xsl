@@ -15,40 +15,6 @@
 	<xsl:import href="uris.xsl" />
 	<!-- Import builtins stylesheet -->
 	<xsl:import href="builtins.xsl" />
-	<!-- Document -->
-	<xsl:param name="gender_file"
-		select="document('Gender.xml')/all/item" />
-	<xsl:param name="country_file"
-		select="document('countryISO_.xml')/root/row" />
-	<!-- fonction -->
-	<xsl:function name="ep:Lookup">
-		<xsl:param name="dataInput" />
-		<xsl:param name="Document" />
-		<xsl:param name="KeyDocto" />
-		<xsl:choose>
-			<xsl:when test="$dataInput = 'Gender'">
-				<xsl:for-each select="$Document">
-					<xsl:choose>
-						<xsl:when test="isoCode = $KeyDocto">
-							<xsl:value-of select="referenceCode" />
-						</xsl:when>
-					</xsl:choose>
-				</xsl:for-each>
-			</xsl:when>
-			<xsl:when test="$dataInput = 'Countries'">
-				<xsl:for-each select="$Document">
-					<xsl:choose>
-						<xsl:when test="Alpha-2 = $KeyDocto">
-							<xsl:value-of select="Alpha-3" />
-						</xsl:when>
-					</xsl:choose>
-				</xsl:for-each>
-			</xsl:when>
-		</xsl:choose>
-
-
-
-	</xsl:function>
 
 	<xsl:output indent="yes" method="xml" />
 
@@ -63,6 +29,10 @@
 	</xsl:template>
 
 	<xsl:template match="all/item">
+
+		<!-- Variables -->
+		<xsl:variable name="IdMEP" select="identifier" />
+
 		<ep:MEP rdf:about="{ep:URI-MEP(identifier)}">
 			<!-- CV -->
 			<xsl:for-each select="cv/item">
@@ -79,9 +49,6 @@
 					</xsl:when>
 				</xsl:choose>
 			</xsl:for-each>
-
-
-
 
 			<ep-org:dateEndActivity
 				rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
@@ -113,19 +80,58 @@
 			<foaf:img
 				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 				<xsl:value-of
-					select="concat('www.europarl.europa.eu/mepphoto/',identifier,'.jpg')" />
+					select="ep:URI-MEPPHOTO(identifier)" />
 			</foaf:img>
 
 			<schema:gender
-				rdf:resource="{concat('http://data.europarl.europa.eu/authority/gender/',ep:Lookup('Gender',$gender_file,genderIsoCode))}" />
+				rdf:resource="{ep:URI-MEPGENDER(genderIsoCode)}" />
 			<schema:honorificPrefix
-				rdf:resource="{concat('http://data.europarl.europa.eu/authority/civility/',titleCode)}" />
+				rdf:resource="{ep:URI-MEPCIVILITY(titleCode)}" />
 			<schema:birthPlace
-				rdf:resource="{concat('http://publications.europa.eu/resource/authority/place/',ep:Lookup('Countries',$country_file,countryIsoCode),'_',birthPlace)}" />
+				rdf:resource="{ep:URI-MEPBIRTHPLACE(countryIsoCode,birthPlace)}" />
 			<schema:nationality
-				rdf:resource="{concat('http://publications.europa.eu/resource/authority/country/',ep:Lookup('Countries',$country_file,countryIsoCode))}" />
+				rdf:resource="{ep:URI-MEPNATIONALITY(countryIsoCode)}" />
 			<xsl:apply-templates />
 		</ep:MEP>
+		<!-- Assistant -->
+		<xsl:for-each select="assistants/item">
+			<ep-org:Person
+				rdf:about="{ep:URI-ASSISTANT(identifier)}">
+				<ep-org:hasPersonType
+					rdf:resource="{ep:URI-AutorityPERSON('AST-APA')}" />
+				<ep-org:personId
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">identifier</ep-org:personId>
+				<ep-org:upperFamilyName
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+					<xsl:value-of select="upperFamilyName" />
+				</ep-org:upperFamilyName>
+				<ep-org:upperFirstName
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+					<xsl:value-of select="upperFirstName" />
+				</ep-org:upperFirstName>
+				<foaf:familyName
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+					<xsl:value-of select="richFamilyName" />
+				</foaf:familyName>
+				<foaf:firstName
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+					<xsl:value-of select="richFirstName" />
+				</foaf:firstName>
+
+				<org:hasMembership>
+					<ep-org:Membership
+						rdf:about="{ep:URI-MEMBERSHIP(identifier,identifier)}">
+						<ep-org:hasMembershipType
+							rdf:resource="{ep:URI-MembershipType('PERSON')}" />
+						<ep-org:hasOrganization
+							rdf:resource="{ep:URI-Person(ancestor::identifier)}" />
+						<org:role
+							rdf:resource="{ep:URI-AutorityFUNCTION('ASSISTANT')}" />
+					</ep-org:Membership>
+				</org:hasMembership>
+
+			</ep-org:Person>
+		</xsl:for-each>
 	</xsl:template>
 
 	<!-- ContactPoint electronic -->
@@ -133,9 +139,9 @@
 		<schema:contactPoint>
 			<xsl:for-each select="item/addressCodeType">
 				<schema:ContactPoint
-					rdf:about="{concat('http://data.europarl.europa.eu/resource/contact-point/electronic/',ancestor::item/identifier,'/',../addressType)}">
+					rdf:about="{ep:eaddresses(ancestor::item/identifier,concat(../addressCodeType,../order))}">
 					<schema:contactType
-						rdf:resource="{concat('http://data.europarl.europa.eu/authority/contact-point-type-type/',.)}">
+						rdf:resource="{ep:eaddressesContactType(.)}">
 						<schema:url
 							rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 							<xsl:value-of select="../address" />
@@ -151,17 +157,17 @@
 		<schema:contactPoint>
 			<xsl:for-each select="item">
 				<schema:PostalAddress
-					rdf:about="{concat('http://data.europarl.europa.eu/resource/contact-point/place/',identifier,'/',officeNum)}">
+					rdf:about="{ep:addresses(identifier,officeNum)}">
 					<ep-org:hasSite
-						rdf:resource="{concat('http://publications.europa.eu/resource/authority/site/',buildingCode)}" />
+						rdf:resource="{ep:URI-PublicationsSITE(buildingCode)}" />
 					<ep-org:officeId
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 						<xsl:value-of select="officeNum" />
 					</ep-org:officeId>
 					<schema:addressCountry
-						rdf:resource="{concat('http://publications.europa.eu/resource/authority/country/',townCode)}" />
+						rdf:resource="{ep:URI-PublicationsCOUNTRY(townCode)}" />
 					<schema:addressLocality
-						rdf:resource="{concat('http://publications.europa.eu/resource/authority/place/',townName)}" />
+						rdf:resource="{ep:URI-PublicationsLOCALITY(townName)}" />
 					<schema:faxNumber
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 						<xsl:value-of select="faxNum" />
@@ -181,15 +187,17 @@
 		<org:hasMembership>
 			<xsl:for-each select="item">
 				<ep-org:Membership
-					rdf:about="{concat('http://data.europarl.europa.eu/resource/person/',personId,'/membership/',mandateId)}">
+					rdf:about="{ep:URI-MEMBERSHIP(personId,mandateId)}">
 					<ep-org:constituency
-						rdf:resource="{concat('http://data.europarl.europa.eu/authority/constituency/',countryIsoCode,'-',mandateId)}" />
+						rdf:resource="{ep:URI-MandatCONSTITUENCY(countryIsoCode,mandateId)}" />
 					<ep-org:hasMembershipType
-						rdf:resource="http://data.europarl.europa.eu/authority/membership-type/MANDATE" />
+						rdf:resource="{ep:URI-MandatTYPE('MANDATE')}" />
 					<ep-org:hasOrganization
-						rdf:resource="{concat('http://publications.europa.eu/resource/authority/country/',ep:Lookup('Countries',$country_file,countryIsoCode))}" />
+						rdf:resource="{ep:URI-MandatORGANIZATION(countryIsoCode)}" />
+					<xsl:variable name="startDate" select="translate(startDateTime,'-','')"/>	
+					<xsl:variable name="endDate" select="translate(endDateTime,'-','')"/>
 					<ep-org:hasParliamentaryTerm
-						rdf:resource="{concat('http://data.europarl.europa.eu/authority/parliamentary-term/',countryId)}" />
+						rdf:resource="{ep:URI-ParliamentaryTerm($startDate,$endDate)}" />
 					<dc:identifier
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 						<xsl:value-of select="mandateId" />
@@ -207,102 +215,111 @@
 		</org:hasMembership>
 	</xsl:template>
 
-	<!-- Groupe Politique -->
 	<xsl:template match="functions">
 		<xsl:for-each select="item">
-			<xsl:message><xsl:value-of select="child::gpId"/></xsl:message>
-			<xsl:if test="ancestor::gpId = organeId">
-				<org:hasMembership>
-					<ep-org:Membership
-						rdf:about="{concat('http://data.europarl.europa.eu/resource/person/',memberIdentifier,'/membership/',identifier)}">
-						<ep-org:hasMembershipType
-							rdf:resource="http://data.europarl.europa.eu/authority/membership-type/POLITICAL-GROUP" />
-						<ep-org:hasOrganization
-							rdf:resource="{concat('http://data.europarl.europa.eu/resource/org/',organeCode)}" />
-						<ep-org:hasParliamentaryTerm
-							rdf:resource="{concat('http://data.europarl.europa.eu/authority/parliamentary-term/',organeId)}" />
-						<schema:endDate
-							rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="endDateTime"/></schema:endDate>
-						<schema:startDate
-							rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="startDateTime"/></schema:startDate>
-						<org:hasMembershipBasedOn
-							rdf:resource="concat('http://data.europarl.europa.eu/resource/person/',memberIdentifier,'/membership/',identifier)" />
-						<org:role
-							rdf:resource="{concat('http://data.europarl.europa.eu/authority/function/',functionCode)}" />
-					</ep-org:Membership>
-				</org:hasMembership>
-			</xsl:if>
+			<xsl:choose>
+				<!-- Groupe Politique -->
+				<xsl:when test="typeOrganeCode='GP'">
+					<xsl:if
+						test="ancestor::item/gpId=organeId and ancestor::item/gpCode =organeCode">
+						<org:hasMembership>
+							<ep-org:Membership
+								rdf:about="{ep:URI-MEMBERSHIP(memberIdentifier,identifier)}">
+								<ep-org:hasMembershipType
+									rdf:resource="ep:URI-MembershipType('POLITICAL-GROUP')" />
+								<ep-org:hasOrganization
+									rdf:resource="{ep:URI-TYPEOrganization(typeOrganeCode,organeCode,organeId)}" />
+								
+								<xsl:variable name="startDate" select="translate(startDateTime,'-','')"/>	
+								<xsl:variable name="endDate" select="translate(endDateTime,'-','')"/>	
+								<ep-org:hasParliamentaryTerm
+									rdf:resource="{ep:URI-ParliamentaryTerm($startDate,$endDate)}" />
+								
+								<schema:endDate
+									rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
+									<xsl:value-of select="endDateTime" />
+								</schema:endDate>
+								<schema:startDate
+									rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
+									<xsl:value-of select="startDateTime" />
+								</schema:startDate>
+								<org:hasMembershipBasedOn
+									rdf:resource="{ep:URI-MEMBERSHIP(memberIdentifier,organeId)}" />
+								<org:role
+									rdf:resource="{ep:URI-AutorityFUNCTION(functionCode)}" />
+							</ep-org:Membership>
+						</org:hasMembership>
+					</xsl:if>
+				</xsl:when>
+				<!-- Comité -->
+				<xsl:when test="typeOrganeCode='CO'">
+					<xsl:if
+						test="ancestor::item/epFunctionCode=functionCode and ancestor::item/epFunctionOrder = functionOrder">
+						<org:hasMembership>
+							<ep-org:Membership
+								rdf:about="{ep:URI-MEMBERSHIP(memberIdentifier,identifier)}">
+								<ep-org:hasMembershipType
+									rdf:resource="{ep:URI-MembershipType('COMMITTEE')}" />
+								<ep-org:hasOrganization
+									rdf:resource="{ep:URI-TYPEOrganization(typeOrganeCode,organeCode,organeId)}" />
+									
+								<xsl:variable name="startDate" select="translate(startDateTime,'-','')"/>	
+								<xsl:variable name="endDate" select="translate(endDateTime,'-','')"/>	
+								<ep-org:hasparliamentaryterm
+									rdf:resource="{ep:URI-ParliamentaryTerm($startDate,$endDate)}" />
+								<schema:endDate
+									rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
+									<xsl:value-of select="endDateTime" />
+								</schema:endDate>
+								<schema:startDate
+									rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
+									<xsl:value-of select="startDateTime" />
+								</schema:startDate>
+								<org:hasMembershipBasedOn
+									rdf:resource="{ep:URI-MEMBERSHIP(memberIdentifier,organeId)}" />
+								<org:role
+									rdf:resource="{ep:URI-AutorityFUNCTION(functionCode)}" />
+							</ep-org:Membership>
+						</org:hasMembership>
+					</xsl:if>
+				</xsl:when>
+				<!-- Parti national -->
+				<xsl:when test="typeOrganeCode='PN'">
+					<xsl:if
+						test="ancestor::item/epFunctionCode=functionCode and ancestor::item/epFunctionOrder = functionOrder">
+						<org:hasMembership>
+							<ep-org:Membership
+								rdf:about="{ep:URI-MEMBERSHIP(memberIdentifier,identifier)}">
+								<ep-org:hasMembershipType
+									rdf:resource="{ep:URI-MembershipType('NATIONAL-PARTY')}" />
+								<ep-org:hasOrganization
+									rdf:resource="{ep:URI-TYPEOrganization(typeOrganeCode,organeCode,organeId)}" />
+								
+								<xsl:variable name="startDate" select="translate(startDateTime,'-','')"/>	
+								<xsl:variable name="endDate" select="translate(endDateTime,'-','')"/>	
+								<ep-org:hasParliamentaryTerm
+									rdf:resource="{ep:URI-ParliamentaryTerm($startDate,$endDate)}" />
+							
+								
+								<schema:endDate
+									rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
+									<xsl:value-of select="endDateTime" />
+								</schema:endDate>
+								<schema:startDate
+									rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
+									<xsl:value-of select="startDateTime" />
+								</schema:startDate>
+								<org:hasMembershipBasedOn
+									rdf:resource="{ep:URI-MEMBERSHIP(memberIdentifier,organeId)}" />
+								<org:role
+									rdf:resource="{ep:URI-AutorityFUNCTION(functionCode)}" />
+							</ep-org:Membership>
+						</org:hasMembership>
+					</xsl:if>
+				</xsl:when>
+			</xsl:choose>
 		</xsl:for-each>
 	</xsl:template>
-
-	<!-- Comité <xsl:template match=""> </xsl:template> 
-
-	 Parti national 
-	<xsl:template match="">
-		<org:hasMembership>
-			<ep-org:Membership
-				rdf:about="http://data.europarl.europa.eu/resource/person/124936/membership/888800004">
-				<ep-org:hasMembershipType
-					rdf:resource="http://data.europarl.europa.eu/authority/membership-type/NATIONAL-PARTY" />
-				<ep-org:hasOrganization
-					rdf:resource="http://data.europarl.europa.eu/resource/org/MR-111" />
-				<ep-org:hasParliamentaryTerm
-					rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8" />
-				<schema:endDate
-					rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-01T00:00:00</schema:endDate>
-				<schema:startDate
-					rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-01T00:00:00</schema:startDate>
-				<org:hasMembershipBasedOn
-					rdf:resource="http://data.europarl.europa.eu/resource/person/124936/membership/11111118" />
-				<org:role
-					rdf:resource="http://data.europarl.europa.eu/authority/function/MEF" />
-			</ep-org:Membership>
-		</org:hasMembership>
-	</xsl:template>
-
-	 Un assistant et le lien vers le député 
-	<xsl:template match="assistants">
-		<xsl:for-each select="item">
-			<ep-org:Person
-				rdf:about="{concat('http://data.europarl.europa.eu/resource/person/',identifier)}">
-				<ep-org:hasPersonType
-					rdf:resource="{concat('http://data.europarl.europa.eu/authority/person-type/','AST-APA')}" />
-				<ep-org:personId
-					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">311270</ep-org:personId>
-				<ep-org:upperFamilyName
-					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-					<xsl:value-of select="upperFamilyName" />
-				</ep-org:upperFamilyName>
-				<ep-org:upperFirstName
-					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-					<xsl:value-of select="upperFirstName" />
-				</ep-org:upperFirstName>
-				<foaf:familyName
-					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-					<xsl:value-of select="richFamilyName" />
-				</foaf:familyName>
-				<foaf:firstName
-					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-					<xsl:value-of select="richFirstName" />
-				</foaf:firstName>
-
-				<xsl:for-each select="accreditations/item">
-					<org:hasMembership>
-						<ep-org:Membership
-							rdf:about="{concat('http://data.europarl.europa.eu/resource/person/',assistantId,'/membership/',identifier)}">
-							<ep-org:hasMembershipType
-								rdf:resource="http://data.europarl.europa.eu/authority/membership-type/PERSON" />
-							<ep-org:hasOrganization
-								rdf:resource="{concat('http://data.europarl.europa.eu/resource/person/',accrResponsibleId)}" />
-							<org:role
-								rdf:resource="http://data.europarl.europa.eu/authority/function/ASSISTANT" />
-						</ep-org:Membership>
-					</org:hasMembership>
-				</xsl:for-each>
-
-			</ep-org:Person>
-		</xsl:for-each>
-	</xsl:template>-->
-
-
-</xsl:stylesheet>
+	
+	
+</xsl:stylesheet> 
