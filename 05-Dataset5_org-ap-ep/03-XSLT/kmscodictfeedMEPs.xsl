@@ -5,7 +5,6 @@
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
-	xmlns:ep="http://data.europarl.europa.eu/"
 	xmlns:foaf="http://xmlns.com/foaf/0.1/"
 	xmlns:schema="http://schema.org/" exclude-result-prefixes="xsl"
 	xmlns:ep-org="http://data.europarl.europa.eu/ontology/ep-org#"
@@ -33,7 +32,7 @@
 		<!-- Variables -->
 		<xsl:variable name="IdMEP" select="identifier" />
 
-		<ep:MEP rdf:about="{ep:URI-MEP(identifier)}">
+		<ep-org:MEP rdf:about="{ep-org:URI-MEP(identifier)}">
 			<!-- CV -->
 			<xsl:for-each select="cv/item">
 				<xsl:choose>
@@ -80,27 +79,29 @@
 			<foaf:img
 				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 				<xsl:value-of
-					select="ep:URI-MEPPHOTO(identifier)" />
+					select="ep-org:URI-MEPPHOTO(identifier)" />
 			</foaf:img>
 
 			<schema:gender
-				rdf:resource="{ep:URI-MEPGENDER(genderIsoCode)}" />
+				rdf:resource="{ep-org:URI-MEPGENDER(genderIsoCode)}" />
 			<schema:honorificPrefix
-				rdf:resource="{ep:URI-MEPCIVILITY(titleCode)}" />
+				rdf:resource="{ep-org:URI-MEPCIVILITY(titleCode)}" />
 			<schema:birthPlace
-				rdf:resource="{ep:URI-MEPBIRTHPLACE(countryIsoCode,birthPlace)}" />
+				rdf:resource="{ep-org:URI-MEPBIRTHPLACE(countryId,countryIsoCode,birthPlace)}" />
 			<schema:nationality
-				rdf:resource="{ep:URI-MEPNATIONALITY(countryIsoCode)}" />
+				rdf:resource="{ep-org:URI-MEPNATIONALITY(countryIsoCode)}" />
 			<xsl:apply-templates />
-		</ep:MEP>
+		</ep-org:MEP>
 		<!-- Assistant -->
 		<xsl:for-each select="assistants/item">
 			<ep-org:Person
-				rdf:about="{ep:URI-ASSISTANT(identifier)}">
+				rdf:about="{ep-org:URI-ASSISTANT(identifier)}">
 				<ep-org:hasPersonType
-					rdf:resource="{ep:URI-AutorityPERSON('AST-APA')}" />
+					rdf:resource="{ep-org:URI-AutorityPERSON('AST-APA')}" />
 				<ep-org:personId
-					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">identifier</ep-org:personId>
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+					<xsl:value-of select="identifier" />
+					</ep-org:personId>
 				<ep-org:upperFamilyName
 					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 					<xsl:value-of select="upperFamilyName" />
@@ -120,13 +121,13 @@
 
 				<org:hasMembership>
 					<ep-org:Membership
-						rdf:about="{ep:URI-MEMBERSHIP(identifier,identifier)}">
+						rdf:about="{ep-org:URI-MEMBERSHIP(identifier,ancestor::item/identifier)}">
 						<ep-org:hasMembershipType
-							rdf:resource="{ep:URI-MembershipType('PERSON')}" />
+							rdf:resource="{ep-org:URI-MembershipType('PERSON')}" />
 						<ep-org:hasOrganization
-							rdf:resource="{ep:URI-Person(ancestor::identifier)}" />
+							rdf:resource="{ep-org:URI-Person(ancestor::item/identifier)}" />
 						<org:role
-							rdf:resource="{ep:URI-AutorityFUNCTION('ASSISTANT')}" />
+							rdf:resource="{ep-org:URI-AutorityFUNCTION('ASSISTANT')}" />
 					</ep-org:Membership>
 				</org:hasMembership>
 
@@ -136,38 +137,38 @@
 
 	<!-- ContactPoint electronic -->
 	<xsl:template match="eaddresses">
-		<schema:contactPoint>
-			<xsl:for-each select="item/addressCodeType">
+		<xsl:for-each select="item/addressCodeType">
+			<schema:contactPoint>
 				<schema:ContactPoint
-					rdf:about="{ep:eaddresses(ancestor::item/identifier,concat(../addressCodeType,../order))}">
+					rdf:about="{ep-org:eaddresses(ancestor::item/identifier,concat(../addressCodeType,../order))}">
 					<schema:contactType
-						rdf:resource="{ep:eaddressesContactType(.)}">
+						rdf:resource="{ep-org:eaddressesContactType(.)}">
 						<schema:url
 							rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 							<xsl:value-of select="../address" />
 						</schema:url>
 					</schema:contactType>
 				</schema:ContactPoint>
-			</xsl:for-each>
-		</schema:contactPoint>
+				</schema:contactPoint>
+			</xsl:for-each>		
 	</xsl:template>
 
 	<!-- ContactPoint PostalAdress -->
 	<xsl:template match="addresses">
-		<schema:contactPoint>
-			<xsl:for-each select="item">
+		<xsl:for-each select="item">
+			<schema:contactPoint>
 				<schema:PostalAddress
-					rdf:about="{ep:addresses(identifier,officeNum)}">
+					rdf:about="{ep-org:addresses(identifier,officeNum)}">
 					<ep-org:hasSite
-						rdf:resource="{ep:URI-PublicationsSITE(buildingCode)}" />
+						rdf:resource="{ep-org:URI-PublicationsSITE(buildingCode)}" />
 					<ep-org:officeId
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 						<xsl:value-of select="officeNum" />
 					</ep-org:officeId>
 					<schema:addressCountry
-						rdf:resource="{ep:URI-PublicationsCOUNTRY(townCode)}" />
+						rdf:resource="{ep-org:URI-PublicationsCOUNTRY(townCode)}" />
 					<schema:addressLocality
-						rdf:resource="{ep:URI-PublicationsLOCALITY(townName)}" />
+						rdf:resource="{ep-org:URI-PublicationsLOCALITY(townName)}" />
 					<schema:faxNumber
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 						<xsl:value-of select="faxNum" />
@@ -177,27 +178,26 @@
 						<xsl:value-of select="phoneNum" />
 					</schema:telephone>
 				</schema:PostalAddress>
-			</xsl:for-each>
-		</schema:contactPoint>
-
+				</schema:contactPoint>
+			</xsl:for-each>		
 	</xsl:template>
 
 	<!-- Mandat -->
 	<xsl:template match="mandates">
-		<org:hasMembership>
 			<xsl:for-each select="item">
+			<org:hasMembership>
 				<ep-org:Membership
-					rdf:about="{ep:URI-MEMBERSHIP(personId,mandateId)}">
+					rdf:about="{ep-org:URI-MEMBERSHIP(personId,mandateId)}">
 					<ep-org:constituency
-						rdf:resource="{ep:URI-MandatCONSTITUENCY(countryIsoCode,mandateId)}" />
+						rdf:resource="{ep-org:URI-MandatCONSTITUENCY(countryIsoCode,mandateId)}" />
 					<ep-org:hasMembershipType
-						rdf:resource="{ep:URI-MandatTYPE('MANDATE')}" />
+						rdf:resource="{ep-org:URI-MandatTYPE('MANDATE')}" />
 					<ep-org:hasOrganization
-						rdf:resource="{ep:URI-MandatORGANIZATION(countryIsoCode)}" />
+						rdf:resource="{ep-org:URI-MandatORGANIZATION(countryIsoCode)}" />
 					<xsl:variable name="startDate" select="translate(startDateTime,'-','')"/>	
 					<xsl:variable name="endDate" select="translate(endDateTime,'-','')"/>
 					<ep-org:hasParliamentaryTerm
-						rdf:resource="{ep:URI-ParliamentaryTerm($startDate,$endDate)}" />
+						rdf:resource="{ep-org:URI-ParliamentaryTerm($startDate,$endDate)}" />
 					<dc:identifier
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 						<xsl:value-of select="mandateId" />
@@ -211,8 +211,9 @@
 						<xsl:value-of select="startDateTime" />
 					</schema:startDate>
 				</ep-org:Membership>
+				</org:hasMembership>
 			</xsl:for-each>
-		</org:hasMembership>
+		
 	</xsl:template>
 
 	<xsl:template match="functions">
@@ -224,16 +225,23 @@
 						test="ancestor::item/gpId=organeId and ancestor::item/gpCode =organeCode">
 						<org:hasMembership>
 							<ep-org:Membership
-								rdf:about="{ep:URI-MEMBERSHIP(memberIdentifier,identifier)}">
+								rdf:about="{ep-org:URI-MEMBERSHIP(memberIdentifier,identifier)}">
 								<ep-org:hasMembershipType
-									rdf:resource="ep:URI-MembershipType('POLITICAL-GROUP')" />
+									rdf:resource="{ep-org:URI-MembershipType('POLITICAL-GROUP')}" />
+								
+								<xsl:variable name="GPCode_characterSpecial">
+								     <xsl:value-of select="translate(organeCode,'&amp;','_')"/>
+								      							
+								</xsl:variable>	
+								
+									
 								<ep-org:hasOrganization
-									rdf:resource="{ep:URI-TYPEOrganization(typeOrganeCode,organeCode,organeId)}" />
+									rdf:resource="{ep-org:URI-TYPEOrganization(typeOrganeCode,$GPCode_characterSpecial,organeId)}" />
 								
 								<xsl:variable name="startDate" select="translate(startDateTime,'-','')"/>	
 								<xsl:variable name="endDate" select="translate(endDateTime,'-','')"/>	
 								<ep-org:hasParliamentaryTerm
-									rdf:resource="{ep:URI-ParliamentaryTerm($startDate,$endDate)}" />
+									rdf:resource="{ep-org:URI-ParliamentaryTerm($startDate,$endDate)}" />
 								
 								<schema:endDate
 									rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
@@ -243,10 +251,10 @@
 									rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
 									<xsl:value-of select="startDateTime" />
 								</schema:startDate>
-								<org:hasMembershipBasedOn
-									rdf:resource="{ep:URI-MEMBERSHIP(memberIdentifier,organeId)}" />
+								<ep-org:hasMembershipBasedOn
+									rdf:resource="{ep-org:URI-MEMBERSHIP(memberIdentifier,organeId)}" />
 								<org:role
-									rdf:resource="{ep:URI-AutorityFUNCTION(functionCode)}" />
+									rdf:resource="{ep-org:URI-AutorityFUNCTION(functionCode)}" />
 							</ep-org:Membership>
 						</org:hasMembership>
 					</xsl:if>
@@ -257,16 +265,16 @@
 						test="ancestor::item/epFunctionCode=functionCode and ancestor::item/epFunctionOrder = functionOrder">
 						<org:hasMembership>
 							<ep-org:Membership
-								rdf:about="{ep:URI-MEMBERSHIP(memberIdentifier,identifier)}">
+								rdf:about="{ep-org:URI-MEMBERSHIP(memberIdentifier,identifier)}">
 								<ep-org:hasMembershipType
-									rdf:resource="{ep:URI-MembershipType('COMMITTEE')}" />
+									rdf:resource="{ep-org:URI-MembershipType('COMMITTEE')}" />
 								<ep-org:hasOrganization
-									rdf:resource="{ep:URI-TYPEOrganization(typeOrganeCode,organeCode,organeId)}" />
+									rdf:resource="{ep-org:URI-TYPEOrganization(typeOrganeCode,organeCode,organeId)}" />
 									
 								<xsl:variable name="startDate" select="translate(startDateTime,'-','')"/>	
 								<xsl:variable name="endDate" select="translate(endDateTime,'-','')"/>	
-								<ep-org:hasparliamentaryterm
-									rdf:resource="{ep:URI-ParliamentaryTerm($startDate,$endDate)}" />
+								<ep-org:hasParliamentaryTerm
+									rdf:resource="{ep-org:URI-ParliamentaryTerm($startDate,$endDate)}" />
 								<schema:endDate
 									rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
 									<xsl:value-of select="endDateTime" />
@@ -275,10 +283,10 @@
 									rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
 									<xsl:value-of select="startDateTime" />
 								</schema:startDate>
-								<org:hasMembershipBasedOn
-									rdf:resource="{ep:URI-MEMBERSHIP(memberIdentifier,organeId)}" />
+								<ep-org:hasMembershipBasedOn
+									rdf:resource="{ep-org:URI-MEMBERSHIP(memberIdentifier,organeId)}" />
 								<org:role
-									rdf:resource="{ep:URI-AutorityFUNCTION(functionCode)}" />
+									rdf:resource="{ep-org:URI-AutorityFUNCTION(functionCode)}" />
 							</ep-org:Membership>
 						</org:hasMembership>
 					</xsl:if>
@@ -289,16 +297,16 @@
 						test="ancestor::item/epFunctionCode=functionCode and ancestor::item/epFunctionOrder = functionOrder">
 						<org:hasMembership>
 							<ep-org:Membership
-								rdf:about="{ep:URI-MEMBERSHIP(memberIdentifier,identifier)}">
+								rdf:about="{ep-org:URI-MEMBERSHIP(memberIdentifier,identifier)}">
 								<ep-org:hasMembershipType
-									rdf:resource="{ep:URI-MembershipType('NATIONAL-PARTY')}" />
+									rdf:resource="{ep-org:URI-MembershipType('NATIONAL-PARTY')}" />
 								<ep-org:hasOrganization
-									rdf:resource="{ep:URI-TYPEOrganization(typeOrganeCode,organeCode,organeId)}" />
+									rdf:resource="{ep-org:URI-TYPEOrganization(typeOrganeCode,organeCode,organeId)}" />
 								
 								<xsl:variable name="startDate" select="translate(startDateTime,'-','')"/>	
 								<xsl:variable name="endDate" select="translate(endDateTime,'-','')"/>	
 								<ep-org:hasParliamentaryTerm
-									rdf:resource="{ep:URI-ParliamentaryTerm($startDate,$endDate)}" />
+									rdf:resource="{ep-org:URI-ParliamentaryTerm($startDate,$endDate)}" />
 							
 								
 								<schema:endDate
@@ -309,17 +317,15 @@
 									rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
 									<xsl:value-of select="startDateTime" />
 								</schema:startDate>
-								<org:hasMembershipBasedOn
-									rdf:resource="{ep:URI-MEMBERSHIP(memberIdentifier,organeId)}" />
+								<ep-org:hasMembershipBasedOn
+									rdf:resource="{ep-org:URI-MEMBERSHIP(memberIdentifier,organeId)}" />
 								<org:role
-									rdf:resource="{ep:URI-AutorityFUNCTION(functionCode)}" />
+									rdf:resource="{ep-org:URI-AutorityFUNCTION(functionCode)}" />
 							</ep-org:Membership>
 						</org:hasMembership>
 					</xsl:if>
 				</xsl:when>
 			</xsl:choose>
 		</xsl:for-each>
-	</xsl:template>
-	
-	
+	</xsl:template>	
 </xsl:stylesheet> 
