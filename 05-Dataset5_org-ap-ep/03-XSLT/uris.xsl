@@ -183,6 +183,27 @@
 		<xsl:value-of select="ep-org:URI-Autority(concat('country/',ep-org:Lookup_COUNTRY($countryISOcode)))"/>
 	</xsl:function>
 
+
+	<!-- URI VOCABULARY -->
+	<xsl:function name="ep-org:URI-ONTOLOGY">
+		<xsl:param name="cv" />
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/ontology/ep-org#',$cv)" />
+	</xsl:function>
+
+	<!-- CV Gender-->
+	<xsl:function name="ep-org:URI-CVGENDER">
+		<xsl:param name="cvGender" />
+		<xsl:value-of select="concat(ep-org:URI-Autority('Gender/'), $cvGender)" />
+
+	</xsl:function>
+
+	<!-- URI EPONTO -->
+	<xsl:function name="ep-org:URI-CVEPONTOGender">
+		<xsl:param name="cvEPONTOGender" />
+		<xsl:value-of select="ep-org:URI-ONTOLOGY($cvEPONTOGender)" />
+	</xsl:function>
+
+
 	
 
 
