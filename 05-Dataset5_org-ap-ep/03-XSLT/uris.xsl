@@ -193,21 +193,48 @@
 	<!-- CV Gender-->
 	<xsl:function name="ep-org:URI-CVGENDER">
 		<xsl:param name="cvGender" />
-		<xsl:value-of select="concat(ep-org:URI-Autority('Gender/'), $cvGender)" />
-
+		<xsl:value-of select="concat(ep-org:URI-Autority('gender/'), $cvGender)" />
 	</xsl:function>
 
+	<!-- CV Civiliy-->
+	<xsl:function name="ep-org:URI-CVCIVILITY">
+		<xsl:param name="cvCivility" />
+		<xsl:value-of select="concat(ep-org:URI-Autority('civiliy/'), $cvCivility)" />
+	</xsl:function>
+
+
 	<!-- URI EPONTO -->
-	<xsl:function name="ep-org:URI-CVEPONTOGender">
+	<xsl:function name="ep-org:URI-CVEPONTO">
 		<xsl:param name="cvEPONTOGender" />
 		<xsl:value-of select="ep-org:URI-ONTOLOGY($cvEPONTOGender)" />
 	</xsl:function>
 
+	<!-- CV Country -->
+	<xsl:function name="ep-org:URI-CVCOUNTRY">
+		<xsl:param name="cvCountry" />
+		<xsl:value-of select="concat(ep-org:URI-Autority('country/'), $cvCountry)" />
+	</xsl:function>
+
+	<!-- Contact Point Type -->
+	<xsl:function name="ep-org:URI-CVCONTACTPOINTTYPE">
+		<xsl:param name="cvCTP" />
+		<xsl:value-of select="concat(ep-org:URI-Autority('contact-point-type/electronic/'), $cvCTP)"/>
+	</xsl:function>
+
+
+	<!-- function -->
+	<xsl:function name="ep-org:URI-CVFUNCTION">
+		<xsl:param name="cvCTP" />
+		<xsl:value-of select="concat(ep-org:URI-Autority('function/'), $cvCTP)"/>
+	</xsl:function>
 
 	
-
-
-	<!--   -->
+	<!-- parliamentary terms -->
+	<xsl:function name="ep-org:URI-CVPARLIAMENTARY">
+		<xsl:param name="cvCV" />
+		<xsl:value-of select="concat(ep-org:URI-Autority('parliamentary-term/'), $cvCV)"/>
+	</xsl:function>
+	
 	<!-- fonction -->
 	<xsl:function name="ep-org:Lookup_GENDER">
 		<xsl:param name="dataInput" />
@@ -244,6 +271,20 @@
 		</xsl:for-each>		
 	</xsl:function>
 
+	<!-- Function where the result return the Country Name -->
+	<xsl:function name="ep-org:Lookup_COUNTRYNAME">
+		<xsl:param name="in_countryIsocode" />
+		<xsl:for-each select="$country_file">
+			<xsl:choose>
+				<xsl:when test="Alpha-2 = $in_countryIsocode">
+					<xsl:value-of select="Country" />
+				</xsl:when>
+			</xsl:choose>
+		</xsl:for-each>		
+	</xsl:function>
+
+
+	<!-- Date -->
 	<xsl:function name="ep-org:OrderparliamentaryTerm">
 		<xsl:param name="p_StartDate"/>
 		<xsl:param name="p_EndDate"/>	

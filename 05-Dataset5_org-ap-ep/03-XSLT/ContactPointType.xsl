@@ -5,16 +5,13 @@
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 	xmlns:ep-org="http://data.europarl.europa.eu/ontology/ep-org#"
-	xmlns:ep-aut="http://data.europarl.europa.eu/authority/"
 	xmlns:scheme="http://data.europarl.europa.eu/authority/"
 	xmlns:schema="http://schema.org/" exclude-result-prefixes="xsl">
-
 
 	<!-- Import URI stylesheet -->
 	<xsl:import href="uris.xsl" />
 	<!-- Import builtins stylesheet -->
 	<xsl:import href="builtins.xsl" />
-
 	<xsl:output indent="yes" method="xml" />
 
 	<xsl:template match="/">
@@ -29,29 +26,40 @@
 
 	<xsl:template match="all/item">
 		<skos:Concept
-			rdf:about="{ep-org:URI-CVGENDER(referenceCode)}">
-			<rdf:type rdf:resource="{ep-org:URI-CVEPONTO('Gender')}"/>
+			rdf:about="{ep-org:URI-CVCONTACTPOINTTYPE(normalize-space(addtCode))}">
+			<rdf:type rdf:resource="{ep-org:URI-CVEPONTO('contact-point-type')}" />
+			
+			<rdfs:label>
+				<xsl:value-of select='shortName'/>
+			</rdfs:label>
+			
 			<skos:notation>
-				<xsl:value-of select="referenceCode" />
+				<xsl:value-of select="mepCode" />
 			</skos:notation>
-			<ep-org:isoCode
-				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-				<xsl:value-of select="isoCode" />
-			</ep-org:isoCode>
+			
+			
+			<ep-org:euContactType
+				rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">
+				<xsl:value-of select="mepFlag"/>
+			</ep-org:euContactType>
+			
+			<ep-org:CodeGroup>
+				<xsl:value-of select="groupCode"/>
+			</ep-org:CodeGroup>
+			
+			<skos:inScheme
+				rdf:resource="{ep-org:URI-Autority('contact-point-type')}" />
 			<xsl:apply-templates />
-			<skos:inScheme rdf:resource="{ep-org:URI-Autority('gender')}"/>				 
+			
+			<xsl:apply-templates/>
 		</skos:Concept>
 	</xsl:template>
 
 	<xsl:template match="desc">
-		
 		<xsl:for-each select="item">
-			<skos:preflabel xml:lang="{lower-case(langIso)}">
-				<xsl:value-of select="fullName"/>
-			</skos:preflabel>
+			<skos:prefLabel xml:lang="{lower-case(langIso)}">
+				<xsl:value-of select="fullName" />
+			</skos:prefLabel>
 		</xsl:for-each>
-		
 	</xsl:template>
-
-
 </xsl:stylesheet>
