@@ -258,13 +258,27 @@
 		<xsl:param name="in_countryId" />
 		<xsl:param name="in_countryIsocode" />
 		<xsl:param name="in_BirthPlace" />
-		<xsl:for-each select="$Town">
-			<xsl:choose>
-				<xsl:when test="countryId = $in_countryId and countryIsoCode = $in_countryIsocode and originalName = $in_BirthPlace">
-					<xsl:value-of select="townCode" />
-				</xsl:when>
-			</xsl:choose>
-		</xsl:for-each>		
+		
+		<xsl:variable name="towns" select="$Town[
+			countryId = $in_countryId
+			and 
+			countryIsoCode = $in_countryIsocode
+			and
+			originalName = $in_BirthPlace
+		]" />
+		<xsl:choose>
+			<xsl:when test="count($towns) = 0">
+				<xsl:message>Warning : cannot find town "<xsl:value-of select="$in_BirthPlace" />"" in country <xsl:value-of select="$in_countryId" /> (<xsl:value-of select="$in_countryIsocode" />)</xsl:message>
+			</xsl:when>
+			<xsl:when test="count($towns) > 1">
+				<xsl:message>Warning : find <xsl:value-of select="count($towns)" /> towns named "<xsl:value-of select="$in_BirthPlace" />"" in country <xsl:value-of select="$in_countryId" /> (<xsl:value-of select="$in_countryIsocode" />) - Taking first one.</xsl:message>
+				<xsl:value-of select="$towns[1]/townCode" />
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="$towns[1]/townCode" />
+			</xsl:otherwise>
+
+		</xsl:choose>
 	</xsl:function>
 
 	<xsl:function name="ep-org:Lookup_COUNTRY">
