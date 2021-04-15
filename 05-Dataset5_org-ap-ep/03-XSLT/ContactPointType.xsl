@@ -40,7 +40,7 @@
 			
 			<ep-org:euContactType
 				rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">
-				<xsl:value-of select="mepFlag"/>
+				<xsl:value-of select="lower-case(mepFlag)"/>
 			</ep-org:euContactType>
 			
 			<ep-org:CodeGroup>

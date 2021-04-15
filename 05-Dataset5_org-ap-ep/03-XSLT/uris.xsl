@@ -8,15 +8,17 @@
 	xmlns:ep-org="http://data.europarl.europa.eu/ontology/ep-org#"
 >
 
+	<xsl:param name="XML_DIR">../10-XML</xsl:param>
+
 	<!-- Read source file -->
 	<xsl:param name="gender_file"
-		select="document('Gender.xml')/all/item" />
+		select="document(concat($XML_DIR, '/', 'Gender.xml'))/all/item" />
 	<xsl:param name="Town"
-		select="document('Town.xml')/all/item" />	
+		select="document(concat($XML_DIR, '/', 'Town.xml'))/all/item" />	
 	<xsl:param name="parliamentaryTerm_file"
-		select="document('parliamentaryTerm.xml')/all/item" />	
+		select="document(concat($XML_DIR, '/', 'parliamentaryTerm.xml'))/all/item" />	
 	<xsl:param name="country_file"
-		select="document('countryISO_.xml')/root/row" />
+		select="document('CountryISO.xml')/root/row" />
 
 
 	<xsl:function name="ep-org:URI-MEP">
@@ -110,7 +112,12 @@
 		<xsl:param name="countryId"/>
 		<xsl:param name="countryISOcode"/>
 		<xsl:param name="BirthPlace"/>
-		<xsl:value-of select="ep-org:URI-Autority(concat('place/', ep-org:Lookup_COUNTRYBIRTHPLACE($countryId,$countryISOcode,$BirthPlace),'_',$BirthPlace))"/>
+		<xsl:value-of select="ep-org:URI-Autority(concat(
+			'place/',
+			ep-org:Lookup_COUNTRYBIRTHPLACE($countryId,$countryISOcode,$BirthPlace),
+			'_',
+			$BirthPlace
+		))"/>
 	</xsl:function>
 
 	<!-- NATIONALITY -->

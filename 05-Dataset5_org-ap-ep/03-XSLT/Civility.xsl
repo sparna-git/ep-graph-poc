@@ -14,6 +14,8 @@
 	<xsl:import href="builtins.xsl" />
 	<xsl:output indent="yes" method="xml" />
 
+	<xsl:variable name="SCHEME_URI" select="ep-org:URI-Autority('civility')" />
+
 	<xsl:template match="/">
 		<rdf:RDF>
 			<xsl:apply-templates />
@@ -21,6 +23,11 @@
 	</xsl:template>
 
 	<xsl:template match="all">
+		<!-- Output the ConceptScheme in a header -->
+		<skos:ConceptScheme rdf:about="{$SCHEME_URI}">
+			<skos:prefLabel xml:lang="en">Civility</skos:prefLabel>
+		</skos:ConceptScheme>
+		
 		<xsl:apply-templates />
 	</xsl:template>
 
@@ -46,8 +53,7 @@
 					<xsl:value-of select="fullName" />
 				</skos:altLabel>
 			</xsl:if>
-			<skos:inScheme
-				rdf:resource="{ep-org:URI-Autority('civility')}" />
+			<skos:inScheme rdf:resource="{$SCHEME_URI}" />
 		</skos:Concept>
 	</xsl:template>
 </xsl:stylesheet>

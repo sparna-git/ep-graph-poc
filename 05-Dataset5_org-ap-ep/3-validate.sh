@@ -20,4 +20,4 @@ for f in $(find $SHACL_DIR -name '*.xlsx'); do
 done
 
 # now validate
-java -Xmx2048M -jar shacl-play-app-0.4-onejar.jar validate -i $RDF_DIR/kmscodictfeedMEPs.rdf -s $SHACL_TTL_DIR/Dataset5_MEP-Shapes.ttl -o $REPORT_DIR/kmscodictfeedMEPs.html
+# java -Xmx2048M -jar shacl-play-app-0.4-onejar.jar validate -i $RDF_DIR/kmscodictfeedMEPs.rdf -s $SHACL_TTL_DIR/Dataset5_MEP-Shapes.ttl -o $REPORT_DIR/kmscodictfeedMEPs.html
