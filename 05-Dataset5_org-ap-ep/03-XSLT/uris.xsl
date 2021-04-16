@@ -101,11 +101,7 @@
 		<xsl:value-of select="ep-org:URI-Autority(concat('gender/',ep-org:Lookup_GENDER($IdGender)))"/>
 	</xsl:function>
 
-	<!-- Civility -->
-	<xsl:function name="ep-org:URI-MEPCIVILITY">
-		<xsl:param name="IdCivility"/>
-		<xsl:value-of select="ep-org:URI-Autority(concat('civility/',$IdCivility))"/>
-	</xsl:function>
+	
 
 	<!-- BIRTHPLACE -->
 	<xsl:function name="ep-org:URI-MEPBIRTHPLACE">
@@ -241,6 +237,46 @@
 		<xsl:param name="cvCV" />
 		<xsl:value-of select="concat(ep-org:URI-Autority('parliamentary-term/'), $cvCV)"/>
 	</xsl:function>
+
+	<!-- Organization Type -->
+	<xsl:function name="ep-org:URI-CVORGTYPE">
+		<xsl:param name="inData" />
+		<xsl:value-of select="concat(ep-org:URI-Autority('org-type/'), $inData)"/>
+	</xsl:function>
+
+	<!-- Corporate Body -->
+	<xsl:function name="ep-org:URI-COMMITTEEBODY">
+		<xsl:param name="inData" />
+		<xsl:value-of select="concat(ep-org:URI-Autority('committee-body/'), $inData)"/>
+	</xsl:function>
+
+	<xsl:function name="ep-org:URI-DELEGATIONBODY">
+		<xsl:param name="inData" />
+		<xsl:value-of select="concat(ep-org:URI-Autority('delegation-body/'), $inData)"/>
+	</xsl:function>
+
+	<xsl:function name="ep-org:URI-GOVERNANCEBODY">
+		<xsl:param name="inData" />
+		<xsl:value-of select="concat(ep-org:URI-Autority('governance-body/'), $inData)"/>
+	</xsl:function>
+
+	<xsl:function name="ep-org:URI-INSTITUTIONBODY">
+		<xsl:param name="inData" />
+		<xsl:value-of select="concat(ep-org:URI-Autority('institution-body/'), $inData)"/>
+	</xsl:function>
+
+	<xsl:function name="ep-org:URI-NATIONALPARTYBODY">
+		<xsl:param name="inData" />
+		<xsl:value-of select="concat(ep-org:URI-Autority('national-party-body/'), $inData)"/>
+	</xsl:function>
+
+	<xsl:function name="ep-org:URI-POLITICALGROUPBODY">
+		<xsl:param name="inData" />
+		<xsl:value-of select="concat(ep-org:URI-Autority('political-group-body/'), $inData)"/>
+	</xsl:function>
+
+
+
 	
 	<!-- fonction -->
 	<xsl:function name="ep-org:Lookup_GENDER">
