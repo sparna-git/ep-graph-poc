@@ -133,7 +133,7 @@
 	<xsl:function name="ep-org:eaddresses">
 		<xsl:param name="identifier"/>
 		<xsl:param name="typeContact"/>
-		<xsl:value-of select="concat('http://data.europarl.europa.eu/resource/contact-point/electronic/','mep_',$identifier,'/',$typeContact)"/>
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/resource/contact-point/electronic/',$identifier,'/',$typeContact)"/>
 	</xsl:function>
 
 
@@ -206,7 +206,7 @@
 	<!-- CV Civiliy-->
 	<xsl:function name="ep-org:URI-CVCIVILITY">
 		<xsl:param name="cvCivility" />
-		<xsl:value-of select="concat(ep-org:URI-Autority('civiliy/'), $cvCivility)" />
+		<xsl:value-of select="concat(ep-org:URI-Autority('civility/'), $cvCivility)" />
 	</xsl:function>
 
 
