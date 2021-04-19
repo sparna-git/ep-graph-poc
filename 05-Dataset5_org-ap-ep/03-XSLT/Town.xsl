@@ -15,7 +15,7 @@
 	<xsl:output indent="yes" method="xml" />
 
 	<xsl:variable name="SCHEME_URI"
-		select="ep-org:URI-Autority('role')" />
+		select="ep-org:URI-Autority('place')" />
 
 	<xsl:template match="/">
 		<rdf:RDF>
@@ -26,7 +26,7 @@
 	<xsl:template match="all">
 		<!-- Output the ConceptScheme in a header -->
 		<skos:ConceptScheme rdf:about="{$SCHEME_URI}">
-			<skos:prefLabel xml:lang="en">Role</skos:prefLabel>
+			<skos:prefLabel xml:lang="en">Place</skos:prefLabel>
 		</skos:ConceptScheme>
 
 		<xsl:apply-templates />
@@ -34,45 +34,27 @@
 
 	<xsl:template match="all/item">
 		<skos:Concept
-			rdf:about="{ep-org:URI-CVROLE(referenceCode)}">
-			<rdf:type rdf:resource="{ep-org:URI-CVEPONTO('role')}" />
+			rdf:about="{ep-org:URI-CVPLACE(normalize-space(townCode))}">
+			<rdf:type rdf:resource="{ep-org:URI-CVEPONTO('place')}" />
 
-			<xsl:if test="string-length(normalize-space(tmsCode)) &gt; 0">
-				<rdfs:label>
-					<xsl:value-of select="tmsCode" />
-				</rdfs:label>
-			</xsl:if>
-
-			<xsl:if test="string-length(normalize-space(tmsCode)) &gt; 0">
-				<rdfs:comment>
-					<xsl:value-of select="comment" />
-				</rdfs:comment>
-			</xsl:if>
-
-			<ep-org:identifier
-				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-				<xsl:value-of select="orderSeq" />
-			</ep-org:identifier>
-
-			<skos:notation>
-				<xsl:value-of select="orderSeq" />
-			</skos:notation>
-
-			<xsl:apply-templates />
+			<rdfs:label>
+				<xsl:value-of select="townCode" />
+			</rdfs:label>
+			
+			<xsl:apply-templates/>
 
 			<skos:inScheme rdf:resource="{$SCHEME_URI}" />
 		</skos:Concept>
 	</xsl:template>
 
-	<xsl:template match="descriptions">
-		<xsl:apply-templates />
+	<xsl:template match="desc">
+		<xsl:apply-templates/>
 	</xsl:template>
-
+	
 	<xsl:template match="item">
-		<skos:prefLabel xml:lang="{lower-case(langIsoCode)}">
-			<xsl:value-of select="normalize-space(fullName)" />
+		<skos:prefLabel xml:lang="{lower-case(langIso)}">
+			<xsl:value-of select="normalize-space(townName)" />
 		</skos:prefLabel>
 	</xsl:template>
-
 
 </xsl:stylesheet>

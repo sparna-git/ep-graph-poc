@@ -33,7 +33,7 @@
 
 	<xsl:template match="all/item">
 		<skos:Concept
-			rdf:about="{ep-org:URI-CVCIVILITY(normalize-space(identifier))}">
+			rdf:about="{ep-org:URI-CVCIVILITY(encode-for-uri(normalize-space(identifier)))}">
 			<rdf:type rdf:resource="{ep-org:URI-CVEPONTO('Civility')}" />
 			<ep-org:isoLanguage
 				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
@@ -41,16 +41,16 @@
 			</ep-org:isoLanguage>
 
 
-			<xsl:if test="string-length(fullName) &gt; 0 ">
+			<xsl:if test="string-length(normalize-space(identifier)) &gt; 0">
 				<rdfs:label>
-					<xsl:value-of select="lower-case(fullName)" />
+					<xsl:value-of select="lower-case(identifier)" />
 				</rdfs:label>
 
 				<skos:prefLabel xml:lang="{lower-case(langIso)}">
-					<xsl:value-of select="fullName" />
+					<xsl:value-of select="identifier" />
 				</skos:prefLabel>
 				<skos:altLabel xml:lang="{lower-case(langIso)}">
-					<xsl:value-of select="fullName" />
+					<xsl:value-of select="identifier" />
 				</skos:altLabel>
 			</xsl:if>
 			<skos:inScheme rdf:resource="{$SCHEME_URI}" />

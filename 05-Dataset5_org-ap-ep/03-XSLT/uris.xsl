@@ -218,17 +218,35 @@
 		<xsl:value-of select="concat(ep-org:URI-Autority('country/'), $cvCountry)" />
 	</xsl:function>
 
-	<!-- Contact Point Type -->
-	<xsl:function name="ep-org:URI-CVCONTACTPOINTTYPE">
+	<!-- Contact Point Type electronic-->
+	<xsl:function name="ep-org:URI-CVCONT_POINT_T_ELECTRONIC">
 		<xsl:param name="cvCTP" />
 		<xsl:value-of select="concat(ep-org:URI-Autority('contact-point-type/electronic/'), $cvCTP)"/>
 	</xsl:function>
 
-
-	<!-- function -->
-	<xsl:function name="ep-org:URI-CVFUNCTION">
+	<!-- Contact Point Type place -->
+	<xsl:function name="ep-org:URI-CVCONT_POINT_T_PLACE">
 		<xsl:param name="cvCTP" />
-		<xsl:value-of select="concat(ep-org:URI-Autority('function/'), $cvCTP)"/>
+		<xsl:value-of select="concat(ep-org:URI-Autority('contact-point-type/place/'), $cvCTP)"/>
+	</xsl:function>
+
+	<!-- Contact Point -->
+	<xsl:function name="ep-org:URI-ONTO_CONTACTPOINT_T">
+		<xsl:param name="cvCTP" />
+		<xsl:value-of select="concat(ep-org:URI-ONTOLOGY('contact-point-type/'), $cvCTP)"/>
+	</xsl:function>
+
+
+	<!-- function ou Role -->
+	<xsl:function name="ep-org:URI-CVROLE">
+		<xsl:param name="cvCTP" />
+		<xsl:value-of select="concat(ep-org:URI-Autority('role/'), $cvCTP)"/>
+	</xsl:function>
+
+	<!-- Place -->
+	<xsl:function name="ep-org:URI-CVPLACE">
+		<xsl:param name="cvCTP" />
+		<xsl:value-of select="concat(ep-org:URI-Autority('place/'), $cvCTP)"/>
 	</xsl:function>
 
 	
