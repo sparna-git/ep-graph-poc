@@ -84,7 +84,7 @@
 			<schema:gender
 				rdf:resource="{ep-org:URI-MEPGENDER(genderIsoCode)}" />
 			<schema:honorificPrefix
-				rdf:resource="{ep-org:URI-MEPCIVILITY(titleCode)}" />
+				rdf:resource="{ep-org:URI-CIVILITY(titleCode)}" />
 
 			<schema:birthPlace
 				rdf:resource="{ep-org:URI-MEPBIRTHPLACE(countryId,countryIsoCode,birthPlace)}" />
@@ -219,11 +219,9 @@
 				</ep-org:Membership>
 			</org:hasMembership>
 		</xsl:for-each>
-
 	</xsl:template>
 
 	<xsl:template match="functions">
-
 		<xsl:for-each select="item">
 			<org:hasMembership>
 				<xsl:variable name="startDate"
@@ -274,12 +272,11 @@
 					</schema:startDate>
 					
 					<xsl:if test="$var_hasMembershipType != 'POLITICAL-GROUP'">
-						<ep-org:hasMembershipBasedOn rdf:resource="{ep-org:URI-MEMBERSHIP(memberIdentifier,organeId)}" />
+						<ep-org:hasMembershipBasedOn rdf:resource="{ep-org:URI-MEMBERSHIP(memberIdentifier,identifier)}" />
 					</xsl:if>
 	
 					<org:role
 						rdf:resource="{ep-org:URI-AutorityFUNCTION(functionCode)}" />
-
 				</ep-org:Membership>
 			</org:hasMembership>
 		</xsl:for-each>

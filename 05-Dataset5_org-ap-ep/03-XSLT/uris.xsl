@@ -200,7 +200,7 @@
 	</xsl:function>
 
 	<!-- CV Civiliy-->
-	<xsl:function name="ep-org:URI-CVCIVILITY">
+	<xsl:function name="ep-org:URI-CIVILITY">
 		<xsl:param name="cvCivility" />
 		<xsl:value-of select="concat(ep-org:URI-Autority('civility/'), $cvCivility)" />
 	</xsl:function>

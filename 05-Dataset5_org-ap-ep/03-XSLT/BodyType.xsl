@@ -40,10 +40,21 @@
 			<skos:notation>
 				<xsl:value-of select="code" />
 			</skos:notation>
+			
+			<xsl:apply-templates/>
 
 			<skos:inScheme rdf:resource="{$SCHEME_URI}" />
 		</skos:Concept>
+	</xsl:template>
 
+	<xsl:template match="desc">
+		<xsl:apply-templates />
+	</xsl:template>
+
+	<xsl:template match="item">
+		<skos:preflabel xml:lang="{lower-case(langIso)}">
+			<xsl:value-of select="fullName" />
+		</skos:preflabel>
 	</xsl:template>
 
 </xsl:stylesheet>
