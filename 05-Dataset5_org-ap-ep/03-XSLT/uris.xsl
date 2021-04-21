@@ -113,8 +113,9 @@
 	<xsl:function name="ep-org:URI-MEPBIRTHPLACE">
 		<xsl:param name="countryId"/>
 		<xsl:param name="countryISOcode"/>
+		<xsl:param name="birthplace"/>
 		<xsl:value-of select="ep-org:URI-Autority(concat(
-			'place/',ep-org:Lookup_COUNTRYBIRTHPLACE($countryId,$countryISOcode)))"/>
+			'place/',ep-org:Lookup_COUNTRYBIRTHPLACE($countryId,$countryISOcode,$birthplace)))"/>
 	</xsl:function>
 
 	<!-- NATIONALITY -->
@@ -326,11 +327,13 @@
 	<xsl:function name="ep-org:Lookup_COUNTRYBIRTHPLACE">
 		<xsl:param name="in_countryId" />
 		<xsl:param name="in_countryIsocode" />
-		
+		<xsl:param name="in_BirthPlace" />
 		<xsl:variable name="towns" select="$Town[
 			countryId = $in_countryId
 			and 
 			countryIsoCode = $in_countryIsocode
+			and
+			originalName = $in_BirthPlace
 		]" />
 		<xsl:choose>
 			<xsl:when test="count($towns) = 0">
