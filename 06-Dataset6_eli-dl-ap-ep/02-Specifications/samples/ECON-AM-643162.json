@@ -1,0 +1,1833 @@
+{
+	"dc:identifier" : 3029267,
+	"reds:type" : "reds:iCmDoc_Amd",
+	"reds:reference" : "ECON-AM-643162",
+	"reds:version" : 1,
+	"reds:dateDeposit" : "2019-11-13T00:00:00.000+0100",
+	"reds:status" : "red:Status_ACTIVE",
+	"reds:hasSource" : 628,
+	"reds:hasRank" : 628,
+	"reds:hasProperties" : [{
+			"dc:identifier" : 18147717,
+			"reds:hasSource" : 628,
+			"reds:hasRank" : 628,
+			"reds:hasName" : "reds:leg",
+			"reds:hasValue" : "9"
+		}, {
+			"dc:identifier" : 18147723,
+			"reds:hasSource" : 628,
+			"reds:hasRank" : 628,
+			"reds:hasName" : "reds:geproType",
+			"reds:hasValue" : "AM"
+		}, {
+			"dc:identifier" : 18147778,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasName" : "reds:hasType",
+			"reds:hasValue" : "AMCO"
+		}, {
+			"dc:identifier" : 18147779,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasName" : "reds:hasFamily",
+			"reds:hasValue" : "reds:DirContDocFam_AME"
+		}, {
+			"dc:identifier" : 18147780,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasName" : "reds:hasIterReference",
+			"reds:hasValue" : "PE643.162"
+		}, {
+			"dc:identifier" : 18147720,
+			"reds:hasSource" : 628,
+			"reds:hasRank" : 628,
+			"reds:hasName" : "reds:nuPe",
+			"reds:hasValue" : "PE643.162"
+		}, {
+			"dc:identifier" : 18147721,
+			"reds:hasSource" : 628,
+			"reds:hasRank" : 628,
+			"reds:hasName" : "reds:art51",
+			"reds:hasValue" : "NO"
+		}, {
+			"dc:identifier" : 18147724,
+			"reds:hasSource" : 628,
+			"reds:hasRank" : 628,
+			"reds:hasName" : "reds:nuPeVersion",
+			"reds:hasValue" : "0100"
+		}, {
+			"dc:identifier" : 18147719,
+			"reds:hasSource" : 628,
+			"reds:hasRank" : 628,
+			"reds:hasName" : "reds:originalLanguage",
+			"reds:hasValue" : "en"
+		}, {
+			"dc:identifier" : 18147722,
+			"reds:hasSource" : 628,
+			"reds:hasRank" : 628,
+			"reds:hasName" : "reds:fdr",
+			"reds:hasValue" : "1192435"
+		}, {
+			"dc:identifier" : 18147718,
+			"reds:hasSource" : 628,
+			"reds:hasRank" : 628,
+			"reds:hasName" : "reds:canonicalReferenceRegister",
+			"reds:hasValue" : "ECON_AM(2019)643162"
+		}
+	],
+	"reds:hasRelations" : [{
+			"dc:identifier" : 20272863,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 1,
+			"reds:hasPredicate" : "reds:dateMeetingBegin",
+			"reds:hasDate" : "2019-12-02T15:00:00.000+0100"
+		}, {
+			"dc:identifier" : 20272866,
+			"reds:hasSource" : 628,
+			"reds:hasRank" : 628,
+			"reds:hasPredicate" : "reds:dateDocument",
+			"reds:hasDate" : "2019-11-13T00:00:00.000+0100"
+		}, {
+			"dc:identifier" : 20272864,
+			"reds:hasSource" : 628,
+			"reds:hasRank" : 628,
+			"reds:hasPredicate" : "reds:isAmendmentFor",
+			"reds:hasObject" : {
+				"dc:identifier" : 2565594,
+				"reds:type" : "reds:DirContDossier",
+				"reds:reference" : "ECON-9-00408"
+			}
+		}, {
+			"dc:identifier" : 20272862,
+			"reds:hasSource" : -1,
+			"reds:hasRank" : -1,
+			"reds:hasPredicate" : "reds:dateCreation",
+			"reds:hasDate" : "2019-11-14T15:48:30.036+0100"
+		}, {
+			"dc:identifier" : 20272865,
+			"reds:hasSource" : 628,
+			"reds:hasRank" : 628,
+			"reds:hasPredicate" : "reds:dateDeadlineAmd",
+			"reds:hasDate" : "2019-11-11T18:00:00.000+0100"
+		}, {
+			"dc:identifier" : 20272867,
+			"reds:hasSource" : 628,
+			"reds:hasRank" : 628,
+			"reds:hasPredicate" : "reds:hasDirContProc",
+			"reds:hasObject" : {
+				"dc:identifier" : 2415207,
+				"reds:type" : "reds:DirContProc",
+				"reds:reference" : "CNS-2018-0413"
+			}
+		}, {
+			"dc:identifier" : 20272894,
+			"reds:hasSource" : 1,
+			"reds:hasRank" : 1,
+			"reds:hasPredicate" : "reds:isAmendmentFor",
+			"reds:hasObject" : {
+				"dc:identifier" : 2918156,
+				"reds:type" : "reds:iCmRp-Dft",
+				"reds:reference" : "ECON-PR-641419"
+			}
+		}
+	],
+	"reds:hasObjectRelations" : [{
+			"dc:identifier" : 20415528,
+			"reds:hasPredicate" : "reds:hasOther_AME",
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasSubject" : {
+				"dc:identifier" : 2565594,
+				"reds:type" : "reds:DirContDossier",
+				"reds:reference" : "ECON-9-00408"
+			},
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27274483,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasType",
+					"reds:hasValue" : "reds:iCmDoc_Amd"
+				}, {
+					"dc:identifier" : 27274484,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:majorPart",
+					"reds:hasValue" : "01"
+				}, {
+					"dc:identifier" : 27274485,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasDocumentUse",
+					"reds:hasValue" : "BAC"
+				}
+			]
+		}, {
+			"dc:identifier" : 20649105,
+			"reds:hasPredicate" : "reds:hasMeetingDocument",
+			"reds:hasSource" : 11,
+			"reds:hasRank" : 11,
+			"reds:hasSubject" : {
+				"dc:identifier" : 3052287,
+				"reds:type" : "reds:iCmOj",
+				"reds:reference" : "ECON-OJ-2019-12-02-1"
+			},
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27198823,
+					"reds:hasSource" : 11,
+					"reds:hasRank" : 11,
+					"reds:hasName" : "reds:plmrepId",
+					"reds:hasValue" : "10410802"
+				}, {
+					"dc:identifier" : 27198824,
+					"reds:hasSource" : 11,
+					"reds:hasRank" : 11,
+					"reds:hasName" : "reds:itemNumber",
+					"reds:hasValue" : "21"
+				}
+			]
+		}, {
+			"dc:identifier" : 20649121,
+			"reds:hasPredicate" : "reds:hasMeetingDocument",
+			"reds:hasSource" : 11,
+			"reds:hasRank" : 11,
+			"reds:hasSubject" : {
+				"dc:identifier" : 3052287,
+				"reds:type" : "reds:iCmOj",
+				"reds:reference" : "ECON-OJ-2019-12-02-1"
+			},
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27198849,
+					"reds:hasSource" : 11,
+					"reds:hasRank" : 11,
+					"reds:hasName" : "reds:plmrepId",
+					"reds:hasValue" : "10410802"
+				}, {
+					"dc:identifier" : 27198850,
+					"reds:hasSource" : 11,
+					"reds:hasRank" : 11,
+					"reds:hasName" : "reds:itemNumber",
+					"reds:hasValue" : "15"
+				}
+			]
+		}
+	],
+	"reds:hasRoles" : [{
+			"dc:identifier" : 5719418,
+			"reds:hasSource" : 628,
+			"reds:hasRank" : 628,
+			"reds:hasRolePersonName" : "reds:AuthRole_NMCP",
+			"reds:hasPerson" : {
+				"reds:hasPersId" : 197738
+			}
+		}, {
+			"dc:identifier" : 5719416,
+			"reds:hasSource" : 628,
+			"reds:hasRank" : 628,
+			"reds:hasRoleBodyName" : "reds:hasCommittee",
+			"reds:hasBody" : {
+				"reds:hasBodyRole" : "CO",
+				"reds:hasBodyCode" : "ECON"
+			}
+		}, {
+			"dc:identifier" : 5719422,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasRoleBodyName" : "reds:hasInstitution",
+			"reds:hasBody" : {
+				"reds:hasBodyRole" : "IN",
+				"reds:hasBodyCode" : "EP"
+			}
+		}, {
+			"dc:identifier" : 5719417,
+			"reds:hasSource" : 628,
+			"reds:hasRank" : 628,
+			"reds:hasRolePersonName" : "reds:Role_RESP",
+			"reds:hasPerson" : {
+				"reds:hasPersId" : 126152
+			}
+		}
+	],
+	"reds:hasMedias" : [{
+			"dc:identifier" : 8984963,
+			"reds:hasType" : "REDMAP",
+			"reds:hasSource" : 3000,
+			"reds:hasRank" : 628,
+			"reds:hasUrl" : "/reds_iCmDoc_Amd/ECON-AM-643162/ECON-AM-643162_{LANGUAGE}.pdf",
+			"reds:hasFormat" : "application/pdf",
+			"reds:hasLanguages" : [{
+					"dc:identifier" : 74341933,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "fr",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60059595,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-25 09:18:20"
+						}, {
+							"dc:identifier" : 60059594,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 74342123,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "ro",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60059990,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60059989,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-22 16:08:20"
+						}
+					]
+				}, {
+					"dc:identifier" : 74420851,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "lt",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60322851,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 11:42:49"
+						}, {
+							"dc:identifier" : 60322852,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 74424142,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "da",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60332360,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 14:28:20"
+						}, {
+							"dc:identifier" : 60332359,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 74420078,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "mt",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60321151,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 10:28:20"
+						}, {
+							"dc:identifier" : 60321150,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 74421141,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "it",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60323602,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 11:58:26"
+						}, {
+							"dc:identifier" : 60323601,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 74426712,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "cs",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60339607,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60339606,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 15:58:20"
+						}
+					]
+				}, {
+					"dc:identifier" : 74426058,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "hu",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60337313,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 15:48:23"
+						}, {
+							"dc:identifier" : 60337314,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 74432858,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "pl",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60360707,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 16:48:20"
+						}, {
+							"dc:identifier" : 60360706,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 74434587,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "sv",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60365972,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 17:18:20"
+						}, {
+							"dc:identifier" : 60365973,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 74429682,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "el",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60349744,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60349745,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 16:38:20"
+						}
+					]
+				}, {
+					"dc:identifier" : 74407853,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "bg",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60286438,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60286437,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-25 17:08:20"
+						}
+					]
+				}, {
+					"dc:identifier" : 74427346,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "sk",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60341766,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60341765,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 16:08:20"
+						}
+					]
+				}, {
+					"dc:identifier" : 74427350,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "es",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60341777,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60341778,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 16:08:20"
+						}
+					]
+				}, {
+					"dc:identifier" : 74420763,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "pt",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60322649,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 11:28:34"
+						}, {
+							"dc:identifier" : 60322648,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 74413558,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "fi",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60302049,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-26 14:58:20"
+						}, {
+							"dc:identifier" : 60302048,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 74423936,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "lv",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60331749,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60331750,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 14:18:20"
+						}
+					]
+				}, {
+					"dc:identifier" : 74424140,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "de",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60332356,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 14:28:20"
+						}, {
+							"dc:identifier" : 60332355,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 74240986,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "nl",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 59713608,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 59713607,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-20 14:18:23"
+						}
+					]
+				}, {
+					"dc:identifier" : 73986739,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 628,
+					"reds:hasCode" : "en",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 58877008,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 628,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 58877007,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-14 15:48:29"
+						}
+					]
+				}
+			]
+		}, {
+			"dc:identifier" : 8984962,
+			"reds:hasType" : "REDMAP",
+			"reds:hasSource" : 3000,
+			"reds:hasRank" : 628,
+			"reds:hasUrl" : "/reds_iCmDoc_Amd/ECON-AM-643162/ECON-AM-643162_{LANGUAGE}.xhtml",
+			"reds:hasFormat" : "application/xhtml+xml",
+			"reds:hasLanguages" : [{
+					"dc:identifier" : 74341932,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "fr",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60059592,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60059593,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-25 09:18:20"
+						}
+					]
+				}, {
+					"dc:identifier" : 74342122,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "ro",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60059988,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60059987,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-22 16:08:20"
+						}
+					]
+				}, {
+					"dc:identifier" : 74420850,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "lt",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60322850,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60322849,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 11:42:49"
+						}
+					]
+				}, {
+					"dc:identifier" : 74424141,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "da",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60332357,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60332358,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 14:28:20"
+						}
+					]
+				}, {
+					"dc:identifier" : 74420077,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "mt",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60321149,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 10:28:20"
+						}, {
+							"dc:identifier" : 60321148,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 74421140,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "it",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60323599,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60323600,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 11:58:26"
+						}
+					]
+				}, {
+					"dc:identifier" : 74426711,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "cs",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60339605,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60339604,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 15:58:20"
+						}
+					]
+				}, {
+					"dc:identifier" : 74426057,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "hu",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60337312,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60337311,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 15:48:23"
+						}
+					]
+				}, {
+					"dc:identifier" : 74432857,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "pl",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60360704,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60360705,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 16:48:20"
+						}
+					]
+				}, {
+					"dc:identifier" : 74434586,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "sv",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60365970,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 17:18:20"
+						}, {
+							"dc:identifier" : 60365971,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 74429681,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "el",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60349742,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60349743,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 16:38:20"
+						}
+					]
+				}, {
+					"dc:identifier" : 74407852,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "bg",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60286435,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-25 17:08:20"
+						}, {
+							"dc:identifier" : 60286436,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 74427345,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "sk",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60341763,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 16:08:20"
+						}, {
+							"dc:identifier" : 60341764,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 74427349,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "es",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60341775,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60341776,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 16:08:20"
+						}
+					]
+				}, {
+					"dc:identifier" : 74420762,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "pt",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60322646,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60322647,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 11:28:34"
+						}
+					]
+				}, {
+					"dc:identifier" : 74413557,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "fi",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60302047,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-26 14:58:20"
+						}, {
+							"dc:identifier" : 60302046,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 74423935,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "lv",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60331747,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60331748,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 14:18:20"
+						}
+					]
+				}, {
+					"dc:identifier" : 74424139,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "de",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60332353,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60332354,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 14:28:20"
+						}
+					]
+				}, {
+					"dc:identifier" : 74240985,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "nl",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 59713605,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-20 14:18:23"
+						}, {
+							"dc:identifier" : 59713606,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 73986738,
+					"reds:hasSource" : 3000,
+					"reds:hasRank" : 628,
+					"reds:hasCode" : "en",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 58877006,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 628,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 58877005,
+							"reds:hasSource" : 3000,
+							"reds:hasRank" : 3000,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-14 15:48:29"
+						}
+					]
+				}
+			]
+		}, {
+			"dc:identifier" : 8984934,
+			"reds:hasType" : "REDMAP",
+			"reds:hasSource" : 628,
+			"reds:hasRank" : 628,
+			"reds:hasUrl" : "/reds_iCmDoc_Amd/ECON-AM-643162/ECON-AM-643162_{LANGUAGE}.docx",
+			"reds:hasFormat" : "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+			"reds:hasLanguages" : [{
+					"dc:identifier" : 74407807,
+					"reds:hasSource" : 627,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "bg",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60286374,
+							"reds:hasSource" : 627,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60286375,
+							"reds:hasSource" : -1,
+							"reds:hasRank" : -1,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-25 17:08:20"
+						}
+					]
+				}, {
+					"dc:identifier" : 74420044,
+					"reds:hasSource" : 627,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "mt",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60321077,
+							"reds:hasSource" : -1,
+							"reds:hasRank" : -1,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 10:28:20"
+						}, {
+							"dc:identifier" : 60321076,
+							"reds:hasSource" : 627,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 74420971,
+					"reds:hasSource" : 627,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "it",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60323076,
+							"reds:hasSource" : -1,
+							"reds:hasRank" : -1,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 11:58:26"
+						}, {
+							"dc:identifier" : 60323075,
+							"reds:hasSource" : 627,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 74429448,
+					"reds:hasSource" : 627,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "el",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60348936,
+							"reds:hasSource" : 627,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60348937,
+							"reds:hasSource" : -1,
+							"reds:hasRank" : -1,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 16:38:20"
+						}
+					]
+				}, {
+					"dc:identifier" : 74424106,
+					"reds:hasSource" : 627,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "de",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60332275,
+							"reds:hasSource" : -1,
+							"reds:hasRank" : -1,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 14:28:20"
+						}, {
+							"dc:identifier" : 60332274,
+							"reds:hasSource" : 627,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 74424107,
+					"reds:hasSource" : 627,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "da",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60332276,
+							"reds:hasSource" : 627,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60332277,
+							"reds:hasSource" : -1,
+							"reds:hasRank" : -1,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 14:28:20"
+						}
+					]
+				}, {
+					"dc:identifier" : 74432357,
+					"reds:hasSource" : 627,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "pl",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60358975,
+							"reds:hasSource" : 627,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60358976,
+							"reds:hasSource" : -1,
+							"reds:hasRank" : -1,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 16:48:20"
+						}
+					]
+				}, {
+					"dc:identifier" : 74427156,
+					"reds:hasSource" : 627,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "sk",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60341153,
+							"reds:hasSource" : 627,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60341161,
+							"reds:hasSource" : -1,
+							"reds:hasRank" : -1,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 16:08:20"
+						}
+					]
+				}, {
+					"dc:identifier" : 74427162,
+					"reds:hasSource" : 627,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "es",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60341172,
+							"reds:hasSource" : -1,
+							"reds:hasRank" : -1,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 16:08:20"
+						}, {
+							"dc:identifier" : 60341171,
+							"reds:hasSource" : 627,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 74425941,
+					"reds:hasSource" : 627,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "hu",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60336946,
+							"reds:hasSource" : 627,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60336947,
+							"reds:hasSource" : -1,
+							"reds:hasRank" : -1,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 15:48:23"
+						}
+					]
+				}, {
+					"dc:identifier" : 74342092,
+					"reds:hasSource" : 627,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "ro",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60059941,
+							"reds:hasSource" : 627,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60059942,
+							"reds:hasSource" : -1,
+							"reds:hasRank" : -1,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-22 16:08:20"
+						}
+					]
+				}, {
+					"dc:identifier" : 74434526,
+					"reds:hasSource" : 627,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "sv",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60365874,
+							"reds:hasSource" : -1,
+							"reds:hasRank" : -1,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 17:18:20"
+						}, {
+							"dc:identifier" : 60365873,
+							"reds:hasSource" : 627,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 74420731,
+					"reds:hasSource" : 627,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "pt",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60322588,
+							"reds:hasSource" : 627,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60322589,
+							"reds:hasSource" : -1,
+							"reds:hasRank" : -1,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 11:28:34"
+						}
+					]
+				}, {
+					"dc:identifier" : 74423908,
+					"reds:hasSource" : 627,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "lv",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60331670,
+							"reds:hasSource" : -1,
+							"reds:hasRank" : -1,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 14:18:20"
+						}, {
+							"dc:identifier" : 60331669,
+							"reds:hasSource" : 627,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 74341905,
+					"reds:hasSource" : 627,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "fr",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60272025,
+							"reds:hasSource" : -1,
+							"reds:hasRank" : -1,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-25 09:18:20"
+						}, {
+							"dc:identifier" : 60059525,
+							"reds:hasSource" : 627,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 74413379,
+					"reds:hasSource" : 627,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "fi",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60301594,
+							"reds:hasSource" : 627,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60301595,
+							"reds:hasSource" : -1,
+							"reds:hasRank" : -1,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-26 14:58:20"
+						}
+					]
+				}, {
+					"dc:identifier" : 74426543,
+					"reds:hasSource" : 627,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "cs",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60338999,
+							"reds:hasSource" : -1,
+							"reds:hasRank" : -1,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 15:58:20"
+						}, {
+							"dc:identifier" : 60338998,
+							"reds:hasSource" : 627,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 74420828,
+					"reds:hasSource" : 627,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "lt",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 60322806,
+							"reds:hasSource" : 627,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}, {
+							"dc:identifier" : 60322807,
+							"reds:hasSource" : -1,
+							"reds:hasRank" : -1,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-27 11:42:49"
+						}
+					]
+				}, {
+					"dc:identifier" : 74240850,
+					"reds:hasSource" : 627,
+					"reds:hasRank" : 627,
+					"reds:hasCode" : "nl",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 59713153,
+							"reds:hasSource" : -1,
+							"reds:hasRank" : -1,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-20 14:18:23"
+						}, {
+							"dc:identifier" : 59713152,
+							"reds:hasSource" : 627,
+							"reds:hasRank" : 627,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}, {
+					"dc:identifier" : 73986618,
+					"reds:hasSource" : 628,
+					"reds:hasRank" : 628,
+					"reds:hasCode" : "en",
+					"reds:version" : 1,
+					"reds:hasProperties" : [{
+							"dc:identifier" : 58876944,
+							"reds:hasSource" : -1,
+							"reds:hasRank" : -1,
+							"reds:hasName" : "reds:referenceLanguageVersion",
+							"reds:hasValue" : "2019-11-14 15:48:29"
+						}, {
+							"dc:identifier" : 58876943,
+							"reds:hasSource" : 628,
+							"reds:hasRank" : 628,
+							"reds:hasName" : "reds:version",
+							"reds:hasValue" : "0100"
+						}
+					]
+				}
+			]
+		}
+	],
+	"reds:hasTitles" : [{
+			"dc:identifier" : 18737894,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "it",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "EMENDAMENTI 7 - 23 - Progetto di relazione Misure di rafforzamento della cooperazione amministrativa per lottare contro la frode in materia di IVA",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18737893,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "lt",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "PAKEITIMAI 7 - 23 - Pranešimo projektas Priemonės, kuriomis stiprinamas administracinis bendradarbiavimas kovojant su sukčiavimu PVM",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18829769,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "nl",
+			"reds:hasType" : "UNIFORM",
+			"reds:hasValue" : "AMENDEMENTEN<br/>7 - 23<br/>Ontwerpverslag<br/>Lídia Pereira<br/>(PE641.419v01-00)<br/>Maatregelen ter versterking van de administratieve samenwerking om btw-fraude te bestrijden<br/>Voorstel voor een besluit<br/>(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18918873,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "sv",
+			"reds:hasType" : "UNIFORM",
+			"reds:hasValue" : "ÄNDRINGSFÖRSLAG<br/>7 - 23<br/>Förslag till betänkande<br/>Lídia Pereira<br/>(PE641.419v01-00)<br/>Åtgärder för att stärka det administrativa samarbetet för att bekämpa mervärdesskattebedrägeri<br/>Förslag till beslut<br/>(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18912610,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "it",
+			"reds:hasType" : "UNIFORM",
+			"reds:hasValue" : "EMENDAMENTI<br/>7 - 23<br/>Progetto di relazione<br/>Lídia Pereira<br/>(PE641.419v01-00)<br/>Misure di rafforzamento della cooperazione amministrativa per lottare contro la frode in materia di IVA<br/>Proposta di decisione<br/>(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18737788,
+			"reds:hasSource" : 628,
+			"reds:hasRank" : 628,
+			"reds:hasLanguage" : "zu_en",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "AMENDMENTS 7 - 23 - Draft report Proposal for a Council regulation amending Regulation (EU) No 904/2010 as regards measures to strengthen administrative cooperation in order to combat VAT fraud",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18912469,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "pt",
+			"reds:hasType" : "UNIFORM",
+			"reds:hasValue" : "ALTERAÇÕES<br/>7 - 23<br/>Projeto de relatório<br/>Lídia Pereira<br/>(PE641.419v01-00)<br/>Medidas destinadas a reforçar a cooperação administrativa para combater a fraude ao IVA<br/>Proposta de decisão<br/>(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18913653,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "de",
+			"reds:hasType" : "UNIFORM",
+			"reds:hasValue" : "ÄNDERUNGSANTRÄGE<br/>7 - 23<br/>Entwurf eines Berichts<br/>Lídia Pereira<br/>(PE641.419v01-00)<br/>Stärkung der Zusammenarbeit der Verwaltungsbehörden bei der Betrugsbekämpfung<br/>Vorschlag für einen Beschluss<br/>(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18737787,
+			"reds:hasSource" : 628,
+			"reds:hasRank" : 628,
+			"reds:hasLanguage" : "en",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "AMENDMENTS 7 - 23 - Draft report Measures to strengthen administrative cooperation in order to combat VAT fraud",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18737892,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "es",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "ENMIENDAS 7 - 23 - Proyecto de informe Medidas para reforzar la cooperación administrativa a fin de combatir el fraude en el ámbito del IVA",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18737896,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "nl",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "AMENDEMENTEN 7 - 23 - Ontwerpverslag Maatregelen ter versterking van de administratieve samenwerking om btw-fraude te bestrijden",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18912516,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "lt",
+			"reds:hasType" : "UNIFORM",
+			"reds:hasValue" : "PAKEITIMAI<br/>7 - 23<br/>Pranešimo projektas<br/>Lídia Pereira<br/>(PE641.419v01-00)<br/>Priemonės, kuriomis stiprinamas administracinis bendradarbiavimas kovojant su sukčiavimu PVM<br/>Pasiūlymas dėl sprendimo<br/>(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18908038,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "fi",
+			"reds:hasType" : "UNIFORM",
+			"reds:hasValue" : "TARKISTUKSET<br/>7 - 23<br/>Mietintöluonnos<br/>Lídia Pereira<br/>(PE641.419v01-00)<br/>Hallinnollisen yhteistyön lujittamiseen tähtäävät toimenpiteet alv-petosten torjumiseksi<br/>Ehdotus päätökseksi<br/>(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18737890,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "de",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "ÄNDERUNGSANTRÄGE 7 - 23 - Entwurf eines Berichts Stärkung der Zusammenarbeit der Verwaltungsbehörden bei der Betrugsbekämpfung",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18737900,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "ro",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "AMENDAMENTELE 7 - 23 - Proiect de raport Măsuri de consolidare a cooperării administrative în vederea combaterii fraudei în domeniul TVA",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18874192,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "fr",
+			"reds:hasType" : "UNIFORM",
+			"reds:hasValue" : "AMENDEMENTS<br/>7 - 23<br/>Projet de rapport<br/>Lídia Pereira<br/>(PE641.419v01-00)<br/>Mesures de renforcement de la coopération administrative afin de lutter contre la fraude à la TVA<br/>Proposition de décision<br/>(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18913654,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "da",
+			"reds:hasType" : "UNIFORM",
+			"reds:hasValue" : "ÆNDRINGSFORSLAG<br/>7 - 23<br/>Udkast til betænkning<br/>Lídia Pereira<br/>(PE641.419v01-00)<br/>Foranstaltninger til styrkelse af det administrative samarbejde med henblik på bekæmpelse af momssvig <br/>Forslag til afgørelse<br/>(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18916797,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "es",
+			"reds:hasType" : "UNIFORM",
+			"reds:hasValue" : "ENMIENDAS<br/>7 - 23<br/>Proyecto de informe<br/>Lídia Pereira<br/>(PE641.419v01-00)<br/>Medidas para reforzar la cooperación administrativa a fin de combatir el fraude en el ámbito del IVA<br/>Propuesta de Decisión<br/>(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18916750,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "cs",
+			"reds:hasType" : "UNIFORM",
+			"reds:hasValue" : "POZMĚŇOVACÍ NÁVRHY<br/>7 - 23<br/>Návrh zprávy<br/>Lídia Pereira<br/>(PE641.419v01-00)<br/>Opatření k posílení správní spolupráce za účelem boje proti podvodům v oblasti DPH<br/>Návrh rozhodnutí<br/>(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18737888,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "da",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "ÆNDRINGSFORSLAG 7 - 23 - Udkast til betænkning Foranstaltninger til styrkelse af det administrative samarbejde med henblik på bekæmpelse af momssvig",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18737898,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "sl",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Predlog uredbe Sveta o spremembi Uredbe (EU) št. 904/2010 v zvezi z ukrepi za krepitev upravnega sodelovanja za boj proti goljufijam na področju DDV",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 18737899,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "et",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Ettepanek võtta vastu nõukogu määrus, millega muudetakse määrust (EL) nr 904/2010 seoses meetmetega halduskoostöö tugevdamiseks, et võidelda käibemaksupettuste vastu",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 18737895,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "hu",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "MÓDOSÍTÁS 7 - 23 - Jelentéstervezet A héacsalás elleni küzdelem érdekében folytatott közigazgatási együttműködés erősítését célzó intézkedések",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18911226,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "mt",
+			"reds:hasType" : "UNIFORM",
+			"reds:hasValue" : "EMENDI<br/>7 - 23<br/>Abbozz ta' rapport<br/>Lídia Pereira<br/>(PE641.419v01-00)<br/>Miżuri għat-tisħiħ tal-kooperazzjoni amministrattiva fil-ġlieda kontra l-frodi tal-VAT<br/>Proposta għal deċiżjoni<br/>(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18737887,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "fr",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "AMENDEMENTS 7 - 23 - Projet de rapport Mesures de renforcement de la coopération administrative afin de lutter contre la fraude à la TVA",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18917946,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "pl",
+			"reds:hasType" : "UNIFORM",
+			"reds:hasValue" : "POPRAWKI<br/>7 - 23<br/>Projekt sprawozdania<br/>Lídia Pereira<br/>(PE641.419v01-00)<br/>Środki zwiększające współpracę administracyjną w celu zwalczania oszustw związanych z VAT<br/>Wniosek dotyczący decyzji<br/>(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18737901,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "hr",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Prijedlog uredbe Vijeća o izmjeni Uredbe (EU) br. 904/2010 u pogledu mjera za jačanje administrativne suradnje radi borbe protiv prijevara u vezi s PDV-om",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 18737889,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "lv",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "GROZĪJUMI Nr. 7 - 23 - Ziņojuma projekts Pasākumi administratīvās sadarbības stiprināšanai, lai apkarotu ar PVN saistītu krāpšanu",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18737789,
+			"reds:hasSource" : 628,
+			"reds:hasRank" : 628,
+			"reds:hasLanguage" : "en",
+			"reds:hasType" : "UNIFORM",
+			"reds:hasValue" : "AMENDMENTS<br/> 7 - 23<br/>Draft report<br/>Lídia Pereira<br/>(PE641.419v01-00)<br/>Measures to strengthen administrative cooperation in order to combat VAT fraud<br/>Proposal for a decision<br/>(COM(2018)0813 – C8-0016/2019 – 2018/0413(CNS))<br/>",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18737904,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "sv",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "ÄNDRINGSFÖRSLAG 7 - 23 - Förslag till betänkande Åtgärder för att stärka det administrativa samarbetet för att bekämpa mervärdesskattebedrägeri",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18737886,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "pt",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "ALTERAÇÕES 7 - 23 - Projeto de relatório Medidas destinadas a reforçar a cooperação administrativa para combater a fraude ao IVA",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18737891,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "pl",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "POPRAWKI 7 - 23 - Projekt sprawozdania Środki zwiększające współpracę administracyjną w celu zwalczania oszustw związanych z VAT",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18916700,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "hu",
+			"reds:hasType" : "UNIFORM",
+			"reds:hasValue" : "MÓDOSÍTÁS:<br/>7 - 23<br/>Jelentéstervezet<br/>Lídia Pereira<br/>(PE641.419v01-00)<br/>A héacsalás elleni küzdelem érdekében folytatott közigazgatási együttműködés erősítését célzó intézkedések<br/>Határozatra irányuló javaslat<br/>(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18737903,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "sk",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "POZMEŇUJÚCE NÁVRHY 7 - 23 - Návrh správy Opatrenia na posilnenie administratívnej spolupráce s cieľom bojovať proti podvodom v oblasti DPH",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18904140,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "bg",
+			"reds:hasType" : "UNIFORM",
+			"reds:hasValue" : "ИЗМЕНЕНИЯ<br/>7—23<br/>Проект на доклад<br/>Лидия Перейра<br/>(PE641.419v01-00)<br/>Мерки за засилване на административното сътрудничество с цел борба с измамите с ДДС<br/>Предложение за решение<br/>(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18913606,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "lv",
+			"reds:hasType" : "UNIFORM",
+			"reds:hasValue" : "GROZĪJUMI Nr.<br/>7 - 23<br/>Ziņojuma projekts<br/>Lídia Pereira<br/>(PE641.419v01-00)<br/>Pasākumi administratīvās sadarbības stiprināšanai, lai apkarotu ar PVN saistītu krāpšanu<br/>Lēmuma priekšlikums<br/>(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18916993,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "el",
+			"reds:hasType" : "UNIFORM",
+			"reds:hasValue" : "ΤΡΟΠΟΛΟΓΙΕΣ<br/>7 - 23<br/>Σχέδιο έκθεσης<br/>Lídia Pereira<br/>(PE641.419v01-00)<br/>Μέτρα ενίσχυσης της διοικητικής συνεργασίας για την καταπολέμηση της απάτης στον τομέα του ΦΠΑ<br/>Πρόταση απόφασης<br/>(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18874249,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "ro",
+			"reds:hasType" : "UNIFORM",
+			"reds:hasValue" : "AMENDAMENTELE<br/>7 - 23<br/>Proiect de raport<br/>Lídia Pereira<br/>(PE641.419v01-00)<br/>Măsuri de consolidare a cooperării administrative în vederea combaterii fraudei în domeniul TVA<br/>Propunere de decizie<br/>(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18916795,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "sk",
+			"reds:hasType" : "UNIFORM",
+			"reds:hasValue" : "POZMEŇUJÚCE NÁVRHY<br/>7 - 23<br/>Návrh správy<br/>Lídia Pereira<br/>(PE641.419v01-00)<br/>Opatrenia na posilnenie administratívnej spolupráce s cieľom bojovať proti podvodom v oblasti DPH<br/>Návrh rozhodnutia<br/>(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18737897,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "cs",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "POZMĚŇOVACÍ NÁVRHY 7 - 23 - Návrh zprávy Opatření k posílení správní spolupráce za účelem boje proti podvodům v oblasti DPH",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18737907,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "mt",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "EMENDI 7 - 23 - Abbozz ta' rapport Miżuri għat-tisħiħ tal-kooperazzjoni amministrattiva fil-ġlieda kontra l-frodi tal-VAT",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18737902,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "bg",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "ИЗМЕНЕНИЯ 7—23 - Проект на доклад Мерки за засилване на административното сътрудничество с цел борба с измамите с ДДС",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18737906,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "el",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "ΤΡΟΠΟΛΟΓΙΕΣ 7 - 23 - Σχέδιο έκθεσης Μέτρα ενίσχυσης της διοικητικής συνεργασίας για την καταπολέμηση της απάτης στον τομέα του ΦΠΑ",
+			"reds:version" : 1
+		}, {
+			"dc:identifier" : 18737905,
+			"reds:hasSource" : 627,
+			"reds:hasRank" : 627,
+			"reds:hasLanguage" : "fi",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "TARKISTUKSET 7 - 23 - Mietintöluonnos Hallinnollisen yhteistyön lujittamiseen tähtäävät toimenpiteet alv-petosten torjumiseksi",
+			"reds:version" : 1
+		}
+	]
+}

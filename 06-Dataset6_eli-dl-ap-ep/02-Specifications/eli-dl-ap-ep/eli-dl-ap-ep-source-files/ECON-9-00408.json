@@ -1,0 +1,892 @@
+{
+	"dc:identifier" : 2565594,
+	"reds:type" : "reds:DirContDossier",
+	"reds:reference" : "ECON-9-00408",
+	"reds:version" : 0,
+	"reds:dateDeposit" : "2019-06-12T08:29:30.000+0200",
+	"reds:status" : "red:Status_ENDED",
+	"reds:hasSource" : 6,
+	"reds:hasRank" : 6,
+	"reds:hasProperties" : [{
+			"dc:identifier" : 16344273,
+			"reds:hasSource" : 1,
+			"reds:hasRank" : 1,
+			"reds:hasName" : "reds:type",
+			"reds:hasValue" : "reds:DirContDossier"
+		}, {
+			"dc:identifier" : 16344194,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasName" : "reds:phase",
+			"reds:hasValue" : "red:Phase_10-00"
+		}, {
+			"dc:identifier" : 16344193,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasName" : "reds:hasInfTypIter",
+			"reds:hasValue" : "red:InfTypIter_LEG"
+		}, {
+			"dc:identifier" : 16486124,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasName" : "reds:hasPrecisionDossier",
+			"reds:hasValue" : "red:EventSubTypeS20_REP"
+		}, {
+			"dc:identifier" : 16344191,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasName" : "reds:hasNature",
+			"reds:hasValue" : "red:DirContDossNat_OFF-SA"
+		}, {
+			"dc:identifier" : 16344196,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasName" : "reds:leg",
+			"reds:hasValue" : "9"
+		}, {
+			"dc:identifier" : 16344274,
+			"reds:hasSource" : 1,
+			"reds:hasRank" : 1,
+			"reds:hasName" : "reds:hasRoleDossier",
+			"reds:hasValue" : "red:ComRole_MAIN"
+		}, {
+			"dc:identifier" : 16344192,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasName" : "reds:hasReading",
+			"reds:hasValue" : "reds:Reading_I"
+		}
+	],
+	"reds:hasRelations" : [{
+			"dc:identifier" : 19727107,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasPredicate" : "reds:hasEventType_PRVD2_I",
+			"reds:hasDate" : "2019-12-16T00:00:00.000+0100",
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27274475,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasReading",
+					"reds:hasValue" : "reds:Reading_I"
+				}, {
+					"dc:identifier" : 27274474,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasEventStatus",
+					"reds:hasValue" : "PROVISIONAL"
+				}
+			]
+		}, {
+			"dc:identifier" : 19909834,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasPredicate" : "reds:dateDeadlineAmd",
+			"reds:hasDate" : "2019-11-11T18:00:00.000+0100",
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27274500,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasDeadlineStatus",
+					"reds:hasValue" : "REAL"
+				}
+			]
+		}, {
+			"dc:identifier" : 20860895,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasPredicate" : "reds:hasEventType_PRVPL_I",
+			"reds:hasDate" : "2019-12-16T00:00:00.000+0100",
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27274497,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasEventStatus",
+					"reds:hasValue" : "PROVISIONAL"
+				}, {
+					"dc:identifier" : 27274498,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasReading",
+					"reds:hasValue" : "reds:Reading_I"
+				}
+			]
+		}, {
+			"dc:identifier" : 20981116,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasPredicate" : "reds:hasEventType_DOCDS",
+			"reds:hasDate" : "2019-11-25T00:00:00.000+0100",
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27274467,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasEventStatus",
+					"reds:hasValue" : "REAL"
+				}
+			]
+		}, {
+			"dc:identifier" : 17835570,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasPredicate" : "reds:dateDocument",
+			"reds:hasDate" : "2019-06-12T08:29:30.000+0200"
+		}, {
+			"dc:identifier" : 19909835,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasPredicate" : "reds:hasEventType_AMCP",
+			"reds:hasDate" : "2019-11-11T18:00:00.000+0100",
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27274501,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasEventStatus",
+					"reds:hasValue" : "REAL"
+				}
+			]
+		}, {
+			"dc:identifier" : 18132128,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasPredicate" : "reds:hasEventType_NMSR",
+			"reds:hasDate" : "2019-07-26T00:00:00.000+0200",
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27274470,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasEventStatus",
+					"reds:hasValue" : "REAL"
+				}
+			]
+		}, {
+			"dc:identifier" : 17835571,
+			"reds:hasSource" : -1,
+			"reds:hasRank" : -1,
+			"reds:hasPredicate" : "reds:dateCreation",
+			"reds:hasDate" : "2019-06-14T15:51:39.351+0200"
+		}, {
+			"dc:identifier" : 20934116,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasPredicate" : "reds:hasEventType_DEPOT_I",
+			"reds:hasDate" : "2019-12-09T08:40:43.000+0100",
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27274494,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasReading",
+					"reds:hasValue" : "reds:Reading_I"
+				}, {
+					"dc:identifier" : 27274495,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasEventStatus",
+					"reds:hasValue" : "REAL"
+				}
+			]
+		}, {
+			"dc:identifier" : 18132127,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasPredicate" : "reds:hasEventType_TRAVCP_REP",
+			"reds:hasDate" : "2019-07-18T00:00:00.000+0200",
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27274472,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasEventStatus",
+					"reds:hasValue" : "REAL"
+				}, {
+					"dc:identifier" : 27274473,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:subType",
+					"reds:hasValue" : "REP"
+				}
+			]
+		}, {
+			"dc:identifier" : 17835569,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasPredicate" : "reds:hasEventType_SDAVN",
+			"reds:hasDate" : "2018-12-13T00:00:00.000+0100",
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27274479,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasEventStatus",
+					"reds:hasValue" : "REAL"
+				}
+			]
+		}, {
+			"dc:identifier" : 20415528,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasPredicate" : "reds:hasOther_AME",
+			"reds:hasObject" : {
+				"dc:identifier" : 3029267,
+				"reds:type" : "reds:iCmDoc_Amd",
+				"reds:reference" : "ECON-AM-643162"
+			},
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27274483,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasType",
+					"reds:hasValue" : "reds:iCmDoc_Amd"
+				}, {
+					"dc:identifier" : 27274485,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasDocumentUse",
+					"reds:hasValue" : "BAC"
+				}, {
+					"dc:identifier" : 27274484,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:majorPart",
+					"reds:hasValue" : "01"
+				}
+			]
+		}, {
+			"dc:identifier" : 20907653,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasPredicate" : "reds:dateAdoption",
+			"reds:hasDate" : "2019-12-03T00:00:00.000+0100"
+		}, {
+			"dc:identifier" : 20934118,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasPredicate" : "reds:hasEventType_DOCDS",
+			"reds:hasDate" : "2019-11-11T00:00:00.000+0100",
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27274496,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasEventStatus",
+					"reds:hasValue" : "REAL"
+				}
+			]
+		}, {
+			"dc:identifier" : 20981117,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasPredicate" : "reds:hasEventType_DOCDS",
+			"reds:hasDate" : "2019-10-08T00:00:00.000+0200",
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27274468,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasEventStatus",
+					"reds:hasValue" : "REAL"
+				}
+			]
+		}, {
+			"dc:identifier" : 20907648,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasPredicate" : "reds:hasVoteResult",
+			"reds:hasDate" : "2019-12-03T00:00:00.000+0100",
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27274487,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:votePresent",
+					"reds:hasValue" : "57"
+				}, {
+					"dc:identifier" : 27274488,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:voteAgainst",
+					"reds:hasValue" : "2"
+				}, {
+					"dc:identifier" : 27274486,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:voteInFavour",
+					"reds:hasValue" : "50"
+				}, {
+					"dc:identifier" : 27274490,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:voteAbst",
+					"reds:hasValue" : "5"
+				}, {
+					"dc:identifier" : 27274489,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:VoteResult",
+					"reds:hasValue" : "red:VoteResult_AD"
+				}
+			]
+		}, {
+			"dc:identifier" : 18132129,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasPredicate" : "reds:hasEventType_ASGP",
+			"reds:hasDate" : "2019-07-18T00:00:00.000+0200",
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27274471,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasEventStatus",
+					"reds:hasValue" : "REAL"
+				}
+			]
+		}, {
+			"dc:identifier" : 20981118,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasPredicate" : "reds:hasEventType_EXCP",
+			"reds:hasDate" : "2019-12-03T00:00:00.000+0100",
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27274469,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasEventStatus",
+					"reds:hasValue" : "REAL"
+				}
+			]
+		}, {
+			"dc:identifier" : 17835572,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasPredicate" : "reds:hasBase_BAS_I",
+			"reds:hasObject" : {
+				"dc:identifier" : 2415162,
+				"reds:type" : "reds:iEcCom",
+				"reds:reference" : "COM-2018-0813"
+			},
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27274480,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasDocumentUse",
+					"reds:hasValue" : "BAS"
+				}, {
+					"dc:identifier" : 27274482,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasReading",
+					"reds:hasValue" : "reds:Reading_I"
+				}, {
+					"dc:identifier" : 27274481,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasType",
+					"reds:hasValue" : "reds:iEcCom"
+				}
+			]
+		}, {
+			"dc:identifier" : 17835573,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasPredicate" : "reds:hasDirContProc",
+			"reds:hasObject" : {
+				"dc:identifier" : 2415207,
+				"reds:type" : "reds:DirContProc",
+				"reds:reference" : "CNS-2018-0413"
+			}
+		}, {
+			"dc:identifier" : 19168719,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasPredicate" : "reds:hasEventType_NMCP",
+			"reds:hasDate" : "2019-07-18T00:00:00.000+0200",
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27274499,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasEventStatus",
+					"reds:hasValue" : "REAL"
+				}
+			]
+		}, {
+			"dc:identifier" : 19727109,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasPredicate" : "reds:hasOther_RAP",
+			"reds:hasObject" : {
+				"dc:identifier" : 2918156,
+				"reds:type" : "reds:iCmRp-Dft",
+				"reds:reference" : "ECON-PR-641419"
+			},
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27274478,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasDocumentUse",
+					"reds:hasValue" : "BAC"
+				}, {
+					"dc:identifier" : 27274477,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasType",
+					"reds:hasValue" : "reds:iCmRp-Dft"
+				}, {
+					"dc:identifier" : 27274476,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:majorPart",
+					"reds:hasValue" : "01"
+				}
+			]
+		}, {
+			"dc:identifier" : 20907649,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasPredicate" : "reds:hasEventType_ADCP_F1",
+			"reds:hasDate" : "2019-12-03T00:00:00.000+0100",
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27274491,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasEventStatus",
+					"reds:hasValue" : "REAL"
+				}, {
+					"dc:identifier" : 27274492,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:subType",
+					"reds:hasValue" : "F1"
+				}
+			]
+		}, {
+			"dc:identifier" : 20934115,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasPredicate" : "reds:hasEventType_EXCP",
+			"reds:hasDate" : "2019-11-04T00:00:00.000+0100",
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27274493,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasEventStatus",
+					"reds:hasValue" : "REAL"
+				}
+			]
+		}
+	],
+	"reds:hasObjectRelations" : [{
+			"dc:identifier" : 20649115,
+			"reds:hasPredicate" : "reds:hasMeetingDocument",
+			"reds:hasSource" : 11,
+			"reds:hasRank" : 99,
+			"reds:hasSubject" : {
+				"dc:identifier" : 3052287,
+				"reds:type" : "reds:iCmOj",
+				"reds:reference" : "ECON-OJ-2019-12-02-1"
+			},
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27198840,
+					"reds:hasSource" : 11,
+					"reds:hasRank" : 11,
+					"reds:hasName" : "reds:itemNumber",
+					"reds:hasValue" : "21"
+				}
+			]
+		}, {
+			"dc:identifier" : 20649141,
+			"reds:hasPredicate" : "reds:hasMeetingDocument",
+			"reds:hasSource" : 11,
+			"reds:hasRank" : 99,
+			"reds:hasSubject" : {
+				"dc:identifier" : 3052287,
+				"reds:type" : "reds:iCmOj",
+				"reds:reference" : "ECON-OJ-2019-12-02-1"
+			},
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27198879,
+					"reds:hasSource" : 11,
+					"reds:hasRank" : 11,
+					"reds:hasName" : "reds:itemNumber",
+					"reds:hasValue" : "15"
+				}
+			]
+		}, {
+			"dc:identifier" : 20272864,
+			"reds:hasPredicate" : "reds:isAmendmentFor",
+			"reds:hasSource" : 628,
+			"reds:hasRank" : 628,
+			"reds:hasSubject" : {
+				"dc:identifier" : 3029267,
+				"reds:type" : "reds:iCmDoc_Amd",
+				"reds:reference" : "ECON-AM-643162"
+			}
+		}, {
+			"dc:identifier" : 19723250,
+			"reds:hasPredicate" : "reds:hasDirContDossier",
+			"reds:hasSource" : 628,
+			"reds:hasRank" : 628,
+			"reds:hasSubject" : {
+				"dc:identifier" : 2918156,
+				"reds:type" : "reds:iCmRp-Dft",
+				"reds:reference" : "ECON-PR-641419"
+			},
+			"reds:hasProperties" : [{
+					"dc:identifier" : 26892287,
+					"reds:hasSource" : -1,
+					"reds:hasRank" : -1,
+					"reds:hasName" : "reds:hasPrecisionDossier",
+					"reds:hasValue" : "red:EventSubTypeS20_REP"
+				}
+			]
+		}, {
+			"dc:identifier" : 19794368,
+			"reds:hasPredicate" : "reds:hasMeetingDocument",
+			"reds:hasSource" : 11,
+			"reds:hasRank" : 99,
+			"reds:hasSubject" : {
+				"dc:identifier" : 2932825,
+				"reds:type" : "reds:iCmOj",
+				"reds:reference" : "ECON-OJ-2019-11-04-1"
+			},
+			"reds:hasProperties" : [{
+					"dc:identifier" : 26937833,
+					"reds:hasSource" : 11,
+					"reds:hasRank" : 11,
+					"reds:hasName" : "reds:itemNumber",
+					"reds:hasValue" : "8"
+				}
+			]
+		}, {
+			"dc:identifier" : 16797729,
+			"reds:hasPredicate" : "reds:hasDirContDossier",
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasSubject" : {
+				"dc:identifier" : 2415207,
+				"reds:type" : "reds:DirContProc",
+				"reds:reference" : "CNS-2018-0413"
+			},
+			"reds:hasProperties" : [{
+					"dc:identifier" : 28844865,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:type",
+					"reds:hasValue" : "reds:DirContDossier"
+				}, {
+					"dc:identifier" : 28844866,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasReading",
+					"reds:hasValue" : "reds:Reading_I"
+				}, {
+					"dc:identifier" : 28844868,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasRoleDossier",
+					"reds:hasValue" : "red:ComRole_MAIN"
+				}, {
+					"dc:identifier" : 28844867,
+					"reds:hasSource" : 6,
+					"reds:hasRank" : 6,
+					"reds:hasName" : "reds:hasPrecisionDossier",
+					"reds:hasValue" : "red:EventSubTypeS20_REP"
+				}
+			]
+		}, {
+			"dc:identifier" : 20921172,
+			"reds:hasPredicate" : "reds:hasDirContDossier",
+			"reds:hasSource" : 178,
+			"reds:hasRank" : 178,
+			"reds:hasSubject" : {
+				"dc:identifier" : 3134162,
+				"reds:type" : "reds:iPlRp",
+				"reds:reference" : "A-9-2019-0047"
+			},
+			"reds:hasProperties" : [{
+					"dc:identifier" : 27239197,
+					"reds:hasSource" : -1,
+					"reds:hasRank" : -1,
+					"reds:hasName" : "reds:hasPrecisionDossier",
+					"reds:hasValue" : "red:EventSubTypeS20_REP"
+				}, {
+					"dc:identifier" : 27228903,
+					"reds:hasSource" : 178,
+					"reds:hasRank" : 178,
+					"reds:hasName" : "reds:hasReading",
+					"reds:hasValue" : "reds:Reading_I"
+				}
+			]
+		}
+	],
+	"reds:hasRoles" : [{
+			"dc:identifier" : 5153687,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasRoleBodyName" : "reds:hasCommittee",
+			"reds:hasBody" : {
+				"reds:hasBodyRole" : "CO",
+				"reds:hasBodyCode" : "ECON"
+			}
+		}, {
+			"dc:identifier" : 5543287,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasRolePersonName" : "reds:AuthRole_NMSR",
+			"reds:hasRolePersonBodyName" : "reds:InNameOfGP",
+			"reds:hasPerson" : {
+				"reds:hasPersId" : 124942
+			},
+			"reds:hasBody" : {
+				"reds:hasBodyRole" : "GP",
+				"reds:hasBodyCode" : "Verts/ALE"
+			}
+		}, {
+			"dc:identifier" : 5621995,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasRolePersonName" : "reds:AuthRole_NMSR",
+			"reds:hasRolePersonBodyName" : "reds:InNameOfGP",
+			"reds:hasPerson" : {
+				"reds:hasPersId" : 28586
+			},
+			"reds:hasBody" : {
+				"reds:hasBodyRole" : "GP",
+				"reds:hasBodyCode" : "GUE/NGL"
+			}
+		}, {
+			"dc:identifier" : 5299516,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasRolePersonName" : "reds:AuthRole_NMSR",
+			"reds:hasRolePersonBodyName" : "reds:InNameOfGP",
+			"reds:hasPerson" : {
+				"reds:hasPersId" : 124722
+			},
+			"reds:hasBody" : {
+				"reds:hasBodyRole" : "GP",
+				"reds:hasBodyCode" : "S&D"
+			}
+		}, {
+			"dc:identifier" : 5344411,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasRolePersonName" : "reds:AuthRole_NMSR",
+			"reds:hasRolePersonBodyName" : "reds:InNameOfGP",
+			"reds:hasPerson" : {
+				"reds:hasPersId" : 197767
+			},
+			"reds:hasBody" : {
+				"reds:hasBodyRole" : "GP",
+				"reds:hasBodyCode" : "ECR"
+			}
+		}, {
+			"dc:identifier" : 5371200,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasRolePersonName" : "reds:AuthRole_NMCP_RAP",
+			"reds:hasRolePersonBodyName" : "reds:InNameOfCM",
+			"reds:hasPerson" : {
+				"reds:hasPersId" : 197738
+			},
+			"reds:hasBody" : {
+				"reds:hasBodyRole" : "CO",
+				"reds:hasBodyCode" : "ECON"
+			}
+		}, {
+			"dc:identifier" : 5189347,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasRolePersonName" : "reds:AuthRole_NMSR",
+			"reds:hasRolePersonBodyName" : "reds:InNameOfGP",
+			"reds:hasPerson" : {
+				"reds:hasPersId" : 118949
+			},
+			"reds:hasBody" : {
+				"reds:hasBodyRole" : "GP",
+				"reds:hasBodyCode" : "Renew"
+			}
+		}
+	],
+	"reds:hasMedias" : [],
+	"reds:hasTitles" : [{
+			"dc:identifier" : 15896509,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "hr",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Mjere za jačanje administrativne suradnje radi borbe protiv prijevara u vezi s PDV-om",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 15896514,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "sv",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Åtgärder för att stärka det administrativa samarbetet för att bekämpa mervärdesskattebedrägeri",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 15896519,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "lv",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Pasākumi administratīvās sadarbības stiprināšanai, lai apkarotu ar PVN saistītu krāpšanu",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 15896520,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "pt",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Medidas destinadas a reforçar a cooperação administrativa para combater a fraude ao IVA",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 15896511,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "el",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Μέτρα ενίσχυσης της διοικητικής συνεργασίας για την καταπολέμηση της απάτης στον τομέα του ΦΠΑ",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 15896523,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "fr",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Mesures de renforcement de la coopération administrative afin de lutter contre la fraude à la TVA",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 15896525,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "es",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Medidas para reforzar la cooperación administrativa a fin de combatir el fraude en el ámbito del IVA",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 15896517,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "sl",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Ukrepi za krepitev upravnega sodelovanja za boj proti goljufijam na področju DDV",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 15896504,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "de",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Stärkung der Zusammenarbeit der Verwaltungsbehörden bei der Betrugsbekämpfung",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 15896506,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "en",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Measures to strengthen administrative cooperation in order to combat VAT fraud",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 15896526,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "fi",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Hallinnollisen yhteistyön lujittamiseen tähtäävät toimenpiteet alv-petosten torjumiseksi",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 15896510,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "pl",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Środki zwiększające współpracę administracyjną w celu zwalczania oszustw związanych z VAT",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 15896513,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "et",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Meetmed halduskoostöö tugevdamiseks, et võidelda käibemaksupettuste vastu",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 15896507,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "lt",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Priemonės, kuriomis stiprinamas administracinis bendradarbiavimas kovojant su sukčiavimu PVM",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 15896518,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "hu",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "A héacsalás elleni küzdelem érdekében folytatott közigazgatási együttműködés megerősítésére irányuló intézkedések",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 15896512,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "da",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Foranstaltninger til styrkelse af det administrative samarbejde med henblik på bekæmpelse af momssvig",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 15896516,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "it",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Misure di rafforzamento della cooperazione amministrativa per lottare contro la frode in materia di IVA",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 15896522,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "nl",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Maatregelen ter versterking van de administratieve samenwerking om btw-fraude te bestrijden",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 15896521,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "ro",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Măsurile de consolidare a cooperării administrative în vederea combaterii fraudei în domeniul TVA",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 15896505,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "mt",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Miżuri biex tissaħħaħ il-kooperazzjoni amministrattiva għall-ġlieda kontra l-frodi tal-VAT",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 15896508,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "cs",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Opatření k posílení správní spolupráce za účelem boje proti podvodům v oblasti DPH",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 15896524,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "sk",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Opatrenia na posilnenie administratívnej spolupráce v záujme boja proti podvodom v oblasti DPH",
+			"reds:version" : 0
+		}, {
+			"dc:identifier" : 15896515,
+			"reds:hasSource" : 6,
+			"reds:hasRank" : 6,
+			"reds:hasLanguage" : "bg",
+			"reds:hasType" : "MAIN",
+			"reds:hasValue" : "Мерки за засилване на административното сътрудничество с цел борба с измамите с ДДС",
+			"reds:version" : 0
+		}
+	]
+}

@@ -1,0 +1,1206 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://data.europa.eu/eli/eli-draft-legislation-ontology#"
+     xml:base="http://data.europa.eu/eli/eli-draft-legislation-ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ontology="http://data.europa.eu/eli/ontology#">
+    <owl:Ontology rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#">
+        <owl:imports rdf:resource="http://data.europa.eu/eli/ontology#"/>
+        <owl:imports rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/"/>
+        <owl:imports rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+        <terms:creator xml:lang="en">ELI task force</terms:creator>
+        <terms:creator xml:lang="en">Thomas Francart - thomas.francart@sparna.fr</terms:creator>
+        <rdfs:comment xml:lang="en">The ELI (European Legislation Identifier) ontology for Draft Legislation (abbreviated ELI-DL) is an extension of the core ELI ontology that gives a formal data model to disseminate structured data about legislative processes. In particular it enables the structured annotation of existing web pages (using RDFa or JSON-LD) in order to turn their information into machine-readable data.
+
+The aim is to support the following use-cases :
+
+  - easier and earlier data exchange between legal information systems; typically enable Member States to know that an EU Procedures foresees an impact on existing legislation, and prepare its transposition earlier;
+  - legal monitoring of legislative processes to be alerted early on the legislation being drafted;
+  - cross-link the description of the legislative process across multiple websites (typically OJ, parliament and comitees websites);
+  - increased transparency to the public;
+
+ELI-DL enables the description of the 3 following main entities :
+
+  - _LegislativeProcesses_ (eli-dl:LegislativeProcess), from the initial proposal to the final publication in an OJ;
+  - _LegislativeActivities_ (eli-dl:LegislativeActivity) occuring during the legislative processes, such as reading before a chamber, opinions received, signature, votes, etc.
+  - LegislativeProcessWorks (eli-dl:LegislativeProcessWork), the documents being created during the processes, including the successive versions of the legislation itself, and its proposed amendments; in particular, ELI-DL enables the description of foreseen impact of draft legislation on existing legislation;
+
+ELI-DL is an extension of the FRBRoo and CIDOC-CRM ontologies.</rdfs:comment>
+        <rdfs:label xml:lang="en">ELI draft legislation ontology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcess"/>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork"/>
+        <rdfs:seeAlso rdf:resource="https://publications.europa.eu/en/web/eu-vocabularies/eli"/>
+        <owl:versionInfo>final1 - first stable release</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#amendment_included_in -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#amendment_included_in">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#is_referred_to_by"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#AmendmentToDraftLegislationWork"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#DraftLegislationWork"/>
+        <rdfs:comment xml:lang="en">Indicates the base work in which the modifications proposed by an amendment were integrated. This can be a reference to a specific version of the draft, in which case it should refer to the &quot;next&quot; version of the draft, or to the abstract draft work if the versions are not declared as separated entities.
+
+Amendments that have not been voted will not have this property, it is thus optional; amendments can be integrated in at most one draft work.</rdfs:comment>
+        <rdfs:label xml:lang="en">amendment included in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#amends_draft -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#amends_draft">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#refers_to"/>
+        <owl:inverseOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#draft_amended_by"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#AmendmentToDraftLegislationWork"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#DraftLegislationWork"/>
+        <rdfs:comment xml:lang="en">Indicates the base work that a draft amendment refers to - whether voted or not. This can be a reference to a specific version of the draft, in which case it should refer to the &quot;previous&quot; version of the draft, or to the abstract draft work if the versions are not declared as separated entities.
+
+This property is mandatory on an amendment work, and an amendment work can amend only a single instance of a draft base work.</rdfs:comment>
+        <rdfs:label xml:lang="en">amends draft</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#based_on_a_realization_of -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#based_on_a_realization_of">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#involved_work"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork"/>
+        <rdfs:comment xml:lang="en">Indicates that a LegislativeActivity  used some LegislativeProcessWork . the works are seen as the &quot;input&quot; of the activity.
+
+Example : the work of a commitee &quot;used&quot; a specific version of the draft as input to produce an opinion document.
+
+Note : the naming &quot;used a realization of&quot; is taken from FRBRoo. Since a work is an idea, existing only in people&apos;s mind, an activity cannot be simply said to have &quot;used&quot; a work, but really &quot;used an expression of this work&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">based on a realization of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#consists_of -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#consists_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P9_consists_of"/>
+        <owl:inverseOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#forms_part_of"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:comment xml:lang="en">Indicates a more fine-grained activity that is taking place within this one. This allows to nest activities inside each other, at an arbitrary level of precision.
+
+Example : &quot;Legislative process number 384&quot; consists of &quot;Initiation of the process 384&quot;, &quot;First lecture in assemblée nationale of legislative process 384&quot;, &quot;First lecture in senate of legislative process 384&quot;, &quot;joint commitee reading of legislative process 384&quot; and &quot;enactement of legislative process 384&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">consists of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#created_a_realization_of -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#created_a_realization_of">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#involved_work"/>
+        <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/R19_created_a_realization_of"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork"/>
+        <rdfs:comment xml:lang="en">Indicates that a LegislativeActivity  created some LegislativeProcessWork . the works are seen as the &quot;output&quot; of the activity.
+
+This property is meant to point to the text of the bill, the amendments, the opinions, etc. to point to the final LegalResource published as the outcome of a legislative process, use the alternative property &quot;created_a_realization_of_legal_resource&quot;.
+
+For recording of debates, which are not really &quot;outputs&quot; of the activity, use the alternative property &quot;recorded_in_realization_of&quot;.
+
+Note : the naming &quot;created a realization of&quot; is taken from FRBRoo. Since a work is an idea, existing only in people&apos;s mind, an activity cannot be simply said to have &quot;created&quot; a work, but really &quot;created an expression of this work&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">created a realization of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#created_a_realization_of_legal_resource -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#created_a_realization_of_legal_resource">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#involved_work"/>
+        <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/R19_created_a_realization_of"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>
+        <rdfs:comment xml:lang="en">Indicates a LegalResource that is officialy published as part of the legislative activity. This is used to indicate the outcome of a LegislativeProcess, as well as other &quot;intermediate&quot; legal resources that may be published in the course of the legislation drafting.</rdfs:comment>
+        <rdfs:label xml:lang="en">created a realization of legal resource</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#created_expression -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#created_expression">
+        <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/R17_created"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#Expression"/>
+        <rdfs:comment xml:lang="en">Indicates that a legal activity created an Expression.
+This property is mostly here for compatibility with FRBRoo, but implementations would prefer using created_a_realization_of to link to the Work level.
+This could indicate that some Expressions of a Work were created by the activity, and some others were translated afterwards.</rdfs:comment>
+        <rdfs:label xml:lang="en">created expression</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#created_legal_expression -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#created_legal_expression">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#created_expression"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#LegalExpression"/>
+        <rdfs:comment xml:lang="en">Indicates that a legislative activity created the a legal expression. Typically, a legislative process created the final legal expression of the legislation, as published in the OJ; but this can be used on legislative activities to link to &quot;intermediate&quot; expressions.
+This property is mostly here for compatibility with FRBRoo, but implementations would prefer using created_a_realization_of_legal_resource to link to the Work level.
+This could indicate that some Expressions of the final LegalResource were created by the legislative process, and some others were translated afterwards.</rdfs:comment>
+        <rdfs:label xml:lang="en">created legal expression</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#current_stage -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#current_stage">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcess"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStage"/>
+        <rdfs:comment xml:lang="en">The latest stage in which a legislative process is currently in.
+
+This is a shortcut for the full path LegislationProcess latest_activity LegislativeActivity occured_at_stage LegislativeProcessStage.
+
+Example : Bill 105 of 2019 is currently in stage &quot;Seanad Éireann, Second Stage&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">current stage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#draft_amended_by -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#draft_amended_by">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#is_referred_to_by"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#DraftLegislationWork"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#AmendmentToDraftLegislationWork"/>
+        <rdfs:comment xml:lang="en">Indicates an amendment that amends this version of the draft - whether voted or not.</rdfs:comment>
+        <rdfs:label xml:lang="en">draft amendment by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#foreseen_type_document -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#foreseen_type_document">
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcess"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#ResourceType"/>
+        <rdfs:comment xml:lang="en">Indicates the expected type of the legislation that will be the result of this legislative process.
+The expected type of legislation can change over time.
+
+The value must be taken in the ResourceType table, already used for the eli:type_document property.</rdfs:comment>
+        <rdfs:label xml:lang="en">foreseen type of document</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#foresees_amendment_of -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#foresees_amendment_of">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#foresees_change_of"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>
+        <rdfs:comment xml:lang="en">Indicates a LegalResource already published that the future law, if adopted, will amend. Readers should refer to the definition of the eli:amends property.
+Note the legal impacts can change in successive versions of the same document.</rdfs:comment>
+        <rdfs:label xml:lang="en">foresees amendment of</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/ontology#amends"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#foresees_application_of -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#foresees_application_of">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#refers_to"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>
+        <rdfs:comment xml:lang="en">Indicates a LegalResource already published that the future law, if adopted, will apply. Readers should refer to the definition of the eli:applies property.
+Note the legal impacts can change in successive versions of the same document.</rdfs:comment>
+        <rdfs:label xml:lang="en">foresees application of</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/ontology#applies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#foresees_based_on -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#foresees_based_on">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#refers_to"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>
+        <rdfs:comment xml:lang="en">Indicates a LegalResource already published on which the future law, if adopted, will be based on. Readers should refer to the definition of the eli:based_on property.
+Note the legal impacts can change in successive versions of the same document.</rdfs:comment>
+        <rdfs:label xml:lang="en">foresses based on</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/ontology#based_on"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#foresees_change_of -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#foresees_change_of">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#refers_to"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>
+        <rdfs:comment xml:lang="en">Indicates a LegalResource already published that the future law, if adopted, will change. Readers should refer to the definition of the eli:changes property.
+Note the legal impacts can change in successive versions of the same document.</rdfs:comment>
+        <rdfs:label xml:lang="en">foresses change of</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/ontology#changes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#foresees_citation_of -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#foresees_citation_of">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#refers_to"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>
+        <rdfs:comment xml:lang="en">Indicates a LegalResource already published that the future law, if adopted, will cite. Readers should refer to the definition of the eli:cites property.
+Note the legal impacts can change in successive versions of the same document.</rdfs:comment>
+        <rdfs:label xml:lang="en">foresees citation of</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/ontology#cites"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#foresees_commencement_of -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#foresees_commencement_of">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#foresees_change_of"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>
+        <rdfs:comment xml:lang="en">Indicates a LegalResource already published that the future law, if adopted, will commence. Readers should refer to the definition of the eli:commences property.
+Note the legal impacts can change in successive versions of the same document.</rdfs:comment>
+        <rdfs:label xml:lang="en">foresees commencement of</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/ontology#commences"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#foresees_consolidation_of -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#foresees_consolidation_of">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#refers_to"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>
+        <rdfs:comment xml:lang="en">Indicates a LegalResource already published that the future law, if adopted, will consolidates. Readers should refer to the definition of the eli:consoidates property.
+Note the legal impacts can change in successive versions of the same document.</rdfs:comment>
+        <rdfs:label xml:lang="en">foresse consolidation of</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/ontology#consolidates"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#foresees_repeal_of -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#foresees_repeal_of">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#foresees_change_of"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>
+        <rdfs:comment xml:lang="en">Indicates a LegalResource already published that the future law, if adopted, will repeal. Readers should refer to the definition of the eli:repeals property.
+Note the legal impacts can change in successive versions of the same document.</rdfs:comment>
+        <rdfs:label xml:lang="en">foresees repeal of</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/ontology#repeals"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#foresees_transposition_of -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#foresees_transposition_of">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#foresees_application_of"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>
+        <rdfs:comment xml:lang="en">Indicates a LegalResource already published that the future law, if adopted, will transpose. Readers should refer to the definition of the eli:transposes property.
+Note the legal impacts can change in successive versions of the same document.</rdfs:comment>
+        <rdfs:label xml:lang="en">foresees transposition of</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/ontology#transposes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#forms_part_of -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#forms_part_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P9i_forms_part_of"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:comment xml:lang="en">Indicates another larger activity that encompasses this one. 
+
+Example : the activity &quot;Readng in commission of legislative process 384&quot; forms part of &quot;First lecture in assemblée nationale of legislative process 384&quot;, which itself forms part &quot;Legislative process number 384&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">forms part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#had_legal_basis -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#had_legal_basis">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>
+        <rdfs:comment xml:lang="en">Indicates an act that specified the legislative workflow in which this legal activity takes place.
+
+Example : &quot;The Signature by the President of the European Parliament and the President of the Council of Procedure 2016/0382/COD had the legal basis TFEU/art 294  and TFEU/art 194 par 2&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">had legal basis</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#had_participant_organization -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#had_participant_organization">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#Organization"/>
+        <rdfs:comment xml:lang="en">An organization participating in an activity, but not necessarily responsible for it.</rdfs:comment>
+        <rdfs:label xml:lang="en">had participant organization</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#had_participant_person -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#had_participant_person">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#Person"/>
+        <rdfs:comment xml:lang="en">A person participating in a legal activity. A more precise property exists to indicate the responsible person of an activity.
+
+Example : members in a commision work, speaker during a plenary session</rdfs:comment>
+        <rdfs:label xml:lang="en">had participant person</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#had_responsible_organization -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#had_responsible_organization">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#had_participant_organization"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#Organization"/>
+        <rdfs:comment xml:lang="en">The organization responsible for carrying out the activity. This can be the institution in which the activity happened, or a service, a commission.
+
+Example :
+The activity &quot;1st reading of 2016/0382/COD&quot; had responsible organization European Parliament.
+The EU procedure 2016/0382/COD had responsible organization Directorate-General for Energy.</rdfs:comment>
+        <rdfs:label xml:lang="en">had responsible organization</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#had_responsible_person -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#had_responsible_person">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#had_participant_person"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#Person"/>
+        <rdfs:comment xml:lang="en">The responsible person of an activity.
+
+Example : the &quot;rapporteur&quot; of a text in a commision.</rdfs:comment>
+        <rdfs:label xml:lang="en">had responsible person</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#includes_amendment -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#includes_amendment">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#refers_to"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#DraftLegislationWork"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#AmendmentToDraftLegislationWork"/>
+        <rdfs:comment xml:lang="en">Indicate an amendment that was passed and included in this version of the legislation draft. This property is meant to refer to individual amendments that have been voted to be integrated in the text of the law.</rdfs:comment>
+        <rdfs:label xml:lang="en">includes amendment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#involved_work -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#involved_work">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#Work"/>
+        <rdfs:comment xml:lang="en">Indicates that a LegislativeActivity somehow used a work (document) to be conducted, without indicating how it was used.
+this covers both the documents used as &quot;input&quot; of the activity and also the document produced during the activity as &quot;output&quot;.
+More precise properties exist to indicate if the works should be considered &quot;inputs&quot; or &quot;outputs&quot; of the activity.</rdfs:comment>
+        <rdfs:label xml:lang="en">involved work</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#is_referred_to_by -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#is_referred_to_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by"/>
+        <owl:inverseOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#refers_to"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology#Work"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork"/>
+        <rdfs:comment xml:lang="en">Indicates a legislative process work that refers to this work.</rdfs:comment>
+        <rdfs:label xml:lang="en">is referred to by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#is_subject_of -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#is_subject_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcess"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">A webpage or resource that describe a legislative process. This property is meant to crosslink the websites of different institutions that describe the same legislative process.
+
+Example : the page of the legislation process in the OJ website, the page of the process in the Senate website, the page of the process in the State Council website.</rdfs:comment>
+        <rdfs:label xml:lang="en">is subject of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#latest_activity -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#latest_activity">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#consists_of"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcess"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:comment xml:lang="en">Indicates the latest activity that took place within a legislative process. This is used to indicate to a reader the latest stage of a process.
+Depending on the point of view, this can be used to point to the ongoing activity (not finished yet), or to the latest activity that actually completed.</rdfs:comment>
+        <rdfs:label xml:lang="en">latest activity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_keyword -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_keyword">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P129_is_about"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcess"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">The keywords, subject or categories for a legislative process.
+
+Example : Procedure 2016/0382/COD has Eurovoc keywords energy consumption, atmospheric pollution, renewable resources, EU programme, environmental cooperation, greenhouse gas, reduction of gas emissions, energy saving and renewable energy.</rdfs:comment>
+        <rdfs:label xml:lang="en">legislative process keyword</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_status -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_status">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcess"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStatus"/>
+        <rdfs:comment xml:lang="en">The status of a legislative process, in one of the possible values included in this model.</rdfs:comment>
+        <rdfs:label xml:lang="en">legislative process status</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_type -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcess"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessType"/>
+        <rdfs:comment xml:lang="en">The type of a legislative process. The type of a legislative process often determine the workflow being followed to create the law.
+
+The list of possible values need to be defined by each Member State.
+
+Example : &quot;Projet de loi&quot;, &quot;Proposition de loi&quot;, &quot;Revision of the Constitution&quot;, &quot;Public Bill&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">legislative process type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_work_creator -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_work_creator">
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#Agent"/>
+        <rdfs:comment xml:lang="en">Indicates the creator of legislative process work.</rdfs:comment>
+        <rdfs:label xml:lang="en">legislative process work creator</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_work_type -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_work_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWorkType"/>
+        <rdfs:comment xml:lang="en">The type of a legislative process work. The list of possible types need to be defined by each Member States.
+
+Example : &quot;Opinition from the economic commitee&quot;, &quot;Impact analysis&quot;, &quot;text of the bill&quot;, &quot;debate recording&quot;, &quot;amendment&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">legislative process work type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_work_version -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_work_version">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStatus"/>
+        <rdfs:comment xml:lang="en">The version, or status, in which the legislative process work is currently : preparatory, final, etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">legislative process work version</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#motivated -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#motivated">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P17i_motivated"/>
+        <owl:inverseOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#was_motivated_by"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:comment xml:lang="en">Annother activity that was &quot;triggered&quot; or &quot;logically followed&quot; this one.
+
+Example : the request for an opinion motivated the writing of an opinion.</rdfs:comment>
+        <rdfs:label xml:lang="en">motivated</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#occured_at_stage -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#occured_at_stage">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStage"/>
+        <rdfs:comment xml:lang="en">The legislative stage at which an activity occured.
+
+The description of the stages themselves is left open for implementers.
+
+Example : The activity &quot;Presentation of Bill 78 of 2018&quot; corresponds to stage &quot;Presentation to the House&quot;. The activity &quot;1ère lecture - Examen en commission du projet de loi 323&quot; corresponds to stage &quot;Examen en commission&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">occured at stage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#produced_manifestation -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#produced_manifestation">
+        <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/R18_created"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#ManifestationProductType"/>
+        <rdfs:comment xml:lang="en">Indicates that a legal activity created a Manifestation.
+This property is mostly here for compatibility with FRBRoo, but implementations would prefer using created_a_realization_of to link to the Work level.
+This could indicate that some Manifestation/Formats of the final LegalResource were created by the legislative process, and some others were generated afterwards.</rdfs:comment>
+        <rdfs:label xml:lang="en">produced manifestation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#recorded_in_realization_of -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#recorded_in_realization_of">
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork"/>
+        <rdfs:comment xml:lang="en">Indicates that an activity was recorded in a related work.
+
+Note : this property is shortcut for an implicit FRBR &quot;Recording Event&quot; that would have created the Recording of the event.</rdfs:comment>
+        <rdfs:label xml:lang="en">recorded in realization of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#refers_to -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#refers_to">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P67_refers_to"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#Work"/>
+        <rdfs:comment xml:lang="en">Any work that a legislative process work can refer to.
+
+Note that specific subproperties exist to describe future legal impacts (&quot;foresees_xxxx&quot; links) and links between amendments and draft legislation.
+
+Example : an opinion refers to the specific version of the draft legislation on which it is based.</rdfs:comment>
+        <rdfs:label xml:lang="en">refers to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#was_motivated_by -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#was_motivated_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P17_was_motivated_by"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:comment xml:lang="en">Another activity that &quot;triggered&quot; or &quot;logically preceded&quot; this activity.
+
+Example : the writing of an opinion was motivated by the transmission of a request for an opinion by the legislation service.</rdfs:comment>
+        <rdfs:label xml:lang="en">was motivated by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#was_submitted_by -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#was_submitted_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P17_was_motivated_by"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcess"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#Agent"/>
+        <rdfs:comment xml:lang="en">Indicates the organization or person that submitted a legislative process to the parliament (this could be the government, the President, the Senate, a group of members of the parliament, a parliamentary committee, a group of citizens, etc.).</rdfs:comment>
+        <rdfs:label xml:lang="en">was submitted by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#activity_date -->
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#activity_date">
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="en">The date of an activity, to indicate a single date. Alternatively, if an activity spans a time range, &quot;start_date&quot; and &quot;end_date&quot; can be used to indicate the beginning and end of the activity.</rdfs:comment>
+        <rdfs:label xml:lang="en">activity date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#activity_end_date -->
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#activity_end_date">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="en">The date at which a legislative activity ended.</rdfs:comment>
+        <rdfs:label xml:lang="en">activity end date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#activity_label -->
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#activity_label">
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A label on the activity, describing what is being carried out.</rdfs:comment>
+        <rdfs:label xml:lang="en">activity label</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#activity_start_date -->
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#activity_start_date">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="en">The date at which a legislative activity started.</rdfs:comment>
+        <rdfs:label xml:lang="en">start date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#date_last_update -->
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#date_last_update">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcess"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="en">The date at which the legislative process was last updated.
+
+A legislative process can have at most one value for this property.</rdfs:comment>
+        <rdfs:label xml:lang="en">date of last update</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#foreseen_date_of_adoption -->
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#foreseen_date_of_adoption">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcess"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="en">The date at which the legislative process is expected to be enacted to become an official act.</rdfs:comment>
+        <rdfs:label xml:lang="en">foreseen date of adoption</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_description -->
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_description">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P3_has_note"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcess"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">An account or summary for the legislative process.</rdfs:comment>
+        <rdfs:label xml:lang="en">legislative process description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_external_id -->
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_external_id">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_id"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">An identifier for the legislative process in a different institution.</rdfs:comment>
+        <rdfs:label xml:lang="en">legislative process external id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_id -->
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_id">
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcess"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">An identifier for the legislative process. This is meant to capture how the process is identified by law makers. A process can have multiple identifiers for different institutions, e.g. an identifier for the government, and an identifier for the parliament.
+
+Note that a subproperty legislative_process_external_id exists to capture the identifier of another institution, depending on the point of view.</rdfs:comment>
+        <rdfs:label xml:lang="en">legislative process id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_number -->
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_number">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcess"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The number under which a legislative process is known by the public. A legislative process has only one number.</rdfs:comment>
+        <rdfs:label xml:lang="en">legislative process number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_title -->
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_title">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#activity_label"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcess"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The name or title of a legislative process.
+
+Example : &quot;Forestry (Planning Permission) (Amendment) Bill 2018&quot;, &quot;Sports : organisation des jeux Olympiques et Paralympiques 2024&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">legislative process title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_work_date -->
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_work_date">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="en">The date at which a legislative process work was created.</rdfs:comment>
+        <rdfs:label xml:lang="en">legislative process work date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_work_description -->
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_work_description">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P3_has_note"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">An account or short description for a work created in the context of a legislative process.
+
+Example : &quot;Bill entitled an Act to amend the provisions of the Forestry Act 2014 to provide for planning permission for all forestry developments over 5 hectares; to amend the Planning and Development Act 2000; and to provide for related matters.&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">legislative process work description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_work_id -->
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#legislative_process_work_id">
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">An identifier which can be used to refer to a legislative process work.</rdfs:comment>
+        <rdfs:label xml:lang="en">legislative process work identifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#participant_organization_label -->
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#participant_organization_label">
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The name of an organization that participated in a legislative activity.</rdfs:comment>
+        <rdfs:label xml:lang="en">participant organization label</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#participant_person_label -->
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#participant_person_label">
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The name of a person that participated in a legislative activity.</rdfs:comment>
+        <rdfs:label xml:lang="en">participant person label</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#responsible_organization_label -->
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#responsible_organization_label">
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The name of an organization that was responsible for a legislative activity.</rdfs:comment>
+        <rdfs:label xml:lang="en">responsible organization label</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#responsible_person_label -->
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#responsible_person_label">
+        <rdfs:domain rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The name of a person that was responsible for a legislative activity.</rdfs:comment>
+        <rdfs:label xml:lang="en">responsible person label</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#AmendmentToDraftLegislationWork -->
+
+    <owl:Class rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#AmendmentToDraftLegislationWork">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork"/>
+        <rdfs:comment xml:lang="en">An amendment created to amend a specific version of a legislation draft.
+
+Amendments can be described and published even if they are not yet voted, or even if they were rejected.
+
+This is meant to identify both a single amendment, or a document containing a list of amendments.
+
+To describe a document containing a list of amendments, the relation has_part can be used between the instance of AmendmentToDraftLegislationWork identifying the amendment list and each instance of AmendmentToDraftLegislationWork that identifies an individual amendment within the list.</rdfs:comment>
+        <rdfs:label xml:lang="en">Amendment to draft legislation work</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#DraftLegislationWork -->
+
+    <owl:Class rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#DraftLegislationWork">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork"/>
+        <rdfs:comment xml:lang="en">Works that are draft legislations.
+
+Like eli:LegalResource, this class can be used to identify either a specific version of the legislation draft, or the &quot;abstract&quot; legislation work, independantly of one of its versions (in FRBRoo terms, it encompasses the notion of &quot;Individual work&quot; and &quot;Complex work&quot;).
+
+Example : the legislation draft &quot;as initiated&quot;, the legislation draft &quot;after 1st reading&quot;, the final version of the legislation draft.</rdfs:comment>
+        <rdfs:label xml:lang="en">Draft legislation work</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity -->
+
+    <owl:Class rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+        <rdfs:comment>Any activity taking place in the course of the drafting of a legislation. 
+
+This may involve the creation of a document, or be triggered by a document created by a previous activity.
+
+This can be used to describe activities at an arbitrary level of precisions : either macro activities, like &quot;reading of text in a chamber&quot;, or small-grained activities, like &quot;vote to elect the president of a commitee session&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">Legislative activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcess -->
+
+    <owl:Class rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcess">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity"/>
+        <rdfs:comment xml:lang="en">A process of drafting a legislation, covering all stages of the legislation creation, from the initiation to its signature or promulgation to make it a legislation, including readings and assemblies and official signature of the law.
+
+Note that the activity of publishing the legislation in an Official Journal is usually not part of the legislative process, as it usually happens after the draft legislation has become an official legislation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Legislative Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStage -->
+
+    <owl:Class rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStage">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStageTable"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">A stage in a legislative workflow. Stages can be described at an arbitrary level of granularity.
+
+Possible values need to be described by each Member State depending on its workflow.
+
+Example : &quot;Dàil second stage&quot;, &quot;1ère lecture&quot;, &quot;examen en commission&quot;, etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">Stage of a legislative process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStatus -->
+
+    <owl:Class rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStatus">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStatusTable"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">The overall status of a legislative process. ELI-DL provides 3 possible values : Ongoing, Successful, or Abandonned. Other values can be defined by implementors.</rdfs:comment>
+        <rdfs:label xml:lang="en">Status of a legislative process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessType -->
+
+    <owl:Class rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessType">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessTypeTable"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">A possible type for a legislative process.</rdfs:comment>
+        <rdfs:label xml:lang="en">Type of a legislative process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork -->
+
+    <owl:Class rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWork">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#Work"/>
+        <rdfs:comment xml:lang="en">Any work created by an activity during a legislative process.
+If the work is a version of the legislation draft or an amendment, more specific subclasses should be used.
+
+Example : an impact study, an opinion from a commitee, a debate recording or transcript.</rdfs:comment>
+        <rdfs:label xml:lang="en">Legislative process work</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWorkType -->
+
+    <owl:Class rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWorkType">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWorkTypeTable"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">A possible type for a legislative projcet work.</rdfs:comment>
+        <rdfs:label xml:lang="en">Type of a legislative process work</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWorkVersion -->
+
+    <owl:Class rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWorkVersion">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWorkVersionTable"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">The version of a legislative process document. For example an amendment can be in a drafted (prepatory) status, before being tabled (final).
+
+ELI-DL provides 2 possible values : Preparatory and Final. Other values can be defined by implementors, to refine e.g. the possible statuses of a an amendment, an opinition, etC.</rdfs:comment>
+        <rdfs:label xml:lang="en">Version of a legislative process work</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStageTable -->
+
+    <owl:NamedIndividual rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStageTable">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStatus-Abandonned -->
+
+    <owl:NamedIndividual rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStatus-Abandonned">
+        <rdf:type rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStatus"/>
+        <skos:definition xml:lang="en">The status of a legislative process that was stopped without &quot;giving birth&quot; to a LegalResource, e.g. &quot;Vetoed by the President&quot;, &quot;Lapsed with the dissolution of the Daìl&quot;.</skos:definition>
+        <skos:inScheme rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStatusTable"/>
+        <skos:prefLabel xml:lang="en">Abandonned legislative process</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStatus-Ongoing -->
+
+    <owl:NamedIndividual rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStatus-Ongoing">
+        <rdf:type rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStatus"/>
+        <skos:definition xml:lang="en">The status of a legislative process while the drafting of the legislation is currently taking place and the outcome of the process is not known.</skos:definition>
+        <skos:inScheme rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStatusTable"/>
+        <skos:prefLabel xml:lang="en">Ongoing legislative process</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStatus-Successful -->
+
+    <owl:NamedIndividual rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStatus-Successful">
+        <rdf:type rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStatus"/>
+        <skos:definition xml:lang="en">The status of a legislative process that has successfully &quot;gave birth&quot; to a LegalResource.</skos:definition>
+        <skos:inScheme rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStatusTable"/>
+        <skos:prefLabel xml:lang="en">Successfull legislative process</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStatusTable -->
+
+    <owl:NamedIndividual rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessStatusTable">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessTypeTable -->
+
+    <owl:NamedIndividual rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessTypeTable">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWorkTypeTable -->
+
+    <owl:NamedIndividual rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWorkTypeTable">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWorkVersion-Final -->
+
+    <owl:NamedIndividual rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWorkVersion-Final">
+        <rdf:type rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWorkVersion"/>
+        <skos:definition xml:lang="en">Indicates a legislative process work that is final.</skos:definition>
+        <skos:inScheme rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWorkVersionTable"/>
+        <skos:prefLabel xml:lang="en">Final work</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWorkVersion-Preparatory -->
+
+    <owl:NamedIndividual rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWorkVersion-Preparatory">
+        <rdf:type rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWorkVersion"/>
+        <skos:definition xml:lang="en">Indicates a legislative process work that is prepatory.</skos:definition>
+        <skos:inScheme rdf:resource="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWorkVersionTable"/>
+        <skos:prefLabel xml:lang="en">Preparatory work</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWorkVersionTable -->
+
+    <owl:NamedIndividual rdf:about="http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeProcessWorkVersionTable">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
