@@ -300,7 +300,7 @@
 			<xsl:when test="count($gender) = 0">
 				<xsl:message>Warning : cannot find gender "<xsl:value-of select="$dataInput" /></xsl:message>
 			</xsl:when>
-			<xsl:when test="count($gender) = 1">
+			<xsl:when test="count($gender) > 1">
 				<xsl:message>Warning : find <xsl:value-of select="count($gender)" /> genders named "<xsl:value-of select="$dataInput" /> - Taking first one.</xsl:message>
 				<xsl:value-of select="$gender[1]/referenceCode" />
 			</xsl:when>
