@@ -1,0 +1,28 @@
+@prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+
+<http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190715/1> a eponto:Vote;
+  eponto:voteFormsPartOfPlenarySitting <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190715>;
+  eponto:voteIdentifier "1";
+  skos:prefLabel "Mardi - demande du groupe GUE/NGL 15/07/2019 17:09:37.000"@fr .
+
+
+<http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/1> a eponto:Vote;
+  eponto:voteFormsPartOfPlenarySitting <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718>;
+  eponto:voteIdentifier "1";
+  skos:prefLabel "RC-B9-0014/2019 - § 13"@fr .
+
+
+<http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/2> a eponto:Vote;
+  eponto:voteFormsPartOfPlenarySitting <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718>;
+  eponto:voteIdentifier "2";
+  skos:prefLabel "RC-B9-0014/2019 - § 14"@fr .
+
+
+
+<http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/3> a eponto:Vote;
+  eponto:voteFormsPartOfPlenarySitting <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718>;
+  eponto:voteIdentifier "3";
+  skos:prefLabel "RC-B9-0014/2019 - § 17"@fr .

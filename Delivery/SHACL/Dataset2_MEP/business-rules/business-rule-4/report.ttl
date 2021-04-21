@@ -24,5 +24,14 @@
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
 [ a            sh:ValidationReport ;
-  sh:conforms  true
+  sh:conforms  false ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/person/MEP_101585> ;
+                 sh:resultMessage              "MEP belongs to more than one PoliticalGroup" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           []  ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEP ;
+                 sh:value                      <http://data.europarl.europa.eu/person/MEP_101585>
+               ]
 ] .

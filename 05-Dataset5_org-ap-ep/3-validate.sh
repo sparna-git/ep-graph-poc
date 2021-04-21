@@ -19,8 +19,5 @@ for f in $(find $SHACL_DIR -name '*.xlsx'); do
 	java -jar shacl-play-app-0.4-onejar.jar doc -i $SHACL_TTL -o $SHACL_HTML_DOC -l en
 done
 
-# now validate MEPs
-java -Xmx2048M -jar shacl-play-app-0.4-onejar.jar validate \
--i $RDF_DIR \
--s $SHACL_TTL_DIR/Dataset5_MEP-Shapes.ttl \
--o $REPORT_DIR/kmscodictfeedMEPs.html
+# now validate
+# java -Xmx2048M -jar shacl-play-app-0.4-onejar.jar validate -i $RDF_DIR/kmscodictfeedMEPs.rdf -s $SHACL_TTL_DIR/Dataset5_MEP-Shapes.ttl -o $REPORT_DIR/kmscodictfeedMEPs.html
