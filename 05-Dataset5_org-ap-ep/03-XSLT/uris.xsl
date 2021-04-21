@@ -18,7 +18,7 @@
 	<xsl:param name="parliamentaryTerm_file"
 		select="document(concat($XML_DIR, '/', 'parliamentaryTerm.xml'))/all/item" />	
 	<xsl:param name="country_file"
-		select="document('CountryISO.xml')/root/row" />
+		select="document(concat($XML_DIR, '/','CountryISO.xml'))/root/row" />
 
 
 	<xsl:function name="ep-org:URI-MEP">
@@ -46,6 +46,12 @@
 	<xsl:function name="ep-org:URI-AutorityPERSON">
 		<xsl:param name="uriAutority" />
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/person-type/', $uriAutority)" />
+	</xsl:function>
+	
+	<!-- URI RESOURCE PERSON  -->
+	<xsl:function name="ep-org:URI-ResourcePerson">
+		<xsl:param name="AssistantId" />
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/resource/person/', $AssistantId)"/>
 	</xsl:function>
 
 	<!-- URI AUTORITY FUNCTION -->
@@ -107,9 +113,8 @@
 	<xsl:function name="ep-org:URI-MEPBIRTHPLACE">
 		<xsl:param name="countryId"/>
 		<xsl:param name="countryISOcode"/>
-		<xsl:param name="BirthPlace"/>
 		<xsl:value-of select="ep-org:URI-Autority(concat(
-			'place/',ep-org:Lookup_COUNTRYBIRTHPLACE($countryId,$countryISOcode,$BirthPlace)))"/>
+			'place/',ep-org:Lookup_COUNTRYBIRTHPLACE($countryId,$countryISOcode)))"/>
 	</xsl:function>
 
 	<!-- NATIONALITY -->
@@ -151,7 +156,15 @@
 	<!-- URI PUBLICATION COUNTRY  -->
 	<xsl:function name="ep-org:URI-PublicationsCOUNTRY">
 		<xsl:param name="uriPublications" />
-		<xsl:value-of select="concat('http://publications.europa.eu/resource/authority/country/', $uriPublications)" />
+		<xsl:choose>
+			<xsl:when test="$uriPublications ='BRU'">
+				<xsl:value-of select="concat('http://publications.europa.eu/resource/authority/belgique/', $uriPublications)" />
+			</xsl:when>
+			<xsl:when test="$uriPublications ='STR'">
+				<xsl:value-of select="concat('http://publications.europa.eu/resource/authority/france/', $uriPublications)" />
+			</xsl:when>
+		</xsl:choose>
+		
 	</xsl:function>
 
 	<!-- URI PUBLICATION LOCALITY  -->
@@ -313,18 +326,15 @@
 	<xsl:function name="ep-org:Lookup_COUNTRYBIRTHPLACE">
 		<xsl:param name="in_countryId" />
 		<xsl:param name="in_countryIsocode" />
-		<xsl:param name="in_BirthPlace" />
 		
 		<xsl:variable name="towns" select="$Town[
 			countryId = $in_countryId
 			and 
 			countryIsoCode = $in_countryIsocode
-			and
-			originalName = $in_BirthPlace
 		]" />
 		<xsl:choose>
 			<xsl:when test="count($towns) = 0">
-				<xsl:message>Warning : cannot find town "<xsl:value-of select="$in_BirthPlace" />"" in country <xsl:value-of select="$in_countryId" /> (<xsl:value-of select="$in_countryIsocode" />)</xsl:message>
+				<xsl:message>Warning : cannot find Country "<xsl:value-of select="$in_countryId" /> (<xsl:value-of select="$in_countryIsocode" />)</xsl:message>
 			</xsl:when>
 			<xsl:when test="count($towns) > 1">
 				<xsl:message>Warning : find <xsl:value-of select="count($towns)" /> towns named "<xsl:value-of select="$in_BirthPlace" />" in country <xsl:value-of select="$in_countryId" /> (<xsl:value-of select="$in_countryIsocode" />) - Taking first one.</xsl:message>
@@ -353,6 +363,7 @@
 			</xsl:otherwise>
 		</xsl:choose>			
 	</xsl:function>
+
 
 	<!-- Date -->
 	<xsl:function name="ep-org:OrderparliamentaryTerm">
