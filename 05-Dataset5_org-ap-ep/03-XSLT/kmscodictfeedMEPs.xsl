@@ -157,7 +157,7 @@
 
 	<!-- ContactPoint electronic -->
 	<xsl:template match="eaddresses">
-		<xsl:for-each select="item">
+		<xsl:for-each select="item[normalize-space(address) != '']">
 			<schema:contactPoint>
 				<schema:ContactPoint
 					rdf:about="{ep-org:eaddresses(ancestor::item/identifier,concat(addressCodeType,order))}">
@@ -165,7 +165,7 @@
 						rdf:resource="{ep-org:eaddressesContactType(addressCodeType)}" />
 					<schema:url
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-						<xsl:value-of select="address" />
+						<xsl:value-of select="normalize-space(address)" />
 					</schema:url>
 				</schema:ContactPoint>
 			</schema:contactPoint>
