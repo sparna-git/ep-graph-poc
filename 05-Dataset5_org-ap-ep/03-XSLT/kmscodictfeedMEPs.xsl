@@ -86,8 +86,10 @@
 			<schema:honorificPrefix
 				rdf:resource="{ep-org:URI-CIVILITY(titleCode)}" />
 
+			<!--
 			<schema:birthPlace
 				rdf:resource="{ep-org:URI-MEPBIRTHPLACE(countryId,countryIsoCode,birthPlace)}" />
+			-->
 
 			<schema:nationality
 				rdf:resource="{ep-org:URI-MEPNATIONALITY(countryIsoCode)}" />
@@ -140,16 +142,17 @@
 	<!-- ContactPoint electronic -->
 	<xsl:template match="eaddresses">
 		<xsl:for-each select="item/addressCodeType">
-			<schema:ContactPoint
-				rdf:about="{ep-org:eaddresses(ancestor::item/identifier,concat(../addressCodeType,../order))}">
-				<schema:contactType
-					rdf:resource="{ep-org:eaddressesContactType(.)}">
+			<schema:contactPoint>
+				<schema:ContactPoint
+					rdf:about="{ep-org:eaddresses(ancestor::item/identifier,concat(../addressCodeType,../order))}">
+					<schema:contactType
+						rdf:resource="{ep-org:eaddressesContactType(.)}"/>
 					<schema:url
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 						<xsl:value-of select="../address" />
 					</schema:url>
-				</schema:contactType>
-			</schema:ContactPoint>
+				</schema:ContactPoint>
+			</schema:contactPoint>
 		</xsl:for-each>
 	</xsl:template>
 
