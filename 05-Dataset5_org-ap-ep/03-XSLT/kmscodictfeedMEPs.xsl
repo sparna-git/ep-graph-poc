@@ -75,10 +75,10 @@
 			<schema:honorificPrefix
 				rdf:resource="{ep-org:URI-CIVILITY(titleCode)}" />
 
-			<!--
-			<schema:birthPlace
-				rdf:resource="{ep-org:URI-MEPBIRTHPLACE(countryId,countryIsoCode,birthPlace)}" />
-			-->
+			<xsl:if test="string-length(normalize-space(birthPlace)) &gt; 0">
+				<schema:birthPlace
+					rdf:resource="{ep-org:URI-MEPBIRTHPLACE(countryId,countryIsoCode,birthPlace)}" />
+			</xsl:if>
 
 			<schema:nationality
 				rdf:resource="{ep-org:URI-MEPNATIONALITY(countryIsoCode)}" />
@@ -223,6 +223,7 @@
 						<ep-org:hasParliamentaryTerm
 							rdf:resource="{ep-org:URI-ParliamentaryTerm($startDate,$endDate)}" />
 					</xsl:if>
+					
 					<dc:identifier
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 						<xsl:value-of select="mandateId" />
@@ -287,6 +288,8 @@
 				<ep-org:Membership
 					rdf:about="{ep-org:URI-MEMBERSHIP(memberIdentifier,identifier)}">
 
+
+					
 					<xsl:if test="$var_hasMembershipType != ''">
 						<ep-org:hasMembershipType
 							rdf:resource="{ep-org:URI-MembershipType($var_hasMembershipType)}" />
@@ -298,8 +301,9 @@
 
 
 
+					<!--  					
 					<ep-org:hasParliamentaryTerm
-						rdf:resource="{ep-org:URI-ParliamentaryTerm($startDate,$endDate)}" />
+						rdf:resource="{ep-org:URI-ParliamentaryTerm($startDate,$endDate)}" />-->
 
 
 					<schema:endDate
