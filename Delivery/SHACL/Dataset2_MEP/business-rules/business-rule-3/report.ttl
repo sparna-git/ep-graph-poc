@@ -24,14 +24,5 @@
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
 [ a            sh:ValidationReport ;
-  sh:conforms  false ;
-  sh:result    [ a                             sh:ValidationResult ;
-                 sh:focusNode                  eponto:MEP ;
-                 sh:resultMessage              "Not enough MEP (701), was expecting at least 705" ;
-                 sh:resultSeverity             sh:Violation ;
-                 sh:sourceConstraint           []  ;
-                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
-                 sh:sourceShape                epsh:PoliticalGroup ;
-                 sh:value                      eponto:MEP
-               ]
+  sh:conforms  true
 ] .

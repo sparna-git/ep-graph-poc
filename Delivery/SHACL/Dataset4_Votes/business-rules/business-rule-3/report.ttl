@@ -1,47 +1,46 @@
 @prefix schema: <http://schema.org/> .
+@prefix wgs:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix scheme: <http://data.europarl.europa.eu/authority/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix gn:    <http://www.geonames.org/ontology#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ep:    <http://data.europarl.europa.eu/> .
+@prefix epsh:  <http://data.europarl.europa.eu/shapes#> .
 @prefix qb:    <http://purl.org/linked-data/cube#> .
+@prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> .
 @prefix dct:   <http://purl.org/dc/terms/> .
 @prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
 @prefix prov:  <http://www.w3.org/ns/prov#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
-@prefix wgs:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix org:   <http://www.w3.org/ns/org#> .
-@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
-@prefix gn:    <http://www.geonames.org/ontology#> .
-@prefix elidl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#> .
-@prefix ep:    <http://data.europarl.europa.eu/> .
-@prefix epsh:  <http://data.europarl.europa.eu/shapes#> .
-@prefix eponto: <http://data.europarl.europa.eu/ontology/ep#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
 [ a            sh:ValidationReport ;
   sh:conforms  false ;
   sh:result    [ a                             sh:ValidationResult ;
-                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/5> ;
-                 sh:resultMessage              "Vote has more MEPVote that number of active MEP (704)" ;
-                 sh:resultSeverity             sh:Violation ;
-                 sh:sourceConstraint           _:b0 ;
-                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
-                 sh:sourceShape                epsh:Vote ;
-                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/5>
-               ] ;
-  sh:result    [ a                             sh:ValidationResult ;
                  sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/8> ;
-                 sh:resultMessage              "Vote has more MEPVote that number of active MEP (704)" ;
+                 sh:resultMessage              "Vote has more MEPVote that number of active MEP (705)" ;
                  sh:resultSeverity             sh:Violation ;
                  sh:sourceConstraint           _:b0 ;
                  sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
                  sh:sourceShape                epsh:Vote ;
                  sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/8>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/5> ;
+                 sh:resultMessage              "Vote has more MEPVote that number of active MEP (705)" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:Vote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/5>
                ]
 ] .

@@ -10,7 +10,9 @@ FILES=(
 	"Country"
 	"Function"
 	"Gender"
+	"OrganizationType"
 	"parliamentaryTerm"
+	"Town"
 )
 
 for f in "${FILES[@]}"
@@ -24,4 +26,8 @@ do
 done
 
 # convert
-# java -Xmx2048M -jar saxon-he-10.1.jar -s:$INPUT_DIR/kmscodictfeedMEPs_19-03-2021_09-45.xml -o:$OUTPUT_DIR/kmscodictfeedMEPs.rdf -xsl:$XSLT_DIR/kmscodictfeedMEPs.xsl
+echo "Converting kmscodictfeedMEPs.xml ..."
+java -Xmx2048M -jar saxon-he-10.1.jar \
+	-s:$INPUT_DIR/kmscodictfeedMEPs_19-03-2021_09-45.xml \
+	-o:$OUTPUT_DIR/kmscodictfeedMEPs.rdf \
+	-xsl:$XSLT_DIR/kmscodictfeedMEPs.xsl
