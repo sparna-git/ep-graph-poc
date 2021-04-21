@@ -334,10 +334,10 @@
 		]" />
 		<xsl:choose>
 			<xsl:when test="count($towns) = 0">
-				<xsl:message>Warning : cannot find Country "<xsl:value-of select="$in_countryId" /> (<xsl:value-of select="$in_countryIsocode" />)</xsl:message>
+				<xsl:message>Warning : cannot find Country "<xsl:value-of select="$in_countryId" />" (<xsl:value-of select="$in_countryIsocode" />)</xsl:message>
 			</xsl:when>
 			<xsl:when test="count($towns) > 1">
-				<xsl:message>Warning : find <xsl:value-of select="count($towns)" /> towns named "<xsl:value-of select="$in_BirthPlace" />" in country <xsl:value-of select="$in_countryId" /> (<xsl:value-of select="$in_countryIsocode" />) - Taking first one.</xsl:message>
+				<xsl:message>Warning : find <xsl:value-of select="count($towns)" /> countries named "<xsl:value-of select="$in_countryId" />" (<xsl:value-of select="$in_countryIsocode" />) - Taking first one.</xsl:message>
 				<xsl:value-of select="$towns[1]/townCode" />
 			</xsl:when>
 			<xsl:otherwise>

@@ -75,9 +75,10 @@
 			<schema:honorificPrefix
 				rdf:resource="{ep-org:URI-CIVILITY(titleCode)}" />
  
-			<xsl:if test="string-length(normalize-space(birthPlace)) &gt; 0">
+			<xsl:if
+				test="ep-org:Lookup_COUNTRYBIRTHPLACE(countryId,countryIsoCode) !=''">
 				<schema:birthPlace
-					rdf:resource="{ep-org:URI-MEPBIRTHPLACE(countryId,countryIsoCode,birthPlace)}" />
+					rdf:resource="{ep-org:URI-MEPBIRTHPLACE(countryId,countryIsoCode)}" />
 			</xsl:if>
 
 			<schema:nationality
