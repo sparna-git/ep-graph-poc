@@ -20,5 +20,14 @@
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
 [ a            sh:ValidationReport ;
-  sh:conforms  true
+  sh:conforms  false ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190715/1> ;
+                 sh:resultMessage              "MEP voted more than once in a vote" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           []  ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:Vote ;
+                 sh:value                      <http://data.europarl.europa.eu/person/MEP_103381>
+               ]
 ] .

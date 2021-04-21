@@ -24,5 +24,2255 @@
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
 [ a            sh:ValidationReport ;
-  sh:conforms  true
+  sh:conforms  false ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/55/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/55/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/1/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/1/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/90/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/90/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/1/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/1/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/104/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/104/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/13/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/13/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/5/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/5/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/36/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/36/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/42/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/42/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/7/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/7/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/47/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/47/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/76/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/76/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/4/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/4/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/6/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/6/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/30/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/30/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/23/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/23/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/67/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/67/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/99/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/99/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/69/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/69/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/39/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/39/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/19/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/19/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/34/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/34/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/74/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/74/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/45/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/45/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/36/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/36/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/7/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/7/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/11/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/11/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/27/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/27/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/11/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/11/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/49/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/49/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/61/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/61/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/2/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/2/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/1/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/1/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/13/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/13/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/75/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/75/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/62/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/62/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/43/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/43/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/40/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/40/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/87/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/87/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/86/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/86/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/5/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/5/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/31/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/31/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/96/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/96/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/17/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/17/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/106/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/106/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/10/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/10/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/50/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/50/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/24/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/24/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/41/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/41/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/23/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/23/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/98/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/98/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/4/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/4/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/31/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/31/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/64/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/64/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190715/1/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190715/1/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/39/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/39/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/20/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/20/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/84/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/84/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/11/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/11/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/32/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/32/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/36/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/36/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/26/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/26/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/12/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/12/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/3/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/3/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/9/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/9/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/6/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/6/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/27/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/27/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/29/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/29/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/5/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/5/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/2/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/2/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/35/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/35/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/40/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/40/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/100/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/100/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/4/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/4/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/73/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/73/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/25/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/25/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/57/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/57/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/29/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/29/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/78/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/78/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/44/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/44/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/15/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/15/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/10/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/10/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/14/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/14/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/14/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/14/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/8/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/8/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/21/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/21/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/1/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/1/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/10/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/10/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/6/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/6/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/97/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/97/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191022/1/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191022/1/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/72/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/72/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/17/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/17/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/16/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/16/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/18/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/18/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/59/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/59/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/8/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/8/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/23/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/23/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/3/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/3/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/34/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/34/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/7/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/7/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/7/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/7/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/37/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/37/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/22/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/22/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/2/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/2/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/13/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/13/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/50/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/50/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/108/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/108/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/48/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/48/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/53/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/53/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/1/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/1/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/3/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/3/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/9/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/9/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/3/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/3/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/7/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/7/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/19/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/19/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/102/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/102/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/105/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/105/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/54/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/54/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/110/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/110/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/7/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/7/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/95/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/95/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/77/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/77/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/18/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/18/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/43/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/43/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/35/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/35/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/28/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/28/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/109/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/109/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/12/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/12/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/9/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/9/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/30/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/30/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/24/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/24/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/51/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/51/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/5/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191021/5/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/101/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/101/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/44/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/44/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/82/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/82/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191022/4/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191022/4/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/88/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/88/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/92/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/92/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/46/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/46/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/81/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/81/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/26/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/26/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190916/3/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190916/3/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190917/3/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190917/3/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/6/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/6/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/16/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/16/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/22/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/22/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/38/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/38/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/16/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/16/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/11/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/11/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/2/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/2/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/28/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/28/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/91/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/91/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/89/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/89/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/83/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/83/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/1/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/1/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/15/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/15/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191009/1/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191009/1/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/27/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/27/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/18/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/18/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/30/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/30/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/60/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/60/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/54/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/54/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/6/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/6/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/79/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/79/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/65/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/65/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/68/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/68/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191022/3/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191022/3/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/37/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/37/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/14/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/14/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/14/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/14/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/3/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/3/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/17/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/17/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/5/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/5/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/4/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/4/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/32/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/32/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/15/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/15/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/45/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/45/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191009/2/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191009/2/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190916/1/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190916/1/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/21/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/21/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/80/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/80/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/58/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/58/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/3/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/3/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/63/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/63/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/22/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/22/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/6/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/6/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/16/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/16/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/33/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/33/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/12/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/12/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/15/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/15/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/5/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190718/5/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/46/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/46/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/52/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/52/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/8/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/8/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/47/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/47/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/93/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/93/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/19/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/19/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/9/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/9/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/37/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/37/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/48/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/48/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/13/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/13/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/4/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/4/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/38/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/38/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/33/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/33/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/25/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/25/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/56/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/56/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/28/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/28/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/52/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/52/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/10/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/10/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/66/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/66/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/29/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/29/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191022/2/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191022/2/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/25/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/25/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/107/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/107/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/41/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/41/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/1/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/1/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/20/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/20/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/9/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/9/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/34/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/34/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/49/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/49/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/94/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/94/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/31/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/31/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/8/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/8/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/12/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/12/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/8/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/8/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/4/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/4/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/2/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/2/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/42/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/42/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/53/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/53/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/21/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/21/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/35/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/35/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/33/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/33/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/8/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190919/8/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/26/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/26/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190916/2/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190916/2/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/2/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/2/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/85/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/85/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/32/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/32/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/24/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/24/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/71/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/71/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/5/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/5/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/70/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/70/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/103/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191024/103/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/2/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/2/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/51/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191023/51/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/3/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/3/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/4/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190918/4/MEP_101039>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/20/MEP_101039> ;
+                 sh:resultMessage              "Found an MEP Vote from an MEP that is not active" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:MEPVote ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20191010/20/MEP_101039>
+               ]
 ] .

@@ -21,5 +21,23 @@
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
 [ a            sh:ValidationReport ;
-  sh:conforms  true
+  sh:conforms  false ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190131> ;
+                 sh:resultMessage              "PlenarySitting date is not within the PlenarySession date boundaries" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PlenarySitting ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190131>
+               ] ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114> ;
+                 sh:resultMessage              "PlenarySitting date is not within the PlenarySession date boundaries" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraint           _:b0 ;
+                 sh:sourceConstraintComponent  sh:SPARQLConstraintComponent ;
+                 sh:sourceShape                epsh:PlenarySitting ;
+                 sh:value                      <http://data.europarl.europa.eu/eli/dl/iPlMeeting/20190114>
+               ]
 ] .
