@@ -74,7 +74,7 @@
 				rdf:resource="{ep-org:URI-MEPGENDER(genderIsoCode)}" />
 			<schema:honorificPrefix
 				rdf:resource="{ep-org:URI-CIVILITY(titleCode)}" />
-
+ 
 			<xsl:if test="string-length(normalize-space(birthPlace)) &gt; 0">
 				<schema:birthPlace
 					rdf:resource="{ep-org:URI-MEPBIRTHPLACE(countryId,countryIsoCode,birthPlace)}" />
@@ -114,7 +114,7 @@
 						<xsl:when
 							test="count(/all/item[assistants/item/identifier = $thisIdentifier]) > 1">AST-APA-GRP</xsl:when>
 						<xsl:when test="accreditations/item[assistantType = 'A']">AST-APA</xsl:when>
-						<xsl:when test="accreditations/item[assistantType = 'L']">AST-LOC"</xsl:when>
+						<xsl:when test="accreditations/item[assistantType = 'L']">AST-LOC</xsl:when>
 						<xsl:otherwise>
 							<xsl:message>Cannot determine person-type for assistant <xsl:value-of select="$thisIdentifier" /></xsl:message>
 						</xsl:otherwise>
@@ -148,7 +148,7 @@
 
 	<!-- CV -->
 	<xsl:template match="cv">
-		<xsl:for-each select="item">
+		<xsl:for-each select="item[langIsoCode = 'EN' or langIsoCode = 'FR']">
 			<ep-org:curriculumVitae xml:lang="{lower-case(langIsoCode)}">
 					<xsl:value-of select="decription" />
 			</ep-org:curriculumVitae>
@@ -185,10 +185,10 @@
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 						<xsl:value-of select="officeNum" />
 					</ep-org:officeId>
+					<!--  TODO : si townCode = STR alors country France, si townCode = BRU, country Belgique -->
 					<schema:addressCountry
 						rdf:resource="{ep-org:URI-PublicationsCOUNTRY(townCode)}" />
-					<schema:addressLocality
-						rdf:resource="{ep-org:URI-PublicationsLOCALITY(townName)}" />
+					<schema:addressLocality><xsl:value-of select="townName" /></schema:addressLocality>
 					<schema:faxNumber
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 						<xsl:value-of select="faxNum" />
@@ -257,12 +257,12 @@
 					<xsl:choose>
 						<!-- CommitteeBody -->
 						<xsl:when
-							test="typeOrganeCode='CO' or typeOrganeCode='CI' or typeOrganeCode='SC' or typeOrganeCode='CE' or typeOrganeCode='CT' or typeOrganeCode='CJ' or typeOrganeCode='CM' ">
+							test="index-of(('CO', 'CI', 'SC', 'CE', 'CT', 'CJ', 'CM'), typeOrganeCode) > 0">
 							<xsl:value-of select="'committee-body'" />
 						</xsl:when>
 						<!-- DelegationBody -->
 						<xsl:when
-							test="typeOrganeCode='AP' or typeOrganeCode='DA' or typeOrganeCode='DE' or typeOrganeCode='DH' or typeOrganeCode='DM'">
+							test="index-of(('AP', 'DA', 'DE', 'DH', 'DM'), typeOrganeCode) > 0">
 							<xsl:value-of select="'delegation-body'" />
 						</xsl:when>
 						<!-- InstitutionBody -->
@@ -287,19 +287,14 @@
 
 				<ep-org:Membership
 					rdf:about="{ep-org:URI-MEMBERSHIP(memberIdentifier,identifier)}">
-
-
 					
 					<xsl:if test="$var_hasMembershipType != ''">
 						<ep-org:hasMembershipType
 							rdf:resource="{ep-org:URI-MembershipType($var_hasMembershipType)}" />
 					</xsl:if>
 
-
 					<ep-org:hasOrganization
-						rdf:resource="{ep-org:URI-TYPEOrganization(typeOrganeCode,organeCode,organeId)}" />
-
-
+						rdf:resource="{ep-org:URI-Organization(typeOrganeCode,organeCode,organeId)}" />
 
 					<!--  					
 					<ep-org:hasParliamentaryTerm

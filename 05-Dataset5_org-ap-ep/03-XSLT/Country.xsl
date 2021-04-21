@@ -36,18 +36,6 @@
 			rdf:about="{ep-org:URI-CVCOUNTRY(encode-for-uri(normalize-space(isoCode)))}">
 			<rdf:type rdf:resource="{ep-org:URI-CVEPONTO('Country')}" />
 
-			<xsl:variable name="isoCountryName">
-				<xsl:value-of
-					select="ep-org:Lookup_COUNTRYNAME(isoCode)" />
-			</xsl:variable>
-
-			<xsl:if test="$isoCountryName != ''">
-				<rdfs:label>
-					<xsl:value-of select="$isoCountryName" />
-				</rdfs:label>
-			</xsl:if>
-
-
 			<ep-org:euCandidate
 				rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">
 				<xsl:value-of select="lower-case(candidateFlag)" />
