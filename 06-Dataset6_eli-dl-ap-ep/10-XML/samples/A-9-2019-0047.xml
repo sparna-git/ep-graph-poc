@@ -1,0 +1,2671 @@
+<?xml version="1.0" ?>
+<all>
+	<key name="dc:identifier">3134162</key>
+	<key name="reds:type">reds:iPlRp</key>
+	<key name="reds:reference">A-9-2019-0047</key>
+	<key name="reds:version">2</key>
+	<key name="reds:dateDeposit">2019-12-09T00:00:00.000+0100</key>
+	<key name="reds:status">red:Status_ACTIVE</key>
+	<key name="reds:hasSource">178</key>
+	<key name="reds:hasRank">178</key>
+	<key name="reds:hasProperties">
+		<item>
+			<key name="dc:identifier">18482017</key>
+			<key name="reds:hasSource">6</key>
+			<key name="reds:hasRank">6</key>
+			<key name="reds:hasName">reds:hasFamily</key>
+			<key name="reds:hasValue">reds:DirContDocFam_DEP</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18481944</key>
+			<key name="reds:hasSource">178</key>
+			<key name="reds:hasRank">178</key>
+			<key name="reds:hasName">reds:originalLanguage</key>
+			<key name="reds:hasValue">en</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18501745</key>
+			<key name="reds:hasSource">50</key>
+			<key name="reds:hasRank">50</key>
+			<key name="reds:hasName">reds:hasConcept</key>
+			<key name="reds:hasValue">http://eurovoc.europa.eu/57^^Eurovoc</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18481979</key>
+			<key name="reds:hasSource">1</key>
+			<key name="reds:hasRank">1</key>
+			<key name="reds:hasName">reds:hasReading</key>
+			<key name="reds:hasValue">reds:Reading_I</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18502405</key>
+			<key name="reds:hasSource">50</key>
+			<key name="reds:hasRank">50</key>
+			<key name="reds:hasName">reds:hasConcept</key>
+			<key name="reds:hasValue">http://eurovoc.europa.eu/206^^Eurovoc</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18502408</key>
+			<key name="reds:hasSource">50</key>
+			<key name="reds:hasRank">50</key>
+			<key name="reds:hasName">reds:hasConcept</key>
+			<key name="reds:hasValue">http://eurovoc.europa.eu/4359^^Eurovoc</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18481945</key>
+			<key name="reds:hasSource">178</key>
+			<key name="reds:hasRank">178</key>
+			<key name="reds:hasName">reds:geproType</key>
+			<key name="reds:hasValue">RR</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18502400</key>
+			<key name="reds:hasSource">50</key>
+			<key name="reds:hasRank">50</key>
+			<key name="reds:hasName">reds:hasConcept</key>
+			<key name="reds:hasValue">http://eurovoc.europa.eu/6342^^Eurovoc</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18502404</key>
+			<key name="reds:hasSource">50</key>
+			<key name="reds:hasRank">50</key>
+			<key name="reds:hasName">reds:hasConcept</key>
+			<key name="reds:hasValue">http://eurovoc.europa.eu/4585^^Eurovoc</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18482016</key>
+			<key name="reds:hasSource">6</key>
+			<key name="reds:hasRank">6</key>
+			<key name="reds:hasName">reds:hasIterReference</key>
+			<key name="reds:hasValue">A9-0047/2019</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18502406</key>
+			<key name="reds:hasSource">50</key>
+			<key name="reds:hasRank">50</key>
+			<key name="reds:hasName">reds:hasConcept</key>
+			<key name="reds:hasValue">http://eurovoc.europa.eu/c_c8363c09^^Eurovoc</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18502402</key>
+			<key name="reds:hasSource">50</key>
+			<key name="reds:hasRank">50</key>
+			<key name="reds:hasName">reds:hasConcept</key>
+			<key name="reds:hasValue">http://europarl.europa.eu/data/DirectoryCode/093010^^DirectoryCode</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18481946</key>
+			<key name="reds:hasSource">178</key>
+			<key name="reds:hasRank">178</key>
+			<key name="reds:hasName">reds:leg</key>
+			<key name="reds:hasValue">9</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18481939</key>
+			<key name="reds:hasSource">178</key>
+			<key name="reds:hasRank">178</key>
+			<key name="reds:hasName">reds:nuPe</key>
+			<key name="reds:hasValue">PE641.419</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18501748</key>
+			<key name="reds:hasSource">50</key>
+			<key name="reds:hasRank">50</key>
+			<key name="reds:hasName">reds:hasConcept</key>
+			<key name="reds:hasValue">http://eurovoc.europa.eu/1092^^Eurovoc</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18502403</key>
+			<key name="reds:hasSource">50</key>
+			<key name="reds:hasRank">50</key>
+			<key name="reds:hasName">reds:hasConcept</key>
+			<key name="reds:hasValue">http://eurovoc.europa.eu/c_e749c083^^Eurovoc</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18501747</key>
+			<key name="reds:hasSource">50</key>
+			<key name="reds:hasRank">50</key>
+			<key name="reds:hasName">reds:hasConcept</key>
+			<key name="reds:hasValue">http://eurovoc.europa.eu/3951^^Eurovoc</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18481942</key>
+			<key name="reds:hasSource">178</key>
+			<key name="reds:hasRank">178</key>
+			<key name="reds:hasName">reds:fdr</key>
+			<key name="reds:hasValue">1194660</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18482018</key>
+			<key name="reds:hasSource">6</key>
+			<key name="reds:hasRank">6</key>
+			<key name="reds:hasName">reds:hasType</key>
+			<key name="reds:hasValue">RPCF</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18501749</key>
+			<key name="reds:hasSource">50</key>
+			<key name="reds:hasRank">50</key>
+			<key name="reds:hasName">reds:hasConcept</key>
+			<key name="reds:hasValue">http://europarl.europa.eu/data/SubjectHeading/FISC^^SubjectHeading</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18502407</key>
+			<key name="reds:hasSource">50</key>
+			<key name="reds:hasRank">50</key>
+			<key name="reds:hasName">reds:hasConcept</key>
+			<key name="reds:hasValue">http://europarl.europa.eu/data/SubjectHeading/TVA^^SubjectHeading</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18481940</key>
+			<key name="reds:hasSource">178</key>
+			<key name="reds:hasRank">178</key>
+			<key name="reds:hasName">reds:nuPeVersion</key>
+			<key name="reds:hasValue">0200</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18481943</key>
+			<key name="reds:hasSource">178</key>
+			<key name="reds:hasRank">178</key>
+			<key name="reds:hasName">reds:art51</key>
+			<key name="reds:hasValue">NO</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18501746</key>
+			<key name="reds:hasSource">50</key>
+			<key name="reds:hasRank">50</key>
+			<key name="reds:hasName">reds:hasConcept</key>
+			<key name="reds:hasValue">http://eurovoc.europa.eu/616^^Eurovoc</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18502401</key>
+			<key name="reds:hasSource">50</key>
+			<key name="reds:hasRank">50</key>
+			<key name="reds:hasName">reds:hasConcept</key>
+			<key name="reds:hasValue">http://eurovoc.europa.eu/6089^^Eurovoc</key>
+		</item>
+		<item>
+			<key name="dc:identifier">18481941</key>
+			<key name="reds:hasSource">178</key>
+			<key name="reds:hasRank">178</key>
+			<key name="reds:hasName">reds:canonicalReferenceRegister</key>
+			<key name="reds:hasValue">P9_A(2019)0047</key>
+		</item>
+	</key>
+	<key name="reds:hasRelations">
+		<item>
+			<key name="dc:identifier">20921174</key>
+			<key name="reds:hasSource">178</key>
+			<key name="reds:hasRank">178</key>
+			<key name="reds:hasPredicate">reds:hasiEcCom</key>
+			<key name="reds:hasObject">
+				<key name="dc:identifier">2415162</key>
+				<key name="reds:type">reds:iEcCom</key>
+				<key name="reds:reference">COM-2018-0813</key>
+			</key>
+		</item>
+		<item>
+			<key name="dc:identifier">20959583</key>
+			<key name="reds:hasSource">1</key>
+			<key name="reds:hasRank">1</key>
+			<key name="reds:hasPredicate">reds:hasAdoption</key>
+			<key name="reds:hasObject">
+				<key name="dc:identifier">3141462</key>
+				<key name="reds:type">reds:iPlTa_Itm</key>
+				<key name="reds:reference">TA-9-2019-0091</key>
+			</key>
+		</item>
+		<item>
+			<key name="dc:identifier">20921169</key>
+			<key name="reds:hasSource">178</key>
+			<key name="reds:hasRank">178</key>
+			<key name="reds:hasPredicate">reds:dateDocument</key>
+			<key name="reds:hasDate">2019-12-09T00:00:00.000+0100</key>
+		</item>
+		<item>
+			<key name="dc:identifier">20921168</key>
+			<key name="reds:hasSource">-1</key>
+			<key name="reds:hasRank">-1</key>
+			<key name="reds:hasPredicate">reds:dateCreation</key>
+			<key name="reds:hasDate">2019-12-09T12:48:10.070+0100</key>
+		</item>
+		<item>
+			<key name="dc:identifier">20921170</key>
+			<key name="reds:hasSource">178</key>
+			<key name="reds:hasRank">178</key>
+			<key name="reds:hasPredicate">reds:hasSitting</key>
+			<key name="reds:hasDate">2019-12-18T00:00:00.000+0100</key>
+		</item>
+		<item>
+			<key name="dc:identifier">20921171</key>
+			<key name="reds:hasSource">178</key>
+			<key name="reds:hasRank">178</key>
+			<key name="reds:hasPredicate">_:DOCC</key>
+			<key name="reds:hasObject">
+				<key name="reds:type">reds:Default</key>
+				<key name="reds:reference">C8-0016/2019</key>
+			</key>
+		</item>
+		<item>
+			<key name="dc:identifier">20921167</key>
+			<key name="reds:hasSource">178</key>
+			<key name="reds:hasRank">178</key>
+			<key name="reds:hasPredicate">reds:hasDirContProc</key>
+			<key name="reds:hasObject">
+				<key name="dc:identifier">2415207</key>
+				<key name="reds:type">reds:DirContProc</key>
+				<key name="reds:reference">CNS-2018-0413</key>
+			</key>
+		</item>
+		<item>
+			<key name="dc:identifier">20921172</key>
+			<key name="reds:hasSource">178</key>
+			<key name="reds:hasRank">178</key>
+			<key name="reds:hasPredicate">reds:hasDirContDossier</key>
+			<key name="reds:hasObject">
+				<key name="dc:identifier">2565594</key>
+				<key name="reds:type">reds:DirContDossier</key>
+				<key name="reds:reference">ECON-9-00408</key>
+			</key>
+			<key name="reds:hasProperties">
+				<item>
+					<key name="dc:identifier">27228903</key>
+					<key name="reds:hasSource">178</key>
+					<key name="reds:hasRank">178</key>
+					<key name="reds:hasName">reds:hasReading</key>
+					<key name="reds:hasValue">reds:Reading_I</key>
+				</item>
+				<item>
+					<key name="dc:identifier">27239197</key>
+					<key name="reds:hasSource">-1</key>
+					<key name="reds:hasRank">-1</key>
+					<key name="reds:hasName">reds:hasPrecisionDossier</key>
+					<key name="reds:hasValue">red:EventSubTypeS20_REP</key>
+				</item>
+			</key>
+		</item>
+		<item>
+			<key name="dc:identifier">20921173</key>
+			<key name="reds:hasSource">178</key>
+			<key name="reds:hasRank">178</key>
+			<key name="reds:hasPredicate">reds:dateAdoptionCmt</key>
+			<key name="reds:hasDate">2019-12-03T00:00:00.000+0100</key>
+		</item>
+		<item>
+			<key name="dc:identifier">21765572</key>
+			<key name="reds:hasSource">4</key>
+			<key name="reds:hasRank">4</key>
+			<key name="reds:hasPredicate">reds:hasVoteResult</key>
+			<key name="reds:hasDate">2019-12-17T00:00:00.000+0100</key>
+			<key name="reds:hasProperties">
+				<item>
+					<key name="dc:identifier">28755365</key>
+					<key name="reds:hasSource">4</key>
+					<key name="reds:hasRank">4</key>
+					<key name="reds:hasName">reds:voteInFavour</key>
+					<key name="reds:hasValue">591</key>
+				</item>
+				<item>
+					<key name="dc:identifier">28755363</key>
+					<key name="reds:hasSource">4</key>
+					<key name="reds:hasRank">4</key>
+					<key name="reds:hasName">reds:voteAgainst</key>
+					<key name="reds:hasValue">18</key>
+				</item>
+				<item>
+					<key name="dc:identifier">28755364</key>
+					<key name="reds:hasSource">4</key>
+					<key name="reds:hasRank">4</key>
+					<key name="reds:hasName">reds:voteMode</key>
+					<key name="reds:hasValue">red:voteMode_ROLL-CALL</key>
+				</item>
+				<item>
+					<key name="dc:identifier">28755366</key>
+					<key name="reds:hasSource">4</key>
+					<key name="reds:hasRank">4</key>
+					<key name="reds:hasName">reds:voteAbst</key>
+					<key name="reds:hasValue">86</key>
+				</item>
+				<item>
+					<key name="dc:identifier">28755367</key>
+					<key name="reds:hasSource">4</key>
+					<key name="reds:hasRank">4</key>
+					<key name="reds:hasName">reds:VoteResult</key>
+					<key name="reds:hasValue">red:voteResult_ADU</key>
+				</item>
+			</key>
+		</item>
+	</key>
+	<key name="reds:hasObjectRelations">
+		<item>
+			<key name="dc:identifier">23176464</key>
+			<key name="reds:hasPredicate">reds:isVoteFor</key>
+			<key name="reds:hasSource">35</key>
+			<key name="reds:hasRank">35</key>
+			<key name="reds:hasSubject">
+				<key name="dc:identifier">3142169</key>
+				<key name="reds:type">reds:iPlPv_Itm</key>
+				<key name="reds:reference">PV-9-2019-12-17-ITM-004-08</key>
+			</key>
+		</item>
+		<item>
+			<key name="dc:identifier">20982512</key>
+			<key name="reds:hasPredicate">reds:isExplVoteFor</key>
+			<key name="reds:hasSource">40</key>
+			<key name="reds:hasRank">40</key>
+			<key name="reds:hasSubject">
+				<key name="dc:identifier">3144564</key>
+				<key name="reds:type">reds:iPlCre_Itm</key>
+				<key name="reds:reference">CRE-9-2019-12-17-ITM-005-03</key>
+			</key>
+		</item>
+		<item>
+			<key name="dc:identifier">20958914</key>
+			<key name="reds:hasPredicate">reds:isDebateFor</key>
+			<key name="reds:hasSource">1</key>
+			<key name="reds:hasRank">1</key>
+			<key name="reds:hasSubject">
+				<key name="dc:identifier">3141326</key>
+				<key name="reds:type">reds:iPlCre_Itm</key>
+				<key name="reds:reference">CRE-9-2019-12-16-ITM-015</key>
+			</key>
+		</item>
+		<item>
+			<key name="dc:identifier">21916920</key>
+			<key name="reds:hasPredicate">reds:hasLink</key>
+			<key name="reds:hasSource">40</key>
+			<key name="reds:hasRank">40</key>
+			<key name="reds:hasSubject">
+				<key name="dc:identifier">3141327</key>
+				<key name="reds:type">reds:iPlCre_Int</key>
+				<key name="reds:reference">CRE-9-2019-12-16-INT-1-072-0000</key>
+			</key>
+		</item>
+		<item>
+			<key name="dc:identifier">20933939</key>
+			<key name="reds:hasPredicate">reds:isAmendmentFor</key>
+			<key name="reds:hasSource">16</key>
+			<key name="reds:hasRank">16</key>
+			<key name="reds:hasSubject">
+				<key name="dc:identifier">3137193</key>
+				<key name="reds:type">reds:iPlRp_Amd</key>
+				<key name="reds:reference">A-9-2019-0047-AM-001-017</key>
+			</key>
+		</item>
+		<item>
+			<key name="dc:identifier">20959559</key>
+			<key name="reds:hasPredicate">reds:isAdoptionFor</key>
+			<key name="reds:hasSource">26</key>
+			<key name="reds:hasRank">99</key>
+			<key name="reds:hasSubject">
+				<key name="dc:identifier">3141462</key>
+				<key name="reds:type">reds:iPlTa_Itm</key>
+				<key name="reds:reference">TA-9-2019-0091</key>
+			</key>
+		</item>
+		<item>
+			<key name="dc:identifier">20986834</key>
+			<key name="reds:hasPredicate">reds:isVoteFor</key>
+			<key name="reds:hasSource">22</key>
+			<key name="reds:hasRank">22</key>
+			<key name="reds:hasSubject">
+				<key name="dc:identifier">3096587</key>
+				<key name="reds:type">reds:iPlOj_Sit</key>
+				<key name="reds:reference">OJQ-9-2019-12-17</key>
+			</key>
+			<key name="reds:hasProperties">
+				<item>
+					<key name="dc:identifier">27277680</key>
+					<key name="reds:hasSource">22</key>
+					<key name="reds:hasRank">22</key>
+					<key name="reds:hasName">reds:itemNumber</key>
+					<key name="reds:hasValue">V35</key>
+				</item>
+			</key>
+		</item>
+		<item>
+			<key name="dc:identifier">20986819</key>
+			<key name="reds:hasPredicate">reds:isDebateFor</key>
+			<key name="reds:hasSource">22</key>
+			<key name="reds:hasRank">22</key>
+			<key name="reds:hasSubject">
+				<key name="dc:identifier">3096586</key>
+				<key name="reds:type">reds:iPlOj_Sit</key>
+				<key name="reds:reference">OJQ-9-2019-12-16</key>
+			</key>
+			<key name="reds:hasProperties">
+				<item>
+					<key name="dc:identifier">27277663</key>
+					<key name="reds:hasSource">22</key>
+					<key name="reds:hasRank">22</key>
+					<key name="reds:hasName">reds:itemNumber</key>
+					<key name="reds:hasValue">D35</key>
+				</item>
+			</key>
+		</item>
+		<item>
+			<key name="dc:identifier">20935737</key>
+			<key name="reds:hasPredicate">reds:hasiPlRp_I</key>
+			<key name="reds:hasSource">6</key>
+			<key name="reds:hasRank">6</key>
+			<key name="reds:hasSubject">
+				<key name="dc:identifier">2415207</key>
+				<key name="reds:type">reds:DirContProc</key>
+				<key name="reds:reference">CNS-2018-0413</key>
+			</key>
+			<key name="reds:hasProperties">
+				<item>
+					<key name="dc:identifier">28844836</key>
+					<key name="reds:hasSource">6</key>
+					<key name="reds:hasRank">6</key>
+					<key name="reds:hasName">reds:majorPart</key>
+					<key name="reds:hasValue">01</key>
+				</item>
+				<item>
+					<key name="dc:identifier">28844837</key>
+					<key name="reds:hasSource">6</key>
+					<key name="reds:hasRank">6</key>
+					<key name="reds:hasName">reds:hasDocumentUse</key>
+					<key name="reds:hasValue">RL1</key>
+				</item>
+				<item>
+					<key name="dc:identifier">28844835</key>
+					<key name="reds:hasSource">6</key>
+					<key name="reds:hasRank">6</key>
+					<key name="reds:hasName">reds:hasReading</key>
+					<key name="reds:hasValue">reds:Reading_I</key>
+				</item>
+			</key>
+		</item>
+		<item>
+			<key name="dc:identifier">20983411</key>
+			<key name="reds:hasPredicate">reds:isVoteFor</key>
+			<key name="reds:hasSource">1</key>
+			<key name="reds:hasRank">1</key>
+			<key name="reds:hasSubject">
+				<key name="dc:identifier">3144551</key>
+				<key name="reds:type">reds:iPlCre_Itm</key>
+				<key name="reds:reference">CRE-9-2019-12-17-ITM-004-08</key>
+			</key>
+		</item>
+		<item>
+			<key name="dc:identifier">21793868</key>
+			<key name="reds:hasPredicate">reds:isDebateFor</key>
+			<key name="reds:hasSource">35</key>
+			<key name="reds:hasRank">35</key>
+			<key name="reds:hasSubject">
+				<key name="dc:identifier">3141162</key>
+				<key name="reds:type">reds:iPlPv_Itm</key>
+				<key name="reds:reference">PV-9-2019-12-16-ITM-015</key>
+			</key>
+		</item>
+	</key>
+	<key name="reds:hasRoles">
+		<item>
+			<key name="dc:identifier">5821301</key>
+			<key name="reds:hasSource">178</key>
+			<key name="reds:hasRank">178</key>
+			<key name="reds:hasRolePersonName">reds:AuthRole_NMCP</key>
+			<key name="reds:hasRolePersonBodyName">reds:InNameOfCM</key>
+			<key name="reds:hasPerson">
+				<key name="reds:hasPersId">197738</key>
+			</key>
+			<key name="reds:hasBody">
+				<key name="reds:hasBodyRole">CO</key>
+				<key name="reds:hasBodyCode">ECON</key>
+			</key>
+		</item>
+		<item>
+			<key name="dc:identifier">5821324</key>
+			<key name="reds:hasSource">6</key>
+			<key name="reds:hasRank">6</key>
+			<key name="reds:hasRoleBodyName">reds:hasInstitution</key>
+			<key name="reds:hasBody">
+				<key name="reds:hasBodyRole">IN</key>
+				<key name="reds:hasBodyCode">EP</key>
+			</key>
+		</item>
+		<item>
+			<key name="dc:identifier">5821300</key>
+			<key name="reds:hasSource">178</key>
+			<key name="reds:hasRank">178</key>
+			<key name="reds:hasRoleBodyName">reds:hasCommittee</key>
+			<key name="reds:hasBody">
+				<key name="reds:hasBodyRole">CO</key>
+				<key name="reds:hasBodyCode">ECON</key>
+			</key>
+		</item>
+	</key>
+	<key name="reds:hasMedias">
+		<item>
+			<key name="dc:identifier">9254600</key>
+			<key name="reds:hasType">REDMAP</key>
+			<key name="reds:hasSource">3000</key>
+			<key name="reds:hasRank">178</key>
+			<key name="reds:hasUrl">/reds_iPlRp/A-9-2019-0047/A-9-2019-0047_{LANGUAGE}.pdf</key>
+			<key name="reds:hasFormat">application/pdf</key>
+			<key name="reds:hasLanguages">
+				<item>
+					<key name="dc:identifier">75355805</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">lv</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62797959</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62797960</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-12 09:28:12</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75357091</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">fi</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62800845</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-12 17:18:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62800844</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75361732</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">lt</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62811046</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 09:38:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62811045</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75361522</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">et</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62810563</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 09:28:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62810562</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75364712</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">it</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62819305</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62819306</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 12:18:12</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75364722</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">da</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62819337</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62819338</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 12:18:12</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75356097</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">sk</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62798659</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-12 11:48:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62798660</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75362066</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">sl</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62811853</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62811852</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 09:58:12</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75330685</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">nl</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62710168</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62710169</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-10 14:58:12</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75351677</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">fr</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62781959</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-11 10:08:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62781958</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75356504</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">ro</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62799631</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62799630</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-12 13:58:12</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75356517</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">pt</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62799656</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-12 14:18:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62799657</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75363976</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">el</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62816883</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62816884</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 11:18:12</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75361887</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">es</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62811462</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 09:48:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62811461</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75364441</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">de</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62818090</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 11:58:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62818091</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75364447</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">sv</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62818103</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 11:58:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62818102</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75363685</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">pl</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62815856</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 11:08:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62815857</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75363695</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">mt</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62815876</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62815877</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 11:08:12</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75363697</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">hu</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62815881</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 11:08:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62815880</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75364381</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">hr</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62817975</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 11:48:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62817976</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75355611</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">ga</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62797532</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62797531</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-11 17:08:12</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75308397</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">178</key>
+					<key name="reds:hasCode">en</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62630894</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">178</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62630895</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-09 12:48:10</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75363164</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">bg</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62814037</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 10:48:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62814036</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75364273</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">cs</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62817674</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62817673</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 11:38:12</key>
+						</item>
+					</key>
+				</item>
+			</key>
+		</item>
+		<item>
+			<key name="dc:identifier">9254594</key>
+			<key name="reds:hasType">REDMAP</key>
+			<key name="reds:hasSource">178</key>
+			<key name="reds:hasRank">178</key>
+			<key name="reds:hasUrl">/reds_iPlRp/A-9-2019-0047/A-9-2019-0047_{LANGUAGE}.docx</key>
+			<key name="reds:hasFormat">application/vnd.openxmlformats-officedocument.wordprocessingml.document</key>
+			<key name="reds:hasLanguages">
+				<item>
+					<key name="dc:identifier">75342781</key>
+					<key name="reds:hasSource">177</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">ga</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62752603</key>
+							<key name="reds:hasSource">177</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62752604</key>
+							<key name="reds:hasSource">-1</key>
+							<key name="reds:hasRank">-1</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-11 17:08:12</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75364700</key>
+					<key name="reds:hasSource">177</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">it</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62819283</key>
+							<key name="reds:hasSource">-1</key>
+							<key name="reds:hasRank">-1</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 12:18:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62819282</key>
+							<key name="reds:hasSource">177</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75345199</key>
+					<key name="reds:hasSource">177</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">lv</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62762028</key>
+							<key name="reds:hasSource">177</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62762029</key>
+							<key name="reds:hasSource">-1</key>
+							<key name="reds:hasRank">-1</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-12 09:28:12</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75361878</key>
+					<key name="reds:hasSource">177</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">es</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62811442</key>
+							<key name="reds:hasSource">-1</key>
+							<key name="reds:hasRank">-1</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 09:48:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62811441</key>
+							<key name="reds:hasSource">177</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75364251</key>
+					<key name="reds:hasSource">177</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">cs</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62817634</key>
+							<key name="reds:hasSource">-1</key>
+							<key name="reds:hasRank">-1</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 11:38:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62817633</key>
+							<key name="reds:hasSource">177</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75362061</key>
+					<key name="reds:hasSource">177</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">sl</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62811841</key>
+							<key name="reds:hasSource">177</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62811842</key>
+							<key name="reds:hasSource">-1</key>
+							<key name="reds:hasRank">-1</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 09:58:12</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75341719</key>
+					<key name="reds:hasSource">177</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">fr</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62743508</key>
+							<key name="reds:hasSource">-1</key>
+							<key name="reds:hasRank">-1</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-11 10:08:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62743507</key>
+							<key name="reds:hasSource">177</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75364419</key>
+					<key name="reds:hasSource">177</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">de</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62818047</key>
+							<key name="reds:hasSource">-1</key>
+							<key name="reds:hasRank">-1</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 11:58:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62818046</key>
+							<key name="reds:hasSource">177</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75364422</key>
+					<key name="reds:hasSource">177</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">sv</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62818053</key>
+							<key name="reds:hasSource">177</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62818054</key>
+							<key name="reds:hasSource">-1</key>
+							<key name="reds:hasRank">-1</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 11:58:12</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75346777</key>
+					<key name="reds:hasSource">177</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">sk</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62767241</key>
+							<key name="reds:hasSource">177</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62767242</key>
+							<key name="reds:hasSource">-1</key>
+							<key name="reds:hasRank">-1</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-12 11:48:12</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75361513</key>
+					<key name="reds:hasSource">177</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">et</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62810549</key>
+							<key name="reds:hasSource">-1</key>
+							<key name="reds:hasRank">-1</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 09:28:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62810548</key>
+							<key name="reds:hasSource">177</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75361727</key>
+					<key name="reds:hasSource">177</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">lt</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62811014</key>
+							<key name="reds:hasSource">-1</key>
+							<key name="reds:hasRank">-1</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 09:38:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62811013</key>
+							<key name="reds:hasSource">177</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75363156</key>
+					<key name="reds:hasSource">177</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">bg</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62814021</key>
+							<key name="reds:hasSource">-1</key>
+							<key name="reds:hasRank">-1</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 10:48:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62814020</key>
+							<key name="reds:hasSource">177</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75363506</key>
+					<key name="reds:hasSource">177</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">pl</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62815150</key>
+							<key name="reds:hasSource">177</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62815151</key>
+							<key name="reds:hasSource">-1</key>
+							<key name="reds:hasRank">-1</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 11:08:12</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75363511</key>
+					<key name="reds:hasSource">177</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">mt</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62815161</key>
+							<key name="reds:hasSource">-1</key>
+							<key name="reds:hasRank">-1</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 11:08:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62815160</key>
+							<key name="reds:hasSource">177</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75363512</key>
+					<key name="reds:hasSource">177</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">hu</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62815163</key>
+							<key name="reds:hasSource">-1</key>
+							<key name="reds:hasRank">-1</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 11:08:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62815162</key>
+							<key name="reds:hasSource">177</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75364705</key>
+					<key name="reds:hasSource">177</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">da</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62819293</key>
+							<key name="reds:hasSource">-1</key>
+							<key name="reds:hasRank">-1</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 12:18:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62819292</key>
+							<key name="reds:hasSource">177</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75364375</key>
+					<key name="reds:hasSource">177</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">hr</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62817963</key>
+							<key name="reds:hasSource">-1</key>
+							<key name="reds:hasRank">-1</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 11:48:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62817962</key>
+							<key name="reds:hasSource">177</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75330681</key>
+					<key name="reds:hasSource">177</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">nl</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62710136</key>
+							<key name="reds:hasSource">177</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62710137</key>
+							<key name="reds:hasSource">-1</key>
+							<key name="reds:hasRank">-1</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-10 14:58:12</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75347549</key>
+					<key name="reds:hasSource">177</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">ro</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62770913</key>
+							<key name="reds:hasSource">-1</key>
+							<key name="reds:hasRank">-1</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-12 13:58:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62770912</key>
+							<key name="reds:hasSource">177</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75347629</key>
+					<key name="reds:hasSource">177</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">pt</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62771242</key>
+							<key name="reds:hasSource">177</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62771243</key>
+							<key name="reds:hasSource">-1</key>
+							<key name="reds:hasRank">-1</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-12 14:18:12</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75308390</key>
+					<key name="reds:hasSource">178</key>
+					<key name="reds:hasRank">178</key>
+					<key name="reds:hasCode">en</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62630880</key>
+							<key name="reds:hasSource">178</key>
+							<key name="reds:hasRank">178</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62630881</key>
+							<key name="reds:hasSource">-1</key>
+							<key name="reds:hasRank">-1</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-09 12:48:10</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75363778</key>
+					<key name="reds:hasSource">177</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">el</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62816151</key>
+							<key name="reds:hasSource">177</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62816152</key>
+							<key name="reds:hasSource">-1</key>
+							<key name="reds:hasRank">-1</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 11:18:12</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75349119</key>
+					<key name="reds:hasSource">177</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">fi</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62777071</key>
+							<key name="reds:hasSource">-1</key>
+							<key name="reds:hasRank">-1</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-12 17:18:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62777070</key>
+							<key name="reds:hasSource">177</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+			</key>
+		</item>
+		<item>
+			<key name="dc:identifier">9254599</key>
+			<key name="reds:hasType">REDMAP</key>
+			<key name="reds:hasSource">3000</key>
+			<key name="reds:hasRank">178</key>
+			<key name="reds:hasUrl">/reds_iPlRp/A-9-2019-0047/A-9-2019-0047_{LANGUAGE}.xhtml</key>
+			<key name="reds:hasFormat">application/xhtml+xml</key>
+			<key name="reds:hasLanguages">
+				<item>
+					<key name="dc:identifier">75355804</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">lv</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62797958</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-12 09:28:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62797957</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75357090</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">fi</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62800843</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-12 17:18:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62800842</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75361731</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">lt</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62811043</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62811044</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 09:38:12</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75361521</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">et</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62810561</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 09:28:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62810560</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75364711</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">it</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62819304</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 12:18:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62819303</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75364721</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">da</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62819336</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 12:18:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62819335</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75356096</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">sk</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62798657</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-12 11:48:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62798658</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75362065</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">sl</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62811850</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 09:58:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62811851</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75330684</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">nl</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62710167</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-10 14:58:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62710166</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75351676</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">fr</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62781956</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62781957</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-11 10:08:12</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75356503</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">ro</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62799628</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-12 13:58:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62799629</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75356516</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">pt</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62799654</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-12 14:18:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62799655</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75363975</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">el</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62816882</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 11:18:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62816881</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75361886</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">es</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62811460</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 09:48:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62811459</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75364440</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">de</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62818088</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 11:58:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62818089</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75364446</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">sv</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62818100</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62818101</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 11:58:12</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75363684</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">pl</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62815854</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 11:08:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62815855</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75363694</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">mt</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62815874</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62815875</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 11:08:12</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75363696</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">hu</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62815879</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 11:08:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62815878</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75364380</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">hr</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62817974</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62817973</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 11:48:12</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75355610</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">ga</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62797529</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-11 17:08:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62797530</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75308396</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">178</key>
+					<key name="reds:hasCode">en</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62630892</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">178</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62630893</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-09 12:48:10</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75363163</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">bg</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62814034</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62814035</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 10:48:12</key>
+						</item>
+					</key>
+				</item>
+				<item>
+					<key name="dc:identifier">75364272</key>
+					<key name="reds:hasSource">3000</key>
+					<key name="reds:hasRank">177</key>
+					<key name="reds:hasCode">cs</key>
+					<key name="reds:version">2</key>
+					<key name="reds:hasProperties">
+						<item>
+							<key name="dc:identifier">62817671</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">3000</key>
+							<key name="reds:hasName">reds:referenceLanguageVersion</key>
+							<key name="reds:hasValue">2019-12-13 11:38:12</key>
+						</item>
+						<item>
+							<key name="dc:identifier">62817672</key>
+							<key name="reds:hasSource">3000</key>
+							<key name="reds:hasRank">177</key>
+							<key name="reds:hasName">reds:version</key>
+							<key name="reds:hasValue">0200</key>
+						</item>
+					</key>
+				</item>
+			</key>
+		</item>
+	</key>
+	<key name="reds:hasTitles">
+		<item>
+			<key name="dc:identifier">19241627</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">sk</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">SPRÁVA o návrhu nariadenia Rady, ktorým sa mení nariadenie (EÚ) č. 904/2010, pokiaľ ide o opatrenia na posilnenie administratívnej spolupráce v záujme boja proti podvodom v oblasti DPH</key>
+			<key name="reds:version">0</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19250019</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">sl</key>
+			<key name="reds:hasType">UNIFORM</key>
+			<key name="reds:hasValue">POROČILO&lt;br/&gt;o predlogu uredbe Sveta o spremembi Uredbe (EU) št. 904/2010 v zvezi z ukrepi za krepitev upravnega sodelovanja za boj proti goljufijam na področju DDV&lt;br/&gt;(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))&lt;br/&gt;Odbor za ekonomske in monetarne zadeve&lt;br/&gt;Poročevalka: Lídia Pereira</key>
+			<key name="reds:version">2</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19249964</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">et</key>
+			<key name="reds:hasType">UNIFORM</key>
+			<key name="reds:hasValue">RAPORT&lt;br/&gt;ettepaneku kohta võtta vastu nõukogu määrus, millega muudetakse määrust (EL) nr 904/2010 seoses meetmetega halduskoostöö tugevdamiseks, et võidelda käibemaksupettuste vastu&lt;br/&gt;(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))&lt;br/&gt;Majandus- ja rahanduskomisjon&lt;br/&gt;Raportöör: Lídia Pereira</key>
+			<key name="reds:version">2</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19241628</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">sk</key>
+			<key name="reds:hasType">UNIFORM</key>
+			<key name="reds:hasValue">SPRÁVA&lt;br/&gt;o návrhu nariadenia Rady, ktorým sa mení nariadenie (EÚ) č. 904/2010, pokiaľ ide o opatrenia na posilnenie administratívnej spolupráce v záujme boja proti podvodom v oblasti DPH&lt;br/&gt;[COM(2018) 0813 - C8-0016/2019 - 2018/0413(CNS)]&lt;br/&gt;Výbor pre hospodárske a menové veci&lt;br/&gt;Spravodajkyňa: Lídia Pereira</key>
+			<key name="reds:version">2</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19250828</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">it</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">RELAZIONE sulla proposta di regolamento del Consiglio che modifica il regolamento (UE) n. 904/2010 per quanto riguarda misure di rafforzamento della cooperazione amministrativa per lottare contro la frode in materia di IVA</key>
+			<key name="reds:version">0</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19249965</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">et</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">RAPORT ettepaneku kohta võtta vastu nõukogu määrus, millega muudetakse määrust (EL) nr 904/2010 seoses meetmetega halduskoostöö tugevdamiseks, et võidelda käibemaksupettuste vastu</key>
+			<key name="reds:version">0</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19231765</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">nl</key>
+			<key name="reds:hasType">UNIFORM</key>
+			<key name="reds:hasValue">VERSLAG&lt;br/&gt;over het voorstel voor een verordening van de Raad tot wijziging van Verordening (EU) nr. 904/2010 wat betreft maatregelen ter versterking van de administratieve samenwerking om btw-fraude te bestrijden&lt;br/&gt;(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))&lt;br/&gt;Commissie economische en monetaire zaken&lt;br/&gt;Rapporteur: Lídia Pereira</key>
+			<key name="reds:version">2</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19250748</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">de</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">BERICHT über den Vorschlag für eine Verordnung des Rates zur Änderung der Verordnung (EU) Nr. 904/2010 im Hinblick auf die Stärkung der Zusammenarbeit der Verwaltungsbehörden bei der Betrugsbekämpfung</key>
+			<key name="reds:version">0</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19242698</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">pt</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">RELATÓRIO sobre a proposta de regulamento do Conselho que altera o Regulamento (UE) n.º 904/2010 no respeitante às medidas destinadas a reforçar a cooperação administrativa para combater a fraude ao IVA</key>
+			<key name="reds:version">0</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19249979</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">lt</key>
+			<key name="reds:hasType">UNIFORM</key>
+			<key name="reds:hasValue">PRANEŠIMAS&lt;br/&gt;dėl pasiūlymo dėl Tarybos reglamento, kuriuo iš dalies keičiamos Reglamento (ES) Nr. 904/2010 nuostatos dėl priemonių, kuriomis stiprinamas administracinis bendradarbiavimas kovojant su sukčiavimu PVM&lt;br/&gt;(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))&lt;br/&gt;Ekonomikos ir pinigų politikos komitetas&lt;br/&gt;Pranešėja: Lídia Pereira</key>
+			<key name="reds:version">2</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19240838</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">lv</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">ZIŅOJUMS par priekšlikumu Padomes regulai, ar ko groza Regulu (ES) Nr. 904/2010 attiecībā uz pasākumiem administratīvās sadarbības stiprināšanai, lai apkarotu ar PVN saistītu krāpšanu</key>
+			<key name="reds:version">0</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19249990</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">es</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">INFORME sobre la propuesta de Reglamento del Consejo por el que se modifica el Reglamento (UE) n.º 904/2010 en lo que respecta a las medidas para reforzar la cooperación administrativa a fin de combatir el fraude en el ámbito del IVA</key>
+			<key name="reds:version">0</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19249980</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">lt</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">PRANEŠIMAS dėl pasiūlymo dėl Tarybos reglamento, kuriuo iš dalies keičiamos Reglamento (ES) Nr. 904/2010 nuostatos dėl priemonių, kuriomis stiprinamas administracinis bendradarbiavimas kovojant su sukčiavimu PVM</key>
+			<key name="reds:version">0</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19250671</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">cs</key>
+			<key name="reds:hasType">UNIFORM</key>
+			<key name="reds:hasValue">ZPRÁVA&lt;br/&gt;o návrhu nařízení Rady, kterým se mění nařízení (EU) č. 904/2010, pokud jde o opatření k posílení správní spolupráce za účelem boje proti podvodům v oblasti DPH&lt;br/&gt;(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))&lt;br/&gt;Hospodářský a měnový výbor&lt;br/&gt;Zpravodajka: Lídia Pereira</key>
+			<key name="reds:version">2</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19250020</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">sl</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">POROČILO o predlogu uredbe Sveta o spremembi Uredbe (EU) št. 904/2010 v zvezi z ukrepi za krepitev upravnega sodelovanja za boj proti goljufijam na področju DDV</key>
+			<key name="reds:version">0</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19250479</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">el</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">ΕΚΘΕΣΗ σχετικά με την πρόταση κανονισμού του Συμβουλίου για την τροποποίηση του κανονισμού (ΕΕ) αριθ. 904/2010 σχετικά με μέτρα ενίσχυσης της διοικητικής συνεργασίας για την καταπολέμηση της απάτης στον τομέα του ΦΠΑ</key>
+			<key name="reds:version">0</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19250756</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">sv</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">BETÄNKANDE om förslaget till rådets förordning om ändring av förordning (EU) nr 904/2010 vad gäller åtgärder för att stärka det administrativa samarbetet för att bekämpa mervärdesskattebedrägeri</key>
+			<key name="reds:version">0</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19250693</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">hr</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">IZVJEŠĆE o Prijedlogu uredbe Vijeća o izmjeni Uredbe (EU) br. 904/2010 u pogledu mjera za jačanje administrativne suradnje radi borbe protiv prijevara u vezi s PDV-om</key>
+			<key name="reds:version">0</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19227442</key>
+			<key name="reds:hasSource">178</key>
+			<key name="reds:hasRank">178</key>
+			<key name="reds:hasLanguage">en</key>
+			<key name="reds:hasType">UNIFORM</key>
+			<key name="reds:hasValue">REPORT&lt;br/&gt;on the proposal for a Council regulation amending Regulation (EU) No 904/2010 as regards measures to strengthen administrative cooperation in order to combat VAT fraud&lt;br/&gt;(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))&lt;br/&gt;Committee on Economic and Monetary Affairs&lt;br/&gt;Rapporteur: Lídia Pereira</key>
+			<key name="reds:version">2</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19250349</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">mt</key>
+			<key name="reds:hasType">UNIFORM</key>
+			<key name="reds:hasValue">RAPPORT&lt;br/&gt;dwar il-proposta għal regolament tal-Kunsill li jemenda r-Regolament (UE) Nru 904/2010 dwar miżuri biex tissaħħaħ il-kooperazzjoni amministrattiva għall-ġlieda kontra l-frodi tal-VAT&lt;br/&gt;(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))&lt;br/&gt;Kumitat għall-Affarijiet Ekonomiċi u Monetarji&lt;br/&gt;Rapporteur:  Lídia Pereira</key>
+			<key name="reds:version">2</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19250838</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">da</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">BETÆNKNING om forslag til Rådets forordning om ændring af forordning (EU) nr. 904/2010 for så vidt angår foranstaltninger til styrkelse af det administrative samarbejde med henblik på bekæmpelse af momssvig</key>
+			<key name="reds:version">0</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19250672</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">cs</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">ZPRÁVA o návrhu nařízení Rady, kterým se mění nařízení (EU) č. 904/2010, pokud jde o opatření k posílení správní spolupráce za účelem boje proti podvodům v oblasti DPH</key>
+			<key name="reds:version">0</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19242438</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">ro</key>
+			<key name="reds:hasType">UNIFORM</key>
+			<key name="reds:hasValue">RAPORT&lt;br/&gt;referitor la propunerea de regulament al Consiliului de modificare a Regulamentului (UE) nr. 904/2010 în ceea ce privește măsurile de consolidare a cooperării administrative în vederea combaterii fraudei în domeniul TVA&lt;br/&gt;(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))&lt;br/&gt;Comisia pentru afaceri economice și monetare&lt;br/&gt;Raportoare: Lídia Pereira</key>
+			<key name="reds:version">2</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19250478</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">el</key>
+			<key name="reds:hasType">UNIFORM</key>
+			<key name="reds:hasValue">ΕΚΘΕΣΗ&lt;br/&gt;σχετικά με την πρόταση κανονισμού του Συμβουλίου για την τροποποίηση του κανονισμού (ΕΕ) αριθ. 904/2010 σχετικά με μέτρα ενίσχυσης της διοικητικής συνεργασίας για την καταπολέμηση της απάτης στον τομέα του ΦΠΑ&lt;br/&gt;(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))&lt;br/&gt;Επιτροπή Οικονομικής και Νομισματικής Πολιτικής&lt;br/&gt;Εισηγήτρια: Lídia Pereira</key>
+			<key name="reds:version">2</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19250350</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">hu</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">JELENTÉS a 904/2010/EU rendeletnek a héacsalás elleni küzdelem érdekében folytatott közigazgatási együttműködés megerősítésére irányuló intézkedések tekintetében történő módosításáról szóló tanácsi rendeletre irányuló javaslatról</key>
+			<key name="reds:version">0</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19244713</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">fi</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">MIETINTÖ ehdotuksesta neuvoston asetukseksi asetuksen (EU) N:o 904/2010 muuttamisesta siltä osin kuin on kyse hallinnollisen yhteistyön lujittamiseen tähtäävistä toimenpiteistä alv-petosten torjumiseksi</key>
+			<key name="reds:version">0</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19240837</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">lv</key>
+			<key name="reds:hasType">UNIFORM</key>
+			<key name="reds:hasValue">ZIŅOJUMS&lt;br/&gt;par priekšlikumu Padomes regulai, ar ko groza Regulu (ES) Nr. 904/2010 attiecībā uz pasākumiem administratīvās sadarbības stiprināšanai, lai apkarotu ar PVN saistītu krāpšanu&lt;br/&gt;(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))&lt;br/&gt;Ekonomikas un monetārā komiteja&lt;br/&gt;Referente: Lídia Pereira</key>
+			<key name="reds:version">2</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19238964</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">fr</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">RAPPORT sur la proposition de règlement du Conseil modifiant le règlement (UE) nº 904/2010 en ce qui concerne des mesures de renforcement de la coopération administrative afin de lutter contre la fraude à la TVA</key>
+			<key name="reds:version">0</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19240017</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">ga</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">TUARASCÁIL ar an togra le haghaidh rialachán ón gComhairle lena leasaítear Rialachán (AE) Uimh. 904/2010 maidir le bearta chun comhar riaracháin a neartú ar mhaithe le calaois CBL a chomhrac</key>
+			<key name="reds:version">0</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19250338</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">pl</key>
+			<key name="reds:hasType">UNIFORM</key>
+			<key name="reds:hasValue">SPRAWOZDANIE&lt;br/&gt;w sprawie wniosku dotyczącego rozporządzenia Rady zmieniającego rozporządzenie (UE) nr 904/2010 w odniesieniu do środków zwiększających współpracę administracyjną w celu zwalczania oszustw związanych z VAT&lt;br/&gt;(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))&lt;br/&gt;Komisja Gospodarcza i Monetarna&lt;br/&gt;Sprawozdawczyni: Lídia Pereira</key>
+			<key name="reds:version">2</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19250829</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">it</key>
+			<key name="reds:hasType">UNIFORM</key>
+			<key name="reds:hasValue">RELAZIONE&lt;br/&gt;sulla proposta di regolamento del Consiglio che modifica il regolamento (UE) n. 904/2010 per quanto riguarda misure di rafforzamento della cooperazione amministrativa per lottare contro la frode in materia di IVA &lt;br/&gt;(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))&lt;br/&gt;Commissione per i problemi economici e monetari&lt;br/&gt;Relatrice: Lídia Pereira</key>
+			<key name="reds:version">2</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19242699</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">pt</key>
+			<key name="reds:hasType">UNIFORM</key>
+			<key name="reds:hasValue">RELATÓRIO&lt;br/&gt;sobre a proposta de regulamento do Conselho que altera o Regulamento (UE) n.º 904/2010 no respeitante às medidas destinadas a reforçar a cooperação administrativa para combater a fraude ao IVA&lt;br/&gt;(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))&lt;br/&gt;Comissão dos Assuntos Económicos e Monetários&lt;br/&gt;Relatora: Lídia Pereira</key>
+			<key name="reds:version">2</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19250749</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">de</key>
+			<key name="reds:hasType">UNIFORM</key>
+			<key name="reds:hasValue">BERICHT&lt;br/&gt;über den Vorschlag für eine Verordnung des Rates zur Änderung der Verordnung (EU) Nr. 904/2010 im Hinblick auf die Stärkung der Zusammenarbeit der Verwaltungsbehörden bei der Betrugsbekämpfung&lt;br/&gt;(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))&lt;br/&gt;Ausschuss für Wirtschaft und Währung&lt;br/&gt;Berichterstatterin: Lídia Pereira</key>
+			<key name="reds:version">2</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19250339</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">pl</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">SPRAWOZDANIE w sprawie wniosku dotyczącego rozporządzenia Rady zmieniającego rozporządzenie (UE) nr 904/2010 w odniesieniu do środków zwiększających współpracę administracyjną w celu zwalczania oszustw związanych z VAT</key>
+			<key name="reds:version">0</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19238963</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">fr</key>
+			<key name="reds:hasType">UNIFORM</key>
+			<key name="reds:hasValue">RAPPORT&lt;br/&gt;sur la proposition de règlement du Conseil modifiant le règlement (UE) nº 904/2010 en ce qui concerne des mesures de renforcement de la coopération administrative afin de lutter contre la fraude à la TVA&lt;br/&gt;(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))&lt;br/&gt;Commission des affaires économiques et monétaires&lt;br/&gt;Rapporteure: Lídia Pereira</key>
+			<key name="reds:version">2</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19227444</key>
+			<key name="reds:hasSource">178</key>
+			<key name="reds:hasRank">178</key>
+			<key name="reds:hasLanguage">zu_en</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">Report on the proposal for a Council regulation amending Regulation (EU) No 904/2010 as regards measures to strengthen administrative cooperation in order to combat VAT fraud</key>
+			<key name="reds:version">2</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19250755</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">sv</key>
+			<key name="reds:hasType">UNIFORM</key>
+			<key name="reds:hasValue">BETÄNKANDE&lt;br/&gt;om förslaget till rådets förordning om ändring av förordning (EU) nr 904/2010 vad gäller åtgärder för att stärka det administrativa samarbetet för att bekämpa mervärdesskattebedrägeri&lt;br/&gt;(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))&lt;br/&gt;Utskottet för ekonomi och valutafrågor&lt;br/&gt;Föredragande: Lídia Pereira</key>
+			<key name="reds:version">2</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19240016</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">ga</key>
+			<key name="reds:hasType">UNIFORM</key>
+			<key name="reds:hasValue">TUARASCÁIL&lt;br/&gt;ar an togra le haghaidh rialachán ón gComhairle lena leasaítear Rialachán (AE) Uimh. 904/2010 maidir le bearta chun comhar riaracháin a neartú ar mhaithe le calaois CBL a chomhrac&lt;br/&gt;(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))&lt;br/&gt;An Coiste um Ghnóthaí Eacnamaíochta agus Airgeadaíochta&lt;br/&gt;Rapóirtéir: Lídia Pereira</key>
+			<key name="reds:version">2</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19250348</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">mt</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">RAPPORT dwar il-proposta għal regolament tal-Kunsill li jemenda r-Regolament (UE) Nru 904/2010 dwar miżuri biex tissaħħaħ il-kooperazzjoni amministrattiva għall-ġlieda kontra l-frodi tal-VAT</key>
+			<key name="reds:version">0</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19231766</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">nl</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">VERSLAG over het voorstel voor een verordening van de Raad tot wijziging van Verordening (EU) nr. 904/2010 wat betreft maatregelen ter versterking van de administratieve samenwerking om btw-fraude te bestrijden</key>
+			<key name="reds:version">0</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19242439</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">ro</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">RAPORT referitor la propunerea de regulament al Consiliului de modificare a Regulamentului (UE) nr. 904/2010 în ceea ce privește măsurile de consolidare a cooperării administrative în vederea combaterii fraudei în domeniul TVA</key>
+			<key name="reds:version">0</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19250839</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">da</key>
+			<key name="reds:hasType">UNIFORM</key>
+			<key name="reds:hasValue">BETÆNKNING&lt;br/&gt;om forslag til Rådets forordning om ændring af forordning (EU) nr. 904/2010 for så vidt angår foranstaltninger til styrkelse af det administrative samarbejde med henblik på bekæmpelse af momssvig&lt;br/&gt;(COM(2018)0813 - C9-0016/2019 - 2018/0413(CNS))&lt;br/&gt;Økonomi- og Valutaudvalget&lt;br/&gt;Ordfører: Lídia Pereira</key>
+			<key name="reds:version">2</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19250694</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">hr</key>
+			<key name="reds:hasType">UNIFORM</key>
+			<key name="reds:hasValue">IZVJEŠĆE&lt;br/&gt;o Prijedlogu uredbe Vijeća o izmjeni Uredbe (EU) br. 904/2010 u pogledu mjera za jačanje administrativne suradnje radi borbe protiv prijevara u vezi s PDV-om&lt;br/&gt;(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))&lt;br/&gt;Odbor za ekonomsku i monetarnu politiku&lt;br/&gt;Izvjestiteljica: Lídia Pereira</key>
+			<key name="reds:version">2</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19250351</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">hu</key>
+			<key name="reds:hasType">UNIFORM</key>
+			<key name="reds:hasValue">JELENTÉS&lt;br/&gt;a 904/2010/EU rendeletnek a héacsalás elleni küzdelem érdekében folytatott közigazgatási együttműködés megerősítésére irányuló intézkedések tekintetében történő módosításáról szóló tanácsi rendeletre irányuló javaslatról&lt;br/&gt;(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))&lt;br/&gt;Gazdasági és Monetáris Bizottság&lt;br/&gt;Előadó: Lídia Pereira</key>
+			<key name="reds:version">2</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19227443</key>
+			<key name="reds:hasSource">178</key>
+			<key name="reds:hasRank">178</key>
+			<key name="reds:hasLanguage">en</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">REPORT on the proposal for a Council regulation amending Regulation (EU) No 904/2010 as regards measures to strengthen administrative cooperation in order to combat VAT fraud</key>
+			<key name="reds:version">0</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19244714</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">fi</key>
+			<key name="reds:hasType">UNIFORM</key>
+			<key name="reds:hasValue">MIETINTÖ&lt;br/&gt;ehdotuksesta neuvoston asetukseksi asetuksen (EU) N:o 904/2010 muuttamisesta siltä osin kuin on kyse hallinnollisen yhteistyön lujittamiseen tähtäävistä toimenpiteistä alv-petosten torjumiseksi&lt;br/&gt;(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))&lt;br/&gt;Talous- ja raha-asioiden valiokunta&lt;br/&gt;Esittelijä: Lídia Pereira</key>
+			<key name="reds:version">2</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19250201</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">bg</key>
+			<key name="reds:hasType">MAIN</key>
+			<key name="reds:hasValue">ДОКЛАД относно предложението за регламент на Съвета за изменение на Регламент (ЕС) № 904/2010 по отношение на мерки за засилване на административното сътрудничество с цел борба с измамите с ДДС</key>
+			<key name="reds:version">0</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19249991</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">es</key>
+			<key name="reds:hasType">UNIFORM</key>
+			<key name="reds:hasValue">INFORME&lt;br/&gt;sobre la propuesta de Reglamento del Consejo por el que se modifica el Reglamento (UE) n.º 904/2010 en lo que respecta a las medidas para reforzar la cooperación administrativa a fin de combatir el fraude en el ámbito del IVA&lt;br/&gt;(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))&lt;br/&gt;Comisión de Asuntos Económicos y Monetarios&lt;br/&gt;Ponente: Lídia Pereira</key>
+			<key name="reds:version">2</key>
+		</item>
+		<item>
+			<key name="dc:identifier">19250202</key>
+			<key name="reds:hasSource">177</key>
+			<key name="reds:hasRank">177</key>
+			<key name="reds:hasLanguage">bg</key>
+			<key name="reds:hasType">UNIFORM</key>
+			<key name="reds:hasValue">ДОКЛАД&lt;br/&gt;относно предложението за регламент на Съвета за изменение на Регламент (ЕС) № 904/2010 по отношение на мерки за засилване на административното сътрудничество с цел борба с измамите с ДДС&lt;br/&gt;(COM(2018)0813 - C8-0016/2019 - 2018/0413(CNS))&lt;br/&gt;Комисия по икономически и парични въпроси&lt;br/&gt;Докладчик: Лидия Перейра</key>
+			<key name="reds:version">2</key>
+		</item>
+	</key>
+</all>
+
