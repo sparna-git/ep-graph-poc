@@ -77,7 +77,7 @@
 				rdf:resource="{ep-org:URI-CIVILITY(titleCode)}" />
 
 			<xsl:if
-				test="string-length(normalize-space(birthPlace)) &gt; 0">
+				test="ep-org:Lookup_COUNTRYBIRTHPLACE(countryId,countryIsoCode,birthPlace) != ''">
 				<schema:birthPlace
 					rdf:resource="{ep-org:URI-MEPBIRTHPLACE(countryId,countryIsoCode,birthPlace)}" />
 			</xsl:if>
