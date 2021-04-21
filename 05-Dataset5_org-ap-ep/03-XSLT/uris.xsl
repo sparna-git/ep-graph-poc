@@ -109,11 +109,7 @@
 		<xsl:param name="countryISOcode"/>
 		<xsl:param name="BirthPlace"/>
 		<xsl:value-of select="ep-org:URI-Autority(concat(
-			'place/',
-			ep-org:Lookup_COUNTRYBIRTHPLACE($countryId,$countryISOcode,$BirthPlace),
-			'_',
-			$BirthPlace
-		))"/>
+			'place/',ep-org:Lookup_COUNTRYBIRTHPLACE($countryId,$countryISOcode,$BirthPlace)))"/>
 	</xsl:function>
 
 	<!-- NATIONALITY -->
@@ -293,19 +289,25 @@
 		<xsl:value-of select="concat(ep-org:URI-Autority('political-group-body/'), $inData)"/>
 	</xsl:function>
 
-
-
 	
 	<!-- fonction -->
 	<xsl:function name="ep-org:Lookup_GENDER">
 		<xsl:param name="dataInput" />
-		<xsl:for-each select="$gender_file">
-			<xsl:choose>
-				<xsl:when test="isoCode = $dataInput">
-					<xsl:value-of select="referenceCode" />
-				</xsl:when>
-			</xsl:choose>
-		</xsl:for-each>		
+		<xsl:variable name="gender" select="$gender_file[
+			isoCode = $dataInput
+		]"/>
+		<xsl:choose>
+			<xsl:when test="count($gender) = 0">
+				<xsl:message>Warning : cannot find gender "<xsl:value-of select="$dataInput" /></xsl:message>
+			</xsl:when>
+			<xsl:when test="count($gender) = 1">
+				<xsl:message>Warning : find <xsl:value-of select="count($gender)" /> genders named "<xsl:value-of select="$dataInput" /> - Taking first one.</xsl:message>
+				<xsl:value-of select="$gender[1]/referenceCode" />
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="$gender[1]/referenceCode" />
+			</xsl:otherwise>
+		</xsl:choose>	
 	</xsl:function>
 
 	<xsl:function name="ep-org:Lookup_COUNTRYBIRTHPLACE">
@@ -326,10 +328,10 @@
 			</xsl:when>
 			<xsl:when test="count($towns) > 1">
 				<xsl:message>Warning : find <xsl:value-of select="count($towns)" /> towns named "<xsl:value-of select="$in_BirthPlace" />"" in country <xsl:value-of select="$in_countryId" /> (<xsl:value-of select="$in_countryIsocode" />) - Taking first one.</xsl:message>
-				<xsl:value-of select="$towns[1]/townCode" />
+				<xsl:value-of select="concat($towns[1]/townCode,'_',$towns[1]/originalName)" />
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:value-of select="$towns[1]/townCode" />
+				<xsl:value-of select="concat($towns[1]/townCode,'_',$towns[1]/originalName)" />
 			</xsl:otherwise>
 
 		</xsl:choose>
@@ -337,39 +339,59 @@
 
 	<xsl:function name="ep-org:Lookup_COUNTRY">
 		<xsl:param name="in_countryIsocode" />
-		<xsl:for-each select="$country_file">
-			<xsl:choose>
-				<xsl:when test="Alpha-2 = $in_countryIsocode">
-					<xsl:value-of select="Alpha-3" />
-				</xsl:when>
-			</xsl:choose>
-		</xsl:for-each>		
+		<xsl:variable name="country" select="$country_file[
+			Alpha-2 = $in_countryIsocode
+		]"/>
+		<xsl:choose>
+			<xsl:when test="count($country) = 0">
+				<xsl:message>Warning : cannot find country "<xsl:value-of select="$in_countryIsocode" /></xsl:message>
+			</xsl:when>
+			<xsl:when test="count($country) > 1">
+				<xsl:message>Warning : find <xsl:value-of select="count($country)" /> countries named "<xsl:value-of select="$in_countryIsocode" /> - Taking first one.</xsl:message>
+				<xsl:value-of select="$country[1]/Alpha-3" />
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="$country[1]/Alpha-3" />
+			</xsl:otherwise>
+		</xsl:choose>			
 	</xsl:function>
 
 	<!-- Function where the result return the Country Name -->
 	<xsl:function name="ep-org:Lookup_COUNTRYNAME">
 		<xsl:param name="in_countryIsocode" />
-		<xsl:for-each select="$country_file">
-			<xsl:choose>
-				<xsl:when test="Alpha-2 = $in_countryIsocode">
-					<xsl:value-of select="Country" />
-				</xsl:when>
-			</xsl:choose>
-		</xsl:for-each>		
+		<xsl:variable name="countryname" select="$country_file[
+			Alpha-2 = $in_countryIsocode
+		]"/>
+		<xsl:choose>
+			<xsl:when test="count($countryname) = 0">
+				<xsl:message>Warning : cannot find country "<xsl:value-of select="$in_countryIsocode" /></xsl:message>
+			</xsl:when>
+			<xsl:when test="count($countryname) > 1">
+				<xsl:message>Warning : find <xsl:value-of select="count($countryname)" /> countries named "<xsl:value-of select="$in_countryIsocode" /> - Taking first one.</xsl:message>
+				<xsl:value-of select="$countryname[1]/Country" />
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="$countryname[1]/Country" />
+			</xsl:otherwise>
+		</xsl:choose>			
 	</xsl:function>
 
 
 	<!-- Date -->
 	<xsl:function name="ep-org:OrderparliamentaryTerm">
 		<xsl:param name="p_StartDate"/>
-		<xsl:param name="p_EndDate"/>	
-		<xsl:for-each select="$parliamentaryTerm_file">
-			<xsl:variable name="StartDate" select="translate(startDate,'-','')" />
-			<xsl:variable name="EndDate" select="translate(endDate,'-','')" />
-			<xsl:if test="$StartDate &lt;= $p_StartDate and $p_EndDate &lt;= $EndDate">
-				<xsl:value-of select="order"/>
-			</xsl:if>	
-		</xsl:for-each>
+		<xsl:param name="p_EndDate"/>
+		<xsl:variable name="period_ParliamentaryTerm" select="$parliamentaryTerm_file[translate(startDate,'-','') &lt;= $p_StartDate and translate(endDate,'-','') &lt;= $p_EndDate]"/>
+		<xsl:choose>
+			<xsl:when test="count($period_ParliamentaryTerm) = 0">
+				<xsl:message>Warning : cannot find the period between "<xsl:value-of select="$p_StartDate" />"" and <xsl:value-of select="$p_EndDate" /> </xsl:message>
+			</xsl:when>
+			<xsl:when test="count($period_ParliamentaryTerm) > 1">
+				<xsl:message>Warning : find <xsl:value-of select="count($period_ParliamentaryTerm)" /> periods "<xsl:value-of select="$p_StartDate" />"" and <xsl:value-of select="$p_EndDate" />  - Taking first one.</xsl:message>
+				<xsl:value-of select="$period_ParliamentaryTerm[1]/order" />
+			</xsl:when>
+			<xsl:otherwise><xsl:value-of select="$period_ParliamentaryTerm[1]/order"/></xsl:otherwise>
+		</xsl:choose>
 	</xsl:function>	
 
 </xsl:stylesheet>
