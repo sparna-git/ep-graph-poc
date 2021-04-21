@@ -28,7 +28,7 @@
 
 	<xsl:function name="ep-org:URI-ASSISTANT">
 		<xsl:param name="AssistantId" />
-		<xsl:value-of select="ep-org:URI-Person($AssistantId)" />
+		<xsl:value-of select="ep-org:URI-Autority(concat('person-type/',$AssistantId))" />
 	</xsl:function>
 
 	<xsl:function name="ep-org:URI-Person">
@@ -143,7 +143,7 @@
 	<xsl:function name="ep-org:addresses">
 		<xsl:param name="identifier"/>
 		<xsl:param name="office"/>
-		<xsl:value-of select="concat('http://data.europarl.europa.eu/resource/contact-point/place/','mep_',$identifier,'/',$office)"/>
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/resource/contact-point/place/',$identifier,'/',$office)"/>
 	</xsl:function>
 
 	<!-- URI PUBLICATION SITE  -->
