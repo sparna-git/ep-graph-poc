@@ -27,7 +27,8 @@
 		<xsl:apply-templates />
 
 		<!-- Generate all assistants at the end of the file -->
-		<xsl:apply-templates select="item/assistants/item" mode="person" />
+		<xsl:apply-templates select="item/assistants/item"
+			mode="person" />
 
 	</xsl:template>
 
@@ -74,8 +75,9 @@
 				rdf:resource="{ep-org:URI-MEPGENDER(genderIsoCode)}" />
 			<schema:honorificPrefix
 				rdf:resource="{ep-org:URI-CIVILITY(titleCode)}" />
- 
-			<xsl:if test="string-length(normalize-space(birthPlace)) &gt; 0">
+
+			<xsl:if
+				test="string-length(normalize-space(birthPlace)) &gt; 0">
 				<schema:birthPlace
 					rdf:resource="{ep-org:URI-MEPBIRTHPLACE(countryId,countryIsoCode,birthPlace)}" />
 			</xsl:if>
@@ -86,37 +88,61 @@
 			<!-- Process all children except assistants -->
 			<xsl:apply-templates select="* except assistants" />
 		</ep-org:MEP>
-		
+
 		<!-- After MEP, generate the Assistant membership -->
-		<xsl:apply-templates select="assistants/item" mode="membership" />
+		<xsl:apply-templates select="assistants/item"
+			mode="membership" />
 	</xsl:template>
 
 	<!-- Assistants references through memberships -->
-	<xsl:template match="all/item/assistants/item" mode="membership">
+	<xsl:template match="all/item/assistants/item"
+		mode="membership">
 		<ep-org:Person
-				rdf:about="{ep-org:URI-ASSISTANT(identifier)}">
-			<org:hasMembership />
+			rdf:about="{ep-org:URI-ASSISTANT(identifier)}">
+			<org:hasMembership>
+				<ep-org:Membership
+					rdf:about="{ep-org:URI-MEMBERSHIP(ancestor::item/identifier,identifier)}">
+					<ep-org:hasMembershipType
+						rdf:resource="{ep-org:URI-MembershipType('PERSON')}" />
+					<ep-org:hasOrganization
+						rdf:resource="{ep-org:URI-ResourcePerson(ancestor::item/identifier)}" />
+					<org:role
+						rdf:resource="{ep-org:URI-AutorityFUNCTION('ASSISTANT')}" />
+				</ep-org:Membership>
+			</org:hasMembership>
 		</ep-org:Person>
 	</xsl:template>
-	
+
 	<!-- Assistants entities -->
-	<xsl:template match="all/item/assistants/item" mode="person">
+	<xsl:template match="all/item/assistants/item"
+		mode="person">
 
 		<xsl:variable name="thisIdentifier" select="identifier" />
 
-		<!-- process only if it is the first occurrence of this assistant in the file -->
-		<xsl:if test="count(../../preceding-sibling::item[assistants/item/identifier = $thisIdentifier]) = 0">
+		<!-- process only if it is the first occurrence of this assistant in the 
+			file -->
+		<xsl:if
+			test="count(../../preceding-sibling::item[assistants/item/identifier = $thisIdentifier]) = 0">
 
 			<ep-org:Person
 				rdf:about="{ep-org:URI-ASSISTANT(identifier)}">
 				<xsl:variable name="haspersonType">
 					<xsl:choose>
 						<xsl:when
-							test="count(/all/item[assistants/item/identifier = $thisIdentifier]) > 1">AST-APA-GRP</xsl:when>
-						<xsl:when test="accreditations/item[assistantType = 'A']">AST-APA</xsl:when>
-						<xsl:when test="accreditations/item[assistantType = 'L']">AST-LOC</xsl:when>
+							test="count(/all/item[assistants/item/identifier = $thisIdentifier]) > 1">
+							AST-APA-GRP
+						</xsl:when>
+						<xsl:when test="accreditations/item[assistantType = 'A']">
+							AST-APA
+						</xsl:when>
+						<xsl:when test="accreditations/item[assistantType = 'L']">
+							AST-LOC
+						</xsl:when>
 						<xsl:otherwise>
-							<xsl:message>Cannot determine person-type for assistant <xsl:value-of select="$thisIdentifier" /></xsl:message>
+							<xsl:message>
+								Cannot determine person-type for assistant
+								<xsl:value-of select="$thisIdentifier" />
+							</xsl:message>
 						</xsl:otherwise>
 					</xsl:choose>
 				</xsl:variable>
@@ -148,16 +174,19 @@
 
 	<!-- CV -->
 	<xsl:template match="cv">
-		<xsl:for-each select="item[langIsoCode = 'EN' or langIsoCode = 'FR']">
-			<ep-org:curriculumVitae xml:lang="{lower-case(langIsoCode)}">
-					<xsl:value-of select="decription" />
+		<xsl:for-each
+			select="item[langIsoCode = 'EN' or langIsoCode = 'FR']">
+			<ep-org:curriculumVitae
+				xml:lang="{lower-case(langIsoCode)}">
+				<xsl:value-of select="decription" />
 			</ep-org:curriculumVitae>
 		</xsl:for-each>
 	</xsl:template>
 
 	<!-- ContactPoint electronic -->
 	<xsl:template match="eaddresses">
-		<xsl:for-each select="item[normalize-space(address) != '']">
+		<xsl:for-each
+			select="item[normalize-space(address) != '']">
 			<schema:contactPoint>
 				<schema:ContactPoint
 					rdf:about="{ep-org:eaddresses(ancestor::item/identifier,concat(addressCodeType,order))}">
@@ -185,10 +214,13 @@
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 						<xsl:value-of select="officeNum" />
 					</ep-org:officeId>
-					<!--  TODO : si townCode = STR alors country France, si townCode = BRU, country Belgique -->
+					<!-- TODO : si townCode = STR alors country France, si townCode = BRU, 
+						country Belgique -->
 					<schema:addressCountry
 						rdf:resource="{ep-org:URI-PublicationsCOUNTRY(townCode)}" />
-					<schema:addressLocality><xsl:value-of select="townName" /></schema:addressLocality>
+					<schema:addressLocality>
+						<xsl:value-of select="townName" />
+					</schema:addressLocality>
 					<schema:faxNumber
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 						<xsl:value-of select="faxNum" />
@@ -223,7 +255,7 @@
 						<ep-org:hasParliamentaryTerm
 							rdf:resource="{ep-org:URI-ParliamentaryTerm($startDate,$endDate)}" />
 					</xsl:if>
-					
+
 					<dc:identifier
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 						<xsl:value-of select="mandateId" />
@@ -287,7 +319,7 @@
 
 				<ep-org:Membership
 					rdf:about="{ep-org:URI-MEMBERSHIP(memberIdentifier,identifier)}">
-					
+
 					<xsl:if test="$var_hasMembershipType != ''">
 						<ep-org:hasMembershipType
 							rdf:resource="{ep-org:URI-MembershipType($var_hasMembershipType)}" />
@@ -296,9 +328,8 @@
 					<ep-org:hasOrganization
 						rdf:resource="{ep-org:URI-Organization(typeOrganeCode,organeCode,organeId)}" />
 
-					<!--  					
-					<ep-org:hasParliamentaryTerm
-						rdf:resource="{ep-org:URI-ParliamentaryTerm($startDate,$endDate)}" />-->
+					<!-- <ep-org:hasParliamentaryTerm rdf:resource="{ep-org:URI-ParliamentaryTerm($startDate,$endDate)}" 
+						/> -->
 
 
 					<schema:endDate
