@@ -28,7 +28,7 @@
 
 	<xsl:function name="ep-org:URI-ASSISTANT">
 		<xsl:param name="AssistantId" />
-		<xsl:value-of select="ep-org:URI-Autority(concat('person-type/',$AssistantId))" />
+		<xsl:value-of select="ep-org:URI-Person($AssistantId)" />
 	</xsl:function>
 
 	<xsl:function name="ep-org:URI-Person">

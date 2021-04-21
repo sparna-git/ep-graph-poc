@@ -23,53 +23,12 @@
 		</rdf:RDF>
 	</xsl:template>
 
-
-	<!-- Assistants -->
-	<xsl:template match="all/item/assistants">
-		<ep-org:Person
-			rdf:about="{ep-org:URI-ASSISTANT(identifier)}">
-			<xsl:variable name="haspersonType">
-				<xsl:choose>
-					<xsl:when test="accreditations/item/assistantType = 'A'">
-						<xsl:value-of select="AST-APA" />
-					</xsl:when>
-					<xsl:when test="accreditations/item/assistantType = 'L'">
-						<xsl:value-of select="AST-LOC" />
-					</xsl:when>
-					<xsl:when
-						test="child::identifier != accreditations/item/accrResponsibleId">
-						<xsl:value-of select="AST-APA-GRP" />
-					</xsl:when>
-				</xsl:choose>
-			</xsl:variable>
-			<ep-org:hasPersonType
-				rdf:resource="{ep-org:URI-AutorityPERSON($haspersonType)}" />
-			<ep-org:personId
-				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-				<xsl:value-of select="identifier" />
-			</ep-org:personId>
-			<ep-org:upperFamilyName
-				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-				<xsl:value-of select="upperFamilyName" />
-			</ep-org:upperFamilyName>
-			<ep-org:upperFirstName
-				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-				<xsl:value-of select="upperFirstName" />
-			</ep-org:upperFirstName>
-			<foaf:familyName
-				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-				<xsl:value-of select="richFamilyName" />
-			</foaf:familyName>
-			<foaf:firstName
-				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-				<xsl:value-of select="richFirstName" />
-			</foaf:firstName>
-		</ep-org:Person>
-	</xsl:template>
-
-
 	<xsl:template match="all">
 		<xsl:apply-templates />
+
+		<!-- Generate all assistants at the end of the file -->
+		<xsl:apply-templates select="item/assistants/item" mode="entity" />
+
 	</xsl:template>
 
 
@@ -124,25 +83,75 @@
 			<schema:nationality
 				rdf:resource="{ep-org:URI-MEPNATIONALITY(countryIsoCode)}" />
 
-			<xsl:apply-templates />
+			<!-- Process all children except assistants -->
+			<xsl:apply-templates select="* except assistants" />
 		</ep-org:MEP>
+		
+		<!-- After MEP, generate the Assistant membership -->
+		<xsl:apply-templates select="assistants/item" mode="reference" />
 	</xsl:template>
 
+	<!-- Assistants references through memberships -->
+	<xsl:template match="all/item/assistants/item" mode="reference">
+		<ep-org:Person
+				rdf:about="{ep-org:URI-ASSISTANT(identifier)}">
+			<org:hasMembership />
+		</ep-org:Person>
+	</xsl:template>
+	
+	<!-- Assistants entities -->
+	<xsl:template match="all/item/assistants/item" mode="entity">
+
+		<xsl:variable name="thisIdentifier" select="identifier" />
+
+		<!-- copy only if it is the first element in the file -->
+		<xsl:if test="count(../../preceding-sibling::item[assistants/item/identifier = $thisIdentifier]) = 0">
+
+			<ep-org:Person
+				rdf:about="{ep-org:URI-ASSISTANT(identifier)}">
+				<xsl:variable name="haspersonType">
+					<xsl:choose>
+						<xsl:when
+							test="count(/all/item[assistants/item/identifier = $thisIdentifier]) > 1">AST-APA-GRP</xsl:when>
+						<xsl:when test="accreditations/item[assistantType = 'A']">AST-APA</xsl:when>
+						<xsl:when test="accreditations/item[assistantType = 'L']">AST-LOC"</xsl:when>
+						<xsl:otherwise>
+							<xsl:message>Cannot determine person-type for assistant <xsl:value-of select="$thisIdentifier" /></xsl:message>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:variable>
+				<ep-org:hasPersonType
+					rdf:resource="{ep-org:URI-AutorityPERSON($haspersonType)}" />
+				<ep-org:personId
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+					<xsl:value-of select="identifier" />
+				</ep-org:personId>
+				<ep-org:upperFamilyName
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+					<xsl:value-of select="upperFamilyName" />
+				</ep-org:upperFamilyName>
+				<ep-org:upperFirstName
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+					<xsl:value-of select="upperFirstName" />
+				</ep-org:upperFirstName>
+				<foaf:familyName
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+					<xsl:value-of select="richFamilyName" />
+				</foaf:familyName>
+				<foaf:firstName
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+					<xsl:value-of select="richFirstName" />
+				</foaf:firstName>
+			</ep-org:Person>
+		</xsl:if>
+	</xsl:template>
 
 	<!-- CV -->
 	<xsl:template match="cv">
 		<xsl:for-each select="item">
-			<xsl:if test="langIsoCode='EN'">
-				<ep-org:curriculumVitae xml:lang="">
+			<ep-org:curriculumVitae xml:lang="{lower-case(langIsoCode)}">
 					<xsl:value-of select="decription" />
-				</ep-org:curriculumVitae>
-			</xsl:if>
-			<xsl:if test="langIsoCode='FR'">
-				<ep-org:curriculumVitae
-					xml:lang="{lower-case(langIsoCode)}">
-					<xsl:value-of select="decription" />
-				</ep-org:curriculumVitae>
-			</xsl:if>
+			</ep-org:curriculumVitae>
 		</xsl:for-each>
 	</xsl:template>
 
