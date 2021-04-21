@@ -27,7 +27,7 @@
 		<xsl:apply-templates />
 
 		<!-- Generate all assistants at the end of the file -->
-		<xsl:apply-templates select="item/assistants/item" mode="entity" />
+		<xsl:apply-templates select="item/assistants/item" mode="person" />
 
 	</xsl:template>
 
@@ -88,11 +88,11 @@
 		</ep-org:MEP>
 		
 		<!-- After MEP, generate the Assistant membership -->
-		<xsl:apply-templates select="assistants/item" mode="reference" />
+		<xsl:apply-templates select="assistants/item" mode="membership" />
 	</xsl:template>
 
 	<!-- Assistants references through memberships -->
-	<xsl:template match="all/item/assistants/item" mode="reference">
+	<xsl:template match="all/item/assistants/item" mode="membership">
 		<ep-org:Person
 				rdf:about="{ep-org:URI-ASSISTANT(identifier)}">
 			<org:hasMembership />
@@ -100,11 +100,11 @@
 	</xsl:template>
 	
 	<!-- Assistants entities -->
-	<xsl:template match="all/item/assistants/item" mode="entity">
+	<xsl:template match="all/item/assistants/item" mode="person">
 
 		<xsl:variable name="thisIdentifier" select="identifier" />
 
-		<!-- copy only if it is the first element in the file -->
+		<!-- process only if it is the first occurrence of this assistant in the file -->
 		<xsl:if test="count(../../preceding-sibling::item[assistants/item/identifier = $thisIdentifier]) = 0">
 
 			<ep-org:Person

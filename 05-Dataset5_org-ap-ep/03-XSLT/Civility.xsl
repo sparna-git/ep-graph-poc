@@ -33,7 +33,7 @@
 
 	<xsl:template match="all/item">
 		<skos:Concept
-			rdf:about="{ep-org:URI-CVCIVILITY(encode-for-uri(normalize-space(identifier)))}">
+			rdf:about="{ep-org:URI-CIVILITY(encode-for-uri(normalize-space(identifier)))}">
 			<rdf:type rdf:resource="{ep-org:URI-CVEPONTO('Civility')}" />
 			<ep-org:isoLanguage
 				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
