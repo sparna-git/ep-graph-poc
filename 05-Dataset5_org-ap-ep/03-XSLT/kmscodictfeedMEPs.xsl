@@ -79,7 +79,7 @@
 			<xsl:if
 				test="ep-org:Lookup_COUNTRYBIRTHPLACE(countryId,countryIsoCode,birthPlace) != ''">
 				<schema:birthPlace
-					rdf:resource="{ep-org:URI-MEPBIRTHPLACE(countryId,countryIsoCode)}" />
+					rdf:resource="{ep-org:URI-MEPBIRTHPLACE(countryId,countryIsoCode,birthPlace)}" />
 			</xsl:if>
 
 			<schema:nationality
