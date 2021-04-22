@@ -15,7 +15,7 @@
 	<xsl:output indent="yes" method="xml" />
 
 	<xsl:variable name="SCHEME_URI"
-		select="ep-org:URI-Autority('org-type')" />
+		select="ep-org:URI-Authority('org-type')" />
 
 	<xsl:template match="/">
 		<rdf:RDF>

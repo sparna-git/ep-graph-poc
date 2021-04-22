@@ -14,7 +14,7 @@
 	<xsl:import href="builtins.xsl" />
 	<xsl:output indent="yes" method="xml" />
 
-	<xsl:variable name="SCHEME_URI" select="ep-org:URI-Autority('civility')" />
+	<xsl:variable name="SCHEME_URI" select="ep-org:URI-Authority('civility')" />
 
 	<xsl:template match="/">
 		<rdf:RDF>

@@ -149,7 +149,7 @@
 					</xsl:choose>
 				</xsl:variable>
 				<ep-org:hasPersonType
-					rdf:resource="{ep-org:URI-AutorityPERSON($haspersonType)}" />
+					rdf:resource="{ep-org:URI-PersonType($haspersonType)}" />
 				<ep-org:personId
 					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 					<xsl:value-of select="identifier" />
@@ -191,7 +191,7 @@
 			select="item[normalize-space(address) != '']">
 			<schema:contactPoint>
 				<schema:ContactPoint
-					rdf:about="{ep-org:eaddresses(ancestor::item/identifier,concat(addressCodeType,order))}">
+					rdf:about="{ep-org:URI-ContactPoint-Electronic(ancestor::item/identifier,concat(addressCodeType,order))}">
 					<schema:contactType
 						rdf:resource="{ep-org:URI-CONTACT_POINT_TYPE_ELECTRONIC(addressCodeType)}" />
 					<schema:url
@@ -208,7 +208,7 @@
 		<xsl:for-each select="item">
 			<schema:contactPoint>
 				<schema:PostalAddress
-					rdf:about="{ep-org:addresses(identifier,officeNum)}">
+					rdf:about="{ep-org:URI-ContactPoint-Place(identifier,officeNum)}">
 
 					<ep-org:hasSite
 						rdf:resource="{ep-org:URI-PublicationsSITE(buildingCode)}" />
@@ -260,7 +260,7 @@
 							rdf:resource="{ep-org:URI-MembershipType('MANDATE')}" />
 					
 					<ep-org:constituency
-						rdf:resource="{ep-org:URI-MandatCONSTITUENCY(countryIsoCode,mandateId)}" />
+						rdf:resource="{ep-org:URI-CONSTITUENCY(countryIsoCode,mandateId)}" />
 
 					<xsl:variable name="countryId" select="ep-org:Lookup_COUNTRY(countryIsoCode)" />
 					<xsl:if test="$countryId != ''">

@@ -16,7 +16,7 @@
 	<xsl:output indent="yes" method="xml" />
 
 	<xsl:variable name="SCHEME_URI"
-		select="ep-org:URI-Autority('contact-point-type')" />
+		select="ep-org:URI-Authority('contact-point-type')" />
 
 	<xsl:template match="/">
 		<rdf:RDF>

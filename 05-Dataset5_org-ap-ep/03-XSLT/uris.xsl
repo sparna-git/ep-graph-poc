@@ -21,7 +21,6 @@
 	<xsl:param name="country_file"
 		select="document(concat($XML_DIR, '/','CountryISO.xml'))/root/row" />
 
-
 	<xsl:function name="ep-org:URI-MEP">
 		<xsl:param name="mepId" />
 		<xsl:value-of select="ep-org:URI-Person($mepId)" />
@@ -37,31 +36,13 @@
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/person/', encode-for-uri($personId))" />
 	</xsl:function>
 
-	<!-- URI AUTORITY -->
-	<xsl:function name="ep-org:URI-Autority">
-		<xsl:param name="uriAutority" />
-		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/', $uriAutority)" />
-	</xsl:function>
-
-	<!-- URI AUTORITY PERSON-->
-	<xsl:function name="ep-org:URI-AutorityPERSON">
-		<xsl:param name="uriAutority" />
-		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/person-type/', $uriAutority)" />
-	</xsl:function>
-	
-	<!-- URI RESOURCE PERSON  -->
-	<xsl:function name="ep-org:URI-ResourcePerson">
-		<xsl:param name="AssistantId" />
-		<xsl:value-of select="concat('http://data.europarl.europa.eu/resource/person/', $AssistantId)"/>
-	</xsl:function>
-
 	<!-- URI Organisation (org:Organization) -->
 	<xsl:function name="ep-org:URI-Organization">
-		<xsl:param name="uriOrganitasation" />
-		<xsl:value-of select="concat('http://data.europarl.europa.eu/org/', $uriOrganitasation)" />
+		<xsl:param name="uriOrganisation" />
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/org/', $uriOrganisation)" />
 	</xsl:function>
 
-	<!-- hasOrganization -->
+	<!-- URI Organisation from code + id -->
 	<xsl:function name="ep-org:URI-Organization">
 		<xsl:param name="typeOrganeCode"/>
 		<xsl:param name="organeCode"/>
@@ -69,10 +50,16 @@
 		<xsl:value-of select="ep-org:URI-Organization(concat($typeOrganeCode,'/',encode-for-uri($organeCode),'-',$organeId))"/>
 	</xsl:function>
 
+	<!-- URI Person Type -->
+	<xsl:function name="ep-org:URI-PersonType">
+		<xsl:param name="uriAutority" />
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/person-type/', $uriAutority)" />
+	</xsl:function>
+
 	<!-- parliamentary terms -->
 	<xsl:function name="ep-org:URI-PARLIAMENTARY_TERM">
 		<xsl:param name="parliamentaryTermId" />
-		<xsl:value-of select="concat(ep-org:URI-Autority('parliamentary-term/'), $parliamentaryTermId)"/>
+		<xsl:value-of select="concat(ep-org:URI-Authority('parliamentary-term/'), $parliamentaryTermId)"/>
 	</xsl:function>
 
 	<!-- MEP  -->
@@ -93,69 +80,130 @@
 	<!-- Gender-->
 	<xsl:function name="ep-org:URI-GENDER">
 		<xsl:param name="genderId" />
-		<xsl:value-of select="concat(ep-org:URI-Autority('gender/'), $genderId)" />
+		<xsl:value-of select="concat(ep-org:URI-Authority('gender/'), $genderId)" />
 	</xsl:function>
 
 	<!-- PLACE -->
 	<xsl:function name="ep-org:URI-PLACE">
 		<xsl:param name="placeId"/>
-		<xsl:value-of select="ep-org:URI-Autority(concat('place/', $placeId))"/>
+		<xsl:value-of select="ep-org:URI-Authority(concat('place/', $placeId))"/>
+	</xsl:function>
+
+	<!-- URI Place (publication.europa.eu)  -->
+	<xsl:function name="ep-org:URI-PublicationsLOCALITY">
+		<xsl:param name="uriPublications" />
+		<xsl:value-of select="concat('http://publications.europa.eu/resource/authority/place/', $uriPublications)" />
 	</xsl:function>
 
 	<!-- Country -->
 	<xsl:function name="ep-org:URI-COUNTRY">
 		<xsl:param name="countryId" />
-		<xsl:value-of select="concat(ep-org:URI-Autority('country/'), $countryId)" />
+		<xsl:value-of select="concat(ep-org:URI-Authority('country/'), $countryId)" />
 	</xsl:function>
 
 	<!-- ADDRESSES  -->
 
-	<!-- URI eaddresses  -->
-	<xsl:function name="ep-org:eaddresses">
+	<!-- ContactPoint electronic  -->
+	<xsl:function name="ep-org:URI-ContactPoint-Electronic">
 		<xsl:param name="identifier"/>
 		<xsl:param name="typeContact"/>
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/resource/contact-point/electronic/',$identifier,'/',$typeContact)"/>
 	</xsl:function>
 
-	<!-- URI addresses  -->
-	<xsl:function name="ep-org:addresses">
+	<!-- ContactPoint place  -->
+	<xsl:function name="ep-org:URI-ContactPoint-Place">
 		<xsl:param name="identifier"/>
 		<xsl:param name="office"/>
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/resource/contact-point/place/',$identifier,'/',$office)"/>
 	</xsl:function>
 
-	<!-- URI PUBLICATION SITE  -->
+	<!-- URI SITE  -->
 	<xsl:function name="ep-org:URI-PublicationsSITE">
 		<xsl:param name="uriPublications" />
 		<xsl:value-of select="concat('http://publications.europa.eu/resource/authority/site/', $uriPublications)" />
-	</xsl:function>
-
-	<!-- URI PUBLICATION LOCALITY  -->
-	<xsl:function name="ep-org:URI-PublicationsLOCALITY">
-		<xsl:param name="uriPublications" />
-		<xsl:value-of select="concat('http://publications.europa.eu/resource/authority/place/', $uriPublications)" />
 	</xsl:function>
 
 
 	<!-- MANDAT  -->
 
 	<!-- URI CONSTITUENCY  -->
-	<xsl:function name="ep-org:URI-MandatCONSTITUENCY">
+	<xsl:function name="ep-org:URI-CONSTITUENCY">
 		<xsl:param name="countryISOcode"/>
 		<xsl:param name="mandateId"/>
-		<xsl:value-of select="concat(ep-org:URI-Autority('constituency/'),ep-org:Lookup_COUNTRY($countryISOcode),'-',$mandateId)"/>
+		<xsl:value-of select="concat(ep-org:URI-Authority('constituency/'),ep-org:Lookup_COUNTRY($countryISOcode),'-',$mandateId)"/>
 	</xsl:function>
 
-	<!-- URI TYPE  -->
-	<xsl:function name="ep-org:URI-MandatTYPE">
-		<xsl:param name="mandateId"/>
-		<xsl:value-of select="concat(ep-org:URI-Autority('membership-type/'),$mandateId)"/>
-	</xsl:function>
-
+	<!-- URI Membership TYPE  -->
 	<xsl:function name="ep-org:URI-MembershipType">
 		<xsl:param name="idMembershipType"/>
-		<xsl:value-of select="ep-org:URI-Autority(concat('membership-type/',$idMembershipType))"/>
+		<xsl:value-of select="ep-org:URI-Authority(concat('membership-type/',$idMembershipType))"/>
 	</xsl:function>
+
+
+	<!-- URI Civiliy-->
+	<xsl:function name="ep-org:URI-CIVILITY">
+		<xsl:param name="cvCivility" />
+		<xsl:value-of select="concat(ep-org:URI-Authority('civility/'), encode-for-uri($cvCivility))" />
+	</xsl:function>
+
+	<!-- Contact Point Type electronic-->
+	<xsl:function name="ep-org:URI-CONTACT_POINT_TYPE_ELECTRONIC">
+		<xsl:param name="ctType" />
+		<xsl:value-of select="concat(ep-org:URI-Authority('contact-point-type/electronic/'), $ctType)"/>
+	</xsl:function>
+
+	<!-- Contact Point Type place -->
+	<xsl:function name="ep-org:URI-CONTACT_POINT_TYPE_PLACE">
+		<xsl:param name="ctType" />
+		<xsl:value-of select="concat(ep-org:URI-Authority('contact-point-type/place/'), $ctType)"/>
+	</xsl:function>
+
+	<!-- Function -->
+	<xsl:function name="ep-org:URI-FUNCTION">
+		<xsl:param name="functionId" />
+		<xsl:value-of select="concat(ep-org:URI-Authority('function/'), $functionId)"/>
+	</xsl:function>
+
+	<!-- Organization Type -->
+	<xsl:function name="ep-org:URI-CVORGTYPE">
+		<xsl:param name="inData" />
+		<xsl:value-of select="concat(ep-org:URI-Authority('org-type/'), $inData)"/>
+	</xsl:function>
+
+	<!-- Corporate Body -->
+	<!--
+	<xsl:function name="ep-org:URI-COMMITTEEBODY">
+		<xsl:param name="inData" />
+		<xsl:value-of select="concat(ep-org:URI-Authority('committee-body/'), $inData)"/>
+	</xsl:function>
+
+	<xsl:function name="ep-org:URI-DELEGATIONBODY">
+		<xsl:param name="inData" />
+		<xsl:value-of select="concat(ep-org:URI-Authority('delegation-body/'), $inData)"/>
+	</xsl:function>
+
+	<xsl:function name="ep-org:URI-GOVERNANCEBODY">
+		<xsl:param name="inData" />
+		<xsl:value-of select="concat(ep-org:URI-Authority('governance-body/'), $inData)"/>
+	</xsl:function>
+
+	<xsl:function name="ep-org:URI-INSTITUTIONBODY">
+		<xsl:param name="inData" />
+		<xsl:value-of select="concat(ep-org:URI-Authority('institution-body/'), $inData)"/>
+	</xsl:function>
+
+	<xsl:function name="ep-org:URI-NATIONALPARTYBODY">
+		<xsl:param name="inData" />
+		<xsl:value-of select="concat(ep-org:URI-Authority('national-party-body/'), $inData)"/>
+	</xsl:function>
+
+	<xsl:function name="ep-org:URI-POLITICALGROUPBODY">
+		<xsl:param name="inData" />
+		<xsl:value-of select="concat(ep-org:URI-Authority('political-group-body/'), $inData)"/>
+	</xsl:function>
+ 	-->
+ 	
+ 	<!-- ***** Primitive methods ***** -->
 
 	<!-- URI VOCABULARY -->
 	<xsl:function name="ep-org:URI-ONTOLOGY">
@@ -163,74 +211,19 @@
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/ontology/ep-org#',$cv)" />
 	</xsl:function>
 
-	<!-- CV Civiliy-->
-	<xsl:function name="ep-org:URI-CIVILITY">
-		<xsl:param name="cvCivility" />
-		<xsl:value-of select="concat(ep-org:URI-Autority('civility/'), encode-for-uri($cvCivility))" />
+	<!-- URI AUTORITY -->
+	<xsl:function name="ep-org:URI-Authority">
+		<xsl:param name="uriAutority" />
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/', $uriAutority)" />
 	</xsl:function>
-
 
 	<!-- URI EPONTO -->
 	<xsl:function name="ep-org:URI-CVEPONTO">
 		<xsl:param name="cvId" />
 		<xsl:value-of select="ep-org:URI-ONTOLOGY($cvId)" />
-	</xsl:function>
-
-	<!-- Contact Point Type electronic-->
-	<xsl:function name="ep-org:URI-CONTACT_POINT_TYPE_ELECTRONIC">
-		<xsl:param name="ctType" />
-		<xsl:value-of select="concat(ep-org:URI-Autority('contact-point-type/electronic/'), $ctType)"/>
-	</xsl:function>
-
-	<!-- Contact Point Type place -->
-	<xsl:function name="ep-org:URI-CONTACT_POINT_TYPE_PLACE">
-		<xsl:param name="ctType" />
-		<xsl:value-of select="concat(ep-org:URI-Autority('contact-point-type/place/'), $ctType)"/>
-	</xsl:function>
-
-	<!-- Function -->
-	<xsl:function name="ep-org:URI-FUNCTION">
-		<xsl:param name="functionId" />
-		<xsl:value-of select="concat(ep-org:URI-Autority('function/'), $functionId)"/>
-	</xsl:function>
-
-	<!-- Organization Type -->
-	<xsl:function name="ep-org:URI-CVORGTYPE">
-		<xsl:param name="inData" />
-		<xsl:value-of select="concat(ep-org:URI-Autority('org-type/'), $inData)"/>
-	</xsl:function>
-
-	<!-- Corporate Body -->
-	<xsl:function name="ep-org:URI-COMMITTEEBODY">
-		<xsl:param name="inData" />
-		<xsl:value-of select="concat(ep-org:URI-Autority('committee-body/'), $inData)"/>
-	</xsl:function>
-
-	<xsl:function name="ep-org:URI-DELEGATIONBODY">
-		<xsl:param name="inData" />
-		<xsl:value-of select="concat(ep-org:URI-Autority('delegation-body/'), $inData)"/>
-	</xsl:function>
-
-	<xsl:function name="ep-org:URI-GOVERNANCEBODY">
-		<xsl:param name="inData" />
-		<xsl:value-of select="concat(ep-org:URI-Autority('governance-body/'), $inData)"/>
-	</xsl:function>
-
-	<xsl:function name="ep-org:URI-INSTITUTIONBODY">
-		<xsl:param name="inData" />
-		<xsl:value-of select="concat(ep-org:URI-Autority('institution-body/'), $inData)"/>
-	</xsl:function>
-
-	<xsl:function name="ep-org:URI-NATIONALPARTYBODY">
-		<xsl:param name="inData" />
-		<xsl:value-of select="concat(ep-org:URI-Autority('national-party-body/'), $inData)"/>
-	</xsl:function>
-
-	<xsl:function name="ep-org:URI-POLITICALGROUPBODY">
-		<xsl:param name="inData" />
-		<xsl:value-of select="concat(ep-org:URI-Autority('political-group-body/'), $inData)"/>
-	</xsl:function>
-
+	</xsl:function>	
+	
+	<!-- ***** Lookup Methods ***** -->
 	
 	<!-- fonction -->
 	<xsl:function name="ep-org:Lookup_GENDER">

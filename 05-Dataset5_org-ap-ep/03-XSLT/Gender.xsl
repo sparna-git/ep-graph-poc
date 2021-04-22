@@ -15,7 +15,7 @@
 	<!-- Import builtins stylesheet -->
 	<xsl:import href="builtins.xsl" />
 	
-	<xsl:variable name="SCHEME_URI" select="ep-org:URI-Autority('gender')" />
+	<xsl:variable name="SCHEME_URI" select="ep-org:URI-Authority('gender')" />
 
 	<xsl:output indent="yes" method="xml" />
 
@@ -45,7 +45,7 @@
 				<xsl:value-of select="isoCode" />
 			</ep-org:isoCode>
 			<xsl:apply-templates />
-			<skos:inScheme rdf:resource="{ep-org:URI-Autority('gender')}"/>				 
+			<skos:inScheme rdf:resource="{$SCHEME_URI}"/>				 
 		</skos:Concept>
 	</xsl:template>
 
