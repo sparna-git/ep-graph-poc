@@ -71,19 +71,24 @@
 				<xsl:value-of select="ep-org:URI-MEPPHOTO(identifier)" />
 			</foaf:img>
 
-			<schema:gender
-				rdf:resource="{ep-org:URI-MEPGENDER(genderIsoCode)}" />
+			<xsl:variable name="genderId" select="ep-org:Lookup_GENDER(genderIsoCode)" />
+			<xsl:if test="$genderId != ''">
+				<schema:gender
+					rdf:resource="{ep-org:URI-GENDER($genderId)}" />
+			</xsl:if>
+			
 			<schema:honorificPrefix
 				rdf:resource="{ep-org:URI-CIVILITY(titleCode)}" />
 
-			<xsl:if
-				test="ep-org:Lookup_COUNTRYBIRTHPLACE(countryId,countryIsoCode,birthPlace) != ''">
-				<schema:birthPlace
-					rdf:resource="{ep-org:URI-MEPBIRTHPLACE(countryId,countryIsoCode,birthPlace)}" />
+			<xsl:variable name="townCode" select="ep-org:Lookup_TOWN(countryId,countryIsoCode,birthPlace)" />
+			<xsl:if test="$townCode != ''">
+				<schema:birthPlace rdf:resource="{ep-org:URI-PLACE($townCode)}" />
 			</xsl:if>
 
-			<schema:nationality
-				rdf:resource="{ep-org:URI-MEPNATIONALITY(countryIsoCode)}" />
+			<xsl:variable name="countryId" select="ep-org:Lookup_COUNTRY(countryIsoCode)" />
+			<xsl:if test="$countryId != ''">
+				<schema:nationality rdf:resource="{ep-org:URI-COUNTRY($countryId)}" />
+			</xsl:if>
 
 			<!-- Process all children except assistants -->
 			<xsl:apply-templates select="* except assistants" />
@@ -209,8 +214,18 @@
 						<xsl:value-of select="officeNum" />
 					</ep-org:officeId>
 
-					<schema:addressCountry
-						rdf:resource="{ep-org:URI-PublicationsCOUNTRY(townCode)}" />
+
+					<xsl:choose>
+						<xsl:when test="townCode ='BRU'">
+							<schema:addressCountry
+								rdf:resource="{ep-org:URI-COUNTRY('BE')}" />
+						</xsl:when>
+						<xsl:when test="townCode ='STR'">
+							<schema:addressCountry
+								rdf:resource="{ep-org:URI-COUNTRY('FR')}" />
+						</xsl:when>
+					</xsl:choose>					
+						
 					<schema:addressLocality>
 						<xsl:value-of select="townName" />
 					</schema:addressLocality>
@@ -236,13 +251,16 @@
 					<ep-org:constituency
 						rdf:resource="{ep-org:URI-MandatCONSTITUENCY(countryIsoCode,mandateId)}" />
 
-					<ep-org:hasOrganization
-						rdf:resource="{ep-org:URI-MandatORGANIZATION(countryIsoCode)}" />
+					<xsl:variable name="countryId" select="ep-org:Lookup_COUNTRY(countryIsoCode)" />
+					<xsl:if test="$countryId != ''">
+						<ep-org:hasOrganization rdf:resource="{ep-org:URI-COUNTRY($countryId)}" />
+					</xsl:if>
 
+					<xsl:variable name="ptId" select="ep-org:Lookup_PARLIAMENTARY_TERM(startDateTime,endDateTime)" />
 					<xsl:if
-						test="ep-org:OrderparliamentaryTerm(startDateTime,endDateTime) != ''">
+						test="$ptId != ''">
 						<ep-org:hasParliamentaryTerm
-							rdf:resource="{ep-org:URI-ParliamentaryTerm(startDateTime,endDateTime)}" />
+							rdf:resource="{ep-org:URI-PARLIAMENTARY_TERM($ptId)}" />
 					</xsl:if>
 
 

@@ -34,7 +34,7 @@
 
 	<xsl:template match="all/item">
 		<skos:Concept
-			rdf:about="{ep-org:URI-CVPLACE(normalize-space(townCode))}">
+			rdf:about="{ep-org:URI-PLACE(normalize-space(townCode))}">
 			<rdf:type rdf:resource="{ep-org:URI-CVEPONTO('place')}" />
 
 			<rdfs:label>

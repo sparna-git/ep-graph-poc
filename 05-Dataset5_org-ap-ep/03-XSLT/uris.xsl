@@ -75,11 +75,10 @@
 		<xsl:value-of select="ep-org:URI-Organization(concat($typeOrganeCode,'/',encode-for-uri($organeCode),'-',$organeId))"/>
 	</xsl:function>
 
-	<!-- URI PARLAIMENTARY TERM  -->
-	<xsl:function name="ep-org:URI-ParliamentaryTerm">
-		<xsl:param name="starDate"/>
-		<xsl:param name="endDate"/>
-		<xsl:value-of select="ep-org:URI-Autority(concat('parliamentary-term/',ep-org:OrderparliamentaryTerm($starDate,$endDate)))"/>
+	<!-- parliamentary terms -->
+	<xsl:function name="ep-org:URI-PARLIAMENTARY_TERM">
+		<xsl:param name="parliamentaryTermId" />
+		<xsl:value-of select="concat(ep-org:URI-Autority('parliamentary-term/'), $parliamentaryTermId)"/>
 	</xsl:function>
 
 	<!-- MEP  -->
@@ -102,29 +101,23 @@
 		<xsl:value-of select="concat('www.europarl.europa.eu/mepphoto/',$identifier,'.jpg')"/>
 	</xsl:function>
 
-	<!-- GENDER -->
-	<xsl:function name="ep-org:URI-MEPGENDER">
-		<xsl:param name="IdGender"/>
-		<xsl:value-of select="ep-org:URI-Autority(concat('gender/',ep-org:Lookup_GENDER($IdGender)))"/>
+	<!-- Gender-->
+	<xsl:function name="ep-org:URI-GENDER">
+		<xsl:param name="genderId" />
+		<xsl:value-of select="concat(ep-org:URI-Autority('gender/'), $genderId)" />
 	</xsl:function>
 
-	
-
-	<!-- BIRTHPLACE -->
-	<xsl:function name="ep-org:URI-MEPBIRTHPLACE">
-		<xsl:param name="countryId"/>
-		<xsl:param name="countryISOcode"/>
-		<xsl:param name="birthplace"/>
-		<xsl:value-of select="ep-org:URI-Autority(concat(
-			'place/',ep-org:Lookup_COUNTRYBIRTHPLACE($countryId,$countryISOcode,$birthplace)))"/>
+	<!-- PLACE -->
+	<xsl:function name="ep-org:URI-PLACE">
+		<xsl:param name="placeId"/>
+		<xsl:value-of select="ep-org:URI-Autority(concat('place/', $placeId))"/>
 	</xsl:function>
 
-	<!-- NATIONALITY -->
-	<xsl:function name="ep-org:URI-MEPNATIONALITY">
-		<xsl:param name="countryISOcode"/>
-		<xsl:value-of select="ep-org:URI-Autority(concat('country/',ep-org:Lookup_COUNTRY($countryISOcode)))"/>
+	<!-- Country -->
+	<xsl:function name="ep-org:URI-COUNTRY">
+		<xsl:param name="countryId" />
+		<xsl:value-of select="concat(ep-org:URI-Autority('country/'), $countryId)" />
 	</xsl:function>
-
 
 	<!-- ADDRESSES  -->
 
@@ -155,20 +148,6 @@
 		<xsl:value-of select="concat('http://publications.europa.eu/resource/authority/site/', $uriPublications)" />
 	</xsl:function>
 
-	<!-- URI PUBLICATION COUNTRY  -->
-	<xsl:function name="ep-org:URI-PublicationsCOUNTRY">
-		<xsl:param name="uriPublications" />
-		<xsl:choose>
-			<xsl:when test="$uriPublications ='BRU'">
-				<xsl:value-of select="concat('http://publications.europa.eu/resource/authority/belgique/', $uriPublications)" />
-			</xsl:when>
-			<xsl:when test="$uriPublications ='STR'">
-				<xsl:value-of select="concat('http://publications.europa.eu/resource/authority/france/', $uriPublications)" />
-			</xsl:when>
-		</xsl:choose>
-		
-	</xsl:function>
-
 	<!-- URI PUBLICATION LOCALITY  -->
 	<xsl:function name="ep-org:URI-PublicationsLOCALITY">
 		<xsl:param name="uriPublications" />
@@ -191,23 +170,10 @@
 		<xsl:value-of select="concat(ep-org:URI-Autority('membership-type/'),$mandateId)"/>
 	</xsl:function>
 
-	<!-- URI ORGANIZATION  -->
-	<xsl:function name="ep-org:URI-MandatORGANIZATION">
-		<xsl:param name="countryISOcode"/>
-		<xsl:value-of select="ep-org:URI-Autority(concat('country/',ep-org:Lookup_COUNTRY($countryISOcode)))"/>
-	</xsl:function>
-
-
 	<!-- URI VOCABULARY -->
 	<xsl:function name="ep-org:URI-ONTOLOGY">
 		<xsl:param name="cv" />
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/ontology/ep-org#',$cv)" />
-	</xsl:function>
-
-	<!-- CV Gender-->
-	<xsl:function name="ep-org:URI-CVGENDER">
-		<xsl:param name="cvGender" />
-		<xsl:value-of select="concat(ep-org:URI-Autority('gender/'), $cvGender)" />
 	</xsl:function>
 
 	<!-- CV Civiliy-->
@@ -219,14 +185,8 @@
 
 	<!-- URI EPONTO -->
 	<xsl:function name="ep-org:URI-CVEPONTO">
-		<xsl:param name="cvEPONTOGender" />
-		<xsl:value-of select="ep-org:URI-ONTOLOGY($cvEPONTOGender)" />
-	</xsl:function>
-
-	<!-- CV Country -->
-	<xsl:function name="ep-org:URI-CVCOUNTRY">
-		<xsl:param name="cvCountry" />
-		<xsl:value-of select="concat(ep-org:URI-Autority('country/'), $cvCountry)" />
+		<xsl:param name="cvId" />
+		<xsl:value-of select="ep-org:URI-ONTOLOGY($cvId)" />
 	</xsl:function>
 
 	<!-- Contact Point Type electronic-->
@@ -252,19 +212,6 @@
 	<xsl:function name="ep-org:URI-CVROLE">
 		<xsl:param name="cvCTP" />
 		<xsl:value-of select="concat(ep-org:URI-Autority('role/'), $cvCTP)"/>
-	</xsl:function>
-
-	<!-- Place -->
-	<xsl:function name="ep-org:URI-CVPLACE">
-		<xsl:param name="cvCTP" />
-		<xsl:value-of select="concat(ep-org:URI-Autority('place/'), $cvCTP)"/>
-	</xsl:function>
-
-	
-	<!-- parliamentary terms -->
-	<xsl:function name="ep-org:URI-CVPARLIAMENTARY">
-		<xsl:param name="cvCV" />
-		<xsl:value-of select="concat(ep-org:URI-Autority('parliamentary-term/'), $cvCV)"/>
 	</xsl:function>
 
 	<!-- Organization Type -->
@@ -325,7 +272,7 @@
 		</xsl:choose>	
 	</xsl:function>
 
-	<xsl:function name="ep-org:Lookup_COUNTRYBIRTHPLACE">
+	<xsl:function name="ep-org:Lookup_TOWN">
 		<xsl:param name="in_countryId" />
 		<xsl:param name="in_countryIsocode" />
 		<xsl:param name="in_BirthPlace" />
@@ -338,10 +285,10 @@
 		]" />
 		<xsl:choose>
 			<xsl:when test="count($towns) = 0">
-				<xsl:message>Warning : cannot find Country "<xsl:value-of select="$in_countryId" />" (<xsl:value-of select="$in_countryIsocode" />)</xsl:message>
+				<xsl:message>Warning : cannot find Town '<xsl:value-of select="$in_BirthPlace" />' in country "<xsl:value-of select="$in_countryId" />" (<xsl:value-of select="$in_countryIsocode" />)</xsl:message>
 			</xsl:when>
 			<xsl:when test="count($towns) > 1">
-				<xsl:message>Warning : find <xsl:value-of select="count($towns)" /> countries named "<xsl:value-of select="$in_countryId" />" (<xsl:value-of select="$in_countryIsocode" />) - Taking first one.</xsl:message>
+				<xsl:message>Warning : dound <xsl:value-of select="count($towns)" /> towns named '<xsl:value-of select="$in_BirthPlace" />' in country "<xsl:value-of select="$in_countryId" />" (<xsl:value-of select="$in_countryIsocode" />) - Taking first one.</xsl:message>
 				<xsl:value-of select="$towns[1]/townCode" />
 			</xsl:when>
 			<xsl:otherwise>
@@ -370,11 +317,9 @@
 
 
 	<!-- Date -->
-	<xsl:function name="ep-org:OrderparliamentaryTerm">
+	<xsl:function name="ep-org:Lookup_PARLIAMENTARY_TERM">
 		<xsl:param name="p_StartDate"/>
 		<xsl:param name="p_EndDate"/>
-		<!-- TODO : comparer la p_EndDate avec la endDate + 3 jours -->
-		<!-- Utiliser <xsl:value-of select="$vToday + xsd:dayTimeDuration('P3D')"/> -->
 		<!-- cf https://stackoverflow.com/questions/28225257/how-to-subtract-1-day-calculate-day-before-in-xslt-2-0 -->
 		
 		<xsl:variable name="period_ParliamentaryTerm" select="$parliamentaryTerm_file[			

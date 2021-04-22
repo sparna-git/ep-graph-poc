@@ -33,7 +33,7 @@
 
 	<xsl:template match="all/item">
 		<skos:Concept
-			rdf:about="{ep-org:URI-CVCOUNTRY(encode-for-uri(normalize-space(isoCode)))}">
+			rdf:about="{ep-org:URI-COUNTRY(encode-for-uri(normalize-space(isoCode)))}">
 			<rdf:type rdf:resource="{ep-org:URI-CVEPONTO('Country')}" />
 
 			<ep-org:euCandidate

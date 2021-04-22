@@ -26,7 +26,7 @@
 
 	<xsl:template match="all/item">
 		<skos:Concept
-			rdf:about="{ep-org:URI-CVPARLIAMENTARY(identifier)}">
+			rdf:about="{ep-org:URI-PARLIAMENTARY_TERM(identifier)}">
 			<rdf:type rdf:resource="{ep-org:URI-CVEPONTO('parliamentary-term')}" />
 			
 			
