@@ -38,49 +38,28 @@
 			<xsl:choose>
 				<xsl:when test="groupCode = 'VIRTUAL'">
 					<xsl:value-of
-						select="ep-org:URI-CVCONT_POINT_T_ELECTRONIC(encode-for-uri(normalize-space(addtCode)))" />
+						select="ep-org:URI-CONTACT_POINT_TYPE_ELECTRONIC(encode-for-uri(normalize-space(addtCode)))" />
 				</xsl:when>
 				<xsl:otherwise>
 					<xsl:value-of
-						select="ep-org:URI-CVCONT_POINT_T_PLACE(encode-for-uri(normalize-space(addtCode)))" />
-				</xsl:otherwise>
-			</xsl:choose>
-		</xsl:variable>
-		<xsl:variable name="sContactPoint">
-			<xsl:choose>
-				<xsl:when test="groupCode = 'VIRTUAL'">
-					<xsl:value-of
-						select="ep-org:URI-ONTO_CONTACTPOINT_T('electronic')" />
-				</xsl:when>
-				<xsl:otherwise>
-					<xsl:value-of
-						select="ep-org:URI-ONTO_CONTACTPOINT_T('place')" />
+						select="ep-org:URI-CONTACT_POINT_TYPE_PLACE(encode-for-uri(normalize-space(addtCode)))" />
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
 
 		<skos:Concept rdf:about="{$sTypeContactPoint}">
-			<rdf:type rdf:resource="{$sContactPoint}" />
+			<rdf:type rdf:resource="http://data.europarl.europa.eu/ontology/org-ep#ContactPointType" />
 
-			<xsl:choose>
-				<xsl:when test="groupCode = 'VIRTUAL'">
-					<dc:identifier>
-						<xsl:value-of select='tmsCode' />
-					</dc:identifier>
-				</xsl:when>
-				<xsl:otherwise>
-					<ep-org:officeId>
-						<xsl:value-of select='tmsCode' />
-					</ep-org:officeId>
-				</xsl:otherwise>
-			</xsl:choose>
+			<dc:identifier>
+				<xsl:value-of select='addtCode' />
+			</dc:identifier>
 
 			<rdfs:label>
 				<xsl:value-of select='shortName' />
 			</rdfs:label>
 
 			<skos:notation>
-				<xsl:value-of select="mepCode" />
+				<xsl:value-of select="addtCode" />
 			</skos:notation>
 
 			<xsl:apply-templates />

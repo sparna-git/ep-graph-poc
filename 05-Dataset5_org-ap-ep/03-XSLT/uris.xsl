@@ -55,12 +55,6 @@
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/resource/person/', $AssistantId)"/>
 	</xsl:function>
 
-	<!-- URI AUTORITY FUNCTION -->
-	<xsl:function name="ep-org:URI-AutorityFUNCTION">
-		<xsl:param name="uriFUNCTION" />
-		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/function/', $uriFUNCTION)" />
-	</xsl:function>
-
 	<!-- URI Organisation (org:Organization) -->
 	<xsl:function name="ep-org:URI-Organization">
 		<xsl:param name="uriOrganitasation" />
@@ -123,13 +117,6 @@
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/resource/contact-point/electronic/',$identifier,'/',$typeContact)"/>
 	</xsl:function>
 
-
-	<!-- URI eaddresses ContactType  -->
-	<xsl:function name="ep-org:eaddressesContactType">
-		<xsl:param name="typeContact"/>
-		<xsl:value-of select="concat(ep-org:URI-Autority('contact-point-type/'),$typeContact)"/>
-	</xsl:function>	
-
 	<!-- URI addresses  -->
 	<xsl:function name="ep-org:addresses">
 		<xsl:param name="identifier"/>
@@ -190,28 +177,21 @@
 	</xsl:function>
 
 	<!-- Contact Point Type electronic-->
-	<xsl:function name="ep-org:URI-CVCONT_POINT_T_ELECTRONIC">
-		<xsl:param name="cvCTP" />
-		<xsl:value-of select="concat(ep-org:URI-Autority('contact-point-type/electronic/'), $cvCTP)"/>
+	<xsl:function name="ep-org:URI-CONTACT_POINT_TYPE_ELECTRONIC">
+		<xsl:param name="ctType" />
+		<xsl:value-of select="concat(ep-org:URI-Autority('contact-point-type/electronic/'), $ctType)"/>
 	</xsl:function>
 
 	<!-- Contact Point Type place -->
-	<xsl:function name="ep-org:URI-CVCONT_POINT_T_PLACE">
-		<xsl:param name="cvCTP" />
-		<xsl:value-of select="concat(ep-org:URI-Autority('contact-point-type/place/'), $cvCTP)"/>
+	<xsl:function name="ep-org:URI-CONTACT_POINT_TYPE_PLACE">
+		<xsl:param name="ctType" />
+		<xsl:value-of select="concat(ep-org:URI-Autority('contact-point-type/place/'), $ctType)"/>
 	</xsl:function>
 
-	<!-- Contact Point -->
-	<xsl:function name="ep-org:URI-ONTO_CONTACTPOINT_T">
-		<xsl:param name="cvCTP" />
-		<xsl:value-of select="concat(ep-org:URI-ONTOLOGY('contact-point-type/'), $cvCTP)"/>
-	</xsl:function>
-
-
-	<!-- function ou Role -->
-	<xsl:function name="ep-org:URI-CVROLE">
-		<xsl:param name="cvCTP" />
-		<xsl:value-of select="concat(ep-org:URI-Autority('role/'), $cvCTP)"/>
+	<!-- Function -->
+	<xsl:function name="ep-org:URI-FUNCTION">
+		<xsl:param name="functionId" />
+		<xsl:value-of select="concat(ep-org:URI-Autority('function/'), $functionId)"/>
 	</xsl:function>
 
 	<!-- Organization Type -->

@@ -15,7 +15,7 @@
 	<xsl:output indent="yes" method="xml" />
 
 	<xsl:variable name="SCHEME_URI"
-		select="ep-org:URI-Autority('role')" />
+		select="ep-org:URI-Autority('function')" />
 
 	<xsl:template match="/">
 		<rdf:RDF>
@@ -26,7 +26,7 @@
 	<xsl:template match="all">
 		<!-- Output the ConceptScheme in a header -->
 		<skos:ConceptScheme rdf:about="{$SCHEME_URI}">
-			<skos:prefLabel xml:lang="en">Role</skos:prefLabel>
+			<skos:prefLabel xml:lang="en">Function</skos:prefLabel>
 		</skos:ConceptScheme>
 
 		<xsl:apply-templates />
@@ -34,8 +34,8 @@
 
 	<xsl:template match="all/item">
 		<skos:Concept
-			rdf:about="{ep-org:URI-CVROLE(referenceCode)}">
-			<rdf:type rdf:resource="{ep-org:URI-CVEPONTO('role')}" />
+			rdf:about="{ep-org:URI-FUNCTION(referenceCode)}">
+			<rdf:type rdf:resource="http://www.w3.org/ns/org#Role" />
 
 			<xsl:if test="string-length(normalize-space(tmsCode)) &gt; 0">
 				<rdfs:label>

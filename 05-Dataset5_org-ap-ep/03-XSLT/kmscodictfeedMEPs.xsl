@@ -115,7 +115,7 @@
 					<ep-org:hasOrganization
 						rdf:resource="{ep-org:URI-ResourcePerson(ancestor::item/identifier)}" />
 					<org:role
-						rdf:resource="{ep-org:URI-AutorityFUNCTION('ASSISTANT')}" />
+						rdf:resource="{ep-org:URI-FUNCTION('ASSISTANT')}" />
 				</ep-org:Membership>
 			</org:hasMembership>
 		</ep-org:Person>
@@ -193,7 +193,7 @@
 				<schema:ContactPoint
 					rdf:about="{ep-org:eaddresses(ancestor::item/identifier,concat(addressCodeType,order))}">
 					<schema:contactType
-						rdf:resource="{ep-org:eaddressesContactType(addressCodeType)}" />
+						rdf:resource="{ep-org:URI-CONTACT_POINT_TYPE_ELECTRONIC(addressCodeType)}" />
 					<schema:url
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 						<xsl:value-of select="normalize-space(address)" />
@@ -216,16 +216,20 @@
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 						<xsl:value-of select="officeNum" />
 					</ep-org:officeId>
-
+					
 
 					<xsl:choose>
 						<xsl:when test="townCode ='BRU'">
 							<schema:addressCountry
 								rdf:resource="{ep-org:URI-COUNTRY('BE')}" />
+							<schema:contactType
+								rdf:resource="{ep-org:URI-CONTACT_POINT_TYPE_PLACE('BRU')}" />
 						</xsl:when>
 						<xsl:when test="townCode ='STR'">
 							<schema:addressCountry
 								rdf:resource="{ep-org:URI-COUNTRY('FR')}" />
+							<schema:contactType
+								rdf:resource="{ep-org:URI-CONTACT_POINT_TYPE_PLACE('STR')}" />
 						</xsl:when>
 					</xsl:choose>					
 						
@@ -362,7 +366,7 @@
 
 
 					<org:role
-						rdf:resource="{ep-org:URI-AutorityFUNCTION(functionCode)}" />
+						rdf:resource="{ep-org:URI-FUNCTION(functionCode)}" />
 				</ep-org:Membership>
 			</org:hasMembership>
 		</xsl:for-each>
