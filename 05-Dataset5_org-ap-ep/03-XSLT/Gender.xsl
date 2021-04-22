@@ -14,6 +14,8 @@
 	<xsl:import href="uris.xsl" />
 	<!-- Import builtins stylesheet -->
 	<xsl:import href="builtins.xsl" />
+	
+	<xsl:variable name="SCHEME_URI" select="ep-org:URI-Autority('gender')" />
 
 	<xsl:output indent="yes" method="xml" />
 
@@ -24,6 +26,10 @@
 	</xsl:template>
 
 	<xsl:template match="all">
+		<!-- Output the ConceptScheme in a header -->
+		<skos:ConceptScheme rdf:about="{$SCHEME_URI}">
+			<skos:prefLabel xml:lang="en">Gender</skos:prefLabel>
+		</skos:ConceptScheme>
 		<xsl:apply-templates />
 	</xsl:template>
 
@@ -44,14 +50,12 @@
 	</xsl:template>
 
 	<xsl:template match="desc">
-		
-		<xsl:for-each select="item">
+		<xsl:apply-templates/>
+	</xsl:template>
+	
+	<xsl:template match="item">
 			<skos:preflabel xml:lang="{lower-case(langIso)}">
 				<xsl:value-of select="fullName"/>
 			</skos:preflabel>
-		</xsl:for-each>
-		
 	</xsl:template>
-
-
 </xsl:stylesheet>
