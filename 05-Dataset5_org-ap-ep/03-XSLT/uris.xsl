@@ -299,8 +299,13 @@
 				<xsl:message>Warning : cannot find the parliamentary term encompassing "<xsl:value-of select="$p_StartDate" />" and "<xsl:value-of select="$p_EndDate" />" </xsl:message>
 			</xsl:when>
 			<xsl:when test="count($period_ParliamentaryTerm) > 1">
+				<xsl:variable name="period_ParliamentaryTerm_" select="$parliamentaryTerm_file[			
+					xsd:dateTime(startDate) &lt;= xsd:dateTime($p_StartDate)			
+					and			
+					xsd:dateTime(endDate) &gt;= xsd:dateTime($p_EndDate)]"/>
+				
 				<xsl:message>Warning : find <xsl:value-of select="count($period_ParliamentaryTerm)" /> periods "<xsl:value-of select="$p_StartDate" />" and "<xsl:value-of select="$p_EndDate" />"  - Don't know which one to take.</xsl:message>
-				<xsl:value-of select="$period_ParliamentaryTerm[1]/order"/>
+				<xsl:value-of select="$period_ParliamentaryTerm_[1]/order"/>
 			</xsl:when>
 			<xsl:otherwise><xsl:value-of select="$period_ParliamentaryTerm[1]/order"/></xsl:otherwise>
 		</xsl:choose>
