@@ -129,15 +129,9 @@
 				<xsl:variable name="haspersonType">
 					<xsl:choose>
 						<xsl:when
-							test="count(/all/item[assistants/item/identifier = $thisIdentifier]) > 1">
-							AST-APA-GRP
-						</xsl:when>
-						<xsl:when test="accreditations/item[assistantType = 'A']">
-							AST-APA
-						</xsl:when>
-						<xsl:when test="accreditations/item[assistantType = 'L']">
-							AST-LOC
-						</xsl:when>
+							test="count(/all/item[assistants/item/identifier = $thisIdentifier]) > 1">AST-APA-GRP</xsl:when>
+						<xsl:when test="accreditations/item[assistantType = 'A']">AST-APA</xsl:when>
+						<xsl:when test="accreditations/item[assistantType = 'L']">AST-LOC</xsl:when>
 						<xsl:otherwise>
 							<xsl:message>
 								Cannot determine person-type for assistant
@@ -214,8 +208,7 @@
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 						<xsl:value-of select="officeNum" />
 					</ep-org:officeId>
-					<!-- TODO : si townCode = STR alors country France, si townCode = BRU, 
-						country Belgique -->
+
 					<schema:addressCountry
 						rdf:resource="{ep-org:URI-PublicationsCOUNTRY(townCode)}" />
 					<schema:addressLocality>
@@ -245,16 +238,13 @@
 
 					<ep-org:hasOrganization
 						rdf:resource="{ep-org:URI-MandatORGANIZATION(countryIsoCode)}" />
-					<xsl:variable name="startDate"
-						select="translate(startDateTime,'-','')" />
-					<xsl:variable name="endDate"
-						select="translate(endDateTime,'-','')" />
 
 					<xsl:if
-						test="string-length(normalize-space(ep-org:OrderparliamentaryTerm($startDate,$endDate))) &gt; 0">
+						test="ep-org:OrderparliamentaryTerm(startDateTime,endDateTime) != ''">
 						<ep-org:hasParliamentaryTerm
-							rdf:resource="{ep-org:URI-ParliamentaryTerm($startDate,$endDate)}" />
+							rdf:resource="{ep-org:URI-ParliamentaryTerm(startDateTime,endDateTime)}" />
 					</xsl:if>
+
 
 					<dc:identifier
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#string">

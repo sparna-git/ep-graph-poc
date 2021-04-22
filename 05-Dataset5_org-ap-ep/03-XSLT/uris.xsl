@@ -379,7 +379,7 @@
 		
 		<xsl:variable name="period_ParliamentaryTerm" select="$parliamentaryTerm_file[			
 					xsd:dateTime(startDate) &lt;= xsd:dateTime($p_StartDate)			
-			and			
+					and			
 				(xsd:dateTime(endDate) + xsd:dayTimeDuration('P3D')) &gt;= xsd:dateTime($p_EndDate)			
 		]"/>
 		
