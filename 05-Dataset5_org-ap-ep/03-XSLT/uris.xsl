@@ -6,6 +6,7 @@
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
 	xmlns:ep-org="http://data.europarl.europa.eu/ontology/ep-org#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 >
 
 	<xsl:param name="XML_DIR">../10-XML</xsl:param>
@@ -375,17 +376,20 @@
 		<!-- TODO : comparer la p_EndDate avec la endDate + 3 jours -->
 		<!-- Utiliser <xsl:value-of select="$vToday + xsd:dayTimeDuration('P3D')"/> -->
 		<!-- cf https://stackoverflow.com/questions/28225257/how-to-subtract-1-day-calculate-day-before-in-xslt-2-0 -->
-		<xsl:variable name="period_ParliamentaryTerm" select="$parliamentaryTerm_file[
-			translate(startDate,'-','') &lt;= $p_StartDate
-			and
-			translate(endDate,'-','') &gt;= $p_EndDate
+		
+		<xsl:variable name="period_ParliamentaryTerm" select="$parliamentaryTerm_file[			
+					xsd:dateTime(startDate) &lt;= xsd:dateTime($p_StartDate)			
+			and			
+				(xsd:dateTime(endDate) + xsd:dayTimeDuration('P3D')) &gt;= xsd:dateTime($p_EndDate)			
 		]"/>
+		
 		<xsl:choose>
 			<xsl:when test="count($period_ParliamentaryTerm) = 0">
-				<xsl:message>Warning : cannot find the parliamentary term encompassing "<xsl:value-of select="$p_StartDate" />" and <xsl:value-of select="$p_EndDate" /> </xsl:message>
+				<xsl:message>Warning : cannot find the parliamentary term encompassing "<xsl:value-of select="$p_StartDate" />" and "<xsl:value-of select="$p_EndDate" />" </xsl:message>
 			</xsl:when>
 			<xsl:when test="count($period_ParliamentaryTerm) > 1">
 				<xsl:message>Warning : find <xsl:value-of select="count($period_ParliamentaryTerm)" /> periods "<xsl:value-of select="$p_StartDate" />" and "<xsl:value-of select="$p_EndDate" />"  - Don't know which one to take.</xsl:message>
+				<xsl:value-of select="$period_ParliamentaryTerm[1]/order"/>
 			</xsl:when>
 			<xsl:otherwise><xsl:value-of select="$period_ParliamentaryTerm[1]/order"/></xsl:otherwise>
 		</xsl:choose>
