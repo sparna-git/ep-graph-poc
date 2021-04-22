@@ -113,7 +113,7 @@
 					<ep-org:hasMembershipType
 						rdf:resource="{ep-org:URI-MembershipType('PERSON')}" />
 					<ep-org:hasOrganization
-						rdf:resource="{ep-org:URI-ResourcePerson(ancestor::item/identifier)}" />
+						rdf:resource="{ep-org:URI-Person(ancestor::item/identifier)}" />
 					<org:role
 						rdf:resource="{ep-org:URI-FUNCTION('ASSISTANT')}" />
 				</ep-org:Membership>
