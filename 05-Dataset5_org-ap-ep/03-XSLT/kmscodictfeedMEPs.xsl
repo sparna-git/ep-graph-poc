@@ -358,9 +358,20 @@
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
 						<xsl:value-of select="startDateTime" />
 					</schema:startDate>
-
-
-
+					
+					<xsl:variable name="startDate_function"	select="startDateTime" />
+					<xsl:variable name="endDate_function" select="endDateTime" />
+					<xsl:variable name="mandateId" select="../../mandates/item[$startDate_function &gt;= startDateTime and $endDate_function &lt;= endDateTime]/mandateId"/>
+					<xsl:choose>
+						<xsl:when test="$mandateId != ''">
+							<ep-org:hasMembershipBasedOn
+							rdf:resource="{ep-org:URI-MEMBERSHIP(memberIdentifier,$mandateId)}" />
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:message>Warning : cannot find the mandates id encompassing "<xsl:value-of select="$startDate_function" />" and "<xsl:value-of select="$endDate_function" />" function id "<xsl:value-of select="identifier"/>"</xsl:message>	
+						</xsl:otherwise>
+					</xsl:choose>
+					
 					<org:role
 						rdf:resource="{ep-org:URI-AutorityFUNCTION(functionCode)}" />
 				</ep-org:Membership>
