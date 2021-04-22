@@ -29,7 +29,7 @@
 
 	<xsl:template match="all/item">
 		<skos:Concept
-			rdf:about="{ep-org:URI-CVGENDER(referenceCode)}">
+			rdf:about="{ep-org:URI-GENDER(referenceCode)}">
 			<rdf:type rdf:resource="{ep-org:URI-CVEPONTO('Gender')}"/>
 			<skos:notation>
 				<xsl:value-of select="referenceCode" />

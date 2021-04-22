@@ -90,11 +90,6 @@
 		<xsl:value-of select="concat(ep-org:URI-MEP($identifier),'/membership/',$mandateId)"/>
 	</xsl:function>
 
-	<xsl:function name="ep-org:URI-MembershipType">
-		<xsl:param name="idMembershipType"/>
-		<xsl:value-of select="ep-org:URI-Autority(concat('membership-type/',$idMembershipType))"/>
-	</xsl:function>
-
 	<!-- PHOTO -->
 	<xsl:function name="ep-org:URI-MEPPHOTO">
 		<xsl:param name="identifier"/>
@@ -168,6 +163,11 @@
 	<xsl:function name="ep-org:URI-MandatTYPE">
 		<xsl:param name="mandateId"/>
 		<xsl:value-of select="concat(ep-org:URI-Autority('membership-type/'),$mandateId)"/>
+	</xsl:function>
+
+	<xsl:function name="ep-org:URI-MembershipType">
+		<xsl:param name="idMembershipType"/>
+		<xsl:value-of select="ep-org:URI-Autority(concat('membership-type/',$idMembershipType))"/>
 	</xsl:function>
 
 	<!-- URI VOCABULARY -->
@@ -325,8 +325,10 @@
 		<xsl:variable name="period_ParliamentaryTerm" select="$parliamentaryTerm_file[			
 					xsd:dateTime(startDate) &lt;= xsd:dateTime($p_StartDate)			
 					and			
-				(xsd:dateTime(endDate) + xsd:dayTimeDuration('P3D')) &gt;= xsd:dateTime($p_EndDate)			
+					(xsd:dateTime(endDate) + xsd:dayTimeDuration('P3D')) &gt;= xsd:dateTime($p_EndDate)			
 		]"/>
+		
+		<!-- Si on en trouve 2, on refait le test sans les 3 jours de décalage -->
 		
 		<xsl:choose>
 			<xsl:when test="count($period_ParliamentaryTerm) = 0">

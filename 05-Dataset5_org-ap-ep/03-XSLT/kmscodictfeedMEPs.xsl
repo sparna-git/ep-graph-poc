@@ -39,9 +39,12 @@
 		<xsl:variable name="IdMEP" select="identifier" />
 
 		<ep-org:MEP rdf:about="{ep-org:URI-MEP(identifier)}">
+		
+			<!--
 			<ep-org:dateEndActivity
 				rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
 			</ep-org:dateEndActivity>
+			-->
 			<ep-org:personId
 				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 				<xsl:value-of select="identifier" />
@@ -248,6 +251,10 @@
 			<org:hasMembership>
 				<ep-org:Membership
 					rdf:about="{ep-org:URI-MEMBERSHIP(personId,mandateId)}">
+					
+					<ep-org:hasMembershipType
+							rdf:resource="{ep-org:URI-MembershipType('MANDATE')}" />
+					
 					<ep-org:constituency
 						rdf:resource="{ep-org:URI-MandatCONSTITUENCY(countryIsoCode,mandateId)}" />
 
@@ -292,35 +299,35 @@
 					select="translate(startDateTime,'-','')" />
 				<xsl:variable name="endDate"
 					select="translate(endDateTime,'-','')" />
+				
 				<!-- Variable ep-org:hasMembershipType -->
 				<xsl:variable name="var_hasMembershipType">
 					<xsl:choose>
-						<!-- CommitteeBody -->
+						<!-- COMMITTEE -->
 						<xsl:when
 							test="index-of(('CO', 'CI', 'SC', 'CE', 'CT', 'CJ', 'CM'), typeOrganeCode) > 0">
-							<xsl:value-of select="'committee-body'" />
+							<xsl:value-of select="'COMMITTEE'" />
 						</xsl:when>
-						<!-- DelegationBody -->
+						<!-- DELEGATION -->
 						<xsl:when
-							test="index-of(('AP', 'DA', 'DE', 'DH', 'DM'), typeOrganeCode) > 0">
-							<xsl:value-of select="'delegation-body'" />
+							test="index-of(('AP', 'DA', 'DC', 'DE', 'DH', 'DM'), typeOrganeCode) > 0">
+							<xsl:value-of select="'DELEGATION'" />
 						</xsl:when>
-						<!-- InstitutionBody -->
+						<!-- MANDATE -->
 						<xsl:when test="typeOrganeCode='PE'">
-							<xsl:value-of select="'institution-body'" />
+							<xsl:value-of select="'MANDATE'" />
 						</xsl:when>
-						<!-- PoliticalGroupBody -->
-						<xsl:when test="bodyType='GP'">
-							<xsl:value-of select="'political-group-body'" />
+						<!-- POLITICAL-GROUP -->
+						<xsl:when test="typeOrganeCode='GP'">
+							<xsl:value-of select="'POLITICAL-GROUP'" />
 						</xsl:when>
-						<!-- GovernanceBody -->
-						<xsl:when test="bodyType='BU' or bodyType='OD'">
-							<xsl:value-of select="governance-body" />
+						<!-- NATIONAL-PARTY -->
+						<xsl:when test="typeOrganeCode='PN'">
+							<xsl:value-of select="'NATIONAL-PARTY'" />
 						</xsl:when>
-						<!-- Parti national -->
-						<xsl:when test="bodyType='PN'">
-							<xsl:value-of select="'national-party-body'" />
-						</xsl:when>
+						<xsl:otherwise>
+							<xsl:message>Cannot determine membership type. typeOrganeCode=<xsl:value-of select="typeOrganeCode" /> and bodyType=<xsl:value-of select="bodyType" /> </xsl:message>
+						</xsl:otherwise>
 					</xsl:choose>
 				</xsl:variable>
 
@@ -336,9 +343,12 @@
 					<ep-org:hasOrganization
 						rdf:resource="{ep-org:URI-Organization(typeOrganeCode,organeCode,organeId)}" />
 
-					<!-- <ep-org:hasParliamentaryTerm rdf:resource="{ep-org:URI-ParliamentaryTerm($startDate,$endDate)}" 
-						/> -->
-
+					<xsl:variable name="ptId" select="ep-org:Lookup_PARLIAMENTARY_TERM(startDateTime,endDateTime)" />
+					<xsl:if
+						test="$ptId != ''">
+						<ep-org:hasParliamentaryTerm
+							rdf:resource="{ep-org:URI-PARLIAMENTARY_TERM($ptId)}" />
+					</xsl:if>
 
 					<schema:endDate
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
