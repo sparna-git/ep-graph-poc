@@ -345,7 +345,7 @@
 					</xsl:if>
 
 					<ep-org:hasOrganization
-						rdf:resource="{ep-org:URI-Organization(typeOrganeCode,organeCode,organeId)}" />
+						rdf:resource="{ep-org:URI-Organization(organeCode,organeId)}" />
 
 					<xsl:variable name="ptId" select="ep-org:Lookup_PARLIAMENTARY_TERM(startDateTime,endDateTime)" />
 					<xsl:if

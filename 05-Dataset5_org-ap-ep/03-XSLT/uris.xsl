@@ -36,18 +36,11 @@
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/person/', encode-for-uri($personId))" />
 	</xsl:function>
 
-	<!-- URI Organisation (org:Organization) -->
+	<!-- URI Organisation -->
 	<xsl:function name="ep-org:URI-Organization">
-		<xsl:param name="uriOrganisation" />
-		<xsl:value-of select="concat('http://data.europarl.europa.eu/org/', $uriOrganisation)" />
-	</xsl:function>
-
-	<!-- URI Organisation from code + id -->
-	<xsl:function name="ep-org:URI-Organization">
-		<xsl:param name="typeOrganeCode"/>
 		<xsl:param name="organeCode"/>
 		<xsl:param name="organeId"/>
-		<xsl:value-of select="ep-org:URI-Organization(concat($typeOrganeCode,'/',encode-for-uri($organeCode),'-',$organeId))"/>
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/org/', encode-for-uri($organeCode),'-',$organeId)" />
 	</xsl:function>
 
 	<!-- URI Person Type -->
@@ -171,7 +164,6 @@
 	</xsl:function>
 
 	<!-- Corporate Body -->
-	<!--
 	<xsl:function name="ep-org:URI-COMMITTEEBODY">
 		<xsl:param name="inData" />
 		<xsl:value-of select="concat(ep-org:URI-Authority('committee-body/'), $inData)"/>
@@ -201,7 +193,6 @@
 		<xsl:param name="inData" />
 		<xsl:value-of select="concat(ep-org:URI-Authority('political-group-body/'), $inData)"/>
 	</xsl:function>
- 	-->
  	
  	<!-- ***** Primitive methods ***** -->
 
@@ -211,7 +202,7 @@
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/ontology/ep-org#',$cv)" />
 	</xsl:function>
 
-	<!-- URI AUTORITY -->
+	<!-- URI AUTHORITY -->
 	<xsl:function name="ep-org:URI-Authority">
 		<xsl:param name="uriAutority" />
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/', $uriAutority)" />

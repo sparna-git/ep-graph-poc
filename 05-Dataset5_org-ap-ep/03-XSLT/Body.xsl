@@ -14,7 +14,7 @@
 	<xsl:import href="builtins.xsl" />
 	<xsl:output indent="yes" method="xml" />
 
-	<xsl:variable name="SCHEME_URI" select="ep-org:URI-Autority('corporate-body')" />
+	<xsl:variable name="SCHEME_URI" select="ep-org:URI-Authority('corporate-body')" />
 
 	<xsl:template match="/">
 		<rdf:RDF>
@@ -64,6 +64,7 @@
 				</xsl:choose>
 			</xsl:if>			
 		</xsl:variable>
+		
 		<!-- Type corporate body -->
 		<xsl:variable name="var_corporateBodytype">
 			<xsl:choose>
@@ -93,16 +94,17 @@
 		</xsl:variable>
 		
 		<xsl:if test="$var_corporateBody != ''">
-			<skos:Concept rdf:about="{$var_corporateBody}">
-				<rdf:type
-					rdf:source="{ep-org:URI-CVEPONTO($var_corporateBodytype)}" />
+			<ep-org:Organization rdf:about="{ep-org:URI-Organization(bodyCode, bodyId)}">
+				
+				<!--
 				<ep-org:hasOrganizationType>
 					<skos:notation>
 						<xsl:value-of
 							select="encode-for-uri(normalize-space(bodyCode))" />
 					</skos:notation>
 				</ep-org:hasOrganizationType>
-			</skos:Concept>
+				 -->
+			</ep-org:Organization>
 		</xsl:if>
 	</xsl:template>
 </xsl:stylesheet>
