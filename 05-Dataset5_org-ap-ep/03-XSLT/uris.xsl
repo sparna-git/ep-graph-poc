@@ -252,7 +252,7 @@
 				<xsl:message>Warning : cannot find Town '<xsl:value-of select="$in_BirthPlace" />' in country "<xsl:value-of select="$in_countryId" />" (<xsl:value-of select="$in_countryIsocode" />)</xsl:message>
 			</xsl:when>
 			<xsl:when test="count($towns) > 1">
-				<xsl:message>Warning : dound <xsl:value-of select="count($towns)" /> towns named '<xsl:value-of select="$in_BirthPlace" />' in country "<xsl:value-of select="$in_countryId" />" (<xsl:value-of select="$in_countryIsocode" />) - Taking first one.</xsl:message>
+				<xsl:message>Warning : find <xsl:value-of select="count($towns)" /> towns named '<xsl:value-of select="$in_BirthPlace" />' in country "<xsl:value-of select="$in_countryId" />" (<xsl:value-of select="$in_countryIsocode" />) - Taking first one.</xsl:message>
 				<xsl:value-of select="$towns[1]/townCode" />
 			</xsl:when>
 			<xsl:otherwise>
@@ -260,7 +260,25 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:function>
-
+	
+	<xsl:function name="ep-org:Lookup_TOWN_ID">
+		<xsl:param name="in_townId" />
+		<xsl:variable name="town_Id" select="$Town[
+			identifier = $in_townId]" />
+		<xsl:choose>
+			<xsl:when test="count($town_Id) = 0">
+				<xsl:message>Warning : cannot find Town Id <xsl:value-of select="$in_townId" />"</xsl:message>
+			</xsl:when>
+			<xsl:when test="count($town_Id) > 1">
+				<xsl:message>Warning : find <xsl:value-of select="count($town_Id)" /> towns Id "<xsl:value-of select="$in_townId" />" - Taking first one.</xsl:message>
+				<xsl:value-of select="ep-org:Lookup_COUNTRY($town_Id[1]/countryIsoCode)" />
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="ep-org:Lookup_COUNTRY($town_Id[1]/countryIsoCode)" />
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:function>
+	
 	<xsl:function name="ep-org:Lookup_COUNTRY">
 		<xsl:param name="in_countryIsocode" />
 		<xsl:variable name="country" select="$country_file[
