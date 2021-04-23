@@ -111,10 +111,6 @@
 				 
 				 <ep-org:OrnizationType rdf:resource="{ep-org:URI-CVORGTYPE(bodyType)}"/>
 				 
-				 <!-- Il doit aller dans la feuille pour l'Organization ? -->
-				 <!-- il doit une URI ? -->
-				 <ep-org:hasSubOrganization rdf:source="{$var_corporateBodytype}"/> 
-				 
 				 <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
 				 	<xsl:value-of select="endDateTime"/>
 				 </schema:endDate>
