@@ -14,7 +14,7 @@
 	<xsl:import href="builtins.xsl" />
 	<xsl:output indent="yes" method="xml" />
 
-	<xsl:variable name="SCHEME_URI" select="ep-org:URI-Authority('corporate-body')" />
+	<xsl:variable name="SCHEME_URI" select="ep-org:URI-Authority('organization')" />
 
 	<xsl:template match="/">
 		<rdf:RDF>
@@ -97,14 +97,47 @@
 			<ep-org:Organization rdf:about="{ep-org:URI-Organization(bodyCode, bodyId)}">
 				
 				<!--
-				<ep-org:hasOrganizationType>
-					<skos:notation>
-						<xsl:value-of
-							select="encode-for-uri(normalize-space(bodyCode))" />
-					</skos:notation>
+				<ep-org:hasOrganizationType>					
 				</ep-org:hasOrganizationType>
 				 -->
+				 
+				 <rdfs:label>
+				 	<xsl:value-of select="bodyCode"/>				 	
+				 </rdfs:label>
+				 
+				 <skos:notation>
+						<xsl:value-of
+							select="encode-for-uri(normalize-space(bodyId))" />
+				 </skos:notation>
+				 
+				 <ep-org:OrnizationType rdf:resource="{ep-org:URI-CVORGTYPE(bodyType)}"/>
+				 
+				 <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
+				 	<xsl:value-of select="endDateTime"/>
+				 </schema:endDate>
+            	 <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
+            	 	<xsl:value-of select="startDateTime"/>
+            	 </schema:startDate>
+            	 
+            	 <xsl:apply-templates/>
+            	 
+            	 <skos:inScheme rdf:resource="{$SCHEME_URI}" />
+				 
 			</ep-org:Organization>
 		</xsl:if>
 	</xsl:template>
+	
+	<xsl:template match="descriptions">
+		<xsl:for-each select="item">
+			<skos:preflabel xml:lang="{lower-case(langIsoCode)}">
+				<xsl:value-of select="shortName"/>
+			</skos:preflabel>
+		</xsl:for-each>
+		<xsl:for-each select="item">
+			<skos:altLabel xml:lang="{lower-case(langIsoCode)}">
+				<xsl:value-of select="fullName"/>
+			</skos:altLabel>
+		</xsl:for-each>
+	</xsl:template>	 
+	
 </xsl:stylesheet>
