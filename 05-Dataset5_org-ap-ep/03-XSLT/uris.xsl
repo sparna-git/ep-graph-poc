@@ -158,7 +158,7 @@
 	</xsl:function>
 
 	<!-- Organization Type -->
-	<xsl:function name="ep-org:URI-CVORGTYPE">
+	<xsl:function name="ep-org:URI-OrganizationType">
 		<xsl:param name="inData" />
 		<xsl:value-of select="concat(ep-org:URI-Authority('org-type/'), $inData)"/>
 	</xsl:function>

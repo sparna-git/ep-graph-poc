@@ -34,7 +34,7 @@
 	<xsl:template match="all/item">
 
 		<skos:Concept
-			rdf:about="{ep-org:URI-CVORGTYPE(encode-for-uri(normalize-space(code)))}">
+			rdf:about="{ep-org:URI-OrganizationType(encode-for-uri(normalize-space(code)))}">
 			<rdf:type rdf:resource="{ep-org:URI-CVEPONTO('org-type')}" />
 
 			<skos:notation>

@@ -99,17 +99,13 @@
 		
 		<xsl:if test="$var_corporateBody != ''">
 			<ep-org:Organization rdf:about="{ep-org:URI-Organization(bodyCode, bodyId)}">
-				
-				<rdfs:label>
-				 	<xsl:value-of select="bodyCode"/>				 	
-				 </rdfs:label>
 				 
 				 <skos:notation>
 						<xsl:value-of
 							select="encode-for-uri(normalize-space(bodyId))" />
 				 </skos:notation>
 				 
-				 <ep-org:OrnizationType rdf:resource="{ep-org:URI-CVORGTYPE(bodyType)}"/>
+				 <ep-org:hasOrganizationType rdf:resource="{ep-org:URI-OrganizationType(bodyType)}"/>
 				 
 				 <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
 				 	<xsl:value-of select="endDateTime"/>
