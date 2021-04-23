@@ -217,21 +217,13 @@
 						<xsl:value-of select="officeNum" />
 					</ep-org:officeId>
 					
-
-					<xsl:choose>
-						<xsl:when test="townCode ='BRU'">
-							<schema:addressCountry
-								rdf:resource="{ep-org:URI-COUNTRY('BE')}" />
-							<schema:contactType
-								rdf:resource="{ep-org:URI-CONTACT_POINT_TYPE_PLACE('BRU')}" />
-						</xsl:when>
-						<xsl:when test="townCode ='STR'">
-							<schema:addressCountry
-								rdf:resource="{ep-org:URI-COUNTRY('FR')}" />
-							<schema:contactType
-								rdf:resource="{ep-org:URI-CONTACT_POINT_TYPE_PLACE('STR')}" />
-						</xsl:when>
-					</xsl:choose>					
+					<xsl:variable name="town_code" select="ep-org:Lookup_TOWN_ID(normalize-space(townId))"/>
+					<xsl:if test="$town_code != '' and (townCode ='BRU' or townCode ='STR')">
+						<schema:addressCountry
+									rdf:resource="{ep-org:URI-COUNTRY($town_code)}" />
+						<schema:contactType
+									rdf:resource="{ep-org:URI-CONTACT_POINT_TYPE_PLACE(townCode)}" />						
+					</xsl:if>					
 						
 					<schema:addressLocality>
 						<xsl:value-of select="townName" />
