@@ -71,20 +71,24 @@
 				<!-- CommitteeBody -->
 				<xsl:when
 					test="bodyType='CO' or bodyType='CI' or bodyType='SC' or bodyType='CE' or bodyType='CT' or bodyType='CJ' or bodyType='CM' ">
-					<xsl:value-of select="'committee-body'" />
+					<xsl:value-of select="'COMMITTEE'" />
 				</xsl:when>
 				<!-- DelegationBody -->
 				<xsl:when
 					test="bodyType='AP' or bodyType='DA' or bodyType='DE' or bodyType='DH' or bodyType='DM'">
-					<xsl:value-of select="'delegation-body'" />
+					<xsl:value-of select="'DELEGATION'" />
 				</xsl:when>
 				<!-- InstitutionBody -->
 				<xsl:when test="bodyType='PE'">
-					<xsl:value-of select="'institution-body'" />
+					<xsl:value-of select="'MANDATE'" />
 				</xsl:when>
 				<!-- PoliticalGroupBody -->
 				<xsl:when test="bodyType='GP'">
-					<xsl:value-of select="'political-group-body'" />
+					<xsl:value-of select="'POLITICAL-GROUP'" />
+				</xsl:when>
+				<!-- NATIONAL PARTY -->
+				<xsl:when test="bodyType='PN'">
+					<xsl:value-of select="'NATIONAL-PARTY'" />
 				</xsl:when>
 				<!-- GovernanceBody -->
 				<xsl:when test="bodyType='BU' or bodyType='OD'">
@@ -96,12 +100,7 @@
 		<xsl:if test="$var_corporateBody != ''">
 			<ep-org:Organization rdf:about="{ep-org:URI-Organization(bodyCode, bodyId)}">
 				
-				<!--
-				<ep-org:hasOrganizationType>					
-				</ep-org:hasOrganizationType>
-				 -->
-				 
-				 <rdfs:label>
+				<rdfs:label>
 				 	<xsl:value-of select="bodyCode"/>				 	
 				 </rdfs:label>
 				 
@@ -111,6 +110,10 @@
 				 </skos:notation>
 				 
 				 <ep-org:OrnizationType rdf:resource="{ep-org:URI-CVORGTYPE(bodyType)}"/>
+				 
+				 <!-- Il doit aller dans la feuille pour l'Organization ? -->
+				 <!-- il doit une URI ? -->
+				 <ep-org:hasSubOrganization rdf:source="{$var_corporateBodytype}"/> 
 				 
 				 <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
 				 	<xsl:value-of select="endDateTime"/>
