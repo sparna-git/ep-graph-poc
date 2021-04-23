@@ -97,30 +97,33 @@
 			</xsl:choose>
 		</xsl:variable>
 		
-		<xsl:if test="$var_corporateBody != ''">
-			<ep-org:Organization rdf:about="{ep-org:URI-Organization(bodyCode, bodyId)}">
-				 
-				 <skos:notation>
-						<xsl:value-of
-							select="encode-for-uri(normalize-space(bodyId))" />
-				 </skos:notation>
-				 
-				 <ep-org:hasOrganizationType rdf:resource="{ep-org:URI-OrganizationType(bodyType)}"/>
-				 
-				 <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
-				 	<xsl:value-of select="endDateTime"/>
-				 </schema:endDate>
-            	 <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
-            	 	<xsl:value-of select="startDateTime"/>
-            	 </schema:startDate>
-            	 
-            	 <xsl:apply-templates/>
-            	 
-            	 <skos:inScheme rdf:resource="{$SCHEME_URI}" />
-				 
-			</ep-org:Organization>
-		</xsl:if>
+		<ep-org:Organization rdf:about="{ep-org:URI-Organization(bodyCode, encode-for-uri(normalize-space(bodyId)))}">
+			<skos:inScheme rdf:resource="{$SCHEME_URI}" />
+			<xsl:apply-templates/>
+		</ep-org:Organization>
+
 	</xsl:template>
+
+	<xsl:template match="bodyType">
+		<ep-org:hasOrganizationType rdf:resource="{ep-org:URI-OrganizationType(.)}"/>
+	</xsl:template>
+
+	<xsl:template match="bodyId">
+		<skos:notation><xsl:value-of select="normalize-space(.)" /></skos:notation>
+	</xsl:template>
+
+	<xsl:template match="endDateTime">
+		<schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
+		 	<xsl:value-of select="."/>
+		 </schema:endDate>
+	</xsl:template>
+
+	<xsl:template match="startDateTime">
+		<schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
+		 	<xsl:value-of select="."/>
+		 </schema:endDate>
+	</xsl:template>
+
 	
 	<xsl:template match="descriptions">
 		<xsl:for-each select="item">
