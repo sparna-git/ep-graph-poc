@@ -57,10 +57,12 @@
 				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 				<xsl:value-of select="upperFirstName" />
 			</ep-org:upperFirstName>
-			<schema:birthDate
-				rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
-				<xsl:value-of select="birthDate" />
-			</schema:birthDate>
+			<xsl:if test="birthDate != ''">
+				<schema:birthDate
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
+					<xsl:value-of select="birthDate" />
+				</schema:birthDate>
+			</xsl:if>
 			<foaf:familyName
 				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 				<xsl:value-of select="familyName" />
@@ -217,17 +219,26 @@
 						<xsl:value-of select="officeNum" />
 					</ep-org:officeId>
 					
-					<xsl:variable name="town_code" select="ep-org:Lookup_TOWN_ID(normalize-space(townId))"/>
-					<xsl:if test="$town_code != '' and (townCode ='BRU' or townCode ='STR')">
-						<schema:addressCountry
-									rdf:resource="{ep-org:URI-COUNTRY($town_code)}" />
-						<schema:contactType
-									rdf:resource="{ep-org:URI-CONTACT_POINT_TYPE_PLACE(townCode)}" />						
-					</xsl:if>					
-						
-					<schema:addressLocality>
-						<xsl:value-of select="townName" />
-					</schema:addressLocality>
+					<!-- Setup addressCountry and contact type and addressLocality depending on town code : STR or BRU -->
+					<!--
+					<xsl:variable name="country_code" select="ep-org:Lookup_COUNTRY_ID(normalize-space(townId))"/>
+					 -->
+					<xsl:choose>
+						<xsl:when test="townCode = 'BRU'">
+							<schema:addressCountry rdf:resource="{ep-org:URI-COUNTRY('FRA')}" />
+							<schema:contactType rdf:resource="{ep-org:URI-CONTACT_POINT_TYPE_PLACE(townCode)}" />
+							<schema:addressLocality rdf:resource="{ep-org:URI-PublicationsLOCALITY('BEL_BRU')}" />	
+						</xsl:when>
+						<xsl:when test="townCode = 'STR'">
+							<schema:addressCountry rdf:resource="{ep-org:URI-COUNTRY('BEL')}" />
+							<schema:contactType rdf:resource="{ep-org:URI-CONTACT_POINT_TYPE_PLACE(townCode)}" />
+							<schema:addressLocality rdf:resource="{ep-org:URI-PublicationsLOCALITY('FRA_SXB')}" />	
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:message>Unexpected townCode in addresses : <xsl:value-of select="townCode" /></xsl:message>
+						</xsl:otherwise>
+					</xsl:choose>		
+					
 					<schema:faxNumber
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 						<xsl:value-of select="faxNum" />

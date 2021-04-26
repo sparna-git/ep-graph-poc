@@ -91,7 +91,10 @@
 	<!-- Country -->
 	<xsl:function name="ep-org:URI-COUNTRY">
 		<xsl:param name="countryId" />
+		<!--
 		<xsl:value-of select="concat(ep-org:URI-Authority('country/'), $countryId)" />
+		 -->
+		<xsl:value-of select="concat('http://publications.europa.eu/resource/authority/country/', $countryId)" />
 	</xsl:function>
 
 	<!-- ADDRESSES  -->
@@ -261,7 +264,7 @@
 		</xsl:choose>
 	</xsl:function>
 	
-	<xsl:function name="ep-org:Lookup_TOWN_ID">
+	<xsl:function name="ep-org:Lookup_COUNTRY_ID">
 		<xsl:param name="in_townId" />
 		<xsl:variable name="town_Id" select="$Town[
 			identifier = $in_townId]" />
