@@ -4,8 +4,8 @@
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-	xmlns:ep-org="http://data.europarl.europa.eu/ontology/ep-org#"
-	xmlns:scheme="http://data.europarl.europa.eu/authority/"
+	xmlns:org-ep="http://data.europarl.europa.eu/ontology/org-ep#"
+	xmlns:ep-aut="http://data.europarl.europa.eu/authority/"
 	xmlns:schema="http://schema.org/" exclude-result-prefixes="xsl"
 	xmlns:dct="http://purl.org/dc/terms/">
 
@@ -15,7 +15,7 @@
 	<xsl:import href="builtins.xsl" />
 	<xsl:output indent="yes" method="xml" />
 	
-	<xsl:variable name="SCHEME_URI" select="ep-org:URI-Authority('parliamentary-term')" />
+	<xsl:variable name="SCHEME_URI" select="org-ep:URI-Authority('parliamentary-term')" />
 
 	<xsl:template match="/">
 		<rdf:RDF>
@@ -33,22 +33,22 @@
 
 	<xsl:template match="all/item">
 		<skos:Concept
-			rdf:about="{ep-org:URI-PARLIAMENTARY_TERM(identifier)}">
-			<rdf:type rdf:resource="{ep-org:URI-CVEPONTO('parliamentary-term')}" />
+			rdf:about="{org-ep:URI-PARLIAMENTARY_TERM(identifier)}">
+			<rdf:type rdf:resource="{org-ep:URI-CVEPONTO('parliamentary-term')}" />
 			
 			
 			<rdfs:label>
 				<xsl:value-of select="fullName"/>
 			</rdfs:label>
 			
-			<ep-org:isoLanguage
+			<org-ep:isoLanguage
 				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 				<xsl:value-of select="langIso" />
-			</ep-org:isoLanguage>
+			</org-ep:isoLanguage>
 			
-			<ep-org:Period>
+			<org-ep:Period>
 				<xsl:value-of select="periodType"/>
-			</ep-org:Period>
+			</org-ep:Period>
 			
 			<dct:temporal>
 				<xsl:value-of select="concat(startDate,'/',endDate)"/>

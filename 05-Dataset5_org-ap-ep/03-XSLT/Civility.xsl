@@ -4,8 +4,8 @@
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-	xmlns:ep-org="http://data.europarl.europa.eu/ontology/ep-org#"
-	xmlns:scheme="http://data.europarl.europa.eu/authority/"
+	xmlns:org-ep="http://data.europarl.europa.eu/ontology/org-ep#"
+	xmlns:ep-aut="http://data.europarl.europa.eu/authority/"
 	xmlns:schema="http://schema.org/" exclude-result-prefixes="xsl">
 
 	<!-- Import URI stylesheet -->
@@ -14,7 +14,7 @@
 	<xsl:import href="builtins.xsl" />
 	<xsl:output indent="yes" method="xml" />
 
-	<xsl:variable name="SCHEME_URI" select="ep-org:URI-Authority('civility')" />
+	<xsl:variable name="SCHEME_URI" select="org-ep:URI-Authority('civility')" />
 
 	<xsl:template match="/">
 		<rdf:RDF>
@@ -26,19 +26,18 @@
 		<!-- Output the ConceptScheme in a header -->
 		<skos:ConceptScheme rdf:about="{$SCHEME_URI}">
 			<skos:prefLabel xml:lang="en">Civility</skos:prefLabel>
-		</skos:ConceptScheme>
-		
+		</skos:ConceptScheme>		
 		<xsl:apply-templates />
 	</xsl:template>
 
 	<xsl:template match="all/item">
 		<skos:Concept
-			rdf:about="{ep-org:URI-CIVILITY(encode-for-uri(normalize-space(identifier)))}">
-			<rdf:type rdf:resource="{ep-org:URI-CVEPONTO('Civility')}" />
-			<ep-org:isoLanguage
+			rdf:about="{org-ep:URI-CIVILITY(encode-for-uri(normalize-space(identifier)))}">
+			<rdf:type rdf:resource="{org-ep:URI-CVEPONTO('Civility')}" />
+			<org-ep:isoLanguage
 				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 				<xsl:value-of select="langIso" />
-			</ep-org:isoLanguage>
+			</org-ep:isoLanguage>
 
 
 			<xsl:if test="string-length(normalize-space(identifier)) &gt; 0">
