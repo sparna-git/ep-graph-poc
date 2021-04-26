@@ -4,8 +4,8 @@
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-	xmlns:ep-org="http://data.europarl.europa.eu/ontology/ep-org#"
-	xmlns:scheme="http://data.europarl.europa.eu/authority/"
+	xmlns:org-ep="http://data.europarl.europa.eu/ontology/org-ep#"
+	xmlns:ep-aut="http://data.europarl.europa.eu/authority/"
 	xmlns:schema="http://schema.org/" exclude-result-prefixes="xsl">
 
 	<!-- Import URI stylesheet -->
@@ -14,7 +14,7 @@
 	<xsl:import href="builtins.xsl" />
 	<xsl:output indent="yes" method="xml" />
 
-	<xsl:variable name="SCHEME_URI" select="ep-org:URI-Authority('organization')" />
+	<xsl:variable name="SCHEME_URI" select="org-ep:URI-Authority('organization')" />
 
 	<xsl:template match="/">
 		<rdf:RDF>
@@ -31,81 +31,53 @@
 	</xsl:template>
 
 	<xsl:template match="all/item">
-		<xsl:variable name="var_corporateBody">
-			<xsl:if test="string-length(normalize-space(bodyCode)) &gt; 0">
-				<xsl:choose>
-					<!-- CommitteeBody -->
-					<xsl:when
-						test="bodyType='CO' or bodyType='CI' or bodyType='SC' or bodyType='CE' or bodyType='CT' or bodyType='CJ' or bodyType='CM' ">
-						<xsl:value-of
-							select="ep-org:URI-COMMITTEEBODY(encode-for-uri(normalize-space(bodyCode)))" />
-					</xsl:when>
-					<!-- DelegationBody -->
-					<xsl:when
-						test="bodyType='AP' or bodyType='DA' or bodyType='DE' or bodyType='DH' or bodyType='DM'">
-						<xsl:value-of
-							select="ep-org:URI-DELEGATIONBODY(encode-for-uri(normalize-space(bodyCode)))" />
-					</xsl:when>
-					<!-- InstitutionBody -->
-					<xsl:when test="bodyType='PE'">
-						<xsl:value-of
-							select="ep-org:URI-INSTITUTIONBODY(encode-for-uri(normalize-space(bodyCode)))" />
-					</xsl:when>
-					<!-- PoliticalGroupBody -->
-					<xsl:when test="bodyType='GP'">
-						<xsl:value-of
-							select="ep-org:URI-POLITICALGROUPBODY(encode-for-uri(normalize-space(bodyCode)))" />
-					</xsl:when>
-					<!-- GovernanceBody -->
-					<xsl:when test="bodyType='BU' or bodyType='OD'">
-						<xsl:value-of
-							select="ep-org:URI-GOVERNANCEBODY(encode-for-uri(normalize-space(bodyCode)))" />
-					</xsl:when>
-				</xsl:choose>
-			</xsl:if>			
-		</xsl:variable>
-		
-		<!-- Type corporate body -->
-		<xsl:variable name="var_corporateBodytype">
-			<xsl:choose>
-				<!-- CommitteeBody -->
-				<xsl:when
-					test="bodyType='CO' or bodyType='CI' or bodyType='SC' or bodyType='CE' or bodyType='CT' or bodyType='CJ' or bodyType='CM' ">
-					<xsl:value-of select="'COMMITTEE'" />
-				</xsl:when>
-				<!-- DelegationBody -->
-				<xsl:when
-					test="bodyType='AP' or bodyType='DA' or bodyType='DE' or bodyType='DH' or bodyType='DM'">
-					<xsl:value-of select="'DELEGATION'" />
-				</xsl:when>
-				<!-- InstitutionBody -->
-				<xsl:when test="bodyType='PE'">
-					<xsl:value-of select="'MANDATE'" />
-				</xsl:when>
-				<!-- PoliticalGroupBody -->
-				<xsl:when test="bodyType='GP'">
-					<xsl:value-of select="'POLITICAL-GROUP'" />
-				</xsl:when>
-				<!-- NATIONAL PARTY -->
-				<xsl:when test="bodyType='PN'">
-					<xsl:value-of select="'NATIONAL-PARTY'" />
-				</xsl:when>
-				<!-- GovernanceBody -->
-				<xsl:when test="bodyType='BU' or bodyType='OD'">
-					<xsl:value-of select="'governance-body'" />
-				</xsl:when>
-			</xsl:choose>
-		</xsl:variable>
-		
-		<ep-org:Organization rdf:about="{ep-org:URI-Organization(bodyCode, encode-for-uri(normalize-space(bodyId)))}">
+		<org-ep:Organization rdf:about="{org-ep:URI-Organization(bodyCode, encode-for-uri(normalize-space(bodyId)))}">		
 			<skos:inScheme rdf:resource="{$SCHEME_URI}" />
 			<xsl:apply-templates/>
-		</ep-org:Organization>
-
+		</org-ep:Organization>
 	</xsl:template>
 
 	<xsl:template match="bodyType">
-		<ep-org:hasOrganizationType rdf:resource="{ep-org:URI-OrganizationType(.)}"/>
+		<xsl:variable name="bodyTypeOrg" select="."/>
+		<xsl:variable name="var_corporateBody">
+			<xsl:if test="string-length(normalize-space($bodyTypeOrg)) &gt; 0">
+				<xsl:choose>
+					<!-- CommitteeBody -->
+					<xsl:when
+						test="index-of(('CO','CI','SC','CE','CT','CJ','CM'),$bodyTypeOrg)">
+						<xsl:value-of
+							select="org-ep:URI-COMMITTEEBODY(encode-for-uri(normalize-space($bodyTypeOrg)))" />
+					</xsl:when>
+					<!-- DelegationBody -->
+					<xsl:when
+						test="index-of(('AP','DA','DE','DH','DM'),$bodyTypeOrg)">	
+						<xsl:value-of
+							select="org-ep:URI-DELEGATIONBODY(encode-for-uri(normalize-space($bodyTypeOrg)))" />
+					</xsl:when>
+					<!-- InstitutionBody -->
+					<xsl:when test="$bodyTypeOrg='PE'">
+						<xsl:value-of
+							select="org-ep:URI-INSTITUTIONBODY(encode-for-uri(normalize-space($bodyTypeOrg)))" />
+					</xsl:when>
+					<!-- PoliticalGroupBody -->
+					<xsl:when test="$bodyTypeOrg='GP'">
+						<xsl:value-of
+							select="org-ep:URI-POLITICALGROUPBODY(encode-for-uri(normalize-space($bodyTypeOrg)))" />
+					</xsl:when>
+					<!-- GovernanceBody -->
+					<xsl:when test="index-of(('BU','OD'),$bodyTypeOrg)">
+						<xsl:value-of
+							select="org-ep:URI-GOVERNANCEBODY(encode-for-uri(normalize-space($bodyTypeOrg)))" />
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:message>Warning: find "<xsl:value-of select="$bodyTypeOrg"/>" dont is not identified.</xsl:message>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:if>			
+		</xsl:variable>
+		<xsl:if test="$var_corporateBody != ''">
+			<org-ep:hasOrganizationType rdf:resource="{$var_corporateBody}"/>
+		</xsl:if>
 	</xsl:template>
 
 	<xsl:template match="bodyId">
@@ -136,6 +108,5 @@
 				<xsl:value-of select="fullName"/>
 			</skos:altLabel>
 		</xsl:for-each>
-	</xsl:template>	 
-	
+	</xsl:template>	 	
 </xsl:stylesheet>

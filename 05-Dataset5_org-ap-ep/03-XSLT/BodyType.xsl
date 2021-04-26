@@ -4,8 +4,8 @@
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-	xmlns:ep-org="http://data.europarl.europa.eu/ontology/ep-org#"
-	xmlns:scheme="http://data.europarl.europa.eu/authority/"
+	xmlns:org-ep="http://data.europarl.europa.eu/ontology/org-ep#"	
+	xmlns:ep-aut="http://data.europarl.europa.eu/authority/"
 	xmlns:schema="http://schema.org/" exclude-result-prefixes="xsl">
 
 	<!-- Import URI stylesheet -->
@@ -15,7 +15,7 @@
 	<xsl:output indent="yes" method="xml" />
 
 	<xsl:variable name="SCHEME_URI"
-		select="ep-org:URI-Authority('org-type')" />
+		select="org-ep:URI-Authority('org-type')" />
 
 	<xsl:template match="/">
 		<rdf:RDF>
@@ -34,8 +34,8 @@
 	<xsl:template match="all/item">
 
 		<skos:Concept
-			rdf:about="{ep-org:URI-OrganizationType(encode-for-uri(normalize-space(code)))}">
-			<rdf:type rdf:resource="{ep-org:URI-CVEPONTO('org-type')}" />
+			rdf:about="{org-ep:URI-OrganizationType(encode-for-uri(normalize-space(code)))}">
+			<rdf:type rdf:resource="{org-ep:URI-CVEPONTO('org-type')}" />
 
 			<skos:notation>
 				<xsl:value-of select="code" />
