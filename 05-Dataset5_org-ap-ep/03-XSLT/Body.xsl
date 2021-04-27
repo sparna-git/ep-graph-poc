@@ -84,6 +84,7 @@
 		<xsl:if test="$var_corporateBody != ''">
 			<org-ep:hasCorporateBody rdf:resource="{$var_corporateBody}"/>
 		</xsl:if>
+		<org-ep:hasOrganizationType rdf:resource="{org-ep:URI-OrganizationType(encode-for-uri(normalize-space($bodyTypeOrg)))}"/> 
 	</xsl:template>
 
 	<xsl:template match="bodyId">
