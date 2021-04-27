@@ -2,6 +2,7 @@
 <xsl:stylesheet version="2.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 	xmlns:org-ep="http://data.europarl.europa.eu/ontology/org-ep#"
@@ -39,6 +40,7 @@
 
 	<xsl:template match="bodyType">
 		<xsl:variable name="bodyTypeOrg" select="."/>
+		
 		<xsl:variable name="var_corporateBody">
 			<xsl:if test="string-length(normalize-space($bodyTypeOrg)) &gt; 0">
 				<xsl:choose>
@@ -70,18 +72,29 @@
 							select="org-ep:URI-GOVERNANCEBODY(encode-for-uri(normalize-space($bodyTypeOrg)))" />
 					</xsl:when>
 					<xsl:otherwise>
-						<xsl:message>Warning: find "<xsl:value-of select="$bodyTypeOrg"/>" dont is not identified.</xsl:message>
+						<xsl:message>Warning: bodyType "<xsl:value-of select="$bodyTypeOrg"/>" is unknown to generate hasCorporateBody.</xsl:message>
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:if>			
 		</xsl:variable>
+		
+		<!-- always generate organization type -->
+		<org-ep:hasOrganizationType rdf:resource="{org-ep:URI-OrganizationType(.)}"/>
+		
 		<xsl:if test="$var_corporateBody != ''">
-			<org-ep:hasOrganizationType rdf:resource="{$var_corporateBody}"/>
+			<org-ep:hasCorporateBody rdf:resource="{$var_corporateBody}"/>
 		</xsl:if>
 	</xsl:template>
 
 	<xsl:template match="bodyId">
-		<skos:notation><xsl:value-of select="normalize-space(.)" /></skos:notation>
+		<dc:identifier><xsl:value-of select="normalize-space(.)" /></dc:identifier>
+	</xsl:template>
+	
+	<xsl:template match="bodyCode">
+		<skos:notation rdf:datatype="http://data.europarl.europa.eu/authority/notation-type/codict/bodycode"><xsl:value-of select="normalize-space(.)" /></skos:notation>
+		<!-- also look for mnemoCode here -->
+		<skos:notation rdf:datatype="http://data.europarl.europa.eu/authority/notation-type/codict/mnemocode"><xsl:value-of select="normalize-space(../descriptions/item[1]/mnemoCode)" /></skos:notation>
+		<!--  OD code ? -->
 	</xsl:template>
 
 	<xsl:template match="endDateTime">
