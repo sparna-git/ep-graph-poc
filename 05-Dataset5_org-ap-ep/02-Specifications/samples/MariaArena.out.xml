@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:org="http://www.w3.org/ns/org#"
+         xmlns:org-ep="http://data.europarl.europa.eu/ontology/org-ep#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:schema="http://schema.org/"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <org-ep:MEP rdf:about="http://data.europarl.europa.eu/person/124936">
+      <org-ep:personId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">124936</org-ep:personId>
+      <org-ep:upperFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARENA</org-ep:upperFamilyName>
+      <org-ep:upperFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MARIA</org-ep:upperFirstName>
+      <schema:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1966-12-16T23:00:00.000+00:00</schema:birthDate>
+      <foaf:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arena</foaf:familyName>
+      <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maria</foaf:firstName>
+      <foaf:img rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.europarl.europa.eu/mepphoto/124936.jpg</foaf:img>
+      <schema:gender rdf:resource="http://data.europarl.europa.eu/authority/gender/F"/>
+      <schema:honorificPrefix rdf:resource="http://data.europarl.europa.eu/authority/civility/MME"/>
+      <schema:birthPlace rdf:resource="http://data.europarl.europa.eu/authority/place/MNS"/>
+      <schema:nationality rdf:resource="http://publications.europa.eu/resource/authority/country/BEL"/>
+      <org-ep:curriculumVitae xml:lang="en">1/9/1987 - 30/6/1988 Catholic University of Mons
+1/1/1990 - 31/12/2000 International expert on employment and adult education
+17/7/2009 - 13/6/2010 Member of the Chamber of Representatives
+13/6/2010 - 2014 Senator
+1/1/2000 - 31/12/2009 Minister
+</org-ep:curriculumVitae>
+      <org-ep:curriculumVitae xml:lang="fr">1/9/1987 - 30/6/1988 Facultés universitaires catholiques de Mons
+1/1/1990 - 31/12/2000 experte internationale en matière d'emploi et de formation des adultes
+17/7/2009 - 13/6/2010 députée à la Chambre des représentants
+13/6/2010 - 2014 sénatrice
+1/1/2000 - 31/12/2009 ministre
+</org-ep:curriculumVitae>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/16006">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/MANDATE"/>
+            <org-ep:constituency rdf:resource="http://data.europarl.europa.eu/authority/constituency/BEL-16006"/>
+            <org-ep:hasOrganization rdf:resource="http://publications.europa.eu/resource/authority/country/BEL"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/9"/>
+            <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16006</dc:identifier>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2099-12-30T23:00:00.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T08:00:00.000+00:00</schema:startDate>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/15474">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/MANDATE"/>
+            <org-ep:constituency rdf:resource="http://data.europarl.europa.eu/authority/constituency/BEL-15474"/>
+            <org-ep:hasOrganization rdf:resource="http://publications.europa.eu/resource/authority/country/BEL"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15474</dc:identifier>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T07:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-01T08:00:00.000+00:00</schema:startDate>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/145349">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/C07-3952"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-18T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-07T22:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124936/membership/15474"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/SUF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/150008">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/C07-4963"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T07:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-18T23:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124936/membership/15474"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/SUF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/157016">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/C08-5088"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/9"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2099-12-30T23:00:00.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T08:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124936/membership/16006"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/SUF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/151358">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/DELEGATION"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/D10-4180"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T07:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T23:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124936/membership/15474"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/SUF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/147329">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/DELEGATION"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/D22-4190"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-09-16T22:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124936/membership/15474"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/SUF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/153497">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/MANDATE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/PE-5514"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/9"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2099-12-30T23:00:00.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T08:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124936/membership/16006"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/141874">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/MANDATE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/PE-3945"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T07:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-01T08:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124936/membership/15474"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/158507">
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/PRCO-5158"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/9"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2099-12-30T23:00:00.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-09T22:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124936/membership/16006"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/143125">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/POLITICAL-GROUP"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/S%26D-4284"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T07:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-01T08:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124936/membership/15474"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/156057">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/POLITICAL-GROUP"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/S%26D-5154"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/9"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2099-12-30T23:00:00.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T08:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124936/membership/16006"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/156399">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/C01-5081"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/9"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2099-12-30T23:00:00.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T08:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124936/membership/16006"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/149672">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/C03-4959"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T07:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-18T23:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124936/membership/15474"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/143698">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/C03-3948"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-18T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-01T08:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124936/membership/15474"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/144877">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/C19-3964"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-18T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-01T08:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124936/membership/15474"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/151064">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/C19-4975"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T07:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-18T23:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124936/membership/15474"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/158140">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/SC01A-5101"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/9"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-09T21:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T08:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124936/membership/16006"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/161630">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/CS01-6178"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/9"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2099-12-30T23:00:00.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-13T22:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124936/membership/16006"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/159582">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/DELEGATION"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/D31-5133"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/9"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2099-12-30T23:00:00.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T08:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124936/membership/16006"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/146619">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/DELEGATION"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/DA01-4203"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T07:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-13T22:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124936/membership/15474"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/159609">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/DELEGATION"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/DA01-5142"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/9"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2099-12-30T23:00:00.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T08:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124936/membership/16006"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/151368">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/DELEGATION"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/DA02-4205"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T07:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T23:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124936/membership/15474"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/153501">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/NATIONAL-PARTY"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/PS-5177"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/9"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2099-12-30T23:00:00.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T08:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124936/membership/16006"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/141875">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/NATIONAL-PARTY"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/PS-3990"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T07:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-01T08:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124936/membership/15474"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/158443">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/SC01A-5101"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/9"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2099-12-30T23:00:00.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-09T22:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124936/membership/16006"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/PAF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <schema:contactPoint>
+         <schema:ContactPoint rdf:about="http://data.europarl.europa.eu/resource/contact-point/electronic/124936/GWSd3e2975">
+            <schema:contactType rdf:resource="http://data.europarl.europa.eu/authority/contact-point-type/electronic/GWS"/>
+            <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maria.arena@europarl.europa.eu</schema:url>
+         </schema:ContactPoint>
+      </schema:contactPoint>
+      <schema:contactPoint>
+         <schema:ContactPoint rdf:about="http://data.europarl.europa.eu/resource/contact-point/electronic/124936/EMAd3e2993">
+            <schema:contactType rdf:resource="http://data.europarl.europa.eu/authority/contact-point-type/electronic/EMA"/>
+            <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maria.arena@europarl.europa.eu</schema:url>
+         </schema:ContactPoint>
+      </schema:contactPoint>
+      <schema:contactPoint>
+         <schema:ContactPoint rdf:about="http://data.europarl.europa.eu/resource/contact-point/electronic/124936/FBPd3e3011">
+            <schema:contactType rdf:resource="http://data.europarl.europa.eu/authority/contact-point-type/electronic/FBP"/>
+            <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.facebook.com/Marie-Arena</schema:url>
+         </schema:ContactPoint>
+      </schema:contactPoint>
+      <schema:contactPoint>
+         <schema:ContactPoint rdf:about="http://data.europarl.europa.eu/resource/contact-point/electronic/124936/TWTd3e3029">
+            <schema:contactType rdf:resource="http://data.europarl.europa.eu/authority/contact-point-type/electronic/TWT"/>
+            <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/Mariearenaps</schema:url>
+         </schema:ContactPoint>
+      </schema:contactPoint>
+      <schema:contactPoint>
+         <schema:ContactPoint rdf:about="http://data.europarl.europa.eu/resource/contact-point/electronic/124936/URLd3e3047">
+            <schema:contactType rdf:resource="http://data.europarl.europa.eu/authority/contact-point-type/electronic/URL"/>
+            <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.mariearena.eu/</schema:url>
+         </schema:ContactPoint>
+      </schema:contactPoint>
+      <schema:contactPoint>
+         <schema:ContactPoint rdf:about="http://data.europarl.europa.eu/resource/contact-point/electronic/124936/ISTd3e3066">
+            <schema:contactType rdf:resource="http://data.europarl.europa.eu/authority/contact-point-type/electronic/IST"/>
+            <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.instagram.com/mariearenaps/</schema:url>
+         </schema:ContactPoint>
+      </schema:contactPoint>
+      <schema:contactPoint>
+         <schema:PostalAddress rdf:about="http://data.europarl.europa.eu/resource/contact-point/place/124936/15G305">
+            <org-ep:hasSite rdf:resource="http://publications.europa.eu/resource/authority/site/ASP"/>
+            <org-ep:officeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15G305</org-ep:officeId>
+            <schema:addressCountry rdf:resource="http://publications.europa.eu/resource/authority/country/FRA"/>
+            <schema:addressLocality rdf:resource="http://publications.europa.eu/resource/authority/place/BEL_BRU"/>
+            <schema:faxNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0032 2 28 49690</schema:faxNumber>
+            <schema:telephone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0032 2 28 45690</schema:telephone>
+         </schema:PostalAddress>
+      </schema:contactPoint>
+      <schema:contactPoint>
+         <schema:PostalAddress rdf:about="http://data.europarl.europa.eu/resource/contact-point/place/124936/T12044">
+            <org-ep:hasSite rdf:resource="http://publications.europa.eu/resource/authority/site/LOW"/>
+            <org-ep:officeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T12044</org-ep:officeId>
+            <schema:addressCountry rdf:resource="http://publications.europa.eu/resource/authority/country/BEL"/>
+            <schema:addressLocality rdf:resource="http://publications.europa.eu/resource/authority/place/FRA_SXB"/>
+            <schema:faxNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0033 3 88 1 79690</schema:faxNumber>
+            <schema:telephone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0033 3 88 1 75690</schema:telephone>
+         </schema:PostalAddress>
+      </schema:contactPoint>
+   </org-ep:MEP>
+   <org-ep:Person rdf:about="http://data.europarl.europa.eu/person/192903">
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/192903">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/PERSON"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/person/124936"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/ASSISTANT"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+   </org-ep:Person>
+   <org-ep:Person rdf:about="http://data.europarl.europa.eu/person/193653">
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/193653">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/PERSON"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/person/124936"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/ASSISTANT"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+   </org-ep:Person>
+   <org-ep:Person rdf:about="http://data.europarl.europa.eu/person/131457">
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/131457">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/PERSON"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/person/124936"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/ASSISTANT"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+   </org-ep:Person>
+   <org-ep:Person rdf:about="http://data.europarl.europa.eu/person/102500">
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/102500">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/PERSON"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/person/124936"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/ASSISTANT"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+   </org-ep:Person>
+   <org-ep:Person rdf:about="http://data.europarl.europa.eu/person/27963">
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/27963">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/PERSON"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/person/124936"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/ASSISTANT"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+   </org-ep:Person>
+   <org-ep:Person rdf:about="http://data.europarl.europa.eu/person/201873">
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124936/membership/201873">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/PERSON"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/person/124936"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/ASSISTANT"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+   </org-ep:Person>
+   <org-ep:MEP rdf:about="http://data.europarl.europa.eu/person/2058">
+      <org-ep:dateEndActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-11-10T22:59:59Z</org-ep:dateEndActivity>
+      <org-ep:personId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2058</org-ep:personId>
+      <org-ep:upperFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JOUPPILA</org-ep:upperFamilyName>
+      <org-ep:upperFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RIITTA</org-ep:upperFirstName>
+      <schema:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1940-05-29T22:00:00.000+00:00</schema:birthDate>
+      <foaf:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jouppila</foaf:familyName>
+      <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riitta</foaf:firstName>
+      <foaf:img rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.europarl.europa.eu/mepphoto/2058.jpg</foaf:img>
+      <schema:gender rdf:resource="http://data.europarl.europa.eu/authority/gender/F"/>
+      <schema:honorificPrefix rdf:resource="http://data.europarl.europa.eu/authority/civility/"/>
+      <schema:birthPlace rdf:resource="http://data.europarl.europa.eu/authority/place/KUO"/>
+      <schema:nationality rdf:resource="http://publications.europa.eu/resource/authority/country/FIN"/>
+      <org-ep:curriculumVitae xml:lang="en">School leaving certificate (1959). Degree in medicine (1966). PhD in medicine (1977). Senior physician (University of Oulu Central Hospital). Lecturer (Oulu University). &lt;&gt; Deputy chairman, KOK party (1991-1993). &lt;&gt; Member of Parliament (until 1995). Chairman, Committee for Education and Culture (1991-1995). &lt;&gt; Doctoral thesis 'The effect of epidural analgesia for pain relief during labour on maternal and fetal metabolism' (1977). Author of several medical publications. &lt;&gt; Order of the White Rose, First Class.</org-ep:curriculumVitae>
+      <org-ep:curriculumVitae xml:lang="fr">Baccalauréat (1959). Docteur en médecine (1966). Doctorat d'État en médecine (1977). Médecin-chef de service (CHU d'Oulu). Chargé de cours (Université d'Oulu). &lt;&gt; Vice-président du KOK (1991-1993). &lt;&gt; Député au parlement finlandais (jusqu'en 1995). Président de la commission de la culture (1991-1995). &lt;&gt; Thèse de doctorat: ""The effect of epidural analgesia for painrelief during labour on maternal and fetal metabolism" (1977). Nombreuses publications scientifiques dans le domaine médical. &lt;&gt; Chevalier de la Rose Blanche de Première classe.</org-ep:curriculumVitae>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/2058/membership/10510">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/MANDATE"/>
+            <org-ep:constituency rdf:resource="http://data.europarl.europa.eu/authority/constituency/FIN-10510"/>
+            <org-ep:hasOrganization rdf:resource="http://publications.europa.eu/resource/authority/country/FIN"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/4"/>
+            <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10510</dc:identifier>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-11-10T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1994-12-31T23:00:00.000+00:00</schema:startDate>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/2058/membership/75329">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/C11-102"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/4"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-11-10T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1995-01-18T23:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/2058/membership/10510"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/SUF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/2058/membership/90813">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/MANDATE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/PE-572"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/4"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-11-10T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1994-12-31T23:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/2058/membership/10510"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/2058/membership/89033">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/POLITICAL-GROUP"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/PPE-514"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/4"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-11-10T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1994-12-31T23:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/2058/membership/10510"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/2058/membership/75286">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/C05-96"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/4"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-11-10T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1995-01-18T23:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/2058/membership/10510"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/2058/membership/75369">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/C19-110"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/4"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-11-10T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1995-01-18T23:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/2058/membership/10510"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/2058/membership/81101">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/DELEGATION"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/DM05-459"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/4"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1995-07-11T21:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1995-01-17T23:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/2058/membership/10510"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/2058/membership/81239">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/DELEGATION"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/DM05-465"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/4"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-11-10T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1995-07-11T22:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/2058/membership/10510"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/2058/membership/101477">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/NATIONAL-PARTY"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/KOK-650"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/4"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-11-10T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1994-12-31T23:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/2058/membership/10510"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <schema:contactPoint>
+         <schema:ContactPoint rdf:about="http://data.europarl.europa.eu/resource/contact-point/electronic/2058/EMAd3e5201">
+            <schema:contactType rdf:resource="http://data.europarl.europa.eu/authority/contact-point-type/electronic/EMA"/>
+            <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">riitta.jouppila@kokoomus.reticon.be</schema:url>
+         </schema:ContactPoint>
+      </schema:contactPoint>
+   </org-ep:MEP>
+   <org-ep:Person rdf:about="http://data.europarl.europa.eu/person/192903">
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/2058/membership/192903">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/PERSON"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/person/2058"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/ASSISTANT"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+   </org-ep:Person>
+   <org-ep:Person rdf:about="http://data.europarl.europa.eu/person/193653">
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/2058/membership/193653">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/PERSON"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/person/2058"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/ASSISTANT"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+   </org-ep:Person>
+   <org-ep:Person rdf:about="http://data.europarl.europa.eu/person/131457">
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/2058/membership/131457">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/PERSON"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/person/2058"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/ASSISTANT"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+   </org-ep:Person>
+   <org-ep:Person rdf:about="http://data.europarl.europa.eu/person/102500">
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/2058/membership/102500">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/PERSON"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/person/2058"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/ASSISTANT"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+   </org-ep:Person>
+   <org-ep:Person rdf:about="http://data.europarl.europa.eu/person/27963">
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/2058/membership/27963">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/PERSON"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/person/2058"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/ASSISTANT"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+   </org-ep:Person>
+   <org-ep:Person rdf:about="http://data.europarl.europa.eu/person/201873">
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/2058/membership/201873">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/PERSON"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/person/2058"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/ASSISTANT"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+   </org-ep:Person>
+   <org-ep:MEP rdf:about="http://data.europarl.europa.eu/person/124939">
+      <org-ep:dateEndActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T07:59:59Z</org-ep:dateEndActivity>
+      <org-ep:personId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">124939</org-ep:personId>
+      <org-ep:upperFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JAMES</org-ep:upperFamilyName>
+      <org-ep:upperFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIANE</org-ep:upperFirstName>
+      <schema:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1959-11-19T23:00:00.000+00:00</schema:birthDate>
+      <foaf:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James</foaf:familyName>
+      <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diane</foaf:firstName>
+      <foaf:img rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.europarl.europa.eu/mepphoto/124939.jpg</foaf:img>
+      <schema:gender rdf:resource="http://data.europarl.europa.eu/authority/gender/F"/>
+      <schema:honorificPrefix rdf:resource="http://data.europarl.europa.eu/authority/civility/MS."/>
+      <schema:nationality rdf:resource="http://publications.europa.eu/resource/authority/country/GBR"/>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124939/membership/15486">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/MANDATE"/>
+            <org-ep:constituency rdf:resource="http://data.europarl.europa.eu/authority/constituency/GBR-15486"/>
+            <org-ep:hasOrganization rdf:resource="http://publications.europa.eu/resource/authority/country/GBR"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15486</dc:identifier>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T07:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-01T08:00:00.000+00:00</schema:startDate>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124939/membership/148934">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/C06-3951"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-19T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-10T22:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124939/membership/15486"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/SUF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124939/membership/144118">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/C08-3953"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-19T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-01T08:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124939/membership/15486"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/SUF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124939/membership/151553">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/C10-4966"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-12T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-25T23:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124939/membership/15486"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/SUF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124939/membership/148312">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/C17-3962"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-19T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-06-23T22:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124939/membership/15486"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/SUF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124939/membership/145049">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/SC01B-3966"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-11-05T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-01T08:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124939/membership/15486"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/SUF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124939/membership/148314">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/DELEGATION"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/D22-4190"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-19T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-06-23T22:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124939/membership/15486"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/SUF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124939/membership/148315">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/DELEGATION"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/D25-4191"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-19T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-06-23T22:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124939/membership/15486"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/SUF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124939/membership/141912">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/MANDATE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/PE-3945"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T07:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-01T08:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124939/membership/15486"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124939/membership/147644">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/POLITICAL-GROUP"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/EFDD-4280"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-10-15T21:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-01T08:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124939/membership/15486"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124939/membership/147741">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/POLITICAL-GROUP"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/EFDD-4880"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-19T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-10-19T22:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124939/membership/15486"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124939/membership/152930">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/POLITICAL-GROUP"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/EFDD-4880"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T07:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-12T23:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124939/membership/15486"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124939/membership/149292">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/POLITICAL-GROUP"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/NI-3968"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-12T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-19T23:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124939/membership/15486"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124939/membership/147645">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/POLITICAL-GROUP"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/NI-3968"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-10-19T21:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-10-15T22:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124939/membership/15486"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124939/membership/148255">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/C06-3951"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-10T21:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-06-07T22:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124939/membership/15486"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124939/membership/147224">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/C10-3955"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-01-12T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-15T22:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124939/membership/15486"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124939/membership/151036">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/C18-4974"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T07:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-18T23:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124939/membership/15486"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124939/membership/149194">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/C18-3963"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-18T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-07-03T22:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124939/membership/15486"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124939/membership/151552">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/C20-4976"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T07:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-01T23:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124939/membership/15486"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124939/membership/141913">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/NATIONAL-PARTY"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/UKIP-4051"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-19T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-01T08:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124939/membership/15486"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124939/membership/153031">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/NATIONAL-PARTY"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/BREX-5073"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-01T21:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-02-04T23:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124939/membership/15486"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <org:hasMembership>
+         <org-ep:Membership rdf:about="http://data.europarl.europa.eu/person/124939/membership/152927">
+            <org-ep:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/NATIONAL-PARTY"/>
+            <org-ep:hasOrganization rdf:resource="http://data.europarl.europa.eu/org/Independent-4951"/>
+            <org-ep:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-02-04T22:59:59.000+00:00</schema:endDate>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-19T23:00:00.000+00:00</schema:startDate>
+            <org-ep:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/person/124939/membership/15486"/>
+            <org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
+         </org-ep:Membership>
+      </org:hasMembership>
+      <schema:contactPoint>
+         <schema:ContactPoint rdf:about="http://data.europarl.europa.eu/resource/contact-point/electronic/124939/EMAd3e6396">
+            <schema:contactType rdf:resource="http://data.europarl.europa.eu/authority/contact-point-type/electronic/EMA"/>
+            <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diane.james@europarl.europa.eu</schema:url>
+         </schema:ContactPoint>
+      </schema:contactPoint>
+      <schema:contactPoint>
+         <schema:ContactPoint rdf:about="http://data.europarl.europa.eu/resource/contact-point/electronic/124939/GWSd3e6414">
+            <schema:contactType rdf:resource="http://data.europarl.europa.eu/authority/contact-point-type/electronic/GWS"/>
+            <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diane.james@europarl.europa.eu</schema:url>
+         </schema:ContactPoint>
+      </schema:contactPoint>
+      <schema:contactPoint>
+         <schema:ContactPoint rdf:about="http://data.europarl.europa.eu/resource/contact-point/electronic/124939/TWTd3e6432">
+            <schema:contactType rdf:resource="http://data.europarl.europa.eu/authority/contact-point-type/electronic/TWT"/>
+            <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> https://twitter.com/DianeJamesMEP</schema:url>
+         </schema:ContactPoint>
+      </schema:contactPoint>
+   </org-ep:MEP>
+   <org-ep:Person rdf:about="http://data.europarl.europa.eu/person/192903">
+      <org-ep:hasPersonType rdf:resource="http://data.europarl.europa.eu/authority/person-type/AST-APA-GRP"/>
+      <org-ep:personId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">192903</org-ep:personId>
+      <org-ep:upperFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PALMER</org-ep:upperFamilyName>
+      <org-ep:upperFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CANDICE MIRANDA</org-ep:upperFirstName>
+      <foaf:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PALMER</foaf:familyName>
+      <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Candice Miranda</foaf:firstName>
+   </org-ep:Person>
+   <org-ep:Person rdf:about="http://data.europarl.europa.eu/person/193653">
+      <org-ep:hasPersonType rdf:resource="http://data.europarl.europa.eu/authority/person-type/AST-APA-GRP"/>
+      <org-ep:personId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">193653</org-ep:personId>
+      <org-ep:upperFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SULO</org-ep:upperFamilyName>
+      <org-ep:upperFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MELDISONA</org-ep:upperFirstName>
+      <foaf:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SULO</foaf:familyName>
+      <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meldisona</foaf:firstName>
+   </org-ep:Person>
+   <org-ep:Person rdf:about="http://data.europarl.europa.eu/person/131457">
+      <org-ep:hasPersonType rdf:resource="http://data.europarl.europa.eu/authority/person-type/AST-APA-GRP"/>
+      <org-ep:personId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">131457</org-ep:personId>
+      <org-ep:upperFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EL FASSI</org-ep:upperFamilyName>
+      <org-ep:upperFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHIRAZ</org-ep:upperFirstName>
+      <foaf:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EL FASSI</foaf:familyName>
+      <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chiraz</foaf:firstName>
+   </org-ep:Person>
+   <org-ep:Person rdf:about="http://data.europarl.europa.eu/person/102500">
+      <org-ep:hasPersonType rdf:resource="http://data.europarl.europa.eu/authority/person-type/AST-APA-GRP"/>
+      <org-ep:personId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">102500</org-ep:personId>
+      <org-ep:upperFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MERONI</org-ep:upperFamilyName>
+      <org-ep:upperFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GIUSEPPE MARIO</org-ep:upperFirstName>
+      <foaf:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MERONI</foaf:familyName>
+      <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giuseppe Mario</foaf:firstName>
+   </org-ep:Person>
+   <org-ep:Person rdf:about="http://data.europarl.europa.eu/person/27963">
+      <org-ep:hasPersonType rdf:resource="http://data.europarl.europa.eu/authority/person-type/AST-APA-GRP"/>
+      <org-ep:personId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">27963</org-ep:personId>
+      <org-ep:upperFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DESCHAMPS</org-ep:upperFamilyName>
+      <org-ep:upperFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VERONIQUE</org-ep:upperFirstName>
+      <foaf:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DESCHAMPS</foaf:familyName>
+      <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Veronique</foaf:firstName>
+   </org-ep:Person>
+   <org-ep:Person rdf:about="http://data.europarl.europa.eu/person/201873">
+      <org-ep:hasPersonType rdf:resource="http://data.europarl.europa.eu/authority/person-type/AST-APA-GRP"/>
+      <org-ep:personId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">201873</org-ep:personId>
+      <org-ep:upperFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GHESQUIERE</org-ep:upperFamilyName>
+      <org-ep:upperFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BASILE JEAN THEOPHILE</org-ep:upperFirstName>
+      <foaf:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GHESQUIERE</foaf:familyName>
+      <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Basile Jean Theophile</foaf:firstName>
+   </org-ep:Person>
+</rdf:RDF>

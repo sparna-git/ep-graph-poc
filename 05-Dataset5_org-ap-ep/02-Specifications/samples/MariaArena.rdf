@@ -26,7 +26,7 @@
 	<!-- ContactPoint electronic -->
 	<schema:contactPoint>
 		<schema:ContactPoint rdf:about="http://data.europarl.europa.eu/resource/contact-point/electronic/124936/FBP1234">
-			<schema:contactType rdf:resource="http://data.europarl.europa.eu/authority/contact-point-type-type/FBP"/>
+			<schema:contactType rdf:resource="http://data.europarl.europa.eu/authority/contact-point-type/FBP"/>
 			<schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.facebook.com/marie.arena</schema:url>
 		</schema:ContactPoint>
 	</schema:contactPoint>
@@ -65,7 +65,7 @@
 			<ep-org:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
 			<schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-01T00:00:00</schema:endDate>
 			<schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-01T00:00:00</schema:startDate>
-			<org:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/resource/person/124936/membership/11111118"/>
+			<ep-org:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/resource/person/124936/membership/11111118"/>
 			<org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
 		</ep-org:Membership>
 	</org:hasMembership>
@@ -75,10 +75,10 @@
 		<ep-org:Membership rdf:about="http://data.europarl.europa.eu/resource/person/124936/membership/888800002">
 			<ep-org:hasMembershipType rdf:resource="http://data.europarl.europa.eu/authority/membership-type/COMMITTEE"/>
 			<ep-org:hasOrganization rdf:resource="http://data.europarl.europa.eu/resource/org/DROI-123"/>
-			<ep-org:hasparliamentaryterm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
+			<ep-org:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
 			<schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-18T00:00:00</schema:endDate>
 			<schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-01T00:00:00</schema:startDate>
-			<org:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/resource/person/124936/membership/11111118"/>
+			<ep-org:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/resource/person/124936/membership/11111118"/>
 			<org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
 		</ep-org:Membership>
 	</org:hasMembership>
@@ -92,7 +92,7 @@
 			<ep-org:hasParliamentaryTerm rdf:resource="http://data.europarl.europa.eu/authority/parliamentary-term/8"/>
 			<schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-01T00:00:00</schema:endDate>
 			<schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-01T00:00:00</schema:startDate>
-			<org:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/resource/person/124936/membership/11111118"/>
+			<ep-org:hasMembershipBasedOn rdf:resource="http://data.europarl.europa.eu/resource/person/124936/membership/11111118"/>
 			<org:role rdf:resource="http://data.europarl.europa.eu/authority/function/MEF"/>
 		</ep-org:Membership>
 	</org:hasMembership>
