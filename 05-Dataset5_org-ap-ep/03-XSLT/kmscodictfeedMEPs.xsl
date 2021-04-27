@@ -57,12 +57,14 @@
 				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 				<xsl:value-of select="upperFirstName" />
 			</ep-org:upperFirstName>
+			
 			<xsl:if test="birthDate != ''">
 				<schema:birthDate
 					rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
 					<xsl:value-of select="birthDate" />
 				</schema:birthDate>
 			</xsl:if>
+			
 			<foaf:familyName
 				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 				<xsl:value-of select="familyName" />
@@ -220,18 +222,13 @@
 					</ep-org:officeId>
 					
 					<!-- Setup addressCountry and contact type and addressLocality depending on town code : STR or BRU -->
-					<!--
-					<xsl:variable name="country_code" select="ep-org:Lookup_COUNTRY_ID(normalize-space(townId))"/>
-					 -->
 					<xsl:choose>
 						<xsl:when test="townCode = 'BRU'">
 							<schema:addressCountry rdf:resource="{ep-org:URI-COUNTRY('FRA')}" />
-							<schema:contactType rdf:resource="{ep-org:URI-CONTACT_POINT_TYPE_PLACE(townCode)}" />
 							<schema:addressLocality rdf:resource="{ep-org:URI-PublicationsLOCALITY('BEL_BRU')}" />	
 						</xsl:when>
 						<xsl:when test="townCode = 'STR'">
 							<schema:addressCountry rdf:resource="{ep-org:URI-COUNTRY('BEL')}" />
-							<schema:contactType rdf:resource="{ep-org:URI-CONTACT_POINT_TYPE_PLACE(townCode)}" />
 							<schema:addressLocality rdf:resource="{ep-org:URI-PublicationsLOCALITY('FRA_SXB')}" />	
 						</xsl:when>
 						<xsl:otherwise>
@@ -333,7 +330,7 @@
 							<xsl:value-of select="'NATIONAL-PARTY'" />
 						</xsl:when>
 						<xsl:otherwise>
-							<xsl:message>Cannot determine membership type. typeOrganeCode=<xsl:value-of select="typeOrganeCode" /> and bodyType=<xsl:value-of select="bodyType" /> </xsl:message>
+							<xsl:message>Cannot determine membership type from typeOrganeCode '<xsl:value-of select="typeOrganeCode" />' </xsl:message>
 						</xsl:otherwise>
 					</xsl:choose>
 				</xsl:variable>
@@ -369,13 +366,14 @@
 					<xsl:variable name="startDate_function"	select="startDateTime" />
 					<xsl:variable name="endDate_function" select="endDateTime" />
 					<xsl:variable name="mandateId" select="../../mandates/item[$startDate_function &gt;= startDateTime and $endDate_function &lt;= endDateTime]/mandateId"/>
+					
 					<xsl:choose>
 						<xsl:when test="$mandateId != ''">
 							<ep-org:hasMembershipBasedOn
 							rdf:resource="{ep-org:URI-MEMBERSHIP(memberIdentifier,$mandateId)}" />
 						</xsl:when>
 						<xsl:otherwise>
-							<xsl:message>Warning : cannot find the mandates id encompassing "<xsl:value-of select="$startDate_function" />" and "<xsl:value-of select="$endDate_function" />" function id "<xsl:value-of select="identifier"/>"</xsl:message>	
+							<xsl:message>Warning : cannot find the mandate id encompassing "<xsl:value-of select="$startDate_function" />" and "<xsl:value-of select="$endDate_function" />", MEP <xsl:value-of select="../../identifier"/> function id <xsl:value-of select="identifier"/></xsl:message>	
 						</xsl:otherwise>
 					</xsl:choose>
 					

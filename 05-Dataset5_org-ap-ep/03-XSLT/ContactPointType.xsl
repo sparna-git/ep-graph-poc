@@ -34,6 +34,8 @@
 	</xsl:template>
 
 	<xsl:template match="all/item">
+	
+		<!-- 
 		<xsl:variable name="sTypeContactPoint">
 			<xsl:choose>
 				<xsl:when test="groupCode = 'VIRTUAL'">
@@ -46,8 +48,9 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
+		 -->
 
-		<skos:Concept rdf:about="{$sTypeContactPoint}">
+		<skos:Concept rdf:about="ep-org:URI-CONTACT_POINT_TYPE_ELECTRONIC(encode-for-uri(normalize-space(addtCode)))">
 			<rdf:type rdf:resource="http://data.europarl.europa.eu/ontology/org-ep#ContactPointType" />
 
 			<dc:identifier>
