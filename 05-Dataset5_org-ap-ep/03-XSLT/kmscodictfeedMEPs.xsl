@@ -202,7 +202,7 @@
 			select="item[normalize-space(address) != '']">
 			<schema:contactPoint>
 				<schema:ContactPoint
-					rdf:about="{org-ep:URI-ContactPoint-Electronic(ancestor::item/identifier,concat(addressCodeType,order))}">
+					rdf:about="{org-ep:URI-ContactPoint-Electronic(ancestor::item/identifier,concat(addressCodeType,generate-id(.)))}">
 					<schema:contactType
 						rdf:resource="{org-ep:URI-CONTACT_POINT_TYPE_ELECTRONIC(addressCodeType)}" />
 					<schema:url
@@ -235,12 +235,14 @@
 					 -->
 					<xsl:choose>
 						<xsl:when test="townCode = 'BRU'">
-							<schema:addressCountry rdf:resource="{org-ep:URI-COUNTRY('FRA')}" />
-							<schema:addressLocality rdf:resource="{org-ep:URI-PublicationsLOCALITY('BEL_BRU')}" />	
+							<schema:addressCountry rdf:resource="{org-ep:URI-COUNTRY('BEL')}" />
+							<schema:addressLocality rdf:resource="{org-ep:URI-PublicationsLOCALITY('BEL_BRU')}" />
+							<org-ep:hasSite rdf:resource="{org-ep:URI-PublicationsSITE('ASP')}" />
 						</xsl:when>
 						<xsl:when test="townCode = 'STR'">
-							<schema:addressCountry rdf:resource="{org-ep:URI-COUNTRY('BEL')}" />
+							<schema:addressCountry rdf:resource="{org-ep:URI-COUNTRY('FRA')}" />
 							<schema:addressLocality rdf:resource="{org-ep:URI-PublicationsLOCALITY('FRA_SXB')}" />	
+							<org-ep:hasSite rdf:resource="{org-ep:URI-PublicationsSITE('LOW')}" />
 						</xsl:when>
 						<xsl:otherwise>
 							<xsl:message>Unexpected townCode in addresses : <xsl:value-of select="townCode" /></xsl:message>
