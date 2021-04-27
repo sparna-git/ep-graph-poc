@@ -78,12 +78,11 @@
 			</xsl:if>			
 		</xsl:variable>
 		
-		<!-- always generate organization type -->
-		<org-ep:hasOrganizationType rdf:resource="{org-ep:URI-OrganizationType(.)}"/>
-		
 		<xsl:if test="$var_corporateBody != ''">
 			<org-ep:hasCorporateBody rdf:resource="{$var_corporateBody}"/>
 		</xsl:if>
+		
+		<!-- always generate organization type -->
 		<org-ep:hasOrganizationType rdf:resource="{org-ep:URI-OrganizationType(encode-for-uri(normalize-space($bodyTypeOrg)))}"/> 
 	</xsl:template>
 
