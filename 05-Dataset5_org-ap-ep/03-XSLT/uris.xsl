@@ -306,7 +306,8 @@
 		<xsl:param name="p_StartDate"/>
 		<xsl:param name="p_EndDate"/>
 		<!-- cf https://stackoverflow.com/questions/28225257/how-to-subtract-1-day-calculate-day-before-in-xslt-2-0 -->
-		
+		<xsl:variable name="StartDateParliamentaryTerm" select="$parliamentaryTerm_file/startDate" as="xsd:dateTime+"/>
+		<xsl:variable name="minStartDate" select="min($StartDateParliamentaryTerm)" as="xsd:dateTime"/>
 		<xsl:variable name="period_ParliamentaryTerm" select="$parliamentaryTerm_file[			
 					xsd:dateTime(startDate) &lt;= xsd:dateTime($p_StartDate)			
 					and			
@@ -318,13 +319,15 @@
 		<xsl:choose>
 			<xsl:when test="count($period_ParliamentaryTerm) = 0">
 				<xsl:message>Warning : cannot find the parliamentary term encompassing "<xsl:value-of select="$p_StartDate" />" and "<xsl:value-of select="$p_EndDate" />" </xsl:message>
+				<xsl:if test="format-dateTime($p_StartDate,'[Y0001]') &lt; format-dateTime($minStartDate,'[Y0001]')">
+					<xsl:value-of select="0"/>
+				</xsl:if>				
 			</xsl:when>
 			<xsl:when test="count($period_ParliamentaryTerm) > 1">
 				<xsl:variable name="period_ParliamentaryTerm_" select="$parliamentaryTerm_file[			
 					xsd:dateTime(startDate) &lt;= xsd:dateTime($p_StartDate)			
 					and			
-					xsd:dateTime(endDate) &gt;= xsd:dateTime($p_EndDate)]"/>
-				
+					xsd:dateTime(endDate) &gt;= xsd:dateTime($p_EndDate)]"/>				
 				<xsl:message>Warning : find <xsl:value-of select="count($period_ParliamentaryTerm)" /> periods "<xsl:value-of select="$p_StartDate" />" and "<xsl:value-of select="$p_EndDate" />"  - Don't know which one to take.</xsl:message>
 				<xsl:value-of select="$period_ParliamentaryTerm_[1]/order"/>
 			</xsl:when>
