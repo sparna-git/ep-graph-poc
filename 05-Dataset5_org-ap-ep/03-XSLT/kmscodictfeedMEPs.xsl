@@ -43,6 +43,8 @@
 			<xsl:variable name="lastdateMandate" select="mandates[1]/item/endDateTime" as="xs:dateTime+"/>
 			<xsl:variable name="lastyear" select="max($lastdateMandate)" as="xs:dateTime"/>
 			
+			<!-- Generate dateEndActivity by finding the last endDate of the past mandates -->
+			<!-- Only if mandate is not ongoing -->
 			<xsl:if test="format-dateTime($lastyear,'[Y0001]') &lt; format-date(current-date(),'[Y0001]')">
 				<org-ep:dateEndActivity
 					rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
@@ -50,20 +52,55 @@
 				</org-ep:dateEndActivity>
 			</xsl:if>
 			
-			
-			
 			<org-ep:personId
 				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 				<xsl:value-of select="identifier" />
 			</org-ep:personId>
-			<org-ep:upperFamilyName
+			
+			<!-- First names -->
+			<foaf:firstName
 				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-				<xsl:value-of select="upperFamilyName" />
-			</org-ep:upperFamilyName>
+				<xsl:value-of select="firstName" />
+			</foaf:firstName>
 			<org-ep:upperFirstName
 				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 				<xsl:value-of select="upperFirstName" />
 			</org-ep:upperFirstName>
+			<xsl:if test="nonLatinFirstName != ''">
+				<org-ep:officialFirstName
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+					<xsl:value-of select="nonLatinFirstName" />
+				</org-ep:officialFirstName>
+			</xsl:if>
+			<xsl:if test="upperNonLatinFirstName != ''">
+				<org-ep:officialUpperFirstName
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+					<xsl:value-of select="upperNonLatinFirstName" />
+				</org-ep:officialUpperFirstName>
+			</xsl:if>
+			
+			<!-- Family names -->
+			<foaf:familyName
+				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+				<xsl:value-of select="familyName" />
+			</foaf:familyName>	
+			<org-ep:upperFamilyName
+				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+				<xsl:value-of select="upperFamilyName" />
+			</org-ep:upperFamilyName>
+			<xsl:if test="nonLatinFamilyName != ''">
+				<org-ep:officialFamilyName
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+					<xsl:value-of select="nonLatinFamilyName" />
+				</org-ep:officialFamilyName>
+			</xsl:if>
+			<xsl:if test="upperNonLatinFamilyName != ''">
+				<org-ep:officialUpperFamilyName
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+					<xsl:value-of select="upperNonLatinFamilyName" />
+				</org-ep:officialUpperFamilyName>
+			</xsl:if>		
+
 
 			<xsl:if test="birthDate != ''">
 				<schema:birthDate
@@ -72,14 +109,7 @@
 				</schema:birthDate>
 			</xsl:if>
 			
-			<foaf:familyName
-				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-				<xsl:value-of select="familyName" />
-			</foaf:familyName>
-			<foaf:firstName
-				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-				<xsl:value-of select="firstName" />
-			</foaf:firstName>
+			
 			<foaf:img
 				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 				<xsl:value-of select="org-ep:URI-MEPPHOTO(identifier)" />
@@ -109,8 +139,7 @@
 		</org-ep:MEP>
 
 		<!-- After MEP, generate the Assistant membership -->
-		<xsl:apply-templates select="assistants/item"
-			mode="membership" />
+		<xsl:apply-templates select="assistants/item" mode="membership" />
 	</xsl:template>
 
 	<!-- Assistants references through memberships -->
