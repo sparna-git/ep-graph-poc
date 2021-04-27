@@ -4,8 +4,8 @@
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-	xmlns:ep-org="http://data.europarl.europa.eu/ontology/ep-org#"
-	xmlns:scheme="http://data.europarl.europa.eu/authority/"
+	xmlns:org-ep="http://data.europarl.europa.eu/ontology/org-ep#"
+	xmlns:ep-aut="http://data.europarl.europa.eu/authority/"
 	xmlns:schema="http://schema.org/" exclude-result-prefixes="xsl">
 
 	<!-- Import URI stylesheet -->
@@ -15,7 +15,7 @@
 	<xsl:output indent="yes" method="xml" />
 
 	<xsl:variable name="SCHEME_URI"
-		select="ep-org:URI-Authority('function')" />
+		select="org-ep:URI-Authority('function')" />
 
 	<xsl:template match="/">
 		<rdf:RDF>
@@ -34,7 +34,7 @@
 
 	<xsl:template match="all/item">
 		<skos:Concept
-			rdf:about="{ep-org:URI-FUNCTION(referenceCode)}">
+			rdf:about="{org-ep:URI-FUNCTION(referenceCode)}">
 			<rdf:type rdf:resource="http://www.w3.org/ns/org#Role" />
 
 			<xsl:if test="string-length(normalize-space(tmsCode)) &gt; 0">
@@ -49,10 +49,10 @@
 				</rdfs:comment>
 			</xsl:if>
 
-			<ep-org:identifier
+			<org-ep:identifier
 				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 				<xsl:value-of select="orderSeq" />
-			</ep-org:identifier>
+			</org-ep:identifier>
 
 			<skos:notation>
 				<xsl:value-of select="orderSeq" />

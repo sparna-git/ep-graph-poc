@@ -4,8 +4,8 @@
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-	xmlns:ep-org="http://data.europarl.europa.eu/ontology/ep-org#"
-	xmlns:scheme="http://data.europarl.europa.eu/authority/"
+	xmlns:org-ep="http://data.europarl.europa.eu/ontology/org-ep#"
+	xmlns:ep-aut="http://data.europarl.europa.eu/authority/"
 	xmlns:schema="http://schema.org/" exclude-result-prefixes="xsl"
 	xmlns:dc="http://purl.org/dc/elements/1.1/">
 
@@ -16,7 +16,7 @@
 	<xsl:output indent="yes" method="xml" />
 
 	<xsl:variable name="SCHEME_URI"
-		select="ep-org:URI-Authority('contact-point-type')" />
+		select="org-ep:URI-Authority('contact-point-type')" />
 
 	<xsl:template match="/">
 		<rdf:RDF>
@@ -40,11 +40,11 @@
 			<xsl:choose>
 				<xsl:when test="groupCode = 'VIRTUAL'">
 					<xsl:value-of
-						select="ep-org:URI-CONTACT_POINT_TYPE_ELECTRONIC(encode-for-uri(normalize-space(addtCode)))" />
+						select="org-ep:URI-CONTACT_POINT_TYPE_ELECTRONIC(encode-for-uri(normalize-space(addtCode)))" />
 				</xsl:when>
 				<xsl:otherwise>
 					<xsl:value-of
-						select="ep-org:URI-CONTACT_POINT_TYPE_PLACE(encode-for-uri(normalize-space(addtCode)))" />
+						select="org-ep:URI-CONTACT_POINT_TYPE_PLACE(encode-for-uri(normalize-space(addtCode)))" />
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
