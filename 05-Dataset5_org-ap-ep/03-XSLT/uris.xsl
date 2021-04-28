@@ -120,7 +120,15 @@
 	</xsl:function>
 
 
-	<!-- MANDAT  -->
+	<!-- MANDATE  -->
+	
+	<!-- URI MEMBERSHIP MANDATE -->	
+	<xsl:function name="org-ep:URI-MEMBERSHIPMANDATE">
+		<xsl:param name="mepId" />
+		<xsl:param name="mandateId" />
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/resource/person/',$mepId,'/membership-mandate/', $mandateId)" />
+	</xsl:function>
+
 
 	<!-- URI CONSTITUENCY  -->
 	<xsl:function name="org-ep:URI-CONSTITUENCY">

@@ -294,9 +294,8 @@
 	<!-- Mandat -->
 	<xsl:template match="mandates">
 		<xsl:for-each select="item">
-			<org:hasMembership>
-				<org-ep:Membership
-					rdf:about="{org-ep:URI-MEMBERSHIP(personId,mandateId)}">
+				
+				<org-ep:MembershipMandate rdf:about="{org-ep:URI-MEMBERSHIPMANDATE(personId,mandateId)}">
 					
 					<org-ep:hasMembershipType
 							rdf:resource="{org-ep:URI-MembershipType('MANDATE')}" />
@@ -316,7 +315,6 @@
 							rdf:resource="{org-ep:URI-PARLIAMENTARY_TERM($ptId)}" />
 					</xsl:if>
 
-
 					<dc:identifier
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 						<xsl:value-of select="mandateId" />
@@ -328,9 +326,15 @@
 					<schema:startDate
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
 						<xsl:value-of select="startDateTime" />
-					</schema:startDate>					
-				</org-ep:Membership>
-			</org:hasMembership>
+					</schema:startDate>	
+					
+					<xsl:if test="string-length(normalize-space(../../seatBru)) &gt; 0">
+						<org-ep:MemberSeatBru><xsl:value-of select="../../seatBru"/></org-ep:MemberSeatBru> 
+					</xsl:if>
+					<xsl:if test="string-length(normalize-space(../../seatStr)) &gt; 0">
+						<org-ep:MembeSeatStr><xsl:value-of select="../../seatStr"/></org-ep:MembeSeatStr>					
+					</xsl:if>
+				</org-ep:MembershipMandate>					
 		</xsl:for-each>
 	</xsl:template>
 
@@ -399,22 +403,7 @@
 					<schema:startDate
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
 						<xsl:value-of select="startDateTime" />
-					</schema:startDate>
-					
-					<xsl:variable name="startDate_function"	select="startDateTime" />
-					<xsl:variable name="endDate_function" select="endDateTime" />
-					<xsl:variable name="mandateId" select="../../mandates/item[$startDate_function &gt;= startDateTime and $endDate_function &lt;= endDateTime]/mandateId"/>
-					
-					<xsl:choose>
-						<xsl:when test="$mandateId != ''">
-							<org-ep:hasMembershipBasedOn
-							rdf:resource="{org-ep:URI-MEMBERSHIP(memberIdentifier,$mandateId)}" />
-						</xsl:when>
-						<xsl:otherwise>
-							<xsl:message>Warning : cannot find the mandate id encompassing "<xsl:value-of select="$startDate_function" />" and "<xsl:value-of select="$endDate_function" />", MEP <xsl:value-of select="../../identifier"/> function id <xsl:value-of select="identifier"/></xsl:message>	
-						</xsl:otherwise>
-					</xsl:choose>
-					
+					</schema:startDate>							
 					
 					<org:role
 						rdf:resource="{org-ep:URI-FUNCTION(functionCode)}" />
