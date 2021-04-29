@@ -17,5 +17,5 @@ do
    	 java -Xmx2048M -jar saxon-he-10.1.jar \
 		-s:$INPUT_DIR/$FILENAME.xml \
 		-o:$OUTPUT_DIR/$FILENAME.rdf \
-		-xsl:$XSLT_DIR/$FILENAME.xsl &>> convert-$DATASET_NAME.log
+		-xsl:$XSLT_DIR/$FILENAME.xsl | tee convert-$DATASET_NAME.log
 done

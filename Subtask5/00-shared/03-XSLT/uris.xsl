@@ -208,6 +208,33 @@
 		<xsl:value-of select="concat(org-ep:URI-Authority('political-group-body/'), $inData)"/>
 	</xsl:function>
  	
+ 	
+ 	<!-- ***** Activities ***** -->
+ 	
+ 	<!-- Generates a LegislationActivity URI from procedure reference, e.g. 'COD-2018-0436', + activity ID -->
+ 	<xsl:function name="org-ep:URI-LegislativeActivity">
+		<xsl:param name="reference" />
+		<xsl:param name="activityId" />
+		<xsl:value-of select="concat(org-ep:URI-LegislativeProcess($reference), '/event/', $activityId)"/>
+	</xsl:function> 	
+ 	
+ 	<!-- Generates a LegislationProcess URI from reference, e.g. 'COD-2018-0436' -->
+ 	<xsl:function name="org-ep:URI-LegislativeProcess">
+		<xsl:param name="reference" />
+		<xsl:variable name="year" select="tokenize($reference,'-')[2]" />
+		<xsl:variable name="number" select="tokenize($reference,'-')[3]" />
+		<xsl:variable name="type" select="lower-case(tokenize($reference,'-')[1])" />
+		<xsl:value-of select="org-ep:URI-LegislativeProcess($year,$number,$type)"/>
+	</xsl:function>
+ 	
+ 	<!-- Generates a LegislationProcess URI from year, number, type -->
+ 	<xsl:function name="org-ep:URI-LegislativeProcess">
+		<xsl:param name="year" />
+		<xsl:param name="number" />
+		<xsl:param name="type" />		
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/eli/dl/',$year,'/',$number,'/',$type)" />
+	</xsl:function>
+ 	
  	<!-- ***** Primitive methods ***** -->
 
 	<!-- URI VOCABULARY -->
@@ -222,7 +249,7 @@
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/', $uriAutority)" />
 	</xsl:function>
 
-	<!-- URI EPONTO -->
+	<!-- URI of a Controlled Vocabulary -->
 	<xsl:function name="org-ep:URI-CVEPONTO">
 		<xsl:param name="cvId" />
 		<xsl:value-of select="org-ep:URI-ONTOLOGY($cvId)" />
