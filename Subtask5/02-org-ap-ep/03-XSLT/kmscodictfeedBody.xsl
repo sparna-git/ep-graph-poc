@@ -34,7 +34,7 @@
 	<xsl:template match="all/item">
 		<org-ep:Organization rdf:about="{org-ep:URI-Organization(bodyCode, encode-for-uri(normalize-space(bodyId)))}">		
 			<skos:inScheme rdf:resource="{$SCHEME_URI}" />
-			<xsl:apply-templates/>
+			<xsl:apply-templates/>			
 		</org-ep:Organization>
 	</xsl:template>
 
@@ -48,28 +48,28 @@
 					<xsl:when
 						test="index-of(('CO','CI','SC','CE','CT','CJ','CM'),$bodyTypeOrg)">
 						<xsl:value-of
-							select="org-ep:URI-COMMITTEEBODY(encode-for-uri(normalize-space($bodyTypeOrg)))" />
+							select="org-ep:URI-COMMITTEEBODY(encode-for-uri(normalize-space(../bodyCode)))" />
 					</xsl:when>
 					<!-- DelegationBody -->
 					<xsl:when
 						test="index-of(('AP','DA','DE','DH','DM'),$bodyTypeOrg)">	
 						<xsl:value-of
-							select="org-ep:URI-DELEGATIONBODY(encode-for-uri(normalize-space($bodyTypeOrg)))" />
+							select="org-ep:URI-DELEGATIONBODY(encode-for-uri(normalize-space(../bodyCode)))" />
 					</xsl:when>
 					<!-- InstitutionBody -->
 					<xsl:when test="$bodyTypeOrg='PE'">
 						<xsl:value-of
-							select="org-ep:URI-INSTITUTIONBODY(encode-for-uri(normalize-space($bodyTypeOrg)))" />
+							select="org-ep:URI-INSTITUTIONBODY(encode-for-uri(normalize-space(../bodyCode)))" />
 					</xsl:when>
 					<!-- PoliticalGroupBody -->
 					<xsl:when test="$bodyTypeOrg='GP'">
 						<xsl:value-of
-							select="org-ep:URI-POLITICALGROUPBODY(encode-for-uri(normalize-space($bodyTypeOrg)))" />
+							select="org-ep:URI-POLITICALGROUPBODY(encode-for-uri(normalize-space(../bodyCode)))" />
 					</xsl:when>
 					<!-- GovernanceBody -->
 					<xsl:when test="index-of(('BU','OD'),$bodyTypeOrg)">
 						<xsl:value-of
-							select="org-ep:URI-GOVERNANCEBODY(encode-for-uri(normalize-space($bodyTypeOrg)))" />
+							select="org-ep:URI-GOVERNANCEBODY(encode-for-uri(normalize-space(../bodyCode)))" />
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:message>Warning: bodyType "<xsl:value-of select="$bodyTypeOrg"/>" is unknown to generate hasCorporateBody.</xsl:message>
@@ -83,7 +83,7 @@
 		</xsl:if>
 		
 		<!-- always generate organization type -->
-		<org-ep:hasOrganizationType rdf:resource="{org-ep:URI-OrganizationType(encode-for-uri(normalize-space($bodyTypeOrg)))}"/> 
+		<org-ep:hasOrganizationType rdf:resource="{org-ep:URI-OrganizationType(encode-for-uri(normalize-space(.)))}"/> 
 	</xsl:template>
 
 	<xsl:template match="bodyId">
