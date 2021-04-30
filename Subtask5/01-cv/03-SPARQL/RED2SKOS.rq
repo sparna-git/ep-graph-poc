@@ -1,0 +1,53 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reds: <http://redmap.europa.eu/schema/v1-0#>
+PREFIX red: <http://redmap.europa.eu/v1-0#>
+PREFIX dct: <http://purl.org/dc/terms/>
+CONSTRUCT {
+	?scheme a skos:ConceptScheme .
+	?scheme skos:prefLabel $schemeCode .
+	?scheme dct:source ?sourceNote .
+
+	?concept a skos:Concept .
+	?concept rdfs:label ?label .
+	?concept skos:prefLabel ?prefLabel .
+	?concept skos:inScheme ?scheme .
+	?concept skos:notation ?code .
+} WHERE {
+	# VALUES mapping at the beginning so variables are available after - strange
+	VALUES ($red $schemeCode) {("RED_VALUE" "AUTHORITY_VALUE")}
+
+	# build scheme URI
+	BIND(IRI(CONCAT("http://data.europarl.europa.eu/authority/",$schemeCode)) AS ?scheme) .
+
+	# find everything with a label that has a URI that starts with what we are looking for
+	?s rdfs:label ?label .
+	OPTIONAL {
+		?s reds:display ?prefLabel .
+	}
+
+
+	FILTER(
+		STRSTARTS(STR(?s),CONCAT("http://redmap.europa.eu/v1-0#",$red, "_"))
+		||
+		STRSTARTS(STR(?s),CONCAT("http://redmap.europa.eu/schema/v1-0#",$red, "_"))
+	)
+
+	BIND(STRAFTER(STR(?s), "#") AS ?afterDash)
+
+	BIND(
+		IF(
+			STRLEN(?afterDash) > (STRLEN($red) + 1),
+			STRAFTER(?afterDash, CONCAT($red,"_")),
+			# handle the case where we have only an underscore after the root, and nothing else
+			STRAFTER(?afterDash, $red)
+		)
+		AS ?code
+	)
+
+	# recreate a nice concept URI
+	BIND(IRI(CONCAT(STR(?scheme), "/", ?code)) AS ?concept) .
+
+	# and a nice note on the ConceptScheme
+	BIND(STRLANG(CONCAT("Extracted from RED : ",$red), "en") AS ?sourceNote)
+}
