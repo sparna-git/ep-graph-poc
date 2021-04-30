@@ -232,7 +232,7 @@
 		<xsl:param name="year" />
 		<xsl:param name="number" />
 		<xsl:param name="type" />		
-		<xsl:value-of select="concat('http://data.europarl.europa.eu/eli/dl/',$year,'/',$number,'/',$type)" />
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/eli/dl/proc/',$year,'/',$number,'/',$type)" />
 	</xsl:function>
  	
  	<!-- ***** Primitive methods ***** -->
