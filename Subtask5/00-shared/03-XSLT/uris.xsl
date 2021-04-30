@@ -45,6 +45,13 @@
 		<xsl:param name="organeId"/>
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/org/', encode-for-uri($organeCode),'-',$organeId)" />
 	</xsl:function>
+	
+	<!-- URI sub Organisation -->
+	<xsl:function name="org-ep:URI-subOrganization">
+		<xsl:param name="organeId"/>
+		<xsl:param name="organeBody"/>				
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/resource/org/', encode-for-uri($organeId),'-',$organeBody)" />
+	</xsl:function>
 
 	<!-- URI Person Type -->
 	<xsl:function name="org-ep:URI-PersonType">

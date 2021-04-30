@@ -7,7 +7,9 @@
 	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 	xmlns:org-ep="http://data.europarl.europa.eu/ontology/org-ep#"
 	xmlns:ep-aut="http://data.europarl.europa.eu/authority/"
-	xmlns:schema="http://schema.org/" exclude-result-prefixes="xsl">
+	xmlns:schema="http://schema.org/" exclude-result-prefixes="xsl"
+	xmlns:org="http://www.w3.org/ns/org#"
+	xmlns:dct="http://purl.org/dc/terms/">
 
 	<!-- Import URI stylesheet -->
 	<xsl:import href="../../00-shared/03-XSLT/uris.xsl" />
@@ -28,14 +30,16 @@
 		<skos:ConceptScheme rdf:about="{$SCHEME_URI}">
 			<skos:prefLabel xml:lang="en">Organization</skos:prefLabel>
 		</skos:ConceptScheme>
-		<xsl:apply-templates />
+		<xsl:apply-templates />					
 	</xsl:template>
 
 	<xsl:template match="all/item">
-		<org-ep:Organization rdf:about="{org-ep:URI-Organization(bodyCode, encode-for-uri(normalize-space(bodyId)))}">		
-			<skos:inScheme rdf:resource="{$SCHEME_URI}" />
-			<xsl:apply-templates/>
-		</org-ep:Organization>
+		<xsl:if test="count(parentBodyId) = 0">
+			<org-ep:Organization rdf:about="{org-ep:URI-Organization(bodyCode, encode-for-uri(normalize-space(bodyId)))}">		
+				<skos:inScheme rdf:resource="{$SCHEME_URI}" />				 
+				<xsl:apply-templates/>
+			</org-ep:Organization>
+		</xsl:if>			
 	</xsl:template>
 
 	<xsl:template match="bodyType">
@@ -87,9 +91,28 @@
 	</xsl:template>
 
 	<xsl:template match="bodyId">
-		<dc:identifier><xsl:value-of select="normalize-space(.)" /></dc:identifier>
+		<xsl:variable name="idbodyId" select="normalize-space(.)"/>
+		<dc:identifier><xsl:value-of select="$idbodyId" /></dc:identifier>
+		
+		<!-- This build the org:subOrganizationOf -->
+		<xsl:for-each select="/all/item[parentBodyId = $idbodyId]">
+			<xsl:variable name="bodyParentId" select="bodyId"/>
+			<xsl:variable name="idCodeParent" select="/all/item[bodyId=$bodyParentId]/bodyCode"/>
+			<xsl:if test="$idCodeParent!=''">
+				<org:subOrganizationof rdf:resource="{org-ep:URI-subOrganization(encode-for-uri($idCodeParent),normalize-space($idbodyId))}"/>
+			</xsl:if>			
+		</xsl:for-each>
+		
+		
+		<!-- This build the dct:hasPart -->
+		<xsl:for-each select="/all/item[parentBodyId=$idbodyId]">			
+			<xsl:if test="string-length(normalize-space(bodyCode)) &gt; 0">
+				<dct:hasPart rdf:resource="{org-ep:URI-subOrganization(encode-for-uri(bodyCode),$idbodyId)}"/>
+			</xsl:if>
+		</xsl:for-each>		
 	</xsl:template>
 	
+		
 	<xsl:template match="bodyCode">
 		<skos:notation rdf:datatype="http://data.europarl.europa.eu/authority/notation-type/codict/bodycode"><xsl:value-of select="normalize-space(.)" /></skos:notation>
 		<!-- also look for mnemoCode here -->
