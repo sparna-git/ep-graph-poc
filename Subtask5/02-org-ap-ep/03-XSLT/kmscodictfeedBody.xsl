@@ -32,7 +32,17 @@
 	</xsl:template>
 
 	<xsl:template match="all/item">
-		<org-ep:Organization rdf:about="{org-ep:URI-Organization(bodyCode, encode-for-uri(normalize-space(bodyId)))}">		
+		<!-- look for the bodyCode on the first label because some bodyCode are missing -->
+		<xsl:variable name="theBodyCode" select="descriptions/item[1]/bodyCode" />
+		<org-ep:Organization rdf:about="{org-ep:URI-Organization($theBodyCode, encode-for-uri(normalize-space(bodyId)))}">
+			
+			<!-- Generate skos notations -->
+			<skos:notation rdf:datatype="http://data.europarl.europa.eu/authority/notation-type/codict/bodycode"><xsl:value-of select="normalize-space($theBodyCode)" /></skos:notation>
+			<!-- also look for mnemoCode here -->
+			<skos:notation rdf:datatype="http://data.europarl.europa.eu/authority/notation-type/codict/mnemocode"><xsl:value-of select="normalize-space(descriptions/item[1]/mnemoCode)" /></skos:notation>
+			<!--  Open Data code -->
+			<skos:notation rdf:datatype="http://data.europarl.europa.eu/authority/notation-type/od"><xsl:value-of select="normalize-space($theBodyCode)" /></skos:notation>	
+			
 			<skos:inScheme rdf:resource="{$SCHEME_URI}" />
 			<xsl:apply-templates/>			
 		</org-ep:Organization>
@@ -48,28 +58,28 @@
 					<xsl:when
 						test="index-of(('CO','CI','SC','CE','CT','CJ','CM'),$bodyTypeOrg)">
 						<xsl:value-of
-							select="org-ep:URI-COMMITTEEBODY(encode-for-uri(normalize-space(../bodyCode)))" />
+							select="org-ep:URI-COMMITTEEBODY(encode-for-uri(normalize-space(../descriptions/item[1]/bodyCode)))" />
 					</xsl:when>
 					<!-- DelegationBody -->
 					<xsl:when
 						test="index-of(('AP','DA','DE','DH','DM'),$bodyTypeOrg)">	
 						<xsl:value-of
-							select="org-ep:URI-DELEGATIONBODY(encode-for-uri(normalize-space(../bodyCode)))" />
+							select="org-ep:URI-DELEGATIONBODY(encode-for-uri(normalize-space(../descriptions/item[1]/bodyCode)))" />
 					</xsl:when>
 					<!-- InstitutionBody -->
 					<xsl:when test="$bodyTypeOrg='PE'">
 						<xsl:value-of
-							select="org-ep:URI-INSTITUTIONBODY(encode-for-uri(normalize-space(../bodyCode)))" />
+							select="org-ep:URI-INSTITUTIONBODY(encode-for-uri(normalize-space(../descriptions/item[1]/bodyCode)))" />
 					</xsl:when>
 					<!-- PoliticalGroupBody -->
 					<xsl:when test="$bodyTypeOrg='GP'">
 						<xsl:value-of
-							select="org-ep:URI-POLITICALGROUPBODY(encode-for-uri(normalize-space(../bodyCode)))" />
+							select="org-ep:URI-POLITICALGROUPBODY(encode-for-uri(normalize-space(../descriptions/item[1]/bodyCode)))" />
 					</xsl:when>
 					<!-- GovernanceBody -->
 					<xsl:when test="index-of(('BU','OD'),$bodyTypeOrg)">
 						<xsl:value-of
-							select="org-ep:URI-GOVERNANCEBODY(encode-for-uri(normalize-space(../bodyCode)))" />
+							select="org-ep:URI-GOVERNANCEBODY(encode-for-uri(normalize-space(../descriptions/item[1]/bodyCode)))" />
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:message>Warning: bodyType "<xsl:value-of select="$bodyTypeOrg"/>" is unknown to generate hasCorporateBody.</xsl:message>
@@ -88,13 +98,6 @@
 
 	<xsl:template match="bodyId">
 		<dc:identifier><xsl:value-of select="normalize-space(.)" /></dc:identifier>
-	</xsl:template>
-	
-	<xsl:template match="bodyCode">
-		<skos:notation rdf:datatype="http://data.europarl.europa.eu/authority/notation-type/codict/bodycode"><xsl:value-of select="normalize-space(.)" /></skos:notation>
-		<!-- also look for mnemoCode here -->
-		<skos:notation rdf:datatype="http://data.europarl.europa.eu/authority/notation-type/codict/mnemocode"><xsl:value-of select="normalize-space(../descriptions/item[1]/mnemoCode)" /></skos:notation>
-		<!--  OD code ? -->
 	</xsl:template>
 
 	<xsl:template match="endDateTime">
