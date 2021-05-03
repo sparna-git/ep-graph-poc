@@ -241,6 +241,63 @@
 		<xsl:param name="type" />		
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/eli/dl/proc/',$year,'/',$number,'/',$type)" />
 	</xsl:function>
+	
+	<!-- Generate a LegislationProcess URI from type, e.g. 'DirContProc_cod' -->
+	<xsl:function name="org-ep:URI-LegislativeProcessType">
+		<xsl:param name="hasType" />
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/legislative-process-type/',$hasType)" />
+	</xsl:function>
+	
+	<!-- Generate a LegislationProcess URI from nature, e.g. 'red:DirContProcNat-LEG' -->
+	<xsl:function name="org-ep:URI-LegislativeProcessNature">
+		<xsl:param name="hasNature" />
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/legislative-process-nature/',$hasNature)" />
+	</xsl:function>
+	
+	<!-- Generate a LegislationProcess URI from phase and subphase, e.g. 'red:Phase_08' -->
+	<xsl:function name="org-ep:URI-LegislativeProcessStage">
+		<xsl:param name="hasStage" />
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/activity-stage/',$hasStage)" />
+	</xsl:function>
+	
+	<!-- Generate a LegislationProcees URI from Readin -->
+	<xsl:function name="org-ep:URI-LegislativeProcessActiviteType">
+		<xsl:param name="hasReading" />
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/activity-type/',upper-case($hasReading))" />
+	</xsl:function>
+	
+	<!-- Generate a LegislationProcees URI Reading hasBaseBas -->
+	<xsl:function name="org-ep:URI-LegislativeActivityBaseBas">
+		<xsl:param name="reference" />
+		<xsl:param name="idbasebasI" />
+		<xsl:value-of select="concat(org-ep:URI-LegislativeProcess($reference),'/doc/iEcCom/',$idbasebasI)"/>
+	</xsl:function> 
+	
+	<!-- this section containt URI the main dossier  -->	
+ 	<xsl:function name="org-ep:URI-LegislativeActivityMainDossier">
+		<xsl:param name="reference" />
+		<xsl:param name="idReading" />
+		<xsl:value-of select="concat(org-ep:URI-LegislativeProcess($reference),'/event/',$idReading,'/main-',$idReading)"/>
+	</xsl:function> 
+	
+	<!-- Generate a URI Activity Context Precision -->
+	<xsl:function name="org-ep:URI-LegislativeActivityMainDossier_ContextPrecision">
+		<xsl:param name="idContextPrecision" />		
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/activity-context-precision/',upper-case($idContextPrecision))"/>
+	</xsl:function>
+ 	
+ 	<!-- Generate a URI Activity Nature -->
+	<xsl:function name="org-ep:URI-LegislativeActivityMainDossier_ActivityNature">
+		<xsl:param name="idActiviteNature" />		
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/nature/',$idActiviteNature)"/>
+	</xsl:function>
+	
+	<!-- Generate a URI Status -->
+	<xsl:function name="org-ep:URI-LegislativeActivityMainDossier_Status">
+		<xsl:param name="idActiviteStatus" />		
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/activity-status/',$idActiviteStatus)"/>
+	</xsl:function>
+ 	
  	
  	<!-- ***** Primitive methods ***** -->
 
