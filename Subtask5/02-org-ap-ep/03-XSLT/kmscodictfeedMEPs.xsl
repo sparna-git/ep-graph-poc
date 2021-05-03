@@ -309,7 +309,7 @@
 						<org-ep:hasOrganization rdf:resource="{org-ep:URI-COUNTRY($countryId)}" />
 					</xsl:if>
 
-					<xsl:variable name="ptId" select="org-ep:Lookup_PARLIAMENTARY_TERM(startDateTime,endDateTime)" />
+					<xsl:variable name="ptId" select="org-ep:Lookup_PARLIAMENTARY_TERM(startDateTime,endDateTime,personId,mandateId)" />
 					<xsl:if
 						test="$ptId != ''">
 						<org-ep:hasParliamentaryTerm
@@ -330,10 +330,10 @@
 					</schema:startDate>	
 					
 					<xsl:if test="string-length(normalize-space(../../seatBru)) &gt; 0">
-						<org-ep:MemberSeatBru><xsl:value-of select="../../seatBru"/></org-ep:MemberSeatBru> 
+						<org-ep:memberSeatBru><xsl:value-of select="../../seatBru"/></org-ep:memberSeatBru> 
 					</xsl:if>
 					<xsl:if test="string-length(normalize-space(../../seatStr)) &gt; 0">
-						<org-ep:MembeSeatStr><xsl:value-of select="../../seatStr"/></org-ep:MembeSeatStr>					
+						<org-ep:membeSeatStr><xsl:value-of select="../../seatStr"/></org-ep:membeSeatStr>					
 					</xsl:if>
 				</org-ep:MembershipMandate>	
 			</org:hasMembership>				
@@ -391,7 +391,7 @@
 					<org-ep:hasOrganization
 						rdf:resource="{org-ep:URI-Organization(organeCode,organeId)}" />
 
-					<xsl:variable name="ptId" select="org-ep:Lookup_PARLIAMENTARY_TERM(startDateTime,endDateTime)" />
+					<xsl:variable name="ptId" select="org-ep:Lookup_PARLIAMENTARY_TERM(startDateTime,endDateTime,memberIdentifier,identifier)" />
 					<xsl:if
 						test="$ptId != ''">
 						<org-ep:hasParliamentaryTerm

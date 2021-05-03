@@ -36,7 +36,7 @@
 			<rdf:type rdf:resource="{org-ep:URI-CVEPONTO('Civility')}" />
 			<org-ep:isoLanguage
 				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-				<xsl:value-of select="langIso" />
+				<xsl:value-of select="lower-case(langIso)" />
 			</org-ep:isoLanguage>
 
 

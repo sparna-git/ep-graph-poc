@@ -45,6 +45,12 @@
 			<!--  Open Data code -->
 			<skos:notation rdf:datatype="http://data.europarl.europa.eu/authority/notation-type/od"><xsl:value-of select="normalize-space($theBodyCode)" /></skos:notation>	
 			
+			<!-- This build the dct:hasPart -->
+			<xsl:variable name="theBodyId" select="bodyId" />
+			<xsl:for-each select="/all/item[parentBodyId=$theBodyId]">			
+				<dct:hasPart rdf:resource="{org-ep:URI-Organization(encode-for-uri(descriptions/item[1]/bodyCode),bodyId)}"/>
+			</xsl:for-each>				
+			
 			<skos:inScheme rdf:resource="{$SCHEME_URI}" />
 			<xsl:apply-templates/>			
 		</org-ep:Organization>
@@ -103,21 +109,24 @@
 		<dc:identifier><xsl:value-of select="$idbodyId" /></dc:identifier>
 		
 		<!-- This build the org:subOrganizationOf -->
+		<!--
 		<xsl:for-each select="/all/item[parentBodyId = $idbodyId]">
 			<xsl:variable name="bodyParentId" select="bodyId"/>
 			<xsl:variable name="idCodeParent" select="/all/item[bodyId=$bodyParentId]/bodyCode"/>
 			<xsl:if test="$idCodeParent!=''">
-				<org:subOrganizationof rdf:resource="{org-ep:URI-subOrganization(encode-for-uri($idCodeParent),normalize-space($idbodyId))}"/>
+				<org:subOrganizationOf rdf:resource="{org-ep:URI-subOrganization(encode-for-uri($idCodeParent),normalize-space($idbodyId))}"/>
 			</xsl:if>			
-		</xsl:for-each>
-		
+		</xsl:for-each>		
+		-->
 		
 		<!-- This build the dct:hasPart -->
+		<!--
 		<xsl:for-each select="/all/item[parentBodyId=$idbodyId]">			
 			<xsl:if test="string-length(normalize-space(bodyCode)) &gt; 0">
 				<dct:hasPart rdf:resource="{org-ep:URI-subOrganization(encode-for-uri(bodyCode),$idbodyId)}"/>
 			</xsl:if>
-		</xsl:for-each>		
+		</xsl:for-each>
+		-->		
 	</xsl:template>
 
 	<xsl:template match="endDateTime">
@@ -130,6 +139,12 @@
 		<schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
 		 	<xsl:value-of select="."/>
 		 </schema:endDate>
+	</xsl:template>
+	
+	<xsl:template match="parentBodyId">
+		<xsl:variable name="theParentBodyId" select="." />
+		<!-- Fetch the bodyCode on the referred parent organization -->
+		<org:subOrganizationOf rdf:resource="{org-ep:URI-Organization(/all/item[bodyId = $theParentBodyId]/descriptions/item[1]/bodyCode,$theParentBodyId)}"/>
 	</xsl:template>
 
 	

@@ -37,9 +37,13 @@
 			rdf:about="{org-ep:URI-PLACE(normalize-space(townCode))}">
 			<rdf:type rdf:resource="{org-ep:URI-CVEPONTO('place')}" />
 
-			<rdfs:label>
+			<skos:notation>
 				<xsl:value-of select="townCode" />
-			</rdfs:label>
+			</skos:notation>
+			
+			<skos:prefLabel>
+				<xsl:value-of select="normalize-space(originalName)" />
+			</skos:prefLabel>
 			
 			<xsl:apply-templates/>
 

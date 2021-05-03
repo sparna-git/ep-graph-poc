@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="2.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
@@ -32,38 +33,41 @@
 	</xsl:template>
 
 	<xsl:template match="all/item">
-		<skos:Concept
-			rdf:about="{org-ep:URI-COUNTRY(encode-for-uri(normalize-space(isoCode)))}">
-			<rdf:type rdf:resource="{org-ep:URI-CVEPONTO('Country')}" />
-
-			<org-ep:euCandidate
-				rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">
-				<xsl:value-of select="lower-case(candidateFlag)" />
-			</org-ep:euCandidate>
-
-			<org-ep:euCountry
-				rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">
-				<xsl:value-of select="lower-case(euFlag)" />
-			</org-ep:euCountry>
-
-			<org-ep:isoCode
-				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-				<xsl:value-of select="isoCode" />
-			</org-ep:isoCode>
-
-			<skos:notation>
-				<xsl:value-of select="isoCode" />
-			</skos:notation>
-
-			<org-ep:isoNumber
-				rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">
-				<xsl:value-of select="isoNum" />
-			</org-ep:isoNumber>
-
-			<xsl:apply-templates />
-
-			<skos:inScheme rdf:resource="{$SCHEME_URI}" />
-		</skos:Concept>
+		<!-- Do not process items that have been deleted -->
+		<xsl:if test="not((xs:dateTime(deletedDate) cast as xs:date) &lt;= current-date())">
+			<skos:Concept
+				rdf:about="{org-ep:URI-COUNTRY(encode-for-uri(normalize-space(isoCode)))}">
+				<rdf:type rdf:resource="{org-ep:URI-CVEPONTO('Country')}" />
+	
+				<org-ep:euCandidate
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">
+					<xsl:value-of select="lower-case(candidateFlag)" />
+				</org-ep:euCandidate>
+	
+				<org-ep:euCountry
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">
+					<xsl:value-of select="lower-case(euFlag)" />
+				</org-ep:euCountry>
+	
+				<org-ep:isoCode
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+					<xsl:value-of select="isoCode" />
+				</org-ep:isoCode>
+	
+				<skos:notation>
+					<xsl:value-of select="isoCode" />
+				</skos:notation>
+	
+				<org-ep:isoNumber
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">
+					<xsl:value-of select="isoNum" />
+				</org-ep:isoNumber>
+	
+				<xsl:apply-templates />
+	
+				<skos:inScheme rdf:resource="{$SCHEME_URI}" />
+			</skos:Concept>
+		</xsl:if>
 	</xsl:template>
 
 	<xsl:template match="desc">

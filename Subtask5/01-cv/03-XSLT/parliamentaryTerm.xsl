@@ -33,28 +33,19 @@
 
 	<xsl:template match="all/item">
 		<skos:Concept
-			rdf:about="{org-ep:URI-PARLIAMENTARY_TERM(identifier)}">
-			<rdf:type rdf:resource="{org-ep:URI-CVEPONTO('parliamentary-term')}" />
+			rdf:about="{org-ep:URI-PARLIAMENTARY_TERM(order)}">
+			<rdf:type rdf:resource="{org-ep:URI-CVEPONTO('parliamentary-term')}" />			
 			
+			<skos:notation><xsl:value-of select="order"/></skos:notation>
 			
-			<rdfs:label>
+			<skos:prefLabel xml:lang="en">
 				<xsl:value-of select="fullName"/>
-			</rdfs:label>
-			
-			<org-ep:isoLanguage
-				rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-				<xsl:value-of select="langIso" />
-			</org-ep:isoLanguage>
-			
-			<org-ep:Period>
-				<xsl:value-of select="periodType"/>
-			</org-ep:Period>
+			</skos:prefLabel>
 			
 			<dct:temporal>
 				<xsl:value-of select="concat(startDate,'/',endDate)"/>
-			</dct:temporal>	
-			
-			
+			</dct:temporal>
+						
 			<skos:inScheme
 				rdf:resource="{$SCHEME_URI}" />
 

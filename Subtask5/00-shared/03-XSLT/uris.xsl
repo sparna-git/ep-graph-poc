@@ -45,13 +45,6 @@
 		<xsl:param name="organeId"/>
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/org/', encode-for-uri($organeCode),'-',$organeId)" />
 	</xsl:function>
-	
-	<!-- URI sub Organisation -->
-	<xsl:function name="org-ep:URI-subOrganization">
-		<xsl:param name="organeId"/>
-		<xsl:param name="organeBody"/>				
-		<xsl:value-of select="concat('http://data.europarl.europa.eu/resource/org/', encode-for-uri($organeId),'-',$organeBody)" />
-	</xsl:function>
 
 	<!-- URI Person Type -->
 	<xsl:function name="org-ep:URI-PersonType">
@@ -241,6 +234,21 @@
 		<xsl:param name="type" />		
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/eli/dl/proc/',$year,'/',$number,'/',$type)" />
 	</xsl:function>
+	
+	<xsl:function name="org-ep:readingReference">
+		<xsl:param name="redsReadingReference" />
+		<xsl:choose>
+			<xsl:when test="$redsReadingReference = 'reds:Reading_I'">
+				<xsl:value-of select="'reading_I'" />
+			</xsl:when>
+			<xsl:when test="$redsReadingReference = 'reds:Reading_II'">
+				<xsl:value-of select="'reading_II'" />
+			</xsl:when>
+			<xsl:when test="$redsReadingReference = 'reds:Reading_III'">
+				<xsl:value-of select="'reading_III'" />
+			</xsl:when>
+		</xsl:choose>
+	</xsl:function>
  	
  	<!-- ***** Primitive methods ***** -->
 
@@ -350,6 +358,8 @@
 	<xsl:function name="org-ep:Lookup_PARLIAMENTARY_TERM">
 		<xsl:param name="p_StartDate"/>
 		<xsl:param name="p_EndDate"/>
+		<xsl:param name="mepId"/>
+		<xsl:param name="functionId"/>
 		<!-- cf https://stackoverflow.com/questions/28225257/how-to-subtract-1-day-calculate-day-before-in-xslt-2-0 -->
 		<xsl:variable name="StartDateParliamentaryTerm" select="$parliamentaryTerm_file/startDate" as="xsd:dateTime+"/>
 		<xsl:variable name="minStartDate" select="min($StartDateParliamentaryTerm)" as="xsd:dateTime"/>
@@ -359,22 +369,37 @@
 					(xsd:dateTime(endDate) + xsd:dayTimeDuration('P3D')) &gt;= xsd:dateTime($p_EndDate)			
 		]"/>
 		
-		<!-- Si on en trouve 2, on refait le test sans les 3 jours de décalage -->
+		
 		
 		<xsl:choose>
 			<xsl:when test="count($period_ParliamentaryTerm) = 0">
-				<xsl:message>Warning : cannot find the parliamentary term encompassing "<xsl:value-of select="$p_StartDate" />" and "<xsl:value-of select="$p_EndDate" />" </xsl:message>
-				<xsl:if test="format-dateTime($p_StartDate,'[Y0001]') &lt; format-dateTime($minStartDate,'[Y0001]')">
-					<xsl:value-of select="0"/>
-				</xsl:if>				
+				<xsl:choose>
+					<xsl:when test="format-dateTime($p_StartDate,'[Y0001]') &lt; format-dateTime($minStartDate,'[Y0001]')"> 
+						<xsl:value-of select="'0'"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:message>Warning : MEP <xsl:value-of select="$mepId" /> function <xsl:value-of select="$functionId" /> : cannot find the parliamentary term spanning "<xsl:value-of select="$p_StartDate" />" and "<xsl:value-of select="$p_EndDate" />", and cannot default to term '0' </xsl:message>
+					</xsl:otherwise>
+				</xsl:choose>			
 			</xsl:when>
 			<xsl:when test="count($period_ParliamentaryTerm) > 1">
-				<xsl:variable name="period_ParliamentaryTerm_" select="$parliamentaryTerm_file[			
+				<!-- Si on en trouve 2, on refait le test sans les 3 jours de décalage -->
+				<xsl:variable name="period_ParliamentaryTerm_strict" select="$parliamentaryTerm_file[			
 					xsd:dateTime(startDate) &lt;= xsd:dateTime($p_StartDate)			
 					and			
-					xsd:dateTime(endDate) &gt;= xsd:dateTime($p_EndDate)]"/>				
-				<xsl:message>Warning : find <xsl:value-of select="count($period_ParliamentaryTerm)" /> periods "<xsl:value-of select="$p_StartDate" />" and "<xsl:value-of select="$p_EndDate" />"  - Don't know which one to take.</xsl:message>
-				<xsl:value-of select="$period_ParliamentaryTerm_[1]/order"/>
+					xsd:dateTime(endDate) &gt;= xsd:dateTime($p_EndDate)]"/>	
+					
+					<xsl:choose>
+						<xsl:when test="count($period_ParliamentaryTerm_strict) = 0">
+							<xsl:message>Warning : MEP <xsl:value-of select="$mepId" /> function <xsl:value-of select="$functionId" /> : cannot find the parliamentary term spanning "<xsl:value-of select="$p_StartDate" />" and "<xsl:value-of select="$p_EndDate" />", interpreted strictly.</xsl:message>
+						</xsl:when>
+						<xsl:when test="count($period_ParliamentaryTerm_strict) > 1">
+							<xsl:message>Warning : MEP <xsl:value-of select="$mepId" /> function <xsl:value-of select="$functionId" /> : find <xsl:value-of select="count($period_ParliamentaryTerm_strict)" /> parliamentary terms that span "<xsl:value-of select="$p_StartDate" />" and "<xsl:value-of select="$p_EndDate" />"  - Don't know which one to take.</xsl:message>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:value-of select="$period_ParliamentaryTerm_strict[1]/order"/>
+						</xsl:otherwise>
+					</xsl:choose>
 			</xsl:when>
 			<xsl:otherwise><xsl:value-of select="$period_ParliamentaryTerm[1]/order"/></xsl:otherwise>
 		</xsl:choose>
