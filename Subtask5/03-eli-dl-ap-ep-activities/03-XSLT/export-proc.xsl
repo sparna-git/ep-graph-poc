@@ -44,6 +44,7 @@
 				<xsl:value-of select="key[@name ='reds:dateDeposit']" />
 			</ep:creationDate>
 
+			<!--  TODO : générer la bonne URI -->
 			<eli-dl:legislative_process-status>
 				<xsl:value-of select="key[@name = 'reds:status']" />
 			</eli-dl:legislative_process-status>
@@ -105,6 +106,7 @@
 
 		<xsl:if test="$idReadingData !=''">
 			<eli-dl:consists_of>
+				<!-- TODO : utiliser fonction org-ep:readingReference dans uris.xsl -->
 				<xsl:variable name="idReading" select="concat(lower-case(substring-before(substring-after($idReadingData,':'),'_')),'_',substring-after(substring-after($idReadingData,':'),'_'))"/>
 				<eli-dl:LegislativeActivity
 					rdf:about="{org-ep:URI-LegislativeActivity(../key[@name = 'reds:reference'],$idReading)}">
@@ -147,8 +149,6 @@
 							
 							<!-- où on puet trouve la valeur ?
 							<elidl-ep:amendmentDeadlineDate><xsl:value-of select=""/></elidl-ep:amendmentDeadlineDate>  -->
-							
-							
 							
 						</eli-dl:LegislativeActivity>
 					</eli-dl:consists_of>
