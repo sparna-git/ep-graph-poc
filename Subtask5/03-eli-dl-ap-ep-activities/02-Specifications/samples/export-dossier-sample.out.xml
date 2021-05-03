@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:eli-dl="http://data.europa.eu/eli/eli-draft-legislation-ontology#"
+         xmlns:ep-aut="http://data.europarl.europa.eu/authority/"
+         xmlns:org-ep="http://data.europarl.europa.eu/ontology/org-ep#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:schema="http://schema.org/"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+   <eli-dl:LegislativeActivity rdf:about="http://data.europarl.europa.eu/eli/dl/proc/2019/2022/bud/event/reading_I/main-dossier_1"/>
+   <eli-dl:LegislativeActivity rdf:about="http://data.europarl.europa.eu/eli/dl/proc/2019/2024/bud/event/reading_I/main-dossier_1"/>
+   <eli-dl:LegislativeActivity rdf:about="http://data.europarl.europa.eu/eli/dl/proc/2018/0263/cod/event/reading_I/main-dossier_1"/>
+   <eli-dl:LegislativeActivity rdf:about="http://data.europarl.europa.eu/eli/dl/proc/2018/2173/dec/event/reading_I/main-dossier_1"/>
+   <eli-dl:LegislativeActivity rdf:about="http://data.europarl.europa.eu/eli/dl/proc/2018/2268/imm/event/reading_I/main-dossier_1"/>
+   <eli-dl:LegislativeActivity rdf:about="http://data.europarl.europa.eu/eli/dl/proc/2018/2109/ini/event/reading_I/main-dossier_1"/>
+   <eli-dl:LegislativeActivity rdf:about="http://data.europarl.europa.eu/eli/dl/proc/2018/0130/cod/event/reading_I/main-dossier_1"/>
+   <eli-dl:LegislativeActivity rdf:about="http://data.europarl.europa.eu/eli/dl/proc/2018/2203/dec/event/reading_I/main-dossier_1"/>
+   <eli-dl:LegislativeActivity rdf:about="http://data.europarl.europa.eu/eli/dl/proc/2018/2181/dec/event/reading_I/main-dossier_1"/>
+   <eli-dl:LegislativeActivity rdf:about="http://data.europarl.europa.eu/eli/dl/proc/2018/2280/ini/event/reading_I/main-dossier_1"/>
+   <eli-dl:LegislativeActivity rdf:about="http://data.europarl.europa.eu/eli/dl/proc/2018/0196/cod/event/reading_I/main-dossier_1"/>
+   <eli-dl:LegislativeActivity rdf:about="http://data.europarl.europa.eu/eli/dl/proc/2018/0267/nle/event/reading_I/main-dossier_1"/>
+   <eli-dl:LegislativeActivity rdf:about="http://data.europarl.europa.eu/eli/dl/proc/2018/0190/cod/event/reading_I/main-dossier_1"/>
+   <eli-dl:LegislativeActivity rdf:about="http://data.europarl.europa.eu/eli/dl/proc/2019/2135/ini/event/reading_I/main-dossier_1"/>
+   <eli-dl:LegislativeActivity rdf:about="http://data.europarl.europa.eu/eli/dl/proc/2018/0152/cod/event/reading_I/main-dossier_1"/>
+   <eli-dl:LegislativeActivity rdf:about="http://data.europarl.europa.eu/eli/dl/proc/2018/0152A/cod/event/reading_I/main-dossier_1"/>
+</rdf:RDF>
