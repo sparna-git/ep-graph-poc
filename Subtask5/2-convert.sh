@@ -8,7 +8,7 @@ export XSLT_DIR=$DATASET_FOLDER/03-XSLT
 DATASET_NAME=$(basename $DATASET_FOLDER)
 rm -rf convert-$DATASET_NAME.log
 
-# convert every file in XML folder to RDF folder
+# convert every file in XML folder to RDF folder, using stylesheet with same name
 for f in $(find $INPUT_DIR -name '*.xml');
 do
    : 
@@ -17,5 +17,5 @@ do
    	 java -Xmx2048M -jar saxon-he-10.1.jar \
 		-s:$INPUT_DIR/$FILENAME.xml \
 		-o:$OUTPUT_DIR/$FILENAME.rdf \
-		-xsl:$XSLT_DIR/$FILENAME.xsl | tee convert-$DATASET_NAME.log
+		-xsl:$XSLT_DIR/$FILENAME.xsl &>> convert-$DATASET_NAME.log
 done

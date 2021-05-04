@@ -25,7 +25,7 @@ for f in $(find $SHACL_DIR -name '*.xlsx'); do
 done
 
 # now validate
-java -Xmx2048M -jar shacl-play-app-0.4-onejar.jar validate \
+java -Xmx4048M -jar shacl-play-app-0.4-onejar.jar validate \
 	--createDetails \
 	-i $RDF_DIR \
 	-s $SHACL_TTL_DIR \

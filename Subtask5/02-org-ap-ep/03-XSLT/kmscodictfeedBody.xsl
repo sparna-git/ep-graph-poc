@@ -3,6 +3,7 @@
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 	xmlns:org-ep="http://data.europarl.europa.eu/ontology/org-ep#"
@@ -36,19 +37,21 @@
 	<xsl:template match="all/item">
 		<!-- look for the bodyCode on the first label because some bodyCode are missing -->
 		<xsl:variable name="theBodyCode" select="descriptions/item[1]/bodyCode" />
-		<org-ep:Organization rdf:about="{org-ep:URI-Organization($theBodyCode, encode-for-uri(normalize-space(bodyId)))}">
+		<org-ep:Organization rdf:about="{org-ep:URI-Organization($theBodyCode, bodyId)}">
 			
 			<!-- Generate skos notations -->
 			<skos:notation rdf:datatype="http://data.europarl.europa.eu/authority/notation-type/codict/bodycode"><xsl:value-of select="normalize-space($theBodyCode)" /></skos:notation>
-			<!-- also look for mnemoCode here -->
-			<skos:notation rdf:datatype="http://data.europarl.europa.eu/authority/notation-type/codict/mnemocode"><xsl:value-of select="normalize-space(descriptions/item[1]/mnemoCode)" /></skos:notation>
+			<xsl:if test="descriptions/item[1]/mnemoCode">
+				<!-- also look for mnemoCode here -->
+				<skos:notation rdf:datatype="http://data.europarl.europa.eu/authority/notation-type/codict/mnemocode"><xsl:value-of select="normalize-space(descriptions/item[1]/mnemoCode)" /></skos:notation>
+			</xsl:if>
 			<!--  Open Data code -->
 			<skos:notation rdf:datatype="http://data.europarl.europa.eu/authority/notation-type/od"><xsl:value-of select="normalize-space($theBodyCode)" /></skos:notation>	
 			
 			<!-- This build the dct:hasPart -->
 			<xsl:variable name="theBodyId" select="bodyId" />
 			<xsl:for-each select="/all/item[parentBodyId=$theBodyId]">			
-				<dct:hasPart rdf:resource="{org-ep:URI-Organization(encode-for-uri(descriptions/item[1]/bodyCode),bodyId)}"/>
+				<dct:hasPart rdf:resource="{org-ep:URI-Organization(descriptions/item[1]/bodyCode,bodyId)}"/>
 			</xsl:for-each>				
 			
 			<skos:inScheme rdf:resource="{$SCHEME_URI}" />
@@ -107,52 +110,38 @@
 	<xsl:template match="bodyId">
 		<xsl:variable name="idbodyId" select="normalize-space(.)"/>
 		<dc:identifier><xsl:value-of select="$idbodyId" /></dc:identifier>
-		
-		<!-- This build the org:subOrganizationOf -->
-		<!--
-		<xsl:for-each select="/all/item[parentBodyId = $idbodyId]">
-			<xsl:variable name="bodyParentId" select="bodyId"/>
-			<xsl:variable name="idCodeParent" select="/all/item[bodyId=$bodyParentId]/bodyCode"/>
-			<xsl:if test="$idCodeParent!=''">
-				<org:subOrganizationOf rdf:resource="{org-ep:URI-subOrganization(encode-for-uri($idCodeParent),normalize-space($idbodyId))}"/>
-			</xsl:if>			
-		</xsl:for-each>		
-		-->
-		
-		<!-- This build the dct:hasPart -->
-		<!--
-		<xsl:for-each select="/all/item[parentBodyId=$idbodyId]">			
-			<xsl:if test="string-length(normalize-space(bodyCode)) &gt; 0">
-				<dct:hasPart rdf:resource="{org-ep:URI-subOrganization(encode-for-uri(bodyCode),$idbodyId)}"/>
-			</xsl:if>
-		</xsl:for-each>
-		-->		
 	</xsl:template>
 
 	<xsl:template match="endDateTime">
-		<schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
-		 	<xsl:value-of select="."/>
-		 </schema:endDate>
+		<!--  Don't store endDate if after current date -->
+		<xsl:if test="(xs:dateTime(.) cast as xs:date) &lt;= current-date()">
+			<schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
+			 	<xsl:value-of select="."/>
+			 </schema:endDate>
+		</xsl:if>
 	</xsl:template>
 
 	<xsl:template match="startDateTime">
-		<schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
+		<schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
 		 	<xsl:value-of select="."/>
-		 </schema:endDate>
+		 </schema:startDate>
 	</xsl:template>
 	
 	<xsl:template match="parentBodyId">
 		<xsl:variable name="theParentBodyId" select="." />
 		<!-- Fetch the bodyCode on the referred parent organization -->
-		<org:subOrganizationOf rdf:resource="{org-ep:URI-Organization(/all/item[bodyId = $theParentBodyId]/descriptions/item[1]/bodyCode,$theParentBodyId)}"/>
+		<org:subOrganizationOf rdf:resource="{org-ep:URI-Organization(
+			/all/item[bodyId = $theParentBodyId]/descriptions/item[1]/bodyCode,
+			$theParentBodyId
+		)}"/>
 	</xsl:template>
 
 	
 	<xsl:template match="descriptions">
 		<xsl:for-each select="item">
-			<skos:preflabel xml:lang="{lower-case(langIsoCode)}">
+			<skos:prefLabel xml:lang="{lower-case(langIsoCode)}">
 				<xsl:value-of select="shortName"/>
-			</skos:preflabel>
+			</skos:prefLabel>
 		</xsl:for-each>
 		<xsl:for-each select="item">
 			<skos:altLabel xml:lang="{lower-case(langIsoCode)}">

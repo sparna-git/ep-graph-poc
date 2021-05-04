@@ -36,14 +36,14 @@
 
 	<xsl:function name="org-ep:URI-Person">
 		<xsl:param name="personId" />
-		<xsl:value-of select="concat('http://data.europarl.europa.eu/person/', encode-for-uri($personId))" />
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/resource/person/', encode-for-uri($personId))" />
 	</xsl:function>
 
 	<!-- URI Organisation -->
 	<xsl:function name="org-ep:URI-Organization">
 		<xsl:param name="organeCode"/>
 		<xsl:param name="organeId"/>
-		<xsl:value-of select="concat('http://data.europarl.europa.eu/org/', encode-for-uri($organeCode),'-',$organeId)" />
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/resource/org/', encode-for-uri(normalize-space($organeCode)),'-',normalize-space($organeId))" />
 	</xsl:function>
 
 	<!-- URI Person Type -->
@@ -86,18 +86,15 @@
 	</xsl:function>
 
 	<!-- URI Place (publication.europa.eu)  -->
-	<xsl:function name="org-ep:URI-PublicationsLOCALITY">
+	<xsl:function name="org-ep:URI-LOCALITY">
 		<xsl:param name="uriPublications" />
-		<xsl:value-of select="concat('http://publications.europa.eu/resource/authority/place/', $uriPublications)" />
+		<xsl:value-of select="org-ep:URI-PublicationsEuropaEu('place',$uriPublications)" />
 	</xsl:function>
 
 	<!-- Country -->
 	<xsl:function name="org-ep:URI-COUNTRY">
 		<xsl:param name="countryId" />
-		<!--
-		<xsl:value-of select="concat(org-ep:URI-Authority('country/'), $countryId)" />
-		 -->
-		<xsl:value-of select="concat('http://publications.europa.eu/resource/authority/country/', $countryId)" />
+		<xsl:value-of select="org-ep:URI-PublicationsEuropaEu('country',$countryId)" />
 	</xsl:function>
 
 	<!-- ADDRESSES  -->
@@ -117,9 +114,9 @@
 	</xsl:function>
 
 	<!-- URI SITE  -->
-	<xsl:function name="org-ep:URI-PublicationsSITE">
+	<xsl:function name="org-ep:URI-SITE">
 		<xsl:param name="uriPublications" />
-		<xsl:value-of select="concat('http://publications.europa.eu/resource/authority/site/', $uriPublications)" />
+		<xsl:value-of select="org-ep:URI-PublicationsEuropaEu('site',$uriPublications)" />
 	</xsl:function>
 
 
@@ -232,7 +229,7 @@
 		<xsl:param name="year" />
 		<xsl:param name="number" />
 		<xsl:param name="type" />		
-		<xsl:value-of select="concat('http://data.europarl.europa.eu/eli/dl/proc/',$year,'/',$number,'/',$type)" />
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/resource/eli/dl/proc/',$year,'/',$number,'/',$type)" />
 	</xsl:function>
 	
 	<xsl:function name="org-ep:readingReference">
@@ -314,7 +311,7 @@
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/ontology/org-ep#',$cv)" />
 	</xsl:function>
 
-	<!-- URI AUTHORITY -->
+	<!-- URI EP AUTHORITY -->
 	<xsl:function name="org-ep:URI-Authority">
 		<xsl:param name="uriAutority" />
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/', $uriAutority)" />
@@ -324,6 +321,13 @@
 	<xsl:function name="org-ep:URI-CVEPONTO">
 		<xsl:param name="cvId" />
 		<xsl:value-of select="org-ep:URI-ONTOLOGY($cvId)" />
+	</xsl:function>
+	
+	<!-- URI OPOCE  -->
+	<xsl:function name="org-ep:URI-PublicationsEuropaEu">
+		<xsl:param name="table" />
+		<xsl:param name="code" />
+		<xsl:value-of select="concat('http://publications.europa.eu/resource/authority/', $table, '/', $code)" />
 	</xsl:function>	
 	
 	<!-- ***** Lookup Methods ***** -->

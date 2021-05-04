@@ -251,27 +251,23 @@
 					rdf:about="{org-ep:URI-ContactPoint-Place(identifier,officeNum)}">
 
 					<org-ep:hasSite
-						rdf:resource="{org-ep:URI-PublicationsSITE(buildingCode)}" />
+						rdf:resource="{org-ep:URI-SITE(buildingCode)}" />
 					<org-ep:officeId
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 						<xsl:value-of select="officeNum" />
 					</org-ep:officeId>
 					
 					<!-- Setup addressCountry and contact type and addressLocality depending on town code : STR or BRU -->
-
-					<!--
-					<xsl:variable name="country_code" select="org-ep:Lookup_COUNTRY_ID(normalize-space(townId))"/>
-					 -->
 					<xsl:choose>
 						<xsl:when test="townCode = 'BRU'">
 							<schema:addressCountry rdf:resource="{org-ep:URI-COUNTRY('BEL')}" />
-							<schema:addressLocality rdf:resource="{org-ep:URI-PublicationsLOCALITY('BEL_BRU')}" />
-							<org-ep:hasSite rdf:resource="{org-ep:URI-PublicationsSITE('ASP')}" />
+							<schema:addressLocality rdf:resource="{org-ep:URI-LOCALITY('BEL_BRU')}" />
+							<org-ep:hasSite rdf:resource="{org-ep:URI-SITE('ASP')}" />
 						</xsl:when>
 						<xsl:when test="townCode = 'STR'">
 							<schema:addressCountry rdf:resource="{org-ep:URI-COUNTRY('FRA')}" />
-							<schema:addressLocality rdf:resource="{org-ep:URI-PublicationsLOCALITY('FRA_SXB')}" />	
-							<org-ep:hasSite rdf:resource="{org-ep:URI-PublicationsSITE('LOW')}" />
+							<schema:addressLocality rdf:resource="{org-ep:URI-LOCALITY('FRA_SXB')}" />	
+							<org-ep:hasSite rdf:resource="{org-ep:URI-SITE('LOW')}" />
 						</xsl:when>
 						<xsl:otherwise>
 							<xsl:message>Unexpected townCode in addresses : <xsl:value-of select="townCode" /></xsl:message>
@@ -330,10 +326,10 @@
 					</schema:startDate>	
 					
 					<xsl:if test="string-length(normalize-space(../../seatBru)) &gt; 0">
-						<org-ep:memberSeatBru><xsl:value-of select="../../seatBru"/></org-ep:memberSeatBru> 
+						<org-ep:memberSeatBru rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select="../../seatBru"/></org-ep:memberSeatBru> 
 					</xsl:if>
 					<xsl:if test="string-length(normalize-space(../../seatStr)) &gt; 0">
-						<org-ep:membeSeatStr><xsl:value-of select="../../seatStr"/></org-ep:membeSeatStr>					
+						<org-ep:memberSeatStr rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select="../../seatStr"/></org-ep:memberSeatStr>					
 					</xsl:if>
 				</org-ep:MembershipMandate>	
 			</org:hasMembership>				
