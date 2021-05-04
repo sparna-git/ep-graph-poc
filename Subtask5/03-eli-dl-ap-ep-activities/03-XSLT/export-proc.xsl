@@ -49,14 +49,8 @@
 				<xsl:value-of select="key[@name = 'reds:status']" />
 			</eli-dl:legislative_process-status>
 
-			<!-- always create the activity of procedure-creation -->
-			<eli-dl:consists_of>
-				<eli-dl:LegislativeActivity
-					rdf:about="{org-ep:URI-LegislativeActivity(key[@name = 'reds:reference'], 'procedure-creation_1')}">
-				</eli-dl:LegislativeActivity>
-			</eli-dl:consists_of>
-
-			<xsl:apply-templates />
+			<xsl:apply-templates select="key[@name='reds:hasRelations']/item" />
+			
 		</eli-dl:LegislativeProcess>
 	</xsl:template>
 
@@ -84,6 +78,39 @@
 			</xsl:choose>
 		</xsl:for-each>
 	</xsl:template>
+
+	<xsl:template match="item[
+		key[@name = 'reds:hasRelations']
+		/item[
+			key[@name = 'reds:hasPredicate'] = 'reds:hasEventType_PROCR'
+		]
+	]">
+		
+		<!--  TODO : Générer le procedure_creation -->
+		<!-- 
+					<eli-dl:consists_of>
+				<eli-dl:LegislativeActivity
+					rdf:about="{org-ep:URI-LegislativeActivity(key[@name = 'reds:reference'], 'procedure-creation_1')}">
+				</eli-dl:LegislativeActivity>
+			</eli-dl:consists_of>
+		
+		 -->
+	</xsl:template>
+
+
+	<xsl:template match="item[
+		key[@name = 'reds:hasRelations']
+		/item[
+			key[@name = 'reds:hasPredicate'] = 'reds:hasDirContDossier'
+			and
+			key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasRoleDossier']/key[@name = 'reds:hasValue'] = 'red:ComRole_MAIN'
+		]
+	]">
+		<xsl:variable name="idActivityReading" select="key[@name='reds:hasObject']/key[@name='reds:reference']"/>
+		
+		<!--  TODO : à remplir -->
+	</xsl:template>
+
 
 	<xsl:template match="key[@name='reds:hasRelations']">
 
@@ -131,6 +158,9 @@
 						<xsl:variable name="ActivityStatus" select="../key[@name='reds:status']"/>
 					
 						<eli-dl:LegislativeActivity rdf:about="{org-ep:URI-LegislativeActivityMainDossier(../key[@name = 'reds:reference'],$idReading)}">
+						
+							<!--  TODO : tous ces attributs sont générés à partir du _DOSSIER_ dans la XSL export-dossier.xsl -->
+						
 							<elidl-ep:activityId>
 								<xsl:value-of select="$idActivityReading"/>
 							</elidl-ep:activityId>
