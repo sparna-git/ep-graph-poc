@@ -149,7 +149,7 @@
 			rdf:about="{org-ep:URI-ASSISTANT(identifier)}">
 			<org:hasMembership>
 				<org-ep:Membership
-					rdf:about="{org-ep:URI-MEMBERSHIP(ancestor::item/identifier,identifier)}">
+					rdf:about="{org-ep:URI-MEMBERSHIP(identifier,ancestor::item/identifier)}">
 					<org-ep:hasMembershipType
 						rdf:resource="{org-ep:URI-MembershipType('PERSON')}" />
 					<org-ep:hasOrganization
@@ -257,17 +257,15 @@
 						<xsl:value-of select="officeNum" />
 					</org-ep:officeId>
 					
-					<!-- Setup addressCountry and contact type and addressLocality depending on town code : STR or BRU -->
+					<!-- Setup addressCountry and addressLocality depending on town code : STR or BRU -->
 					<xsl:choose>
 						<xsl:when test="townCode = 'BRU'">
 							<schema:addressCountry rdf:resource="{org-ep:URI-COUNTRY('BEL')}" />
 							<schema:addressLocality rdf:resource="{org-ep:URI-LOCALITY('BEL_BRU')}" />
-							<org-ep:hasSite rdf:resource="{org-ep:URI-SITE('ASP')}" />
 						</xsl:when>
 						<xsl:when test="townCode = 'STR'">
 							<schema:addressCountry rdf:resource="{org-ep:URI-COUNTRY('FRA')}" />
 							<schema:addressLocality rdf:resource="{org-ep:URI-LOCALITY('FRA_SXB')}" />	
-							<org-ep:hasSite rdf:resource="{org-ep:URI-SITE('LOW')}" />
 						</xsl:when>
 						<xsl:otherwise>
 							<xsl:message>Unexpected townCode in addresses : <xsl:value-of select="townCode" /></xsl:message>
