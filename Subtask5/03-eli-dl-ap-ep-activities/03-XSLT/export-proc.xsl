@@ -45,6 +45,9 @@
 			
 			<eli-dl:legislative_process_id><xsl:value-of select="key[@name = 'reds:reference']"/></eli-dl:legislative_process_id>
 			<elidl-ep:legislativeProcessInternId><xsl:value-of select="key[@name = 'dc:identifier']"/></elidl-ep:legislativeProcessInternId>
+			 
+			<!-- Process all titles -->
+			<xsl:apply-templates select="key[@name='reds:hasTitles']/item" />
 
 			<eli-dl:legislative_process_number>
 				<xsl:value-of
@@ -127,7 +130,7 @@
 					</eli-dl:LegislativeActivity>
 				</eli-dl:consists_of>
 			</xsl:for-each>
-			 
+
 			
 			<!-- Process all properties -->
 			<xsl:apply-templates select="key[@name ='reds:hasProperties']/item"/>
@@ -233,6 +236,9 @@
 	<!-- Matches a dossier in the export_dossier.xml file -->
 	<xsl:template match="item[key[@name = 'reds:type'] = 'reds:DirContDossier']">
 		<eli-dl:activity_date><xsl:value-of select="key[@name = 'reds:dateDeposit']"/></eli-dl:activity_date>
+		
+		
+		
 	</xsl:template>
 
 
@@ -310,12 +316,11 @@
 	</xsl:template>-->
 
 
-	<xsl:template match="key[@name='reds:hasTitles']">
-		<xsl:for-each select="item">
-			<eli-dl:legislative_process_title
-				xml:lang="{key[@name='reds:hasLanguage']}">
-				<xsl:value-of select="key[@name='reds:hasValue']" />
-			</eli-dl:legislative_process_title>
-		</xsl:for-each>
+	<xsl:template match="key[@name='reds:hasTitles']/item">
+		<eli-dl:legislative_process_title
+			xml:lang="{key[@name='reds:hasLanguage']}">
+			<xsl:value-of select="key[@name='reds:hasValue']" />
+		</eli-dl:legislative_process_title>
 	</xsl:template>
+	
 </xsl:stylesheet>
