@@ -26,17 +26,22 @@
 		<xsl:apply-templates />
 	</xsl:template>
 
-	<!--  We have dossier that are amendment dossier. So we need to process only dossier that are main dossier of some procedure -->
+	<!-- We need to process only dossier that are main dossier or ComRole_MHE some procedure -->
 	<xsl:template match="/all/item[
 		key[@name = 'reds:hasObjectRelations']
 		/item[
 			key[@name = 'reds:hasPredicate'] = 'reds:hasDirContDossier'
 			and
-			key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasRoleDossier']/key[@name = 'reds:hasValue'] = 'red:ComRole_MAIN'
+			(
+				key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasRoleDossier']/key[@name = 'reds:hasValue'] = 'red:ComRole_MAIN'
+				or
+				key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasRoleDossier']/key[@name = 'reds:hasValue'] = 'red:ComRole_MHE'
+			)
 		]
 	]">		
-	
-		<xsl:message><xsl:value-of select="key[@name = 'dc:identifier']" /></xsl:message>
+		
+		<xsl:variable name="currentIdentifier" select="key[@name = 'dc:identifier']" />
+		<xsl:message>Dossier <xsl:value-of select="$currentIdentifier" /></xsl:message>
 		
 		<!-- Find procedure reference : reds:hasPredicate = reds:hasDirContDossier with
 		 property reds:hasRoleDossier is red:ComRole_MAIN.
@@ -47,7 +52,11 @@
 			/item[
 				key[@name = 'reds:hasPredicate'] = 'reds:hasDirContDossier'
 				and
-				key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasRoleDossier']/key[@name = 'reds:hasValue'] = 'red:ComRole_MAIN'
+				(
+					key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasRoleDossier']/key[@name = 'reds:hasValue'] = 'red:ComRole_MAIN'
+					or
+					key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasRoleDossier']/key[@name = 'reds:hasValue'] = 'red:ComRole_MHE'
+				)
 			]
 			" 
 		/>
@@ -64,7 +73,7 @@
 				" 
 			/>			
 			
-			<xsl:message><xsl:value-of select="concat(' ', $procedureReference)" /></xsl:message>
+			<xsl:message>  Procedure reference : <xsl:value-of select="concat(' ', $procedureReference)" /></xsl:message>
 			
 			<!-- Find the reading for this reference -->
 			<xsl:variable name="reading" select="
@@ -76,13 +85,45 @@
 				/key[@name = 'reds:hasValue']
 				" 
 			/>
+			
+			<xsl:message>  Reading: <xsl:value-of select="$reading" /></xsl:message>
+			
+			<!-- Now we need to find the _index_ of this dossier within the same reading of the same procedure -->
+			<!-- To do that we count the number of other dossiers in same procedure and same reading, that have an id before this one -->
+			<!-- Test case : BUD-2019-2028 -->
+			<xsl:variable name="index" select="
+				count(
+					/all/item[
+						key[@name = 'reds:hasObjectRelations']
+						/item[
+							key[@name = 'reds:hasPredicate'] = 'reds:hasDirContDossier'
+							and
+							(
+								key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasRoleDossier']/key[@name = 'reds:hasValue'] = 'red:ComRole_MAIN'
+								or
+								key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasRoleDossier']/key[@name = 'reds:hasValue'] = 'red:ComRole_MHE'
+							)
+							and
+							key[@name = 'reds:hasSubject']/key[@name = 'reds:reference'] = $procedureReference
+							and
+							key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasReading']/key[@name = 'reds:hasValue'] = $reading
+						]
+						and
+						key[@name = 'dc:identifier'] &lt; $currentIdentifier				
+					]			
+				)
+				+ 1
+			" />
+			
+			<xsl:message>  Index in reading : <xsl:value-of select="$index" /></xsl:message>
 
 			<eli-dl:LegislativeActivity rdf:about="{org-ep:URI-LegislativeActivity(
 				$procedureReference, 
 				concat(
 					org-ep:readingReference($reading),
 					'/',
-					'main-dossier_1'
+					'main-dossier_',
+					$index
 				)
 			)}">	
 				<xsl:apply-templates />
