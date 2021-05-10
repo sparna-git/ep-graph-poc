@@ -2,6 +2,14 @@
 # By iterating on a map that declares the correspondance between
 # RED root and new controlled list code
 
+
+# extract document types
+java -jar rdf-toolkit-0.6.1-onejar.jar construct \
+      -i 01-cv/01-Data/RED-model-full.ttl \
+      -q 01-cv/03-SPARQL/RED2SKOS-legislative-process-work-type.rq \
+      -o 01-cv/05-RDF/legislative-process-work-type.rdf
+
+
 declare -A mapping
 # warning, this one is mapped on 2 output
 mapping[Status]=legislative-process-status,legislative-process-work-status
