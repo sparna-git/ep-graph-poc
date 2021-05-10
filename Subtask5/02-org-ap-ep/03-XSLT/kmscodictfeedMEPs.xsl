@@ -129,10 +129,12 @@
 			<schema:honorificPrefix
 				rdf:resource="{org-ep:URI-CIVILITY(titleCode)}" />
 
+			<!--
 			<xsl:variable name="townCode" select="org-ep:Lookup_TOWN(countryId,countryIsoCode,birthPlace)" />
 			<xsl:if test="$townCode != ''">
 				<schema:birthPlace rdf:resource="{org-ep:URI-PLACE($townCode)}" />
 			</xsl:if>
+			-->
 
 			<xsl:variable name="countryId" select="org-ep:Lookup_COUNTRY(countryIsoCode)" />
 			<xsl:if test="$countryId != ''">
