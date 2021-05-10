@@ -1,0 +1,112 @@
+<?xml version="1.0" ?>
+<all>
+	<item>
+		<identifier>24</identifier>
+		<langIso>EN</langIso>
+		<periodType>LEG</periodType>
+		<startDate>1979-07-16T22:00:00.000+00:00</startDate>
+		<endDate>1984-07-22T22:00:00.000+00:00</endDate>
+		<updateDate>2016-01-11T13:03:52.000+00:00</updateDate>
+		<order>1</order>
+		<fullName>First parliamentary term</fullName>
+		<upperName>FIRST PARLIAMENTARY TERM</upperName>
+		<dayPart>NA</dayPart>
+	</item>
+	<item>
+		<identifier>25</identifier>
+		<langIso>EN</langIso>
+		<periodType>LEG</periodType>
+		<startDate>1984-07-23T22:00:00.000+00:00</startDate>
+		<endDate>1989-07-23T22:00:00.000+00:00</endDate>
+		<updateDate>2016-01-11T13:03:52.000+00:00</updateDate>
+		<order>2</order>
+		<fullName>Second parliamentary term</fullName>
+		<upperName>SECOND PARLIAMENTARY TERM</upperName>
+		<dayPart>NA</dayPart>
+	</item>
+	<item>
+		<identifier>26</identifier>
+		<langIso>EN</langIso>
+		<periodType>LEG</periodType>
+		<startDate>1989-07-24T22:00:00.000+00:00</startDate>
+		<endDate>1994-07-17T22:00:00.000+00:00</endDate>
+		<updateDate>2016-01-11T13:03:52.000+00:00</updateDate>
+		<order>3</order>
+		<fullName>Third parliamentary term</fullName>
+		<upperName>THIRD PARLIAMENTARY TERM</upperName>
+		<dayPart>NA</dayPart>
+	</item>
+	<item>
+		<identifier>27</identifier>
+		<langIso>EN</langIso>
+		<periodType>LEG</periodType>
+		<startDate>1994-07-18T22:00:00.000+00:00</startDate>
+		<endDate>1999-07-18T22:00:00.000+00:00</endDate>
+		<updateDate>2016-01-11T13:03:52.000+00:00</updateDate>
+		<order>4</order>
+		<fullName>Fourth parliamentary term</fullName>
+		<upperName>FOURTH PARLIAMENTARY TERM</upperName>
+		<dayPart>NA</dayPart>
+	</item>
+	<item>
+		<identifier>28</identifier>
+		<langIso>EN</langIso>
+		<periodType>LEG</periodType>
+		<startDate>1999-07-19T22:00:00.000+00:00</startDate>
+		<endDate>2004-07-18T22:00:00.000+00:00</endDate>
+		<updateDate>2016-01-11T13:03:52.000+00:00</updateDate>
+		<order>5</order>
+		<fullName>Fifth parliamentary term</fullName>
+		<upperName>FIFTH PARLIAMENTARY TERM</upperName>
+		<dayPart>NA</dayPart>
+	</item>
+	<item>
+		<identifier>5423</identifier>
+		<langIso>EN</langIso>
+		<periodType>LEG</periodType>
+		<startDate>2004-07-19T22:00:00.000+00:00</startDate>
+		<endDate>2009-07-12T22:00:00.000+00:00</endDate>
+		<updateDate>2016-01-11T13:03:52.000+00:00</updateDate>
+		<order>6</order>
+		<fullName>Sixth parliamentary term</fullName>
+		<upperName>SIXTH PARLIAMENTARY TERM</upperName>
+		<dayPart>NA</dayPart>
+	</item>
+	<item>
+		<identifier>12465</identifier>
+		<langIso>EN</langIso>
+		<periodType>LEG</periodType>
+		<startDate>2009-07-13T22:00:00.000+00:00</startDate>
+		<endDate>2014-06-29T22:00:00.000+00:00</endDate>
+		<updateDate>2016-01-11T13:03:52.000+00:00</updateDate>
+		<order>7</order>
+		<fullName>Seventh parliamentary term</fullName>
+		<upperName>SEVENTH PARLIAMENTARY TERM</upperName>
+		<dayPart>NA</dayPart>
+	</item>
+	<item>
+		<identifier>16123</identifier>
+		<langIso>EN</langIso>
+		<periodType>LEG</periodType>
+		<startDate>2014-06-30T22:00:00.000+00:00</startDate>
+		<endDate>2019-06-30T22:00:00.000+00:00</endDate>
+		<updateDate>2019-01-08T10:24:27.000+00:00</updateDate>
+		<order>8</order>
+		<fullName>Eighth parliamentary term</fullName>
+		<upperName>EIGHTH PARLIAMENTARY TERM</upperName>
+		<dayPart>NA</dayPart>
+	</item>
+	<item>
+		<identifier>19951</identifier>
+		<langIso>EN</langIso>
+		<periodType>LEG</periodType>
+		<startDate>2019-07-01T22:00:00.000+00:00</startDate>
+		<endDate>2099-12-30T23:00:00.000+00:00</endDate>
+		<updateDate>2019-01-08T10:31:56.000+00:00</updateDate>
+		<order>9</order>
+		<fullName>Ninth parliamentary term</fullName>
+		<upperName>NINTH PARLIAMENTARY TERM</upperName>
+		<dayPart>NA</dayPart>
+	</item>
+</all>
+
