@@ -36,9 +36,26 @@
 
 	<xsl:template match="all/item">
 		<!-- look for the bodyCode on the first label because some bodyCode are missing -->
-		<xsl:variable name="theBodyCode" select="descriptions/item[1]/bodyCode" />
-		<org-ep:Organization rdf:about="{org-ep:URI-Organization($theBodyCode, bodyId)}">
+		<xsl:variable name="theBodyId" select="bodyId"/>
+		<xsl:variable name="theBodyCode">
+			<xsl:choose>
+				<xsl:when test="string-length(descriptions/item[1]/bodyCode) = 1">
+					<xsl:analyze-string regex="^[a-zA-Z0-9]+" select="descriptions/item[1]/bodyCode">
+						<xsl:matching-substring>
+							<xsl:value-of select="normalize-space(.)"/>
+						</xsl:matching-substring>
+						<xsl:non-matching-substring>
+							<xsl:message>Warning ! The Body Code '<xsl:value-of select="normalize-space(.)"/>' is not recognized in the Body id '<xsl:value-of select="$theBodyId"/>' </xsl:message>
+						</xsl:non-matching-substring>					
+					</xsl:analyze-string>	
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="normalize-space(.)"/>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
 			
+		<org-ep:Organization rdf:about="{org-ep:URI-Organization($theBodyCode, bodyId)}">			
 			<!-- Generate skos notations -->
 			<skos:notation rdf:datatype="http://data.europarl.europa.eu/authority/notation-type/codict/bodycode"><xsl:value-of select="normalize-space($theBodyCode)" /></skos:notation>
 			<xsl:if test="descriptions/item[1]/mnemoCode">
@@ -92,6 +109,11 @@
 						<xsl:value-of
 							select="org-ep:URI-GOVERNANCEBODY(encode-for-uri(normalize-space(../descriptions/item[1]/bodyCode)))" />
 					</xsl:when>
+					<!-- NationalPartyBody -->
+					<xsl:when test="$bodyTypeOrg='PN'">
+						<xsl:value-of
+							select="org-ep:URI-NATIONALPARTYBODY(encode-for-uri(normalize-space(../descriptions/item[1]/bodyCode)))" />
+					</xsl:when>					
 					<xsl:otherwise>
 						<xsl:message>Warning: bodyType "<xsl:value-of select="$bodyTypeOrg"/>" is unknown to generate hasCorporateBody.</xsl:message>
 					</xsl:otherwise>
