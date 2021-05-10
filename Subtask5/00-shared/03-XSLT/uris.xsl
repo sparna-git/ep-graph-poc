@@ -11,6 +11,7 @@
 
 	<xsl:param name="SHARED_XML_DIR">../01-Data</xsl:param>
 	<xsl:param name="CV_XML_DIR">../../01-cv/10-XML</xsl:param>
+	<xsl:param name="MEP_XML_DIR">../../02-org-ap-ep/10-XML</xsl:param>
 
 	<!-- Read source file from CV -->
 	<xsl:param name="gender_file"
@@ -18,7 +19,10 @@
 	<xsl:param name="Town"
 		select="document(concat($CV_XML_DIR, '/', 'Town.xml'))/all/item" />	
 	<xsl:param name="parliamentaryTerm_file"
-		select="document(concat($CV_XML_DIR, '/', 'parliamentaryTerm.xml'))/all/item" />	
+		select="document(concat($CV_XML_DIR, '/', 'parliamentaryTerm.xml'))/all/item" />
+	<xsl:param name="kmscodictfeedBody_file"
+		select="document(concat($MEP_XML_DIR,'/', 'kmscodictfeedBody.xml'))/all/item" />	
+			
 	
 	<!-- Country code mapping does not come from CV, it is an input file -->
 	<xsl:param name="country_file"
@@ -196,8 +200,27 @@
 	</xsl:function>
 
 	<xsl:function name="org-ep:URI-NATIONALPARTYBODY">
-		<xsl:param name="inData" />
-		<xsl:value-of select="concat(org-ep:URI-Authority('national-party-body/'), $inData)"/>
+		<xsl:param name="in_OrganeId" />
+		<xsl:param name="in_typeOrganeCode" />
+		<xsl:param name="in_organeCode" />
+		<xsl:variable name="iroCode" select="$kmscodictfeedBody_file[bodyId=$in_OrganeId and bodyType=$in_typeOrganeCode and bodyCode=$in_organeCode]/iroCode"/>
+		<xsl:choose>
+			<xsl:when test="count($iroCode) &gt; 0">
+				<xsl:variable name="CountryRel" select="org-ep:Lookup_COUNTRY($iroCode)"/>
+				<xsl:choose>
+					<xsl:when test="count($CountryRel) &gt; 0">
+						<xsl:value-of select="concat(org-ep:URI-Authority('country/'),$CountryRel)"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:message>Warning!! The iroCode id '<xsl:value-of select="$iroCode"/>' does not exist in Country information.</xsl:message>
+					</xsl:otherwise>
+				</xsl:choose>								
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:message>Warning!! The Code Id '<xsl:value-of select="$in_OrganeId"/>' does not have an iroCode information.</xsl:message>
+			</xsl:otherwise>
+		</xsl:choose>
+		
 	</xsl:function>
 
 	<xsl:function name="org-ep:URI-POLITICALGROUPBODY">
