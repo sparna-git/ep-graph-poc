@@ -126,7 +126,11 @@
 		</xsl:if>
 		
 		<!-- always generate organization type -->
-		<org-ep:hasOrganizationType rdf:resource="{org-ep:URI-OrganizationType(encode-for-uri(normalize-space(.)))}"/> 
+		<org-ep:hasOrganizationType rdf:resource="{org-ep:URI-OrganizationType(encode-for-uri(normalize-space(.)))}"/>
+		
+		<xsl:if test="$bodyTypeOrg='PN'">
+			<!-- TODO : special process to read iroCode, find country and insert org:subOrganizationOf to that Country -->
+		</xsl:if>
 	</xsl:template>
 
 	<xsl:template match="bodyId">
