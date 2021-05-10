@@ -274,18 +274,16 @@
 					<xsl:value-of select="$DataMain/key[@name='reds:hasObject']/key[@name='reds:reference']"/>
 				</elidl-ep:activityId>
 				
-				<xsl:variable name="activityType" select="../item[
-					key[@name = 'reds:hasPredicate'] = 'reds:hasDirContDossier'
-					and 
-					key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasRoleDossier']/key[@name = 'reds:hasValue'] = 'red:ComRole_MHE'
-					]"/>
-				
-				<!-- Activity Type en dure -->
-				<elidl-ep:activityType rdf:resource="{org-ep:URI-LegislativeProcessActiviteType('MAIN_DOSSIER')}"/>
-				
-				<xsl:if test="$activityType !=''">
-					<elidl-ep:activityType rdf:resource="{org-ep:URI-LegislativeProcessActiviteType('MAIN_MHE_DOSSIER')}"/>
-				</xsl:if>
+				<!-- Activity Type -->
+				<xsl:choose>
+					<xsl:when test="key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasRoleDossier']/key[@name = 'reds:hasValue'] = 'red:ComRole_MHE'">
+						<elidl-ep:activityType rdf:resource="{org-ep:URI-LegislativeProcessActiviteType('MAIN_MHE_DOSSIER')}"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<elidl-ep:activityType rdf:resource="{org-ep:URI-LegislativeProcessActiviteType('MAIN_DOSSIER')}"/>
+					</xsl:otherwise>
+				</xsl:choose>
+
 				
 				<elidl-ep:activityContextPrecision rdf:resource="{org-ep:URI-LegislativeActivityMainDossier_ContextPrecision($DataMain/key[@name='reds:hasProperties']/item[key[@name='reds:hasName']='reds:hasPrecisionDossier']/key[@name='reds:hasValue'])}"/>
 				
