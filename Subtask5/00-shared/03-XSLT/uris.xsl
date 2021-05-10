@@ -273,9 +273,28 @@
 	
 	<!-- Generate a LegislationProcess URI from hasEPRule -->
 	<xsl:function name="org-ep:URI-LegislativeProcessLegalBasis">
-		<xsl:param name="TypeRule" />
 		<xsl:param name="idRule" />
-		<xsl:value-of select="concat('http://data.europarl.europa.eu/resource/eli/dl/iEpRegl/',$TypeRule,'/',$idRule)" />
+		<xsl:variable name="artRules">
+			<xsl:analyze-string regex="(\d+)" select="substring($idRule,24)">
+				<xsl:matching-substring>
+					<xsl:choose>
+						<xsl:when test="regex-group(1)">
+							<xsl:value-of select="regex-group(1)"/>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:value-of select="51"/>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:matching-substring>				
+			</xsl:analyze-string>
+		</xsl:variable>
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/resource/eli/dl/iEpRegl/',substring($idRule,1,18),'/art_',$artRules)" />
+	</xsl:function>
+	
+	<!-- Generate a LegislationProcess URI from reds:legalBase -->
+	<xsl:function name="org-ep:URI-LegislativeProcessLegalBase">
+		<xsl:param name="idRule" />
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/eli/treaty/',substring($idRule,1,18),'/',substring($idRule,24))" />
 	</xsl:function>
 
 	<!-- Generate a LegislationProcess URI from type, e.g. 'DirContProc_cod' -->
@@ -315,27 +334,6 @@
 		<xsl:value-of select="concat(org-ep:URI-LegislativeProcess($reference),'/doc/iEcCom/',$idbasebasI)"/>
 	</xsl:function> 
 	
-	<!-- this section containt URI the main dossier  -->	
- 	<xsl:function name="org-ep:URI-LegislativeActivityMainDossier">
-		<xsl:param name="reference" />
-		<xsl:param name="idReading" />
-		<xsl:value-of select="concat(org-ep:URI-LegislativeProcess($reference),'/event/',$idReading,'/main-',$idReading)"/>
-	</xsl:function> 
-	
-	<!-- this section containt URI the plenary dossier  -->	
- 	<xsl:function name="org-ep:URI-LegislativeActivityPlenaryDossier">
-		<xsl:param name="reference" />
-		<xsl:param name="idReading" />
-		<xsl:value-of select="concat(org-ep:URI-LegislativeProcess($reference),'/event/',$idReading,'/plenary-dossier_',substring-after($idReading,'_'))"/>
-	</xsl:function> 
-	
-	<!-- this section containt URI the consolidation dossier  -->	
- 	<xsl:function name="org-ep:URI-LegislativeConsolidationDossier">
-		<xsl:param name="reference" />
-		<xsl:param name="idReading" />
-		<xsl:value-of select="concat(org-ep:URI-LegislativeProcess($reference),'/event/',$idReading,'/consolidation_',substring-after($idReading,'_'))"/>
-	</xsl:function>
-	
 	<!-- Generate a URI Activity Context Precision -->
 	<xsl:function name="org-ep:URI-LegislativeActivity_ProcessStatus">
 		<xsl:param name="idprocessStatus" />		
@@ -351,13 +349,13 @@
  	<!-- Generate a URI Activity Nature -->
 	<xsl:function name="org-ep:URI-LegislativeActivityMainDossier_ActivityNature">
 		<xsl:param name="idActiviteNature" />		
-		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/nature/',$idActiviteNature)"/>
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/nature/',substring-after($idActiviteNature,'_'))"/>
 	</xsl:function>
 	
 	<!-- Generate a URI Status -->
 	<xsl:function name="org-ep:URI-LegislativeActivityMainDossier_Status">
 		<xsl:param name="idActiviteStatus" />		
-		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/activity-status/',$idActiviteStatus)"/>
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/activity-status/',substring-after($idActiviteStatus,'_'))"/>
 	</xsl:function>
 	
 	

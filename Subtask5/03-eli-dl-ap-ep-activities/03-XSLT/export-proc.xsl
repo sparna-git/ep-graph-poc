@@ -19,7 +19,6 @@
 	
 	<!-- Load the dossier data -->
 	<xsl:param name="EXPORT_DOSSIER_PATH">../10-XML/export-dossier.xml</xsl:param>
-
 	<!-- Read source file from CV -->
 	<xsl:param name="EXPORT_DOSSIER" select="document($EXPORT_DOSSIER_PATH)" />
 
@@ -68,13 +67,29 @@
 			<eli-dl:consists_of>
 				<eli-dl:LegislativeActivity
 					rdf:about="{org-ep:URI-LegislativeActivity(key[@name = 'reds:reference'], 'procedure-creation_1')}">
-				</eli-dl:LegislativeActivity>
+					<xsl:variable name="Data_ProcedureCreation" select="key[@name='reds:hasRelations']/item[key[@name='reds:hasPredicate']='reds:hasEventType_PROCR']"/>
+					<elidl-ep:activityType rdf:resource="{org-ep:URI-LegislativeProcessActiviteType(substring-after($Data_ProcedureCreation/key[@name='reds:hasPredicate'],'_'))}"/>
+					<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
+						<xsl:value-of select="$Data_ProcedureCreation/key[@name='reds:hasDate']"/>
+					</eli-dl:activity_date>
+				</eli-dl:LegislativeActivity>				
 			</eli-dl:consists_of>
 			
+			
+			<!-- This section does reds:hasEpRule -->
 			<xsl:variable name="legalBasis" select="key[@name='reds:hasRelations']/item[key[@name='reds:hasPredicate']='reds:hasEpRule']/key[@name='reds:hasObject']"/>
-			<!--
-			<eli-dl:had_legal_basis rdf:resource="{org-ep:URI-LegislativeProcessLegalBasis($legalBasis/key[@name='reds:type'],$legalBasis/key[@name='reds:reference'])}"/>
-			-->
+			<xsl:if test="count($legalBasis) &gt; 1">
+				<xsl:message>'# Legal Basis' <xsl:value-of select="count($legalBasis)"/></xsl:message>
+			</xsl:if>
+			<eli-dl:had_legal_basis rdf:resource="{org-ep:URI-LegislativeProcessLegalBasis($legalBasis/key[@name='reds:reference'])}"/>
+			
+			<!-- LegalBase 
+			<xsl:variable name="LegalBase" select="key[@name='reds:hasProperties']/item[key[@name='reds:hasName']='reds:legalBase']/key[@name='reds:hasValue']"/>
+			<xsl:if test="$LegalBase != ''">
+				<eli-dl:had_legal_basis rdf:resource="{org-ep:URI-LegislativeProcessLegalBasis($legalBasis/key[@name='reds:reference'])}"/>
+			</xsl:if>-->
+			
+			
 			 
 			<!-- Find all its readings : look for all main dossier or MHE, and read their readings --> 
 			<xsl:variable name="readings" select="
@@ -98,13 +113,14 @@
 			<xsl:for-each select="$readings">
 				<xsl:variable name="currentReading" select="." />
 				<xsl:message>  Reading <xsl:value-of select="$currentReading" /></xsl:message>
+				<!-- This section building Reading -->
 				<eli-dl:consists_of>
 					<eli-dl:LegislativeActivity rdf:about="{org-ep:URI-LegislativeActivity($procedureReference,org-ep:readingReference($currentReading))}">
 						<elidl-ep:activityType rdf:resource="{org-ep:URI-LegislativeProcessActiviteType($currentReading)}" />
 						<elidl-ep:activityId>
 							<xsl:value-of select="$currentReading" />
 						</elidl-ep:activityId>
-					
+						
 						<!-- Now within that reading of that procedure, find all main dossiers, there could be multiple -->						
 						<xsl:apply-templates select="$currentProcedureItem
 								/key[@name ='reds:hasRelations']
@@ -122,9 +138,9 @@
 						
 						<!-- TODO : process PRVPL_I, DCPL_I and BAS to generate other subactivities -->
 						
-						<!-- TODO 
+						<!--  
 						<xsl:variable name="idBaseBas" select="../key[@name='reds:hasRelations']/item[key[@name = 'reds:hasPredicate']='reds:hasBase_BAS_I']/key[@name='reds:hasObject']/key[@name='reds:reference']"/>
-						<elidl-ep:hasBaseBas_1 rdf:resource="{org-ep:URI-LegislativeActivityBaseBas('CNS-2018-0413',$idBaseBas)}"/>
+						<elidl-ep:hasBaseBas_1 rdf:resource="{org-ep:URI-LegislativeActivityBaseBas($procedureReference,$idBaseBas)}"/>
 						-->
 							
 					</eli-dl:LegislativeActivity>
@@ -164,8 +180,31 @@
 	
 	<!-- Match property reds:subPhase -->
 	<xsl:template match="key[@name='reds:hasProperties']/item[key[@name='reds:hasName'] = 'reds:subPhase']">
+		<xsl:variable name="sNumberLeft" select="substring-before(substring-after(key[@name='reds:hasValue'],'_'),'-')"/>
+		<xsl:variable name="sNumberRigth" select="substring-after(substring-after(key[@name='reds:hasValue'],'_'),'-')"/>
+		<xsl:variable name="NumberLeft">
+			<xsl:choose>
+				<xsl:when test="number($sNumberLeft) &lt; 10">
+					<xsl:value-of select="concat('0',$sNumberLeft)"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="$sNumberLeft"/>
+				</xsl:otherwise>
+			</xsl:choose>				
+		</xsl:variable>
+		<xsl:variable name="NumberRigth">
+			<xsl:choose>
+				<xsl:when test="number($sNumberRigth) &lt; 10">
+					<xsl:value-of select="concat('0',$sNumberRigth)"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="$sNumberRigth"/>
+				</xsl:otherwise>
+			</xsl:choose>			
+		</xsl:variable>
+		<xsl:variable name="SubPhase" select="concat(substring-before(key[@name='reds:hasValue'],'_'),'_',$NumberLeft,'-',$NumberRigth)"/>
 		<elidl-ep:currentSubStage
-							rdf:resource="{org-ep:URI-LegislativeProcessStage(key[@name='reds:hasValue'])}" />
+							rdf:resource="{org-ep:URI-LegislativeProcessStage($SubPhase)}" />
 	</xsl:template>
 	
 	<!-- Match property reds:LegislativeActType -->
@@ -189,7 +228,9 @@
 				key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasRoleDossier']/key[@name = 'reds:hasValue'] = 'red:ComRole_MHE'
 			)
 	]">
-	
+		
+		<xsl:variable name="DataMain" select="."/>
+		
 		<xsl:variable name="currentIdentifier" select="key[@name = 'reds:hasObject']/key[@name = 'dc:identifier']" />
 		<xsl:variable name="currentReference" select="key[@name = 'reds:hasObject']/key[@name = 'reds:reference']" />
 		
@@ -227,6 +268,38 @@
 				
 				<!-- Find the document in the dossier export -->
 				<xsl:apply-templates select="$EXPORT_DOSSIER/all/item[key[@name = 'reds:reference'] = $currentReference]" />
+				
+				
+				<elidl-ep:activityId>
+					<xsl:value-of select="$DataMain/key[@name='reds:hasObject']/key[@name='reds:reference']"/>
+				</elidl-ep:activityId>
+				
+				<xsl:variable name="activityType" select="../item[
+					key[@name = 'reds:hasPredicate'] = 'reds:hasDirContDossier'
+					and 
+					key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasRoleDossier']/key[@name = 'reds:hasValue'] = 'red:ComRole_MHE'
+					]"/>
+				
+				<!-- Activity Type en dure -->
+				<elidl-ep:activityType rdf:resource="{org-ep:URI-LegislativeProcessActiviteType('MAIN_DOSSIER')}"/>
+				
+				<xsl:if test="$activityType !=''">
+					<elidl-ep:activityType rdf:resource="{org-ep:URI-LegislativeProcessActiviteType('MAIN_MHE_DOSSIER')}"/>
+				</xsl:if>
+				
+				<elidl-ep:activityContextPrecision rdf:resource="{org-ep:URI-LegislativeActivityMainDossier_ContextPrecision($DataMain/key[@name='reds:hasProperties']/item[key[@name='reds:hasName']='reds:hasPrecisionDossier']/key[@name='reds:hasValue'])}"/>
+				
+				<xsl:variable name="exportDossier" select="$EXPORT_DOSSIER/all/item[key[@name = 'reds:reference'] = $currentReference]/key[@name='reds:hasProperties']"/>
+				<xsl:variable name="ActivityNature" select="$exportDossier/item[key[@name='reds:hasName']='reds:hasNature']/key[@name='reds:hasValue']"/>
+				<xsl:variable name="Stage" select="$exportDossier/item[key[@name='reds:hasName']='reds:phase']/key[@name='reds:hasValue']"/>
+				<xsl:variable name="StatusDossier" select="$EXPORT_DOSSIER/all/item[key[@name = 'reds:reference'] = $currentReference]/key[@name='reds:status']"/>
+									
+				<elidl-ep:activityNature rdf:resource="{org-ep:URI-LegislativeActivityMainDossier_ActivityNature($ActivityNature)}"/>
+				<eli-dl:occured_at_stage rdf:resource="{org-ep:URI-LegislativeProcessStage(substring-after($Stage,'_'))}"/>
+				<elidl-ep:activityStatus rdf:resource="{org-ep:URI-LegislativeActivityMainDossier_Status($StatusDossier)}"/>
+				
+				
+				
 							
 			</eli-dl:LegislativeActivity>				
 		</eli-dl:consists_of>	
@@ -265,32 +338,18 @@
 					
 					<!-- this section contain main folder 
 					<eli-dl:consists_of>
-						<xsl:variable name="ActivityNature" select="../key[@name='reds:hasProperties']/item[key[@name='reds:hasName']='reds:hasNature']/key[@name='reds:hasValue']"/>
-						<xsl:variable name="Stage" select="../key[@name='reds:hasProperties']/item[key[@name='reds:hasName']='reds:phase']/key[@name='reds:hasValue']"/>
 						<xsl:variable name="ActivityStatus" select="../key[@name='reds:status']"/>
 					
 						<eli-dl:LegislativeActivity rdf:about="{org-ep:URI-LegislativeActivityMainDossier(../key[@name = 'reds:reference'],$idReading)}">
 						
 							<- TODO : tous ces attributs sont générés à partir du _DOSSIER_ dans la XSL export-dossier.xsl ->
 						
-							<elidl-ep:activityId>
-								<xsl:value-of select="$idActivityReading"/>
-							</elidl-ep:activityId>
 							
-							<elidl-ep:activityType rdf:resource="{org-ep:URI-LegislativeProcessActiviteType('MAIN_DOSSIER')}"/>							
 							
-							<eli-dl:activity_date><xsl:value-of select="../key[@name = 'reds:dateDeposit']"/></eli-dl:activity_date>
 							
-							<elidl-ep:activityContextPrecision rdf:resource="{org-ep:URI-LegislativeActivityMainDossier_ContextPrecision($ContextPrecision)}"/>
-							
-							<elidl-ep:activityNature rdf:resource="{org-ep:URI-LegislativeActivityMainDossier_ActivityNature($ActivityNature)}"/>
-							
-							<eli-dl:occured_at_stage rdf:resource="{org-ep:URI-LegislativeProcessStage($Stage)}"/>
-							
-							<elidl-ep:activityStatus rdf:resource="{org-ep:URI-LegislativeActivityMainDossier_Status($ActivityStatus)}"/>
 							-->
 							<!-- où on puet trouve la valeur ?
-							<elidl-ep:amendmentDeadlineDate><xsl:value-of select=""/></elidl-ep:amendmentDeadlineDate>  
+							<  
 							
 						</eli-dl:LegislativeActivity>
 					</eli-dl:consists_of>-->
