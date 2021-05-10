@@ -349,9 +349,6 @@
 					
 					<!-- if the mandat is the current  -->
 					<xsl:if test="endDateTime &gt; current-dateTime()">
-					<!-- 
-					<xsl:if test="startDateTime &lt; current-dateTime()">
-					 -->
 						<xsl:if test="string-length($in_seatBru) &gt; 0">
 							<org-ep:memberSeatBru rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select="$in_seatBru"/></org-ep:memberSeatBru> 
 						</xsl:if>
