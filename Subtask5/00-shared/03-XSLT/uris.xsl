@@ -200,27 +200,8 @@
 	</xsl:function>
 
 	<xsl:function name="org-ep:URI-NATIONALPARTYBODY">
-		<xsl:param name="in_OrganeId" />
-		<xsl:param name="in_typeOrganeCode" />
-		<xsl:param name="in_organeCode" />
-		<xsl:variable name="iroCode" select="$kmscodictfeedBody_file[bodyId=$in_OrganeId and bodyType=$in_typeOrganeCode and bodyCode=$in_organeCode]/iroCode"/>
-		<xsl:choose>
-			<xsl:when test="count($iroCode) &gt; 0">
-				<xsl:variable name="CountryRel" select="org-ep:Lookup_COUNTRY($iroCode)"/>
-				<xsl:choose>
-					<xsl:when test="count($CountryRel) &gt; 0">
-						<xsl:value-of select="concat(org-ep:URI-Authority('country/'),$CountryRel)"/>
-					</xsl:when>
-					<xsl:otherwise>
-						<xsl:message>Warning!! The iroCode id '<xsl:value-of select="$iroCode"/>' does not exist in Country information.</xsl:message>
-					</xsl:otherwise>
-				</xsl:choose>								
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:message>Warning!! The Code Id '<xsl:value-of select="$in_OrganeId"/>' does not have an iroCode information.</xsl:message>
-			</xsl:otherwise>
-		</xsl:choose>
-		
+		<xsl:param name="in_iroCode" />
+		<xsl:value-of select="concat(org-ep:URI-Authority('country/'),org-ep:Lookup_COUNTRY($in_iroCode))"/>		
 	</xsl:function>
 
 	<xsl:function name="org-ep:URI-POLITICALGROUPBODY">
