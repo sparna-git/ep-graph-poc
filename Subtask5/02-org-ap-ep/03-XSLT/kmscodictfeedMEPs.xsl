@@ -107,7 +107,12 @@
 					rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
 					<xsl:value-of select="birthDate" />
 				</schema:birthDate>
+				<!-- Conserver le libelle en input   -->
+				<org-ep:birthPlaceLabel>
+					
+				</org-ep:birthPlaceLabel>
 			</xsl:if>
+					
 			
 			
 			<foaf:img
@@ -314,20 +319,40 @@
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 						<xsl:value-of select="mandateId" />
 					</dc:identifier>
+					
 					<schema:endDate
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
 						<xsl:value-of select="endDateTime" />
 					</schema:endDate>
+					
 					<schema:startDate
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
 						<xsl:value-of select="startDateTime" />
 					</schema:startDate>	
 					
-					<xsl:if test="string-length(normalize-space(../../seatBru)) &gt; 0">
-						<org-ep:memberSeatBru rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select="../../seatBru"/></org-ep:memberSeatBru> 
-					</xsl:if>
-					<xsl:if test="string-length(normalize-space(../../seatStr)) &gt; 0">
-						<org-ep:memberSeatStr rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select="../../seatStr"/></org-ep:memberSeatStr>					
+					
+					<xsl:variable name="in_seatBru" select="normalize-space(../../seatBru)"/>
+					<xsl:variable name="in_seatStr" select="normalize-space(../../seatBru)"/>
+					<xsl:choose>
+						<xsl:when test="number($in_seatBru) = 0 and number($in_seatStr) = 0">
+							<xsl:message>Warning!! The values of seatBru and seaStr is 0.</xsl:message>
+						</xsl:when>
+						<xsl:when test="number($in_seatBru) = 0">
+							<xsl:message>Warning!! The value of seatBru is 0</xsl:message>
+						</xsl:when>
+						<xsl:when test="number($in_seatStr) = 0">
+							<xsl:message>Warning!! The value of seatStr is 0</xsl:message>
+						</xsl:when>
+					</xsl:choose>
+					
+					<!-- if the mandat is the currently  -->
+					<xsl:if test="startDateTime &lt; current-dateTime()">
+						<xsl:if test="string-length(normalize-space(../../seatBru)) &gt; 0">
+							<org-ep:memberSeatBru rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select="../../seatBru"/></org-ep:memberSeatBru> 
+						</xsl:if>
+						<xsl:if test="string-length(normalize-space(../../seatStr)) &gt; 0">
+							<org-ep:memberSeatStr rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select="../../seatStr"/></org-ep:memberSeatStr>					
+						</xsl:if>					
 					</xsl:if>
 				</org-ep:MembershipMandate>	
 			</org:hasMembership>				
@@ -365,7 +390,11 @@
 						</xsl:when>
 						<!-- NATIONAL-PARTY -->
 						<xsl:when test="typeOrganeCode='PN'">
-							<xsl:value-of select="'NATIONAL-PARTY'" />
+							<xsl:value-of select="'NATIONAL-PARTY'" />							
+						</xsl:when>
+						<!-- GOVERNANCE BODY -->
+						<xsl:when test="typeOrganeCode='BU' or typeOrganeCode='OD'">
+							<xsl:value-of select="GOVERNANCE-BODY"/>
 						</xsl:when>
 						<xsl:otherwise>
 							<xsl:message>Cannot determine membership type from typeOrganeCode '<xsl:value-of select="typeOrganeCode" />' </xsl:message>
@@ -378,8 +407,16 @@
 					rdf:about="{org-ep:URI-MEMBERSHIP(memberIdentifier,identifier)}">
 
 					<xsl:if test="$var_hasMembershipType != ''">
-						<org-ep:hasMembershipType
-							rdf:resource="{org-ep:URI-MembershipType($var_hasMembershipType)}" />
+						<xsl:choose>
+							<xsl:when test="typeOrganeCode='PN'">
+								<org-ep:hasMembershipType
+									rdf:resource="{org-ep:URI-NATIONALPARTYBODY(organeId,typeOrganeCode,organeCode)}" />
+							</xsl:when>
+							<xsl:otherwise>
+								<org-ep:hasMembershipType
+									rdf:resource="{org-ep:URI-MembershipType($var_hasMembershipType)}" />
+							</xsl:otherwise>
+						</xsl:choose>						
 					</xsl:if>
 
 					<org-ep:hasOrganization
