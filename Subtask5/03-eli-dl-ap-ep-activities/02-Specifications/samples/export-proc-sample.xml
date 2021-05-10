@@ -1,6 +1,1306 @@
 <?xml version="1.0" ?>
 <all>
 	<item>
+		<key name="dc:identifier">2415207</key>
+		<key name="reds:type">reds:DirContProc</key>
+		<key name="reds:reference">CNS-2018-0413</key>
+		<key name="reds:version">0</key>
+		<key name="reds:dateDeposit">2018-12-12T00:00:00.000+0100</key>
+		<key name="reds:status">red:Status_ENDED</key>
+		<key name="reds:hasSource">6</key>
+		<key name="reds:hasRank">6</key>
+		<key name="reds:hasProperties">
+			<item>
+				<key name="dc:identifier">15895891</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasName">reds:hasType</key>
+				<key name="reds:hasValue">reds:DirContProc_CNS</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15895887</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasName">reds:legalBase</key>
+				<key name="reds:hasValue">red:TFEU_113_REAL</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15895883</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasName">reds:LegislativeActType</key>
+				<key name="reds:hasValue">red:LegislativeActType_R</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15895884</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasName">reds:hasReading</key>
+				<key name="reds:hasValue">reds:Reading_I</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15895889</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasName">reds:hasSymbol</key>
+				<key name="reds:hasValue">*</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15895886</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasName">reds:subPhase</key>
+				<key name="reds:hasValue">red:Phase_8-10</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15895888</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasName">reds:hasFamily</key>
+				<key name="reds:hasValue">reds:DirContProcFam_LEG-REF</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15895885</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasName">reds:phase</key>
+				<key name="reds:hasValue">red:Phase_08</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15895890</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasName">reds:hasNature</key>
+				<key name="reds:hasValue">red:DirContProcNat_LEG</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15947410</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasName">reds:announcementType_RI</key>
+				<key name="reds:hasValue">red:AnnouncType_ANPRO</key>
+			</item>
+			<item>
+				<key name="dc:identifier">18511451</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasName">reds:decisionResult_RI</key>
+				<key name="reds:hasValue">red:CodeVote_AD</key>
+			</item>
+		</key>
+		<key name="reds:hasRelations">
+			<item>
+				<key name="dc:identifier">21707030</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasEventType_FIN</key>
+				<key name="reds:hasDate">2020-02-18T00:00:00.000+0100</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844847</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasEventStatus</key>
+						<key name="reds:hasValue">REAL</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">20981126</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasOther_DOT</key>
+				<key name="reds:hasObject">
+					<key name="dc:identifier">2415157</key>
+					<key name="reds:type">reds:iEcSec</key>
+					<key name="reds:reference">SWD-2018-0487</key>
+				</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844859</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasDocumentUse</key>
+						<key name="reds:hasValue">DOT</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">20981119</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasEventType_DCPL_I</key>
+				<key name="reds:hasDate">2019-12-17T00:00:00.000+0100</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844853</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:decisionResult</key>
+						<key name="reds:hasValue">red:decisionResult_AD</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844854</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasEventStatus</key>
+						<key name="reds:hasValue">REAL</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844855</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:decisionQualifier</key>
+						<key name="reds:hasValue">red:decisionQualif_AP</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844852</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasReading</key>
+						<key name="reds:hasValue">reds:Reading_I</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">21853187</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasEventType_DOCPR</key>
+				<key name="reds:hasDate">2020-03-24T00:00:00.000+0100</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844810</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasEventStatus</key>
+						<key name="reds:hasValue">REAL</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">20935737</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasiPlRp_I</key>
+				<key name="reds:hasObject">
+					<key name="dc:identifier">3134162</key>
+					<key name="reds:type">reds:iPlRp</key>
+					<key name="reds:reference">A-9-2019-0047</key>
+				</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844836</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:majorPart</key>
+						<key name="reds:hasValue">01</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844835</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasReading</key>
+						<key name="reds:hasValue">reds:Reading_I</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844837</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasDocumentUse</key>
+						<key name="reds:hasValue">RL1</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">16797728</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasEventType_PRORF_SA</key>
+				<key name="reds:hasDate">2019-06-12T08:30:15.000+0200</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844823</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:subType</key>
+						<key name="reds:hasValue">SA</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844822</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasEventStatus</key>
+						<key name="reds:hasValue">REAL</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">20957956</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasDebate</key>
+				<key name="reds:hasDate">2019-12-16T00:00:00.000+0100</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844850</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasEventStatus</key>
+						<key name="reds:hasValue">REAL</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844851</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasReading</key>
+						<key name="reds:hasValue">reds:Reading_I</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">21707028</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasEventType_ACSL_AF</key>
+				<key name="reds:hasDate">2020-02-18T00:00:00.000+0100</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844843</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:subType</key>
+						<key name="reds:hasValue">AF</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844844</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasEventStatus</key>
+						<key name="reds:hasValue">REAL</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">21853188</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasEventType_PUB</key>
+				<key name="reds:hasDate">2020-03-02T16:17:00.000+0100</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844811</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasEventStatus</key>
+						<key name="reds:hasValue">REAL</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">20917620</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasEpRule</key>
+				<key name="reds:hasObject">
+					<key name="dc:identifier">3178740</key>
+					<key name="reds:type">reds:iEpRegl_Itm</key>
+					<key name="reds:reference">RULES-9-2020-02-03-ITM-A159</key>
+				</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844839</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:legalBaseQualifier</key>
+						<key name="reds:hasValue">PROPOSED</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844838</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:legalBaseShorthand</key>
+						<key name="reds:hasValue">EP159</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">20948940</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasEventType_EVPLE_VO</key>
+				<key name="reds:hasDate">2019-12-17T00:00:00.000+0100</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844864</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:subType</key>
+						<key name="reds:hasValue">VO</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844863</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasEventStatus</key>
+						<key name="reds:hasValue">PROVISIONAL</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">16844594</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasEventType_PROOF_CS</key>
+				<key name="reds:hasDate">2018-12-20T00:00:00.000+0100</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844826</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:subType</key>
+						<key name="reds:hasValue">CS</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844825</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasEventStatus</key>
+						<key name="reds:hasValue">REAL</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">21853190</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasEventType_DOCPR</key>
+				<key name="reds:hasDate">2018-12-12T00:00:00.000+0100</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844814</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasEventStatus</key>
+						<key name="reds:hasValue">REAL</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">16815484</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasEventType_SDAVN</key>
+				<key name="reds:hasDate">2018-12-13T00:00:00.000+0100</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844824</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasEventStatus</key>
+						<key name="reds:hasValue">REAL</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">20981128</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasVote</key>
+				<key name="reds:hasDate">2019-12-17T00:00:00.000+0100</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844860</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasEventStatus</key>
+						<key name="reds:hasValue">REAL</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844861</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasReading</key>
+						<key name="reds:hasValue">reds:Reading_I</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">19727653</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasEventType_PRVD2_I</key>
+				<key name="reds:hasDate">2019-12-16T00:00:00.000+0100</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844820</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasEventStatus</key>
+						<key name="reds:hasValue">PROVISIONAL</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844821</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasReading</key>
+						<key name="reds:hasValue">reds:Reading_I</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">21853195</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasEventType_DOCPR</key>
+				<key name="reds:hasDate">2019-01-23T00:00:00.000+0100</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844819</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasEventStatus</key>
+						<key name="reds:hasValue">REAL</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">21853192</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasEventType_DOCPR</key>
+				<key name="reds:hasDate">2019-12-18T00:00:00.000+0100</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844816</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasEventStatus</key>
+						<key name="reds:hasValue">REAL</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">20981123</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasAdoptedText</key>
+				<key name="reds:hasObject">
+					<key name="dc:identifier">3141462</key>
+					<key name="reds:type">reds:iPlTa_Itm</key>
+					<key name="reds:reference">TA-9-2019-0091</key>
+				</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844857</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasReading</key>
+						<key name="reds:hasValue">reds:Reading_I</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844858</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasDocumentUse</key>
+						<key name="reds:hasValue">AP1</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">16794546</key>
+				<key name="reds:hasSource">-1</key>
+				<key name="reds:hasRank">-1</key>
+				<key name="reds:hasPredicate">reds:dateCreation</key>
+				<key name="reds:hasDate">2018-12-12T11:10:15.456+0100</key>
+			</item>
+			<item>
+				<key name="dc:identifier">16794547</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasEventType_PROCR</key>
+				<key name="reds:hasDate">2018-12-12T10:58:56.000+0100</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844830</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasEventStatus</key>
+						<key name="reds:hasValue">REAL</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">21853194</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:announcementInPlen_RI</key>
+				<key name="reds:hasDate">2019-01-14T00:00:00.000+0100</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844818</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasReading</key>
+						<key name="reds:hasValue">reds:Reading_I</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">21707024</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasEventType_DOCPR</key>
+				<key name="reds:hasDate">2019-12-09T00:00:00.000+0100</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844842</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasEventStatus</key>
+						<key name="reds:hasValue">REAL</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">16794545</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasBase_BAS_I</key>
+				<key name="reds:hasObject">
+					<key name="dc:identifier">2415162</key>
+					<key name="reds:type">reds:iEcCom</key>
+					<key name="reds:reference">COM-2018-0813</key>
+				</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844827</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasReading</key>
+						<key name="reds:hasValue">reds:Reading_I</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844829</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasDocumentUse</key>
+						<key name="reds:hasValue">BAS</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844828</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasAliasCReference</key>
+						<key name="reds:hasValue">C8-0016/2019</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">21853191</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasOther_ACF</key>
+				<key name="reds:hasObject">
+					<key name="dc:identifier">3224165</key>
+					<key name="reds:type">reds:iEiCelex</key>
+					<key name="reds:reference">3-2020-R-0283</key>
+				</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844815</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasDocumentUse</key>
+						<key name="reds:hasValue">ACF</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">16844593</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:dateOfficialisation</key>
+				<key name="reds:hasDate">2018-12-20T00:00:00.000+0100</key>
+			</item>
+			<item>
+				<key name="dc:identifier">21707029</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasEventType_ANPRO_SA</key>
+				<key name="reds:hasDate">2019-10-21T00:00:00.000+0200</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844845</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:subType</key>
+						<key name="reds:hasValue">SA</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844846</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasEventStatus</key>
+						<key name="reds:hasValue">REAL</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">20957954</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasEventType_EXPL_I</key>
+				<key name="reds:hasDate">2019-12-16T00:00:00.000+0100</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844849</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasEventStatus</key>
+						<key name="reds:hasValue">REAL</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844848</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasReading</key>
+						<key name="reds:hasValue">reds:Reading_I</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">20948937</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:announcementInPlen_RI</key>
+				<key name="reds:hasDate">2019-10-21T00:00:00.000+0200</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844862</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasReading</key>
+						<key name="reds:hasValue">reds:Reading_I</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">20673574</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasEventType_EVPLE_DE</key>
+				<key name="reds:hasDate">2019-12-16T00:00:00.000+0100</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844831</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:subType</key>
+						<key name="reds:hasValue">DE</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844832</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasEventStatus</key>
+						<key name="reds:hasValue">PROVISIONAL</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">21853193</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasOther_DOT</key>
+				<key name="reds:hasObject">
+					<key name="dc:identifier">2415158</key>
+					<key name="reds:type">reds:iEcSec</key>
+					<key name="reds:reference">SWD-2018-0488</key>
+				</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844817</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasDocumentUse</key>
+						<key name="reds:hasValue">DOT</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">20917624</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasEventType_DEPOT_I</key>
+				<key name="reds:hasDate">2019-12-09T08:40:43.000+0100</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844840</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasEventStatus</key>
+						<key name="reds:hasValue">REAL</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844841</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasReading</key>
+						<key name="reds:hasValue">reds:Reading_I</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">21853189</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasEventType_ANPRO_SA</key>
+				<key name="reds:hasDate">2019-01-14T00:00:00.000+0100</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844813</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:subType</key>
+						<key name="reds:hasValue">SA</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844812</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasEventStatus</key>
+						<key name="reds:hasValue">REAL</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">20981121</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:votePlanning_RI</key>
+				<key name="reds:hasDate">2019-12-17T00:00:00.000+0100</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844856</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasReading</key>
+						<key name="reds:hasValue">reds:Reading_I</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">16797729</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasDirContDossier</key>
+				<key name="reds:hasObject">
+					<key name="dc:identifier">2565594</key>
+					<key name="reds:type">reds:DirContDossier</key>
+					<key name="reds:reference">ECON-9-00408</key>
+				</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844865</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:type</key>
+						<key name="reds:hasValue">reds:DirContDossier</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844866</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasReading</key>
+						<key name="reds:hasValue">reds:Reading_I</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844867</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasPrecisionDossier</key>
+						<key name="reds:hasValue">red:EventSubTypeS20_REP</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844868</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasRoleDossier</key>
+						<key name="reds:hasValue">red:ComRole_MAIN</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">20528583</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasPredicate">reds:hasEventType_PRVPL_I</key>
+				<key name="reds:hasDate">2019-12-16T00:00:00.000+0100</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">28844834</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasEventStatus</key>
+						<key name="reds:hasValue">PROVISIONAL</key>
+					</item>
+					<item>
+						<key name="dc:identifier">28844833</key>
+						<key name="reds:hasSource">6</key>
+						<key name="reds:hasRank">6</key>
+						<key name="reds:hasName">reds:hasReading</key>
+						<key name="reds:hasValue">reds:Reading_I</key>
+					</item>
+				</key>
+			</item>
+		</key>
+		<key name="reds:hasObjectRelations">
+			<item>
+				<key name="dc:identifier">16956278</key>
+				<key name="reds:hasPredicate">reds:hasDirContProc</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasSubject">
+					<key name="dc:identifier">2415157</key>
+					<key name="reds:type">reds:iEcSec</key>
+					<key name="reds:reference">SWD-2018-0487</key>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">20272867</key>
+				<key name="reds:hasPredicate">reds:hasDirContProc</key>
+				<key name="reds:hasSource">628</key>
+				<key name="reds:hasRank">628</key>
+				<key name="reds:hasSubject">
+					<key name="dc:identifier">3029267</key>
+					<key name="reds:type">reds:iCmDoc_Amd</key>
+					<key name="reds:reference">ECON-AM-643162</key>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">19794366</key>
+				<key name="reds:hasPredicate">reds:hasMeetingDocument</key>
+				<key name="reds:hasSource">11</key>
+				<key name="reds:hasRank">99</key>
+				<key name="reds:hasSubject">
+					<key name="dc:identifier">2932825</key>
+					<key name="reds:type">reds:iCmOj</key>
+					<key name="reds:reference">ECON-OJ-2019-11-04-1</key>
+				</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">26937831</key>
+						<key name="reds:hasSource">11</key>
+						<key name="reds:hasRank">11</key>
+						<key name="reds:hasName">reds:itemNumber</key>
+						<key name="reds:hasValue">8</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">17301297</key>
+				<key name="reds:hasPredicate">reds:hasDirContProc</key>
+				<key name="reds:hasSource">1</key>
+				<key name="reds:hasRank">1</key>
+				<key name="reds:hasSubject">
+					<key name="dc:identifier">2503511</key>
+					<key name="reds:type">reds:iNpContrib</key>
+					<key name="reds:reference">DE_BUNDESRAT-CONT-EC-2018-0813-1</key>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">20986840</key>
+				<key name="reds:hasPredicate">reds:isVoteFor</key>
+				<key name="reds:hasSource">22</key>
+				<key name="reds:hasRank">22</key>
+				<key name="reds:hasSubject">
+					<key name="dc:identifier">3096587</key>
+					<key name="reds:type">reds:iPlOj_Sit</key>
+					<key name="reds:reference">OJQ-9-2019-12-17</key>
+				</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">27277686</key>
+						<key name="reds:hasSource">22</key>
+						<key name="reds:hasRank">22</key>
+						<key name="reds:hasName">reds:itemNumber</key>
+						<key name="reds:hasValue">V35</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">20986810</key>
+				<key name="reds:hasPredicate">reds:isDebateFor</key>
+				<key name="reds:hasSource">22</key>
+				<key name="reds:hasRank">22</key>
+				<key name="reds:hasSubject">
+					<key name="dc:identifier">3096586</key>
+					<key name="reds:type">reds:iPlOj_Sit</key>
+					<key name="reds:reference">OJQ-9-2019-12-16</key>
+				</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">27277653</key>
+						<key name="reds:hasSource">22</key>
+						<key name="reds:hasRank">22</key>
+						<key name="reds:hasName">reds:itemNumber</key>
+						<key name="reds:hasValue">D35</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">16956277</key>
+				<key name="reds:hasPredicate">reds:hasDirContProc</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasSubject">
+					<key name="dc:identifier">2415158</key>
+					<key name="reds:type">reds:iEcSec</key>
+					<key name="reds:reference">SWD-2018-0488</key>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">20649102</key>
+				<key name="reds:hasPredicate">reds:hasMeetingDocument</key>
+				<key name="reds:hasSource">11</key>
+				<key name="reds:hasRank">99</key>
+				<key name="reds:hasSubject">
+					<key name="dc:identifier">3052287</key>
+					<key name="reds:type">reds:iCmOj</key>
+					<key name="reds:reference">ECON-OJ-2019-12-02-1</key>
+				</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">27198819</key>
+						<key name="reds:hasSource">11</key>
+						<key name="reds:hasRank">11</key>
+						<key name="reds:hasName">reds:itemNumber</key>
+						<key name="reds:hasValue">21</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">21916918</key>
+				<key name="reds:hasPredicate">reds:hasLink</key>
+				<key name="reds:hasSource">40</key>
+				<key name="reds:hasRank">40</key>
+				<key name="reds:hasSubject">
+					<key name="dc:identifier">3141327</key>
+					<key name="reds:type">reds:iPlCre_Int</key>
+					<key name="reds:reference">CRE-9-2019-12-16-INT-1-072-0000</key>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">21853131</key>
+				<key name="reds:hasPredicate">reds:hasDirContProc</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasSubject">
+					<key name="dc:identifier">3224165</key>
+					<key name="reds:type">reds:iEiCelex</key>
+					<key name="reds:reference">3-2020-R-0283</key>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">20921167</key>
+				<key name="reds:hasPredicate">reds:hasDirContProc</key>
+				<key name="reds:hasSource">178</key>
+				<key name="reds:hasRank">178</key>
+				<key name="reds:hasSubject">
+					<key name="dc:identifier">3134162</key>
+					<key name="reds:type">reds:iPlRp</key>
+					<key name="reds:reference">A-9-2019-0047</key>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">19723251</key>
+				<key name="reds:hasPredicate">reds:hasDirContProc</key>
+				<key name="reds:hasSource">628</key>
+				<key name="reds:hasRank">628</key>
+				<key name="reds:hasSubject">
+					<key name="dc:identifier">2918156</key>
+					<key name="reds:type">reds:iCmRp-Dft</key>
+					<key name="reds:reference">ECON-PR-641419</key>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">20649106</key>
+				<key name="reds:hasPredicate">reds:hasMeetingDocument</key>
+				<key name="reds:hasSource">11</key>
+				<key name="reds:hasRank">99</key>
+				<key name="reds:hasSubject">
+					<key name="dc:identifier">3052287</key>
+					<key name="reds:type">reds:iCmOj</key>
+					<key name="reds:reference">ECON-OJ-2019-12-02-1</key>
+				</key>
+				<key name="reds:hasProperties">
+					<item>
+						<key name="dc:identifier">27198825</key>
+						<key name="reds:hasSource">11</key>
+						<key name="reds:hasRank">11</key>
+						<key name="reds:hasName">reds:itemNumber</key>
+						<key name="reds:hasValue">15</key>
+					</item>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">16794139</key>
+				<key name="reds:hasPredicate">reds:hasDirContProc</key>
+				<key name="reds:hasSource">10</key>
+				<key name="reds:hasRank">10</key>
+				<key name="reds:hasSubject">
+					<key name="dc:identifier">2415162</key>
+					<key name="reds:type">reds:iEcCom</key>
+					<key name="reds:reference">COM-2018-0813</key>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">20959582</key>
+				<key name="reds:hasPredicate">reds:hasDirContProc</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasSubject">
+					<key name="dc:identifier">3141462</key>
+					<key name="reds:type">reds:iPlTa_Itm</key>
+					<key name="reds:reference">TA-9-2019-0091</key>
+				</key>
+			</item>
+			<item>
+				<key name="dc:identifier">17835573</key>
+				<key name="reds:hasPredicate">reds:hasDirContProc</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasSubject">
+					<key name="dc:identifier">2565594</key>
+					<key name="reds:type">reds:DirContDossier</key>
+					<key name="reds:reference">ECON-9-00408</key>
+				</key>
+			</item>
+		</key>
+		<key name="reds:hasRoles">
+			<item>
+				<key name="dc:identifier">4959318</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasRolePersonName">reds:Role_CMS</key>
+				<key name="reds:hasPerson">
+					<key name="reds:hasPersId">1983</key>
+				</key>
+			</item>
+		</key>
+		<key name="reds:hasMedias"/>
+		<key name="reds:hasTitles">
+			<item>
+				<key name="dc:identifier">15404420</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasLanguage">hr</key>
+				<key name="reds:hasType">MAIN</key>
+				<key name="reds:hasValue">Mjere za jačanje administrativne suradnje radi borbe protiv prijevara u vezi s PDV-om</key>
+				<key name="reds:version">0</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15404425</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasLanguage">sv</key>
+				<key name="reds:hasType">MAIN</key>
+				<key name="reds:hasValue">Åtgärder för att stärka det administrativa samarbetet för att bekämpa mervärdesskattebedrägeri</key>
+				<key name="reds:version">0</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15404430</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasLanguage">lv</key>
+				<key name="reds:hasType">MAIN</key>
+				<key name="reds:hasValue">Pasākumi administratīvās sadarbības stiprināšanai, lai apkarotu ar PVN saistītu krāpšanu</key>
+				<key name="reds:version">0</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15404432</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasLanguage">pt</key>
+				<key name="reds:hasType">MAIN</key>
+				<key name="reds:hasValue">Medidas destinadas a reforçar a cooperação administrativa para combater a fraude ao IVA</key>
+				<key name="reds:version">0</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15404422</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasLanguage">el</key>
+				<key name="reds:hasType">MAIN</key>
+				<key name="reds:hasValue">Μέτρα ενίσχυσης της διοικητικής συνεργασίας για την καταπολέμηση της απάτης στον τομέα του ΦΠΑ</key>
+				<key name="reds:version">0</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15404435</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasLanguage">fr</key>
+				<key name="reds:hasType">MAIN</key>
+				<key name="reds:hasValue">Mesures de renforcement de la coopération administrative afin de lutter contre la fraude à la TVA</key>
+				<key name="reds:version">0</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15404436</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasLanguage">es</key>
+				<key name="reds:hasType">MAIN</key>
+				<key name="reds:hasValue">Medidas para reforzar la cooperación administrativa a fin de combatir el fraude en el ámbito del IVA</key>
+				<key name="reds:version">0</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15404428</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasLanguage">sl</key>
+				<key name="reds:hasType">MAIN</key>
+				<key name="reds:hasValue">Ukrepi za krepitev upravnega sodelovanja za boj proti goljufijam na področju DDV</key>
+				<key name="reds:version">0</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15404416</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasLanguage">de</key>
+				<key name="reds:hasType">MAIN</key>
+				<key name="reds:hasValue">Stärkung der Zusammenarbeit der Verwaltungsbehörden bei der Betrugsbekämpfung</key>
+				<key name="reds:version">0</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15404429</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasLanguage">en</key>
+				<key name="reds:hasType">MAIN</key>
+				<key name="reds:hasValue">Measures to strengthen administrative cooperation in order to combat VAT fraud</key>
+				<key name="reds:version">0</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15404438</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasLanguage">fi</key>
+				<key name="reds:hasType">MAIN</key>
+				<key name="reds:hasValue">Hallinnollisen yhteistyön lujittamiseen tähtäävät toimenpiteet alv-petosten torjumiseksi</key>
+				<key name="reds:version">0</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15404421</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasLanguage">pl</key>
+				<key name="reds:hasType">MAIN</key>
+				<key name="reds:hasValue">Środki zwiększające współpracę administracyjną w celu zwalczania oszustw związanych z VAT</key>
+				<key name="reds:version">0</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15404424</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasLanguage">et</key>
+				<key name="reds:hasType">MAIN</key>
+				<key name="reds:hasValue">Meetmed halduskoostöö tugevdamiseks, et võidelda käibemaksupettuste vastu</key>
+				<key name="reds:version">0</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15404418</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasLanguage">lt</key>
+				<key name="reds:hasType">MAIN</key>
+				<key name="reds:hasValue">Priemonės, kuriomis stiprinamas administracinis bendradarbiavimas kovojant su sukčiavimu PVM</key>
+				<key name="reds:version">0</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15404431</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasLanguage">hu</key>
+				<key name="reds:hasType">MAIN</key>
+				<key name="reds:hasValue">A héacsalás elleni küzdelem érdekében folytatott közigazgatási együttműködés megerősítésére irányuló intézkedések</key>
+				<key name="reds:version">0</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15404423</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasLanguage">da</key>
+				<key name="reds:hasType">MAIN</key>
+				<key name="reds:hasValue">Foranstaltninger til styrkelse af det administrative samarbejde med henblik på bekæmpelse af momssvig</key>
+				<key name="reds:version">0</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15404427</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasLanguage">it</key>
+				<key name="reds:hasType">MAIN</key>
+				<key name="reds:hasValue">Misure di rafforzamento della cooperazione amministrativa per lottare contro la frode in materia di IVA</key>
+				<key name="reds:version">0</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15404433</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasLanguage">nl</key>
+				<key name="reds:hasType">MAIN</key>
+				<key name="reds:hasValue">Maatregelen ter versterking van de administratieve samenwerking om btw-fraude te bestrijden</key>
+				<key name="reds:version">0</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15404434</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasLanguage">ro</key>
+				<key name="reds:hasType">MAIN</key>
+				<key name="reds:hasValue">Măsurile de consolidare a cooperării administrative în vederea combaterii fraudei în domeniul TVA</key>
+				<key name="reds:version">0</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15404417</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasLanguage">mt</key>
+				<key name="reds:hasType">MAIN</key>
+				<key name="reds:hasValue">Miżuri biex tissaħħaħ il-kooperazzjoni amministrattiva għall-ġlieda kontra l-frodi tal-VAT</key>
+				<key name="reds:version">0</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15404419</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasLanguage">cs</key>
+				<key name="reds:hasType">MAIN</key>
+				<key name="reds:hasValue">Opatření k posílení správní spolupráce za účelem boje proti podvodům v oblasti DPH</key>
+				<key name="reds:version">0</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15404437</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasLanguage">sk</key>
+				<key name="reds:hasType">MAIN</key>
+				<key name="reds:hasValue">Opatrenia na posilnenie administratívnej spolupráce v záujme boja proti podvodom v oblasti DPH</key>
+				<key name="reds:version">0</key>
+			</item>
+			<item>
+				<key name="dc:identifier">15404426</key>
+				<key name="reds:hasSource">6</key>
+				<key name="reds:hasRank">6</key>
+				<key name="reds:hasLanguage">bg</key>
+				<key name="reds:hasType">MAIN</key>
+				<key name="reds:hasValue">Мерки за засилване на административното сътрудничество с цел борба с измамите с ДДС</key>
+				<key name="reds:version">0</key>
+			</item>
+		</key>
+	</item>
+	<item>
 		<key name="dc:identifier">2423342</key>
 		<key name="reds:type">reds:DirContProc</key>
 		<key name="reds:reference">COD-2018-0436</key>

@@ -413,6 +413,8 @@
 		</xsl:choose>	
 	</xsl:function>
 
+	<!-- Removed Town lookup -->
+	<!--
 	<xsl:function name="org-ep:Lookup_TOWN">
 		<xsl:param name="in_countryId" />
 		<xsl:param name="in_countryIsocode" />
@@ -437,6 +439,7 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:function>
+	-->
 	
 	<xsl:function name="org-ep:Lookup_COUNTRY_ID">
 		<xsl:param name="in_townId" />

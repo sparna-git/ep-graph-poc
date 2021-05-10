@@ -129,10 +129,12 @@
 			<schema:honorificPrefix
 				rdf:resource="{org-ep:URI-CIVILITY(titleCode)}" />
 
+			<!--
 			<xsl:variable name="townCode" select="org-ep:Lookup_TOWN(countryId,countryIsoCode,birthPlace)" />
 			<xsl:if test="$townCode != ''">
 				<schema:birthPlace rdf:resource="{org-ep:URI-PLACE($townCode)}" />
 			</xsl:if>
+			-->
 
 			<xsl:variable name="countryId" select="org-ep:Lookup_COUNTRY(countryIsoCode)" />
 			<xsl:if test="$countryId != ''">
@@ -332,7 +334,7 @@
 					
 					
 					<xsl:variable name="in_seatBru" select="normalize-space(../../seatBru)"/>
-					<xsl:variable name="in_seatStr" select="normalize-space(../../seatBru)"/>
+					<xsl:variable name="in_seatStr" select="normalize-space(../../seatStr)"/>
 					<xsl:choose>
 						<xsl:when test="number($in_seatBru) = 0 and number($in_seatStr) = 0">
 							<xsl:message>Warning!! The values of seatBru and seaStr is 0.</xsl:message>
@@ -345,13 +347,16 @@
 						</xsl:when>
 					</xsl:choose>
 					
-					<!-- if the mandat is the currently  -->
+					<!-- if the mandat is the current  -->
+					<xsl:if test="endDateTime &gt; current-dateTime()">
+					<!-- 
 					<xsl:if test="startDateTime &lt; current-dateTime()">
-						<xsl:if test="string-length(normalize-space(../../seatBru)) &gt; 0">
-							<org-ep:memberSeatBru rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select="../../seatBru"/></org-ep:memberSeatBru> 
+					 -->
+						<xsl:if test="string-length($in_seatBru) &gt; 0">
+							<org-ep:memberSeatBru rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select="$in_seatBru"/></org-ep:memberSeatBru> 
 						</xsl:if>
-						<xsl:if test="string-length(normalize-space(../../seatStr)) &gt; 0">
-							<org-ep:memberSeatStr rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select="../../seatStr"/></org-ep:memberSeatStr>					
+						<xsl:if test="string-length($in_seatStr) &gt; 0">
+							<org-ep:memberSeatStr rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select="$in_seatStr"/></org-ep:memberSeatStr>					
 						</xsl:if>					
 					</xsl:if>
 				</org-ep:MembershipMandate>	
