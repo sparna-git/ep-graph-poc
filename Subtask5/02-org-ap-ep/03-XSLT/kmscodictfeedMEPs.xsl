@@ -108,9 +108,11 @@
 					<xsl:value-of select="birthDate" />
 				</schema:birthDate>
 				<!-- Conserver le libelle en input   -->
-				<org-ep:birthPlaceLabel>
-					
-				</org-ep:birthPlaceLabel>
+				<xsl:if test="string-length(normalize-space(birthPlace)) &gt; 0">
+					<org-ep:birthPlaceLabel>
+						<xsl:value-of select="birthPlace"/>
+					</org-ep:birthPlaceLabel>
+				</xsl:if>
 			</xsl:if>
 					
 			
