@@ -268,6 +268,20 @@
 				
 				<!-- Find the document in the dossier export -->
 				<xsl:apply-templates select="$EXPORT_DOSSIER/all/item[key[@name = 'reds:reference'] = $currentReference]" />
+
+				
+				
+				
+							
+			</eli-dl:LegislativeActivity>				
+		</eli-dl:consists_of>	
+	</xsl:template>
+
+
+	<!-- Matches a dossier in the export_dossier.xml file -->
+	<xsl:template match="item[key[@name = 'reds:type'] = 'reds:DirContDossier']">
+		<eli-dl:activity_date><xsl:value-of select="key[@name = 'reds:dateDeposit']"/></eli-dl:activity_date>
+		
 				
 				
 				<elidl-ep:activityId>
@@ -287,28 +301,13 @@
 				
 				<elidl-ep:activityContextPrecision rdf:resource="{org-ep:URI-LegislativeActivityMainDossier_ContextPrecision($DataMain/key[@name='reds:hasProperties']/item[key[@name='reds:hasName']='reds:hasPrecisionDossier']/key[@name='reds:hasValue'])}"/>
 				
-				<xsl:variable name="exportDossier" select="$EXPORT_DOSSIER/all/item[key[@name = 'reds:reference'] = $currentReference]/key[@name='reds:hasProperties']"/>
-				<xsl:variable name="ActivityNature" select="$exportDossier/item[key[@name='reds:hasName']='reds:hasNature']/key[@name='reds:hasValue']"/>
+				<xsl:variable name="ActivityNature" select="item[key[@name='reds:hasName']='reds:hasNature']/key[@name='reds:hasValue']"/>
 				<xsl:variable name="Stage" select="$exportDossier/item[key[@name='reds:hasName']='reds:phase']/key[@name='reds:hasValue']"/>
 				<xsl:variable name="StatusDossier" select="$EXPORT_DOSSIER/all/item[key[@name = 'reds:reference'] = $currentReference]/key[@name='reds:status']"/>
 									
 				<elidl-ep:activityNature rdf:resource="{org-ep:URI-LegislativeActivityMainDossier_ActivityNature($ActivityNature)}"/>
 				<eli-dl:occured_at_stage rdf:resource="{org-ep:URI-LegislativeProcessStage(substring-after($Stage,'_'))}"/>
-				<elidl-ep:activityStatus rdf:resource="{org-ep:URI-LegislativeActivityMainDossier_Status($StatusDossier)}"/>
-				
-				
-				
-							
-			</eli-dl:LegislativeActivity>				
-		</eli-dl:consists_of>	
-	</xsl:template>
-
-
-	<!-- Matches a dossier in the export_dossier.xml file -->
-	<xsl:template match="item[key[@name = 'reds:type'] = 'reds:DirContDossier']">
-		<eli-dl:activity_date><xsl:value-of select="key[@name = 'reds:dateDeposit']"/></eli-dl:activity_date>
-		
-		
+				<elidl-ep:activityStatus rdf:resource="{org-ep:URI-LegislativeActivityMainDossier_Status($StatusDossier)}"/>		
 		
 	</xsl:template>
 

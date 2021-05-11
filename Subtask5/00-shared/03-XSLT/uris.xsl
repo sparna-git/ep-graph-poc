@@ -255,6 +255,13 @@
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/resource/eli/dl/proc/',$year,'/',$number,'/',$type)" />
 	</xsl:function>
 	
+	<xsl:function name="org-ep:URI-LegislativeProcessWork">
+		<xsl:param name="procedureReference" />	
+		<xsl:param name="docType" />
+		<xsl:param name="docId" />	
+		<xsl:value-of select="concat(org-ep:URI-LegislativeProcess($procedureReference), '/doc/', $docType, '/', $docId)" />
+	</xsl:function>
+	
 	<xsl:function name="org-ep:readingReference">
 		<xsl:param name="redsReadingReference" />
 		<xsl:choose>
@@ -267,6 +274,27 @@
 			<xsl:when test="$redsReadingReference = 'reds:Reading_III'">
 				<xsl:value-of select="'reading_III'" />
 			</xsl:when>
+		</xsl:choose>
+	</xsl:function>
+	
+	<xsl:function name="org-ep:manifestationUriComponent">
+		<xsl:param name="format" />
+		<xsl:choose>
+			<xsl:when test="$format = 'application/pdf'">
+				<xsl:value-of select="'pdf'" />
+			</xsl:when>
+			<xsl:when test="$format = 'application/xml'">
+				<xsl:value-of select="'xml'" />
+			</xsl:when>
+			<xsl:when test="$format = 'application/xhtml+xml'">
+				<xsl:value-of select="'html'" />
+			</xsl:when>
+			<xsl:when test="$format = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'">
+				<xsl:value-of select="'odf'" />
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:message>Warning : Unknown document format : <xsl:value-of select="$format" /></xsl:message>
+			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:function>
 	
@@ -353,7 +381,7 @@
 	</xsl:function>
 	
 	<!-- Generate a URI Status -->
-	<xsl:function name="org-ep:URI-LegislativeActivityMainDossier_Status">
+	<xsl:function name="org-ep:URI-ActivityStatus">
 		<xsl:param name="idActiviteStatus" />		
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/activity-status/',substring-after($idActiviteStatus,'_'))"/>
 	</xsl:function>
