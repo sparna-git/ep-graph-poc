@@ -61,21 +61,7 @@
 				<xsl:value-of select="key[@name ='reds:dateDeposit']" />
 			</elidl-ep:creationDate>
 			
-			<eli-dl:legislative_process_status rdf:resource="{org-ep:URI-Activity_ProcessStatus(key[@name = 'reds:status'])}"/>
-			
-			<!-- always create the activity of procedure-creation -->
-			<xsl:variable name="idProcedure" select="count(key[@name='reds:hasRelations'])"/>		
-			<eli-dl:consists_of>
-				<eli-dl:LegislativeActivity
-					rdf:about="{org-ep:URI-LegislativeActivity(key[@name = 'reds:reference'], 'procedure-creation_1')}">
-					<xsl:variable name="Data_ProcedureCreation" select="key[@name='reds:hasRelations']/item[key[@name='reds:hasPredicate']='reds:hasEventType_PROCR']"/>
-					<elidl-ep:activityType rdf:resource="{org-ep:URI-ActiviteType(substring-after($Data_ProcedureCreation/key[@name='reds:hasPredicate'],'_'))}"/>
-					<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
-						<xsl:value-of select="$Data_ProcedureCreation/key[@name='reds:hasDate']"/>
-					</eli-dl:activity_date>
-				</eli-dl:LegislativeActivity>
-			</eli-dl:consists_of>
-			
+			<eli-dl:legislative_process_status rdf:resource="{org-ep:URI-Activity_ProcessStatus(key[@name = 'reds:status'])}"/>	
 			
 			<!-- This section does reds:hasEpRule -->
 			<xsl:variable name="legalBasis" select="key[@name='reds:hasRelations']/item[key[@name='reds:hasPredicate']='reds:hasEpRule']/key[@name='reds:hasObject']/key[@name='reds:reference']"/>
@@ -84,7 +70,7 @@
 					<eli-dl:had_legal_basis rdf:resource="{org-ep:URI-LegislativeProcessLegalBasis(.)}"/>
 				</xsl:when>
 				<xsl:when test="count($legalBasis) &gt; 1">
-					<xsl:message>'# Legal Basis' <xsl:value-of select="count($legalBasis)"/></xsl:message>
+					<xsl:message># Legal Basis <xsl:value-of select="count($legalBasis)"/></xsl:message>
 					<xsl:for-each select="$legalBasis">
 						<eli-dl:had_legal_basis rdf:resource="{org-ep:URI-LegislativeProcessLegalBasis(.)}"/>
 					</xsl:for-each>
@@ -165,9 +151,8 @@
 			<xsl:apply-templates select="key[@name ='reds:hasProperties']/item"/>
 			
 			<!-- Process all relations -->
-			<!-- 
 			<xsl:apply-templates select="key[@name ='reds:hasRelations']/item"/>
-			-->			 
+		 
 		</eli-dl:LegislativeProcess>
 	</xsl:template>	
 	
@@ -238,6 +223,21 @@
 		<xsl:message>Found reds:legalBase <xsl:value-of select="key[@name='reds:hasValue']" /></xsl:message>
 	</xsl:template>
 	
+	<!-- Match relation to procedure creation -->
+	<xsl:template match="key[@name='reds:hasRelations']/item[key[@name='reds:hasPredicate']='reds:hasEventType_PROCR']">
+		<eli-dl:consists_of>
+			<eli-dl:LegislativeActivity
+				rdf:about="{org-ep:URI-LegislativeActivity(../../key[@name = 'reds:reference'], 'procedure-creation_1')}">
+				<xsl:variable name="Data_ProcedureCreation" select="key[@name='reds:hasRelations']/item[key[@name='reds:hasPredicate']='reds:hasEventType_PROCR']"/>
+				<elidl-ep:activityType rdf:resource="{org-ep:URI-ActiviteType(substring-after(key[@name='reds:hasPredicate'],'_'))}"/>
+				<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
+					<xsl:value-of select="key[@name='reds:hasDate']"/>
+				</eli-dl:activity_date>
+			</eli-dl:LegislativeActivity>
+		</eli-dl:consists_of>
+	</xsl:template>
+	
+	
 	<!-- Match relation to a MAIN dossier -->
 	<xsl:template match="key[@name ='reds:hasRelations']/item[
 			key[@name = 'reds:hasPredicate'] = 'reds:hasDirContDossier'
@@ -287,7 +287,7 @@
 				rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index))}">						
 				
 				<!-- Find the document in the dossier export -->
-				<xsl:apply-templates select="$EXPORT_DOSSIER/all/item[key[@name = 'reds:reference'] = $currentReference]" />	
+				<xsl:apply-templates select="$EXPORT_DOSSIER/all/item[key[@name = 'reds:reference'] = $currentReference]" mode="dossier" />	
 							
 				
 				<!-- the section search all roles -->
@@ -334,7 +334,7 @@
 
 
 	<!-- Matches a dossier in the export_dossier.xml file -->
-	<xsl:template match="item[key[@name = 'reds:type'] = 'reds:DirContDossier']">
+	<xsl:template match="/all/item[key[@name = 'reds:type'] = 'reds:DirContDossier']" mode="dossier">
 	
 		<xsl:variable name="hasProperties" select="./key[@name='reds:hasProperties']"/>
 	    	
