@@ -55,15 +55,15 @@
 			</xsl:choose>
 		</xsl:variable>
 			
-		<org-ep:Organization rdf:about="{org-ep:URI-Organization($theBodyCode, bodyId)}">			
+		<org-ep:Organization rdf:about="{org-ep:URI-Organization(normalize-space(descriptions/item[1]/bodyCode), bodyId)}">			
 			<!-- Generate skos notations -->
-			<skos:notation rdf:datatype="http://data.europarl.europa.eu/authority/notation-type/codict/bodycode"><xsl:value-of select="normalize-space($theBodyCode)" /></skos:notation>
+			<skos:notation rdf:datatype="http://data.europarl.europa.eu/authority/notation-type/codict/bodycode"><xsl:value-of select="normalize-space(descriptions/item[1]/bodyCode)" /></skos:notation>
 			<xsl:if test="descriptions/item[1]/mnemoCode">
 				<!-- also look for mnemoCode here -->
 				<skos:notation rdf:datatype="http://data.europarl.europa.eu/authority/notation-type/codict/mnemocode"><xsl:value-of select="normalize-space(descriptions/item[1]/mnemoCode)" /></skos:notation>
 			</xsl:if>
 			<!--  Open Data code -->
-			<skos:notation rdf:datatype="http://data.europarl.europa.eu/authority/notation-type/od"><xsl:value-of select="normalize-space($theBodyCode)" /></skos:notation>	
+			<skos:notation rdf:datatype="http://data.europarl.europa.eu/authority/notation-type/od"><xsl:value-of select="normalize-space(descriptions/item[1]/bodyCode)" /></skos:notation>	
 			
 			<!-- This build the dct:hasPart -->
 			<xsl:variable name="theBodyId" select="bodyId" />
@@ -112,7 +112,7 @@
 					<!-- NationalPartyBody -->
 					<xsl:when test="$bodyTypeOrg='PN'">
 						<xsl:value-of
-							select="org-ep:URI-NATIONALPARTYBODY(encode-for-uri(normalize-space(../descriptions/item[1]/bodyCode)))" />
+							select="org-ep:URI-NATIONALPARTYBODY(encode-for-uri(normalize-space(../iroCode)))" />
 					</xsl:when>					
 					<xsl:otherwise>
 						<xsl:message>Warning: bodyType "<xsl:value-of select="$bodyTypeOrg"/>" is unknown to generate hasCorporateBody.</xsl:message>
@@ -121,7 +121,7 @@
 			</xsl:if>			
 		</xsl:variable>
 		
-		<xsl:if test="$var_corporateBody != ''">
+		<xsl:if test="$var_corporateBody != '' and $bodyTypeOrg!='PN'">
 			<org-ep:hasCorporateBody rdf:resource="{$var_corporateBody}"/>
 		</xsl:if>
 		
@@ -129,7 +129,7 @@
 		<org-ep:hasOrganizationType rdf:resource="{org-ep:URI-OrganizationType(encode-for-uri(normalize-space(.)))}"/>
 		
 		<xsl:if test="$bodyTypeOrg='PN'">
-			<!-- TODO : special process to read iroCode, find country and insert org:subOrganizationOf to that Country -->
+			<org:subOrganizationOf rdf:resource="{$var_corporateBody}"/>
 		</xsl:if>
 	</xsl:template>
 

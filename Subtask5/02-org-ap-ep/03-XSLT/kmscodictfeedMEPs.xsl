@@ -108,9 +108,11 @@
 					<xsl:value-of select="birthDate" />
 				</schema:birthDate>
 				<!-- Conserver le libelle en input   -->
-				<org-ep:birthPlaceLabel>
-					
-				</org-ep:birthPlaceLabel>
+				<xsl:if test="string-length(normalize-space(birthPlace)) &gt; 0">
+					<org-ep:birthPlaceLabel>
+						<xsl:value-of select="birthPlace"/>
+					</org-ep:birthPlaceLabel>
+				</xsl:if>
 			</xsl:if>
 					
 			
@@ -409,16 +411,8 @@
 					rdf:about="{org-ep:URI-MEMBERSHIP(memberIdentifier,identifier)}">
 
 					<xsl:if test="$var_hasMembershipType != ''">
-						<xsl:choose>
-							<xsl:when test="typeOrganeCode='PN'">
-								<org-ep:hasMembershipType
-									rdf:resource="{org-ep:URI-NATIONALPARTYBODY(organeId,typeOrganeCode,organeCode)}" />
-							</xsl:when>
-							<xsl:otherwise>
-								<org-ep:hasMembershipType
-									rdf:resource="{org-ep:URI-MembershipType($var_hasMembershipType)}" />
-							</xsl:otherwise>
-						</xsl:choose>						
+						<org-ep:hasMembershipType
+									rdf:resource="{org-ep:URI-MembershipType($var_hasMembershipType)}" />												
 					</xsl:if>
 
 					<org-ep:hasOrganization
