@@ -336,6 +336,18 @@
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/activity-type/',upper-case($hasReading))" />
 	</xsl:function>
 	
+	<!-- Generate a Activity Participation URI -->
+	<xsl:function name="org-ep:URI-ActiviteParticipation">
+		<xsl:param name="in_ActivityParticipation" />
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/activity-membership-role/',$in_ActivityParticipation)" />
+	</xsl:function>
+	
+	<!-- Generate a Activity Participation URI Resource -->
+	<xsl:function name="org-ep:URI-ActiviteParticipationResource">
+		<xsl:param name="in_ActivityParticipationResource" />
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/resource/',$in_ActivityParticipationResource)" />
+	</xsl:function>	
+	
 	<!-- Generate a LegislationProcees URI Reading hasBaseBas -->
 	<xsl:function name="org-ep:URI-ActivityBaseBas">
 		<xsl:param name="reference" />
