@@ -336,6 +336,38 @@
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/activity-type/',upper-case($hasReading))" />
 	</xsl:function>
 	
+	
+	<!-- find the Organization code with following rules -->	
+	<xsl:function name="org-ep:URI-CodeOrganization">
+		<xsl:param name="in_bodyRole" />
+		<xsl:param name="in_dateDeposit" />
+		<xsl:variable name="CodeId" select="$kmscodictfeedBody_file[
+		    descriptions/item/mnemoCode = $in_bodyRole
+			and
+			(
+			  $in_dateDeposit &lt;= startDateTime
+			  and
+			  $in_dateDeposit &lt;= endDateTime 
+			)
+		]"/>
+		<xsl:choose>
+			<xsl:when test="count($CodeId) = 0">
+				<xsl:message>Warning !! The Organization Code don't found with following params: Code '<xsl:value-of select="$in_bodyRole"/>' and date '<xsl:value-of select="$in_dateDeposit"/>.'</xsl:message>
+				<xsl:value-of select="0"/>
+			</xsl:when>
+			<xsl:when test="count($CodeId) &gt; 1">
+				<xsl:message>Warning : find <xsl:value-of select="count($CodeId)"/> in <xsl:value-of select="$in_bodyRole"/>' and date '<xsl:value-of select="$in_dateDeposit"/> Organization Code - Taking first one.'</xsl:message>
+				<xsl:value-of select="$CodeId[1]/bodyId"/>
+				<xsl:for-each select="$CodeId">
+					<xsl:message>Warning : find <xsl:value-of select="./bodyId"/>'</xsl:message>
+				</xsl:for-each>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="$CodeId/bodyId"/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:function>
+		
 	<!-- Generate a Activity Participation URI -->
 	<xsl:function name="org-ep:URI-ActiviteParticipation">
 		<xsl:param name="in_ActivityParticipation" />
