@@ -61,7 +61,7 @@
 				<xsl:value-of select="key[@name ='reds:dateDeposit']" />
 			</elidl-ep:creationDate>
 			
-			<eli-dl:legislative_process_status rdf:resource="{org-ep:URI-Activity_ProcessStatus(key[@name = 'reds:status'])}"/>	
+			<eli-dl:legislative_process_status rdf:resource="{org-ep:URI-Activity_ProcessStatus(substring-after(key[@name = 'reds:status'],'_'))}"/>	
 			
 			<!-- This section does reds:hasEpRule -->
 			<xsl:variable name="legalBasis" select="key[@name='reds:hasRelations']/item[key[@name='reds:hasPredicate']='reds:hasEpRule']/key[@name='reds:hasObject']/key[@name='reds:reference']"/>
@@ -114,9 +114,9 @@
 				<!-- This section building Reading -->
 				<eli-dl:consists_of>
 					<eli-dl:LegislativeActivity rdf:about="{org-ep:URI-LegislativeActivity($procedureReference,org-ep:readingReference($currentReading))}">
-						<elidl-ep:activityType rdf:resource="{org-ep:URI-ActiviteType($currentReading)}" />
+						<elidl-ep:activityType rdf:resource="{org-ep:URI-ActiviteType(substring-after($currentReading,':'))}" />
 						<elidl-ep:activityId>
-							<xsl:value-of select="$currentReading" />
+							<xsl:value-of select="concat(lower-case(substring-before(substring-after($currentReading,':'),'_')),'_',substring-after($currentReading,'_'))" />
 						</elidl-ep:activityId>
 						
 						<!-- Now within that reading of that procedure, find all main dossiers, there could be multiple -->						
@@ -171,7 +171,7 @@
 	<!-- Match property reds:phase -->
 	<xsl:template match="key[@name='reds:hasProperties']/item[key[@name='reds:hasName'] = 'reds:phase']">
 		<eli-dl:current_stage
-							rdf:resource="{org-ep:URI-ProcessStage(key[@name='reds:hasValue'])}" />
+							rdf:resource="{org-ep:URI-ProcessStage(substring-after(key[@name='reds:hasValue'],'_'))}" />
 	</xsl:template>
 	
 	<!-- Match property eli-dl:latest_activity with reds:hasReading -->
@@ -207,7 +207,7 @@
 				</xsl:otherwise>
 			</xsl:choose>			
 		</xsl:variable>
-		<xsl:variable name="SubPhase" select="concat(substring-before(key[@name='reds:hasValue'],'_'),'_',$NumberLeft,'-',$NumberRigth)"/>
+		<xsl:variable name="SubPhase" select="concat($NumberLeft,'-',$NumberRigth)"/>
 		<elidl-ep:currentSubStage
 							rdf:resource="{org-ep:URI-ProcessStage($SubPhase)}" />
 	</xsl:template>
@@ -215,7 +215,7 @@
 	<!-- Match property reds:LegislativeActType -->
 	<xsl:template match="key[@name='reds:hasProperties']/item[key[@name='reds:hasName'] = 'reds:LegislativeActType']">
 		<eli-dl:foreseen_type_document
-							rdf:resource="{org-ep:URI-ActiviteType(key[@name='reds:hasValue'])}" />
+							rdf:resource="{org-ep:URI-ActiviteType(substring-after(key[@name='reds:hasValue'],'_'))}" />
 	</xsl:template>
 	
 	<!-- Match property reds:legalBase -->
@@ -290,12 +290,19 @@
 				<xsl:apply-templates select="$EXPORT_DOSSIER/all/item[key[@name = 'reds:reference'] = $currentReference]" mode="dossier" />	
 							
 				
-				<!-- the section search all roles -->
+				
 				<xsl:variable name="CommitteeRoles" select="$EXPORT_DOSSIER/all/item[key[@name = 'reds:reference'] = $currentReference]/key[@name='reds:hasRoles']/item[
 					key[@name='reds:hasRoleBodyName']='reds:hasCommittee' and 
 					key[@name='reds:hasBody']]"/>
+				
+				
+				<!-- the section search all roles -->
+				<xsl:variable name="dateDepositDossier" select="$EXPORT_DOSSIER/all/item[key[@name = 'reds:reference'] = $currentReference]/key[@name='reds:dateDeposit']"/>
+				<xsl:variable name="CodeIdOrganization" select="org-ep:URI-CodeOrganization($CommitteeRoles/key[@name='reds:hasBody']/key[@name='reds:hasBodyCode'],$dateDepositDossier)"/>
 				<xsl:if test="$CommitteeRoles != ''">
 					<eli-dl:hasActivityParticipation rdf:resource="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/activity-participation_','1'))}">
+						<elidl-ep:activityParticipationHasAgent rdf:resource="{org-ep:URI-ActiviteParticipationResource(concat('org/',$CommitteeRoles/key[@name='reds:hasBody']/key[@name='reds:hasBodyCode'],'-',$CodeIdOrganization))}"/>
+						<elidl-ep:activityParticipationRole rdf:resource="{org-ep:URI-ActiviteParticipation('committeeResponsible')}"/>
 					</eli-dl:hasActivityParticipation>
 				</xsl:if>
 				
@@ -304,6 +311,9 @@
 					key[@name='reds:hasPerson']/key[@name='reds:hasPersId']]"/>
 				<xsl:if test="$NMCP_RAP_Roles != ''">
 					<eli-dl:hasActivityParticipation rdf:resource="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/activity-participation_','2'))}">
+						<elidl-ep:activityParticipationHasAgent rdf:resource="{org-ep:URI-ActiviteParticipationResource(concat('person/',$NMCP_RAP_Roles/key[@name='reds:hasPerson']/key[@name='reds:hasPersId']))}"/>
+						<elidl-ep:activityParticipationRole rdf:resource="{org-ep:URI-ActiviteParticipation('rapporteur')}"/>
+						<elidl-ep:activityParticipationInNameOf	rdf:resource="{org-ep:URI-ActiviteParticipationResource(concat('org/',$NMCP_RAP_Roles/key[@name='reds:hasBody']/key[@name='reds:hasBodyCode'],'-',$CodeIdOrganization))}"/>				
 					</eli-dl:hasActivityParticipation>
 				</xsl:if>
 				
@@ -311,10 +321,14 @@
 					key[@name='reds:hasRolePersonName']='reds:AuthRole_NMSR' 
 					and 
 					key[@name='reds:hasPerson']/key[@name='reds:hasPersId']]"/>
+				
 				<xsl:for-each select="$Roles_NMSR">
-					<xsl:variable name="i" select="position()+2" />					
+					<xsl:variable name="i" select="position()+2" />	
+					<xsl:variable name="CodeIdOrganization" select="org-ep:URI-CodeOrganization(./key[@name='reds:hasBody']/key[@name='reds:hasBodyCode'],$dateDepositDossier)"/>
 					<eli-dl:hasActivityParticipation rdf:resource="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/activity-participation_',$i))}">
-						
+						<elidl-ep:activityParticipationHasAgent rdf:resource="{org-ep:URI-ActiviteParticipationResource(concat('person/',./key[@name='reds:hasPerson']/key[@name='reds:hasPersId']))}"/>
+						<elidl-ep:activityParticipationRole rdf:resource="{org-ep:URI-ActiviteParticipation('shadowRapporteur')}"/>
+						<elidl-ep:activityParticipationInNameOf	rdf:resource="{org-ep:URI-ActiviteParticipationResource(concat('org/',./key[@name='reds:hasBody']/key[@name='reds:hasBodyCode'],'-',$CodeIdOrganization))}"/>
 					</eli-dl:hasActivityParticipation>					
 				</xsl:for-each>			
 			</eli-dl:LegislativeActivity>				
@@ -360,7 +374,10 @@
 		<elidl-ep:activityStatus rdf:resource="{org-ep:URI-Activity_Status(key[@name='reds:status'])}"/>	
 		<elidl-ep:amendmentDeadlineDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
 			<xsl:value-of select="key[@name='reds:hasRelations']/item[key[@name='reds:hasPredicate']='reds:dateDeadlineAmd']/key[@name='reds:hasDate']"/>
-		</elidl-ep:amendmentDeadlineDate>		
+		</elidl-ep:amendmentDeadlineDate>	
+		
+		
+		<!--  -->
 				
 	</xsl:template>
 	
