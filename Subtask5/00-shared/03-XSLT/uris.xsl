@@ -217,7 +217,16 @@
 		<xsl:param name="reference" />
 		<xsl:param name="activityId" />
 		<xsl:value-of select="concat(org-ep:URI-LegislativeProcess($reference), '/event/', $activityId)"/>
-	</xsl:function> 	
+	</xsl:function> 
+	
+	<!-- Generates a LegislationActivity URI from procedure reference, e.g. 'COD-2018-0436', + activity ID -->
+ 	<xsl:function name="org-ep:URI-Involved">
+		<xsl:param name="reference" />
+		<xsl:param name="activityId" />
+		<xsl:value-of select="concat(org-ep:URI-LegislativeProcess($reference), '/doc/', $activityId)"/>
+	</xsl:function>
+	
+		
  	
  	<!-- Generates a LegislationProcess URI from reference, e.g. 'COD-2018-0436' -->
  	<xsl:function name="org-ep:URI-LegislativeProcess">
@@ -334,6 +343,12 @@
 	<xsl:function name="org-ep:URI-ActiviteType">
 		<xsl:param name="hasReading" />
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/activity-type/',upper-case($hasReading))" />
+	</xsl:function>
+	
+	<!-- Generate a Vote URI -->
+	<xsl:function name="org-ep:URI-TypeVote">
+		<xsl:param name="typeVote" />
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/',$typeVote)" />
 	</xsl:function>
 	
 	
