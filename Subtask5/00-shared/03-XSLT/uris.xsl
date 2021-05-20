@@ -328,7 +328,7 @@
 		<xsl:variable name="idLegalBase" select="lower-case(substring-before(substring-after($idRule,':'),'_'))"/>
 		<xsl:variable name="idNumber" select="tokenize(substring-after(substring-after($idRule,':'),'_'),'_')[1]"/>
 		<xsl:message><xsl:value-of select="$idLegalBase"/>-<xsl:value-of select="$idNumber"/></xsl:message>
-		<xsl:value-of select="concat('http://data.europa.europa.eu/eli/treaty/',$idLegalBase,'_2016','/art_',$idNumber,'/oj')" />
+		<xsl:value-of select="concat('http://data.europa.eu/eli/treaty/',$idLegalBase,'_2016','/art_',$idNumber,'/oj')" />
 	</xsl:function>
 
 	<!-- Generate a LegislationProcess URI from type, e.g. 'DirContProc_cod' -->

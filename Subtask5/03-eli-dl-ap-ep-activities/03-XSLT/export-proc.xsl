@@ -65,9 +65,11 @@
 				<xsl:value-of
 					select="tokenize(key[@name = 'reds:reference'],'-')[2]" />
 			</elidl-ep:legislativeProcessYear>
+			
+			
 			<elidl-ep:creationDate
 				rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
-				<xsl:value-of select="key[@name ='reds:dateDeposit']" />
+				<xsl:value-of select="substring(key[@name ='reds:dateDeposit'],1,23)" />				
 			</elidl-ep:creationDate>
 			
 			<eli-dl:legislative_process_status rdf:resource="{org-ep:URI-Activity_ProcessStatus(substring-after(key[@name = 'reds:status'],'_'))}"/>	
@@ -132,8 +134,8 @@
 							<xsl:value-of select="concat(lower-case(substring-before(substring-after($currentReading,':'),'_')),'_',substring-after($currentReading,'_'))" />
 						</elidl-ep:activityId>
 						
-						<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
-							<xsl:value-of select="$currentProcedureItem/key[@name = 'reds:dateDeposit']"/>
+						<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">						
+							<xsl:value-of select="substring($currentProcedureItem/key[@name = 'reds:dateDeposit'],1,23)"/>
 						</eli-dl:activity_date>
 						
 						
@@ -174,7 +176,7 @@
 						
 						
 						<!-- Now within that reading of that procedure, find all plenary dossiers, there could be multiple -->						
-						<!--  
+						  
 						<xsl:apply-templates select="$currentProcedureItem
 								/key[@name ='reds:hasRelations']
 								/item[
@@ -182,7 +184,7 @@
 									and
 									key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasReading']/key[@name = 'reds:hasValue'] = $currentReading
 						]"/>
-						-->
+						
 						<!-- Now within that reading of that procedure, find all consolidation dossiers, there could be multiple -->
 						<!--  
 						<xsl:apply-templates select="$currentProcedureItem
@@ -207,8 +209,8 @@
 			<!-- Process all relations -->
 			<xsl:apply-templates select="key[@name ='reds:hasRelations']/item" mode="dossier"/>
 			
-			<!--  
 			<xsl:apply-templates select="key[@name ='reds:hasRelations']/item" mode="plenary_dossier"/>			
+			<!--
 			<xsl:apply-templates select="key[@name ='reds:hasRelations']/item" mode="ConsolidationDossier"/>
 			-->
 		 
@@ -294,7 +296,7 @@
 				<xsl:variable name="Data_ProcedureCreation" select="key[@name='reds:hasRelations']/item[key[@name='reds:hasPredicate']='reds:hasEventType_PROCR']"/>
 				<elidl-ep:activityType rdf:resource="{org-ep:URI-ActiviteType(substring-after(key[@name='reds:hasPredicate'],'_'))}"/>
 				<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
-					<xsl:value-of select="key[@name='reds:hasDate']"/>
+					<xsl:value-of select="substring(key[@name='reds:hasDate'],1,23)"/>					
 				</eli-dl:activity_date>
 			</eli-dl:LegislativeActivity>
 		</eli-dl:consists_of>
@@ -369,7 +371,8 @@
 						<eli-dl:activity_label><xsl:value-of select="'Appointment of rapporteur'"/></eli-dl:activity_label>
 						<elidl-ep:activityId><xsl:value-of select="substring-after($appRapporteur/key[@name='reds:hasPredicate'],'_')"/></elidl-ep:activityId>
 						<elidl-ep:activityType rdf:resource="{org-ep:URI-ActiviteType(substring-after($appRapporteur/key[@name='reds:hasPredicate'],'_'))}"/>
-						<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="$appRapporteur/key[@name='reds:hasDate']"/></eli-dl:activity_date>
+						<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="substring($appRapporteur/key[@name='reds:hasDate'],1,23)"/></eli-dl:activity_date>
+						
 					</eli-dl:LegislativeActivity>
 				</eli-dl:consists_of>
 				
@@ -390,7 +393,7 @@
 						<eli-dl:LegislativeActivity rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/tabling-draft-report_',position()))}">
 							<elidl-ep:activityId><xsl:value-of select="$currentIdReference"/></elidl-ep:activityId>
 							<elidl-ep:activityType rdf:resource="{org-ep:URI-ActiviteType('TABLING_DRAFT_REPORT')}"/>
-							<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="$dataDRAFTRPANDAM/key[@name = 'reds:dateDeposit']"/></eli-dl:activity_date>
+							<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="substring($dataDRAFTRPANDAM/key[@name = 'reds:dateDeposit'],1,23)"/></eli-dl:activity_date>
 							
 							<elidl-ep:hasOtherRap></elidl-ep:hasOtherRap>
 							
@@ -418,7 +421,7 @@
 						<eli-dl:LegislativeActivity rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/tabling-amendment_',position()))}">
 							<elidl-ep:activityId><xsl:value-of select="$currentIdReference"/></elidl-ep:activityId>
 							<elidl-ep:activityType rdf:resource="{org-ep:URI-ActiviteType('COMMITTEE_AMENDMENT')}"/>
-							<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="$dataDRAFTRPANDAM/key[@name = 'reds:dateDeposit']"/></eli-dl:activity_date>
+							<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="substring($dataDRAFTRPANDAM/key[@name = 'reds:dateDeposit'],1,23)"/></eli-dl:activity_date>
 							<elidl-ep:hasOtherAme></elidl-ep:hasOtherAme>
 							<eli-dl:involved_work rdf:resource="{org-ep:URI-LegislativeProcessWork($ProcedureReference,substring-after($dataDRAFTRPANDAM/key[@name = 'reds:type'],':'),$dataDRAFTRPANDAM/key[@name = 'reds:reference'])}"/>						    
 						</eli-dl:LegislativeActivity>	
@@ -444,7 +447,7 @@
 							</xsl:variable>
 							
 							
-							<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="format-dateTime($dateCommitte,'[M00]/[D00]/[Y] [H00]:[m00]:[s00]')"/></eli-dl:activity_date>
+							<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="format-dateTime($dateCommitte,'[Y]-[M00]-[D00] [H00]:[m00]:[s00]')"/></eli-dl:activity_date>
 							<elidl-ep:activityType rdf:resource="{org-ep:URI-ActiviteType('COMMITTEE_DEBATE')}"/>
 						</eli-dl:LegislativeActivity>
 					</eli-dl:consists_of>
@@ -471,7 +474,8 @@
 					<eli-dl:LegislativeActivity rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/committee-vote_',$index))}">
 						<elidl-ep:activityId>VOTE</elidl-ep:activityId>
 						<elidl-ep:activityType rdf:resource="{org-ep:URI-ActiviteType('COMMITTEE_VOTE')}"/>
-						<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="$voteRelation/key[@name = 'reds:hasDate']"/></eli-dl:activity_date>
+						<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="substring($voteRelation/key[@name = 'reds:hasDate'],1,23)"/></eli-dl:activity_date>
+						
 						<elidl-ep:activityHasVoteResult rdf:resource="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/committee-vote_',$index,'/','result'))}"/>
 						<eli-dl:created_a_realization_of rdf:resource="{org-ep:URI-Involved($ProcedureReference,$voteObjectRelation/key[@name = 'reds:hasSubject']/key[@name = 'reds:type'],$voteObjectRelation/key[@name = 'reds:hasSubject']/key[@name = 'reds:reference'])}"/>
 					</eli-dl:LegislativeActivity>
@@ -564,7 +568,7 @@
 			<xsl:value-of select="key[@name='reds:reference']"/>
 		</elidl-ep:activityId>
 		
-		<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="key[@name = 'reds:dateDeposit']"/></eli-dl:activity_date>
+		<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="substring(key[@name = 'reds:dateDeposit'],1,23)"/></eli-dl:activity_date>
 		
 		<!-- Activity Type -->
 		<xsl:if test="$hasProperties/item[key[@name = 'reds:hasName'] = 'reds:hasRoleDossier']/key[@name = 'reds:hasValue'] = 'red:ComRole_MHE'">
@@ -581,5 +585,78 @@
 			<xsl:value-of select="key[@name='reds:hasRelations']/item[key[@name='reds:hasPredicate']='reds:dateDeadlineAmd']/key[@name='reds:hasDate']"/>
 		</elidl-ep:amendmentDeadlineDate>							
 	</xsl:template>
+
+
+
+
+<!-- Match relation to a Plenary dossier -->
+	<xsl:template match="key[@name ='reds:hasRelations']/item[
+			key[@name = 'reds:hasPredicate'] = 'reds:hasEventType_PRVPL_I'
+			and
+			key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasReading']			
+	]">
+	
+	
+	  <xsl:message><xsl:value-of select="."/></xsl:message>	
+	
+		<xsl:variable name="DirContDossier" select="../item[key[@name = 'reds:hasPredicate'] = 'reds:hasDirContDossier'
+			and
+			(
+				key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasRoleDossier']/key[@name = 'reds:hasValue'] = 'red:ComRole_MAIN'
+				or
+				key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasRoleDossier']/key[@name = 'reds:hasValue'] = 'red:ComRole_MHE'
+			)]"/>
+		
+		<xsl:variable name="currentIdentifier" select="$DirContDossier/key[@name = 'reds:hasObject']/key[@name = 'dc:identifier']" />
+		<xsl:variable name="currentReference" select="$DirContDossier/key[@name = 'reds:hasObject']/key[@name = 'reds:reference']" />
+		
+		<xsl:message> Plenary Dossier <xsl:value-of select="$currentIdentifier" /> / reference <xsl:value-of select="$currentReference" /></xsl:message>
+		<xsl:variable name="idReading" select="./$DirContDossier/key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasReading']/key[@name = 'reds:hasValue']"/>
+		
+		<!-- Now we need to find the _index_ of this dossier within the same reading of the same procedure -->
+		<!-- To do that we count the number of other dossiers in same procedure and same reading, that have an id before this one -->
+		<!-- Test case : BUD-2019-2028 -->
+		<xsl:variable name="index" select="
+			count(
+				../item[
+					key[@name = 'reds:hasPredicate'] = 'reds:hasEventType_PRVPL_I'
+					and
+					key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasReading']/key[@name = 'reds:hasValue'] = $idReading
+					and
+					key[@name = 'reds:hasObject']/key[@name = 'dc:identifier'] &lt; $currentIdentifier				
+				]			
+			)
+			+ 1
+		" />	
+		
+		<xsl:message>  Index <xsl:value-of select="$index" /> </xsl:message>
+		
+		<xsl:variable name="ProcedureReference" select="../../key[@name = 'reds:reference']"/>
+		
+		<!-- The plenary dossier -->
+		<eli-dl:consists_of>	
+			<eli-dl:LegislativeActivity
+				rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'plenary-dossier_', $index))}">						
+				
+				<!-- Find the document in the dossier export -->
+				<xsl:apply-templates select="$EXPORT_DOSSIER/all/item[key[@name = 'reds:reference'] = $currentReference]" mode="plenary_dossier" />	
+				
+			</eli-dl:LegislativeActivity>				
+		</eli-dl:consists_of>
+	</xsl:template>
+	
+	<!-- Matches a dossier in the export_dossier.xml file plenary dossier 
+	<xsl:template match="/all/item[key[@name = 'reds:type'] = 'reds:DirContDossier']" mode="plenary_dossier">	
+		<elidl-ep:activityId>
+			<xsl:value-of select="key[@name='reds:reference']"/>
+		</elidl-ep:activityId>		
+		<xsl:variable name="type" select="key[@name ='reds:hasRelations']"/>
+		<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="substring($type/key[@name = 'reds:hasDate'],1,23)"/></eli-dl:activity_date>
+		<xsl:variable name="ActivityType" select="$type/item[key[@name = 'reds:hasPredicate']='reds:hasEventType_PRVPL_I']"/>
+		<xsl:message><xsl:value-of select="$ActivityType/key[@name = 'reds:hasPredicate']"/></xsl:message>			
+		<elidl-ep:activityType rdf:resource="{org-ep:URI-ActiviteType(substring-after($ActivityType/key[@name = 'reds:hasPredicate'],'_'))}"/>
+				
+	</xsl:template>
+	-->
 		
 </xsl:stylesheet>
