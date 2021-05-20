@@ -226,8 +226,9 @@
 	<!-- Generates a LegislationActivity URI from procedure reference, e.g. 'COD-2018-0436', + activity ID -->
  	<xsl:function name="org-ep:URI-Involved">
 		<xsl:param name="reference" />
-		<xsl:param name="activityId" />
-		<xsl:value-of select="concat(org-ep:URI-LegislativeProcess($reference), '/doc/', $activityId)"/>
+		<xsl:param name="InvolvedType" />
+		<xsl:param name="InvolvedWork" />
+		<xsl:value-of select="concat(org-ep:URI-LegislativeProcess($reference), '/doc/',tokenize($InvolvedType,':')[2],'/',$InvolvedWork)"/>
 	</xsl:function>
 	
 		
@@ -249,6 +250,12 @@
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/resource/eli/dl/proc/',$year,'/',$number,'/',$type)" />
 	</xsl:function>
 	
+	<!-- Activity Participation -->
+	<xsl:function name="org-ep:URI-ActivityParticipation">
+		<xsl:param name="procedureReference" />	
+		<xsl:param name="idActivity" />
+		<xsl:value-of select="concat(org-ep:URI-LegislativeProcess($procedureReference),'/',$idActivity)" />
+	</xsl:function>
 	
 	<!-- Generate a LegislationProcess URI from hasEPRule -->
 	<xsl:function name="org-ep:URI-LegislativeProcessLegalBasis">
@@ -258,11 +265,16 @@
 				<xsl:matching-substring>
 					<xsl:choose>
 						<xsl:when test="regex-group(1)">
-							<xsl:value-of select="regex-group(1)"/>
+							<xsl:variable name="art" select="regex-group(1)"/>
+							<xsl:choose>
+								<xsl:when test="number($art) &gt; 0">
+									<xsl:value-of select="$art"/>
+								</xsl:when>
+								<xsl:otherwise>
+									<xsl:value-of select="51"/>
+								</xsl:otherwise>
+							</xsl:choose>
 						</xsl:when>
-						<xsl:otherwise>
-							<xsl:value-of select="51"/>
-						</xsl:otherwise>
 					</xsl:choose>
 				</xsl:matching-substring>				
 			</xsl:analyze-string>
@@ -273,7 +285,10 @@
 	<!-- Generate a LegislationProcess URI from reds:legalBase -->
 	<xsl:function name="org-ep:URI-LegislativeProcessLegalBase">
 		<xsl:param name="idRule" />
-		<xsl:value-of select="concat('http://data.europarl.europa.eu/eli/treaty/',substring($idRule,1,18),'/',substring($idRule,24))" />
+		<xsl:variable name="idLegalBase" select="lower-case(substring-before(substring-after($idRule,':'),'_'))"/>
+		<xsl:variable name="idNumber" select="tokenize(substring-after(substring-after($idRule,':'),'_'),'_')[1]"/>
+		<xsl:message><xsl:value-of select="$idLegalBase"/>-<xsl:value-of select="$idNumber"/></xsl:message>
+		<xsl:value-of select="concat('http://data.europa.eu/eli/treaty/',$idLegalBase,'_2016','/art_',$idNumber,'/oj')" />
 	</xsl:function>
 
 	<!-- Generate a LegislationProcess URI from type, e.g. 'DirContProc_cod' -->
@@ -292,6 +307,13 @@
 	<xsl:function name="org-ep:URI-LegislativeProcessNature">
 		<xsl:param name="hasNature" />
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/legislative-process-nature/',substring-after($hasNature,'_'))" />
+	</xsl:function>
+	
+	
+	<!-- Generate a InvolvedWork URI from nature, e.g. 'involved-work-role' -->
+	<xsl:function name="org-ep:URI-InvolvedWork">
+		<xsl:param name="idRole" />
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/involved-work-role/',$idRole)" />
 	</xsl:function>
 	
 	<!-- Generate a LegislationProcess URI from phase and subphase, e.g. 'red:Phase_08' -->
