@@ -209,7 +209,7 @@
 				<xsl:otherwise>
 					<xsl:value-of select="$sNumberRigth"/>
 				</xsl:otherwise>
-			</xsl:choose>			
+			</xsl:choose>
 		</xsl:variable>
 		<xsl:variable name="SubPhase" select="concat($NumberLeft,'-',$NumberRigth)"/>
 		<elidl-ep:currentSubStage
@@ -240,6 +240,7 @@
 			</eli-dl:LegislativeActivity>
 		</eli-dl:consists_of>
 	</xsl:template>
+	
 	
 	
 	<!-- Match relation to a MAIN dossier -->

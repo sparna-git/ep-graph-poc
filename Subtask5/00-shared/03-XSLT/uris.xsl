@@ -28,6 +28,10 @@
 	<xsl:param name="country_file"
 		select="document(concat($SHARED_XML_DIR, '/','CountryISO.xml'))/root/row" />
 
+	<!-- Language code mapping does not come from CV, it is an input file -->
+	<xsl:param name="language_file"
+		select="document(concat($SHARED_XML_DIR,'/', 'languages-codes.xml'))/languages/language" />
+
 	<xsl:function name="org-ep:URI-MEP">
 		<xsl:param name="mepId" />
 		<xsl:value-of select="org-ep:URI-Person($mepId)" />
@@ -245,49 +249,6 @@
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/resource/eli/dl/proc/',$year,'/',$number,'/',$type)" />
 	</xsl:function>
 	
-	<xsl:function name="org-ep:URI-LegislativeProcessWork">
-		<xsl:param name="procedureReference" />	
-		<xsl:param name="docType" />
-		<xsl:param name="docId" />	
-		<xsl:value-of select="concat(org-ep:URI-LegislativeProcess($procedureReference), '/doc/', $docType, '/', $docId)" />
-	</xsl:function>
-	
-	<xsl:function name="org-ep:readingReference">
-		<xsl:param name="redsReadingReference" />
-		<xsl:choose>
-			<xsl:when test="$redsReadingReference = 'reds:Reading_I'">
-				<xsl:value-of select="'reading_I'" />
-			</xsl:when>
-			<xsl:when test="$redsReadingReference = 'reds:Reading_II'">
-				<xsl:value-of select="'reading_II'" />
-			</xsl:when>
-			<xsl:when test="$redsReadingReference = 'reds:Reading_III'">
-				<xsl:value-of select="'reading_III'" />
-			</xsl:when>
-		</xsl:choose>
-	</xsl:function>
-	
-	<xsl:function name="org-ep:manifestationUriComponent">
-		<xsl:param name="format" />
-		<xsl:choose>
-			<xsl:when test="$format = 'application/pdf'">
-				<xsl:value-of select="'pdf'" />
-			</xsl:when>
-			<xsl:when test="$format = 'application/xml'">
-				<xsl:value-of select="'xml'" />
-			</xsl:when>
-			<xsl:when test="$format = 'application/xhtml+xml'">
-				<xsl:value-of select="'html'" />
-			</xsl:when>
-			<xsl:when test="$format = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'">
-				<xsl:value-of select="'odf'" />
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:message>Warning : Unknown document format : <xsl:value-of select="$format" /></xsl:message>
-			</xsl:otherwise>
-		</xsl:choose>
-	</xsl:function>
-	
 	
 	<!-- Generate a LegislationProcess URI from hasEPRule -->
 	<xsl:function name="org-ep:URI-LegislativeProcessLegalBasis">
@@ -350,38 +311,6 @@
 		<xsl:param name="typeVote" />
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/',$typeVote)" />
 	</xsl:function>
-	
-	
-	<!-- find the Organization code with following rules -->	
-	<xsl:function name="org-ep:URI-CodeOrganization">
-		<xsl:param name="in_bodyRole" />
-		<xsl:param name="in_dateDeposit" />
-		<xsl:variable name="CodeId" select="$kmscodictfeedBody_file[
-		    descriptions/item/mnemoCode = $in_bodyRole
-			and
-			(
-			  $in_dateDeposit &lt;= startDateTime
-			  and
-			  $in_dateDeposit &lt;= endDateTime 
-			)
-		]"/>
-		<xsl:choose>
-			<xsl:when test="count($CodeId) = 0">
-				<xsl:message>Warning !! The Organization Code don't found with following params: Code '<xsl:value-of select="$in_bodyRole"/>' and date '<xsl:value-of select="$in_dateDeposit"/>.'</xsl:message>
-				<xsl:value-of select="0"/>
-			</xsl:when>
-			<xsl:when test="count($CodeId) &gt; 1">
-				<xsl:message>Warning : find <xsl:value-of select="count($CodeId)"/> in <xsl:value-of select="$in_bodyRole"/>' and date '<xsl:value-of select="$in_dateDeposit"/> Organization Code - Taking first one.'</xsl:message>
-				<xsl:value-of select="$CodeId[1]/bodyId"/>
-				<xsl:for-each select="$CodeId">
-					<xsl:message>Warning : find <xsl:value-of select="./bodyId"/>'</xsl:message>
-				</xsl:for-each>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:value-of select="$CodeId/bodyId"/>
-			</xsl:otherwise>
-		</xsl:choose>
-	</xsl:function>
 		
 	<!-- Generate a Activity Participation URI -->
 	<xsl:function name="org-ep:URI-ActiviteParticipation">
@@ -425,12 +354,78 @@
 		<xsl:param name="idActiviteStatus" />		
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/activity-status/',substring-after($idActiviteStatus,'_'))"/>
 	</xsl:function>
+
+	<!-- Language URI, from OPOCE -->
+	<xsl:function name="org-ep:URI-Language">
+		<xsl:param name="language3LettersCode" />		
+		<xsl:value-of select="concat('http://publications.europa.eu/resource/authority/language/',upper-case($language3LettersCode))"/>
+	</xsl:function>	
+	
+	<xsl:function name="org-ep:URI-IANA_MediaType">
+		<xsl:param name="mediaType" />		
+		<xsl:value-of select="concat('https://www.iana.org/assignments/media-types/',$mediaType)"/>
+	</xsl:function>	
 	
 	
+	<!-- ***** Documents ***** -->
 	
+	<xsl:function name="org-ep:URI-LegislativeProcessWork">
+		<xsl:param name="procedureReference" />	
+		<xsl:param name="docType" />
+		<xsl:param name="docId" />	
+		<xsl:value-of select="concat(org-ep:URI-LegislativeProcess($procedureReference), '/doc/', $docType, '/', $docId)" />
+	</xsl:function>
 	
+	<xsl:function name="org-ep:readingReference">
+		<xsl:param name="redsReadingReference" />
+		<xsl:choose>
+			<xsl:when test="$redsReadingReference = 'reds:Reading_I'">
+				<xsl:value-of select="'reading_I'" />
+			</xsl:when>
+			<xsl:when test="$redsReadingReference = 'reds:Reading_II'">
+				<xsl:value-of select="'reading_II'" />
+			</xsl:when>
+			<xsl:when test="$redsReadingReference = 'reds:Reading_III'">
+				<xsl:value-of select="'reading_III'" />
+			</xsl:when>
+		</xsl:choose>
+	</xsl:function>
 	
+	<xsl:function name="org-ep:manifestationUriComponent">
+		<xsl:param name="format" />
+		<xsl:choose>
+			<xsl:when test="$format = 'application/pdf'">
+				<xsl:value-of select="'pdf'" />
+			</xsl:when>
+			<xsl:when test="$format = 'application/xml'">
+				<xsl:value-of select="'xml'" />
+			</xsl:when>
+			<xsl:when test="$format = 'application/xhtml+xml'">
+				<xsl:value-of select="'html'" />
+			</xsl:when>
+			<xsl:when test="$format = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'">
+				<xsl:value-of select="'odf'" />
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:message>Warning : Unknown document format : <xsl:value-of select="$format" /></xsl:message>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:function>	
 	
+	<xsl:function name="org-ep:URI-LegislativeProcessWorkType">
+		<xsl:param name="code" />		
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/legislative-process-work-type/',normalize-space($code))"/>
+	</xsl:function>
+	
+	<xsl:function name="org-ep:URI-LegislativeProcessWorkTypeFamily">
+		<xsl:param name="code" />		
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/legislative-process-work-type-family/',normalize-space($code))"/>
+	</xsl:function>
+	
+	<xsl:function name="org-ep:URI-LegislativeProcessWorkStatus">
+		<xsl:param name="code" />		
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/legislative-process-work-status/',normalize-space($code))"/>
+	</xsl:function>
  	
  	<!-- ***** Primitive methods ***** -->
 
@@ -460,6 +455,26 @@
 	</xsl:function>	
 	
 	<!-- ***** Lookup Methods ***** -->
+	
+	<xsl:function name="org-ep:Lookup_Language_3LettersCode">
+		<xsl:param name="twoLettersCode" />
+		<xsl:variable name="language" select="$language_file[
+			a2 = $twoLettersCode
+		]"/>
+		<xsl:choose>
+			<xsl:when test="count($language) = 0">
+				<xsl:message>Warning : cannot find language "<xsl:value-of select="$twoLettersCode" /></xsl:message>
+			</xsl:when>
+			<xsl:when test="count($language) > 1">
+				<xsl:message>Warning : find <xsl:value-of select="count($language)" /> languages with code "<xsl:value-of select="$twoLettersCode" /> - Taking first one.</xsl:message>
+				<xsl:value-of select="$language[1]/a3t" />
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="$language[1]/a3t" />
+			</xsl:otherwise>
+		</xsl:choose>	
+	</xsl:function>
+	
 	
 	<!-- fonction -->
 	<xsl:function name="org-ep:Lookup_GENDER">
@@ -596,5 +611,36 @@
 			<xsl:otherwise><xsl:value-of select="$period_ParliamentaryTerm[1]/order"/></xsl:otherwise>
 		</xsl:choose>
 	</xsl:function>	
+	
+	<!-- find the Organization code with following rules -->	
+	<xsl:function name="org-ep:URI-CodeOrganization">
+		<xsl:param name="in_bodyRole" />
+		<xsl:param name="in_dateDeposit" />
+		<xsl:variable name="CodeId" select="$kmscodictfeedBody_file[
+		    descriptions/item/mnemoCode = $in_bodyRole
+			and
+			(
+			  $in_dateDeposit &lt;= startDateTime
+			  and
+			  $in_dateDeposit &lt;= endDateTime 
+			)
+		]"/>
+		<xsl:choose>
+			<xsl:when test="count($CodeId) = 0">
+				<xsl:message>Warning !! The Organization Codenot found with following params: Code '<xsl:value-of select="$in_bodyRole"/>' and date '<xsl:value-of select="$in_dateDeposit"/>.'</xsl:message>
+				<xsl:value-of select="0"/>
+			</xsl:when>
+			<xsl:when test="count($CodeId) &gt; 1">
+				<xsl:message>Warning : find <xsl:value-of select="count($CodeId)"/> in <xsl:value-of select="$in_bodyRole"/>' and date '<xsl:value-of select="$in_dateDeposit"/> Organization Code - Taking first one.'</xsl:message>
+				<xsl:value-of select="$CodeId[1]/bodyId"/>
+				<xsl:for-each select="$CodeId">
+					<xsl:message>Warning : find <xsl:value-of select="./bodyId"/>'</xsl:message>
+				</xsl:for-each>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="$CodeId/bodyId"/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:function>
 
 </xsl:stylesheet>
