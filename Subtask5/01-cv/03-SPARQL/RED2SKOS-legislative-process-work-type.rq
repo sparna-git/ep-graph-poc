@@ -31,6 +31,10 @@ CONSTRUCT {
 		STRSTARTS(STR(?s),CONCAT("http://redmap.europa.eu/v1-0#","i"))
 		||
 		STRSTARTS(STR(?s),CONCAT("http://redmap.europa.eu/schema/v1-0#","i"))
+		||
+		?s = <http://redmap.europa.eu/schema/v1-0#DirContDossier>
+		||
+		?s = <http://redmap.europa.eu/schema/v1-0#DirContProc>
 	)
 
 	BIND(STRAFTER(STR(?s), "#") AS ?afterDash)

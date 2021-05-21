@@ -16,15 +16,17 @@ mapping[Status]=legislative-process-status,legislative-process-work-status
 mapping[DirContProc]=legislative-process-type
 mapping[DirContProcNat]=legislative-process-nature
 mapping[Phase]=activity-stage
-mapping[LegislativeActType]=legislative-act-type
+mapping[LegislativeActType]=legal-resource-type
 mapping[hasEventType]=activity-type
 mapping[EventSubTypeS20]=activity-context-precision
-mapping[DirContDossNat]=nature
-mapping[VoteResult]=vote-result
+mapping[DirContDossNat]=activity-nature
+mapping[CodeVote]=vote-result
 mapping[voteMode]=vote-mode
 mapping[hasDocumentUse]=involved-work-role
-mapping[DirContDocFam]=legislative-process-work-type_detail
+mapping[DirContDocFam]=legislative-process-work-type-family
 mapping[Role]=activity-membership-role
+mapping[InfTypIter]=activity-context
+mapping[DirContDocUse]=involved-work-role
 
 
 for i in "${!mapping[@]}"

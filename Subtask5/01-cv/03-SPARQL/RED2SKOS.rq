@@ -6,13 +6,15 @@ PREFIX dct: <http://purl.org/dc/terms/>
 CONSTRUCT {
 	?scheme a skos:ConceptScheme .
 	?scheme skos:prefLabel $schemeCode .
-	?scheme dct:source ?sourceNote .
+	?scheme dct:source ?sourceNoteOnScheme .
 
 	?concept a skos:Concept .
 	?concept rdfs:label ?label .
 	?concept skos:prefLabel ?prefLabel .
 	?concept skos:inScheme ?scheme .
 	?concept skos:notation ?code .
+	?concept dct:source ?sourceNote .
+
 } WHERE {
 	# VALUES mapping at the beginning so variables are available after - strange
 	VALUES ($red $schemeCode) {("RED_VALUE" "AUTHORITY_VALUE")}
@@ -42,12 +44,25 @@ CONSTRUCT {
 			# handle the case where we have only an underscore after the root, and nothing else
 			STRAFTER(?afterDash, $red)
 		)
-		AS ?code
+		AS ?originalCode
+	)
+
+	BIND(
+		IF(
+			(($schemeCode = 'activity-stage') && !STRSTARTS(STR(?originalCode),'0')),
+			concat('0', STR(?originalCode)),
+			?originalCode
+		)
+		AS
+		?code
 	)
 
 	# recreate a nice concept URI
 	BIND(IRI(CONCAT(STR(?scheme), "/", ?code)) AS ?concept) .
 
 	# and a nice note on the ConceptScheme
-	BIND(STRLANG(CONCAT("Extracted from RED : ",$red), "en") AS ?sourceNote)
+	BIND(STRLANG(CONCAT("Extracted from RED : ",?afterDash), "en") AS ?sourceNote)
+
+	# and a nice note on the ConceptScheme
+	BIND(STRLANG(CONCAT("Extracted from RED : ",$red), "en") AS ?sourceNoteOnScheme)
 }
