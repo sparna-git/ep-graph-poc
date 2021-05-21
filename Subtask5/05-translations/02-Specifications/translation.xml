@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:eli="http://data.europa.eu/eli/ontology#"
+         xmlns:eli-dl="http://data.europa.eu/eli/eli-draft-legislation-ontology#"
+         xmlns:elidl-ep="http://data.europarl.europa.eu/ontology/elidl-ep#"
+         xmlns:ep-aut="http://data.europarl.europa.eu/authority/"
+         xmlns:org-ep="http://data.europarl.europa.eu/ontology/org-ep#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:schema="http://schema.org/"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+
+<!--
+
+  <record>
+      <FDR_Number>1153736</FDR_Number>
+      <Trans_Gross_Output_Pages>3,6</Trans_Gross_Output_Pages>
+      <Lang_Source_List> EN</Lang_Source_List>
+      <Multilingual>N</Multilingual>
+      <PE_number>622.187</PE_number>
+      <Entry_Date>17/12/2018 12:01</Entry_Date>
+      <Document_Type>PR</Document_Type>
+      <Due_out_date_TargetLg>17/01/2019 17:30</Due_out_date_TargetLg>
+      <Target_Language>BG</Target_Language>
+  </record>
+
+-->
+
+<!-- URI : fonction org-ep:ForeseenTranslationActivity_FromFDR -->
+<!-- Conversion code 2 lettres vers 3 lettres : org-ep:Lookup_Language_3LettersCode -->
+<elidl-ep:ForeseenActivity rdf:about="http://data.europarl.europa.eu/resource/foreseen_event/fdr_1153736_bul">
+    <elidl-ep:activityId>1153736_bg</elidl-ep:activityId>
+    <elidl-ep:activityType rdf:resource="http://data.europarl.europa.eu/authority/activity-type/TRANSLATION"/>
+    <eli-dl:activity_start_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-17T12:01:00</eli-dl:activity_start_date>
+    <elidl-ep:activityDueDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-01-17T17:30:00</elidl-ep:activityDueDate>
+    <elidl-ep:translationRequestedFor rdf:resource="http://publications.europa.eu/resource/authority/language/BUL" />
+    <elidl-ep:translationRequestedFrom rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+    <!-- On peut en avoir plusieurs -->
+    <!--
+    <elidl-ep:translationRequestedFrom rdf:resource="http://publications.europa.eu/resource/authority/language/XYZ" />
+    -->
+</elidl-ep:ForeseenActivity>
+
+
+<!--
+<eli-dl:LegislativeActivity rdf:about="http://data.europarl.europa.eu/event/fdr_1153736_bg">
+    <elidl-ep:activityId>1153736_bg</elidl-ep:activityId>
+    <eli-dl:activity_start_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-17T12:01:00</eli-dl:activity_start_date>
+    <elidl-ep:activityDueDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-01-17T17:30:00</elidl-ep:activityDueDate>
+    <elidl-ep:translationRequestedFor rdf:resource="http://publications.europa.eu/resource/authority/language/BUL" />
+</eli-dl:LegislativeActivity>
+-->
+
+<!-- 
+   <eli-dl:LegislativeActivity rdf:about="http://data.europarl.europa.eu/resource/eli/dl/proc/2018/0114/cod/event/translation_A-8-2019-0002_deu">
+
+      <eli-dl:based_on_a_realization_of rdf:resource="http://data.europarl.europa.eu/resource/eli/dl/proc/2018/0114/cod/doc/iPlRp/A-8-2019-0002"/>
+      <eli-dl:created_expression rdf:resource="http://data.europarl.europa.eu/resource/eli/dl/proc/2018/0114/cod/doc/iPlRp/A-8-2019-0002/deu"/>
+      
+      <elidl-ep:activityType rdf:resource="http://data.europarl.europa.eu/authority/activity-type/TRANSLATION"/>
+
+      <elidl-ep:realizesForeseenActivity rdf:resource="http://data.europarl.europa.eu/resource/foreseen_event/fdr_1153736_bg" />
+
+      Par inférence, on crééera un consists_of sur l'activité qui a créé le document 
+
+   </eli-dl:LegislativeActivity>
+-->
+
+</rdf:RDF>
