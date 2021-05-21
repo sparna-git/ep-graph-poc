@@ -61,7 +61,7 @@
 				<xsl:value-of
 					select="tokenize(key[@name = 'reds:reference'],'-')[last()]" />
 			</eli-dl:legislative_process_number>
-			<elidl-ep:legislativeProcessYear>
+			<elidl-ep:legislativeProcessYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">
 				<xsl:value-of
 					select="tokenize(key[@name = 'reds:reference'],'-')[2]" />
 			</elidl-ep:legislativeProcessYear>
@@ -147,7 +147,7 @@
 							<xsl:variable name="docId" select="./key[@name = 'reds:hasObject']/key[@name = 'reds:reference']"/>
 							<eli-dl:based_on_a_realization_of rdf:resource="{org-ep:URI-LegislativeProcessWork($procedureReference,$doctype,$docId)}"/>
 							
-							<elidl-ep:hasBaseBas_1>
+							<elidl-ep:hasBaseBas_I>
 								<elidl-ep:InvolvedWork rdf:about="{concat(org-ep:URI-LegislativeActivity($procedureReference,org-ep:readingReference($currentReading)),'/involved-work_',$i)}">
 									<xsl:variable name="WorkRole" select="$BaseOnRealization/key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasDocumentUse']/key[@name = 'reds:hasValue']"/>
 									<xsl:if test="$WorkRole != ''">
@@ -155,7 +155,7 @@
 									</xsl:if>
 									<elidl-ep:hasWorkInvolved rdf:resource="{org-ep:URI-LegislativeProcessWork($procedureReference,$doctype,$docId)}"/>
 								</elidl-ep:InvolvedWork>	
-							</elidl-ep:hasBaseBas_1>
+							</elidl-ep:hasBaseBas_I>
 						</xsl:for-each>	
 						
 						<!-- Now within that reading of that procedure, find all main dossiers, there could be multiple -->						
@@ -281,7 +281,7 @@
 									rdf:about="{org-ep:URI-LegislativeActivity($procedureReference,concat(org-ep:readingReference($currentReading), '/', 'consolidation_', $index))}">						
 							
 									<elidl-ep:activityId><xsl:value-of select="substring-after(key[@name = 'reds:hasPredicate'],'_')"/></elidl-ep:activityId>
-									<elidl-ep:activity_type rdf:resource="{org-ep:URI-ActiviteType(substring-after(key[@name = 'reds:hasPredicate'],'_'))}"/>
+									<elidl-ep:activityType rdf:resource="{org-ep:URI-ActiviteType(substring-after(key[@name = 'reds:hasPredicate'],'_'))}"/>
 									<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="substring(key[@name = 'reds:hasDate'],1,23)"/></eli-dl:activity_date>
 						
 								</eli-dl:LegislativeActivity>
@@ -362,7 +362,7 @@
 	<!-- Match property reds:LegislativeActType -->
 	<xsl:template match="key[@name='reds:hasProperties']/item[key[@name='reds:hasName'] = 'reds:LegislativeActType']">
 		<eli-dl:foreseen_type_document
-							rdf:resource="{org-ep:URI-LegislativeProcessActivityType(key[@name='reds:hasValue'])}" />
+							rdf:resource="{org-ep:URI-LegalResourceType(key[@name='reds:hasValue'])}" />
 	</xsl:template>
 	
 	<!-- Match property reds:legalBase -->
@@ -533,7 +533,7 @@
 							</xsl:variable>
 							
 							
-							<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="format-dateTime($dateCommitte,'[Y]-[M00]-[D00] [H00]:[m00]:[s00]')"/></eli-dl:activity_date>
+							<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="format-dateTime($dateCommitte,'[Y]-[M00]-[D00]T[H00]:[m00]:[s00]')"/></eli-dl:activity_date>
 							<elidl-ep:activityType rdf:resource="{org-ep:URI-ActiviteType('COMMITTEE_DEBATE')}"/>
 						</eli-dl:LegislativeActivity>
 					</eli-dl:consists_of>
@@ -573,13 +573,13 @@
 						<elidl-ep:voteResult rdf:resource="{org-ep:URI-TypeVote(concat('vote-result/',substring-after($VoteResult_Committee[key[@name= 'reds:hasName']='reds:VoteResult']/key[@name = 'reds:hasValue'],'_')))}"/>
 								
 						<xsl:if test="$VoteResult_Committee/item[key[@name= 'reds:hasName']='reds:voteAbst']/key[@name = 'reds:hasValue'] != 0">
-							<elidl-ep:voteAbstention><xsl:value-of select="$VoteResult_Committee/item[key[@name= 'reds:hasName']='reds:voteAbst']/key[@name = 'reds:hasValue']"/></elidl-ep:voteAbstention>
+							<elidl-ep:voteAbstention rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select="$VoteResult_Committee/item[key[@name= 'reds:hasName']='reds:voteAbst']/key[@name = 'reds:hasValue']"/></elidl-ep:voteAbstention>
 						</xsl:if>
 						<xsl:if test="$VoteResult_Committee/item[key[@name= 'reds:hasName']='reds:voteInFavour']/key[@name = 'reds:hasValue'] != 0">
-							<elidl-ep:voteFavour><xsl:value-of select="$VoteResult_Committee/item[key[@name= 'reds:hasName']='reds:voteInFavour']/key[@name = 'reds:hasValue']"/></elidl-ep:voteFavour>
+							<elidl-ep:voteFavour rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select="$VoteResult_Committee/item[key[@name= 'reds:hasName']='reds:voteInFavour']/key[@name = 'reds:hasValue']"/></elidl-ep:voteFavour>
 						</xsl:if>
 						<xsl:if test="$VoteResult_Committee/item[key[@name= 'reds:hasName']='reds:voteAgainst']/key[@name = 'reds:hasValue'] != 0">
-							<elidl-ep:voteAgainst><xsl:value-of select="$VoteResult_Committee/item[key[@name= 'reds:hasName']='reds:voteAgainst']/key[@name = 'reds:hasValue']"/></elidl-ep:voteAgainst>
+							<elidl-ep:voteAgainst rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select="$VoteResult_Committee/item[key[@name= 'reds:hasName']='reds:voteAgainst']/key[@name = 'reds:hasValue']"/></elidl-ep:voteAgainst>
 						</xsl:if>
 					</elidl-ep:Vote>
 				</elidl-ep:activityHasVoteResult>

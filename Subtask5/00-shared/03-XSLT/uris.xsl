@@ -298,9 +298,9 @@
 	</xsl:function>
 	
 	<!-- Generate a LegislationProcess URI from Activity type, e.g. 'DirContProc_cod' -->
-	<xsl:function name="org-ep:URI-LegislativeProcessActivityType">
+	<xsl:function name="org-ep:URI-LegalResourceType">
 		<xsl:param name="hasType" />
-		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/legislative-act-type/',substring-after($hasType,'_'))" />
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/legal-resource-type/',substring-after($hasType,'_'))" />
 	</xsl:function>
 	
 	<!-- Generate a LegislationProcess URI from nature, e.g. 'red:DirContProcNat-LEG' -->
@@ -337,7 +337,7 @@
 	<!-- Generate a Activity Participation URI -->
 	<xsl:function name="org-ep:URI-ActiviteParticipation">
 		<xsl:param name="in_ActivityParticipation" />
-		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/activity-membership-role/',$in_ActivityParticipation)" />
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/activity-participation-role/',$in_ActivityParticipation)" />
 	</xsl:function>
 	
 	<!-- Generate a Activity Participation URI Resource -->
@@ -368,7 +368,7 @@
  	<!-- Generate a URI Activity Nature -->
 	<xsl:function name="org-ep:URI-Activity_ActivityNature">
 		<xsl:param name="idActiviteNature" />		
-		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/nature/',substring-after($idActiviteNature,'_'))"/>
+		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/activity-nature/',substring-after($idActiviteNature,'_'))"/>
 	</xsl:function>
 	
 	<!-- Generate a URI Status -->
