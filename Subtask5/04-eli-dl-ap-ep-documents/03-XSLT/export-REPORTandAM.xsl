@@ -36,7 +36,14 @@
 		<xsl:variable name="currentDocument" select="." />
 		<xsl:variable name="documentReference" select="key[@name = 'reds:reference']" />
 		<xsl:variable name="documentType" select="substring-after(key[@name = 'reds:type'], 'reds:')" />
-		<xsl:variable name="procedures" select="key[@name = 'reds:hasRelations']/item[key[@name = 'reds:hasPredicate'] = 'reds:hasDirContProc']/key[@name = 'reds:hasObject']/key[@name = 'reds:reference']" />
+		
+		<!-- Fetch the procedure number : in the case of amendment, the procedure needs to be read on the amended text -->
+		<xsl:variable name="isAmendmentFor" select="key[@name='reds:hasRelations']/item[key[@name='reds:hasPredicate'] = 'reds:isAmendmentFor']/key[@name='reds:hasObject']/key[@name='reds:reference']" />			
+		<xsl:variable name="procedures" select="
+			key[@name = 'reds:hasRelations']/item[key[@name = 'reds:hasPredicate'] = 'reds:hasDirContProc']/key[@name = 'reds:hasObject']/key[@name = 'reds:reference']
+			|
+			/all/item[key[@name = 'reds:reference'] = $isAmendmentFor]/key[@name = 'reds:hasRelations']/item[key[@name = 'reds:hasPredicate'] = 'reds:hasDirContProc']/key[@name = 'reds:hasObject']/key[@name = 'reds:reference']
+		" />
 		<xsl:variable name="fdr" select="key[@name='reds:hasProperties']/item[key[@name='reds:hasName'] = 'reds:fdr']/key[@name='reds:hasValue']" />
 		
 		<!-- Keep the first procedure to generate sameAs -->
@@ -65,6 +72,7 @@
 						<xsl:apply-templates select="$currentDocument/key"/>
 						<xsl:apply-templates select="$currentDocument/key[@name = 'reds:hasProperties']/item"/>
 						
+						<!-- Work contributions -->
 						<xsl:for-each select="$currentDocument/key[@name = 'reds:hasRoles']/item[key[@name = 'reds:hasRolePersonName'] = 'reds:AuthRole_NMCP']">
 							<elidl-ep:hasWorkContribution>
 								<elidl-ep:WorkContribution rdf:about="{concat(
@@ -83,6 +91,16 @@
 									</xsl:if>
 								</elidl-ep:WorkContribution>
 							</elidl-ep:hasWorkContribution>
+						</xsl:for-each>
+						
+						<!-- Amends links for amendments -->
+						<xsl:for-each select="$currentDocument/key[@name='reds:hasRelations']/item[key[@name='reds:hasPredicate'] = 'reds:isAmendmentFor']">
+							<!-- Note : we suppose the amended document belongs to the same procedure -->
+							<elidl-ep:amends rdf:resource="{org-ep:URI-LegislativeProcessWork(
+								$currentProcedure,
+								substring-after(key[@name='reds:hasObject']/key[@name='reds:type'], 'reds:'),
+								key[@name='reds:hasObject']/key[@name='reds:reference']
+							)}" />
 						</xsl:for-each>
 						
 						<xsl:apply-templates select="$currentDocument/key[@name = 'reds:hasRoles']/item" />
@@ -232,6 +250,29 @@
 							'/erratum_',
 							$currentErratumNumber
 						)}">	
+						
+							<xsl:for-each select="$currentDocument/key[@name = 'reds:hasRoles']/item[key[@name = 'reds:hasRolePersonName'] = 'reds:AuthRole_NMCP']">
+								<elidl-ep:hasWorkContribution>
+									<elidl-ep:WorkContribution rdf:about="{concat(
+										org-ep:URI-LegislativeProcessWork($currentProcedure, $documentType, $documentReference),
+										'/erratum_',
+										$currentErratumNumber,
+										'/work-contribution_',
+										position()
+									)}">
+										<elidl-ep:workContributionHasAgent rdf:resource="{org-ep:URI-Person(key[@name = 'reds:hasPerson']/key[@name = 'reds:hasPersId'])}" />
+										<elidl-ep:workContributionRole rdf:resource="http://data.europarl.europa.eu/authority/work-membership-role/rapporteur" />
+										<xsl:variable name="inNameOfBody" select="org-ep:URI-Organization-FromMnemoCode(
+											key[@name = 'reds:hasBody']/key[@name = 'reds:hasBodyCode'],
+											$currentDocument/key[@name = 'reds:dateDeposit']
+										)" />
+										<xsl:if test="inNameOfBody">
+											<elidl-ep:workContributionInNameOf rdf:resource="{$inNameOfBody}" />
+										</xsl:if>
+									</elidl-ep:WorkContribution>
+								</elidl-ep:hasWorkContribution>
+							</xsl:for-each>
+						
 						
 							<!-- Generates correction link to the source document -->
 							<elidl-ep:workCorrects rdf:resource="{org-ep:URI-LegislativeProcessWork($currentProcedure, $documentType, $documentReference)}" />
@@ -408,6 +449,14 @@
 		<eli-dl:legislative_process_work_version><xsl:value-of select="key[@name='reds:hasValue']" /></eli-dl:legislative_process_work_version>
 	</xsl:template>
 	
+	<xsl:template match="key[@name='reds:hasProperties']/item[key[@name='reds:hasName'] = 'reds:itemNumberBegin']">
+		<elidl-ep:workItemNumberBegin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select="key[@name='reds:hasValue']" /></elidl-ep:workItemNumberBegin>	
+	</xsl:template>
+	
+	<xsl:template match="key[@name='reds:hasProperties']/item[key[@name='reds:hasName'] = 'reds:itemNumberEnd']">
+		<elidl-ep:workItemNumberEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select="key[@name='reds:hasValue']" /></elidl-ep:workItemNumberEnd>	
+	</xsl:template>
+	
 	<xsl:template match="key[@name='reds:hasProperties']/item[key[@name='reds:hasName'] = 'reds:hasConcept' and ends-with(key[@name='reds:hasValue'], '^^Eurovoc')]">
 		<elidl-ep:legislativeProcessIsAboutEurovoc rdf:resource="{substring-before(key[@name='reds:hasValue'],'^^')}" />	
 	</xsl:template>
@@ -419,6 +468,8 @@
 	<xsl:template match="key[@name='reds:hasProperties']/item[key[@name='reds:hasName'] = 'reds:hasConcept' and ends-with(key[@name='reds:hasValue'], '^^DirectoryCode')]">
 		<elidl-ep:legislativeProcessIsAboutDirectoryCode rdf:resource="{substring-before(key[@name='reds:hasValue'],'^^')}" />	
 	</xsl:template>
+	
+
 	
 	<!-- ***** titles ***** -->
 	
