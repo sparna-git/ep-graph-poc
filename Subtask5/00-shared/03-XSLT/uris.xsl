@@ -448,6 +448,19 @@
 		<xsl:param name="code" />		
 		<xsl:value-of select="concat('http://data.europarl.europa.eu/authority/legislative-process-work-status/',normalize-space($code))"/>
 	</xsl:function>
+	
+	<xsl:function name="org-ep:URI-TranslationActivity_FromDocument">
+		<xsl:param name="procedureReference" />	
+		<xsl:param name="documentReference" />
+		<xsl:param name="targetLang" />		
+		<xsl:value-of select="concat(org-ep:URI-LegislativeProcess($procedureReference), '/event/translation_', $documentReference, '_' , $targetLang)" />
+	</xsl:function>
+	
+	<xsl:function name="org-ep:URI-ForeseenTranslationActivity_FromFDR">
+		<xsl:param name="fdr" />
+		<xsl:param name="targetLang" />		
+		<xsl:value-of select="concat('http://data.europarl.europa.eu', '/resource/foreseen_event/fdr_', $fdr, '_', $targetLang)" />
+	</xsl:function>
  	
  	<!-- ***** Primitive methods ***** -->
 
@@ -634,33 +647,33 @@
 		</xsl:choose>
 	</xsl:function>	
 	
-	<!-- find the Organization code with following rules -->	
-	<xsl:function name="org-ep:URI-CodeOrganization">
-		<xsl:param name="in_bodyRole" />
-		<xsl:param name="in_dateDeposit" />
-		<xsl:variable name="CodeId" select="$kmscodictfeedBody_file[
-		    descriptions/item/mnemoCode = $in_bodyRole
+	<xsl:function name="org-ep:URI-Organization-FromMnemoCode">
+		<xsl:param name="in_mnemoRole" />
+		<xsl:param name="in_date" />
+		<xsl:variable name="bodyItem" select="$kmscodictfeedBody_file[
+		    descriptions/item/mnemoCode = $in_mnemoRole
 			and
 			(
-			  $in_dateDeposit &lt;= startDateTime
+			  $in_date &gt;= startDateTime
 			  and
-			  $in_dateDeposit &lt;= endDateTime 
+			  $in_date &lt;= endDateTime 
 			)
 		]"/>
+		
 		<xsl:choose>
-			<xsl:when test="count($CodeId) = 0">
-				<xsl:message>Warning !! The Organization Codenot found with following params: Code '<xsl:value-of select="$in_bodyRole"/>' and date '<xsl:value-of select="$in_dateDeposit"/>.'</xsl:message>
-				<xsl:value-of select="0"/>
+			<xsl:when test="count($bodyItem) = 0">
+				<xsl:message>Warning !! Organization not found with following params: MnemoCode '<xsl:value-of select="$in_mnemoRole"/>' and date '<xsl:value-of select="$in_date"/>' .</xsl:message>
 			</xsl:when>
-			<xsl:when test="count($CodeId) &gt; 1">
-				<xsl:message>Warning : find <xsl:value-of select="count($CodeId)"/> in <xsl:value-of select="$in_bodyRole"/>' and date '<xsl:value-of select="$in_dateDeposit"/> Organization Code - Taking first one.'</xsl:message>
-				<xsl:value-of select="$CodeId[1]/bodyId"/>
-				<xsl:for-each select="$CodeId">
-					<xsl:message>Warning : find <xsl:value-of select="./bodyId"/>'</xsl:message>
+			<xsl:when test="count($bodyItem) &gt; 1">
+				<xsl:message>Warning : find <xsl:value-of select="count($bodyItem)"/> organization code with code <xsl:value-of select="$in_mnemoRole"/>' and date '<xsl:value-of select="$in_date"/> - Taking first one.'</xsl:message>
+				<xsl:value-of select="org-ep:URI-Organization($bodyItem[1]/descriptions/item[1]/bodyCode, $bodyItem[1]/bodyId)"/>
+				<xsl:for-each select="$bodyItem">
+					<xsl:message>  - <xsl:value-of select="./bodyId"/></xsl:message>
 				</xsl:for-each>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:value-of select="$CodeId/bodyId"/>
+				<!-- <xsl:message>Found <xsl:value-of select="$CodeId/bodyId"/></xsl:message> -->
+				<xsl:value-of select="org-ep:URI-Organization($bodyItem/descriptions/item[1]/bodyCode, $bodyItem/bodyId)"/>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:function>
