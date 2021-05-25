@@ -500,7 +500,7 @@
 			<xsl:when test="count($language) = 0">
 				<xsl:message>Warning : cannot find language "<xsl:value-of select="$twoLettersCode" /></xsl:message>
 			</xsl:when>
-			<xsl:when test="count($language) > 1">
+			<xsl:when test="count($language) &gt; 1">
 				<xsl:message>Warning : find <xsl:value-of select="count($language)" /> languages with code "<xsl:value-of select="$twoLettersCode" /> - Taking first one.</xsl:message>
 				<xsl:value-of select="$language[1]/a3t" />
 			</xsl:when>
