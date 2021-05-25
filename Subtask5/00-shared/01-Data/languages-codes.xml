@@ -1,0 +1,3494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<languages>
+	<language>
+		<nom lang="en">Afar</nom>
+		<nom lang="fr">afar</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#aar</psi>
+		<a2>aa</a2>
+		<a3b>aar</a3b>
+		<a3t>aar</a3t>
+	</language>
+	<language>
+		<nom lang="en">Abkhazian</nom>
+		<nom lang="fr">abkhaze</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#abk</psi>
+		<a2>ab</a2>
+		<a3b>abk</a3b>
+		<a3t>abk</a3t>
+	</language>
+	<language>
+		<nom lang="en">Achinese</nom>
+		<nom lang="fr">aceh</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ace</psi>
+		<a3b>ace</a3b>
+		<a3t>ace</a3t>
+	</language>
+	<language>
+		<nom lang="en">Acoli</nom>
+		<nom lang="fr">acoli</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ach</psi>
+		<a3b>ach</a3b>
+		<a3t>ach</a3t>
+	</language>
+	<language>
+		<nom lang="en">Adangme</nom>
+		<nom lang="fr">adangme</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ada</psi>
+		<a3b>ada</a3b>
+		<a3t>ada</a3t>
+	</language>
+	<language>
+		<nom lang="en">Adyghe; Adygei</nom>
+		<nom lang="fr">adygh</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ady</psi>
+		<a3b>ady</a3b>
+		<a3t>ady</a3t>
+	</language>
+	<language>
+		<nom lang="en">Afro-Asiatic (Other)</nom>
+		<nom lang="fr">afro-asiatiques, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#afa</psi>
+		<a3b>afa</a3b>
+		<a3t>afa</a3t>
+	</language>
+	<language>
+		<nom lang="en">Afrihili</nom>
+		<nom lang="fr">afrihili</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#afh</psi>
+		<a3b>afh</a3b>
+		<a3t>afh</a3t>
+	</language>
+	<language>
+		<nom lang="en">Afrikaans</nom>
+		<nom lang="fr">afrikaans</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#afr</psi>
+		<a2>af</a2>
+		<a3b>afr</a3b>
+		<a3t>afr</a3t>
+	</language>
+	<language>
+		<nom lang="en">Akan</nom>
+		<nom lang="fr">akan</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#aka</psi>
+		<a3b>aka</a3b>
+		<a3t>aka</a3t>
+	</language>
+	<language>
+		<nom lang="en">Akkadian</nom>
+		<nom lang="fr">akkadien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#akk</psi>
+		<a3b>akk</a3b>
+		<a3t>akk</a3t>
+	</language>
+	<language>
+		<nom lang="en">Aleut</nom>
+		<nom lang="fr">aléoute</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ale</psi>
+		<a3b>ale</a3b>
+		<a3t>ale</a3t>
+	</language>
+	<language>
+		<nom lang="en">Algonquian languages</nom>
+		<nom lang="fr">algonquines, langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#alg</psi>
+		<a3b>alg</a3b>
+		<a3t>alg</a3t>
+	</language>
+	<language>
+		<nom lang="en">Amharic</nom>
+		<nom lang="fr">amharique</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#amh</psi>
+		<a2>am</a2>
+		<a3b>amh</a3b>
+		<a3t>amh</a3t>
+	</language>
+	<language>
+		<nom lang="en">Aragonese</nom>
+		<nom lang="fr">aragonais</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#an</psi>
+		<a2>arg</a2>
+		<a3b>an</a3b>
+		<a3t>an</a3t>
+	</language>
+	<language>
+		<nom lang="en">English, Old (ca.450-1100)</nom>
+		<nom lang="fr">anglo-saxon (ca.450-1100)</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ang</psi>
+		<a3b>ang</a3b>
+		<a3t>ang</a3t>
+	</language>
+	<language>
+		<nom lang="en">Apache languages</nom>
+		<nom lang="fr">apache</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#apa</psi>
+		<a3b>apa</a3b>
+		<a3t>apa</a3t>
+	</language>
+	<language>
+		<nom lang="en">Arabic</nom>
+		<nom lang="fr">arabe</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ara</psi>
+		<a2>ar</a2>
+		<a3b>ara</a3b>
+		<a3t>ara</a3t>
+	</language>
+	<language>
+		<nom lang="en">Aramaic</nom>
+		<nom lang="fr">araméen</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#arc</psi>
+		<a3b>arc</a3b>
+		<a3t>arc</a3t>
+	</language>
+	<language>
+		<nom lang="en">Araucanian</nom>
+		<nom lang="fr">araucan</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#arn</psi>
+		<a3b>arn</a3b>
+		<a3t>arn</a3t>
+	</language>
+	<language>
+		<nom lang="en">Arapaho</nom>
+		<nom lang="fr">arapaho</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#arp</psi>
+		<a3b>arp</a3b>
+		<a3t>arp</a3t>
+	</language>
+	<language>
+		<nom lang="en">Artificial (Other)</nom>
+		<nom lang="fr">artificielles, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#art</psi>
+		<a3b>art</a3b>
+		<a3t>art</a3t>
+	</language>
+	<language>
+		<nom lang="en">Arawak</nom>
+		<nom lang="fr">arawak</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#arw</psi>
+		<a3b>arw</a3b>
+		<a3t>arw</a3t>
+	</language>
+	<language>
+		<nom lang="en">Assamese</nom>
+		<nom lang="fr">assamais</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#asm</psi>
+		<a2>as</a2>
+		<a3b>asm</a3b>
+		<a3t>asm</a3t>
+	</language>
+	<language>
+		<nom lang="en">Bable; Asturian</nom>
+		<nom lang="fr">bable; asturien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ast</psi>
+		<a3b>ast</a3b>
+		<a3t>ast</a3t>
+	</language>
+	<language>
+		<nom lang="en">Athapascan languages</nom>
+		<nom lang="fr">athapascanes, langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ath</psi>
+		<a3b>ath</a3b>
+		<a3t>ath</a3t>
+	</language>
+	<language>
+		<nom lang="en">Australian languages</nom>
+		<nom lang="fr">australiennes, langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#aus</psi>
+		<a3b>aus</a3b>
+		<a3t>aus</a3t>
+	</language>
+	<language>
+		<nom lang="en">Avaric</nom>
+		<nom lang="fr">avar</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ava</psi>
+		<a3b>ava</a3b>
+		<a3t>ava</a3t>
+	</language>
+	<language>
+		<nom lang="en">Avestan</nom>
+		<nom lang="fr">avestique</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ave</psi>
+		<a2>ae</a2>
+		<a3b>ave</a3b>
+		<a3t>ave</a3t>
+	</language>
+	<language>
+		<nom lang="en">Awadhi</nom>
+		<nom lang="fr">awadhi</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#awa</psi>
+		<a3b>awa</a3b>
+		<a3t>awa</a3t>
+	</language>
+	<language>
+		<nom lang="en">Aymara</nom>
+		<nom lang="fr">aymara</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#aym</psi>
+		<a2>ay</a2>
+		<a3b>aym</a3b>
+		<a3t>aym</a3t>
+	</language>
+	<language>
+		<nom lang="en">Azerbaijani</nom>
+		<nom lang="fr">azéri</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#aze</psi>
+		<a2>az</a2>
+		<a3b>aze</a3b>
+		<a3t>aze</a3t>
+	</language>
+	<language>
+		<nom lang="en">Banda</nom>
+		<nom lang="fr">banda</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#bad</psi>
+		<a3b>bad</a3b>
+		<a3t>bad</a3t>
+	</language>
+	<language>
+		<nom lang="en">Bamileke languages</nom>
+		<nom lang="fr">bamilékés, langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#bai</psi>
+		<a3b>bai</a3b>
+		<a3t>bai</a3t>
+	</language>
+	<language>
+		<nom lang="en">Bashkir</nom>
+		<nom lang="fr">bachkir</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#bak</psi>
+		<a2>ba</a2>
+		<a3b>bak</a3b>
+		<a3t>bak</a3t>
+	</language>
+	<language>
+		<nom lang="en">Baluchi</nom>
+		<nom lang="fr">baloutchi</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#bal</psi>
+		<a3b>bal</a3b>
+		<a3t>bal</a3t>
+	</language>
+	<language>
+		<nom lang="en">Bambara</nom>
+		<nom lang="fr">bambara</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#bam</psi>
+		<a3b>bam</a3b>
+		<a3t>bam</a3t>
+	</language>
+	<language>
+		<nom lang="en">Balinese</nom>
+		<nom lang="fr">balinais</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ban</psi>
+		<a3b>ban</a3b>
+		<a3t>ban</a3t>
+	</language>
+	<language>
+		<nom lang="en">Basa</nom>
+		<nom lang="fr">basa</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#bas</psi>
+		<a3b>bas</a3b>
+		<a3t>bas</a3t>
+	</language>
+	<language>
+		<nom lang="en">Baltic (Other)</nom>
+		<nom lang="fr">baltiques, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#bat</psi>
+		<a3b>bat</a3b>
+		<a3t>bat</a3t>
+	</language>
+	<language>
+		<nom lang="en">Beja</nom>
+		<nom lang="fr">bedja</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#bej</psi>
+		<a3b>bej</a3b>
+		<a3t>bej</a3t>
+	</language>
+	<language>
+		<nom lang="en">Belarusian</nom>
+		<nom lang="fr">biélorusse</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#bel</psi>
+		<a2>be</a2>
+		<a3b>bel</a3b>
+		<a3t>bel</a3t>
+	</language>
+	<language>
+		<nom lang="en">Bemba</nom>
+		<nom lang="fr">bemba</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#bem</psi>
+		<a3b>bem</a3b>
+		<a3t>bem</a3t>
+	</language>
+	<language>
+		<nom lang="en">Bengali</nom>
+		<nom lang="fr">bengali</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ben</psi>
+		<a2>bn</a2>
+		<a3b>ben</a3b>
+		<a3t>ben</a3t>
+	</language>
+	<language>
+		<nom lang="en">Berber (Other)</nom>
+		<nom lang="fr">berbères, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ber</psi>
+		<a3b>ber</a3b>
+		<a3t>ber</a3t>
+	</language>
+	<language>
+		<nom lang="en">Bhojpuri</nom>
+		<nom lang="fr">bhojpuri</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#bho</psi>
+		<a3b>bho</a3b>
+		<a3t>bho</a3t>
+	</language>
+	<language>
+		<nom lang="en">Bihari</nom>
+		<nom lang="fr">bihari</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#bih</psi>
+		<a2>bh</a2>
+		<a3b>bih</a3b>
+		<a3t>bih</a3t>
+	</language>
+	<language>
+		<nom lang="en">Bikol</nom>
+		<nom lang="fr">bikol</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#bik</psi>
+		<a3b>bik</a3b>
+		<a3t>bik</a3t>
+	</language>
+	<language>
+		<nom lang="en">Bini</nom>
+		<nom lang="fr">bini</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#bin</psi>
+		<a3b>bin</a3b>
+		<a3t>bin</a3t>
+	</language>
+	<language>
+		<nom lang="en">Bislama</nom>
+		<nom lang="fr">bichlamar</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#bis</psi>
+		<a2>bi</a2>
+		<a3b>bis</a3b>
+		<a3t>bis</a3t>
+	</language>
+	<language>
+		<nom lang="en">Siksika</nom>
+		<nom lang="fr">blackfoot</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#bla</psi>
+		<a3b>bla</a3b>
+		<a3t>bla</a3t>
+	</language>
+	<language>
+		<nom lang="en">Bantu (Other)</nom>
+		<nom lang="fr">bantoues, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#bnt</psi>
+		<a3b>bnt</a3b>
+		<a3t>bnt</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tibetan</nom>
+		<nom lang="fr">tibétain</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#bod</psi>
+		<a2>bo</a2>
+		<a3b>tib</a3b>
+		<a3t>bod</a3t>
+	</language>
+	<language>
+		<nom lang="en">Bosnian</nom>
+		<nom lang="fr">bosniaque</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#bos</psi>
+		<a2>bs</a2>
+		<a3b>bos</a3b>
+		<a3t>bos</a3t>
+	</language>
+	<language>
+		<nom lang="en">Braj</nom>
+		<nom lang="fr">braj</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#bra</psi>
+		<a3b>bra</a3b>
+		<a3t>bra</a3t>
+	</language>
+	<language>
+		<nom lang="en">Breton</nom>
+		<nom lang="fr">breton</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#bre</psi>
+		<a2>br</a2>
+		<a3b>bre</a3b>
+		<a3t>bre</a3t>
+	</language>
+	<language>
+		<nom lang="en">Batak (Indonesia)</nom>
+		<nom lang="fr">batak (Indonésie)</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#btk</psi>
+		<a3b>btk</a3b>
+		<a3t>btk</a3t>
+	</language>
+	<language>
+		<nom lang="en">Buriat</nom>
+		<nom lang="fr">bouriate</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#bua</psi>
+		<a3b>bua</a3b>
+		<a3t>bua</a3t>
+	</language>
+	<language>
+		<nom lang="en">Buginese</nom>
+		<nom lang="fr">bugi</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#bug</psi>
+		<a3b>bug</a3b>
+		<a3t>bug</a3t>
+	</language>
+	<language>
+		<nom lang="en">Bulgarian</nom>
+		<nom lang="fr">bulgare</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#bul</psi>
+		<a2>bg</a2>
+		<a3b>bul</a3b>
+		<a3t>bul</a3t>
+	</language>
+	<language>
+		<nom lang="en">Blin; Bilin</nom>
+		<nom lang="fr">blin; bilen</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#byn</psi>
+		<a3b>byn</a3b>
+		<a3t>byn</a3t>
+	</language>
+	<language>
+		<nom lang="en">Caddo</nom>
+		<nom lang="fr">caddo</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#cad</psi>
+		<a3b>cad</a3b>
+		<a3t>cad</a3t>
+	</language>
+	<language>
+		<nom lang="en">Central American Indian (Other)</nom>
+		<nom lang="fr">indiennes d'Amérique centrale,
+			autres langues
+		</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#cai</psi>
+		<a3b>cai</a3b>
+		<a3t>cai</a3t>
+	</language>
+	<language>
+		<nom lang="en">Carib</nom>
+		<nom lang="fr">caribe</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#car</psi>
+		<a3b>car</a3b>
+		<a3t>car</a3t>
+	</language>
+	<language>
+		<nom lang="en">Catalan</nom>
+		<nom lang="fr">catalan</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#cat</psi>
+		<a2>ca</a2>
+		<a3b>cat</a3b>
+		<a3t>cat</a3t>
+	</language>
+	<language>
+		<nom lang="en">Caucasian (Other)</nom>
+		<nom lang="fr">caucasiennes, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#cau</psi>
+		<a3b>cau</a3b>
+		<a3t>cau</a3t>
+	</language>
+	<language>
+		<nom lang="en">Cebuano</nom>
+		<nom lang="fr">cebuano</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ceb</psi>
+		<a3b>ceb</a3b>
+		<a3t>ceb</a3t>
+	</language>
+	<language>
+		<nom lang="en">Celtic (Other)</nom>
+		<nom lang="fr">celtiques, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#cel</psi>
+		<a3b>cel</a3b>
+		<a3t>cel</a3t>
+	</language>
+	<language>
+		<nom lang="en">Czech</nom>
+		<nom lang="fr">tchèque</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ces</psi>
+		<a2>cs</a2>
+		<a3b>cze</a3b>
+		<a3t>ces</a3t>
+	</language>
+	<language>
+		<nom lang="en">Chamorro</nom>
+		<nom lang="fr">chamorro</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#cha</psi>
+		<a2>ch</a2>
+		<a3b>cha</a3b>
+		<a3t>cha</a3t>
+	</language>
+	<language>
+		<nom lang="en">Chibcha</nom>
+		<nom lang="fr">chibcha</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#chb</psi>
+		<a3b>chb</a3b>
+		<a3t>chb</a3t>
+	</language>
+	<language>
+		<nom lang="en">Chechen</nom>
+		<nom lang="fr">tchÉtchène</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#che</psi>
+		<a2>ce</a2>
+		<a3b>che</a3b>
+		<a3t>che</a3t>
+	</language>
+	<language>
+		<nom lang="en">Chagatai</nom>
+		<nom lang="fr">djaghataï</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#chg</psi>
+		<a3b>chg</a3b>
+		<a3t>chg</a3t>
+	</language>
+	<language>
+		<nom lang="en">Chuukese</nom>
+		<nom lang="fr">chuuk</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#chk</psi>
+		<a3b>chk</a3b>
+		<a3t>chk</a3t>
+	</language>
+	<language>
+		<nom lang="en">Mari</nom>
+		<nom lang="fr">mari</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#chm</psi>
+		<a3b>chm</a3b>
+		<a3t>chm</a3t>
+	</language>
+	<language>
+		<nom lang="en">Chinook jargon</nom>
+		<nom lang="fr">chinook, jargon</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#chn</psi>
+		<a3b>chn</a3b>
+		<a3t>chn</a3t>
+	</language>
+	<language>
+		<nom lang="en">Choctaw</nom>
+		<nom lang="fr">choctaw</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#cho</psi>
+		<a3b>cho</a3b>
+		<a3t>cho</a3t>
+	</language>
+	<language>
+		<nom lang="en">Chipewyan</nom>
+		<nom lang="fr">chipewyan</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#chp</psi>
+		<a3b>chp</a3b>
+		<a3t>chp</a3t>
+	</language>
+	<language>
+		<nom lang="en">Cherokee</nom>
+		<nom lang="fr">cherokee</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#chr</psi>
+		<a3b>chr</a3b>
+		<a3t>chr</a3t>
+	</language>
+	<language>
+		<nom lang="en">Old Slavonic; Church Slavonic; Old Bulgarian; Church
+			Slavic;
+			Old Church Slavonic
+		</nom>
+		<nom lang="fr">vieux slave; slavon liturgique; vieux bulgare; slavon
+			d'église</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#chu</psi>
+		<a2>cu</a2>
+		<a3b>chu</a3b>
+		<a3t>chu</a3t>
+	</language>
+	<language>
+		<nom lang="en">Chuvash</nom>
+		<nom lang="fr">tchouvache</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#chv</psi>
+		<a2>cv</a2>
+		<a3b>chv</a3b>
+		<a3t>chv</a3t>
+	</language>
+	<language>
+		<nom lang="en">Cheyenne</nom>
+		<nom lang="fr">cheyenne</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#chy</psi>
+		<a3b>chy</a3b>
+		<a3t>chy</a3t>
+	</language>
+	<language>
+		<nom lang="en">Chamic languages</nom>
+		<nom lang="fr">chames, langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#cmc</psi>
+		<a3b>cmc</a3b>
+		<a3t>cmc</a3t>
+	</language>
+	<language>
+		<nom lang="en">Coptic</nom>
+		<nom lang="fr">copte</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#cop</psi>
+		<a3b>cop</a3b>
+		<a3t>cop</a3t>
+	</language>
+	<language>
+		<nom lang="en">Cornish</nom>
+		<nom lang="fr">cornique</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#cor</psi>
+		<a2>kw</a2>
+		<a3b>cor</a3b>
+		<a3t>cor</a3t>
+	</language>
+	<language>
+		<nom lang="en">Corsican</nom>
+		<nom lang="fr">corse</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#cos</psi>
+		<a2>co</a2>
+		<a3b>cos</a3b>
+		<a3t>cos</a3t>
+	</language>
+	<language>
+		<nom lang="en">Creoles and pidgins,
+			English-based (Other)
+		</nom>
+		<nom lang="fr">créoles et pidgins anglais, autres</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#cpe</psi>
+		<a3b>cpe</a3b>
+		<a3t>cpe</a3t>
+	</language>
+	<language>
+		<nom lang="en">Creoles and pidgins,
+			French-based (Other)
+		</nom>
+		<nom lang="fr">créoles et pidgins français, autres</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#cpf</psi>
+		<a3b>cpf</a3b>
+		<a3t>cpf</a3t>
+	</language>
+	<language>
+		<nom lang="en">Creoles and pidgins,
+			Portuguese-based (Other)
+		</nom>
+		<nom lang="fr">créoles et pidgins portugais, autres</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#cpp</psi>
+		<a3b>cpp</a3b>
+		<a3t>cpp</a3t>
+	</language>
+	<language>
+		<nom lang="en">Cree</nom>
+		<nom lang="fr">cree</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#cre</psi>
+		<a3b>cre</a3b>
+		<a3t>cre</a3t>
+	</language>
+	<language>
+		<nom lang="en">Crimean Turkish; Crimean Tatar</nom>
+		<nom lang="fr">tatar de CrimÃ©</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#crh</psi>
+		<a3b>crh</a3b>
+		<a3t>crh</a3t>
+	</language>
+	<language>
+		<nom lang="en">Creoles and pidgins (Other)</nom>
+		<nom lang="fr">créoles et pidgins divers</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#crp</psi>
+		<a3b>crp</a3b>
+		<a3t>crp</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kashubian</nom>
+		<nom lang="fr">kachoube</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#csb</psi>
+		<a3b>csb</a3b>
+		<a3t>csb</a3t>
+	</language>
+	<language>
+		<nom lang="en">Cushitic (Other)</nom>
+		<nom lang="fr">couchitiques, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#cus</psi>
+		<a3b>cus</a3b>
+		<a3t>cus</a3t>
+	</language>
+	<language>
+		<nom lang="en">Welsh</nom>
+		<nom lang="fr">gallois</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#cym</psi>
+		<a2>cy</a2>
+		<a3b>wel</a3b>
+		<a3t>cym</a3t>
+	</language>
+	<language>
+		<nom lang="en">Dakota</nom>
+		<nom lang="fr">dakota</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#dak</psi>
+		<a3b>dak</a3b>
+		<a3t>dak</a3t>
+	</language>
+	<language>
+		<nom lang="en">Danish</nom>
+		<nom lang="fr">danois</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#dan</psi>
+		<a2>da</a2>
+		<a3b>dan</a3b>
+		<a3t>dan</a3t>
+	</language>
+	<language>
+		<nom lang="en">Dargwa</nom>
+		<nom lang="fr">dargwa</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#dar</psi>
+		<a3b>dar</a3b>
+		<a3t>dar</a3t>
+	</language>
+	<language>
+		<nom lang="en">Dayak</nom>
+		<nom lang="fr">dayak</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#day</psi>
+		<a3b>day</a3b>
+		<a3t>day</a3t>
+	</language>
+	<language>
+		<nom lang="en">Delaware</nom>
+		<nom lang="fr">delaware</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#del</psi>
+		<a3b>del</a3b>
+		<a3t>del</a3t>
+	</language>
+	<language>
+		<nom lang="en">Slave (Athapascan)</nom>
+		<nom lang="fr">esclave (athapascan)</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#den</psi>
+		<a3b>den</a3b>
+		<a3t>den</a3t>
+	</language>
+	<language>
+		<nom lang="en">German</nom>
+		<nom lang="fr">allemand</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#deu</psi>
+		<a2>de</a2>
+		<a3b>ger</a3b>
+		<a3t>deu</a3t>
+	</language>
+	<language>
+		<nom lang="en">Dogrib</nom>
+		<nom lang="fr">dogrib</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#dgr</psi>
+		<a3b>dgr</a3b>
+		<a3t>dgr</a3t>
+	</language>
+	<language>
+		<nom lang="en">Dinka</nom>
+		<nom lang="fr">dinka</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#din</psi>
+		<a3b>din</a3b>
+		<a3t>din</a3t>
+	</language>
+	<language>
+		<nom lang="en">Divehi</nom>
+		<nom lang="fr">maldivien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#div</psi>
+		<a3b>div</a3b>
+		<a3t>div</a3t>
+	</language>
+	<language>
+		<nom lang="en">Dogri</nom>
+		<nom lang="fr">dogri</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#doi</psi>
+		<a3b>doi</a3b>
+		<a3t>doi</a3t>
+	</language>
+	<language>
+		<nom lang="en">Dravidian (Other)</nom>
+		<nom lang="fr">dravidiennes, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#dra</psi>
+		<a3b>dra</a3b>
+		<a3t>dra</a3t>
+	</language>
+	<language>
+		<nom lang="en">Lower Sorbian</nom>
+		<nom lang="fr">bas-sorabe</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#dsb</psi>
+		<a3b>dsb</a3b>
+		<a3t>dsb</a3t>
+	</language>
+	<language>
+		<nom lang="en">Duala</nom>
+		<nom lang="fr">douala</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#dua</psi>
+		<a3b>dua</a3b>
+		<a3t>dua</a3t>
+	</language>
+	<language>
+		<nom lang="en">Dutch, Middle (ca. 1050-1350)</nom>
+		<nom lang="fr">néerlandais moyen (ca. 1050-1350)</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#dum</psi>
+		<a3b>dum</a3b>
+		<a3t>dum</a3t>
+	</language>
+	<language>
+		<nom lang="en">Dyula</nom>
+		<nom lang="fr">dioula</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#dyu</psi>
+		<a3b>dyu</a3b>
+		<a3t>dyu</a3t>
+	</language>
+	<language>
+		<nom lang="en">Dzongkha</nom>
+		<nom lang="fr">dzongkha</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#dzo</psi>
+		<a2>dz</a2>
+		<a3b>dzo</a3b>
+		<a3t>dzo</a3t>
+	</language>
+	<language>
+		<nom lang="en">Efik</nom>
+		<nom lang="fr">efik</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#efi</psi>
+		<a3b>efi</a3b>
+		<a3t>efi</a3t>
+	</language>
+	<language>
+		<nom lang="en">Egyptian (Ancient)</nom>
+		<nom lang="fr">égyptien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#egy</psi>
+		<a3b>egy</a3b>
+		<a3t>egy</a3t>
+	</language>
+	<language>
+		<nom lang="en">Ekajuk</nom>
+		<nom lang="fr">ekajuk</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#eka</psi>
+		<a3b>eka</a3b>
+		<a3t>eka</a3t>
+	</language>
+	<language>
+		<nom lang="en">Greek, Modern (1453-)</nom>
+		<nom lang="fr">grec moderne (après 1453)</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ell</psi>
+		<a2>el</a2>
+		<a3b>gre</a3b>
+		<a3t>ell</a3t>
+	</language>
+	<language>
+		<nom lang="en">Elamite</nom>
+		<nom lang="fr">élamite</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#elx</psi>
+		<a3b>elx</a3b>
+		<a3t>elx</a3t>
+	</language>
+	<language>
+		<nom lang="en">English</nom>
+		<nom lang="fr">anglais</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#eng</psi>
+		<a2>en</a2>
+		<a3b>eng</a3b>
+		<a3t>eng</a3t>
+	</language>
+	<language>
+		<nom lang="en">English, Middle (1100-1500)</nom>
+		<nom lang="fr">anglais moyen (1100-1500)</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#enm</psi>
+		<a3b>enm</a3b>
+		<a3t>enm</a3t>
+	</language>
+	<language>
+		<nom lang="en">Esperanto</nom>
+		<nom lang="fr">espéranto</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#epo</psi>
+		<a2>eo</a2>
+		<a3b>epo</a3b>
+		<a3t>epo</a3t>
+	</language>
+	<language>
+		<nom lang="en">Estonian</nom>
+		<nom lang="fr">estonien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#est</psi>
+		<a2>et</a2>
+		<a3b>est</a3b>
+		<a3t>est</a3t>
+	</language>
+	<language>
+		<nom lang="en">Basque</nom>
+		<nom lang="fr">basque</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#eus</psi>
+		<a2>eu</a2>
+		<a3b>baq</a3b>
+		<a3t>eus</a3t>
+	</language>
+	<language>
+		<nom lang="en">Ewe</nom>
+		<nom lang="fr">éwé</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ewe</psi>
+		<a3b>ewe</a3b>
+		<a3t>ewe</a3t>
+	</language>
+	<language>
+		<nom lang="en">Ewondo</nom>
+		<nom lang="fr">éwondo</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ewo</psi>
+		<a3b>ewo</a3b>
+		<a3t>ewo</a3t>
+	</language>
+	<language>
+		<nom lang="en">Fang</nom>
+		<nom lang="fr">fang</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#fan</psi>
+		<a3b>fan</a3b>
+		<a3t>fan</a3t>
+	</language>
+	<language>
+		<nom lang="en">Faroese</nom>
+		<nom lang="fr">féroïen</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#fao</psi>
+		<a2>fo</a2>
+		<a3b>fao</a3b>
+		<a3t>fao</a3t>
+	</language>
+	<language>
+		<nom lang="en">Persian</nom>
+		<nom lang="fr">persan</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#fas</psi>
+		<a2>fa</a2>
+		<a3b>per</a3b>
+		<a3t>fas</a3t>
+	</language>
+	<language>
+		<nom lang="en">Fanti</nom>
+		<nom lang="fr">fanti</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#fat</psi>
+		<a3b>fat</a3b>
+		<a3t>fat</a3t>
+	</language>
+	<language>
+		<nom lang="en">Fijian</nom>
+		<nom lang="fr">fidjien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#fij</psi>
+		<a2>fj</a2>
+		<a3b>fij</a3b>
+		<a3t>fij</a3t>
+	</language>
+	<language>
+		<nom lang="en">Filipino; Pilipino</nom>
+		<nom lang="fr">filipino; pilipino</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#fil</psi>
+		<a3b>fil</a3b>
+		<a3t>fil</a3t>
+	</language>
+	<language>
+		<nom lang="en">Finnish</nom>
+		<nom lang="fr">finnois</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#fin</psi>
+		<a2>fi</a2>
+		<a3b>fin</a3b>
+		<a3t>fin</a3t>
+	</language>
+	<language>
+		<nom lang="en">Finno-Ugrian (Other)</nom>
+		<nom lang="fr">finno-ougriennes, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#fiu</psi>
+		<a3b>fiu</a3b>
+		<a3t>fiu</a3t>
+	</language>
+	<language>
+		<nom lang="en">Fon</nom>
+		<nom lang="fr">fon</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#fon</psi>
+		<a3b>fon</a3b>
+		<a3t>fon</a3t>
+	</language>
+	<language>
+		<nom lang="en">French</nom>
+		<nom lang="fr">français</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#fra</psi>
+		<a2>fr</a2>
+		<a3b>fre</a3b>
+		<a3t>fra</a3t>
+	</language>
+	<language>
+		<nom lang="en">French, Middle (ca.1400-1600)</nom>
+		<nom lang="fr">français moyen (1400-1600)</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#frm</psi>
+		<a3b>frm</a3b>
+		<a3t>frm</a3t>
+	</language>
+	<language>
+		<nom lang="en">French, Old (842-ca.1400)</nom>
+		<nom lang="fr">français ancien (842-ca.1400)</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#fro</psi>
+		<a3b>fro</a3b>
+		<a3t>fro</a3t>
+	</language>
+	<language>
+		<nom lang="en">Frisian</nom>
+		<nom lang="fr">frison</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#fry</psi>
+		<a2>fy</a2>
+		<a3b>fry</a3b>
+		<a3t>fry</a3t>
+	</language>
+	<language>
+		<nom lang="en">Fulah</nom>
+		<nom lang="fr">peul</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ful</psi>
+		<a3b>ful</a3b>
+		<a3t>ful</a3t>
+	</language>
+	<language>
+		<nom lang="en">Friulian</nom>
+		<nom lang="fr">frioulan</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#fur</psi>
+		<a3b>fur</a3b>
+		<a3t>fur</a3t>
+	</language>
+	<language>
+		<nom lang="en">Ga</nom>
+		<nom lang="fr">ga</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#gaa</psi>
+		<a3b>gaa</a3b>
+		<a3t>gaa</a3t>
+	</language>
+	<language>
+		<nom lang="en">Gayo</nom>
+		<nom lang="fr">gayo</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#gay</psi>
+		<a3b>gay</a3b>
+		<a3t>gay</a3t>
+	</language>
+	<language>
+		<nom lang="en">Gbaya</nom>
+		<nom lang="fr">gbaya</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#gba</psi>
+		<a3b>gba</a3b>
+		<a3t>gba</a3t>
+	</language>
+	<language>
+		<nom lang="en">Germanic (Other)</nom>
+		<nom lang="fr">germaniques, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#gem</psi>
+		<a3b>gem</a3b>
+		<a3t>gem</a3t>
+	</language>
+	<language>
+		<nom lang="en">Geez</nom>
+		<nom lang="fr">guèze</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#gez</psi>
+		<a3b>gez</a3b>
+		<a3t>gez</a3t>
+	</language>
+	<language>
+		<nom lang="en">Gilbertese</nom>
+		<nom lang="fr">kiribati</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#gil</psi>
+		<a3b>gil</a3b>
+		<a3t>gil</a3t>
+	</language>
+	<language>
+		<nom lang="en">Scottish Gaelic; Gaelic</nom>
+		<nom lang="fr">gaélique écossais; gaélique</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#gla</psi>
+		<a2>gd</a2>
+		<a3b>gla</a3b>
+		<a3t>gla</a3t>
+	</language>
+	<language>
+		<nom lang="en">Irish</nom>
+		<nom lang="fr">irlandais</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#gle</psi>
+		<a2>ga</a2>
+		<a3b>gle</a3b>
+		<a3t>gle</a3t>
+	</language>
+	<language>
+		<nom lang="en">Gallegan</nom>
+		<nom lang="fr">galicien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#glg</psi>
+		<a2>gl</a2>
+		<a3b>glg</a3b>
+		<a3t>glg</a3t>
+	</language>
+	<language>
+		<nom lang="en">Manx</nom>
+		<nom lang="fr">manx; mannois</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#glv</psi>
+		<a2>gv</a2>
+		<a3b>glv</a3b>
+		<a3t>glv</a3t>
+	</language>
+	<language>
+		<nom lang="en">German, Middle High (ca.1050-1500)</nom>
+		<nom lang="fr">allemand, moyen haut (ca. 1050-1500)</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#gmh</psi>
+		<a3b>gmh</a3b>
+		<a3t>gmh</a3t>
+	</language>
+	<language>
+		<nom lang="en">German, Old High (ca.750-1050)</nom>
+		<nom lang="fr">allemand, vieux haut (ca. 750-1050)</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#goh</psi>
+		<a3b>goh</a3b>
+		<a3t>goh</a3t>
+	</language>
+	<language>
+		<nom lang="en">Gondi</nom>
+		<nom lang="fr">gond</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#gon</psi>
+		<a3b>gon</a3b>
+		<a3t>gon</a3t>
+	</language>
+	<language>
+		<nom lang="en">Gorontalo</nom>
+		<nom lang="fr">gorontalo</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#gor</psi>
+		<a3b>gor</a3b>
+		<a3t>gor</a3t>
+	</language>
+	<language>
+		<nom lang="en">Gothic</nom>
+		<nom lang="fr">gothique</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#got</psi>
+		<a3b>got</a3b>
+		<a3t>got</a3t>
+	</language>
+	<language>
+		<nom lang="en">Grebo</nom>
+		<nom lang="fr">grebo</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#grb</psi>
+		<a3b>grb</a3b>
+		<a3t>grb</a3t>
+	</language>
+	<language>
+		<nom lang="en">Greek, Ancient (to 1453)</nom>
+		<nom lang="fr">grec ancien (jusqu'à 1453)</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#grc</psi>
+		<a3b>grc</a3b>
+		<a3t>grc</a3t>
+	</language>
+	<language>
+		<nom lang="en">Guarani</nom>
+		<nom lang="fr">guarani</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#grn</psi>
+		<a2>gn</a2>
+		<a3b>grn</a3b>
+		<a3t>grn</a3t>
+	</language>
+	<language>
+		<nom lang="en">Gujarati</nom>
+		<nom lang="fr">goudjrati</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#guj</psi>
+		<a2>gu</a2>
+		<a3b>guj</a3b>
+		<a3t>guj</a3t>
+	</language>
+	<language>
+		<nom lang="en">Gwich´in</nom>
+		<nom lang="fr">gwich´in</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#gwi</psi>
+		<a3b>gwi</a3b>
+		<a3t>gwi</a3t>
+	</language>
+	<language>
+		<nom lang="en">Haida</nom>
+		<nom lang="fr">haida</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#hai</psi>
+		<a3b>hai</a3b>
+		<a3t>hai</a3t>
+	</language>
+	<language>
+		<nom lang="en">Haitian; Haitian Creole</nom>
+		<nom lang="fr">haÃ¯tien; crÃ©ole haÃ¯tien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#hat</psi>
+		<a2>ht</a2>
+		<a3b>hat</a3b>
+		<a3t>hat</a3t>
+	</language>
+	<language>
+		<nom lang="en">Hausa</nom>
+		<nom lang="fr">haoussa</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#hau</psi>
+		<a2>ha</a2>
+		<a3b>hau</a3b>
+		<a3t>hau</a3t>
+	</language>
+	<language>
+		<nom lang="en">Hawaiian</nom>
+		<nom lang="fr">hawaïen</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#haw</psi>
+		<a3b>haw</a3b>
+		<a3t>haw</a3t>
+	</language>
+	<language>
+		<nom lang="en">Hebrew</nom>
+		<nom lang="fr">hébreu</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#heb</psi>
+		<a2>he</a2>
+		<a3b>heb</a3b>
+		<a3t>heb</a3t>
+	</language>
+	<language>
+		<nom lang="en">Herero</nom>
+		<nom lang="fr">herero</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#her</psi>
+		<a2>hz</a2>
+		<a3b>her</a3b>
+		<a3t>her</a3t>
+	</language>
+	<language>
+		<nom lang="en">Hiligaynon</nom>
+		<nom lang="fr">hiligaynon</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#hil</psi>
+		<a3b>hil</a3b>
+		<a3t>hil</a3t>
+	</language>
+	<language>
+		<nom lang="en">Himachali</nom>
+		<nom lang="fr">himachali</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#him</psi>
+		<a3b>him</a3b>
+		<a3t>him</a3t>
+	</language>
+	<language>
+		<nom lang="en">Hindi</nom>
+		<nom lang="fr">hindi</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#hin</psi>
+		<a2>hi</a2>
+		<a3b>hin</a3b>
+		<a3t>hin</a3t>
+	</language>
+	<language>
+		<nom lang="en">Hittite</nom>
+		<nom lang="fr">hittite</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#hit</psi>
+		<a3b>hit</a3b>
+		<a3t>hit</a3t>
+	</language>
+	<language>
+		<nom lang="en">Hmong</nom>
+		<nom lang="fr">hmong</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#hmn</psi>
+		<a3b>hmn</a3b>
+		<a3t>hmn</a3t>
+	</language>
+	<language>
+		<nom lang="en">Hiri Motu</nom>
+		<nom lang="fr">hiri motu</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#hmo</psi>
+		<a2>ho</a2>
+		<a3b>hmo</a3b>
+		<a3t>hmo</a3t>
+	</language>
+	<language>
+		<nom lang="en">Croatian</nom>
+		<nom lang="fr">croate</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#hrv</psi>
+		<a2>hr</a2>
+		<a3b>scr</a3b>
+		<a3t>hrv</a3t>
+	</language>
+	<language>
+		<nom lang="en">Upper Sorbian</nom>
+		<nom lang="fr">haut-sorabe</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#hsb</psi>
+		<a3b>hsb</a3b>
+		<a3t>hsb</a3t>
+	</language>
+	<language>
+		<nom lang="en">Hungarian</nom>
+		<nom lang="fr">hongrois</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#hun</psi>
+		<a2>hu</a2>
+		<a3b>hun</a3b>
+		<a3t>hun</a3t>
+	</language>
+	<language>
+		<nom lang="en">Hupa</nom>
+		<nom lang="fr">hupa</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#hup</psi>
+		<a3b>hup</a3b>
+		<a3t>hup</a3t>
+	</language>
+	<language>
+		<nom lang="en">Armenian</nom>
+		<nom lang="fr">arménien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#hye</psi>
+		<a2>hy</a2>
+		<a3b>arm</a3b>
+		<a3t>hye</a3t>
+	</language>
+	<language>
+		<nom lang="en">Iban</nom>
+		<nom lang="fr">iban</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#iba</psi>
+		<a3b>iba</a3b>
+		<a3t>iba</a3t>
+	</language>
+	<language>
+		<nom lang="en">Igbo</nom>
+		<nom lang="fr">igbo</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ibo</psi>
+		<a3b>ibo</a3b>
+		<a3t>ibo</a3t>
+	</language>
+	<language>
+		<nom lang="en">Ido</nom>
+		<nom lang="fr">ido</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ido</psi>
+		<a2>io</a2>
+		<a3b>ido</a3b>
+		<a3t>ido</a3t>
+	</language>
+	<language>
+		<nom lang="en">Sichuan Yi</nom>
+		<nom lang="fr">yi de Sichuan</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#iii</psi>
+		<a2>ii</a2>
+		<a3b>iii</a3b>
+		<a3t>iii</a3t>
+	</language>
+	<language>
+		<nom lang="en">Ijo</nom>
+		<nom lang="fr">ijo</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ijo</psi>
+		<a3b>ijo</a3b>
+		<a3t>ijo</a3t>
+	</language>
+	<language>
+		<nom lang="en">Inuktitut</nom>
+		<nom lang="fr">inuktitut</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#iku</psi>
+		<a2>iu</a2>
+		<a3b>iku</a3b>
+		<a3t>iku</a3t>
+	</language>
+	<language>
+		<nom lang="en">Interlingue</nom>
+		<nom lang="fr">interlingue</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ile</psi>
+		<a2>ie</a2>
+		<a3b>ile</a3b>
+		<a3t>ile</a3t>
+	</language>
+	<language>
+		<nom lang="en">Iloko</nom>
+		<nom lang="fr">ilocano</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ilo</psi>
+		<a3b>ilo</a3b>
+		<a3t>ilo</a3t>
+	</language>
+	<language>
+		<nom lang="en">Interlingua (International
+			Auxiliary Language Association)
+		</nom>
+		<nom lang="fr">interlingua (langue auxiliaire internationale)</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ina</psi>
+		<a2>ia</a2>
+		<a3b>ina</a3b>
+		<a3t>ina</a3t>
+	</language>
+	<language>
+		<nom lang="en">Indic (Other)</nom>
+		<nom lang="fr">indo-aryennes, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#inc</psi>
+		<a3b>inc</a3b>
+		<a3t>inc</a3t>
+	</language>
+	<language>
+		<nom lang="en">Indonesian</nom>
+		<nom lang="fr">indonésien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ind</psi>
+		<a2>id</a2>
+		<a3b>ind</a3b>
+		<a3t>ind</a3t>
+	</language>
+	<language>
+		<nom lang="en">Indo-European (Other)</nom>
+		<nom lang="fr">indo-européennes, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ine</psi>
+		<a3b>ine</a3b>
+		<a3t>ine</a3t>
+	</language>
+	<language>
+		<nom lang="en">Ingush</nom>
+		<nom lang="fr">ingouche</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#inh</psi>
+		<a3b>inh</a3b>
+		<a3t>inh</a3t>
+	</language>
+	<language>
+		<nom lang="en">Inupiaq</nom>
+		<nom lang="fr">inupiaq</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ipk</psi>
+		<a2>ik</a2>
+		<a3b>ipk</a3b>
+		<a3t>ipk</a3t>
+	</language>
+	<language>
+		<nom lang="en">Iranian (Other)</nom>
+		<nom lang="fr">iraniennes, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ira</psi>
+		<a3b>ira</a3b>
+		<a3t>ira</a3t>
+	</language>
+	<language>
+		<nom lang="en">Iroquoian languages</nom>
+		<nom lang="fr">iroquoises, langues (famille)</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#iro</psi>
+		<a3b>iro</a3b>
+		<a3t>iro</a3t>
+	</language>
+	<language>
+		<nom lang="en">Icelandic</nom>
+		<nom lang="fr">islandais</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#isl</psi>
+		<a2>is</a2>
+		<a3b>ice</a3b>
+		<a3t>isl</a3t>
+	</language>
+	<language>
+		<nom lang="en">Italian</nom>
+		<nom lang="fr">italien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ita</psi>
+		<a2>it</a2>
+		<a3b>ita</a3b>
+		<a3t>ita</a3t>
+	</language>
+	<language>
+		<nom lang="en">Javanese</nom>
+		<nom lang="fr">javanais</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#jav</psi>
+		<a2>jv</a2>
+		<a3b>jav</a3b>
+		<a3t>jav</a3t>
+	</language>
+	<language>
+		<nom lang="en">Lojban</nom>
+		<nom lang="fr">lojban</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#jbo</psi>
+		<a3b>jbo</a3b>
+		<a3t>jbo</a3t>
+	</language>
+	<language>
+		<nom lang="en">Japanese</nom>
+		<nom lang="fr">japonais</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#jpn</psi>
+		<a2>ja</a2>
+		<a3b>jpn</a3b>
+		<a3t>jpn</a3t>
+	</language>
+	<language>
+		<nom lang="en">Judeo-Persian</nom>
+		<nom lang="fr">judéo-persan</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#jpr</psi>
+		<a3b>jpr</a3b>
+		<a3t>jpr</a3t>
+	</language>
+	<language>
+		<nom lang="en">Judeo-Arabic</nom>
+		<nom lang="fr">judéo-arabe</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#jrb</psi>
+		<a3b>jrb</a3b>
+		<a3t>jrb</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kara-Kalpak</nom>
+		<nom lang="fr">karakalpak</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kaa</psi>
+		<a3b>kaa</a3b>
+		<a3t>kaa</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kabyle</nom>
+		<nom lang="fr">kabyle</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kab</psi>
+		<a3b>kab</a3b>
+		<a3t>kab</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kachin</nom>
+		<nom lang="fr">kachin</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kac</psi>
+		<a3b>kac</a3b>
+		<a3t>kac</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kalaallisut</nom>
+		<nom lang="fr">groenlandais</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kal</psi>
+		<a2>kl</a2>
+		<a3b>kal</a3b>
+		<a3t>kal</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kamba</nom>
+		<nom lang="fr">kamba</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kam</psi>
+		<a3b>kam</a3b>
+		<a3t>kam</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kannada</nom>
+		<nom lang="fr">kannada</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kan</psi>
+		<a2>kn</a2>
+		<a3b>kan</a3b>
+		<a3t>kan</a3t>
+	</language>
+	<language>
+		<nom lang="en">Karen</nom>
+		<nom lang="fr">karen</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kar</psi>
+		<a3b>kar</a3b>
+		<a3t>kar</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kashmiri</nom>
+		<nom lang="fr">kashmiri</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kas</psi>
+		<a2>ks</a2>
+		<a3b>kas</a3b>
+		<a3t>kas</a3t>
+	</language>
+	<language>
+		<nom lang="en">Georgian</nom>
+		<nom lang="fr">géorgien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kat</psi>
+		<a2>ka</a2>
+		<a3b>geo</a3b>
+		<a3t>kat</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kanuri</nom>
+		<nom lang="fr">kanouri</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kau</psi>
+		<a3b>kau</a3b>
+		<a3t>kau</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kawi</nom>
+		<nom lang="fr">kawi</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kaw</psi>
+		<a3b>kaw</a3b>
+		<a3t>kaw</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kazakh</nom>
+		<nom lang="fr">kazakh</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kaz</psi>
+		<a2>kk</a2>
+		<a3b>kaz</a3b>
+		<a3t>kaz</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kabardian</nom>
+		<nom lang="fr">kabardien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kbd</psi>
+		<a3b>kbd</a3b>
+		<a3t>kbd</a3t>
+	</language>
+	<language>
+		<nom lang="en">Khasi</nom>
+		<nom lang="fr">khasi</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kha</psi>
+		<a3b>kha</a3b>
+		<a3t>kha</a3t>
+	</language>
+	<language>
+		<nom lang="en">Khoisan (Other)</nom>
+		<nom lang="fr">khoisan, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#khi</psi>
+		<a3b>khi</a3b>
+		<a3t>khi</a3t>
+	</language>
+	<language>
+		<nom lang="en">Khmer</nom>
+		<nom lang="fr">khmer</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#khm</psi>
+		<a2>km</a2>
+		<a3b>khm</a3b>
+		<a3t>khm</a3t>
+	</language>
+	<language>
+		<nom lang="en">Khotanese</nom>
+		<nom lang="fr">khotanais</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kho</psi>
+		<a3b>kho</a3b>
+		<a3t>kho</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kikuyu; Gikuyu</nom>
+		<nom lang="fr">kikuyu</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kik</psi>
+		<a2>ki</a2>
+		<a3b>kik</a3b>
+		<a3t>kik</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kinyarwanda</nom>
+		<nom lang="fr">rwanda</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kin</psi>
+		<a2>rw</a2>
+		<a3b>kin</a3b>
+		<a3t>kin</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kirghiz</nom>
+		<nom lang="fr">kirghize</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kir</psi>
+		<a2>ky</a2>
+		<a3b>kir</a3b>
+		<a3t>kir</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kimbundu</nom>
+		<nom lang="fr">kimbundu</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kmb</psi>
+		<a3b>kmb</a3b>
+		<a3t>kmb</a3t>
+	</language>
+	<language>
+		<nom lang="en">Konkani</nom>
+		<nom lang="fr">konkani</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kok</psi>
+		<a3b>kok</a3b>
+		<a3t>kok</a3t>
+	</language>
+	<language>
+		<nom lang="en">Komi</nom>
+		<nom lang="fr">komi</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kom</psi>
+		<a2>kv</a2>
+		<a3b>kom</a3b>
+		<a3t>kom</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kongo</nom>
+		<nom lang="fr">kongo</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kon</psi>
+		<a3b>kon</a3b>
+		<a3t>kon</a3t>
+	</language>
+	<language>
+		<nom lang="en">Korean</nom>
+		<nom lang="fr">coréen</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kor</psi>
+		<a2>ko</a2>
+		<a3b>kor</a3b>
+		<a3t>kor</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kosraean</nom>
+		<nom lang="fr">kosrae</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kos</psi>
+		<a3b>kos</a3b>
+		<a3t>kos</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kpelle</nom>
+		<nom lang="fr">kpellé</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kpe</psi>
+		<a3b>kpe</a3b>
+		<a3t>kpe</a3t>
+	</language>
+	<language>
+		<nom lang="en">Karachay-Balkar</nom>
+		<nom lang="fr">karatchaÃ¯ balkar</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#krc</psi>
+		<a3b>krc</a3b>
+		<a3t>krc</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kru</nom>
+		<nom lang="fr">krou</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kro</psi>
+		<a3b>kro</a3b>
+		<a3t>kro</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kurukh</nom>
+		<nom lang="fr">kurukh</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kru</psi>
+		<a3b>kru</a3b>
+		<a3t>kru</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kwanyama, Kuanyama</nom>
+		<nom lang="fr">kwanyama; kuanyama</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kua</psi>
+		<a2>kj</a2>
+		<a3b>kua</a3b>
+		<a3t>kua</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kumyk</nom>
+		<nom lang="fr">koumyk</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kum</psi>
+		<a3b>kum</a3b>
+		<a3t>kum</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kurdish</nom>
+		<nom lang="fr">kurde</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kur</psi>
+		<a2>ku</a2>
+		<a3b>kur</a3b>
+		<a3t>kur</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kutenai</nom>
+		<nom lang="fr">kutenai</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#kut</psi>
+		<a3b>kut</a3b>
+		<a3t>kut</a3t>
+	</language>
+	<language>
+		<nom lang="en">Ladino</nom>
+		<nom lang="fr">judéo-espagnol</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#lad</psi>
+		<a3b>lad</a3b>
+		<a3t>lad</a3t>
+	</language>
+	<language>
+		<nom lang="en">Lahnda</nom>
+		<nom lang="fr">lahnda</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#lah</psi>
+		<a3b>lah</a3b>
+		<a3t>lah</a3t>
+	</language>
+	<language>
+		<nom lang="en">Lamba</nom>
+		<nom lang="fr">lamba</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#lam</psi>
+		<a3b>lam</a3b>
+		<a3t>lam</a3t>
+	</language>
+	<language>
+		<nom lang="en">Lao</nom>
+		<nom lang="fr">lao</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#lao</psi>
+		<a2>lo</a2>
+		<a3b>lao</a3b>
+		<a3t>lao</a3t>
+	</language>
+	<language>
+		<nom lang="en">Latin</nom>
+		<nom lang="fr">latin</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#lat</psi>
+		<a2>la</a2>
+		<a3b>lat</a3b>
+		<a3t>lat</a3t>
+	</language>
+	<language>
+		<nom lang="en">Latvian</nom>
+		<nom lang="fr">letton</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#lav</psi>
+		<a2>lv</a2>
+		<a3b>lav</a3b>
+		<a3t>lav</a3t>
+	</language>
+	<language>
+		<nom lang="en">Lezghian</nom>
+		<nom lang="fr">lezghien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#lez</psi>
+		<a3b>lez</a3b>
+		<a3t>lez</a3t>
+	</language>
+	<language>
+		<nom lang="en">Limburgish; Limburger; Limburgan</nom>
+		<nom lang="fr">limbourgeois</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#lim</psi>
+		<a2>li</a2>
+		<a3b>lim</a3b>
+		<a3t>lim</a3t>
+	</language>
+	<language>
+		<nom lang="en">Lingala</nom>
+		<nom lang="fr">lingala</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#lin</psi>
+		<a2>ln</a2>
+		<a3b>lin</a3b>
+		<a3t>lin</a3t>
+	</language>
+	<language>
+		<nom lang="en">Lithuanian</nom>
+		<nom lang="fr">lituanien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#lit</psi>
+		<a2>lt</a2>
+		<a3b>lit</a3b>
+		<a3t>lit</a3t>
+	</language>
+	<language>
+		<nom lang="en">Mongo</nom>
+		<nom lang="fr">mongo</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#lol</psi>
+		<a3b>lol</a3b>
+		<a3t>lol</a3t>
+	</language>
+	<language>
+		<nom lang="en">Lozi</nom>
+		<nom lang="fr">lozi</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#loz</psi>
+		<a3b>loz</a3b>
+		<a3t>loz</a3t>
+	</language>
+	<language>
+		<nom lang="en">Luxembourgish; Letzeburgesch</nom>
+		<nom lang="fr">luxembourgeois</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ltz</psi>
+		<a2>lb</a2>
+		<a3b>ltz</a3b>
+		<a3t>ltz</a3t>
+	</language>
+	<language>
+		<nom lang="en">Luba-Lulua</nom>
+		<nom lang="fr">luba-lulua</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#lua</psi>
+		<a3b>lua</a3b>
+		<a3t>lua</a3t>
+	</language>
+	<language>
+		<nom lang="en">Luba-Katanga</nom>
+		<nom lang="fr">luba-katanga</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#lub</psi>
+		<a3b>lub</a3b>
+		<a3t>lub</a3t>
+	</language>
+	<language>
+		<nom lang="en">Ganda</nom>
+		<nom lang="fr">ganda</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#lug</psi>
+		<a3b>lug</a3b>
+		<a3t>lug</a3t>
+	</language>
+	<language>
+		<nom lang="en">Luiseno</nom>
+		<nom lang="fr">luiseno</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#lui</psi>
+		<a3b>lui</a3b>
+		<a3t>lui</a3t>
+	</language>
+	<language>
+		<nom lang="en">Lunda</nom>
+		<nom lang="fr">lunda</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#lun</psi>
+		<a3b>lun</a3b>
+		<a3t>lun</a3t>
+	</language>
+	<language>
+		<nom lang="en">Luo (Kenya and Tanzania)</nom>
+		<nom lang="fr">luo (Kenya et Tanzanie)</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#luo</psi>
+		<a3b>luo</a3b>
+		<a3t>luo</a3t>
+	</language>
+	<language>
+		<nom lang="en">Lushai</nom>
+		<nom lang="fr">lushai</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#lus</psi>
+		<a3b>lus</a3b>
+		<a3t>lus</a3t>
+	</language>
+	<language>
+		<nom lang="en">Madurese</nom>
+		<nom lang="fr">madourais</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mad</psi>
+		<a3b>mad</a3b>
+		<a3t>mad</a3t>
+	</language>
+	<language>
+		<nom lang="en">Magahi</nom>
+		<nom lang="fr">magahi</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mag</psi>
+		<a3b>mag</a3b>
+		<a3t>mag</a3t>
+	</language>
+	<language>
+		<nom lang="en">Marshallese</nom>
+		<nom lang="fr">marshall</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mah</psi>
+		<a2>mh</a2>
+		<a3b>mah</a3b>
+		<a3t>mah</a3t>
+	</language>
+	<language>
+		<nom lang="en">Maithili</nom>
+		<nom lang="fr">maithili</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mai</psi>
+		<a3b>mai</a3b>
+		<a3t>mai</a3t>
+	</language>
+	<language>
+		<nom lang="en">Makasar</nom>
+		<nom lang="fr">makassar</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mak</psi>
+		<a3b>mak</a3b>
+		<a3t>mak</a3t>
+	</language>
+	<language>
+		<nom lang="en">Malayalam</nom>
+		<nom lang="fr">malayalam</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mal</psi>
+		<a2>ml</a2>
+		<a3b>mal</a3b>
+		<a3t>mal</a3t>
+	</language>
+	<language>
+		<nom lang="en">Mandingo</nom>
+		<nom lang="fr">mandingue</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#man</psi>
+		<a3b>man</a3b>
+		<a3t>man</a3t>
+	</language>
+	<language>
+		<nom lang="en">Austronesian (Other)</nom>
+		<nom lang="fr">malayo-polynésiennes, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#map</psi>
+		<a3b>map</a3b>
+		<a3t>map</a3t>
+	</language>
+	<language>
+		<nom lang="en">Marathi</nom>
+		<nom lang="fr">marathe</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mar</psi>
+		<a2>mr</a2>
+		<a3b>mar</a3b>
+		<a3t>mar</a3t>
+	</language>
+	<language>
+		<nom lang="en">Masai</nom>
+		<nom lang="fr">massaï</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mas</psi>
+		<a3b>mas</a3b>
+		<a3t>mas</a3t>
+	</language>
+	<language>
+		<nom lang="en">Moksha</nom>
+		<nom lang="fr">moksa</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mdf</psi>
+		<a3b>mdf</a3b>
+		<a3t>mdf</a3t>
+	</language>
+	<language>
+		<nom lang="en">Mandar</nom>
+		<nom lang="fr">mandar</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mdr</psi>
+		<a3b>mdr</a3b>
+		<a3t>mdr</a3t>
+	</language>
+	<language>
+		<nom lang="en">Mende</nom>
+		<nom lang="fr">mendé</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#men</psi>
+		<a3b>men</a3b>
+		<a3t>men</a3t>
+	</language>
+	<language>
+		<nom lang="en">Irish, Middle (900-1200)</nom>
+		<nom lang="fr">irlandais moyen (900-1200)</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mga</psi>
+		<a3b>mga</a3b>
+		<a3t>mga</a3t>
+	</language>
+	<language>
+		<nom lang="en">Mi'kmaq; Micmac</nom>
+		<nom lang="fr">mi'kmaq; micmac</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mic</psi>
+		<a3b>mic</a3b>
+		<a3t>mic</a3t>
+	</language>
+	<language>
+		<nom lang="en">Minangkabau</nom>
+		<nom lang="fr">minangkabau</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#min</psi>
+		<a3b>min</a3b>
+		<a3t>min</a3t>
+	</language>
+	<language>
+		<nom lang="en">Miscellaneous languages</nom>
+		<nom lang="fr">diverses, langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mis</psi>
+		<a3b>mis</a3b>
+		<a3t>mis</a3t>
+	</language>
+	<language>
+		<nom lang="en">Macedonian</nom>
+		<nom lang="fr">macédonien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mkd</psi>
+		<a2>mk</a2>
+		<a3b>mac</a3b>
+		<a3t>mkd</a3t>
+	</language>
+	<language>
+		<nom lang="en">Mon-Khmer (Other)</nom>
+		<nom lang="fr">môn-khmer, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mkh</psi>
+		<a3b>mkh</a3b>
+		<a3t>mkh</a3t>
+	</language>
+	<language>
+		<nom lang="en">Malagasy</nom>
+		<nom lang="fr">malgache</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mlg</psi>
+		<a2>mg</a2>
+		<a3b>mlg</a3b>
+		<a3t>mlg</a3t>
+	</language>
+	<language>
+		<nom lang="en">Maltese</nom>
+		<nom lang="fr">maltais</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mlt</psi>
+		<a2>mt</a2>
+		<a3b>mlt</a3b>
+		<a3t>mlt</a3t>
+	</language>
+	<language>
+		<nom lang="en">Manchu</nom>
+		<nom lang="fr">mandchou</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mnc</psi>
+		<a3b>mnc</a3b>
+		<a3t>mnc</a3t>
+	</language>
+	<language>
+		<nom lang="en">Manipuri</nom>
+		<nom lang="fr">manipuri</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mni</psi>
+		<a3b>mni</a3b>
+		<a3t>mni</a3t>
+	</language>
+	<language>
+		<nom lang="en">Manobo languages</nom>
+		<nom lang="fr">manobo, langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mno</psi>
+		<a3b>mno</a3b>
+		<a3t>mno</a3t>
+	</language>
+	<language>
+		<nom lang="en">Mohawk</nom>
+		<nom lang="fr">mohawk</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#moh</psi>
+		<a3b>moh</a3b>
+		<a3t>moh</a3t>
+	</language>
+	<language>
+		<nom lang="en">Moldavian</nom>
+		<nom lang="fr">moldave</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mol</psi>
+		<a2>mo</a2>
+		<a3b>mol</a3b>
+		<a3t>mol</a3t>
+	</language>
+	<language>
+		<nom lang="en">Mongolian</nom>
+		<nom lang="fr">mongol</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mon</psi>
+		<a2>mn</a2>
+		<a3b>mon</a3b>
+		<a3t>mon</a3t>
+	</language>
+	<language>
+		<nom lang="en">Mossi</nom>
+		<nom lang="fr">moré</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mos</psi>
+		<a3b>mos</a3b>
+		<a3t>mos</a3t>
+	</language>
+	<language>
+		<nom lang="en">Maori</nom>
+		<nom lang="fr">maori</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mri</psi>
+		<a2>mi</a2>
+		<a3b>mao</a3b>
+		<a3t>mri</a3t>
+	</language>
+	<language>
+		<nom lang="en">Malay</nom>
+		<nom lang="fr">malais</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#msa</psi>
+		<a2>ms</a2>
+		<a3b>may</a3b>
+		<a3t>msa</a3t>
+	</language>
+	<language>
+		<nom lang="en">Multiple languages</nom>
+		<nom lang="fr">multilingue</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mul</psi>
+		<a2>mul</a2>
+		<a3b>mul</a3b>
+		<a3b>plu</a3b>
+		<a3t>mul</a3t>
+	</language>
+	<language>
+		<nom lang="en">Munda languages</nom>
+		<nom lang="fr">mounda, langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mun</psi>
+		<a3b>mun</a3b>
+		<a3t>mun</a3t>
+	</language>
+	<language>
+		<nom lang="en">Creek</nom>
+		<nom lang="fr">muskogee</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mus</psi>
+		<a3b>mus</a3b>
+		<a3t>mus</a3t>
+	</language>
+	<language>
+		<nom lang="en">Mirandese</nom>
+		<nom lang="fr">mirandais</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mwl</psi>
+		<a3b>mwl</a3b>
+		<a3t>mwl</a3t>
+	</language>
+	<language>
+		<nom lang="en">Marwari</nom>
+		<nom lang="fr">marvari</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mwr</psi>
+		<a3b>mwr</a3b>
+		<a3t>mwr</a3t>
+	</language>
+	<language>
+		<nom lang="en">Burmese</nom>
+		<nom lang="fr">birman</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#mya</psi>
+		<a2>my</a2>
+		<a3b>bur</a3b>
+		<a3t>mya</a3t>
+	</language>
+	<language>
+		<nom lang="en">Mayan languages</nom>
+		<nom lang="fr">maya, langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#myn</psi>
+		<a3b>myn</a3b>
+		<a3t>myn</a3t>
+	</language>
+	<language>
+		<nom lang="en">Erzya</nom>
+		<nom lang="fr">erza</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#myv</psi>
+		<a3b>myv</a3b>
+		<a3t>myv</a3t>
+	</language>
+	<language>
+		<nom lang="en">Nahuatl</nom>
+		<nom lang="fr">nahuatl</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#nah</psi>
+		<a3b>nah</a3b>
+		<a3t>nah</a3t>
+	</language>
+	<language>
+		<nom lang="en">North American Indian (Other)</nom>
+		<nom lang="fr">indiennes d'Amérique du Nord, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#nai</psi>
+		<a3b>nai</a3b>
+		<a3t>nai</a3t>
+	</language>
+	<language>
+		<nom lang="en">Neapolitan</nom>
+		<nom lang="fr">napolitain</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#nap</psi>
+		<a3b>nap</a3b>
+		<a3t>nap</a3t>
+	</language>
+	<language>
+		<nom lang="en">Nauru</nom>
+		<nom lang="fr">nauruan</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#nau</psi>
+		<a2>na</a2>
+		<a3b>nau</a3b>
+		<a3t>nau</a3t>
+	</language>
+	<language>
+		<nom lang="en">Navajo; Navaho</nom>
+		<nom lang="fr">navaho</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#nav</psi>
+		<a2>nv</a2>
+		<a3b>nav</a3b>
+		<a3t>nav</a3t>
+	</language>
+	<language>
+		<nom lang="en">South Ndebele</nom>
+		<nom lang="fr">ndébélé du Sud</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#nbl</psi>
+		<a2>nr</a2>
+		<a3b>nbl</a3b>
+		<a3t>nbl</a3t>
+	</language>
+	<language>
+		<nom lang="en">North Ndebele</nom>
+		<nom lang="fr">ndébélé du Nord</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#nde</psi>
+		<a2>nd</a2>
+		<a3b>nde</a3b>
+		<a3t>nde</a3t>
+	</language>
+	<language>
+		<nom lang="en">Ndonga</nom>
+		<nom lang="fr">ndonga</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ndo</psi>
+		<a2>ng</a2>
+		<a3b>ndo</a3b>
+		<a3t>ndo</a3t>
+	</language>
+	<language>
+		<nom lang="en">Saxon, Low; German, Low; Low Saxon; Low German</nom>
+		<nom lang="fr">saxon, bas; allemand, bas; bas saxon; bas allemand</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#nds</psi>
+		<a3b>nds</a3b>
+		<a3t>nds</a3t>
+	</language>
+	<language>
+		<nom lang="en">Nepali</nom>
+		<nom lang="fr">népalais</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#nep</psi>
+		<a2>ne</a2>
+		<a3b>nep</a3b>
+		<a3t>nep</a3t>
+	</language>
+	<language>
+		<nom lang="en">Newari</nom>
+		<nom lang="fr">newari</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#new</psi>
+		<a3b>new</a3b>
+		<a3t>new</a3t>
+	</language>
+	<language>
+		<nom lang="en">Nias</nom>
+		<nom lang="fr">nias</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#nia</psi>
+		<a3b>nia</a3b>
+		<a3t>nia</a3t>
+	</language>
+	<language>
+		<nom lang="en">Niger-Kordofanian (Other)</nom>
+		<nom lang="fr">nigéro-congolaises, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#nic</psi>
+		<a3b>nic</a3b>
+		<a3t>nic</a3t>
+	</language>
+	<language>
+		<nom lang="en">Niuean</nom>
+		<nom lang="fr">niué</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#niu</psi>
+		<a3b>niu</a3b>
+		<a3t>niu</a3t>
+	</language>
+	<language>
+		<nom lang="en">Dutch</nom>
+		<nom lang="fr">néerlandais</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#nld</psi>
+		<a2>nl</a2>
+		<a3b>dut</a3b>
+		<a3t>nld</a3t>
+	</language>
+	<language>
+		<nom lang="en">Nynorsk, Norwegian; Norwegian Nynorsk</nom>
+		<nom lang="fr">nynorsk, norvégien; norvégien nynorsk</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#nno</psi>
+		<a2>nn</a2>
+		<a3b>nno</a3b>
+		<a3t>nno</a3t>
+	</language>
+	<language>
+		<nom lang="en">Norwegian Bokmål; Bokmål, Norwegian</nom>
+		<nom lang="fr">norvégien bokmål; bokmål, norvégien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#nob</psi>
+		<a2>nb</a2>
+		<a3b>nob</a3b>
+		<a3t>nob</a3t>
+	</language>
+	<language>
+		<nom lang="en">Nogai</nom>
+		<nom lang="fr">nogaÃ¯; nogay</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#nog</psi>
+		<a3b>nog</a3b>
+		<a3t>nog</a3t>
+	</language>
+	<language>
+		<nom lang="en">Norse, Old</nom>
+		<nom lang="fr">norrois, vieux</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#non</psi>
+		<a3b>non</a3b>
+		<a3t>non</a3t>
+	</language>
+	<language>
+		<nom lang="en">Norwegian</nom>
+		<nom lang="fr">norvégien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#nor</psi>
+		<a2>no</a2>
+		<a3b>nor</a3b>
+		<a3t>nor</a3t>
+	</language>
+	<language>
+		<nom lang="en">Pedi; Sepedi; Northern Sotho</nom>
+		<nom lang="fr">pedi; sepedi; sotho du Nord</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#nso</psi>
+		<a3b>nso</a3b>
+		<a3t>nso</a3t>
+	</language>
+	<language>
+		<nom lang="en">Nubian languages</nom>
+		<nom lang="fr">nubiennes, langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#nub</psi>
+		<a3b>nub</a3b>
+		<a3t>nub</a3t>
+	</language>
+	<language>
+		<nom lang="en">Classical Newari; Old Newari</nom>
+		<nom lang="fr">newari classique</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#nwc</psi>
+		<a3b>nwc</a3b>
+		<a3t>nwc</a3t>
+	</language>
+	<language>
+		<nom lang="en">Nyanja; Chichewa; Chewa</nom>
+		<nom lang="fr">nyanja; chichewa; chewa</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#nya</psi>
+		<a2>ny</a2>
+		<a3b>nya</a3b>
+		<a3t>nya</a3t>
+	</language>
+	<language>
+		<nom lang="en">Nyamwezi</nom>
+		<nom lang="fr">nyamwezi</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#nym</psi>
+		<a3b>nym</a3b>
+		<a3t>nym</a3t>
+	</language>
+	<language>
+		<nom lang="en">Nyankole</nom>
+		<nom lang="fr">nyankolé</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#nyn</psi>
+		<a3b>nyn</a3b>
+		<a3t>nyn</a3t>
+	</language>
+	<language>
+		<nom lang="en">Nyoro</nom>
+		<nom lang="fr">nyoro</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#nyo</psi>
+		<a3b>nyo</a3b>
+		<a3t>nyo</a3t>
+	</language>
+	<language>
+		<nom lang="en">Nzima</nom>
+		<nom lang="fr">nzema</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#nzi</psi>
+		<a3b>nzi</a3b>
+		<a3t>nzi</a3t>
+	</language>
+	<language>
+		<nom lang="en">Provençal; Occitan (post 1500)</nom>
+		<nom lang="fr">provençal; occitan (après 1500)</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#oci</psi>
+		<a2>oc</a2>
+		<a3b>oci</a3b>
+		<a3t>oci</a3t>
+	</language>
+	<language>
+		<nom lang="en">Ojibwa</nom>
+		<nom lang="fr">ojibwa</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#oji</psi>
+		<a3b>oji</a3b>
+		<a3t>oji</a3t>
+	</language>
+	<language>
+		<nom lang="en">Oriya</nom>
+		<nom lang="fr">oriya</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ori</psi>
+		<a2>or</a2>
+		<a3b>ori</a3b>
+		<a3t>ori</a3t>
+	</language>
+	<language>
+		<nom lang="en">Oromo</nom>
+		<nom lang="fr">galla</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#orm</psi>
+		<a2>om</a2>
+		<a3b>orm</a3b>
+		<a3t>orm</a3t>
+	</language>
+	<language>
+		<nom lang="en">Osage</nom>
+		<nom lang="fr">osage</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#osa</psi>
+		<a3b>osa</a3b>
+		<a3t>osa</a3t>
+	</language>
+	<language>
+		<nom lang="en">Ossetic; Ossetian</nom>
+		<nom lang="fr">ossète</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#oss</psi>
+		<a2>os</a2>
+		<a3b>oss</a3b>
+		<a3t>oss</a3t>
+	</language>
+	<language>
+		<nom lang="en">Turkish, Ottoman (1500-1928)</nom>
+		<nom lang="fr">turc ottoman (1500-1928)</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ota</psi>
+		<a3b>ota</a3b>
+		<a3t>ota</a3t>
+	</language>
+	<language>
+		<nom lang="en">Otomian languages</nom>
+		<nom lang="fr">otomangue, langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#oto</psi>
+		<a3b>oto</a3b>
+		<a3t>oto</a3t>
+	</language>
+	<language>
+		<nom lang="en">Papuan (Other)</nom>
+		<nom lang="fr">papoues, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#paa</psi>
+		<a3b>paa</a3b>
+		<a3t>paa</a3t>
+	</language>
+	<language>
+		<nom lang="en">Pangasinan</nom>
+		<nom lang="fr">pangasinan</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#pag</psi>
+		<a3b>pag</a3b>
+		<a3t>pag</a3t>
+	</language>
+	<language>
+		<nom lang="en">Pahlavi</nom>
+		<nom lang="fr">pahlavi</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#pal</psi>
+		<a3b>pal</a3b>
+		<a3t>pal</a3t>
+	</language>
+	<language>
+		<nom lang="en">Pampanga</nom>
+		<nom lang="fr">pampangan</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#pam</psi>
+		<a3b>pam</a3b>
+		<a3t>pam</a3t>
+	</language>
+	<language>
+		<nom lang="en">Panjabi</nom>
+		<nom lang="fr">pendjabi</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#pan</psi>
+		<a2>pa</a2>
+		<a3b>pan</a3b>
+		<a3t>pan</a3t>
+	</language>
+	<language>
+		<nom lang="en">Papiamento</nom>
+		<nom lang="fr">papiamento</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#pap</psi>
+		<a3b>pap</a3b>
+		<a3t>pap</a3t>
+	</language>
+	<language>
+		<nom lang="en">Palauan</nom>
+		<nom lang="fr">palau</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#pau</psi>
+		<a3b>pau</a3b>
+		<a3t>pau</a3t>
+	</language>
+	<language>
+		<nom lang="en">Persian, Old (ca.600-400 B.C.)</nom>
+		<nom lang="fr">perse, vieux (ca. 600-400 av. J.-C.)</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#peo</psi>
+		<a3b>peo</a3b>
+		<a3t>peo</a3t>
+	</language>
+	<language>
+		<nom lang="en">Philippine (Other)</nom>
+		<nom lang="fr">philippines, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#phi</psi>
+		<a3b>phi</a3b>
+		<a3t>phi</a3t>
+	</language>
+	<language>
+		<nom lang="en">Phoenician</nom>
+		<nom lang="fr">phénicien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#phn</psi>
+		<a3b>phn</a3b>
+		<a3t>phn</a3t>
+	</language>
+	<language>
+		<nom lang="en">Pali</nom>
+		<nom lang="fr">pali</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#pli</psi>
+		<a2>pi</a2>
+		<a3b>pli</a3b>
+		<a3t>pli</a3t>
+	</language>
+	<language>
+		<nom lang="en">Polish</nom>
+		<nom lang="fr">polonais</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#pol</psi>
+		<a2>pl</a2>
+		<a3b>pol</a3b>
+		<a3t>pol</a3t>
+	</language>
+	<language>
+		<nom lang="en">Pohnpeian</nom>
+		<nom lang="fr">pohnpei</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#pon</psi>
+		<a3b>pon</a3b>
+		<a3t>pon</a3t>
+	</language>
+	<language>
+		<nom lang="en">Portuguese</nom>
+		<nom lang="fr">portugais</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#por</psi>
+		<a2>pt</a2>
+		<a3b>por</a3b>
+		<a3t>por</a3t>
+	</language>
+	<language>
+		<nom lang="en">Prakrit languages</nom>
+		<nom lang="fr">prâkrit</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#pra</psi>
+		<a3b>pra</a3b>
+		<a3t>pra</a3t>
+	</language>
+	<language>
+		<nom lang="en">Provençal, Old (to 1500)</nom>
+		<nom lang="fr">provençal ancien (jusqu'à 1500)</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#pro</psi>
+		<a3b>pro</a3b>
+		<a3t>pro</a3t>
+	</language>
+	<language>
+		<nom lang="en">Pushto</nom>
+		<nom lang="fr">pachto</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#pus</psi>
+		<a2>ps</a2>
+		<a3b>pus</a3b>
+		<a3t>pus</a3t>
+	</language>
+	<language>
+		<nom lang="en">Quechua</nom>
+		<nom lang="fr">quechua</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#que</psi>
+		<a2>qu</a2>
+		<a3b>que</a3b>
+		<a3t>que</a3t>
+	</language>
+	<language>
+		<nom lang="en">Rajasthani</nom>
+		<nom lang="fr">rajasthani</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#raj</psi>
+		<a3b>raj</a3b>
+		<a3t>raj</a3t>
+	</language>
+	<language>
+		<nom lang="en">Rapanui</nom>
+		<nom lang="fr">rapanui</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#rap</psi>
+		<a3b>rap</a3b>
+		<a3t>rap</a3t>
+	</language>
+	<language>
+		<nom lang="en">Rarotongan</nom>
+		<nom lang="fr">rarotonga</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#rar</psi>
+		<a3b>rar</a3b>
+		<a3t>rar</a3t>
+	</language>
+	<language>
+		<nom lang="en">Romance (Other)</nom>
+		<nom lang="fr">romanes, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#roa</psi>
+		<a3b>roa</a3b>
+		<a3t>roa</a3t>
+	</language>
+	<language>
+		<nom lang="en">Raeto-Romance</nom>
+		<nom lang="fr">rhéto-roman</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#roh</psi>
+		<a2>rm</a2>
+		<a3b>roh</a3b>
+		<a3t>roh</a3t>
+	</language>
+	<language>
+		<nom lang="en">Romany</nom>
+		<nom lang="fr">tsigane</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#rom</psi>
+		<a3b>rom</a3b>
+		<a3t>rom</a3t>
+	</language>
+	<language>
+		<nom lang="en">Romanian</nom>
+		<nom lang="fr">roumain</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ron</psi>
+		<a2>ro</a2>
+		<a3b>rum</a3b>
+		<a3t>ron</a3t>
+	</language>
+	<language>
+		<nom lang="en">Rundi</nom>
+		<nom lang="fr">rundi</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#run</psi>
+		<a2>rn</a2>
+		<a3b>run</a3b>
+		<a3t>run</a3t>
+	</language>
+	<language>
+		<nom lang="en">Russian</nom>
+		<nom lang="fr">russe</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#rus</psi>
+		<a2>ru</a2>
+		<a3b>rus</a3b>
+		<a3t>rus</a3t>
+	</language>
+	<language>
+		<nom lang="en">Sandawe</nom>
+		<nom lang="fr">sandawe</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sad</psi>
+		<a3b>sad</a3b>
+		<a3t>sad</a3t>
+	</language>
+	<language>
+		<nom lang="en">Sango</nom>
+		<nom lang="fr">sango</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sag</psi>
+		<a2>sg</a2>
+		<a3b>sag</a3b>
+		<a3t>sag</a3t>
+	</language>
+	<language>
+		<nom lang="en">Yakut</nom>
+		<nom lang="fr">iakoute</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sah</psi>
+		<a3b>sah</a3b>
+		<a3t>sah</a3t>
+	</language>
+	<language>
+		<nom lang="en">South American Indian (Other)</nom>
+		<nom lang="fr">indiennes d'Amérique du Sud, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sai</psi>
+		<a3b>sai</a3b>
+		<a3t>sai</a3t>
+	</language>
+	<language>
+		<nom lang="en">Salishan languages</nom>
+		<nom lang="fr">salish, langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sal</psi>
+		<a3b>sal</a3b>
+		<a3t>sal</a3t>
+	</language>
+	<language>
+		<nom lang="en">Samaritan Aramaic</nom>
+		<nom lang="fr">samaritain</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sam</psi>
+		<a3b>sam</a3b>
+		<a3t>sam</a3t>
+	</language>
+	<language>
+		<nom lang="en">Sanskrit</nom>
+		<nom lang="fr">sanskrit</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#san</psi>
+		<a2>sa</a2>
+		<a3b>san</a3b>
+		<a3t>san</a3t>
+	</language>
+	<language>
+		<nom lang="en">Sasak</nom>
+		<nom lang="fr">sasak</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sas</psi>
+		<a3b>sas</a3b>
+		<a3t>sas</a3t>
+	</language>
+	<language>
+		<nom lang="en">Santali</nom>
+		<nom lang="fr">santal</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sat</psi>
+		<a3b>sat</a3b>
+		<a3t>sat</a3t>
+	</language>
+	<language>
+		<nom lang="en">Sicilian</nom>
+		<nom lang="fr">sicilien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#scn</psi>
+		<a3b>scn</a3b>
+		<a3t>scn</a3t>
+	</language>
+	<language>
+		<nom lang="en">Scots</nom>
+		<nom lang="fr">écossais</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sco</psi>
+		<a3b>sco</a3b>
+		<a3t>sco</a3t>
+	</language>
+	<language>
+		<nom lang="en">Selkup</nom>
+		<nom lang="fr">selkoupe</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sel</psi>
+		<a3b>sel</a3b>
+		<a3t>sel</a3t>
+	</language>
+	<language>
+		<nom lang="en">Semitic (Other)</nom>
+		<nom lang="fr">sémitiques, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sem</psi>
+		<a3b>sem</a3b>
+		<a3t>sem</a3t>
+	</language>
+	<language>
+		<nom lang="en">Irish, Old (to 900)</nom>
+		<nom lang="fr">irlandais ancien (jusqu'à 900)</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sga</psi>
+		<a3b>sga</a3b>
+		<a3t>sga</a3t>
+	</language>
+	<language>
+		<nom lang="en">Sign languages</nom>
+		<nom lang="fr">langues des signes</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sgn</psi>
+		<a3b>sgn</a3b>
+		<a3t>sgn</a3t>
+	</language>
+	<language>
+		<nom lang="en">Shan</nom>
+		<nom lang="fr">chan</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#shn</psi>
+		<a3b>shn</a3b>
+		<a3t>shn</a3t>
+	</language>
+	<language>
+		<nom lang="en">Sidamo</nom>
+		<nom lang="fr">sidamo</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sid</psi>
+		<a3b>sid</a3b>
+		<a3t>sid</a3t>
+	</language>
+	<language>
+		<nom lang="en">Sinhala; Sinhalese</nom>
+		<nom lang="fr">singhalais</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sin</psi>
+		<a2>si</a2>
+		<a3b>sin</a3b>
+		<a3t>sin</a3t>
+	</language>
+	<language>
+		<nom lang="en">Siouan languages</nom>
+		<nom lang="fr">sioux, langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sio</psi>
+		<a3b>sio</a3b>
+		<a3t>sio</a3t>
+	</language>
+	<language>
+		<nom lang="en">Sino-Tibetan (Other)</nom>
+		<nom lang="fr">sino-tibétaines, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sit</psi>
+		<a3b>sit</a3b>
+		<a3t>sit</a3t>
+	</language>
+	<language>
+		<nom lang="en">Slavic (Other)</nom>
+		<nom lang="fr">slaves, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sla</psi>
+		<a3b>sla</a3b>
+		<a3t>sla</a3t>
+	</language>
+	<language>
+		<nom lang="en">Slovak</nom>
+		<nom lang="fr">slovaque</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#slk</psi>
+		<a2>sk</a2>
+		<a3b>slo</a3b>
+		<a3t>slk</a3t>
+	</language>
+	<language>
+		<nom lang="en">Slovenian</nom>
+		<nom lang="fr">slovène</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#slv</psi>
+		<a2>sl</a2>
+		<a3b>slv</a3b>
+		<a3t>slv</a3t>
+	</language>
+	<language>
+		<nom lang="en">Southern Sami</nom>
+		<nom lang="fr">sami du Sud</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sma</psi>
+		<a3b>sma</a3b>
+		<a3t>sma</a3t>
+	</language>
+	<language>
+		<nom lang="en">Northern Sami</nom>
+		<nom lang="fr">sami du Nord</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sme</psi>
+		<a2>se</a2>
+		<a3b>sme</a3b>
+		<a3t>sme</a3t>
+	</language>
+	<language>
+		<nom lang="en">Sami languages (Other)</nom>
+		<nom lang="fr">sami, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#smi</psi>
+		<a3b>smi</a3b>
+		<a3t>smi</a3t>
+	</language>
+	<language>
+		<nom lang="en">Lule Sami</nom>
+		<nom lang="fr">sami de Lule</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#smj</psi>
+		<a3b>smj</a3b>
+		<a3t>smj</a3t>
+	</language>
+	<language>
+		<nom lang="en">Inari Sami</nom>
+		<nom lang="fr">sami d'Inari</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#smn</psi>
+		<a3b>smn</a3b>
+		<a3t>smn</a3t>
+	</language>
+	<language>
+		<nom lang="en">Samoan</nom>
+		<nom lang="fr">samoan</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#smo</psi>
+		<a2>sm</a2>
+		<a3b>smo</a3b>
+		<a3t>smo</a3t>
+	</language>
+	<language>
+		<nom lang="en">Skolt Sami</nom>
+		<nom lang="fr">sami skolt</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sms</psi>
+		<a3b>sms</a3b>
+		<a3t>sms</a3t>
+	</language>
+	<language>
+		<nom lang="en">Shona</nom>
+		<nom lang="fr">shona</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sna</psi>
+		<a2>sn</a2>
+		<a3b>sna</a3b>
+		<a3t>sna</a3t>
+	</language>
+	<language>
+		<nom lang="en">Sindhi</nom>
+		<nom lang="fr">sindhi</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#snd</psi>
+		<a2>sd</a2>
+		<a3b>snd</a3b>
+		<a3t>snd</a3t>
+	</language>
+	<language>
+		<nom lang="en">Soninke</nom>
+		<nom lang="fr">soninké</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#snk</psi>
+		<a3b>snk</a3b>
+		<a3t>snk</a3t>
+	</language>
+	<language>
+		<nom lang="en">Sogdian</nom>
+		<nom lang="fr">sogdien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sog</psi>
+		<a3b>sog</a3b>
+		<a3t>sog</a3t>
+	</language>
+	<language>
+		<nom lang="en">Somali</nom>
+		<nom lang="fr">somali</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#som</psi>
+		<a2>so</a2>
+		<a3b>som</a3b>
+		<a3t>som</a3t>
+	</language>
+	<language>
+		<nom lang="en">Songhai</nom>
+		<nom lang="fr">songhai</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#son</psi>
+		<a3b>son</a3b>
+		<a3t>son</a3t>
+	</language>
+	<language>
+		<nom lang="en">Sotho, Southern</nom>
+		<nom lang="fr">sotho du Sud</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sot</psi>
+		<a2>st</a2>
+		<a3b>sot</a3b>
+		<a3t>sot</a3t>
+	</language>
+	<language>
+		<nom lang="en">Spanish; Castilian</nom>
+		<nom lang="fr">espagnol; castillan</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#spa</psi>
+		<a2>es</a2>
+		<a3b>spa</a3b>
+		<a3t>spa</a3t>
+	</language>
+	<language>
+		<nom lang="en">Albanian</nom>
+		<nom lang="fr">albanais</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sqi</psi>
+		<a2>sq</a2>
+		<a3b>alb</a3b>
+		<a3t>sqi</a3t>
+	</language>
+	<language>
+		<nom lang="en">Sardinian</nom>
+		<nom lang="fr">sarde</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#srd</psi>
+		<a2>sc</a2>
+		<a3b>srd</a3b>
+		<a3t>srd</a3t>
+	</language>
+	<language>
+		<nom lang="en">Sranan Tongo</nom>
+		<nom lang="fr">sranan tongo</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#srn</psi>
+		<a3b>srn</a3b>
+		<a3t>srn</a3t>
+	</language>
+	<language>
+		<nom lang="en">Serbian</nom>
+		<nom lang="fr">serbe</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#srp</psi>
+		<a2>sr</a2>
+		<a3b>scc</a3b>
+		<a3t>srp</a3t>
+	</language>
+	<language>
+		<nom lang="en">Serer</nom>
+		<nom lang="fr">sérère</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#srr</psi>
+		<a3b>srr</a3b>
+		<a3t>srr</a3t>
+	</language>
+	<language>
+		<nom lang="en">Nilo-Saharan (Other)</nom>
+		<nom lang="fr">nilo-sahariennes, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ssa</psi>
+		<a3b>ssa</a3b>
+		<a3t>ssa</a3t>
+	</language>
+	<language>
+		<nom lang="en">Swati</nom>
+		<nom lang="fr">swati</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ssw</psi>
+		<a2>ss</a2>
+		<a3b>ssw</a3b>
+		<a3t>ssw</a3t>
+	</language>
+	<language>
+		<nom lang="en">Sukuma</nom>
+		<nom lang="fr">sukuma</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#suk</psi>
+		<a3b>suk</a3b>
+		<a3t>suk</a3t>
+	</language>
+	<language>
+		<nom lang="en">Sundanese</nom>
+		<nom lang="fr">soundanais</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sun</psi>
+		<a2>su</a2>
+		<a3b>sun</a3b>
+		<a3t>sun</a3t>
+	</language>
+	<language>
+		<nom lang="en">Susu</nom>
+		<nom lang="fr">soussou</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sus</psi>
+		<a3b>sus</a3b>
+		<a3t>sus</a3t>
+	</language>
+	<language>
+		<nom lang="en">Sumerian</nom>
+		<nom lang="fr">sumérien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#sux</psi>
+		<a3b>sux</a3b>
+		<a3t>sux</a3t>
+	</language>
+	<language>
+		<nom lang="en">Swahili</nom>
+		<nom lang="fr">swahili</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#swa</psi>
+		<a2>sw</a2>
+		<a3b>swa</a3b>
+		<a3t>swa</a3t>
+	</language>
+	<language>
+		<nom lang="en">Swedish</nom>
+		<nom lang="fr">suédois</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#swe</psi>
+		<a2>sv</a2>
+		<a3b>swe</a3b>
+		<a3t>swe</a3t>
+	</language>
+	<language>
+		<nom lang="en">Syriac</nom>
+		<nom lang="fr">syriaque</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#syr</psi>
+		<a3b>syr</a3b>
+		<a3t>syr</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tahitian</nom>
+		<nom lang="fr">tahitien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tah</psi>
+		<a2>ty</a2>
+		<a3b>tah</a3b>
+		<a3t>tah</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tai (Other)</nom>
+		<nom lang="fr">thaïes, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tai</psi>
+		<a3b>tai</a3b>
+		<a3t>tai</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tamil</nom>
+		<nom lang="fr">tamoul</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tam</psi>
+		<a2>ta</a2>
+		<a3b>tam</a3b>
+		<a3t>tam</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tatar</nom>
+		<nom lang="fr">tatar</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tat</psi>
+		<a2>tt</a2>
+		<a3b>tat</a3b>
+		<a3t>tat</a3t>
+	</language>
+	<language>
+		<nom lang="en">Telugu</nom>
+		<nom lang="fr">télougou</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tel</psi>
+		<a2>te</a2>
+		<a3b>tel</a3b>
+		<a3t>tel</a3t>
+	</language>
+	<language>
+		<nom lang="en">Timne</nom>
+		<nom lang="fr">temne</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tem</psi>
+		<a3b>tem</a3b>
+		<a3t>tem</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tereno</nom>
+		<nom lang="fr">tereno</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ter</psi>
+		<a3b>ter</a3b>
+		<a3t>ter</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tetum</nom>
+		<nom lang="fr">tetum</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tet</psi>
+		<a3b>tet</a3b>
+		<a3t>tet</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tajik</nom>
+		<nom lang="fr">tadjik</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tgk</psi>
+		<a2>tg</a2>
+		<a3b>tgk</a3b>
+		<a3t>tgk</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tagalog</nom>
+		<nom lang="fr">tagalog</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tgl</psi>
+		<a2>tl</a2>
+		<a3b>tgl</a3b>
+		<a3t>tgl</a3t>
+	</language>
+	<language>
+		<nom lang="en">Thai</nom>
+		<nom lang="fr">thaï</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tha</psi>
+		<a2>th</a2>
+		<a3b>tha</a3b>
+		<a3t>tha</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tigre</nom>
+		<nom lang="fr">tigré</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tig</psi>
+		<a3b>tig</a3b>
+		<a3t>tig</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tigrinya</nom>
+		<nom lang="fr">tigrigna</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tir</psi>
+		<a2>ti</a2>
+		<a3b>tir</a3b>
+		<a3t>tir</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tiv</nom>
+		<nom lang="fr">tiv</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tiv</psi>
+		<a3b>tiv</a3b>
+		<a3t>tiv</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tokelau</nom>
+		<nom lang="fr">tokelau</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tkl</psi>
+		<a3b>tkl</a3b>
+		<a3t>tkl</a3t>
+	</language>
+	<language>
+		<nom lang="en">Klingon; tlhIngan-Hol</nom>
+		<nom lang="fr">klingon</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tlh</psi>
+		<a3b>tlh</a3b>
+		<a3t>tlh</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tlingit</nom>
+		<nom lang="fr">tlingit</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tli</psi>
+		<a3b>tli</a3b>
+		<a3t>tli</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tamashek</nom>
+		<nom lang="fr">tamacheq</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tmh</psi>
+		<a3b>tmh</a3b>
+		<a3t>tmh</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tonga (Nyasa)</nom>
+		<nom lang="fr">tonga (Nyasa)</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tog</psi>
+		<a3b>tog</a3b>
+		<a3t>tog</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tonga (Tonga Islands)</nom>
+		<nom lang="fr">tongan (Îles Tonga)</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ton</psi>
+		<a2>to</a2>
+		<a3b>ton</a3b>
+		<a3t>ton</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tok Pisin</nom>
+		<nom lang="fr">tok pisin</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tpi</psi>
+		<a3b>tpi</a3b>
+		<a3t>tpi</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tsimshian</nom>
+		<nom lang="fr">tsimshian</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tsi</psi>
+		<a3b>tsi</a3b>
+		<a3t>tsi</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tswana</nom>
+		<nom lang="fr">tswana</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tsn</psi>
+		<a2>tn</a2>
+		<a3b>tsn</a3b>
+		<a3t>tsn</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tsonga</nom>
+		<nom lang="fr">tsonga</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tso</psi>
+		<a2>ts</a2>
+		<a3b>tso</a3b>
+		<a3t>tso</a3t>
+	</language>
+	<language>
+		<nom lang="en">Turkmen</nom>
+		<nom lang="fr">turkmène</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tuk</psi>
+		<a2>tk</a2>
+		<a3b>tuk</a3b>
+		<a3t>tuk</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tumbuka</nom>
+		<nom lang="fr">tumbuka</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tum</psi>
+		<a3b>tum</a3b>
+		<a3t>tum</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tupi languages</nom>
+		<nom lang="fr">tupi, langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tup</psi>
+		<a3b>tup</a3b>
+		<a3t>tup</a3t>
+	</language>
+	<language>
+		<nom lang="en">Turkish</nom>
+		<nom lang="fr">turc</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tur</psi>
+		<a2>tr</a2>
+		<a3b>tur</a3b>
+		<a3t>tur</a3t>
+	</language>
+	<language>
+		<nom lang="en">Altaic (Other)</nom>
+		<nom lang="fr">altaïques, autres langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tut</psi>
+		<a3b>tut</a3b>
+		<a3t>tut</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tuvalu</nom>
+		<nom lang="fr">tuvalu</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tvl</psi>
+		<a3b>tvl</a3b>
+		<a3t>tvl</a3t>
+	</language>
+	<language>
+		<nom lang="en">Twi</nom>
+		<nom lang="fr">twi</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#twi</psi>
+		<a2>tw</a2>
+		<a3b>twi</a3b>
+		<a3t>twi</a3t>
+	</language>
+	<language>
+		<nom lang="en">Tuvinian</nom>
+		<nom lang="fr">touva</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#tyv</psi>
+		<a3b>tyv</a3b>
+		<a3t>tyv</a3t>
+	</language>
+	<language>
+		<nom lang="en">Udmurt</nom>
+		<nom lang="fr">oudmourte</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#udm</psi>
+		<a3b>udm</a3b>
+		<a3t>udm</a3t>
+	</language>
+	<language>
+		<nom lang="en">Ugaritic</nom>
+		<nom lang="fr">ougaritique</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#uga</psi>
+		<a3b>uga</a3b>
+		<a3t>uga</a3t>
+	</language>
+	<language>
+		<nom lang="en">Uighur</nom>
+		<nom lang="fr">ouïgour</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#uig</psi>
+		<a2>ug</a2>
+		<a3b>uig</a3b>
+		<a3t>uig</a3t>
+	</language>
+	<language>
+		<nom lang="en">Ukrainian</nom>
+		<nom lang="fr">ukrainien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ukr</psi>
+		<a2>uk</a2>
+		<a3b>ukr</a3b>
+		<a3t>ukr</a3t>
+	</language>
+	<language>
+		<nom lang="en">Umbundu</nom>
+		<nom lang="fr">umbundu</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#umb</psi>
+		<a3b>umb</a3b>
+		<a3t>umb</a3t>
+	</language>
+	<language>
+		<nom lang="en">Undetermined</nom>
+		<nom lang="fr">indéterminée</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#und</psi>
+		<a3b>und</a3b>
+		<a3t>und</a3t>
+	</language>
+	<language>
+		<nom lang="en">Urdu</nom>
+		<nom lang="fr">ourdou</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#urd</psi>
+		<a2>ur</a2>
+		<a3b>urd</a3b>
+		<a3t>urd</a3t>
+	</language>
+	<language>
+		<nom lang="en">Uzbek</nom>
+		<nom lang="fr">ouszbek</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#uzb</psi>
+		<a2>uz</a2>
+		<a3b>uzb</a3b>
+		<a3t>uzb</a3t>
+	</language>
+	<language>
+		<nom lang="en">Vai</nom>
+		<nom lang="fr">vaï</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#vai</psi>
+		<a3b>vai</a3b>
+		<a3t>vai</a3t>
+	</language>
+	<language>
+		<nom lang="en">Venda</nom>
+		<nom lang="fr">venda</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ven</psi>
+		<a3b>ven</a3b>
+		<a3t>ven</a3t>
+	</language>
+	<language>
+		<nom lang="en">Vietnamese</nom>
+		<nom lang="fr">vietnamien</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#vie</psi>
+		<a2>vi</a2>
+		<a3b>vie</a3b>
+		<a3t>vie</a3t>
+	</language>
+	<language>
+		<nom lang="en">Volapük</nom>
+		<nom lang="fr">volapük</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#vol</psi>
+		<a2>vo</a2>
+		<a3b>vol</a3b>
+		<a3t>vol</a3t>
+	</language>
+	<language>
+		<nom lang="en">Votic</nom>
+		<nom lang="fr">vote</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#vot</psi>
+		<a3b>vot</a3b>
+		<a3t>vot</a3t>
+	</language>
+	<language>
+		<nom lang="en">Wakashan languages</nom>
+		<nom lang="fr">wakashennes, langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#wak</psi>
+		<a3b>wak</a3b>
+		<a3t>wak</a3t>
+	</language>
+	<language>
+		<nom lang="en">Walamo</nom>
+		<nom lang="fr">walamo</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#wal</psi>
+		<a3b>wal</a3b>
+		<a3t>wal</a3t>
+	</language>
+	<language>
+		<nom lang="en">Waray</nom>
+		<nom lang="fr">waray</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#war</psi>
+		<a3b>war</a3b>
+		<a3t>war</a3t>
+	</language>
+	<language>
+		<nom lang="en">Washo</nom>
+		<nom lang="fr">washo</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#was</psi>
+		<a3b>was</a3b>
+		<a3t>was</a3t>
+	</language>
+	<language>
+		<nom lang="en">Sorbian languages</nom>
+		<nom lang="fr">sorabes, langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#wen</psi>
+		<a3b>wen</a3b>
+		<a3t>wen</a3t>
+	</language>
+	<language>
+		<nom lang="en">Walloon</nom>
+		<nom lang="fr">wallon</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#wln</psi>
+		<a2>wa</a2>
+		<a3b>wln</a3b>
+		<a3t>wln</a3t>
+	</language>
+	<language>
+		<nom lang="en">Wolof</nom>
+		<nom lang="fr">wolof</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#wol</psi>
+		<a2>wo</a2>
+		<a3b>wol</a3b>
+		<a3t>wol</a3t>
+	</language>
+	<language>
+		<nom lang="en">Kalmyk</nom>
+		<nom lang="fr">kalmouk</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#xal</psi>
+		<a3b>xal</a3b>
+		<a3t>xal</a3t>
+	</language>
+	<language>
+		<nom lang="en">Xhosa</nom>
+		<nom lang="fr">xhosa</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#xho</psi>
+		<a2>xh</a2>
+		<a3b>xho</a3b>
+		<a3t>xho</a3t>
+	</language>
+	<language>
+		<nom lang="en">Yao</nom>
+		<nom lang="fr">yao</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#yao</psi>
+		<a3b>yao</a3b>
+		<a3t>yao</a3t>
+	</language>
+	<language>
+		<nom lang="en">Yapese</nom>
+		<nom lang="fr">yapois</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#yap</psi>
+		<a3b>yap</a3b>
+		<a3t>yap</a3t>
+	</language>
+	<language>
+		<nom lang="en">Yiddish</nom>
+		<nom lang="fr">yiddish</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#yid</psi>
+		<a2>yi</a2>
+		<a3b>yid</a3b>
+		<a3t>yid</a3t>
+	</language>
+	<language>
+		<nom lang="en">Yoruba</nom>
+		<nom lang="fr">yoruba</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#yor</psi>
+		<a2>yo</a2>
+		<a3b>yor</a3b>
+		<a3t>yor</a3t>
+	</language>
+	<language>
+		<nom lang="en">Yupik languages</nom>
+		<nom lang="fr">yupik, langues</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#ypk</psi>
+		<a3b>ypk</a3b>
+		<a3t>ypk</a3t>
+	</language>
+	<language>
+		<nom lang="en">Zapotec</nom>
+		<nom lang="fr">zapotèque</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#zap</psi>
+		<a3b>zap</a3b>
+		<a3t>zap</a3t>
+	</language>
+	<language>
+		<nom lang="en">Zenaga</nom>
+		<nom lang="fr">zenaga</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#zen</psi>
+		<a3b>zen</a3b>
+		<a3t>zen</a3t>
+	</language>
+	<language>
+		<nom lang="en">Zhuang; Chuang</nom>
+		<nom lang="fr">zhuang; chuang</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#zha</psi>
+		<a2>za</a2>
+		<a3b>zha</a3b>
+		<a3t>zha</a3t>
+	</language>
+	<language>
+		<nom lang="en">Chinese</nom>
+		<nom lang="fr">chinois</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#zho</psi>
+		<a2>zh</a2>
+		<a3b>chi</a3b>
+		<a3t>zho</a3t>
+	</language>
+	<language>
+		<nom lang="en">Zande</nom>
+		<nom lang="fr">zandé</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#znd</psi>
+		<a3b>znd</a3b>
+		<a3t>znd</a3t>
+	</language>
+	<language>
+		<nom lang="en">Zulu</nom>
+		<nom lang="fr">zoulou</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#zul</psi>
+		<a2>zu</a2>
+		<a3b>zul</a3b>
+		<a3t>zul</a3t>
+	</language>
+	<language>
+		<nom lang="en">Zuni</nom>
+		<nom lang="fr">zuni</nom>
+		<psi>http://psi.oasis-open.org/iso/639/#zun</psi>
+		<a3b>zun</a3b>
+		<a3t>zun</a3t>
+	</language>
+</languages>
