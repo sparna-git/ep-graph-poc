@@ -147,15 +147,18 @@
 							<xsl:variable name="docId" select="./key[@name = 'reds:hasObject']/key[@name = 'reds:reference']"/>
 							<eli-dl:based_on_a_realization_of rdf:resource="{org-ep:URI-LegislativeProcessWork($procedureReference,$doctype,$docId)}"/>
 							
-							<elidl-ep:hasBaseBas_I>
-								<elidl-ep:InvolvedWork rdf:about="{concat(org-ep:URI-LegislativeActivity($procedureReference,org-ep:readingReference($currentReading)),'/involved-work_',$i)}">
-									<xsl:variable name="WorkRole" select="$BaseOnRealization/key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasDocumentUse']/key[@name = 'reds:hasValue']"/>
-									<xsl:if test="$WorkRole != ''">
-										<elidl-ep:involvedWorkRole rdf:resource="{org-ep:URI-InvolvedWork($WorkRole)}"/>
-									</xsl:if>
-									<elidl-ep:hasWorkInvolved rdf:resource="{org-ep:URI-LegislativeProcessWork($procedureReference,$doctype,$docId)}"/>
-								</elidl-ep:InvolvedWork>	
-							</elidl-ep:hasBaseBas_I>
+							<xsl:variable name="WorkRole" select="$BaseOnRealization/key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasDocumentUse']/key[@name = 'reds:hasValue']"/>
+								<xsl:for-each select="$WorkRole">
+									<elidl-ep:hasBaseBas_I>								
+											<xsl:variable name="currentWorkRole" select="."/>
+											<elidl-ep:InvolvedWork rdf:about="{concat(org-ep:URI-LegislativeActivity($procedureReference,org-ep:readingReference($currentReading)),'/involved-work_',$i)}">
+												<xsl:if test="$WorkRole != ''">
+													<elidl-ep:involvedWorkRole rdf:resource="{org-ep:URI-InvolvedWork($currentWorkRole)}"/>
+												</xsl:if>
+												<elidl-ep:hasWorkInvolved rdf:resource="{org-ep:URI-LegislativeProcessWork($procedureReference,$doctype,$docId)}"/>
+											</elidl-ep:InvolvedWork>
+									</elidl-ep:hasBaseBas_I>
+								</xsl:for-each>
 						</xsl:for-each>	
 						
 						<!-- Now within that reading of that procedure, find all main dossiers, there could be multiple -->						
@@ -474,17 +477,45 @@
 					]/key[@name = 'reds:hasObject']/key[@name = 'reds:reference']"/>
 				<xsl:for-each select="$idReference_OtherRAP">
 					<xsl:variable name="currentIdReference" select="."/>
+					<xsl:variable name="index_tabling" select="position()"/>
 					<xsl:variable name="dataDRAFTRPANDAM" select="$EXPORT_DRAFTRPANDAM/all/item[key[@name = 'reds:reference'] = $currentIdReference]"/>
 					<eli-dl:consists_of>
-						<eli-dl:LegislativeActivity rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/tabling-draft-report_',position()))}">
+						<eli-dl:LegislativeActivity rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/tabling-draft-report_',$index_tabling))}">
 							<elidl-ep:activityId><xsl:value-of select="$currentIdReference"/></elidl-ep:activityId>
 							<elidl-ep:activityType rdf:resource="{org-ep:URI-ActiviteType('TABLING_DRAFT_REPORT')}"/>
 							<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="substring($dataDRAFTRPANDAM/key[@name = 'reds:dateDeposit'],1,23)"/></eli-dl:activity_date>
 							
-							<elidl-ep:hasOtherRap></elidl-ep:hasOtherRap>
+							
+							
+							<xsl:variable name="WorkRole" select="$EXPORT_DOSSIER/all/item[key[@name = 'reds:reference'] = $currentReference]/key[@name ='reds:hasRelations']/item[
+													key[@name = 'reds:hasPredicate'] = 'reds:hasOther_RAP'
+													and
+													(
+													key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasDocumentUse']
+													and
+													key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasValue'] = 'BAC']
+													)
+												]"/>
+							<xsl:for-each select="$WorkRole">
+								<xsl:variable name="currentRole_RAP" select="."/>
+								<xsl:variable name="index_involved" select="position()"/>	
+							 	<elidl-ep:hasOtherRap>
+							 		<elidl-ep:InvolvedWork rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/tabling-draft-report_',$index_tabling,'/involved-work_',$index_involved))}">
+										<elidl-ep:involvedWorkRole rdf:resource="{org-ep:URI-InvolvedWork($currentRole_RAP/key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasDocumentUse']/key[@name= 'reds:hasValue'])}"/>
+										<xsl:variable name="doctype" select="$currentRole_RAP/key[@name = 'reds:hasObject']/key[@name='reds:type']"/>
+										<xsl:variable name="docId" select="$currentRole_RAP/key[@name = 'reds:hasObject']/key[@name='reds:reference']"/>
+										<elidl-ep:hasWorkInvolved rdf:resource="{org-ep:URI-LegislativeProcessWork($ProcedureReference,substring-after($doctype,':'),$docId)}"/>
+									</elidl-ep:InvolvedWork>
+								</elidl-ep:hasOtherRap>								
+							</xsl:for-each>
 							
 							<eli-dl:involved_work rdf:resource="{org-ep:URI-LegislativeProcessWork($ProcedureReference,substring-after($dataDRAFTRPANDAM/key[@name = 'reds:type'],':'),$dataDRAFTRPANDAM/key[@name = 'reds:reference'])}"/>
-												
+							
+							<!-- This section of traduction  -->
+							<eli-dl:consists_of>
+								
+							</eli-dl:consists_of>
+																			
 						</eli-dl:LegislativeActivity>
 					</eli-dl:consists_of>					
 				</xsl:for-each>
@@ -499,16 +530,41 @@
 						key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasValue'] = 'BAC']
 						)
 					]/key[@name = 'reds:hasObject']/key[@name = 'reds:reference']"/>
-				
+				<xsl:message><xsl:value-of select="$idReference_OtherAME"/></xsl:message>
 				<xsl:for-each select="$idReference_OtherAME">
 					<xsl:variable name="currentIdReference" select="."/>
+					<xsl:variable name="index_OtherAME" select="position()"/>
 					<xsl:variable name="dataDRAFTRPANDAM" select="$EXPORT_DRAFTRPANDAM/all/item[key[@name = 'reds:reference'] = $currentIdReference]"/>
 					<eli-dl:consists_of>
-						<eli-dl:LegislativeActivity rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/tabling-amendment_',position()))}">
+						<eli-dl:LegislativeActivity rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/tabling-amendment_',$index_OtherAME))}">
 							<elidl-ep:activityId><xsl:value-of select="$currentIdReference"/></elidl-ep:activityId>
 							<elidl-ep:activityType rdf:resource="{org-ep:URI-ActiviteType('COMMITTEE_AMENDMENT')}"/>
 							<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="substring($dataDRAFTRPANDAM/key[@name = 'reds:dateDeposit'],1,23)"/></eli-dl:activity_date>
-							<elidl-ep:hasOtherAme></elidl-ep:hasOtherAme>
+							
+							<!-- InvolvedWork of TablingAmendments -->
+							<xsl:variable name="involvedWork_AME" select="$EXPORT_DOSSIER/all/item[key[@name = 'reds:reference'] = $currentReference]/key[@name ='reds:hasRelations']/item[
+								key[@name = 'reds:hasPredicate'] = 'reds:hasOther_AME'
+								and
+								key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasDocumentUse']/key[@name = 'reds:hasValue'] = 'BAC'
+								]"/>
+								
+							<xsl:for-each select="$involvedWork_AME">
+								<xsl:variable name="index_involved" select="position()"/>
+								<xsl:variable name="current_iw_AME" select="."/>
+								<elidl-ep:hasOtherAme>
+									<elidl-ep:InvolvedWork rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/tabling-amendment_',$index_OtherAME,'/involved-work_',$index_involved))}">
+										   
+										<elidl-ep:involvedWorkRole rdf:resource="{org-ep:URI-InvolvedWork($current_iw_AME/key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasName'] = 'reds:hasDocumentUse']/key[@name= 'reds:hasValue'])}"/>
+										 
+										<xsl:variable name="doctype" select="$current_iw_AME/key[@name = 'reds:hasObject']/key[@name='reds:type']"/>
+										<xsl:variable name="docId" select="$current_iw_AME/key[@name = 'reds:hasObject']/key[@name='reds:reference']"/>
+										<elidl-ep:hasWorkInvolved rdf:resource="{org-ep:URI-LegislativeProcessWork($ProcedureReference,substring-after($doctype,':'),$docId)}"/>
+										
+									</elidl-ep:InvolvedWork>
+								</elidl-ep:hasOtherAme>
+							</xsl:for-each>
+							
+							
 							<eli-dl:involved_work rdf:resource="{org-ep:URI-LegislativeProcessWork($ProcedureReference,substring-after($dataDRAFTRPANDAM/key[@name = 'reds:type'],':'),$dataDRAFTRPANDAM/key[@name = 'reds:reference'])}"/>						    
 						</eli-dl:LegislativeActivity>	
 					</eli-dl:consists_of>
