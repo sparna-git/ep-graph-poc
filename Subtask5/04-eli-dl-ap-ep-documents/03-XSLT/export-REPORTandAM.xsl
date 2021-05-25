@@ -66,6 +66,7 @@
 				<xsl:when test="position() = 1">
 
 					<xsl:message>Document <xsl:value-of select="$documentReference" />, type <xsl:value-of select="$documentType" />, for procedure <xsl:value-of select="$currentProcedure" />, fdr <xsl:value-of select="$fdr" /></xsl:message>
+					<xsl:comment>Document <xsl:value-of select="$documentReference" />, type <xsl:value-of select="$documentType" />, for procedure <xsl:value-of select="$currentProcedure" />, fdr <xsl:value-of select="$fdr" /></xsl:comment>
 			
 					<eli-dl:LegislativeProcessWork rdf:about="{org-ep:URI-LegislativeProcessWork($currentProcedure, $documentType, $documentReference)}">
 						
@@ -103,75 +104,34 @@
 							)}" />
 						</xsl:for-each>
 						
-						<xsl:apply-templates select="$currentDocument/key[@name = 'reds:hasRoles']/item" />
-						
-						<!-- Select all languages of non-erratum documents -->
-						<xsl:for-each select="distinct-values($currentDocument/key[@name = 'reds:hasMedias']/item[
-							not(key[@name = 'reds:hasLanguages']/item/key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasValue'] = 'red:mediaCategory_ERR'])		
-						]/key[@name = 'reds:hasLanguages']/item/key[@name = 'reds:hasCode'])">
-							
-							<xsl:variable name="currentLanguage" select="." />
-							<xsl:variable name="currentLanguage3Letters" select="org-ep:Lookup_Language_3LettersCode($currentLanguage)" />
-							<eli:is_realized_by>
-								<eli:Expression rdf:about="{concat(org-ep:URI-LegislativeProcessWork($currentProcedure, $documentType, $documentReference), '/', $currentLanguage3Letters)}">
-									
-									<eli:language rdf:resource="{org-ep:URI-Language($currentLanguage3Letters)}" />
-									<!-- Titles (all except UNIFORM-ERR) in proper language -->
-										<xsl:apply-templates select="$currentDocument/key[@name = 'reds:hasTitles']/item[
-											not(key[@name = 'reds:hasType'] = 'UNIFORM-ERR')
-											and
-											key[@name = 'reds:hasLanguage'] = $currentLanguage									
-										]" />
-										
-									<!-- Then iterate on each non-erratum format -->
-									<xsl:for-each select="$currentDocument/key[@name = 'reds:hasMedias']/item[ 
-										key[@name = 'reds:hasLanguages']/item/key[@name = 'reds:hasCode'] = $currentLanguage
-										and
-										not(key[@name = 'reds:hasLanguages']/item/key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasValue'] = 'red:mediaCategory_ERR'])
-									]">
-										<xsl:variable name="currentFormat" select="key[@name = 'reds:hasFormat']" />
-										<eli:is_embodied_by>
-											<eli:Manifestation rdf:about="{concat(
-												org-ep:URI-LegislativeProcessWork($currentProcedure, $documentType, $documentReference),
-												'/',
-												$currentLanguage3Letters,
-												'/',
-												org-ep:manifestationUriComponent($currentFormat)
-											)}">
-											
-												<eli:format rdf:resource="{org-ep:URI-IANA_MediaType($currentFormat)}" />
-												<eli:media_type rdf:resource="{org-ep:URI-IANA_MediaType($currentFormat)}" />
-												<elidl-ep:manifestationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="replace(
-													key[@name = 'reds:hasLanguages']
-													/item[ key[@name = 'reds:hasCode'] = $currentLanguage ]
-													/key[@name = 'reds:hasProperties']
-													/item[key[@name = 'reds:hasName'] = 'reds:referenceLanguageVersion']
-													/key[@name = 'reds:hasValue'],
-													' ',
-													'T')
-												" /></elidl-ep:manifestationDate>
-												<eli:is_exemplified_by rdf:resource="{replace(key[@name = 'reds:hasUrl'], '\{LANGUAGE\}',$currentLanguage)}" />
-											
-											</eli:Manifestation>
-											
-										</eli:is_embodied_by>
-									</xsl:for-each>
-								</eli:Expression>
-							</eli:is_realized_by>
-						</xsl:for-each>					 
+						<xsl:apply-templates select="$currentDocument/key[@name = 'reds:hasRoles']/item" />					 
 					</eli-dl:LegislativeProcessWork>		
-				
-					<!-- re-iterate on languages to create translation activities -->
-					<xsl:if test="$fdr">
-						<!-- fetch original language -->
-						<xsl:variable name="sourceLang" select="$currentDocument/key[@name='reds:hasProperties']/item[key[@name='reds:hasName'] = 'reds:originalLanguage']/key[@name='reds:hasValue']" />
-					
-						<xsl:for-each select="distinct-values($currentDocument/key[@name = 'reds:hasMedias']/item[
-								not(key[@name = 'reds:hasLanguages']/item/key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasValue'] = 'red:mediaCategory_ERR'])		
-							]/key[@name = 'reds:hasLanguages']/item/key[@name = 'reds:hasCode'])">
+
+
+					<!-- Select all languages of non-erratum documents -->
+					<xsl:for-each select="distinct-values($currentDocument/key[@name = 'reds:hasMedias']/item[
+						not(key[@name = 'reds:hasLanguages']/item/key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasValue'] = 'red:mediaCategory_ERR'])		
+					]/key[@name = 'reds:hasLanguages']/item/key[@name = 'reds:hasCode'])">
+						
+						<xsl:variable name="currentLanguage" select="." />
+						<xsl:variable name="currentLanguage3Letters" select="org-ep:Lookup_Language_3LettersCode($currentLanguage)" />
+
+						<eli:Expression rdf:about="{concat(org-ep:URI-LegislativeProcessWork($currentProcedure, $documentType, $documentReference), '/', $currentLanguage3Letters)}">
+							<!-- Link back to work -->
+							<eli:realizes rdf:resource="{org-ep:URI-LegislativeProcessWork($currentProcedure, $documentType, $documentReference)}" />
 							
-							<xsl:variable name="currentLanguage" select="." />
-							<xsl:variable name="currentLanguage3Letters" select="org-ep:Lookup_Language_3LettersCode($currentLanguage)" />
+							<eli:language rdf:resource="{org-ep:URI-Language($currentLanguage3Letters)}" />
+							<!-- Titles (all except UNIFORM-ERR) in proper language -->
+							<xsl:apply-templates select="$currentDocument/key[@name = 'reds:hasTitles']/item[
+								not(key[@name = 'reds:hasType'] = 'UNIFORM-ERR')
+								and
+								key[@name = 'reds:hasLanguage'] = $currentLanguage									
+							]" />
+						</eli:Expression>
+
+						<xsl:if test="$fdr">
+							<!-- fetch original language -->
+							<xsl:variable name="sourceLang" select="$currentDocument/key[@name='reds:hasProperties']/item[key[@name='reds:hasName'] = 'reds:originalLanguage']/key[@name='reds:hasValue']" />
 							
 							<!-- create Activity -->
 							<eli-dl:LegislativeActivity rdf:about="{org-ep:URI-TranslationActivity_FromDocument($currentProcedure, $documentReference, $currentLanguage3Letters)}">
@@ -181,17 +141,58 @@
 								<eli-dl:based_on_a_realization_of rdf:resource="{org-ep:URI-LegislativeProcessWork($currentProcedure, $documentType, $documentReference)}" />
 								<!-- Set an Activity type -->
 								<elidl-ep:activityType rdf:resource="{org-ep:URI-ActiviteType('TRANSLATION')}" />
-								<!-- Generate owl:sameAs to the activity description coming from the FDR -->
+								<!-- Generate realizesForeseenActivity to the activity description coming from the FDR -->
 								<elidl-ep:realizesForeseenActivity rdf:resource="{org-ep:URI-ForeseenTranslationActivity_FromFDR($fdr, $currentLanguage3Letters)}" />
 							</eli-dl:LegislativeActivity>
-						</xsl:for-each>
-					</xsl:if>				
+							
+						</xsl:if>
+						
+						<!-- Then iterate on each non-erratum format -->
+						<xsl:for-each select="$currentDocument/key[@name = 'reds:hasMedias']/item[ 
+							key[@name = 'reds:hasLanguages']/item/key[@name = 'reds:hasCode'] = $currentLanguage
+							and
+							not(key[@name = 'reds:hasLanguages']/item/key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasValue'] = 'red:mediaCategory_ERR'])
+						]">
+							<xsl:variable name="currentFormat" select="key[@name = 'reds:hasFormat']" />
+								<eli:Manifestation rdf:about="{concat(
+									org-ep:URI-LegislativeProcessWork($currentProcedure, $documentType, $documentReference),
+									'/',
+									$currentLanguage3Letters,
+									'/',
+									org-ep:manifestationUriComponent($currentFormat)
+								)}">
+									<!-- Link back to Expression -->
+									<eli:embodies rdf:resource="{concat(
+										org-ep:URI-LegislativeProcessWork($currentProcedure, $documentType, $documentReference),
+										'/',
+										$currentLanguage3Letters
+									)}" />
+									<eli:format rdf:resource="{org-ep:URI-IANA_MediaType($currentFormat)}" />
+									<eli:media_type rdf:resource="{org-ep:URI-IANA_MediaType($currentFormat)}" />
+									<elidl-ep:manifestationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="replace(
+										key[@name = 'reds:hasLanguages']
+										/item[ key[@name = 'reds:hasCode'] = $currentLanguage ]
+										/key[@name = 'reds:hasProperties']
+										/item[key[@name = 'reds:hasName'] = 'reds:referenceLanguageVersion']
+										/key[@name = 'reds:hasValue'],
+										' ',
+										'T')
+									" /></elidl-ep:manifestationDate>
+									<eli:is_exemplified_by rdf:resource="{replace(key[@name = 'reds:hasUrl'], '\{LANGUAGE\}',$currentLanguage)}" />
+								
+								</eli:Manifestation>
+						</xsl:for-each><!-- end loop on formats -->
+						
+
+					</xsl:for-each><!-- end loop on languages -->
+			
 				</xsl:when>
 				<xsl:otherwise>
 					<xsl:message>Document <xsl:value-of select="$documentReference" />, for procedure <xsl:value-of select="$currentProcedure" />, treated as sameAs <xsl:value-of select="$firstProcedure" /></xsl:message>
-					<eli-dl:LegislativeProcessWork rdf:about="{org-ep:URI-LegislativeProcessWork($currentProcedure, $documentType, $documentReference)}">
+					<xsl:comment>Document <xsl:value-of select="$documentReference" />, for procedure <xsl:value-of select="$currentProcedure" />, treated as sameAs <xsl:value-of select="$firstProcedure" /></xsl:comment>
+					<rdf:Description rdf:about="{org-ep:URI-LegislativeProcessWork($currentProcedure, $documentType, $documentReference)}">
 						<owl:sameAs rdf:resource="{org-ep:URI-LegislativeProcessWork($firstProcedure, $documentType, $documentReference)}" />
-					</eli-dl:LegislativeProcessWork>
+					</rdf:Description>
 				</xsl:otherwise>
 			</xsl:choose>
 	
@@ -240,10 +241,12 @@
 				<xsl:when test="position() = 1">
 
 					<xsl:message>Document Erratum <xsl:value-of select="$documentReference" />, type <xsl:value-of select="$documentType" />, for procedure <xsl:value-of select="$currentProcedure" /></xsl:message>
+					<xsl:comment>Document Erratum <xsl:value-of select="$documentReference" />, type <xsl:value-of select="$documentType" />, for procedure <xsl:value-of select="$currentProcedure" /></xsl:comment>
 					
 					<xsl:for-each select="$erratum_numbers">
 						<xsl:variable name="currentErratumNumber" select="." />
 						<xsl:message>  Erratum number <xsl:value-of select="$currentErratumNumber" /></xsl:message>
+						<xsl:comment>Erratum number <xsl:value-of select="$currentErratumNumber" /></xsl:comment>
 				
 						<eli-dl:LegislativeProcessWork rdf:about="{concat(
 							org-ep:URI-LegislativeProcessWork($currentProcedure, $documentType, $documentReference),
@@ -282,89 +285,100 @@
 							<xsl:apply-templates select="$currentDocument/key[@name = 'reds:hasProperties']/item"/>
 							<xsl:apply-templates select="$currentDocument/key[@name = 'reds:hasRoles']/item"/>
 						
-							<!-- Select all languages of erratum documents -->
-							<xsl:for-each select="distinct-values($currentDocument/key[@name = 'reds:hasMedias']/item/key[@name = 'reds:hasLanguages']/item[
-								key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasValue'] = 'red:mediaCategory_ERR']	
-							]/key[@name = 'reds:hasCode'])">
-								
-								<xsl:variable name="currentLanguage" select="." />
+						</eli-dl:LegislativeProcessWork>
+						
+						
+						<!-- Select all languages of erratum documents -->
+						<xsl:for-each select="distinct-values($currentDocument/key[@name = 'reds:hasMedias']/item/key[@name = 'reds:hasLanguages']/item[
+							key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasValue'] = 'red:mediaCategory_ERR']	
+						]/key[@name = 'reds:hasCode'])">
+						
+							<xsl:variable name="currentLanguage" select="." />
 								<xsl:variable name="currentLanguage3Letters" select="org-ep:Lookup_Language_3LettersCode($currentLanguage)" />
 								<xsl:message>  Language <xsl:value-of select="$currentLanguage" /></xsl:message>
 								
-								<eli:is_realized_by>
-									<eli:Expression rdf:about="{concat(
-										org-ep:URI-LegislativeProcessWork($currentProcedure, $documentType, $documentReference), 
+								<eli:Expression rdf:about="{concat(
+									org-ep:URI-LegislativeProcessWork($currentProcedure, $documentType, $documentReference), 
+									'/erratum_',
+									$currentErratumNumber,
+									'/', 
+									$currentLanguage3Letters
+								)}">
+									<!-- Link back to work -->
+									<eli:realizes rdf:resource="{concat(
+										org-ep:URI-LegislativeProcessWork($currentProcedure, $documentType, $documentReference),
+										'/erratum_',
+										$currentErratumNumber
+									)}" />
+									
+									<eli:language rdf:resource="{org-ep:URI-Language($currentLanguage3Letters)}" />
+									<!-- Titles (only UNIFORM-ERR) in proper language -->
+									<xsl:apply-templates select="$currentDocument/key[@name = 'reds:hasTitles']/item[
+										key[@name = 'reds:hasType'] = 'UNIFORM-ERR'
+										and
+										key[@name = 'reds:hasLanguage'] = $currentLanguage									
+									]" />
+									
+								</eli:Expression>
+
+								<!-- Then iterate on each erratum format -->
+								<xsl:for-each select="$currentDocument/key[@name = 'reds:hasMedias']/item[ 
+									key[@name = 'reds:hasLanguages']/item/key[@name = 'reds:hasCode'] = $currentLanguage
+									and
+									key[@name = 'reds:hasLanguages']/item/key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasValue'] = 'red:mediaCategory_ERR']
+								]">
+								
+									<xsl:variable name="currentFormat" select="key[@name = 'reds:hasFormat']" />
+									<xsl:message>  Format <xsl:value-of select="$currentFormat" /></xsl:message>
+									<eli:Manifestation rdf:about="{concat(
+										org-ep:URI-LegislativeProcessWork($currentProcedure, $documentType, $documentReference),
 										'/erratum_',
 										$currentErratumNumber,
-										'/', 
-										$currentLanguage3Letters
+										'/',
+										$currentLanguage3Letters,
+										'/',
+										org-ep:manifestationUriComponent($currentFormat)
 									)}">
+										<!-- link back to Expression -->
+										<eli:embodies rdf:resource="{concat(
+											org-ep:URI-LegislativeProcessWork($currentProcedure, $documentType, $documentReference),
+											'/erratum_',
+											$currentErratumNumber,
+											'/',
+											$currentLanguage3Letters
+										)}" />
+										<eli:format rdf:resource="{org-ep:URI-IANA_MediaType($currentFormat)}" />
+										<eli:media_type rdf:resource="{org-ep:URI-IANA_MediaType($currentFormat)}" />
+										<elidl-ep:manifestationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="replace(
+											key[@name = 'reds:hasLanguages']
+											/item[ key[@name = 'reds:hasCode'] = $currentLanguage ]
+											/key[@name = 'reds:hasProperties']
+											/item[key[@name = 'reds:hasName'] = 'reds:referenceLanguageVersion']
+											/key[@name = 'reds:hasValue'],
+											' ',
+											'T')
+										" /></elidl-ep:manifestationDate>
+										<eli:is_exemplified_by rdf:resource="{replace(key[@name = 'reds:hasUrl'], '\{LANGUAGE\}',$currentLanguage)}" />
 									
-										<eli:language rdf:resource="{org-ep:URI-Language($currentLanguage3Letters)}" />
-										<!-- Titles (only UNIFORM-ERR) in proper language -->
-										<xsl:apply-templates select="$currentDocument/key[@name = 'reds:hasTitles']/item[
-											key[@name = 'reds:hasType'] = 'UNIFORM-ERR'
-											and
-											key[@name = 'reds:hasLanguage'] = $currentLanguage									
-										]" />
-									
-										<!-- Then iterate on each erratum format -->
-										<xsl:for-each select="$currentDocument/key[@name = 'reds:hasMedias']/item[ 
-											key[@name = 'reds:hasLanguages']/item/key[@name = 'reds:hasCode'] = $currentLanguage
-											and
-											key[@name = 'reds:hasLanguages']/item/key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasValue'] = 'red:mediaCategory_ERR']
-										]">
-										
-											<xsl:variable name="currentFormat" select="key[@name = 'reds:hasFormat']" />
-											<xsl:message>  Format <xsl:value-of select="$currentFormat" /></xsl:message>
-											<eli:is_embodied_by>
-												<eli:Manifestation rdf:about="{concat(
-													org-ep:URI-LegislativeProcessWork($currentProcedure, $documentType, $documentReference),
-													'/erratum_',
-													$currentErratumNumber,
-													'/',
-													$currentLanguage3Letters,
-													'/',
-													org-ep:manifestationUriComponent($currentFormat)
-												)}">
-												
-													<eli:format rdf:resource="{org-ep:URI-IANA_MediaType($currentFormat)}" />
-													<eli:media_type rdf:resource="{org-ep:URI-IANA_MediaType($currentFormat)}" />
-													<elidl-ep:manifestationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="replace(
-														key[@name = 'reds:hasLanguages']
-														/item[ key[@name = 'reds:hasCode'] = $currentLanguage ]
-														/key[@name = 'reds:hasProperties']
-														/item[key[@name = 'reds:hasName'] = 'reds:referenceLanguageVersion']
-														/key[@name = 'reds:hasValue'],
-														' ',
-														'T')
-													" /></elidl-ep:manifestationDate>
-													<eli:is_exemplified_by rdf:resource="{replace(key[@name = 'reds:hasUrl'], '\{LANGUAGE\}',$currentLanguage)}" />
-												
-												</eli:Manifestation>
-											</eli:is_embodied_by>
-										
-										</xsl:for-each>
-										
-									</eli:Expression>
-								</eli:is_realized_by>
+									</eli:Manifestation>
 								
-								
-							</xsl:for-each>
+								</xsl:for-each><!-- end loop on formats -->
 						
-						</eli-dl:LegislativeProcessWork>	
-					</xsl:for-each>
+						</xsl:for-each><!-- end loop on languages -->						
+							
+					</xsl:for-each><!-- end loop on erratum numbers -->
 					
 				</xsl:when>
 				<xsl:otherwise>
 
 					<xsl:message>Document Erratum <xsl:value-of select="$documentReference" />, type <xsl:value-of select="$documentType" />, for procedure <xsl:value-of select="$currentProcedure" />, treated as sameAs <xsl:value-of select="$firstProcedure" /></xsl:message>
-
+					<xsl:comment>Document Erratum <xsl:value-of select="$documentReference" />, type <xsl:value-of select="$documentType" />, for procedure <xsl:value-of select="$currentProcedure" />, treated as sameAs <xsl:value-of select="$firstProcedure" /></xsl:comment>
+	
 					<xsl:for-each select="$erratum_numbers">
 						<xsl:variable name="currentErratumNumber" select="." />
 						<xsl:message>  Erratum number <xsl:value-of select="$currentErratumNumber" /></xsl:message>
 				
-						<eli-dl:LegislativeProcessWork rdf:about="{concat(
+						<rdf:Description rdf:about="{concat(
 							org-ep:URI-LegislativeProcessWork($currentProcedure, $documentType, $documentReference),
 							'/erratum_',
 							$currentErratumNumber
@@ -374,13 +388,11 @@
 								'/erratum_',
 								$currentErratumNumber
 							)}" />
-						</eli-dl:LegislativeProcessWork>
+						</rdf:Description>
 					</xsl:for-each>
 				
 				</xsl:otherwise>
 			</xsl:choose>
-		
-
 			
 		</xsl:for-each>		
 	</xsl:template>
@@ -396,7 +408,7 @@
 	</xsl:template>
 	
 	<xsl:template match="/all/item/key[@name='reds:dateDeposit']">
-		<eli-dl:legislative_process_work_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="." /></eli-dl:legislative_process_work_date>
+		<eli-dl:legislative_process_work_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="substring(.,1,19)" /></eli-dl:legislative_process_work_date>
 	</xsl:template>
 	
 	<xsl:template match="/all/item/key[@name='reds:type']">
@@ -404,7 +416,7 @@
 	</xsl:template>
 	
 	<xsl:template match="/all/item/key[@name='reds:status']">
-		<eli-dl:legislative_process_work_status rdf:resource="{org-ep:URI-LegislativeProcessWorkStatus(substring-after(., '_'))}" />
+		<elidl-ep:legislativeProcessWorkStatus rdf:resource="{org-ep:URI-LegislativeProcessWorkStatus(substring-after(., '_'))}" />
 	</xsl:template>
 	
 	<!-- ***** properties ***** -->
@@ -458,15 +470,15 @@
 	</xsl:template>
 	
 	<xsl:template match="key[@name='reds:hasProperties']/item[key[@name='reds:hasName'] = 'reds:hasConcept' and ends-with(key[@name='reds:hasValue'], '^^Eurovoc')]">
-		<elidl-ep:legislativeProcessIsAboutEurovoc rdf:resource="{substring-before(key[@name='reds:hasValue'],'^^')}" />	
+		<elidl-ep:legislativeProcessWorkIsAboutEurovoc rdf:resource="{substring-before(key[@name='reds:hasValue'],'^^')}" />	
 	</xsl:template>
 	
 	<xsl:template match="key[@name='reds:hasProperties']/item[key[@name='reds:hasName'] = 'reds:hasConcept' and ends-with(key[@name='reds:hasValue'], '^^SubjectHeading')]">
-		<elidl-ep:legislativeProcessIsAboutSubjectHeading rdf:resource="{substring-before(key[@name='reds:hasValue'],'^^')}" />	
+		<elidl-ep:legislativeProcessWorkIsAboutSubjectHeading rdf:resource="{substring-before(key[@name='reds:hasValue'],'^^')}" />	
 	</xsl:template>
 	
 	<xsl:template match="key[@name='reds:hasProperties']/item[key[@name='reds:hasName'] = 'reds:hasConcept' and ends-with(key[@name='reds:hasValue'], '^^DirectoryCode')]">
-		<elidl-ep:legislativeProcessIsAboutDirectoryCode rdf:resource="{substring-before(key[@name='reds:hasValue'],'^^')}" />	
+		<elidl-ep:legislativeProcessWorkIsAboutDirectoryCode rdf:resource="{substring-before(key[@name='reds:hasValue'],'^^')}" />	
 	</xsl:template>
 	
 
