@@ -29,7 +29,7 @@
 <!-- URI : fonction org-ep:ForeseenTranslationActivity_FromFDR -->
 <!-- Conversion code 2 lettres vers 3 lettres : org-ep:Lookup_Language_3LettersCode -->
 <elidl-ep:ForeseenActivity rdf:about="http://data.europarl.europa.eu/resource/foreseen_event/fdr_1153736_bul">
-    <elidl-ep:activityId>1153736_bg</elidl-ep:activityId>
+    <elidl-ep:activityId>1153736_bul</elidl-ep:activityId>
     <elidl-ep:activityType rdf:resource="http://data.europarl.europa.eu/authority/activity-type/TRANSLATION"/>
     <eli-dl:activity_start_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-17T12:01:00</eli-dl:activity_start_date>
     <elidl-ep:activityDueDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-01-17T17:30:00</elidl-ep:activityDueDate>
