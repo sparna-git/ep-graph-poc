@@ -618,27 +618,25 @@
 						<elidl-ep:activityType rdf:resource="{org-ep:URI-ActiviteType('COMMITTEE_VOTE')}"/>
 						<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="substring($voteRelation/key[@name = 'reds:hasDate'],1,23)"/></eli-dl:activity_date>
 						
-						<elidl-ep:activityHasVoteResult rdf:resource="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/committee-vote_',$index,'/','result'))}"/>
+						<elidl-ep:activityHasVoteResult rdf:resource="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/committee-vote_',$index,'/','result'))}">
+							<elidl-ep:Vote rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/committee-vote_',$index,'/','result'))}">
+								<elidl-ep:voteDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="$voteRelation/key[@name = 'reds:hasDate']"/></elidl-ep:voteDate>
+								<elidl-ep:voteResult rdf:resource="{org-ep:URI-TypeVote(concat('vote-result/',substring-after($VoteResult_Committee[key[@name= 'reds:hasName']='reds:VoteResult']/key[@name = 'reds:hasValue'],'_')))}"/>
+										
+								<xsl:if test="$VoteResult_Committee/item[key[@name= 'reds:hasName']='reds:voteAbst']/key[@name = 'reds:hasValue'] != 0">
+									<elidl-ep:voteAbstention rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select="$VoteResult_Committee/item[key[@name= 'reds:hasName']='reds:voteAbst']/key[@name = 'reds:hasValue']"/></elidl-ep:voteAbstention>
+								</xsl:if>
+								<xsl:if test="$VoteResult_Committee/item[key[@name= 'reds:hasName']='reds:voteInFavour']/key[@name = 'reds:hasValue'] != 0">
+									<elidl-ep:voteFavour rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select="$VoteResult_Committee/item[key[@name= 'reds:hasName']='reds:voteInFavour']/key[@name = 'reds:hasValue']"/></elidl-ep:voteFavour>
+								</xsl:if>
+								<xsl:if test="$VoteResult_Committee/item[key[@name= 'reds:hasName']='reds:voteAgainst']/key[@name = 'reds:hasValue'] != 0">
+									<elidl-ep:voteAgainst rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select="$VoteResult_Committee/item[key[@name= 'reds:hasName']='reds:voteAgainst']/key[@name = 'reds:hasValue']"/></elidl-ep:voteAgainst>
+								</xsl:if>
+							</elidl-ep:Vote>
+						</elidl-ep:activityHasVoteResult>
 						<eli-dl:created_a_realization_of rdf:resource="{org-ep:URI-Involved($ProcedureReference,$voteObjectRelation/key[@name = 'reds:hasSubject']/key[@name = 'reds:type'],$voteObjectRelation/key[@name = 'reds:hasSubject']/key[@name = 'reds:reference'])}"/>
 					</eli-dl:LegislativeActivity>
 				</eli-dl:consists_of>
-				
-				<elidl-ep:activityHasVoteResult>
-					<elidl-ep:Vote rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/committee-vote_',$index,'/','result'))}">
-						<elidl-ep:voteDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="$voteRelation/key[@name = 'reds:hasDate']"/></elidl-ep:voteDate>
-						<elidl-ep:voteResult rdf:resource="{org-ep:URI-TypeVote(concat('vote-result/',substring-after($VoteResult_Committee[key[@name= 'reds:hasName']='reds:VoteResult']/key[@name = 'reds:hasValue'],'_')))}"/>
-								
-						<xsl:if test="$VoteResult_Committee/item[key[@name= 'reds:hasName']='reds:voteAbst']/key[@name = 'reds:hasValue'] != 0">
-							<elidl-ep:voteAbstention rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select="$VoteResult_Committee/item[key[@name= 'reds:hasName']='reds:voteAbst']/key[@name = 'reds:hasValue']"/></elidl-ep:voteAbstention>
-						</xsl:if>
-						<xsl:if test="$VoteResult_Committee/item[key[@name= 'reds:hasName']='reds:voteInFavour']/key[@name = 'reds:hasValue'] != 0">
-							<elidl-ep:voteFavour rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select="$VoteResult_Committee/item[key[@name= 'reds:hasName']='reds:voteInFavour']/key[@name = 'reds:hasValue']"/></elidl-ep:voteFavour>
-						</xsl:if>
-						<xsl:if test="$VoteResult_Committee/item[key[@name= 'reds:hasName']='reds:voteAgainst']/key[@name = 'reds:hasValue'] != 0">
-							<elidl-ep:voteAgainst rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select="$VoteResult_Committee/item[key[@name= 'reds:hasName']='reds:voteAgainst']/key[@name = 'reds:hasValue']"/></elidl-ep:voteAgainst>
-						</xsl:if>
-					</elidl-ep:Vote>
-				</elidl-ep:activityHasVoteResult>
 				
 				<!-- the section search all roles -->
 				
