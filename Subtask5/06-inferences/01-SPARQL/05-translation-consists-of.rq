@@ -1,0 +1,20 @@
+# Run with following command
+# java -jar rdf-toolkit-0.6.1-onejar.jar construct -i 03-eli-dl-ap-ep-activities/05-RDF/ -i 04-eli-dl-ap-ep-documents/05-RDF/ -i 05-translations/05-RDF/ -q 06-inferences/01-SPARQL/05-translation-consists-of.rq -o 06-inferences/05-RDF/05-translation-consist-of.ttl
+PREFIX org-ep: 		<http://data.europarl.europa.eu/ontology/org-ep#>
+PREFIX eli-dl: 		<http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+PREFIX eli: 		<http://data.europa.eu/eli/ontology#>
+PREFIX elidl-ep: 	<http://data.europarl.europa.eu/ontology/elidl-ep#>
+PREFIX ep-aut:		<http://data.europarl.europa.eu/authority/>
+
+CONSTRUCT {
+	# 3. then the translation activity is a sub-activity of the first activity
+	?activity eli-dl:consists-of ?translation_activity .
+}
+WHERE {
+	# 1. an activity created a document...
+	?activity eli-dl:created_a_realization_of ?document .
+	# 2. ... this document is an input to a translation activity
+	?document ^eli-dl:based_on_a_realization_of ?translation_activity .
+	?translation_activity elidl-ep:activityType <http://data.europarl.europa.eu/authority/activity-type/TRANSLATION> .
+	
+}
