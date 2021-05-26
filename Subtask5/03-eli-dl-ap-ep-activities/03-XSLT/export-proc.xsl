@@ -663,7 +663,7 @@
 				
 				<!-- Responsable Activity Participation -->				
 				<xsl:if test="$CommitteeRoles != ''">
-					<eli-dl:hasActivityParticipation>
+					<elidl-ep:hasActivityParticipation>
 						<elidl-ep:ActivityParticipation rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/activity-participation_','1'))}">	
 							
 							<!-- Warning!! voir solution proposer par Annick -->
@@ -674,7 +674,7 @@
 							
 							<elidl-ep:activityParticipationRole rdf:resource="{org-ep:URI-ActiviteParticipation('committeeResponsible')}"/>
 						</elidl-ep:ActivityParticipation>
-					</eli-dl:hasActivityParticipation>
+					</elidl-ep:hasActivityParticipation>
 				</xsl:if>
 				
 				<!-- rapporteur Activity Participation -->
@@ -683,13 +683,13 @@
 					key[@name='reds:hasPerson']/key[@name='reds:hasPersId']]"/>
 					
 				<xsl:if test="$NMCP_RAP_Roles != ''">
-					<eli-dl:hasActivityParticipation>
+					<elidl-ep:hasActivityParticipation>
 						<elidl-ep:ActivityParticipation rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/activity-participation_','2'))}">	
 							<elidl-ep:activityParticipationHasAgent rdf:resource="{org-ep:URI-ActiviteParticipationResource(concat('person/',$NMCP_RAP_Roles/key[@name='reds:hasPerson']/key[@name='reds:hasPersId']))}"/>
 							<elidl-ep:activityParticipationRole rdf:resource="{org-ep:URI-ActiviteParticipation('rapporteur')}"/>
 							<elidl-ep:activityParticipationInNameOf	rdf:resource="{$URI-Organization}"/>
 						</elidl-ep:ActivityParticipation>
-					</eli-dl:hasActivityParticipation>
+					</elidl-ep:hasActivityParticipation>
 				</xsl:if>
 				
 				<!-- shadowRapporteur Activity Participation -->
@@ -701,13 +701,13 @@
 				<xsl:for-each select="$Roles_NMSR">
 					<xsl:variable name="i" select="position()+2" />	
 					<xsl:variable name="URI-Organization" select="org-ep:URI-Organization-FromMnemoCode(./key[@name='reds:hasBody']/key[@name='reds:hasBodyCode'],$dateDepositDossier)"/>
-					<eli-dl:hasActivityParticipation>
+					<elidl-ep:hasActivityParticipation>
 						<elidl-ep:ActivityParticipation rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/activity-participation_',$i))}"> 
 							<elidl-ep:activityParticipationHasAgent rdf:resource="{org-ep:URI-ActiviteParticipationResource(concat('person/',./key[@name='reds:hasPerson']/key[@name='reds:hasPersId']))}"/>
 							<elidl-ep:activityParticipationRole rdf:resource="{org-ep:URI-ActiviteParticipation('shadowRapporteur')}"/>
 							<elidl-ep:activityParticipationInNameOf	rdf:resource="{$URI-Organization}"/>
 						</elidl-ep:ActivityParticipation>
-					</eli-dl:hasActivityParticipation>					
+					</elidl-ep:hasActivityParticipation>					
 				</xsl:for-each>			
 			</eli-dl:LegislativeActivity>				
 		</eli-dl:consists_of>
