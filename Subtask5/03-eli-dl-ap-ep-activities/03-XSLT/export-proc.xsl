@@ -632,14 +632,14 @@
 						<xsl:if test="$voteRelation/key[@name = 'reds:hasDate']">
 							<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="substring($voteRelation/key[@name = 'reds:hasDate'],1,23)"/></eli-dl:activity_date>
 						</xsl:if>					
-						<elidl-ep:activityHasVoteResult>
+						<elidl-ep:activityHasVoteResults>
 							<elidl-ep:Vote rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/committee-vote_1','/','result'))}">
 								<xsl:if test="$voteRelation/key[@name = 'reds:hasDate']">
 									<elidl-ep:voteDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="substring($voteRelation/key[@name = 'reds:hasDate'],1,23)"/></elidl-ep:voteDate>
 								</xsl:if>
 								<xsl:apply-templates select="$VoteResult_Committee/item" mode="vote" />
 							</elidl-ep:Vote>
-						</elidl-ep:activityHasVoteResult>
+						</elidl-ep:activityHasVoteResults>
 						
 						<!-- We don't always have the reference to the document -->
 						<xsl:if test="$voteObjectRelation">
