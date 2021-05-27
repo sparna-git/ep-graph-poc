@@ -1,0 +1,2 @@
+export DATASET_FOLDER=$1
+./csv2xml-directory.sh $DATASET_FOLDER/01-Data $DATASET_FOLDER/10-XML
