@@ -395,6 +395,7 @@
 			<eli-dl:LegislativeActivity
 				rdf:about="{org-ep:URI-LegislativeActivity(../../key[@name = 'reds:reference'], 'procedure-creation_1')}">
 				<xsl:variable name="Data_ProcedureCreation" select="key[@name='reds:hasRelations']/item[key[@name='reds:hasPredicate']='reds:hasEventType_PROCR']"/>
+				<elidl-ep:activityId><xsl:value-of select="substring-after(key[@name='reds:hasPredicate'],'_')"/></elidl-ep:activityId>
 				<elidl-ep:activityType rdf:resource="{org-ep:URI-ActiviteType(substring-after(key[@name='reds:hasPredicate'],'_'))}"/>
 				<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
 					<xsl:value-of select="substring(key[@name='reds:hasDate'],1,23)"/>					
