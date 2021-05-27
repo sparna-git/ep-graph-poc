@@ -306,7 +306,7 @@
 					
 					<org-ep:constituency
 						rdf:resource="{org-ep:URI-CONSTITUENCY(countryIsoCode,mandateId)}" />
-
+						
 					<xsl:variable name="countryId" select="org-ep:Lookup_COUNTRY(countryIsoCode)" />
 					<xsl:if test="$countryId != ''">
 						<org-ep:hasOrganization rdf:resource="{org-ep:URI-COUNTRY($countryId)}" />
@@ -356,7 +356,10 @@
 						</xsl:if>
 						<xsl:if test="string-length($in_seatStr) &gt; 0">
 							<org-ep:memberSeatStr rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select="$in_seatStr"/></org-ep:memberSeatStr>					
-						</xsl:if>					
+						</xsl:if>
+						<org-ep:constituencyLabel>
+							<xsl:value-of select="concat(countryIsoCode,'-',mandateId)"/>
+						</org-ep:constituencyLabel>					
 					</xsl:if>
 				</org-ep:MembershipMandate>	
 			</org:hasMembership>				
