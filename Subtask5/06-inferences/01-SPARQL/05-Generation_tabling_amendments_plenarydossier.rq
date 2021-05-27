@@ -1,0 +1,28 @@
+# Si on a un dossier de plénière qui pointe vers un document amendé,
+# Alors construire la sous activité 'tabling-amendment' (liée au dossier par :consists_of)
+# et avec les meta trouvées dans l'amendement
+
+PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
+PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+
+CONSTRUCT {
+  ?activity  eli-dl:consists-of ?tabling_amendment_activity .
+   ?tabling_amendment_activity elidl-ep:activityId ?amendmentToPlenaryDossierReport_id ;
+             elidl-ep:activityType <http://data.europarl.europa.eu/authority/activity-type/PLENARY_AMENDMENT> ;
+             eli-dl:activity_date ?amendmentToPlenaryDossierReport_date ;
+             eli-dl:created_a_realization_of ?amendmentToPlenaryDossierReport ;
+             eli-dl:based_on_a_realization_of ?plenaryDossierReport .
+    
+}
+WHERE {
+    ?activity elidl-ep:activityType <http://data.europarl.europa.eu/authority/activity-type/PRVPL_I> .
+    ?activity eli-dl:based_on_a_realization_of ?plenaryDossierReport .
+    ?plenaryDossierReport ^elidl-ep:amends ?amendmentToPlenaryDossierReport . 
+    ?amendmentToPlenaryDossierReport eli-dl:legislative_process_work_date ?amendmentToPlenaryDossierReport_date ;
+                                     eli-dl:legislative_process_work_id ?amendmentToPlenaryDossierReport_id ;
+                                     eli-dl:legislative_process_work_type ?amendmentToPlenaryDossierReport_type .
+    # Genere l'uri de l'activite à partir de l'id de l'amendment
+    # On ne genere pas de numero 1,2,3 ...
+    BIND(IRI(concat(STR(?activity),'/tabling-amendment_',STR(?amendmentToPlenaryDossierReport_id))) as ?tabling_amendment_activity)
+}
+Order by ?document_activity
