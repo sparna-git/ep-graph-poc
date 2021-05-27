@@ -332,12 +332,10 @@
 	
 	<!-- Match property eli-dl:latest_activity with reds:hasReading -->
 	<!-- Attention: Il y a plusieur reds:hasReading -->
-	<xsl:template match="item/key[@name='reds:hasProperties']/item[key[@name='reds:hasName'] = 'reds:hasReading']">
-		<xsl:message><xsl:value-of select="node()"/></xsl:message>
+	<xsl:template match="key[@name='reds:hasProperties']/item[key[@name='reds:hasName'] = 'reds:hasReading']">
+		
 		<xsl:variable name="procedureReference" select="../../key[@name = 'reds:reference']" />
 		<xsl:variable name="hasReadingP" select="key[@name='reds:hasValue']"/>
-		<xsl:message>Valida Reading <xsl:value-of select="$hasReadingP"/></xsl:message>
-		
 		
 		<xsl:variable name="hasReading" select="concat(lower-case(substring-before(substring-after(key[@name='reds:hasValue'],':'),'_')),'_',substring-after(substring-after(key[@name='reds:hasValue'],':'),'_'))"/>
 		<eli-dl:latest_activity
@@ -456,8 +454,7 @@
 		<xsl:variable name="ProcedureReference" select="../../key[@name = 'reds:reference']"/>
 		
 		
-		<!-- find the reference in export dossier file -->
-		<xsl:if test="$EXPORT_DOSSIER/all/item[key[@name = 'reds:reference'] = $currentReference]">
+		
 		<!-- The main dossier -->
 		<eli-dl:consists_of>	
 			<eli-dl:LegislativeActivity
@@ -715,7 +712,7 @@
 				</xsl:for-each>			
 			</eli-dl:LegislativeActivity>				
 		</eli-dl:consists_of>
-		</xsl:if>
+		
 	</xsl:template>
 	
 	<!-- Matches a dossier in the export_dossier.xml file -->
