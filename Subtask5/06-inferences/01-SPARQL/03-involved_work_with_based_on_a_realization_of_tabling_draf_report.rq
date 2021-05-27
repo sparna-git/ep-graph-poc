@@ -1,0 +1,21 @@
+# Requête SPARQL pour le calcul du lien "amends" vers le document COM
+# une activité de type ep-aut:activity-type/TABLING_DRAF_REPORT Requête SPARQL pour le calcul du lien "amends" vers le document COM
+
+PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
+PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+CONSTRUCT {
+    ?document_tabling_draft elidl-ep:amends ?document_reading_based_on_a_realization_of .
+}
+WHERE {
+    # 1. filter all activity type Reading I     
+    ?activity elidl-ep:activityType <http://data.europarl.europa.eu/authority/activity-type/READING_I> .  
+    # 2. get the based_on_a_realization_of value  
+    ?activity eli-dl:based_on_a_realization_of ?document_reading_based_on_a_realization_of .
+     # 3. filter all activity type main  
+    ?activity eli-dl:consists_of ?activity_main .
+    ?activity_main elidl-ep:activityType <http://data.europarl.europa.eu/authority/activity-type/MAIN_DOSSIER> .
+    # 3. filter all activity type TABLING_DRAFT_REPORT and recovery the involved_work value
+    ?activity_main eli-dl:consists_of ?actvity_tabling_draf .
+    ?actvity_tabling_draf elidl-ep:activityType <http://data.europarl.europa.eu/authority/activity-type/TABLING_DRAFT_REPORT> .
+    ?actvity_tabling_draf eli-dl:involved_work ?document_tabling_draft .
+}
