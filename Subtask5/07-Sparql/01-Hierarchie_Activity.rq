@@ -1,0 +1,30 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX sparna:<http://data.sparna.fr/ontologies/europarl#>
+
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+    ?process rdf:type skos:ConceptScheme .   
+    ?process skos:hasTopConcept ?root_activity .
+    ?process skos:prefLabel ?process_id .
+    ?activity rdf:type skos:Concept .
+    ?activity skos:prefLabel ?Activity_label .    
+    ?activity skos:inScheme ?process .
+    ?subactivity skos:broader ?activity.
+}
+WHERE {
+    ?process rdf:type eli-dl:LegislativeProcess .
+    ?process elidl-ep:legislativeProcessYear '2019'^^xsd:gYear .
+    ?process eli-dl:legislative_process_id ?process_id .
+    ?process eli-dl:consists_of* ?activity .
+    ?process eli-dl:consists_of ?root_activity .
+    ?activity elidl-ep:activityId ?activity_id .
+    
+    OPTIONAL {?activity eli-dl:consists_of ?subactivity}
+    OPTIONAL {?activity eli-dl:activity_date ?activity_date}
+    BIND(STRAFTER(STR(?activity),'event/') AS ?activityPath) .
+    BIND(concat(STR(?activity_date),' - ',STR(?activity_id),' - ','(',STR(?activityPath),')')  AS ?Activity_label) .
+    
+}
