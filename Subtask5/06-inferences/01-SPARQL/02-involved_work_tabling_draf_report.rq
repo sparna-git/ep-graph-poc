@@ -1,0 +1,22 @@
+ # Requête SPARQL pour le calcul des "involved-work" sur le main-dossier
+# une activité de type ep-aut:activity-type/TABLING_DRAF_REPORT
+#
+PREFIX org-ep: <http://data.europarl.europa.eu/ontology/org-ep#>
+PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+PREFIX eli: 		<http://data.europa.eu/eli/ontology#>
+PREFIX elidl-ep: 	<http://data.europarl.europa.eu/ontology/elidl-ep#>
+PREFIX ep-aut:		<http://data.europarl.europa.eu/authority/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT {
+    ?activity eli-dl:involved_work ?Document_involved
+}
+WHERE {
+	# 1. filter all activity Main dossier type 
+    ?activity elidl-ep:activityType <http://data.europarl.europa.eu/authority/activity-type/MAIN_DOSSIER> .
+    # 2. an activity created a document...
+    ?activity eli-dl:consists_of ?tabling_draf_report .
+    # 3. filter all activity TABLING_DRAF_REPORT type
+    ?tabling_draf_report elidl-ep:activityType <http://data.europarl.europa.eu/authority/activity-type/TABLING_DRAFT_REPORT> .
+    ?tabling_draf_report eli-dl:involved_work ?Document_involved
+}
