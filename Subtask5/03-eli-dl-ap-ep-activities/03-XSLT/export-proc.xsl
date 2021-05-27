@@ -656,42 +656,45 @@
 				<!-- the section search all roles -->
 				
 				<xsl:variable name="CommitteeRoles" select="$EXPORT_DOSSIER/all/item[key[@name = 'reds:reference'] = $currentReference]/key[@name='reds:hasRoles']/item[
-					key[@name='reds:hasRoleBodyName']='reds:hasCommittee' and 
-					key[@name='reds:hasBody']]"/>
-				<!-- Look for the code of the organization -->
-				<xsl:variable name="dateDepositDossier" select="$EXPORT_DOSSIER/all/item[key[@name = 'reds:reference'] = $currentReference]/key[@name='reds:dateDeposit']"/>
-				<xsl:variable name="URI-Organization" select="org-ep:URI-Organization-FromMnemoCode($CommitteeRoles/key[@name='reds:hasBody']/key[@name='reds:hasBodyCode'],$dateDepositDossier)"/>
+					key[@name='reds:hasRoleBodyName']='reds:hasCommittee'
+					and 
+					key[@name='reds:hasBody']
+				]"/>
 				
-				<!-- Responsable Activity Participation -->				
-				<xsl:if test="$CommitteeRoles != ''">
+				<xsl:variable name="dateDepositDossier" select="$EXPORT_DOSSIER/all/item[key[@name = 'reds:reference'] = $currentReference]/key[@name='reds:dateDeposit']"/>
+				
+				<!-- Responsible Activity Participation -->
+				<xsl:for-each select="$CommitteeRoles">
+					<!-- Look for the code of the organization -->
+					<xsl:variable name="URI-Organization" select="org-ep:URI-Organization-FromMnemoCode(key[@name='reds:hasBody']/key[@name='reds:hasBodyCode'],$dateDepositDossier)"/>
 					<elidl-ep:hasActivityParticipation>
-						<elidl-ep:ActivityParticipation rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/activity-participation_','1'))}">	
-							
-							<!-- Warning!! voir solution proposer par Annick -->
-							<xsl:for-each select="$CommitteeRoles/key[@name='reds:hasBody']/key[@name='reds:hasBodyCode']">
-								<xsl:text>&#xA;</xsl:text>
-								<elidl-ep:activityParticipationHasAgent rdf:resource="{$URI-Organization}"/>
-							</xsl:for-each>
-							
+						<elidl-ep:ActivityParticipation rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/activity-participation_',position()))}">	
+							<elidl-ep:activityParticipationHasAgent rdf:resource="{$URI-Organization}"/>							
 							<elidl-ep:activityParticipationRole rdf:resource="{org-ep:URI-ActiviteParticipation('committeeResponsible')}"/>
 						</elidl-ep:ActivityParticipation>
 					</elidl-ep:hasActivityParticipation>
-				</xsl:if>
+				</xsl:for-each>
+				<xsl:variable name="committeeRolesSize" select="count($CommitteeRoles)" />
 				
 				<!-- rapporteur Activity Participation -->
 				<xsl:variable name="NMCP_RAP_Roles" select="$EXPORT_DOSSIER/all/item[key[@name = 'reds:reference'] = $currentReference]/key[@name='reds:hasRoles']/item[
-					key[@name='reds:hasRolePersonName']='reds:AuthRole_NMCP_RAP' and 
-					key[@name='reds:hasPerson']/key[@name='reds:hasPersId']]"/>
+					key[@name='reds:hasRolePersonName']='reds:AuthRole_NMCP_RAP'
+					and 
+					key[@name='reds:hasPerson']/key[@name='reds:hasPersId']
+				]"/>
 				
-				<xsl:if test="$NMCP_RAP_Roles">					
+				<xsl:for-each select="$NMCP_RAP_Roles">
+					<xsl:variable name="i" select="position()+$committeeRolesSize" />	
+					<xsl:variable name="URI-Organization" select="org-ep:URI-Organization-FromMnemoCode(./key[@name='reds:hasBody']/key[@name='reds:hasBodyCode'],$dateDepositDossier)"/>		
 					<elidl-ep:hasActivityParticipation>
-						<elidl-ep:ActivityParticipation rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/activity-participation_','2'))}">	
-							<elidl-ep:activityParticipationHasAgent rdf:resource="{org-ep:URI-ActiviteParticipationResource(concat('person/',$NMCP_RAP_Roles/key[@name='reds:hasPerson']/key[@name='reds:hasPersId']))}"/>
+						<elidl-ep:ActivityParticipation rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/activity-participation_',$i))}">	
+							<elidl-ep:activityParticipationHasAgent rdf:resource="{org-ep:URI-ActiviteParticipationResource(concat('person/',key[@name='reds:hasPerson']/key[@name='reds:hasPersId']))}"/>
 							<elidl-ep:activityParticipationRole rdf:resource="{org-ep:URI-ActiviteParticipation('rapporteur')}"/>
 							<elidl-ep:activityParticipationInNameOf	rdf:resource="{$URI-Organization}"/>
 						</elidl-ep:ActivityParticipation>
-					</elidl-ep:hasActivityParticipation>
-				</xsl:if>
+					</elidl-ep:hasActivityParticipation>				
+				</xsl:for-each>
+				<xsl:variable name="rapRolesSize" select="count($NMCP_RAP_Roles)" />
 				
 				<!-- shadowRapporteur Activity Participation -->
 				<xsl:variable name="Roles_NMSR" select="$EXPORT_DOSSIER/all/item[key[@name = 'reds:reference'] = $currentReference]/key[@name='reds:hasRoles']/item[
@@ -700,7 +703,7 @@
 					key[@name='reds:hasPerson']/key[@name='reds:hasPersId']]"/>
 				
 				<xsl:for-each select="$Roles_NMSR">
-					<xsl:variable name="i" select="position()+2" />	
+					<xsl:variable name="i" select="position()+$committeeRolesSize+$rapRolesSize" />	
 					<xsl:variable name="URI-Organization" select="org-ep:URI-Organization-FromMnemoCode(./key[@name='reds:hasBody']/key[@name='reds:hasBodyCode'],$dateDepositDossier)"/>
 					<elidl-ep:hasActivityParticipation>
 						<elidl-ep:ActivityParticipation rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/activity-participation_',$i))}"> 
