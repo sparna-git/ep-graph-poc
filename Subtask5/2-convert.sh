@@ -8,6 +8,9 @@ export XSLT_DIR=$DATASET_FOLDER/03-XSLT
 DATASET_NAME=$(basename $DATASET_FOLDER)
 rm -rf convert-$DATASET_NAME.log
 
+# hack for draft reports
+cp 04-eli-dl-ap-ep-documents/03-XSLT/export-REPORTandAM.xsl 04-eli-dl-ap-ep-documents/03-XSLT/export-draftRPandAM.xsl
+
 # convert every file in XML folder to RDF folder, using stylesheet with same name
 for f in $(find $INPUT_DIR -name '*.xml');
 do

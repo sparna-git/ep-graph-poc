@@ -21,13 +21,17 @@ for f in $(find $SHACL_DIR -name '*.xlsx'); do
 	java -jar xls2rdf-app-2.1.3-onejar.jar convert -i $f -o $SHACL_TTL -l en
 	# Generate doc
 	SHACL_HTML_DOC=$DOCUMENTATION_DIR/$(basename "$f" | cut -d. -f1).html
+	SHACL_PNG=$DOCUMENTATION_DIR/$(basename "$f" | cut -d. -f1).png
 	java -jar shacl-play-app-0.4-onejar.jar doc -i $SHACL_TTL -o $SHACL_HTML_DOC -l en
+	java -jar shacl-play-app-0.4-onejar.jar draw -i $SHACL_TTL -o $SHACL_PNG -l en
+
+	# now validate
+	java -Xmx4048M -jar shacl-play-app-0.4-onejar.jar validate \
+		--createDetails \
+		-i $RDF_DIR \
+		-s $SHACL_TTL \
+		-o $REPORT_DIR/$(basename "$f" | cut -d. -f1)-report.ttl \
+		-o $REPORT_DIR/$(basename "$f" | cut -d. -f1)-report.html | tee validate-$DATASET_NAME.log
+
 done
 
-# now validate
-java -Xmx4048M -jar shacl-play-app-0.4-onejar.jar validate \
-	--createDetails \
-	-i $RDF_DIR \
-	-s $SHACL_TTL_DIR \
-	-o $REPORT_DIR/report.ttl \
-	-o $REPORT_DIR/report.html | tee validate-$DATASET_NAME.log

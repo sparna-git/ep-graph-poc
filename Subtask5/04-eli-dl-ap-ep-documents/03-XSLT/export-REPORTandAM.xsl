@@ -169,15 +169,22 @@
 									)}" />
 									<eli:format rdf:resource="{org-ep:URI-IANA_MediaType($currentFormat)}" />
 									<eli:media_type rdf:resource="{org-ep:URI-IANA_MediaType($currentFormat)}" />
-									<elidl-ep:manifestationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="replace(
-										key[@name = 'reds:hasLanguages']
+									<xsl:if test="key[@name = 'reds:hasLanguages']
 										/item[ key[@name = 'reds:hasCode'] = $currentLanguage ]
 										/key[@name = 'reds:hasProperties']
-										/item[key[@name = 'reds:hasName'] = 'reds:referenceLanguageVersion']
-										/key[@name = 'reds:hasValue'],
-										' ',
-										'T')
-									" /></elidl-ep:manifestationDate>
+										/item[key[@name = 'reds:hasName'] = 'reds:referenceLanguageVersion']">
+										
+										<elidl-ep:manifestationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="replace(
+											key[@name = 'reds:hasLanguages']
+											/item[ key[@name = 'reds:hasCode'] = $currentLanguage ]
+											/key[@name = 'reds:hasProperties']
+											/item[key[@name = 'reds:hasName'] = 'reds:referenceLanguageVersion']
+											/key[@name = 'reds:hasValue'],
+											' ',
+											'T')
+										" /></elidl-ep:manifestationDate>
+										
+									</xsl:if>									
 									<eli:is_exemplified_by rdf:resource="{replace(key[@name = 'reds:hasUrl'], '\{LANGUAGE\}',$currentLanguage)}" />
 								
 								</eli:Manifestation>
@@ -349,15 +356,20 @@
 										)}" />
 										<eli:format rdf:resource="{org-ep:URI-IANA_MediaType($currentFormat)}" />
 										<eli:media_type rdf:resource="{org-ep:URI-IANA_MediaType($currentFormat)}" />
-										<elidl-ep:manifestationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="replace(
-											key[@name = 'reds:hasLanguages']
+										<xsl:if test="key[@name = 'reds:hasLanguages']
 											/item[ key[@name = 'reds:hasCode'] = $currentLanguage ]
 											/key[@name = 'reds:hasProperties']
-											/item[key[@name = 'reds:hasName'] = 'reds:referenceLanguageVersion']
-											/key[@name = 'reds:hasValue'],
-											' ',
-											'T')
-										" /></elidl-ep:manifestationDate>
+											/item[key[@name = 'reds:hasName'] = 'reds:referenceLanguageVersion']">
+											<elidl-ep:manifestationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="replace(
+												key[@name = 'reds:hasLanguages']
+												/item[ key[@name = 'reds:hasCode'] = $currentLanguage ]
+												/key[@name = 'reds:hasProperties']
+												/item[key[@name = 'reds:hasName'] = 'reds:referenceLanguageVersion']
+												/key[@name = 'reds:hasValue'],
+												' ',
+												'T')
+											" /></elidl-ep:manifestationDate>
+										</xsl:if>
 										<eli:is_exemplified_by rdf:resource="{replace(key[@name = 'reds:hasUrl'], '\{LANGUAGE\}',$currentLanguage)}" />
 									
 									</eli:Manifestation>

@@ -1,3 +1,10 @@
+# split translation activities in document dataset
+java -jar saxon-he-10.1.jar \
+	-s:04-eli-dl-ap-ep-documents/05-RDF/export-REPORTandAM.rdf \
+	-xsl:04-eli-dl-ap-ep-documents/03-XSLT/split-translations.xsl \
+	-o:04-eli-dl-ap-ep-documents/05-RDF/dummy.xml
+
+
 # create delivery folder
 export DELIVERY_FOLDER=delivery
 
@@ -18,6 +25,8 @@ mkdir -p $DELIVERY_FOLDER/03-eli-dl-ap-ep-documents/SHACL-REPORT
 mkdir -p $DELIVERY_FOLDER/04-translations/RDF
 mkdir -p $DELIVERY_FOLDER/04-translations/SHACL
 mkdir -p $DELIVERY_FOLDER/04-translations/SHACL-REPORT
+mkdir -p $DELIVERY_FOLDER/05-inferences/SPARQL
+mkdir -p $DELIVERY_FOLDER/05-inferences/RDF
 
 # CVs
 cp 01-cv/05-RDF/* 					$DELIVERY_FOLDER/00-cv/RDF
@@ -57,3 +66,7 @@ cp 05-translations/04-SHACL/* 						$DELIVERY_FOLDER/04-translations/SHACL
 cp 05-translations/20-SHACL_TTL/* 					$DELIVERY_FOLDER/04-translations/SHACL
 cp 05-translations/21-DOCUMENTATION/* 				$DELIVERY_FOLDER/04-translations/SHACL
 cp 05-translations/20-REPORT/* 						$DELIVERY_FOLDER/04-translations/SHACL-REPORT
+
+# Inferences
+cp 06-inferences/05-RDF/*							$DELIVERY_FOLDER/05-inferences/RDF
+cp 06-inferences/01-SPARQL/*						$DELIVERY_FOLDER/05-inferences/SPARQL
