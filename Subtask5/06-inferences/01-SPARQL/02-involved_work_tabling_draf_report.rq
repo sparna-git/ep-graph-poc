@@ -1,5 +1,6 @@
- # Requête SPARQL pour le calcul des "involved-work" sur le main-dossier
-# une activité de type ep-aut:activity-type/TABLING_DRAF_REPORT
+# Si on a une activité ' TABLING_DRAFT_REPORT ' qui a un document 'via involved_work'
+# et qui est liée à un dossier MAIN,
+#  -> Alors relier le dossier MAIN au document
 #
 PREFIX org-ep: <http://data.europarl.europa.eu/ontology/org-ep#>
 PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>

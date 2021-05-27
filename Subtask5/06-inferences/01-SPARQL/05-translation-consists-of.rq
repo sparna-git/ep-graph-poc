@@ -1,5 +1,6 @@
-# Run with following command
-# java -jar rdf-toolkit-0.6.1-onejar.jar construct -i 03-eli-dl-ap-ep-activities/05-RDF/ -i 04-eli-dl-ap-ep-documents/05-RDF/ -i 05-translations/05-RDF/ -q 06-inferences/01-SPARQL/05-translation-consists-of.rq -o 06-inferences/05-RDF/05-translation-consist-of.ttl
+# Make the translation activities sub-activities of the activity in which
+# the translated document was created
+
 PREFIX org-ep: 	<http://data.europarl.europa.eu/ontology/org-ep#>
 PREFIX eli-dl: 	<http://data.europa.eu/eli/eli-draft-legislation-ontology#>
 PREFIX eli: 		<http://data.europa.eu/eli/ontology#>

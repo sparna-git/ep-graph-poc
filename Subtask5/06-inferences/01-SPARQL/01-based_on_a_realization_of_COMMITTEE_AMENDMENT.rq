@@ -1,6 +1,7 @@
-# Requête SPARQL pour le calcul des "involved-work" sur le main-dossier
-# une activité de type ep-aut:activity-type/
-#
+# Si on a une activité 'COMMITTEE_AMENDMENT' qui a un document
+# et qui est liée à un dossier MAIN,
+#  -> Alors relier l'amendement à l'activité du dossier MAIN
+
 PREFIX org-ep: <http://data.europarl.europa.eu/ontology/org-ep#>
 PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
 PREFIX eli: 		<http://data.europa.eu/eli/ontology#>

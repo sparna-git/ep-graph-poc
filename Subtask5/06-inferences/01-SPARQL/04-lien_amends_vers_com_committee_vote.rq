@@ -1,5 +1,4 @@
-# Requête SPARQL pour le calcul des "involved-work" sur le main-dossier
-# une activité de type ep-aut:activity-type/TABLING_DRAF_REPORT Requête SPARQL pour le calcul du lien "amends" vers le document COM
+# Lien entre le Report issu du travail en commission et le document de la COM de base pour la reading
 
 PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
 PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>

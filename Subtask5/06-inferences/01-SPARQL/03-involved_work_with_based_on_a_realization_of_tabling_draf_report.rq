@@ -1,5 +1,8 @@
-# Requête SPARQL pour le calcul du lien "amends" vers le document COM
-# une activité de type ep-aut:activity-type/TABLING_DRAF_REPORT Requête SPARQL pour le calcul du lien "amends" vers le document COM
+# Lien entre le DraftReport et le document de la COM de base pour la reading
+# Si on a une activité ' TABLING_DRAFT_REPORT ' qui a un document 'via involved_work'
+# et qui est liée à un dossier MAIN,
+# que ce dossier MAIN est lié à une READING qui a un document via :based_on_a_realization_of (document COM)
+#  -> Alors relier le DraftReport au COM via :amends
 
 PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
 PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
