@@ -304,9 +304,12 @@
 					<org-ep:hasMembershipType
 							rdf:resource="{org-ep:URI-MembershipType('MANDATE')}" />
 					
+					<!--  
 					<org-ep:constituency
-						rdf:resource="{org-ep:URI-CONSTITUENCY(countryIsoCode,mandateId)}" />
-						
+						rdf:resource="{org-ep:URI-CONSTITUENCY(countryIsoCode,mandateId)}" />	
+					-->						
+					<org-ep:constituencyLabel><xsl:value-of select="circons"/></org-ep:constituencyLabel>
+
 					<xsl:variable name="countryId" select="org-ep:Lookup_COUNTRY(countryIsoCode)" />
 					<xsl:if test="$countryId != ''">
 						<org-ep:hasOrganization rdf:resource="{org-ep:URI-COUNTRY($countryId)}" />
