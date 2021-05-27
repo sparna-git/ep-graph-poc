@@ -141,6 +141,11 @@
 								<eli-dl:based_on_a_realization_of rdf:resource="{org-ep:URI-LegislativeProcessWork($currentProcedure, $documentType, $documentReference)}" />
 								<!-- Set an Activity type -->
 								<elidl-ep:activityType rdf:resource="{org-ep:URI-ActiviteType('TRANSLATION')}" />
+								<!-- Set an Activity ID -->
+								<elidl-ep:activityId><xsl:value-of select="substring-after(
+									org-ep:URI-TranslationActivity_FromDocument($currentProcedure, $documentReference, $currentLanguage3Letters),
+									'/event/'
+								)" /></elidl-ep:activityId>
 								<!-- Generate realizesForeseenActivity to the activity description coming from the FDR -->
 								<elidl-ep:realizesForeseenActivity rdf:resource="{org-ep:URI-ForeseenTranslationActivity_FromFDR($fdr, $currentLanguage3Letters)}" />
 							</eli-dl:LegislativeActivity>
