@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://skos-play.sparna.fr/play/visualize -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <script src="./BUD-2019-2028_Arbre_files/d3.v3.min.js.téléchargement" charset="utf-8"></script>
+    <script src="./BUD-2019-2028_Arbre_files/jquery.min.js.téléchargement"></script>
+    <link href="./BUD-2019-2028_Arbre_files/bootstrap.min.css" rel="stylesheet">
+    <script src="./BUD-2019-2028_Arbre_files/bootstrap.min.js.téléchargement"></script>
+    
+    <style type="text/css">
+
+.node circle {
+  cursor: pointer;
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font-size: 12px;
+}
+
+path.link {
+  fill: none;
+  stroke: #aaa;
+  stroke-width: 3px;
+}
+
+.ext-link {
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="header" style="text-align:center; font-size: 0.9em;">
+  		<span id="help-popover" data-original-title="" title="" style="text-decoration: underline; cursor: pointer;"><i class="icon-info-sign"></i>aide</span>
+  	</div>
+    <div id="body">
+    </div>
+    <script type="text/javascript">
+
+var m = [20, 120, 20, 120],
+    w = 1280 - m[1] - m[3],
+    h = 800 - m[0] - m[2],
+    i = 0,
+    root;
+
+var tree = d3.layout.tree()
+    .size([h, w]);
+
+var diagonal = d3.svg.diagonal()
+    .projection(function(d) { return [d.y, d.x]; });
+
+var vis = d3.select("#body").append("svg:svg")
+    .attr("width", w + m[1] + m[3])
+    .attr("height", h + m[0] + m[2])
+  	.append("svg:g")
+    .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
+
+
+  var dataset ={"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud","name":"BUD-2019-2028","children":[{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I","name":"2019-06-24T00:00:00.000 - reading_I - (reading_I)","children":[{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/main-dossier_1","name":"2019-06-24T14:19:57.000 - BUDG-9-00540 - (reading_I/main-dossier_1)","children":[{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/main-dossier_1/committee-debate_1","name":"2019-09-03T00:00:00 - BUDG-OJ-2019-09-03-1 - (reading_I/main-dossier_1/committee-debate_1)","size":1.0},{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/main-dossier_1/tabling-amendment_1","name":"2019-09-09T00:00:00.000 - BUDG-AB-641101 - (reading_I/main-dossier_1/tabling-amendment_1)","size":1.0},{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/main-dossier_1/tabling-amendment_2","name":"2019-09-09T00:00:00.000 - BUDG-AB-641102 - (reading_I/main-dossier_1/tabling-amendment_2)","size":1.0},{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/main-dossier_1/tabling-amendment_3","name":"2019-09-09T00:00:00.000 - BUDG-AB-641104 - (reading_I/main-dossier_1/tabling-amendment_3)","size":1.0},{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/main-dossier_1/tabling-amendment_4","name":"2019-09-09T00:00:00.000 - BUDG-AB-641105 - (reading_I/main-dossier_1/tabling-amendment_4)","size":1.0},{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/main-dossier_1/tabling-amendment_5","name":"2019-09-09T00:00:00.000 - BUDG-AB-641106 - (reading_I/main-dossier_1/tabling-amendment_5)","size":1.0},{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/main-dossier_1/tabling-amendment_6","name":"2019-09-09T00:00:00.000 - BUDG-AB-641107 - (reading_I/main-dossier_1/tabling-amendment_6)","size":1.0},{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/main-dossier_1/tabling-amendment_7","name":"2019-09-09T00:00:00.000 - BUDG-AB-641108 - (reading_I/main-dossier_1/tabling-amendment_7)","size":1.0},{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/main-dossier_1/tabling-amendment_8","name":"2019-09-09T00:00:00.000 - BUDG-AB-641109 - (reading_I/main-dossier_1/tabling-amendment_8)","size":1.0},{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/main-dossier_1/tabling-amendment_9","name":"2019-09-18T00:00:00.000 - BUDG-AB-641213 - (reading_I/main-dossier_1/tabling-amendment_9)","size":1.0},{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/main-dossier_1/tabling-amendment_10","name":"2019-09-19T00:00:00.000 - BUDG-AB-641217 - (reading_I/main-dossier_1/tabling-amendment_10)","size":1.0},{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/main-dossier_1/committee-debate_2","name":"2019-09-24T00:00:00 - BUDG-OJ-2019-09-24-1 - (reading_I/main-dossier_1/committee-debate_2)","size":1.0},{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/main-dossier_1/committee-debate_3","name":"2019-09-30T00:00:00 - BUDG-OJ-2019-09-30-1 - (reading_I/main-dossier_1/committee-debate_3)","size":1.0},{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/main-dossier_1/committee-debate_4","name":"2019-09-30T00:00:00 - BUDG-OJ-2019-09-30-1 - (reading_I/main-dossier_1/committee-debate_4)","size":1.0},{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/main-dossier_1/committee-debate_5","name":"2019-09-30T00:00:00 - BUDG-OJ-2019-09-30-1 - (reading_I/main-dossier_1/committee-debate_5)","size":1.0},{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/main-dossier_1/tabling-draft-report_1","name":"2019-10-03T00:00:00.000 - BUDG-PR-641127 - (reading_I/main-dossier_1/tabling-draft-report_1)","size":1.0},{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/main-dossier_1/tabling-amendment_11","name":"2019-10-08T00:00:00.000 - BUDG-AM-641401 - (reading_I/main-dossier_1/tabling-amendment_11)","size":1.0},{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/main-dossier_1/committee-vote_1","name":"2019-10-14T00:00:00.000 - VOTE - (reading_I/main-dossier_1/committee-vote_1)","size":1.0},{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/main-dossier_1/committee-debate_6","name":"2019-10-14T00:00:00 - BUDG-OJ-2019-10-14-1 - (reading_I/main-dossier_1/committee-debate_6)","size":1.0}],"size":1.0},{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/plenary-dossier_1","name":"2019-10-22T00:00:00.000 - BUDE-9-01742 - (reading_I/plenary-dossier_1), 2019-10-22T00:00:00.000 - BUDG-9-00540 - (reading_I/plenary-dossier_1)","size":1.0},{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/consolidation_1","name":"2019-10-23T00:00:00.000 - DCPL_I - (reading_I/consolidation_1)","size":1.0},{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/main-dossier_2","name":"2019-10-24T17:38:21.000 - BUDE-9-01742 - (reading_I/main-dossier_2)","children":[{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/main-dossier_2/committee-vote_1","name":"2019-11-18T00:00:00.000 - VOTE - (reading_I/main-dossier_2/committee-vote_1)","size":1.0}],"size":1.0},{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/plenary-dossier_2","name":"2019-11-27T00:00:00.000 - BUDE-9-01742 - (reading_I/plenary-dossier_2), 2019-11-27T00:00:00.000 - BUDG-9-00540 - (reading_I/plenary-dossier_2)","size":1.0},{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/reading_I/consolidation_2","name":"2019-11-27T00:00:00.000 - DCPL_I - (reading_I/consolidation_2)","size":1.0}],"size":1.0},{"uri":"http://data.europarl.europa.eu/resource/eli/dl/proc/2019/2028/bud/event/procedure-creation_1","name":"2019-06-24T14:18:42.000 - PROCR - (procedure-creation_1)","size":1.0}],"size":1.0};
+  console.log(dataset.uri);
+  //var json = JSON.parse(dataset);
+// d3.json("json?language=&root=", function(json) {
+  root = dataset;
+  root.x0 = h / 2;
+  root.y0 = 0;
+
+  function toggleAll(d) {
+    if (d.children) {
+      d.children.forEach(toggleAll);
+      toggle(d);
+    }
+  }
+
+  // Initialize the display to show a few nodes.
+  root.children.forEach(toggleAll);
+  update(root);
+// });
+
+function update(source) {
+  var duration = d3.event && d3.event.altKey ? 5000 : 500;
+
+  // Compute the new tree layout.
+  var nodes = tree.nodes(root).reverse();
+
+  // Normalize for fixed-depth.
+  nodes.forEach(function(d) { d.y = d.depth * 180; });
+
+  // Update the nodes…
+  var node = vis.selectAll("g.node")
+      .data(nodes, function(d) { return d.id || (d.id = ++i); });
+
+  // Enter any new nodes at the parent's previous position.
+  var nodeEnter = node.enter().append("svg:g")
+      .attr("class", "node")
+      .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+      .on("click", function(d) { toggle(d); update(d); });
+
+  nodeEnter.append("svg:circle")
+      .attr("r", 1e-6)
+      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+  // add a link to the concept
+  var a = nodeEnter.append("a")
+	  .attr("xlink:href", function(d){ return d.uri; })
+	  .attr("target", "_blank");
+  
+  a.append("svg:text")
+      .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
+      .attr("dy", ".35em")
+      .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
+      .text(function(d) { return (d.name != null)?d.name:d.uri ; })
+      .style("fill-opacity", 1e-6);
+
+  // Transition nodes to their new position.
+  var nodeUpdate = node.transition()
+      .duration(duration)
+      .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+
+  nodeUpdate.select("circle")
+      .attr("r", 6)
+      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+  nodeUpdate.select("text")
+      .style("fill-opacity", 1);
+
+  // Transition exiting nodes to the parent's new position.
+  var nodeExit = node.exit().transition()
+      .duration(duration)
+      .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
+      .remove();
+
+  nodeExit.select("circle")
+      .attr("r", 1e-6);
+
+  nodeExit.select("text")
+      .style("fill-opacity", 1e-6);
+
+  // Update the links…
+  var link = vis.selectAll("path.link")
+      .data(tree.links(nodes), function(d) { return d.target.id; });
+
+  // Enter any new links at the parent's previous position.
+  link.enter().insert("svg:path", "g")
+      .attr("class", "link")
+      .attr("d", function(d) {
+        var o = {x: source.x0, y: source.y0};
+        return diagonal({source: o, target: o});
+      })
+    .transition()
+      .duration(duration)
+      .attr("d", diagonal);
+
+  // Transition links to their new position.
+  link.transition()
+      .duration(duration)
+      .attr("d", diagonal);
+
+  // Transition exiting nodes to the parent's new position.
+  link.exit().transition()
+      .duration(duration)
+      .attr("d", function(d) {
+        var o = {x: source.x, y: source.y};
+        return diagonal({source: o, target: o});
+      })
+      .remove();
+
+  // Stash the old positions for transition.
+  nodes.forEach(function(d) {
+    d.x0 = d.x;
+    d.y0 = d.y;
+  });
+}
+
+// Toggle children.
+function toggle(d) {
+  if (d.children) {
+    d._children = d.children;
+    d.children = null;
+  } else {
+    d.children = d._children;
+    d._children = null;
+  }
+}
+
+    </script>
+    
+    <script>
+        $(document).ready(function () {
+          // add external link behavior to every external link
+          $('text').mouseover(function() {
+            $(this).attr("class", "ext-link");
+          });
+          $('text').mouseout(function() {
+            $(this).attr("class", "");
+          });
+          
+          $('#help-popover').popover({
+        	  html: true,
+              trigger : "click",
+              delay: { show: 0, hide: 400 },
+              content: '<ol><li>Cliquer un cercle bleu pour ouvrir l\'arbre (les cercles blancs sont les feuilles de l\'arbre et sont inactifs).</li><li>Recliquer sur un cercle ouvert pour le fermer.</li><li>Cliquer sur un libellé pour naviguer sur l\'URI du concept.</li></ol>',
+              placement: "bottom"
+          });
+          $('#help-popover').css("text-decoration", "underline").css("cursor", "pointer");
+        });         
+    </script>
+  
+</body></html>
