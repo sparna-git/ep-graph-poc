@@ -470,7 +470,7 @@
 				<xsl:for-each select="$appRapporteur">
 					<eli-dl:consists_of>
 						<eli-dl:LegislativeActivity rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/app-rapporteur_',position()))}">
-							<eli-dl:activity_label><xsl:value-of select="'Appointment of rapporteur'"/></eli-dl:activity_label>
+							<eli-dl:activity_label>Appointment of rapporteur</eli-dl:activity_label>
 							<elidl-ep:activityId><xsl:value-of select="substring-after(key[@name='reds:hasPredicate'],'_')"/></elidl-ep:activityId>
 							<elidl-ep:activityType rdf:resource="{org-ep:URI-ActiviteType(substring-after(key[@name='reds:hasPredicate'],'_'))}"/>
 							<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="substring(./key[@name='reds:hasDate'],1,23)"/></eli-dl:activity_date>
