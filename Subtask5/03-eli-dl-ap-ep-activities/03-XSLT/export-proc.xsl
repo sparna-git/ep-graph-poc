@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="2.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -473,7 +474,7 @@
 							<eli-dl:activity_label>Appointment of rapporteur</eli-dl:activity_label>
 							<elidl-ep:activityId><xsl:value-of select="substring-after(key[@name='reds:hasPredicate'],'_')"/></elidl-ep:activityId>
 							<elidl-ep:activityType rdf:resource="{org-ep:URI-ActiviteType(substring-after(key[@name='reds:hasPredicate'],'_'))}"/>
-							<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="substring(./key[@name='reds:hasDate'],1,23)"/></eli-dl:activity_date>
+							<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="substring(key[@name='reds:hasDate'],1,23)"/></eli-dl:activity_date>
 						</eli-dl:LegislativeActivity>
 					</eli-dl:consists_of>
 				</xsl:for-each>
@@ -490,9 +491,12 @@
 					]/key[@name = 'reds:hasObject']/key[@name = 'reds:reference']"/>
 
 				<xsl:for-each select="$idReference_OtherRAP">
+					<xsl:sort select="." data-type="text" order="ascending"/>
+					
 					<xsl:variable name="currentIdReference" select="."/>
 					<xsl:variable name="index_tabling" select="position()"/>
 					<xsl:variable name="dataDRAFTRPANDAM" select="$EXPORT_DRAFTRPANDAM/all/item[key[@name = 'reds:reference'] = $currentIdReference]"/>
+					
 					<eli-dl:consists_of>
 						<eli-dl:LegislativeActivity rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/tabling-draft-report_',$index_tabling))}">
 							<elidl-ep:activityId><xsl:value-of select="$currentIdReference"/></elidl-ep:activityId>
@@ -539,11 +543,14 @@
 						key[@name = 'reds:hasProperties']/item[key[@name = 'reds:hasValue'] = 'BAC']
 						)
 					]/key[@name = 'reds:hasObject']/key[@name = 'reds:reference']"/>
-				
+					
 					<xsl:for-each select="$idReference_OtherAME">
+						<xsl:sort select="." data-type="text" order="ascending"/>	
+						
 						<xsl:variable name="currentIdReference" select="."/>
 						<xsl:variable name="index_OtherAME" select="position()"/>
 						<xsl:variable name="dataDRAFTRPANDAM" select="$EXPORT_DRAFTRPANDAM/all/item[key[@name = 'reds:reference'] = $currentIdReference]"/>
+						
 						<eli-dl:consists_of>
 							<eli-dl:LegislativeActivity rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/tabling-amendment_',$index_OtherAME))}">
 								<elidl-ep:activityId><xsl:value-of select="$currentIdReference"/></elidl-ep:activityId>
@@ -587,7 +594,10 @@
 				]"/>
 				<xsl:if test="$CommitteDebate">					
 					<xsl:for-each select="$CommitteDebate">
+						<xsl:sort select="key[@name = 'reds:hasSubject']/key[@name = 'reds:reference']" data-type="text" order="ascending"/>
 						<xsl:variable name="currentCommitteDebate" select="."></xsl:variable>
+							
+						
 						<eli-dl:consists_of>
 							<eli-dl:LegislativeActivity rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/committee-debate_',position()))}">
 								<elidl-ep:activityId><xsl:value-of select="$currentCommitteDebate/key[@name = 'reds:hasSubject']/key[@name = 'reds:reference']"/></elidl-ep:activityId>
@@ -612,6 +622,7 @@
 				<xsl:variable name="voteRelation" select="$EXPORT_DOSSIER/all/item[key[@name = 'reds:reference'] = $currentReference]/key[@name ='reds:hasRelations']/item[
 						key[@name = 'reds:hasPredicate'] = 'reds:hasVoteResult'
 						]"/>
+				
 				<xsl:variable name="voteObjectRelation" select="$EXPORT_DOSSIER/all/item[key[@name = 'reds:reference'] = $currentReference]/key[@name ='reds:hasObjectRelations']/item[
 					key[@name = 'reds:hasPredicate'] = 'reds:hasDirContDossier'
 					and
@@ -624,14 +635,17 @@
 					)				
 				]"/>	
 				<xsl:variable name="VoteResult_Committee" select="$voteRelation/key[@name= 'reds:hasProperties']"/>
-						
+				
+				
 				<eli-dl:consists_of>
-						<eli-dl:LegislativeActivity rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/committee-vote_1'))}">
+					<eli-dl:LegislativeActivity rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/committee-vote_1'))}">
 							<elidl-ep:activityId>VOTE</elidl-ep:activityId>
 							<elidl-ep:activityType rdf:resource="{org-ep:URI-ActiviteType('COMMITTEE_VOTE')}"/>
+							
 							<xsl:if test="$voteRelation/key[@name = 'reds:hasDate']">
 								<eli-dl:activity_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"><xsl:value-of select="substring($voteRelation/key[@name = 'reds:hasDate'],1,23)"/></eli-dl:activity_date>
-							</xsl:if>					
+							</xsl:if>	
+											
 							<elidl-ep:activityHasVoteResults>
 								<elidl-ep:Vote rdf:about="{org-ep:URI-LegislativeActivity($ProcedureReference,concat(org-ep:readingReference($idReading), '/', 'main-dossier_', $index,'/committee-vote_1','/','result'))}">
 									<xsl:if test="$voteRelation/key[@name = 'reds:hasDate']">
@@ -649,7 +663,7 @@
 									$voteObjectRelation/key[@name = 'reds:hasSubject']/key[@name = 'reds:reference']
 								)}"/>
 							</xsl:if>
-						</eli-dl:LegislativeActivity>
+					</eli-dl:LegislativeActivity>
 				</eli-dl:consists_of>
 				
 				
