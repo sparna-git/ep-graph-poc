@@ -1,0 +1,13 @@
+#Question 4
+PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+PREFIX : <http://data.europa.eu/eli/ontology#>
+PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
+PREFIX ep-aut: <http://data.europarl.europa.eu/authority/>
+SELECT *
+WHERE {
+	?procedure a eli-dl:LegislativeProcess .
+    ?procedure eli-dl:consists_of* ?activity .    
+    ?activity elidl-ep:activityType ?ActivityType.
+    FILTER(?ActivityType = <http://data.europarl.europa.eu/authority/activity-type/MAIN_DOSSIER> ||
+           ?ActivityType = <http://data.europarl.europa.eu/authority/activity-type/MAIN_MHE_DOSSIER>)
+} limit 100 
