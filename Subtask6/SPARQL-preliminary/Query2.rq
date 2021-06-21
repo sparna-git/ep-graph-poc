@@ -1,0 +1,19 @@
+#Query 2
+PREFIX : <http://data.europa.eu/eli/ontology#>
+PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
+SELECT ?dateCreation ?TopicEurovoc 
+WHERE {
+    ?procedure a eli-dl:LegislativeProcess .
+    ?procedure elidl-ep:creationDate ?dateCreation .
+    ?procedure eli-dl:legislative_process_status <http://data.europarl.europa.eu/authority/legislative-process-status/ACTIVE> .
+    ?procedure eli-dl:consists_of ?reading .
+    ?reading elidl-ep:activityType <http://data.europarl.europa.eu/authority/activity-type/READING_I> .
+    
+    ?reading_I eli-dl:consists_of ?plenarySession .
+    ?plenarySession elidl-ep:activityType <http://data.europarl.europa.eu/authority/activity-type/PRVPL_I> .
+    
+    ?plenarySession eli-dl:based_on_a_realization_of ?plenaryDossier .
+    
+    ?plenaryDossier elidl-ep:legislativeProcessWorkIsAboutEurovoc ?TopicEurovoc .
+}
