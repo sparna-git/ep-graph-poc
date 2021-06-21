@@ -1,0 +1,46 @@
+PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX eli: <http://data.europa.eu/eli/ontology#>
+PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT ?procedure ?epComDocument ?cellarReference ?opoceComDocument
+WHERE {
+    
+    ?procedure a eli-dl:LegislativeProcess .
+    ?procedure eli-dl:consists_of ?reading_I .
+    ?reading_I elidl-ep:activityType <http://data.europarl.europa.eu/authority/activity-type/READING_I> .
+    
+    ?reading_I eli-dl:based_on_a_realization_of ?epComDocument .
+
+    {
+        SELECT ?procedure ?cellarReference
+        WHERE {
+            ?procedure a eli-dl:LegislativeProcess .    
+            ?procedure eli-dl:legislative_process_id ?lpi .
+            BIND(
+                STRDT(CONCAT(
+                        SUBSTR(STR(?lpi),5,4),
+                        '/',
+                        SUBSTR(STR(?lpi),10,4),
+                        '/',
+                        SUBSTR(STR(?lpi),1,3)
+                    ), xsd:string)
+                AS ?cellarReference
+            )
+        }
+    }
+    
+    OPTIONAL {
+        SERVICE <http://publications.europa.eu/webapi/rdf/sparql> {
+            BIND(STRDT(?cellarReference, xsd:string) AS ?cellarReferenceDt)
+             {
+                { ?cellarProcedure cdm:procedure_code_interinstitutional_reference_procedure ?cellarReferenceDt . }
+                UNION
+                { ?cellarProcedure cdm:procedure_code_interinstitutional_reference_procedure ?cellarReference . }
+            }
+            ?cellarProcedure cdm:dossier_initiated_by_act_preparatory ?opoceComDocument .
+        }
+    }
+
+}

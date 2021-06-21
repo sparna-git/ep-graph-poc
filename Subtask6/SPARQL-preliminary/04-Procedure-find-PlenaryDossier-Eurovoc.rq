@@ -1,0 +1,19 @@
+PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX eli: <http://data.europa.eu/eli/ontology#>
+PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT ?procedure ?plenaryDossier ?eurovoc
+WHERE {
+    
+    ?procedure a eli-dl:LegislativeProcess .
+    ?procedure eli-dl:consists_of ?reading_I .
+    ?reading_I elidl-ep:activityType <http://data.europarl.europa.eu/authority/activity-type/READING_I> .
+    
+    ?reading_I eli-dl:consists_of ?plenarySession .
+    ?plenarySession elidl-ep:activityType <http://data.europarl.europa.eu/authority/activity-type/PRVPL_I> .
+    ?plenarySession eli-dl:based_on_a_realization_of ?plenaryDossier .
+    ?plenaryDossier elidl-ep:legislativeProcessWorkIsAboutEurovoc ?eurovoc .
+
+}
