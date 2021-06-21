@@ -1,0 +1,30 @@
+PREFIX : <http://data.europa.eu/eli/ontology#>
+PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
+PREFIX ep: <http://data.europarl.europa.eu/>
+PREFIX org-ep: <http://data.europarl.europa.eu/ontology/org-ep#>
+SELECT ?Organization 
+	   ?mep
+	   ?procedure
+WHERE {
+    ?procedure a eli-dl:LegislativeProcess .
+    ?procedure eli-dl:consists_of ?typeProcedure .
+    # Filter the reading procedure
+    FILTER(REGEX(xsd:string(?typeProcedure),"reading"))
+    ?procedure eli-dl:consists_of* ?Activity .
+    ?Activity eli-dl:consists_of ?ActivityDossier .
+    ?ActivityDossier elidl-ep:hasActivityParticipation ?ActivityParticipation .
+    ?ActivityParticipation elidl-ep:activityParticipationRole ?typeActivityParticipation .
+    FILTER(?typeActivityParticipation = <http://data.europarl.europa.eu/authority/activity-participation-role/rapporteur>)
+    ?ActivityParticipation elidl-ep:activityParticipationHasAgent ?AgentParticipation .
+    BIND(STRAFTER(STR(?AgentParticipation),'person/') AS ?mepProcedure)
+    FILTER(?mepProcedure = ?mepId)
+    {
+        SELECT ?mep ?mepId ?Organization
+        WHERE {
+          ?mep org-ep:hasMembershipType <http://data.europarl.europa.eu/authority/membership-type/POLITICAL-GROUP> .		  BIND(STRBEFORE(STRAFTER(STR(?mep),'person/'),'/membership') AS ?mepId )
+          ?mep org-ep:hasOrganization ?Organization .
+        }        
+    }
+}
