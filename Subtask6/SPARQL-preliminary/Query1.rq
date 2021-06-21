@@ -1,0 +1,11 @@
+SELECT         ?s 
+                ?title                 
+WHERE { 
+    # Filter the columns "title" and "Status"
+        ?s eli-dl:legislative_process_title ?title .
+    ?s elidl:legislative_process_status ?status .
+    # filter the title language en English 
+    FILTER langMatches(lang(?title), "en" )
+    # Filter the column 'process status', when the status is Active
+    FILTER(?status = <http://data.europarl.europa.eu/authority/legislative-process-status/ACTIVE>) .
+}
