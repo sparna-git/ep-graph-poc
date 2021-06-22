@@ -1,0 +1,40 @@
+PREFIX : <http://data.europa.eu/eli/ontology#>
+PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX eli: <http://data.europa.eu/eli/ontology#>
+PREFIX elidl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX org-ep: <http://data.europarl.europa.eu/ontology/org-ep#>
+SELECT ?procedureReference ?person ?firstName ?familyName
+WHERE {
+    # read a procedure with its reference
+    ?procedure a eli-dl:LegislativeProcess .
+    ?procedure eli-dl:legislative_process_id ?procedureReference .
+
+    # navigate down to the reading I
+    ?procedure eli-dl:consists_of ?reading_I .
+    ?reading_I elidl-ep:activityType <http://data.europarl.europa.eu/authority/activity-type/READING_I> .    
+    # then down to the plenary session
+    ?reading_I eli-dl:consists_of ?plenarySession .
+    ?plenarySession elidl-ep:activityType <http://data.europarl.europa.eu/authority/activity-type/PRVPL_I> .    
+    # then navigate to the plenary dossier
+    ?plenarySession eli-dl:based_on_a_realization_of ?plenaryDossier .    
+    # and select only cases where the plenary dossier has a given topic
+    ?plenaryDossier elidl-ep:legislativeProcessWorkIsAboutEurovoc $eurovocTopic .
+    # "EU fund"
+    VALUES $eurovocTopic { <http://eurovoc.europa.eu/1052> }
+    
+    # find any participation in an activity of that procedure
+    ?procedure eli-dl:consists_of* ?anyActivity .
+    ?anyActivity elidl-ep:hasActivityParticipation ?participation .
+    # linking to any person
+    ?participation elidl-ep:activityParticipationHasAgent ?person .
+    ?person a org-ep:MEP .
+
+    # and we read the first name and family name of the person
+    ?person foaf:firstName ?firstName .
+    ?person foaf:familyName ?familyName .
+}
+ORDER BY ?procedureReference
