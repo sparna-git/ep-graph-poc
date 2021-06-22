@@ -1,13 +1,24 @@
 #Question 4
-PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
-PREFIX : <http://data.europa.eu/eli/ontology#>
+# Prendre le activity-participation qui a un type ep-aut:activity-membership-role/committeeResponsible qui est attaché 
+# à une activité de type ep-aut:activity-type/MAIN_DOSSIER ou ep-aut:activity-type/MAIN_DOSSIER_MHE, et compter ces activités
+PREFIX elidl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
 PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
+PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
 PREFIX ep-aut: <http://data.europarl.europa.eu/authority/>
-SELECT *
+SELECT DISTINCT ?activityparticipation (count(?activityparticipation) AS ?count)
 WHERE {
-	?procedure a eli-dl:LegislativeProcess .
-    ?procedure eli-dl:consists_of* ?activity .    
-    ?activity elidl-ep:activityType ?ActivityType.
-    FILTER(?ActivityType = <http://data.europarl.europa.eu/authority/activity-type/MAIN_DOSSIER> ||
-           ?ActivityType = <http://data.europarl.europa.eu/authority/activity-type/MAIN_MHE_DOSSIER>)
-} limit 100 
+    # the navigate that main dossier
+    ?procedure eli-dl:consists_of ?reading .
+    ?reading eli-dl:consists_of ?mainDossier .
+    # filter the main dossier type
+    ?mainDossier elidl-ep:activityType ?mainDossierType .
+    VALUES ?mainDossierType {
+        <http://data.europarl.europa.eu/authority/activity-type/MAIN_DOSSIER>
+        <http://data.europarl.europa.eu/authority/activity-type/MAIN_MHE_DOSSIER>
+    }
+    # filter all activity participation type "committeeResponsible"
+    ?mainDossier elidl-ep:hasActivityParticipation ?activityparticipation .
+    ?activityparticipation elidl-ep:activityParticipationRole <http://data.europarl.europa.eu/authority/activity-participation-role/committeeResponsible> .    
+}
+GROUP BY ?activityparticipation
+ORDER BY ?activityparticipation

@@ -18,6 +18,7 @@ WHERE {
         <http://data.europarl.europa.eu/authority/activity-type/PLENARY_DOSSIER>
         <http://data.europarl.europa.eu/authority/activity-type/PLENARY_AMENDMENT>
     }
+
     # Find the procedure
     ?procedure eli-dl:consists_of* ?activity .
     # Find the Identifier procedure

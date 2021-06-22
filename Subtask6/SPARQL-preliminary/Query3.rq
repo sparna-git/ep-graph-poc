@@ -1,0 +1,29 @@
+# Query 3
+# List the 20 top topics of open procedures at a given point in time
+PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+select DISTINCT ?procedure ?Eurovoc
+where { 
+    # the date is entre value 
+    ?procedure elidl-ep:creationDate $startDate .
+    # filter the process status whent that is Active
+    ?procedure eli-dl:legislative_process_status <http://data.europarl.europa.eu/authority/legislative-process-status/ACTIVE> .
+    # the navigate in readings activity type 
+    ?procedure eli-dl:consists_of ?reading .
+    ?reading elidl-ep:activityType ?readingType .
+    VALUES ?readingType {
+            <http://data.europarl.europa.eu/authority/activity-type/READING_I>
+            <http://data.europarl.europa.eu/authority/activity-type/READING_II>
+            <http://data.europarl.europa.eu/authority/activity-type/READING_III>
+            }
+    # Descendre sur la plenary session 
+    ?reading_I eli-dl:consists_of ?plenarySession .
+    ?plenarySession elidl-ep:activityType <http://data.europarl.europa.eu/authority/activity-type/PRVPL_I> .
+    # Récupérer le lien vers le rapport :
+    ?plenarySession eli-dl:based_on_a_realization_of ?plenaryDossier .
+    ?plenaryDossier elidl-ep:legislativeProcessWorkIsAboutEurovoc ?Eurovoc .
+    
+    # The variable for the date values
+    VALUES $startDate {"2019-10-17T00:00:00.000"^^xsd:dateTime}    
+}
