@@ -1,0 +1,38 @@
+PREFIX org-ep: <http://data.europarl.europa.eu/ontology/org-ep#>
+PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
+PREFIX ep-aut: <http://data.europarl.europa.eu/authority/>
+PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+PREFIX eli: <http://data.europa.eu/eli/ontology#>
+PREFIX ofn:<http://www.ontotext.com/sparql/functions/>
+SELECT ?committee ?work ?targetTranslationLanguage ?translationStartDate ?translationEndDate ?translationDurationInDays
+WHERE {
+    # committees ...
+    ?committee a org-ep:Organization .
+    # ... that are responsible for main_dossier activities ...
+    ?committee ^elidl-ep:activityParticipationHasAgent ?participation .
+    ?participation elidl-ep:activityParticipationRole <http://data.europarl.europa.eu/authority/activity-participation-role/committeeResponsible> .
+    ?participation ^elidl-ep:hasActivityParticipation ?main_dossier .
+    # ... in which other activities happen ...
+    ?main_dossier eli-dl:consists_of* ?subActivities .
+    # ... that involve some documents ...
+    ?subActivities eli-dl:involved_work ?work .
+    # ... that are used by translation activities ...
+    ?work ^eli-dl:based_on_a_realization_of ?translationActivity .
+    ?translationActivity elidl-ep:activityType <http://data.europarl.europa.eu/authority/activity-type/TRANSLATION> .
+    # ... that realize a foreseen translation activity ...
+    ?translationActivity elidl-ep:realizesForeseenActivity ?foreseenTranslationActivity .
+    # ... that began at a certain date.
+    ?foreseenTranslationActivity eli-dl:activity_start_date ?translationStartDate .
+   
+    # Each translation activity created one target expression in one language ...
+    ?translationActivity eli-dl:created_expression ?expression .
+    ?expression eli:language ?targetTranslationLanguage .
+    # ... the expression has an openxml manifestation ...
+    ?expression ^eli:embodies ?officeManifestation .
+    ?officeManifestation eli:media_type <https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.wordprocessingml.document> .
+    # ... on which we read the date.
+    ?officeManifestation elidl-ep:manifestationDate ?translationEndDate .
+    
+    # compute the duration between end date and start date
+    BIND(ofn:daysBetween(?translationEndDate, ?translationStartDate) AS ?translationDurationInDays)
+}
