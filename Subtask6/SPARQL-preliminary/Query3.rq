@@ -1,14 +1,13 @@
 # Query 3
 # List the 20 top topics of open procedures at a given point in time
+# Note : we don't have procedures end date, so only a start date criteria is used
 PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
-select DISTINCT ?procedure ?Eurovoc
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+select ?Eurovoc ?eurovocLabel (COUNT(?procedure) AS ?nbProcedure) 
 where { 
-    # the date is entre value 
-    ?procedure elidl-ep:creationDate $startDate .
-    # filter the process status whent that is Active
-    ?procedure eli-dl:legislative_process_status <http://data.europarl.europa.eu/authority/legislative-process-status/ACTIVE> .
+    ?procedure a eli-dl:LegislativeProcess .
     # the navigate in readings activity type 
     ?procedure eli-dl:consists_of ?reading .
     ?reading elidl-ep:activityType ?readingType .
@@ -18,12 +17,22 @@ where {
             <http://data.europarl.europa.eu/authority/activity-type/READING_III>
             }
     # Descendre sur la plenary session 
-    ?reading_I eli-dl:consists_of ?plenarySession .
+    ?reading eli-dl:consists_of ?plenarySession .
     ?plenarySession elidl-ep:activityType <http://data.europarl.europa.eu/authority/activity-type/PRVPL_I> .
     # Récupérer le lien vers le rapport :
     ?plenarySession eli-dl:based_on_a_realization_of ?plenaryDossier .
     ?plenaryDossier elidl-ep:legislativeProcessWorkIsAboutEurovoc ?Eurovoc .
+    # find labels of eurovoc concepts
+    ?Eurovoc skos:prefLabel ?eurovocLabel . FILTER(langMatches(lang(?eurovocLabel), "en"))
     
-    # The variable for the date values
-    VALUES $startDate {"2019-10-17T00:00:00.000"^^xsd:dateTime}    
+    # we are only interested in procedure that were created before a certain date
+    ?procedure elidl-ep:creationDate ?dateCreation .
+    FILTER(?dateCreation < $lookupDate)
+    VALUES $lookupDate { "2019-10-17T00:00:00.000"^^xsd:dateTime }
+    
+    # theoretically we should also have a criteria on an end date of the procedure, that we don't have currently
+    # so we don't know if the procedures we select were active or ended at that date
 }
+GROUP BY ?Eurovoc ?eurovocLabel
+ORDER BY DESC(?nbProcedure)
+LIMIT 20
