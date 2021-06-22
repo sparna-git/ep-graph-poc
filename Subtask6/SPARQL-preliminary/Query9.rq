@@ -1,5 +1,5 @@
-#Question 9
-#List the events of procedures which happen in a given day in committees or in parliamentary session
+# Query 9
+# List the events of procedures which happen in a given day in committees or in parliamentary session
 PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
 PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -11,15 +11,18 @@ WHERE {
     # Find the activity type
     ?activity elidl-ep:activityType ?typeActivity .
     # Filter the activity type 
-    FILTER(?typeActivity = <http://data.europarl.europa.eu/authority/activity-type/TABLING_DRAFT_REPORT> ||
-    	   ?typeActivity = <http://data.europarl.europa.eu/authority/activity-type/COMMITTEE_AMENDMENT> ||
-    	   ?typeActivity = <http://data.europarl.europa.eu/authority/activity-type/COMMITTEE_VOTE> ||
-    	   ?typeActivity = <http://data.europarl.europa.eu/authority/activity-type/PLENARY_DOSSIER> ||
-    	   ?typeActivity = <http://data.europarl.europa.eu/authority/activity-type/PLENARY_AMENDMENT>) 
+    VALUES ?typeActivity {
+        <http://data.europarl.europa.eu/authority/activity-type/TABLING_DRAFT_REPORT>
+        <http://data.europarl.europa.eu/authority/activity-type/COMMITTEE_AMENDMENT>
+        <http://data.europarl.europa.eu/authority/activity-type/COMMITTEE_VOTE>
+        <http://data.europarl.europa.eu/authority/activity-type/PLENARY_DOSSIER>
+        <http://data.europarl.europa.eu/authority/activity-type/PLENARY_AMENDMENT>
+    }
     # Find the procedure
     ?procedure eli-dl:consists_of* ?activity .
     # Find the Identifier procedure
     ?procedure eli-dl:legislative_process_id ?procedureIdentifier .
-   	# The activity date value .
+    
+    # Set an activity date value .
     VALUES $activityDate {"2019-11-12T00:00:00.000"^^xsd:dateTime}
 }

@@ -1,25 +1,25 @@
-# Question 7
+# Query 7
 # List of amendment reports for a given procedure
 PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
 PREFIX elidl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
 
-SELECT ?legislativeProcess 
-	   ?legislativeProcessId
+SELECT ?InvolvedWork ?legislativeProcessWorkId ?legislativeProcessWorkType
 WHERE { 
     # Find the procedure
     ?procedure eli-dl:consists_of* ?activity .
     # Find the Identifier procedure
     ?procedure eli-dl:legislative_process_id $procedureIdentifier .
-    # Find the Legislative Process Work 
+    # Find the Legislative Process Works 
     ?activity elidl:involved_work ?InvolvedWork .
-    ?InvolvedWork eli-dl:LegislativeProcessWork* ?legislativeProcess .
-    ?legislativeProcess eli-dl:legislative_process_work_id ?legislativeProcessId .
-    # Find the legislative process type and values three types 
-    ?legislativeProcess elidl:legislative_process_work_type ?legislativeProcessType .
-    VALUES ?legislativeProcessType {
-        <http://data.europarl.europa.eu/authority/legislative-process-work-type/iCmDoc_Amd>  								<http://data.europarl.europa.eu/authority/legislative-process-work-type/iCmRp-Dft>  
+    ?InvolvedWork eli-dl:legislative_process_work_id ?legislativeProcessWorkId .
+    # Select only those that have a legislative process work type corresponding to an amendment report
+    ?InvolvedWork elidl:legislative_process_work_type ?legislativeProcessWorkType .
+    VALUES ?legislativeProcessWorkType {
+        <http://data.europarl.europa.eu/authority/legislative-process-work-type/iCmDoc_Amd>
+        <http://data.europarl.europa.eu/authority/legislative-process-work-type/iCmRp-Dft>  
         <http://data.europarl.europa.eu/authority/legislative-process-work-type/iCmBbudamd>
     }
+    
     # Value id procedure
-    VALUES ?procedureIdentifier {"CNS-2018-0413"}
+    VALUES $procedureIdentifier {"CNS-2018-0413"}
 } 

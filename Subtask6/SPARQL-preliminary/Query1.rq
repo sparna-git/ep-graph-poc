@@ -1,11 +1,12 @@
-SELECT         ?s 
-                ?title                 
+# Query 1
+# List of procedure in progress
+PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+PREFIX elidl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+SELECT ?procedure ?title                 
 WHERE { 
-    # Filter the columns "title" and "Status"
-        ?s eli-dl:legislative_process_title ?title .
-    ?s elidl:legislative_process_status ?status .
-    # filter the title language en English 
+    # Look for active procedures    
+    ?procedure elidl:legislative_process_status <http://data.europarl.europa.eu/authority/legislative-process-status/ACTIVE> .
+    # and keep their title in English 
+    ?procedure eli-dl:legislative_process_title ?title .
     FILTER langMatches(lang(?title), "en" )
-    # Filter the column 'process status', when the status is Active
-    FILTER(?status = <http://data.europarl.europa.eu/authority/legislative-process-status/ACTIVE>) .
 }

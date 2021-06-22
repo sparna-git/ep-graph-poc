@@ -1,0 +1,33 @@
+PREFIX : <http://data.europa.eu/eli/ontology#>
+PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
+PREFIX ep: <http://data.europarl.europa.eu/>
+PREFIX org-ep: <http://data.europarl.europa.eu/ontology/org-ep#>
+PREFIX ep-aut: <http://data.europarl.europa.eu/authority/>
+PREFIX org: <http://www.w3.org/ns/org#>
+PREFIX schema: <http://schema.org/>
+SELECT ?voteResult ?tablingDraftReportActivity ?tablingDraftReportDocument
+WHERE {
+    # Find all vote results ...
+    ?voteResult a elidl-ep:Vote .
+    # that were rejected
+    ?voteResult elidl-ep:voteResult <http://data.europarl.europa.eu/authority/vote-result/RJ>  .
+	# Note : no vote results with a result of RJ are present in the data
+    # To test the query and to return some data, you can replace the above criteria by this line to select instead all vote results that were "approved without vote"
+    # ?voteResult elidl-ep:voteResult <http://data.europarl.europa.eu/authority/vote-result/AP>  .
+    
+    # find the committeeVote activity linking to the vote result
+    ?voteResult ^elidl-ep:activityHasVoteResults ?committeeVote .
+    # navigate up to the main dossier
+    ?committeeVote ^eli-dl:consists_of ?mainDossier .
+    OPTIONAL {
+        # navigate down to the tabling draft report activity of that main dossier
+    	?mainDossier eli-dl:consists_of ?tablingDraftReportActivity .
+    	?tablingDraftReportActivity elidl-ep:activityType <http://data.europarl.europa.eu/authority/activity-type/TABLING_DRAFT_REPORT> .
+        # and navigate to the corresponding document
+        ?tablingDraftReportActivity eli-dl:involved_work ?tablingDraftReportDocument .
+    }
+    
+}
+ORDER BY ?voteResult

@@ -1,11 +1,12 @@
-# Query 2
-# Topics related to open procedures at a given point in time
-# Note : we don't have procedures end date, so only a start date criteria is used
 PREFIX : <http://data.europa.eu/eli/ontology#>
 PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
 PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX eli: <http://data.europa.eu/eli/ontology#>
+PREFIX elidl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX org-ep: <http://data.europarl.europa.eu/ontology/org-ep#>
 SELECT ?procedureReference ?eurovocTopic ?eurovocLabel
 WHERE {
     # read a procedure with its reference
@@ -20,17 +21,19 @@ WHERE {
     ?plenarySession elidl-ep:activityType <http://data.europarl.europa.eu/authority/activity-type/PRVPL_I> .    
     # then navigate to the plenary dossier
     ?plenarySession eli-dl:based_on_a_realization_of ?plenaryDossier .    
-    # and read eurovoc topics of plenary dossier
+    # then navigate to the eurovocTopic
     ?plenaryDossier elidl-ep:legislativeProcessWorkIsAboutEurovoc ?eurovocTopic .
-    # and read the label of the eurovoc topic if we have it
-    OPTIONAL { ?eurovocTopic skos:prefLabel ?eurovocLabel . FILTER(langMatches(lang(?eurovocLabel), "en")) }
+    ?eurovocTopic skos:prefLabel ?eurovocLabel . FILTER(langMatches(lang(?eurovocLabel), "en"))
     
-    # we are only interested in procedure that were created before a certain date
-    ?procedure elidl-ep:creationDate ?dateCreation .
-    FILTER(?dateCreation < $lookupDate)
-    VALUES $lookupDate { "2019-05-14T00:00:00"^^xsd:dateTime }
+    # find any participation in an activity of that procedure
+    ?procedure eli-dl:consists_of* ?anyActivity .
+    ?anyActivity elidl-ep:hasActivityParticipation ?participation .
+    # linking to that person
+    ?participation elidl-ep:activityParticipationHasAgent $person .
     
-    # theoretically we should also have a criteria on an end date of the procedure, that we don't have currently
-    # so we don't know if the procedures we select were active or ended at that date
+    # Marie-Christine Vergiat
+    VALUES $person { <http://data.europarl.europa.eu/resource/person/96858> }
+    # Ralph Packet
+    # VALUES $person { <http://data.europarl.europa.eu/resource/person/195454> }
 }
 ORDER BY ?procedureReference
