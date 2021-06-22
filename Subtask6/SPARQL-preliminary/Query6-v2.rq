@@ -1,0 +1,42 @@
+PREFIX : <http://data.europa.eu/eli/ontology#>
+PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
+PREFIX ep: <http://data.europarl.europa.eu/>
+PREFIX org-ep: <http://data.europarl.europa.eu/ontology/org-ep#>
+PREFIX ep-aut: <http://data.europarl.europa.eu/authority/>
+PREFIX org: <http://www.w3.org/ns/org#>
+PREFIX schema: <http://schema.org/>
+SELECT DISTINCT ?politicalGroup ?rapporteur ?procedure
+WHERE {
+    ?procedure a eli-dl:LegislativeProcess .
+    ?procedure eli-dl:consists_of ?reading .
+    ?reading elidl-ep:activityType ?readingType .
+    VALUES ?readingType {
+        <http://data.europarl.europa.eu/authority/activity-type/READING_I>
+        <http://data.europarl.europa.eu/authority/activity-type/READING_II>
+        <http://data.europarl.europa.eu/authority/activity-type/READING_III>
+    }
+    ?reading eli-dl:consists_of ?mainDossier .
+    ?mainDossier elidl-ep:activityType ?mainDossierType .
+    VALUES ?mainDossierType {
+        <http://data.europarl.europa.eu/authority/activity-type/MAIN_DOSSIER>
+        <http://data.europarl.europa.eu/authority/activity-type/MAIN_MHE_DOSSIER>
+    }
+
+    ?mainDossier elidl-ep:hasActivityParticipation ?ActivityParticipation .
+    ?ActivityParticipation elidl-ep:activityParticipationRole <http://data.europarl.europa.eu/authority/activity-participation-role/rapporteur> .
+    ?ActivityParticipation elidl-ep:activityParticipationHasAgent ?rapporteur .
+    
+    ?mainDossier eli-dl:activity_date ?mainDossierDate .
+    
+    OPTIONAL {
+        ?rapporteur org:hasMembership ?membership .
+        ?membership org-ep:hasMembershipType <http://data.europarl.europa.eu/authority/membership-type/POLITICAL-GROUP> .
+        ?membership org-ep:hasOrganization ?politicalGroup .
+        ?membership schema:startDate ?membershipStartDate .
+        ?membership schema:endDate ?membershipEndDate .
+        FILTER(?membershipStartDate < ?mainDossierDate && ?mainDossierDate < ?membershipEndDate)
+    }   
+
+} ORDER BY DESC(?politicalGroup) ?rapporteur
