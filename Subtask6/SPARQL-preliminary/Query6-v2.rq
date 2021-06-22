@@ -9,7 +9,9 @@ PREFIX org: <http://www.w3.org/ns/org#>
 PREFIX schema: <http://schema.org/>
 SELECT DISTINCT ?politicalGroup ?rapporteur ?procedure
 WHERE {
+    # we read all procedures ...
     ?procedure a eli-dl:LegislativeProcess .
+    # ... then their readings...
     ?procedure eli-dl:consists_of ?reading .
     ?reading elidl-ep:activityType ?readingType .
     VALUES ?readingType {
@@ -17,6 +19,7 @@ WHERE {
         <http://data.europarl.europa.eu/authority/activity-type/READING_II>
         <http://data.europarl.europa.eu/authority/activity-type/READING_III>
     }
+    # ... then the main dossier ...
     ?reading eli-dl:consists_of ?mainDossier .
     ?mainDossier elidl-ep:activityType ?mainDossierType .
     VALUES ?mainDossierType {
@@ -24,18 +27,23 @@ WHERE {
         <http://data.europarl.europa.eu/authority/activity-type/MAIN_MHE_DOSSIER>
     }
 
+    # and we select the rapporteur of the main dossier
     ?mainDossier elidl-ep:hasActivityParticipation ?ActivityParticipation .
     ?ActivityParticipation elidl-ep:activityParticipationRole <http://data.europarl.europa.eu/authority/activity-participation-role/rapporteur> .
     ?ActivityParticipation elidl-ep:activityParticipationHasAgent ?rapporteur .
     
+    # we read the date of the main dossier
     ?mainDossier eli-dl:activity_date ?mainDossierDate .
     
+    # and we select the political group of the rapporteur at the date of the main dossier
     OPTIONAL {
         ?rapporteur org:hasMembership ?membership .
         ?membership org-ep:hasMembershipType <http://data.europarl.europa.eu/authority/membership-type/POLITICAL-GROUP> .
         ?membership org-ep:hasOrganization ?politicalGroup .
         ?membership schema:startDate ?membershipStartDate .
         ?membership schema:endDate ?membershipEndDate .
+        # The date of the membership should encompass the date of the actual mainDossier activity
+        # Note that in some cases we find inconsistent dates (results for which no politicalGroup appears in the result set)
         FILTER(?membershipStartDate < ?mainDossierDate && ?mainDossierDate < ?membershipEndDate)
     }   
 
