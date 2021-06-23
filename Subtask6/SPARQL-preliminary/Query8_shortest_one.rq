@@ -1,0 +1,25 @@
+PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
+PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+PREFIX elidl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+PREFIX ofn:<http://www.ontotext.com/sparql/functions/>
+SELECT ?procedure ?nbDays
+WHERE {
+     # compute the duration between end date and start date
+    BIND(ofn:daysBetween(?activityLastDate , ?startDate) AS ?nbDays)
+    {
+        SELECT ?procedure ?startDate (max(?activityDate) as ?activityLastDate)
+        WHERE {
+            # select the process status 
+            ?procedure eli-dl:legislative_process_status <http://data.europarl.europa.eu/authority/legislative-process-status/ENDED> .
+            ?procedure elidl-ep:creationDate ?startDate .
+            # find any participation in an activity of that procedure
+            ?procedure eli-dl:consists_of* ?activity .
+            # select the activity date
+            ?activity elidl:activity_date ?activityDate .
+        }
+        GROUP BY ?procedure ?startDate
+        ORDER BY ?procedure
+    }
+}
+ORDER BY ASC(?nbDays)
+Limit 1

@@ -1,0 +1,20 @@
+# Query 5
+# List of activities for a given procedure (activities, activities types, activity date and related reports)
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?procedure ?activityType ?activityDate ?involvedWork ?baseOnaRealization
+WHERE {
+    # procedure
+    ?procedure a eli-dl:LegislativeProcess .
+    # all types of activities ....
+    ?procedure eli-dl:consists_of* ?activity .
+    ?activity elidl-ep:activityType ?activityType .
+    ?activity eli-dl:activity_date ?activityDate .
+    # that involve some documents
+    ?activity eli-dl:involved_work ?involvedWork .
+    OPTIONAL
+    {?activity eli-dl:based_on_a_realization_of ?baseOnaRealization .}
+}
