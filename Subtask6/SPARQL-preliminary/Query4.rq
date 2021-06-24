@@ -1,11 +1,11 @@
-#Question 4
-# Prendre le activity-participation qui a un type ep-aut:activity-membership-role/committeeResponsible qui est attaché 
-# à une activité de type ep-aut:activity-type/MAIN_DOSSIER ou ep-aut:activity-type/MAIN_DOSSIER_MHE, et compter ces activités
+# Query 4
+# How many open main dossiers are processed by committee ?
 PREFIX elidl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
 PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
 PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
 PREFIX ep-aut: <http://data.europarl.europa.eu/authority/>
-SELECT DISTINCT ?activityparticipation (count(?activityparticipation) AS ?count)
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?committee ?committeeName (count(?mainDossier) AS ?nbMainDossier)
 WHERE {
     # the navigate that main dossier
     ?procedure eli-dl:consists_of ?reading .
@@ -18,7 +18,10 @@ WHERE {
     }
     # filter all activity participation type "committeeResponsible"
     ?mainDossier elidl-ep:hasActivityParticipation ?activityparticipation .
-    ?activityparticipation elidl-ep:activityParticipationRole <http://data.europarl.europa.eu/authority/activity-participation-role/committeeResponsible> .    
+    ?activityparticipation elidl-ep:activityParticipationRole <http://data.europarl.europa.eu/authority/activity-participation-role/committeeResponsible> .
+    ?activityparticipation elidl-ep:activityParticipationHasAgent ?committee .
+    # select the name of the committee
+    ?committee skos:prefLabel ?committeeName . FILTER(langMatches(lang(?committeeName), "en"))
 }
-GROUP BY ?activityparticipation
-ORDER BY ?activityparticipation
+GROUP BY ?committee ?committeeName
+ORDER BY DESC(?nbMainDossier)

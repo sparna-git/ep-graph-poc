@@ -1,10 +1,10 @@
 # Query 8
-# Information on the duration of procedures - longest one
+# Information on the duration of procedures - average duration
 PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
 PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
 PREFIX elidl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
 PREFIX ofn:<http://www.ontotext.com/sparql/functions/>
-SELECT ?procedure ?nbDays
+SELECT (AVG(?nbDays) AS ?averageDuration)
 WHERE {
      # compute the duration between end date and start date
     BIND(ofn:daysBetween(?activityLastDate , ?startDate) AS ?nbDays)
@@ -26,6 +26,3 @@ WHERE {
         ORDER BY ?procedure
     }
 }
-# order from largest to lowest, and keep only the largest
-ORDER BY DESC(?nbDays)
-Limit 1

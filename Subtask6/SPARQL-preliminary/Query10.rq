@@ -1,3 +1,5 @@
+# Query 10
+# List of reports that are rejected in the year
 PREFIX : <http://data.europa.eu/eli/ontology#>
 PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>

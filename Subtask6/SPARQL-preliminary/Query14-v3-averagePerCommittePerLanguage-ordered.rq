@@ -1,3 +1,5 @@
+# Query 14
+# Calculate the average time of translation by committee
 PREFIX org-ep: <http://data.europarl.europa.eu/ontology/org-ep#>
 PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
 PREFIX ep-aut: <http://data.europarl.europa.eu/authority/>

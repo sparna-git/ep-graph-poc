@@ -1,3 +1,5 @@
+# Query 12
+# For a topic, list the MEP which are implicated in activities of a procedure
 PREFIX : <http://data.europa.eu/eli/ontology#>
 PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
 PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>

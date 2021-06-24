@@ -5,16 +5,22 @@ PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
 PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-SELECT ?procedure ?activityType ?activityDate ?involvedWork ?baseOnaRealization
+SELECT ?procedure ?activityType ?activityDate ?involvedOrBasedOnDocument
 WHERE {
-    # procedure
+    # procedure with its reference
     ?procedure a eli-dl:LegislativeProcess .
+    ?procedure eli-dl:legislative_process_id $procedureReference .
+    VALUES $procedureReference { "COD-2018-0436" }
+    
     # all types of activities ....
     ?procedure eli-dl:consists_of* ?activity .
     ?activity elidl-ep:activityType ?activityType .
     ?activity eli-dl:activity_date ?activityDate .
-    # that involve some documents
-    ?activity eli-dl:involved_work ?involvedWork .
-    OPTIONAL
-    {?activity eli-dl:based_on_a_realization_of ?baseOnaRealization .}
+    
+    # ... activity involves some documents, or is based on some document
+    OPTIONAL {
+        ?activity eli-dl:involved_work|eli-dl:based_on_a_realization_of ?involvedOrBasedOnDocument .
+    }
 }
+# list activities by date
+ORDER BY ?activityDate

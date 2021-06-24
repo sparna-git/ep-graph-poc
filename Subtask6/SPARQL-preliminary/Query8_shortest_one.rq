@@ -1,3 +1,5 @@
+# Query 8
+# Information on the duration of procedures - shortest one
 PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
 PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
 PREFIX elidl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
@@ -6,13 +8,16 @@ SELECT ?procedure ?nbDays
 WHERE {
      # compute the duration between end date and start date
     BIND(ofn:daysBetween(?activityLastDate , ?startDate) AS ?nbDays)
+    
+    # for each procedure, returns its start date and end date based on activity date of last activity
     {
         SELECT ?procedure ?startDate (max(?activityDate) as ?activityLastDate)
         WHERE {
-            # select the process status 
+            # select the procedure that have ended
             ?procedure eli-dl:legislative_process_status <http://data.europarl.europa.eu/authority/legislative-process-status/ENDED> .
+            # select start date of the procedure
             ?procedure elidl-ep:creationDate ?startDate .
-            # find any participation in an activity of that procedure
+            # find any activity of that procedure
             ?procedure eli-dl:consists_of* ?activity .
             # select the activity date
             ?activity elidl:activity_date ?activityDate .
@@ -21,5 +26,6 @@ WHERE {
         ORDER BY ?procedure
     }
 }
+# order from smallest to largest, and keep only the smallest
 ORDER BY ASC(?nbDays)
 Limit 1
