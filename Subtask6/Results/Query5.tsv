@@ -1,0 +1,10 @@
+?procedure	?activityType	?activityDate	?involvedOrBasedOnDocument
+<http://data.europarl.europa.eu/resource/eli/dl/proc/2018/0436/cod>	<http://data.europarl.europa.eu/authority/activity-type/READING_I>	"2018-12-20T00:00:00.000"^^<http://www.w3.org/2001/XMLSchema#dateTime>	<http://data.europarl.europa.eu/resource/eli/dl/proc/2018/0436/cod/doc/iEcCom/COM-2018-0895>
+<http://data.europarl.europa.eu/resource/eli/dl/proc/2018/0436/cod>	<http://data.europarl.europa.eu/authority/activity-type/PROCR>	"2018-12-20T15:12:47.000"^^<http://www.w3.org/2001/XMLSchema#dateTime>	
+<http://data.europarl.europa.eu/resource/eli/dl/proc/2018/0436/cod>	<http://data.europarl.europa.eu/authority/activity-type/MAIN_DOSSIER>	"2018-12-20T16:37:00.000"^^<http://www.w3.org/2001/XMLSchema#dateTime>	
+<http://data.europarl.europa.eu/resource/eli/dl/proc/2018/0436/cod>	<http://data.europarl.europa.eu/authority/activity-type/NMCP>	"2019-01-17T00:00:00.000"^^<http://www.w3.org/2001/XMLSchema#dateTime>	
+<http://data.europarl.europa.eu/resource/eli/dl/proc/2018/0436/cod>	<http://data.europarl.europa.eu/authority/activity-type/COMMITTEE_VOTE>	"2019-01-22T00:00:00.000"^^<http://www.w3.org/2001/XMLSchema#dateTime>	
+<http://data.europarl.europa.eu/resource/eli/dl/proc/2018/0436/cod>	<http://data.europarl.europa.eu/authority/activity-type/DCPL_I>	"2019-02-13T00:00:00.000"^^<http://www.w3.org/2001/XMLSchema#dateTime>	
+<http://data.europarl.europa.eu/resource/eli/dl/proc/2018/0436/cod>	<http://data.europarl.europa.eu/authority/activity-type/COMMITTEE_DEBATE>	"2019-03-04T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>	
+<http://data.europarl.europa.eu/resource/eli/dl/proc/2018/0436/cod>	<http://data.europarl.europa.eu/authority/activity-type/PRVPL_I>	"2019-03-13T00:00:00.000"^^<http://www.w3.org/2001/XMLSchema#dateTime>	<http://data.europarl.europa.eu/resource/eli/dl/proc/2018/0436/cod/doc/iPlRp/A-8-2019-0063>
+<http://data.europarl.europa.eu/resource/eli/dl/proc/2018/0436/cod>	<http://data.europarl.europa.eu/authority/activity-type/DCPL_I>	"2019-03-13T00:00:00.000"^^<http://www.w3.org/2001/XMLSchema#dateTime>	
