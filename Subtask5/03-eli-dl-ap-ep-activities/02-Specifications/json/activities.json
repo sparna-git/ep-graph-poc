@@ -1,0 +1,242 @@
+{
+"@graph" :
+    [
+        {
+            "uri" : "eprdl:proc/2018/0413/cns",
+            "type" : "LegislativeProcess",
+            "legislative_process_id" : "CNS-2018-0413",            
+            "legislative_process_title" : {
+                "value" : "Measures to strengthen administrative cooperation in order to combat VAT fraud",
+                "lang" : "en"
+            },
+            "legislative_process_number" : "0413",
+            "legislativeProcessYear" : "2018",
+            "creationDate" : "2018-12-12T00:00:00.000+0100",
+            "legislative_process_type" : "ep-aut:legislative-process-type/CNS",
+            "legislativeProcessNature" : "ep-aut:legislative-process-nature/LEG",
+            "current_stage" : "ep-aut:activity-stage/08",
+            "currentSubStage" : "ep-aut:activity-stage/08-10",
+            "legislative_process_status" : "ep-aut:legislative-process-status/ENDED",
+            "had_legal_basis" : [
+                "eprdl:iEpRegl/RULES-9-2020-02-03/art_159",
+                "http://data.europa.eu/eli/treaty/tfeu_2016/art_113/oj"
+            ],
+            "foreseen_type_document" : "ep-aut:legislative-act-type/R",
+            "hasActivityParticipation" : [
+                {
+                    "uri" : "eprdl:proc/2018/0413/cns/activity-participation_1",
+                    "type" : "ActivityParticipation",
+                    "activityParticipationHasAgent" : "epr:person/197738",
+                    "activityParticipationRole" : "ep-aut:activity-membership-role/rapporteur" ,
+                    "activityParticipationInNameOf" : "epr:org/ECON-5086"
+                },
+                {
+                    "uri" : "eprdl:proc/2018/0413/cns/activity-participation_2",
+                    "type" : "ActivityParticipation",
+                    "etc..." :"etc..."
+                }
+            ],
+            "consists_of" : [
+                {
+                    "uri" : "eprdl:proc/2018/0413/cns/event/procedure-creation_1",
+                    "type" : "LegislativeActivity",
+                    "activityType" : "ep-aut:activity-type/PROCR",
+                    "activity_date" : "2018-12-12T10:58:56.000+0100"
+                },
+                {
+                    "uri" : "eprdl:proc/2018/0413/cns/event/reading_I",
+                    "type" : "LegislativeActivity",
+                    "activityType" : "ep-aut:activity-type/READING_I",
+                    "activity_date" : "2018-12-12T10:58:56.000+0100",
+                    "activityId" : "reading_I",
+                    "based_on_a_realization_of" : "eprdl:proc/2018/0413/cns/doc/iEcCom/COM-2018-0813",
+                    "hasBaseBas_1" : {
+                        "uri" : "eprdl:proc/2018/0413/cns/event/reading_I/involved-work_1",
+                        "type" : "InvolvedWork",
+                        "involvedWorkRole" : "ep-aut:involved-work-role/BAS",
+                        "hasWorkInvolved" : "eprdl:proc/2018/0413/cns/doc/iEcCom/COM-2018-0813"
+                    },
+                    "consists_of" : [
+                        {
+                            "uri" : "eprdl:proc/2018/0413/cns/event/reading_I/main-dossier_1",
+                            "type" : "LegislativeActivity",
+                            "activityContextPrecision" : "ep-aut:activity-context-precision/REP",
+                            "activityNature" : "ep-aut:nature/OFF-SA",
+                            "occured_at_stage" : "ep-aut:activity-stage/10-00",
+                            "activityStatus" : "",
+                            "amendmentDeadlineDate" : "...",
+                            "etc..." : "etc...",
+                            "hasActivityParticipation" : [
+                                
+                            ],
+                            "consists_of" : [
+                                {
+                                    "uri" : "eprdl:proc/2018/0413/cns/event/reading_I/main-dossier_1/tabling-draft-report_1",
+                                    "involved_work" : "eprdl:proc/2018/0413/cns/doc/iCmRp-Dft/ECON-PR-641419",
+                                    "etc..." : "etc..."
+                                },
+                                {
+                                    "uri" : "eprdl:proc/2018/0413/cns/event/reading_I/main-dossier_1/committee-vote_1",
+                                    "created_a_realization_of" : "...",
+                                    "activityHasVoteResult" : {
+                                        "uri" : "...",
+                                        "type" : "Vote",
+                                        "voteDate" : "...",
+                                        "voteResult" : "...",
+                                        "voteMode" : "...",
+                                        "voteAbstention" : "1",
+                                        "voteFavour" : "2",
+                                        "voteAgainst" : "3"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+        "@context": {
+            "eli-dl": "http://data.europa.eu/eli/eli-draft-legislation-ontology#",
+            "elidl-ep": "http://data.europarl.europa.eu/ontology/elidl-ep#",
+            "ep-aut": "http://data.europarl.europa.eu/authority/",
+            "eprdl": "http://data.europarl.europa.eu/resource/eli/dl/",
+            "epr": "http://data.europarl.europa.eu/resource/",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "uri": "@id",
+            "type": "@type",
+            "value":"@value",
+            "lang":"@language",
+            "LegislativeProcess": "eli-dl:LegislativeProcess",
+            "ActivityParticipation": "elidl-ep:ActivityParticipation",
+            "LegislativeActivity": "eli-dl:LegislativeActivity",
+            "InvolvedWork": "elidl-ep:InvolvedWork",
+            "Vote" : "elidl-ep:Vote",
+            "legislative_process_id" : "eli-dl:legislative_process_id",
+            "legislative_process_title" : "eli-dl:legislative_process_title",
+            "legislative_process_number" : "eli-dl:legislative_process_number",
+            "legislativeProcessYear" : "elidl-ep:legislativeProcessYear",
+            "creationDate" : {
+                "@id" : "elidl-ep:creationDate",
+                "@type": "xsd:dateTime"
+            },
+            "legislative_process_type" : {
+                "@id": "eli-dl:legislative_process_type",
+                "@type": "@id"
+            },
+            "legislativeProcessNature" : {
+                "@id": "elidl-ep:legislativeProcessNature",
+                "@type": "@id"
+            },
+            "current_stage" : {
+                "@id": "eli-dl:current_stage",
+                "@type": "@id"
+            },
+            "currentSubStage" : {
+                "@id": "elidl-ep:currentSubStage",
+                "@type": "@id"
+            },
+            "legislative_process_status" : {
+                "@id": "eli-dl:legislative_process_status",
+                "@type": "@id"
+            },
+            "had_legal_basis" : {
+                "@id": "eli-dl:had_legal_basis",
+                "@type": "@id"
+            },
+            "foreseen_type_document" : {
+                "@id": "eli-dl:foreseen_type_document",
+                "@type": "@id"
+            },
+            "consists_of" : "eli-dl:consists_of",
+            "hasActivityParticipation" : "elidl-ep:hasActivityParticipation",
+            "activityParticipationHasAgent" : {
+                "@id": "elidl-ep:activityParticipationHasAgent",
+                "@type": "@id"
+            },
+            "activityParticipationRole" : {
+                "@id": "elidl-ep:activityParticipationRole",
+                "@type": "@id"
+            } ,
+            "activityParticipationInNameOf" : {
+                "@id": "elidl-ep:activityParticipationInNameOf",
+                "@type": "@id"
+            },
+            "activityType" : {
+                "@id": "elidl-ep:activityType",
+                "@type": "@id"
+            },
+            "activity_date" : {
+                "@id": "eli-dl:activity_date",
+                "@type": "xsd:dateTime"
+            },
+            "activityId" : {
+                "@id": "elidl-ep:activityId",
+                "@type": "xsd:string"
+            },
+            "based_on_a_realization_of" : {
+                "@id": "eli-dl:based_on_a_realization_of",
+                "@type": "@id"
+            },
+            "hasBaseBas_1" : "elidl-ep:hasBaseBas_1",
+            "involvedWorkRole" : {
+                "@id": "elidl-ep:involvedWorkRole",
+                "@type": "@id"
+            },
+            "hasWorkInvolved" : {
+                "@id": "elidl-ep:hasWorkInvolved",
+                "@type": "@id"
+            },
+            "activityNature" : {
+                "@id": "elidl-ep:activityNature",
+                "@type": "@id"
+            },
+            "occured_at_stage" : {
+                "@id": "eli-dl:occured_at_stage",
+                "@type": "@id"
+            },
+            "activityStatus" : {
+                "@id": "elidl-ep:activityStatus",
+                "@type": "@id"
+            },
+            "amendmentDeadlineDate" : {
+                "@id": "elidl-ep:amendmentDeadlineDate",
+                "@type": "xsd:dateTime"
+            },
+            "involved_work" : {
+                "@id": "eli-dl:involved_work",
+                "@type": "@id"
+            },
+            "created_a_realization_of" : {
+                "@id": "eli-dl:created_a_realization_of",
+                "@type": "@id"
+            },
+            "activityHasVoteResult" : "elidl-ep:activityHasVoteResult",
+            "voteDate" : {
+                "@id": "elidl-ep:voteDate",
+                "@type": "xsd:dateTime"
+            },
+            "voteResult" : {
+                "@id": "elidl-ep:voteResult",
+                "@type": "@id"
+            },
+            "voteMode" : {
+                "@id": "elidl-ep:voteMode",
+                "@type": "@id"
+            },
+            "voteAbstention" : {
+                "@id": "elidl-ep:voteAbstention",
+                "@type": "xsd:integer"
+            },
+            "voteFavour" : {
+                "@id": "elidl-ep:voteFavour",
+                "@type": "xsd:integer"
+            },
+            "voteAgainst" : {
+                "@id": "elidl-ep:voteAgainst",
+                "@type": "xsd:integer"
+            }
+        }
+
+}
