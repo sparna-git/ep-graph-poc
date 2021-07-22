@@ -1,0 +1,85 @@
+# Raport for the document RDF
+# nb "1274"
+
+PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
+PREFIX eli: <http://data.europa.eu/eli/ontology#>
+PREFIX fn: <http://www.w3.org/2005/xpath-functions#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+select ?uri        ?identifier     ?date       ?type       ?procedure       ?term      ?Title      ?rapporteur     ?codes      ?keywords       ?PDF       ?HTML
+WHERE { 
+    ?uri a eli-dl:LegislativeProcessWork ;
+            eli-dl:legislative_process_work_id ?identifier ;
+            eli-dl:legislative_process_work_date ?date .
+        OPTIONAL {
+            ?uri eli-dl:legislative_process_work_type/skos:prefLabel ?type ;
+            FILTER langMatches(lang(?type), "EN" ) }.
+        OPTIONAL {
+          ?uri elidl-ep:workBelongsToParliamentaryTerm ?term_ .
+        BIND(STRAFTER(STR(?term_),'http://data.europarl.europa.eu/authority/parliamentary-term/') AS ?term) .
+        }
+        # Split for the procedure building 
+    BIND(STRAFTER(STRBEFORE(STR(?uri),'/doc'),'dl/') AS ?get_Procedure) .
+    BIND(STRBEFORE(?get_Procedure,'/') AS ?nom) .
+    BIND(STRBEFORE(STRAFTER(?get_Procedure,'/'),'/') AS ?Anne) .
+    BIND(STRBEFORE(STRAFTER(STRAFTER(?get_Procedure,'/'),'/'),'/') AS ?Id) .
+    BIND(UCASE(CONCAT(?nom,'-',?Anne,'-',?Id)) AS ?procedure). 
+    OPTIONAL {
+          ?uri ^eli:realizes ?realize .
+            ?realize eli:language <http://publications.europa.eu/resource/authority/language/ENG> .
+            ?realize eli:title ?Title } .
+    OPTIONAL {
+        ?uri elidl-ep:hasWorkContribution ?Contribution .        
+        ?Contribution elidl-ep:workContributionHasAgent ?rapporteur .                      
+        FILTER(elidl-ep:workContributionRole = "http://data.europarl.europa.eu/authority/work-membership-role/rapporteur")
+    } .
+    # Subquery - the languages codes 
+        OPTIONAL {
+        {
+      SELECT ?uri 
+             (GROUP_CONCAT(?code; separator=";") AS ?codes) 
+      WHERE {
+          ?expression eli:realizes ?uri .
+          ?expression eli:language ?lang .
+          BIND(STRAFTER(STR(?lang), "http://publications.europa.eu/resource/authority/language/") AS ?code)
+        }
+      GROUP BY ?uri 
+    }
+        } .
+    # Eurovoc Keywords
+        OPTIONAL {
+    {
+      SELECT ?uri 
+            (GROUP_CONCAT(?theEurovocLabel; separator=";") AS ?keywords) 
+        WHERE {
+            ?uri elidl-ep:legislativeProcessWorkIsAboutEurovoc/skos:prefLabel ?label .
+            FILTER(lang(?label) = "en")
+            BIND(STR(?label) AS ?theEurovocLabel)
+        }
+        GROUP BY ?uri
+    } 
+        } .
+    # PDF
+    OPTIONAL{
+         SELECT ?uri ?PDF
+        WHERE {
+            ?pdf ^eli:embodies ?media ;
+                  eli:realizes ?uri ;
+                  eli:language <http://publications.europa.eu/resource/authority/language/ENG> .
+            ?media  eli:media_type <https://www.iana.org/assignments/media-types/application/pdf> ;
+                    eli:is_exemplified_by ?PDF .
+        }
+    } .
+    #HTML
+    OPTIONAL {
+        SELECT ?uri ?HTML
+        WHERE {
+            ?html ^eli:embodies ?media ;
+                   eli:realizes ?uri ;
+                   eli:language <http://publications.europa.eu/resource/authority/language/ENG> .
+            ?media  eli:media_type <https://www.iana.org/assignments/media-types/application/xhtml+xml> ;
+                    eli:is_exemplified_by ?HTML .
+        }
+    }
+}

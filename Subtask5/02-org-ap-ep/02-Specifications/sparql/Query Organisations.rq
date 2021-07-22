@@ -1,0 +1,25 @@
+# Organization
+# nb Organization : "5826"^^xsd:integer
+
+PREFIX org-ep: <http://data.europarl.europa.eu/ontology/org-ep#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX schema: <http://schema.org/>
+PREFIX org: <http://www.w3.org/ns/org#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT *
+WHERE {
+    ?organization a org-ep:Organization .
+    OPTIONAL {?organization dc:identifier ?identifier } . 
+    OPTIONAL {?organization skos:notation ?code 
+    FILTER ( datatype(?code) = <http://data.europarl.europa.eu/authority/notation-type/od>) } .
+    OPTIONAL {?organization org-ep:hasOrganizationType/skos:preflabel ?type 
+        FILTER langMatches(lang(?type), "EN" ) } .
+    OPTIONAL {?organization schema:startDate ?startDate } .
+    OPTIONAL {?organization schema:endDate ?endDate } .
+    OPTIONAL {?organization skos:prefLabel ?prefLabel 
+    FILTER langMatches(lang(?prefLabel), "EN" ) } .    
+    OPTIONAL{
+        ?organization org:subOrganizationOf ?subOrganizationOf .
+    }
+ }

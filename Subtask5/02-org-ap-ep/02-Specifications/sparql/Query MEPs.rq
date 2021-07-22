@@ -1,0 +1,110 @@
+# MEP
+# nb MEP : "4196"^^xsd:integ
+PREFIX eli: <http://data.europa.eu/eli/ontology#>
+PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+PREFIX org-ep: <http://data.europarl.europa.eu/ontology/org-ep#>
+PREFIX schema: <http://schema.org/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?mep ?personId ?honorificPrefix ?firstName ?familyName ?nationality ?birthDate ?birthPlaceLabel ?gender ?dateEndActivity
+       ?contactPoint_TWT ?contactPoint_FBP ?contactPoint_URL ?contactPoint_EMA ?contactPoint_FBW ?contactPoint_GWS
+WHERE {
+    ?mep a  org-ep:MEP ;
+        org-ep:personId ?personId ;
+        schema:honorificPrefix ?honorificPrefix_uri ;
+        foaf:firstName ?firstName ;
+        foaf:familyName ?familyName ;
+        schema:nationality ?nat .
+    BIND(STRAFTER(STR(?nat),'http://publications.europa.eu/resource/authority/country/') AS ?nationality)
+     OPTIONAL {?mep schema:birthDate ?birthDate } .
+     OPTIONAL {?mep org-ep:birthPlaceLabel ?birthPlaceLabel } .
+     OPTIONAL {?mep schema:gender ?gender_uri } .
+     OPTIONAL {?mep org-ep:dateEndActivity ?dateEndActivity } .
+    #Contact Point TWT
+    OPTIONAL {    
+    {
+        SELECT ?mep
+              (GROUP_CONCAT(?urlContact; separator=";") AS ?contactPoint_TWT) 
+        WHERE {
+            ?mep schema:contactPoint ?contactPoint .
+            ?contactPoint schema:contactType ?ContactType ;
+                          schema:url ?urlContact .
+            BIND(STRAFTER(STR(?ContactType),"http://data.europarl.europa.eu/authority/contact-point-type/electronic/") AS ?type) .
+            FILTER(?type = 'TWT') .
+        }
+        Group By ?mep
+            } }.
+    #Contact Point FBP
+    OPTIONAL {
+    {
+        SELECT ?mep
+              (GROUP_CONCAT(?urlContact; separator=";") AS ?contactPoint_FBP) 
+        WHERE {
+            ?mep schema:contactPoint ?contactPoint .
+            ?contactPoint schema:contactType ?ContactType ;
+                          schema:url ?urlContact .
+            BIND(STRAFTER(STR(?ContactType),"http://data.europarl.europa.eu/authority/contact-point-type/electronic/") AS ?type) .
+            FILTER(?type = 'FBP') .
+        }
+        Group By ?mep
+            } }.
+    # Contact Point URL
+    OPTIONAL {
+        {
+        SELECT ?mep
+              (GROUP_CONCAT(?urlContact; separator=";") AS ?contactPoint_URL) 
+        WHERE {
+            ?mep schema:contactPoint ?contactPoint .
+            ?contactPoint schema:contactType ?ContactType ;
+                          schema:url ?urlContact .
+            BIND(STRAFTER(STR(?ContactType),"http://data.europarl.europa.eu/authority/contact-point-type/electronic/") AS ?type) .
+            FILTER(?type = 'URL') .
+        }
+        Group By ?mep
+            } }.
+    #Contact Point EMA
+    OPTIONAL {
+    {
+        SELECT ?mep
+              (GROUP_CONCAT(?urlContact; separator=";") AS ?contactPoint_EMA) 
+        WHERE {
+            ?mep schema:contactPoint ?contactPoint .
+            ?contactPoint schema:contactType ?ContactType ;
+                          schema:url ?urlContact .
+            BIND(STRAFTER(STR(?ContactType),"http://data.europarl.europa.eu/authority/contact-point-type/electronic/") AS ?type) .
+            FILTER(?type = 'EMA') .
+        }
+        Group By ?mep
+            } }.
+    #Contact Point FBW
+    OPTIONAL {    
+    {
+        SELECT ?mep
+              (GROUP_CONCAT(?urlContact; separator=";") AS ?contactPoint_FBW) 
+        WHERE {
+            ?mep schema:contactPoint ?contactPoint .
+            ?contactPoint schema:contactType ?ContactType ;
+                          schema:url ?urlContact .
+            BIND(STRAFTER(STR(?ContactType),"http://data.europarl.europa.eu/authority/contact-point-type/electronic/") AS ?type) .
+            FILTER(?type = 'FBW') .
+        }
+        Group By ?mep
+            } }.
+    #Contact Point GWS
+    OPTIONAL {
+        {
+        SELECT ?mep
+              (GROUP_CONCAT(?urlContact; separator=";") AS ?contactPoint_GWS) 
+        WHERE {
+            ?mep schema:contactPoint ?contactPoint .
+            ?contactPoint schema:contactType ?ContactType ;
+                          schema:url ?urlContact .
+            BIND(STRAFTER(STR(?ContactType),"http://data.europarl.europa.eu/authority/contact-point-type/electronic/") AS ?type) .
+            FILTER(?type = 'GWS') .
+        }
+        Group By ?mep
+            } }.
+    
+     BIND(STRAFTER(STR(?honorificPrefix_uri),'civility/') AS ?honorificPrefix) . 
+     BIND(STRAFTER(STR(?gender_uri),'gender/') AS ?gender) . 
+}

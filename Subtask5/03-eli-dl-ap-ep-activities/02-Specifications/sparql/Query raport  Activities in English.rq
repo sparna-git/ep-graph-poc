@@ -1,0 +1,32 @@
+# Query 5
+# List of activities for a given procedure (activities, activities types, activity date and related reports)
+# nb Activites : 253
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+PREFIX elidl-ep: <http://data.europarl.europa.eu/ontology/elidl-ep#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?activity ?procedure ?label ?activityDate ?involvedOrBasedOnDocument
+WHERE {
+    # procedure with its reference
+    ?procedure_ a eli-dl:LegislativeProcess .
+    ?procedure_ eli-dl:legislative_process_id $procedureReference .
+    #VALUES $procedureReference { "COD-2018-0436" }
+    
+    # all types of activities ....
+    ?procedure_ eli-dl:consists_of* ?activity .
+    ?activity elidl-ep:activityType/skos:prefLabel ?label .
+    FILTER langMatches(lang(?label), "EN" )
+    ?activity eli-dl:activity_date ?activityDate .
+    
+    BIND(STRAFTER(STR(?procedure_),'http://data.europarl.europa.eu/resource/eli/dl/proc/') AS ?procedure)
+    
+    # ... activity involves some documents, or is based on some document
+    OPTIONAL {
+        ?activity eli-dl:involved_work|eli-dl:based_on_a_realization_of ?involvedOrBasedOnDocument .
+    }
+}
+# list activities by date
+ORDER BY ?activityDate

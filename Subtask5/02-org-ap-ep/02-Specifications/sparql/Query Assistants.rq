@@ -1,0 +1,19 @@
+# Assistant
+# nb Assistant: "3547"^^xsd:intege
+PREFIX org-ep: <http://data.europarl.europa.eu/ontology/org-ep#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX org: <http://www.w3.org/ns/org#>
+
+SELECT ?uri ?personId ?personType ?firstName ?familyName ?MEP
+WHERE {
+    ?uri a org-ep:Person ;
+            org-ep:personId ?personId ;
+            org-ep:hasPersonType ?pertype ;
+            foaf:firstName ?firstName ;
+            foaf:familyName ?familyName ;
+            org:hasMembership ?membership .
+    ?membership org-ep:hasMembershipType <http://data.europarl.europa.eu/authority/membership-type/PERSON> ;
+    			org-ep:hasOrganization ?MEP .        
+    BIND(STRAFTER(STR(?pertype),'http://data.europarl.europa.eu/authority/person-type/') AS ?personType)    
+}
+ORDER BY ?MEP
